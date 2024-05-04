@@ -235,7 +235,7 @@ async function setupRunner() {
         shell.exec('cd apps/web && npm run cypress:run');
       }
     } else if (answers.runWebConfiguration === RUN_CYPRESS_COMPONENT_CLI) {
-      shell.exec('npm run nx build @novu/web');
+      shell.exec('npm run nx build @teleflow/web');
       shell.exec('cd apps/web && npm run cypress:run:components');
     }
 

@@ -1,5 +1,5 @@
 {
-  "name": "@novu/web",
+  "name": "@teleflow/web",
   "version": "0.24.1",
   "private": true,
   "scripts": {

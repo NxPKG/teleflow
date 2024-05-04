@@ -2,7 +2,7 @@
   - apps/api/**/*
 '@teleflow/worker':
   - apps/worker/**/*
-'@novu/web':
+'@teleflow/web':
   - apps/web/**/*
 '@teleflow/ws':
   - apps/ws/**/*

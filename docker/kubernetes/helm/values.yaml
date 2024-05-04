@@ -1185,7 +1185,7 @@ web:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/web
+    repository: novuhq/teleflow/web
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy

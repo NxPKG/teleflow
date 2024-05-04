@@ -103,7 +103,7 @@ jobs:
       - name: Tag WEB
         env:
           REGISTRY_OWNER: novuhq
-          DOCKER_NAME: novu/web
+          DOCKER_NAME: teleflow/web
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}

@@ -13,7 +13,7 @@
       "path": "apps/worker"
     },
     {
-      "name": "🚀 @novu/web",
+      "name": "🚀 @teleflow/web",
       "path": "apps/web"
     },
     {
