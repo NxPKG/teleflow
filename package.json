@@ -50,7 +50,7 @@
     "build:inbound-mail": "nx build @novu/inbound-mail",
     "build:web": "nx build @novu/web",
     "build:widget": "nx build @teleflow/widget",
-    "build:embed": "nx build @novu/embed",
+    "build:embed": "nx build @teleflow/embed",
     "build:storybook": "nx run @novu/design-system:build-storybook",
     "test:providers": "cross-env pnpm --filter './providers/**' test",
     "release:patch": "lerna version patch --no-push",

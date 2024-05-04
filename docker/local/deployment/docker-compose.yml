@@ -66,7 +66,7 @@ services:
     ports:
       - '3000:3000'
   worker:
-    image: 'ghcr.io/novuhq/teleflow/worker:0.24.0'
+    image: 'ghcr.io/nxpkg/teleflow/worker:0.24.0'
     depends_on:
       - mongodb
       - redis
@@ -145,7 +145,7 @@ services:
     ports:
       - 4200:4200
   widget:
-    image: 'ghcr.io/novuhq/teleflow/widget:0.24.0'
+    image: 'ghcr.io/nxpkg/teleflow/widget:0.24.0'
     depends_on:
       - api
       - worker
@@ -167,7 +167,7 @@ services:
   embed:
     depends_on:
       - widget
-    image: 'ghcr.io/novuhq/novu/embed:0.24.0'
+    image: 'ghcr.io/nxpkg/teleflow/embed:0.24.0'
     container_name: embed
     restart: unless-stopped
     logging:
