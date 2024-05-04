@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { WhatsappBusinessChatProvider } from './whatsapp-business.provider';
 import { nanoid } from 'nanoid';
-import { IChatOptions } from '@novu/stateless';
+import { IChatOptions } from '@teleflow/stateless';
 
 const mockProviderConfig = {
   accessToken: 'my-access-token',

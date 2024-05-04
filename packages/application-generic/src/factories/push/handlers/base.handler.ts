@@ -1,4 +1,4 @@
-import { IPushOptions, IPushProvider } from '@novu/stateless';
+import { IPushOptions, IPushProvider } from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 import {} from '@novu/dal';
 import { IPushHandler } from '../interfaces';

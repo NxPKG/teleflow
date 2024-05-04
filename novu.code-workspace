@@ -61,7 +61,7 @@
       "path": "libs/testing"
     },
     {
-      "name": "📦 @novu/stateless",
+      "name": "📦 @teleflow/stateless",
       "path": "packages/stateless"
     },
     {

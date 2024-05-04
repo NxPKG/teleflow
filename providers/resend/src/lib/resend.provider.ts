@@ -5,7 +5,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailOptions,
   IEmailProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { Resend } from 'resend';
 
 export class ResendEmailProvider implements IEmailProvider {

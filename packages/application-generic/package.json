@@ -112,7 +112,7 @@
     "@novu/sms77": "^0.24.1",
     "@novu/sns": "^0.24.1",
     "@novu/sparkpost": "^0.24.1",
-    "@novu/stateless": "^0.24.1",
+    "@teleflow/stateless": "^0.24.1",
     "@novu/telnyx": "^0.24.1",
     "@novu/termii": "^0.24.1",
     "@novu/testing": "^0.24.1",

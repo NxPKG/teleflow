@@ -3,7 +3,7 @@ import {
   IPushOptions,
   IPushProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios, { AxiosInstance } from 'axios';
 
 export class PusherBeamsPushProvider implements IPushProvider {

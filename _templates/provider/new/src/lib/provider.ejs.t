@@ -10,7 +10,7 @@ import {
   ISendMessageSuccessResponse,
   I<%= PascalType %>Options,
   I<%= PascalType %>Provider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 export class <%= PascalName %><%= PascalType %>Provider implements I<%= PascalType %>Provider {
   id = '<%= name %>';

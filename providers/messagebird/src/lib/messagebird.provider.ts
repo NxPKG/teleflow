@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { Message } from 'messagebird/types/messages';
 import { initClient } from 'messagebird';

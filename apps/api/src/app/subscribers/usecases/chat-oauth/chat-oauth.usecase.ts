@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 import { IntegrationEntity, IntegrationRepository, EnvironmentRepository, ICredentialsEntity } from '@novu/dal';
 import { createHash } from '@novu/application-generic';
 

@@ -5,7 +5,7 @@ import {
   ISmsProvider,
   SmsEventStatusEnum,
   ISMSEventBody,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import {
   SmsParams,
   MessageChannel,

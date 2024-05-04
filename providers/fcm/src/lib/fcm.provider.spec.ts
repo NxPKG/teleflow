@@ -1,4 +1,4 @@
-import { IPushOptions } from '@novu/stateless';
+import { IPushOptions } from '@teleflow/stateless';
 import app from 'firebase-admin/app';
 
 import { FcmPushProvider } from './fcm.provider';

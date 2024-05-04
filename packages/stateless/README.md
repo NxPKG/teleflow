@@ -1,17 +1,17 @@
 ## 📦 Install
 
 ```bash
-npm install @novu/stateless
+npm install @teleflow/stateless
 ```
 
 ```bash
-yarn add @novu/stateless
+yarn add @teleflow/stateless
 ```
 
 ## 🔨 Usage
 
 ```ts
-import { NovuStateless, ChannelTypeEnum } from '@novu/stateless';
+import { NovuStateless, ChannelTypeEnum } from '@teleflow/stateless';
 import { SendgridEmailProvider } from '@novu/sendgrid';
 
 const novu = new NovuStateless();

@@ -5,7 +5,7 @@ import {
   IEmailProvider,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { MailtrapClient, Address } from 'mailtrap';
 
 export class MailtrapEmailProvider implements IEmailProvider {

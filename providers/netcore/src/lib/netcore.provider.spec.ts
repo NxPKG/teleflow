@@ -2,7 +2,7 @@
 import { NetCoreProvider } from './netcore.provider';
 import axios from 'axios';
 import { IEmailBody } from 'netcore';
-import { IEmailOptions } from '@novu/stateless';
+import { IEmailOptions } from '@teleflow/stateless';
 
 jest.mock('axios');
 

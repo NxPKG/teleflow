@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { Vonage } from '@vonage/server-sdk';
 import { Auth } from '@vonage/auth';

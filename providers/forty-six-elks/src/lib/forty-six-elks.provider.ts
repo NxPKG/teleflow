@@ -4,7 +4,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 interface IFortySixElksSuccessObject {
   status: string;

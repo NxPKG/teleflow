@@ -5,7 +5,7 @@ import {
   ISendMessageSuccessResponse,
   IPushOptions,
   IPushProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 export class OneSignalPushProvider implements IPushProvider {
   id = 'one-signal';

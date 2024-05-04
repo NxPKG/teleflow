@@ -1,4 +1,4 @@
-import { ISmsOptions, ISmsProvider } from '@novu/stateless';
+import { ISmsOptions, ISmsProvider } from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 import { ISmsHandler } from '../interfaces';
 

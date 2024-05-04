@@ -1,5 +1,5 @@
 import { IntegrationRepository } from '@novu/dal';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 
 export async function updateFcmCredentials() {
   // eslint-disable-next-line no-console

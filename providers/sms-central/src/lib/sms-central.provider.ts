@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class SmsCentralSmsProvider implements ISmsProvider {

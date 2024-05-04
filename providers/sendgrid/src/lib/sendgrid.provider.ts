@@ -8,7 +8,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailEventBody,
   IAttachmentOptions,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { MailDataRequired, MailService } from '@sendgrid/mail';
 

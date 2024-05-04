@@ -3,7 +3,7 @@ import {
   IPushOptions,
   IPushProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import apn from '@parse/node-apn';
 
 export class APNSPushProvider implements IPushProvider {

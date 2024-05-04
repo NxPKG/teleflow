@@ -5,7 +5,7 @@ import {
   ISendMessageSuccessResponse,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { Message, SMTPClient, MessageAttachment } from 'emailjs';
 import { IEmailJsConfig } from './emailjs.config';
 import { MessageHeaders } from 'emailjs/smtp/message';

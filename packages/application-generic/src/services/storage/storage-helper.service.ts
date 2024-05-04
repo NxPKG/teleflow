@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { IAttachmentOptionsExtended } from '@novu/stateless';
+import { IAttachmentOptionsExtended } from '@teleflow/stateless';
 
 import { NonExistingFileError } from './non-existing-file.error';
 import { StorageService } from './storage.service';

@@ -39,7 +39,7 @@ import {
   ActorTypeEnum,
   SystemAvatarIconEnum,
 } from '@novu/shared';
-import { EmailEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum } from '@teleflow/stateless';
 import { createTenant } from '../../tenant/e2e/create-tenant.e2e';
 import { DetailEnum } from '@novu/application-generic';
 

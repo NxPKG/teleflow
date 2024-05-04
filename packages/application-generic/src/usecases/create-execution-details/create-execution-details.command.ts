@@ -6,7 +6,7 @@ import {
   IJob,
   StepTypeEnum,
 } from '@novu/shared';
-import { EmailEventStatusEnum, SmsEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum, SmsEventStatusEnum } from '@teleflow/stateless';
 
 import { EnvironmentWithSubscriber } from '../../commands/project.command';
 

@@ -5,7 +5,7 @@ import {
   ISmsOptions,
   ISmsProvider,
   SmsEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import axios, { Axios } from 'axios';
 

@@ -7,7 +7,7 @@ import {
   MessageRepository,
 } from '@novu/dal';
 import { ChannelTypeEnum, providers } from '@novu/shared';
-import { IEmailProvider, ISmsProvider } from '@novu/stateless';
+import { IEmailProvider, ISmsProvider } from '@teleflow/stateless';
 import {
   AnalyticsService,
   ApiException,

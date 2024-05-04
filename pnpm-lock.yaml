@@ -294,7 +294,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../libs/shared
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@novu/testing':
@@ -1064,7 +1064,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../libs/shared
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@novu/testing':
@@ -1384,7 +1384,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../libs/shared
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@novu/testing':
@@ -1978,7 +1978,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../../../libs/shared
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../../../packages/stateless
       '@novu/testing':
@@ -2133,7 +2133,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../../../libs/shared
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../../../packages/stateless
       '@novu/testing':
@@ -3236,7 +3236,7 @@ importers:
       '@novu/sparkpost':
         specifier: ^0.24.1
         version: link:../../providers/sparkpost
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../stateless
       '@novu/telnyx':
@@ -3610,7 +3610,7 @@ importers:
       '@nestjs/common':
         specifier: 10.2.2
         version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../stateless
     devDependencies:
@@ -4123,7 +4123,7 @@ importers:
 
   providers/africas-talking:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       africastalking:
@@ -4166,7 +4166,7 @@ importers:
 
   providers/apns:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@parse/node-apn':
@@ -4221,7 +4221,7 @@ importers:
       '@azure/communication-sms':
         specifier: ^1.0.0
         version: 1.0.0
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
     devDependencies:
@@ -4264,7 +4264,7 @@ importers:
       '@bandwidth/messaging':
         specifier: ^4.1.3
         version: 4.1.3
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
     devDependencies:
@@ -4304,7 +4304,7 @@ importers:
 
   providers/braze:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       braze-api:
@@ -4347,7 +4347,7 @@ importers:
 
   providers/brevo-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       cross-fetch:
@@ -4396,7 +4396,7 @@ importers:
 
   providers/bulk-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4439,7 +4439,7 @@ importers:
 
   providers/burst-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4500,7 +4500,7 @@ importers:
 
   providers/clickatell:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4552,7 +4552,7 @@ importers:
 
   providers/clicksend:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4595,7 +4595,7 @@ importers:
 
   providers/discord:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4650,7 +4650,7 @@ importers:
 
   providers/eazy-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: 0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4693,7 +4693,7 @@ importers:
 
   providers/email-webhook:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -4736,7 +4736,7 @@ importers:
 
   providers/emailjs:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       emailjs:
@@ -4791,7 +4791,7 @@ importers:
 
   providers/expo:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       expo-server-sdk:
@@ -4846,7 +4846,7 @@ importers:
 
   providers/fcm:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       firebase-admin:
@@ -4910,7 +4910,7 @@ importers:
 
   providers/firetext:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       node-fetch:
@@ -4974,7 +4974,7 @@ importers:
 
   providers/forty-six-elks:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5017,7 +5017,7 @@ importers:
 
   providers/generic-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5060,7 +5060,7 @@ importers:
 
   providers/getstream:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5103,7 +5103,7 @@ importers:
 
   providers/grafana-on-call:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5149,7 +5149,7 @@ importers:
 
   providers/gupshup:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5213,7 +5213,7 @@ importers:
       '@infobip-api/sdk':
         specifier: ^0.3.2
         version: 0.3.2
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
     devDependencies:
@@ -5265,7 +5265,7 @@ importers:
 
   providers/isend-sms:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5308,7 +5308,7 @@ importers:
 
   providers/kannel:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5363,7 +5363,7 @@ importers:
 
   providers/mailersend:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       mailersend:
@@ -5418,7 +5418,7 @@ importers:
 
   providers/mailgun:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       form-data:
@@ -5479,7 +5479,7 @@ importers:
 
   providers/mailjet:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       node-mailjet:
@@ -5537,7 +5537,7 @@ importers:
 
   providers/mailtrap:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       mailtrap:
@@ -5583,7 +5583,7 @@ importers:
       '@mailchimp/mailchimp_transactional':
         specifier: ^1.0.50
         version: 1.0.50
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
     devDependencies:
@@ -5641,7 +5641,7 @@ importers:
 
   providers/maqsam:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5690,7 +5690,7 @@ importers:
 
   providers/mattermost:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5733,7 +5733,7 @@ importers:
 
   providers/messagebird:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       messagebird:
@@ -5776,7 +5776,7 @@ importers:
 
   providers/ms-teams:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5834,7 +5834,7 @@ importers:
 
   providers/netcore:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -5889,7 +5889,7 @@ importers:
 
   providers/nexmo:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@vonage/auth':
@@ -5947,7 +5947,7 @@ importers:
 
   providers/nodemailer:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       nodemailer:
@@ -6005,7 +6005,7 @@ importers:
 
   providers/one-signal:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6048,7 +6048,7 @@ importers:
 
   providers/outlook365:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       nodemailer:
@@ -6106,7 +6106,7 @@ importers:
 
   providers/plivo:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       plivo:
@@ -6161,7 +6161,7 @@ importers:
 
   providers/plunk:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@plunk/node':
@@ -6204,7 +6204,7 @@ importers:
 
   providers/postmark:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6262,7 +6262,7 @@ importers:
 
   providers/push-webhook:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6305,7 +6305,7 @@ importers:
 
   providers/pusher-beams:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6348,7 +6348,7 @@ importers:
 
   providers/pushpad:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       pushpad:
@@ -6391,7 +6391,7 @@ importers:
 
   providers/resend:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       resend:
@@ -6446,7 +6446,7 @@ importers:
 
   providers/ring-central:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@ringcentral/sdk':
@@ -6489,7 +6489,7 @@ importers:
 
   providers/rocket-chat:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6532,7 +6532,7 @@ importers:
 
   providers/ryver:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6575,7 +6575,7 @@ importers:
 
   providers/sendchamp:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6618,7 +6618,7 @@ importers:
 
   providers/sendgrid:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       '@sendgrid/mail':
@@ -6673,7 +6673,7 @@ importers:
 
   providers/sendinblue:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6731,7 +6731,7 @@ importers:
       '@aws-sdk/client-ses':
         specifier: 3.382.0
         version: 3.382.0
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       nodemailer:
@@ -6786,7 +6786,7 @@ importers:
 
   providers/simpletexting:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6829,7 +6829,7 @@ importers:
 
   providers/slack:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6884,7 +6884,7 @@ importers:
 
   providers/sms-central:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -6927,7 +6927,7 @@ importers:
 
   providers/sms77:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       node-fetch:
@@ -6991,7 +6991,7 @@ importers:
       '@aws-sdk/client-sns':
         specifier: ^3.382.0
         version: 3.388.0
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
     devDependencies:
@@ -7043,7 +7043,7 @@ importers:
 
   providers/sparkpost:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -7101,7 +7101,7 @@ importers:
 
   providers/telnyx:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       telnyx:
@@ -7156,7 +7156,7 @@ importers:
 
   providers/termii:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       node-fetch:
@@ -7214,7 +7214,7 @@ importers:
 
   providers/twilio:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       twilio:
@@ -7269,7 +7269,7 @@ importers:
 
   providers/whatsapp-business:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:
@@ -7315,7 +7315,7 @@ importers:
 
   providers/zulip:
     dependencies:
-      '@novu/stateless':
+      '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
       axios:

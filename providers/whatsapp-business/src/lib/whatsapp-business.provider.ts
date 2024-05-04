@@ -3,7 +3,7 @@ import {
   IChatOptions,
   IChatProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import Axios, { AxiosInstance } from 'axios';
 import { ISendMessageRes } from '../types/whatsapp-business.types';
 import { WhatsAppMessageTypeEnum } from '../consts/whatsapp-business.enum';

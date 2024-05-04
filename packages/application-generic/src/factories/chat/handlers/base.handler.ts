@@ -1,4 +1,4 @@
-import { IChatOptions, IChatProvider } from '@novu/stateless';
+import { IChatOptions, IChatProvider } from '@teleflow/stateless';
 import { ChannelTypeEnum } from '@novu/shared';
 import { IChatHandler } from '../interfaces';
 

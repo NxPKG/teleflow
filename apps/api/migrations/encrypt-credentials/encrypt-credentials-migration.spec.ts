@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { encryptOldCredentialsMigration } from './encrypt-credentials-migration';
 import { UserSession } from '@novu/testing';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 import { IntegrationRepository } from '@novu/dal';
 
 describe('Encrypt Old Credentials', function () {

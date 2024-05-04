@@ -5,7 +5,7 @@ import {
   IEmailProvider,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import crypto from 'crypto';
 import axios from 'axios';
