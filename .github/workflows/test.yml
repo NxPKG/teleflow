@@ -108,7 +108,7 @@ jobs:
     with:
       ee: true
     if: false
-#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@novu/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/ws') }}
+#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@teleflow/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/ws') }}
     secrets: inherit
 
   test_providers:

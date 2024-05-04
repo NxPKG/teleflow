@@ -145,7 +145,7 @@ services:
     ports:
       - 4200:4200
   widget:
-    image: 'ghcr.io/novuhq/novu/widget:0.24.0'
+    image: 'ghcr.io/novuhq/teleflow/widget:0.24.0'
     depends_on:
       - api
       - worker

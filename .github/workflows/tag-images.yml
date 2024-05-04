@@ -90,7 +90,7 @@ jobs:
       - name: Tag WIDGET
         env:
           REGISTRY_OWNER: novuhq
-          DOCKER_NAME: novu/widget
+          DOCKER_NAME: teleflow/widget
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}

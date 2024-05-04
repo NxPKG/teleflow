@@ -25,7 +25,7 @@
       "path": "apps/webhook"
     },
     {
-      "name": "🚀 @novu/widget",
+      "name": "🚀 @teleflow/widget",
       "path": "apps/widget"
     },
     {
@@ -73,7 +73,7 @@
       "path": "packages/notification-center"
     },
     {
-      "name": "📦 @novu/notification-center-vue",
+      "name": "📦 @teleflow/notification-center-vue",
       "path": "packages/notification-center-vue"
     },
     {
