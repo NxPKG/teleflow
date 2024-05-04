@@ -1,6 +1,6 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
 import { JobCronNameEnum, JobTopicNameEnum } from '@novu/shared';
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 import {
   ACTIVE_CRON_JOBS_TOKEN,
   AgendaCronService,

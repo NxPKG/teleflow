@@ -1,4 +1,4 @@
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 
 import { EnvironmentWithSubscriber } from '../../commands';
 

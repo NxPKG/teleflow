@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { FeedRepository, ChangeRepository, DalException } from '@novu/dal';
+import { FeedRepository, ChangeRepository, DalException } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 
 import { DeleteFeedCommand } from './delete-feed.command';

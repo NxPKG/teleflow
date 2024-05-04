@@ -9,7 +9,7 @@ import {
   IntegrationEntity,
   MessageEntity,
   LayoutRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   EmailProviderIdEnum,

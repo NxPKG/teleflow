@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import { EnvironmentRepository, IApiKey } from '@novu/dal';
+import { EnvironmentRepository, IApiKey } from '@teleflow/dal';
 
 import { GetApiKeysCommand } from './get-api-keys.command';
 import { ApiKey } from '../../../shared/dtos/api-key';

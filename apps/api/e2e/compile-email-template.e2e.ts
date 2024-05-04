@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Test } from '@nestjs/testing';
 import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, EmailBlockTypeEnum } from '@novu/shared';
-import { LayoutRepository, OrganizationRepository, DalService } from '@novu/dal';
+import { LayoutRepository, OrganizationRepository, DalService } from '@teleflow/dal';
 
 import { CompileEmailTemplate } from '@novu/application-generic';
 import { CompileEmailTemplateCommand } from '@novu/application-generic';

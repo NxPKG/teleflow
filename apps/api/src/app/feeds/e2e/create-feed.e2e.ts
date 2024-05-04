@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 import { StepTypeEnum } from '@novu/shared';
 import { CreateWorkflowRequestDto, UpdateWorkflowRequestDto } from '../../workflows/dto';
-import { FeedRepository } from '@novu/dal';
+import { FeedRepository } from '@teleflow/dal';
 
 describe('Create A Feed - /feeds (POST)', async () => {
   let session: UserSession;

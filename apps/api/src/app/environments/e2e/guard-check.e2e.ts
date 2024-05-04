@@ -1,6 +1,6 @@
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
-import { NotificationTemplateRepository } from '@novu/dal';
+import { NotificationTemplateRepository } from '@teleflow/dal';
 
 import { CreateWorkflowRequestDto } from '../../workflows/dto/create-workflow.request.dto';
 

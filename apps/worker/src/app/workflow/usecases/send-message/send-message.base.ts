@@ -2,7 +2,7 @@ import * as i18next from 'i18next';
 import { ModuleRef } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
 import { format } from 'date-fns';
-import { IntegrationEntity, JobEntity, MessageRepository, SubscriberRepository } from '@novu/dal';
+import { IntegrationEntity, JobEntity, MessageRepository, SubscriberRepository } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   EmailProviderIdEnum,

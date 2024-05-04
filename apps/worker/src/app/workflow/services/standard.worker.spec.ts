@@ -17,7 +17,7 @@ import {
   OrganizationEntity,
   SubscriberEntity,
   UserEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 import {
   EnvironmentService,

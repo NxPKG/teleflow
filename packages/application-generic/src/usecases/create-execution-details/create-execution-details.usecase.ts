@@ -1,5 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { ExecutionDetailsRepository, ExecutionDetailsEntity } from '@novu/dal';
+import {
+  ExecutionDetailsRepository,
+  ExecutionDetailsEntity,
+} from '@teleflow/dal';
 import { ExecutionDetailsStatusEnum } from '@novu/shared';
 
 import {

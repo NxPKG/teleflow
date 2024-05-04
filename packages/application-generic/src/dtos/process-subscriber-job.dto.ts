@@ -4,7 +4,7 @@ import {
   SubscriberSourceEnum,
   TriggerRequestCategoryEnum,
 } from '@novu/shared';
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 
 import {
   IBulkJobParams,

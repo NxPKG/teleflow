@@ -1,5 +1,5 @@
 import { ConflictException, Injectable } from '@nestjs/common';
-import { FeedRepository, FeedEntity } from '@novu/dal';
+import { FeedRepository, FeedEntity } from '@teleflow/dal';
 import { CreateFeedCommand } from './create-feed.command';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { CreateChange, CreateChangeCommand } from '@novu/application-generic';

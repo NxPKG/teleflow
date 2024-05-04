@@ -9,7 +9,7 @@
 // https://on.cypress.io/plugins-guide
 // ***********************************************************
 
-import { DalService, EnvironmentEntity } from '@novu/dal';
+import { DalService, EnvironmentEntity } from '@teleflow/dal';
 import { EnvironmentService, NotificationsService, NotificationTemplateService, UserSession } from '@teleflow/testing';
 
 /**

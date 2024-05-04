@@ -2,7 +2,7 @@ import { Test } from '@nestjs/testing';
 import { expect } from 'chai';
 
 import { UserSession } from '@teleflow/testing';
-import { MessageTemplateRepository } from '@novu/dal';
+import { MessageTemplateRepository } from '@teleflow/dal';
 import { EmailBlockTypeEnum, StepTypeEnum, WorkflowTypeEnum } from '@novu/shared';
 import { CreateMessageTemplate, CreateMessageTemplateCommand } from '@novu/application-generic';
 

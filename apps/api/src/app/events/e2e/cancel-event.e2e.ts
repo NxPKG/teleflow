@@ -7,7 +7,7 @@ import {
   SubscriberEntity,
   JobRepository,
   JobStatusEnum,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { StepTypeEnum, DigestTypeEnum, DigestUnitEnum, DelayTypeEnum } from '@novu/shared';
 import { UserSession, SubscribersService } from '@teleflow/testing';
 

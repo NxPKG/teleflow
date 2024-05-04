@@ -1,4 +1,4 @@
-import { NotificationEntity, NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { NotificationEntity, NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { ChannelTypeEnum, StepTypeEnum, IMessage } from '@novu/shared';

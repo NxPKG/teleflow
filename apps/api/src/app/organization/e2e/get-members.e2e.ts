@@ -1,4 +1,4 @@
-import { MemberRepository } from '@novu/dal';
+import { MemberRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { MemberRoleEnum } from '@novu/shared';

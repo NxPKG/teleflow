@@ -6,7 +6,7 @@ import {
   ExecutionDetailsRepository,
   JobRepository,
   NotificationRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { sendTrigger } from '../../src/app/events/e2e/trigger-event.e2e';
 import { StepTypeEnum } from '@novu/shared';

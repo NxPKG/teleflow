@@ -4,7 +4,7 @@ import {
   JobRepository,
   IDelayOrDigestJobResult,
   NotificationRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ExecutionDetailsSourceEnum,
   ExecutionDetailsStatusEnum,

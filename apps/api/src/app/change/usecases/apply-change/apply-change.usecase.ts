@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 
-import { ChangeEntity, ChangeRepository } from '@novu/dal';
+import { ChangeEntity, ChangeRepository } from '@teleflow/dal';
 
 import { PromoteChangeToEnvironmentCommand, PromoteChangeToEnvironment } from '../promote-change-to-environment';
 import { ApplyChangeCommand } from './apply-change.command';

@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import '../src/config';
-import { UserRepository, MemberRepository } from '@novu/dal';
+import { UserRepository, MemberRepository } from '@teleflow/dal';
 
 import { connect } from './connect-to-dal';
 import { normalizeEmail } from '../src/app/shared/helpers/email-normalization.service';

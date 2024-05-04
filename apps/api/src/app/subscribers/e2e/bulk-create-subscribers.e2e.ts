@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import axios from 'axios';
-import { SubscriberRepository, SubscriberEntity } from '@novu/dal';
+import { SubscriberRepository, SubscriberEntity } from '@teleflow/dal';
 import { UserSession, SubscribersService } from '@teleflow/testing';
 
 const axiosInstance = axios.create();

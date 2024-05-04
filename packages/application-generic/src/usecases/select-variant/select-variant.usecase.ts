@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 
-import { MessageTemplateRepository } from '@novu/dal';
+import { MessageTemplateRepository } from '@teleflow/dal';
 import { ICondition, IMessageTemplate } from '@novu/shared';
 
 import { SelectVariantCommand } from './select-variant.command';

@@ -1,4 +1,4 @@
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 

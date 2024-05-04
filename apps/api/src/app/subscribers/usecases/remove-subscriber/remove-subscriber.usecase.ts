@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberRepository, DalException, TopicSubscribersRepository } from '@novu/dal';
+import { SubscriberRepository, DalException, TopicSubscribersRepository } from '@teleflow/dal';
 import { buildSubscriberKey, InvalidateCacheService } from '@novu/application-generic';
 
 import { RemoveSubscriberCommand } from './remove-subscriber.command';

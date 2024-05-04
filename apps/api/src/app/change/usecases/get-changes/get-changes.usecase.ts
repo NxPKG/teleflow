@@ -7,7 +7,7 @@ import {
   NotificationTemplateRepository,
   FeedRepository,
   LayoutRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { ChangesResponseDto } from '../../dtos/change-response.dto';
 import { GetChangesCommand } from './get-changes.command';

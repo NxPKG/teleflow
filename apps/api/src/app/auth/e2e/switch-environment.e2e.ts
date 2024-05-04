@@ -1,6 +1,6 @@
 import * as jwt from 'jsonwebtoken';
 import { expect } from 'chai';
-import { EnvironmentEntity } from '@novu/dal';
+import { EnvironmentEntity } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { IJwtPayload } from '@novu/shared';
 

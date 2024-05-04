@@ -1,5 +1,5 @@
 import { IsDefined, IsOptional } from 'class-validator';
-import { JobStatusEnum } from '@novu/dal';
+import { JobStatusEnum } from '@teleflow/dal';
 import { EnvironmentLevelCommand } from '@novu/application-generic';
 
 export class UpdateJobStatusCommand extends EnvironmentLevelCommand {

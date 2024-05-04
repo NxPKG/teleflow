@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 
-import { LayoutRepository, EnvironmentRepository } from '@novu/dal';
+import { LayoutRepository, EnvironmentRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@novu/shared';
 
 import { addLayoutIdentifierMigration } from './add-layout-identifier-migration';

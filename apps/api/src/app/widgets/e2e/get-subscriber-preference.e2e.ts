@@ -1,4 +1,4 @@
-import { NotificationTemplateEntity } from '@novu/dal';
+import { NotificationTemplateEntity } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import axios from 'axios';
 import { expect } from 'chai';

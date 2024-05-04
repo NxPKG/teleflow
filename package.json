@@ -24,7 +24,7 @@
     "start:api": "cross-env nx run @teleflow/api:start",
     "start:api:dev": "cross-env nx run @teleflow/api:start:dev",
     "start:worker": "cross-env nx run @teleflow/worker:start",
-    "start:dal": "cross-env nx run @novu/dal:start",
+    "start:dal": "cross-env nx run @teleflow/dal:start",
     "start:node": "cross-env nx run @teleflow/node:start",
     "start:shared": "cross-env nx run @novu/shared:start",
     "start:notification-center": "cross-env nx run @novu/notification-center:start",

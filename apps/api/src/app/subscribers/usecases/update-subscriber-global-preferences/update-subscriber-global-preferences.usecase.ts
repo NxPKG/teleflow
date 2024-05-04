@@ -7,7 +7,7 @@ import {
   SubscriberPreferenceEntity,
   SubscriberPreferenceRepository,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { UpdateSubscriberGlobalPreferencesCommand } from './update-subscriber-global-preferences.command';
 

@@ -1,4 +1,4 @@
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
 import { IPushHandler } from './push.handler.interface';
 
 export interface IPushFactory {

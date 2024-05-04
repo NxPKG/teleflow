@@ -23,7 +23,7 @@ module.exports = {
       'error',
       {
         paths: ['src'],
-        patterns: ['@novu/dal'],
+        patterns: ['@teleflow/dal'],
       },
     ],
     '@typescript-eslint/naming-convention': [

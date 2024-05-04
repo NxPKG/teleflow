@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { UserRepository } from '@novu/dal';
+import { UserRepository } from '@teleflow/dal';
 import { buildUserKey, InvalidateCacheService } from '@novu/application-generic';
 
 import { UpdateOnBoardingCommand } from './update-on-boarding.command';

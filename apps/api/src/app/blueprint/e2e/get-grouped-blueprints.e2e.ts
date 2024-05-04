@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import * as sinon from 'sinon';
 
 import { UserSession } from '@teleflow/testing';
-import { NotificationTemplateRepository, EnvironmentRepository, EnvironmentEntity } from '@novu/dal';
+import { NotificationTemplateRepository, EnvironmentRepository, EnvironmentEntity } from '@teleflow/dal';
 import {
   EmailBlockTypeEnum,
   FieldLogicalOperatorEnum,

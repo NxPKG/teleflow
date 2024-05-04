@@ -1,5 +1,5 @@
 import { Body, Controller, Get, HttpException, NotFoundException, Post, UseGuards } from '@nestjs/common';
-import { DalService, UserEntity } from '@novu/dal';
+import { DalService, UserEntity } from '@teleflow/dal';
 import { ProductFeatureKeyEnum, ResourceEnum } from '@novu/shared';
 
 import { ISeedDataResponseDto, SeedDataBodyDto } from './dtos/seed-data.dto';

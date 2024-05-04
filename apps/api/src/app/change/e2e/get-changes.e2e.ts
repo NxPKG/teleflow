@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { ChangeRepository } from '@novu/dal';
+import { ChangeRepository } from '@teleflow/dal';
 import {
   EmailBlockTypeEnum,
   StepTypeEnum,

@@ -18,7 +18,7 @@ import {
   UserEntity,
   UserRepository,
   EnvironmentEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   AuthProviderEnum,
   IJwtPayload,

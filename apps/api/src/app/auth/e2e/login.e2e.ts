@@ -3,7 +3,7 @@ import * as jwt from 'jsonwebtoken';
 import { subMinutes } from 'date-fns';
 import { expect } from 'chai';
 import { IJwtPayload } from '@novu/shared';
-import { UserRepository } from '@novu/dal';
+import { UserRepository } from '@teleflow/dal';
 
 describe('User login - /auth/login (POST)', async () => {
   let session: UserSession;

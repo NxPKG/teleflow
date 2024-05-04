@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { EnvironmentRepository } from '@novu/dal';
+import { EnvironmentRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { NOVU_ENCRYPTION_SUB_MASK } from '@novu/shared';
 

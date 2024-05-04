@@ -5,7 +5,7 @@ import {
   NotificationTemplateEntity,
   NotificationRepository,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';

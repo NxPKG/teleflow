@@ -21,7 +21,7 @@ import {
   TriggerMulticast,
   TriggerMulticastCommand,
 } from '@novu/application-generic';
-import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 
 import { SharedModule } from '../../shared/shared.module';
 import { EventsModule } from '../events.module';

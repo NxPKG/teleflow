@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 import { StepTypeEnum } from '@novu/shared';
-import { FeedRepository, MessageTemplateRepository, NotificationTemplateRepository } from '@novu/dal';
+import { FeedRepository, MessageTemplateRepository, NotificationTemplateRepository } from '@teleflow/dal';
 import { CreateWorkflowRequestDto } from '../../workflows/dto';
 
 describe('Delete A Feed - /feeds (POST)', async () => {

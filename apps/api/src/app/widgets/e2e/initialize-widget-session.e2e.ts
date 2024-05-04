@@ -1,4 +1,4 @@
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, InAppProviderIdEnum } from '@novu/shared';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';

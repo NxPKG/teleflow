@@ -4,7 +4,7 @@ import { lastValueFrom } from 'rxjs';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { SetupVercelConfigurationResponseDto } from '../../dtos/setup-vercel-integration-response.dto';
 import { SetVercelConfigurationCommand } from './set-vercel-configuration.command';
-import { OrganizationRepository, PartnerTypeEnum, IPartnerConfiguration } from '@novu/dal';
+import { OrganizationRepository, PartnerTypeEnum, IPartnerConfiguration } from '@teleflow/dal';
 
 @Injectable()
 export class SetVercelConfiguration {

@@ -6,7 +6,7 @@ import {
   ProvidersIdEnum,
   StepTypeEnum,
 } from '@novu/shared';
-import { StepFilter } from '@novu/dal';
+import { StepFilter } from '@teleflow/dal';
 
 class ActivityNotificationStepTemplateResponseDto {
   @ApiProperty()

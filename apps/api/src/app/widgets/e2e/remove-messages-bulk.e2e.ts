@@ -2,7 +2,7 @@ import axios from 'axios';
 import { expect } from 'chai';
 
 import { UserSession } from '@teleflow/testing';
-import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@novu/shared';
 
 describe('Remove messages by bulk - /widgets/messages/bulk/delete (POST)', function () {

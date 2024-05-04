@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, Logger } from '@nestjs/common';
 
-import { UserRepository } from '@novu/dal';
+import { UserRepository } from '@teleflow/dal';
 import { createHash } from '@novu/application-generic';
 
 import { GetMyProfileCommand } from './get-my-profile.dto';

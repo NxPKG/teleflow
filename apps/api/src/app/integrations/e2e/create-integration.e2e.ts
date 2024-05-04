@@ -1,4 +1,4 @@
-import { IntegrationRepository, EnvironmentRepository } from '@novu/dal';
+import { IntegrationRepository, EnvironmentRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import {
   ChannelTypeEnum,

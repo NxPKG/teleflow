@@ -1,4 +1,4 @@
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { UserSession, SubscribersService } from '@teleflow/testing';
 import { Test } from '@nestjs/testing';
 

@@ -284,7 +284,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@teleflow/node':
@@ -943,7 +943,7 @@ importers:
       '@babel/runtime':
         specifier: ^7.20.13
         version: 7.21.0
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@teleflow/testing':
@@ -1057,7 +1057,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@novu/shared':
@@ -1287,7 +1287,7 @@ importers:
       '@faker-js/faker':
         specifier: ^6.0.0
         version: 6.3.1
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@teleflow/testing':
@@ -1377,7 +1377,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@novu/shared':
@@ -1577,7 +1577,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@novu/shared':
@@ -1716,7 +1716,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../libs/dal
       '@novu/shared':
@@ -1786,7 +1786,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../libs/dal
       '@novu/ee-dal':
@@ -1968,7 +1968,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../../libs/dal
       '@novu/ee-dal':
@@ -2123,7 +2123,7 @@ importers:
       '@nestjs/passport':
         specifier: 9.0.3
         version: 9.0.3(@nestjs/common@10.2.2)(passport@0.6.0)
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../../libs/dal
       '@novu/ee-dal':
@@ -2208,7 +2208,7 @@ importers:
       '@nestjs/common':
         specifier: 10.2.2
         version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../../libs/dal
       '@novu/shared':
@@ -2251,7 +2251,7 @@ importers:
       '@nestjs/common':
         specifier: 10.2.2
         version: 10.2.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../libs/dal
       '@novu/ee-dal':
@@ -2303,7 +2303,7 @@ importers:
       '@novu/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../../libs/dal
       '@novu/ee-dal':
@@ -2919,7 +2919,7 @@ importers:
       '@faker-js/faker':
         specifier: ^6.0.0
         version: 6.3.1
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../dal
       '@novu/shared':
@@ -3082,7 +3082,7 @@ importers:
       '@novu/clicksend':
         specifier: ^0.24.1
         version: link:../../providers/clicksend
-      '@novu/dal':
+      '@teleflow/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
       '@novu/discord':

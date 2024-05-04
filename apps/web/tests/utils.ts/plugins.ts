@@ -1,4 +1,4 @@
-import { DalService, IntegrationRepository, NotificationTemplateEntity } from '@novu/dal';
+import { DalService, IntegrationRepository, NotificationTemplateEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, ProvidersIdEnum } from '@novu/shared';
 import {
   UserSession,

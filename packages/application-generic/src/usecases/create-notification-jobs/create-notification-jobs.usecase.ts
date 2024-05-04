@@ -6,7 +6,7 @@ import {
   NotificationEntity,
   NotificationRepository,
   NotificationStepEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   DigestTypeEnum,
   STEP_TYPE_TO_CHANNEL_TYPE,

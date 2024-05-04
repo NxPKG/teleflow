@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum } from '@teleflow/stateless';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { PushProviderIdEnum } from '@novu/shared';
 import { updateFcmCredentials } from './fcm-credentials-migration';
 

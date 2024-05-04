@@ -4,7 +4,7 @@ import {
   ChangeRepository,
   LayoutRepository,
   MessageTemplateRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   EmailBlockTypeEnum,
   StepTypeEnum,

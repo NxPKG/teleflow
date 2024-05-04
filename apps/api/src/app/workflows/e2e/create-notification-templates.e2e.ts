@@ -23,7 +23,7 @@ import {
   SubscriberEntity,
   OrganizationRepository,
   NotificationTemplateEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { isSameDay } from 'date-fns';
 import { CreateWorkflowRequestDto } from '../dto';
 

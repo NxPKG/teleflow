@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { expect } from 'chai';
-import { ChangeRepository, EnvironmentRepository, LayoutRepository } from '@novu/dal';
+import { ChangeRepository, EnvironmentRepository, LayoutRepository } from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   ITemplateVariable,

@@ -1,5 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { ChangeRepository, DalException, NotificationTemplateEntity, NotificationTemplateRepository } from '@novu/dal';
+import {
+  ChangeRepository,
+  DalException,
+  NotificationTemplateEntity,
+  NotificationTemplateRepository,
+} from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 

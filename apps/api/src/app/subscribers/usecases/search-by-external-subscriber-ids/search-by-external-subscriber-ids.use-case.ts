@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { IExternalSubscribersEntity, SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import { IExternalSubscribersEntity, SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 import { SubscriberDto } from '@novu/shared';
 
 import { SearchByExternalSubscriberIdsCommand } from './search-by-external-subscriber-ids.command';

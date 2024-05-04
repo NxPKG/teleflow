@@ -1,4 +1,4 @@
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 import { testServer } from '@teleflow/testing';
 import * as sinon from 'sinon';
 import { bootstrap } from '../src/bootstrap';

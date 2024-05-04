@@ -1,6 +1,6 @@
 import { IsDefined, IsOptional, ValidateNested } from 'class-validator';
 
-import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 import { ITenantDefine } from '@novu/shared';
 
 import { TriggerEventBroadcastCommand } from '../trigger-event';

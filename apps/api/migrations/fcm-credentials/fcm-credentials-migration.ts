@@ -1,4 +1,4 @@
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@teleflow/stateless';
 
 export async function updateFcmCredentials() {

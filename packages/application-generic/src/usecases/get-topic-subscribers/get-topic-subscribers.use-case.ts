@@ -3,7 +3,7 @@ import {
   TopicSubscribersEntity,
   TopicSubscribersRepository,
   TopicRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { GetTopicSubscribersCommand } from './get-topic-subscribers.command';
 import { ITopicSubscriber } from '@novu/shared';

@@ -4,7 +4,7 @@ import {
   TopicEntity,
   TopicRepository,
   TopicSubscribersRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   FeatureFlagsKeysEnum,
   ISubscribersDefine,

@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { SubscribersService, UserSession } from '@teleflow/testing';
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { NotFoundException } from '@nestjs/common';
 import { expect } from 'chai';
 

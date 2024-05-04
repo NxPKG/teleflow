@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 
-import { IntegrationRepository, EnvironmentRepository } from '@novu/dal';
+import { IntegrationRepository, EnvironmentRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, EmailProviderIdEnum, InAppProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
 
 import {

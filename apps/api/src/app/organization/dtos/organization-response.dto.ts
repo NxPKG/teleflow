@@ -1,4 +1,4 @@
-import { PartnerTypeEnum, DirectionEnum } from '@novu/dal';
+import { PartnerTypeEnum, DirectionEnum } from '@teleflow/dal';
 import { IsObject, IsArray, IsString, IsEnum } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { UpdateBrandingDetailsDto } from './update-branding-details.dto';

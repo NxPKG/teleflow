@@ -1,7 +1,7 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { lastValueFrom } from 'rxjs';
-import { EnvironmentEntity, EnvironmentRepository, OrganizationRepository } from '@novu/dal';
+import { EnvironmentEntity, EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { GetVercelConfigurationCommand } from '../get-vercel-configuration/get-vercel-configuration.command';
 import { GetVercelConfiguration } from '../get-vercel-configuration/get-vercel-configuration.usecase';

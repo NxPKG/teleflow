@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { faker } from '@faker-js/faker';
 
 import { UserSession } from '@teleflow/testing';
-import { MessageRepository, MessageTemplateRepository } from '@novu/dal';
+import { MessageRepository, MessageTemplateRepository } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 
 import { normalizeMessageTemplateCtaAction } from './normalize-message-template-cta-action-migration';

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@novu/application-generic';
 
 import { CreateNovuIntegrationsCommand } from './create-teleflow-integrations.command';

@@ -4,7 +4,7 @@ import {
   IntegrationRepository,
   TenantEntity,
   TenantRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { CHANNELS_WITH_PRIMARY } from '@novu/shared';
 
 import { SelectIntegrationCommand } from './select-integration.command';

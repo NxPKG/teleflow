@@ -6,7 +6,7 @@ import {
   IntegrationRepository,
   SubscriberEntity,
   IntegrationEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { AnalyticsService, buildSubscriberKey, InvalidateCacheService } from '@novu/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { expect } from 'chai';
-import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, InAppProviderIdEnum } from '@novu/shared';
 import {

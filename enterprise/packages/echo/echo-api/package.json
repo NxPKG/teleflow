@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@novu/application-generic": "^0.24.1",
-    "@novu/dal": "^0.24.1",
+    "@teleflow/dal": "^0.24.1",
     "@novu/ee-dal": "^0.24.1",
     "@novu/shared": "^0.24.1",
     "@teleflow/stateless": "^0.24.1",

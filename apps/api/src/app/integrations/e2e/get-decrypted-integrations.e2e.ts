@@ -1,7 +1,7 @@
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { ChannelTypeEnum, EmailProviderIdEnum } from '@novu/shared';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 
 describe('Get Decrypted Integrations - /integrations (GET)', function () {
   let session: UserSession;

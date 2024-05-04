@@ -1,7 +1,7 @@
 const nr = require('newrelic');
 
 import { Injectable, Logger } from '@nestjs/common';
-import { JobEntity, JobRepository, JobStatusEnum } from '@novu/dal';
+import { JobEntity, JobRepository, JobStatusEnum } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 import * as Sentry from '@sentry/node';
 import {

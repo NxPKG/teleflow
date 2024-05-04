@@ -1,4 +1,4 @@
-import { UserRepository } from '@novu/dal';
+import { UserRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { v4 as uuidv4 } from 'uuid';
 import { expect } from 'chai';

@@ -8,7 +8,7 @@ import {
   DelayTypeEnum,
   ActorTypeEnum,
 } from '@novu/shared';
-import { NotificationTemplateEntity, StepFilter } from '@novu/dal';
+import { NotificationTemplateEntity, StepFilter } from '@teleflow/dal';
 
 interface IVariant {
   cta?: any;

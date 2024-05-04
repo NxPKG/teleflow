@@ -2,7 +2,7 @@ import { expect } from 'chai';
 
 import { UserSession } from '@teleflow/testing';
 import { ICreateWorkflowOverrideRequestDto, IUpdateWorkflowOverrideRequestDto } from '@novu/shared';
-import { NotificationTemplateRepository, TenantRepository } from '@novu/dal';
+import { NotificationTemplateRepository, TenantRepository } from '@teleflow/dal';
 
 describe('Update Workflow Override - /workflow-overrides/workflows/:workflowId/tenants/:tenantIdentifier (PUT)', function () {
   let session: UserSession;

@@ -1,4 +1,4 @@
-import { ExecutionDetailsRepository, SubscriberEntity } from '@novu/dal';
+import { ExecutionDetailsRepository, SubscriberEntity } from '@teleflow/dal';
 import { ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum, StepTypeEnum } from '@novu/shared';
 import { UserSession, SubscribersService } from '@teleflow/testing';
 import axios from 'axios';

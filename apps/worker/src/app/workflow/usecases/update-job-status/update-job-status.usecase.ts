@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { JobRepository } from '@novu/dal';
+import { JobRepository } from '@teleflow/dal';
 import { InstrumentUsecase } from '@novu/application-generic';
 
 import { UpdateJobStatusCommand } from './update-job-status.command';

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { NotificationTemplateRepository } from '@novu/dal';
+import { NotificationTemplateRepository } from '@teleflow/dal';
 import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 
 describe('Change workflow status by id - /workflows/:workflowId/status (PUT)', async () => {

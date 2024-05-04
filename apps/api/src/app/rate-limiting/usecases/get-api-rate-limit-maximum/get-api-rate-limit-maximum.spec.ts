@@ -1,4 +1,4 @@
-import { EnvironmentRepository, OrganizationRepository } from '@novu/dal';
+import { EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { ApiRateLimitCategoryEnum, ApiServiceLevelEnum } from '@novu/shared';
 import { expect } from 'chai';

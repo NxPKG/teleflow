@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { ExecutionDetailsEntity } from '@novu/dal';
+import { ExecutionDetailsEntity } from '@teleflow/dal';
 
 import { CreateExecutionDetailsCommand } from '../create-execution-details.command';
 

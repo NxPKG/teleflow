@@ -13,7 +13,7 @@ import {
   TopicRepository,
   CreateTopicSubscribersEntity,
   TopicSubscribersRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ISubscribersDefine,
   ITopic,

@@ -1,7 +1,7 @@
 import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 import { TenantCustomData } from '@novu/shared';
-import { TenantEntity } from '@novu/dal';
+import { TenantEntity } from '@teleflow/dal';
 
 import { EnvironmentWithUserCommand } from '../../commands';
 

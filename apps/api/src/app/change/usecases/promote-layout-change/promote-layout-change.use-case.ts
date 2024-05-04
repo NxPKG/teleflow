@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 
 import { PromoteTypeChangeCommand } from '../promote-type-change.command';
 

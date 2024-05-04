@@ -8,7 +8,7 @@ import {
   NotificationGroupRepository,
   StepVariantEntity,
   EnvironmentRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import {
   buildGroupedBlueprintsKey,

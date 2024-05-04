@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { UserSession } from '@teleflow/testing';
 import { sendTrigger } from '../../src/app/events/e2e/trigger-event.e2e';
 import { StepTypeEnum } from '@novu/shared';

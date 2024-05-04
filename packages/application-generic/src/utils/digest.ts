@@ -7,7 +7,7 @@ import {
   StepTypeEnum,
 } from '@novu/shared';
 import { getNestedValue } from './object';
-import { JobEntity } from '@novu/dal';
+import { JobEntity } from '@teleflow/dal';
 
 export const isRegularDigest = (type: DigestTypeEnum | DelayTypeEnum) => {
   return type === DigestTypeEnum.REGULAR || type === DigestTypeEnum.BACKOFF;

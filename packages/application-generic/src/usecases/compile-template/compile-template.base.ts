@@ -1,4 +1,4 @@
-import { OrganizationEntity, OrganizationRepository } from '@novu/dal';
+import { OrganizationEntity, OrganizationRepository } from '@teleflow/dal';
 import { ModuleRef } from '@nestjs/core';
 import { NotFoundException } from '@nestjs/common';
 

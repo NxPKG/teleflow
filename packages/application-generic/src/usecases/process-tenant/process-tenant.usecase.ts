@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { TenantRepository, TenantEntity } from '@novu/dal';
+import { TenantRepository, TenantEntity } from '@teleflow/dal';
 import { ITenantDefine } from '@novu/shared';
 import { isEqual } from 'lodash';
 

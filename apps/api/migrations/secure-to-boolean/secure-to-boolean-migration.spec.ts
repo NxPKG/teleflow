@@ -1,4 +1,4 @@
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { beforeEach } from 'mocha';
 import { updateFalseValues, updateTrueValues } from './secure-to-boolean-migration';
 import { expect } from 'chai';

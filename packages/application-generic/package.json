@@ -62,7 +62,7 @@
     "@novu/burst-sms": "^0.24.1",
     "@novu/clickatell": "^0.24.1",
     "@novu/clicksend": "^0.24.1",
-    "@novu/dal": "^0.24.1",
+    "@teleflow/dal": "^0.24.1",
     "@novu/discord": "^0.24.1",
     "@novu/email-webhook": "^0.24.1",
     "@novu/emailjs": "^0.24.1",

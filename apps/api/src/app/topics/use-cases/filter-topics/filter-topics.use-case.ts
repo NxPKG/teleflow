@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { EnvironmentId, OrganizationId, TopicEntity, TopicRepository } from '@novu/dal';
+import { EnvironmentId, OrganizationId, TopicEntity, TopicRepository } from '@teleflow/dal';
 
 import { FilterTopicsCommand } from './filter-topics.command';
 

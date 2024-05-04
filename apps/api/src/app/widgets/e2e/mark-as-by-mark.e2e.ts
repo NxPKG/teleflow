@@ -8,7 +8,7 @@ import {
   NotificationTemplateEntity,
   SubscriberEntity,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelTypeEnum, MarkMessagesAsEnum } from '@novu/shared';
 
 describe('Mark as Seen - /widgets/messages/mark-as (POST)', async () => {

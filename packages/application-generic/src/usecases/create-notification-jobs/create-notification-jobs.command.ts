@@ -1,6 +1,6 @@
 import { IsDefined, IsString, IsOptional } from 'class-validator';
 // TODO: We shouldn't be importing from DAL here. Needs big refactor throughout monorepo.
-import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   ISubscribersDefine,

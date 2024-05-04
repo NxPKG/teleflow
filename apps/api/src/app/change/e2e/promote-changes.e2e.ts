@@ -8,7 +8,7 @@ import {
   NotificationTemplateRepository,
   EnvironmentEntity,
   FeedRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   ChannelCTATypeEnum,

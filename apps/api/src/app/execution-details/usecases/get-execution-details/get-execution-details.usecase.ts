@@ -1,5 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { ExecutionDetailsEntity, ExecutionDetailsRepository, SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import {
+  ExecutionDetailsEntity,
+  ExecutionDetailsRepository,
+  SubscriberEntity,
+  SubscriberRepository,
+} from '@teleflow/dal';
 import { buildSubscriberKey, CachedEntity } from '@novu/application-generic';
 import { GetExecutionDetailsCommand } from './get-execution-details.command';
 

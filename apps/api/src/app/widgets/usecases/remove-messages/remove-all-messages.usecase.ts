@@ -7,7 +7,7 @@ import {
   SubscriberEntity,
   MemberRepository,
   FeedRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelTypeEnum, WebSocketEventEnum } from '@novu/shared';
 import {
   WebSocketsQueueService,

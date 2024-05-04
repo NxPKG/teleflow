@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 import { IWorkflowOverride } from '@novu/shared';
-import { TenantRepository } from '@novu/dal';
+import { TenantRepository } from '@teleflow/dal';
 import { WorkflowOverrideService } from '@teleflow/testing';
 
 describe('Get workflow override - /workflow-overrides/workflows/:workflowId/tenants/:tenantIdentifier (GET)', async () => {

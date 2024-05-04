@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 import { WorkflowOverrideService } from '@teleflow/testing';
-import { NotificationGroupRepository, NotificationTemplateRepository, WorkflowOverrideRepository } from '@novu/dal';
+import { NotificationGroupRepository, NotificationTemplateRepository, WorkflowOverrideRepository } from '@teleflow/dal';
 
 describe('Get workflows overrides - /workflow-overrides (GET)', async () => {
   let session: UserSession;

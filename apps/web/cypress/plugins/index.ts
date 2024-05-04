@@ -1,7 +1,12 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-import { DalService, IntegrationRepository, NotificationGroupRepository, NotificationTemplateEntity } from '@novu/dal';
+import {
+  DalService,
+  IntegrationRepository,
+  NotificationGroupRepository,
+  NotificationTemplateEntity,
+} from '@teleflow/dal';
 import {
   UserSession,
   SubscribersService,

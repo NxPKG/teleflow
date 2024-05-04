@@ -1,5 +1,5 @@
 import { UserSession } from '@teleflow/testing';
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { expect } from 'chai';
 import axios from 'axios';
 

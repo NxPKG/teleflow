@@ -1,5 +1,5 @@
 import { IsDefined, IsOptional, IsString } from 'class-validator';
-import { NotificationStepEntity, JobEntity } from '@novu/dal';
+import { NotificationStepEntity, JobEntity } from '@teleflow/dal';
 import { EnvironmentWithUserCommand, ExecuteOutput, IChimeraChannelResponse } from '@novu/application-generic';
 
 export class SendMessageCommand extends EnvironmentWithUserCommand {

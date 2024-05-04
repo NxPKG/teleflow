@@ -4,7 +4,7 @@ import * as sinon from 'sinon';
 
 import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, ChatProviderIdEnum } from '@novu/shared';
-import { IntegrationRepository, SubscriberRepository } from '@novu/dal';
+import { IntegrationRepository, SubscriberRepository } from '@teleflow/dal';
 import { createHash } from '@novu/application-generic';
 
 const axiosInstance = axios.create();

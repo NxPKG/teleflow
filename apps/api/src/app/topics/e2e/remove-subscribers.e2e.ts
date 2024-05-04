@@ -1,4 +1,4 @@
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { TopicId } from '@novu/shared';
 import { SubscribersService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';

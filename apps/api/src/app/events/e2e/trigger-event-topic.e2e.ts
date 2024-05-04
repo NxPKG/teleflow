@@ -4,7 +4,7 @@ import {
   NotificationRepository,
   NotificationTemplateEntity,
   SubscriberEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   StepTypeEnum,

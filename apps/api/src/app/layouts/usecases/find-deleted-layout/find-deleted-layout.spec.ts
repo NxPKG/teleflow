@@ -1,7 +1,7 @@
 import { Test } from '@nestjs/testing';
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
-import { LayoutRepository } from '@novu/dal';
+import { LayoutRepository } from '@teleflow/dal';
 import { TemplateVariableTypeEnum } from '@novu/shared';
 
 import { FindDeletedLayoutUseCase } from './find-deleted-layout.use-case';

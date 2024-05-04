@@ -1,6 +1,6 @@
 import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
-import { NotificationTemplateEntity } from '@novu/dal';
+import { NotificationTemplateEntity } from '@teleflow/dal';
 
 import { getPreference } from './helpers';
 

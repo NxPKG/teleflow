@@ -1,4 +1,4 @@
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 import { wsTestServer } from '@teleflow/testing';
 
 import { bootstrap } from '../src/bootstrap';

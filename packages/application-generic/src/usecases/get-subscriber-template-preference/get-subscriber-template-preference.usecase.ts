@@ -7,7 +7,7 @@ import {
   SubscriberRepository,
   TenantRepository,
   WorkflowOverrideRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   IOverridePreferencesSources,

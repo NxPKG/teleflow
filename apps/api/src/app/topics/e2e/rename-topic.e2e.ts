@@ -1,5 +1,5 @@
 import { SubscribersService, UserSession } from '@teleflow/testing';
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { ExternalSubscriberId, TopicId, TopicKey } from '@novu/shared';
 import { expect } from 'chai';
 

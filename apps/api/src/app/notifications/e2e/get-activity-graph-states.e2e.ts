@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { format } from 'date-fns';
 import { UserSession } from '@teleflow/testing';
-import { NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@novu/shared';
 
 describe('Get activity feed graph stats - /notifications/graph/stats (GET)', async () => {

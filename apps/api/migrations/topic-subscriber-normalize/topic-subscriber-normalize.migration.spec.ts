@@ -3,7 +3,7 @@ import { beforeEach } from 'mocha';
 import { expect } from 'chai';
 
 import { ExternalSubscriberId, TopicId, TopicKey, TopicName } from '@novu/shared';
-import { SubscriberEntity, SubscriberRepository, TopicSubscribersRepository } from '@novu/dal';
+import { SubscriberEntity, SubscriberRepository, TopicSubscribersRepository } from '@teleflow/dal';
 import { UserSession, SubscribersService } from '@teleflow/testing';
 
 import { topicSubscriberNormalize } from './topic-subscriber-normalize.migration';

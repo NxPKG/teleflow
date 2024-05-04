@@ -1,5 +1,5 @@
 import { ClassSerializerInterceptor, Controller, Get, Param, UseInterceptors } from '@nestjs/common';
-import { EnvironmentRepository, NotificationTemplateRepository } from '@novu/dal';
+import { EnvironmentRepository, NotificationTemplateRepository } from '@teleflow/dal';
 
 import { GroupedBlueprintResponse } from './dto/grouped-blueprint.response.dto';
 import { GetBlueprint, GetBlueprintCommand } from './usecases/get-blueprint';
