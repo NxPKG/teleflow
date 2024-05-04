@@ -1,5 +1,5 @@
 import React from 'react';
-import { INovuPopoverTheme, ITelelfowTheme, ThemeContext } from './novu-theme.context';
+import { INovuPopoverTheme, ITelelfowTheme, ThemeContext } from './teleflow-theme.context';
 import { ColorScheme } from '../index';
 import { getDefaultTheme } from '../utils/defaultTheme';
 

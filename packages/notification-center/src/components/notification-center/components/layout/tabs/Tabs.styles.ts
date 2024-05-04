@@ -1,6 +1,6 @@
 import { createStyles, MantineTheme } from '@mantine/core';
-import { ITelelfowTheme } from '../../../../../store/novu-theme.context';
-import { ICommonTheme } from '../../../../../store/novu-theme-provider.context';
+import { ITelelfowTheme } from '../../../../../store/teleflow-theme.context';
+import { ICommonTheme } from '../../../../../store/teleflow-theme-provider.context';
 import { colors } from '../../../../../shared/config/colors';
 
 export default createStyles(

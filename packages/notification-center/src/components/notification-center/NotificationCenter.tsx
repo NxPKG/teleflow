@@ -8,7 +8,7 @@ import { useNotifications, useNovuContext } from '../../hooks';
 import { NotificationCenterContext } from '../../store/notification-center.context';
 import { ITab, ListItem, ScreensEnum } from '../../shared/interfaces';
 import { ColorScheme } from '../../shared/config/colors';
-import { ITelelfowThemeProvider, TelelfowThemeProvider } from '../../store/novu-theme-provider.context';
+import { ITelelfowThemeProvider, TelelfowThemeProvider } from '../../store/teleflow-theme-provider.context';
 
 export interface INotificationCenterProps {
   onUrlChange?: (url: string) => void;

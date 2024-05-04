@@ -8,8 +8,8 @@ import {
   defaultNotificationBellDarkTheme,
   defaultNotificationBellLightTheme,
 } from '../shared/config/themeDefaultValues';
-import { ICommonTheme, ITelelfowThemeProvider } from '../store/novu-theme-provider.context';
-import { INotificationBellColors, ITelelfowTheme } from '../store/novu-theme.context';
+import { ICommonTheme, ITelelfowThemeProvider } from '../store/teleflow-theme-provider.context';
+import { INotificationBellColors, ITelelfowTheme } from '../store/teleflow-theme.context';
 import { ColorScheme } from '../index';
 
 interface IDefaultThemeProps {

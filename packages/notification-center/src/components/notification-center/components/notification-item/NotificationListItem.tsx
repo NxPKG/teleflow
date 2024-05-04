@@ -16,7 +16,7 @@ import {
 import { useTelelfowTheme, useNotificationCenter, useTranslations, useNotifications } from '../../../../hooks';
 import { getDefaultBellColors } from '../../../../utils/defaultTheme';
 import { ActionContainer } from './ActionContainer';
-import { ITelelfowTheme } from '../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../store/teleflow-theme.context';
 import { When } from '../../../../shared/utils/When';
 import { ColorScheme } from '../../../../shared/config/colors';
 import { shadows } from '../../../../shared/config/shadows';

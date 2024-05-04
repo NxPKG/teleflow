@@ -4,7 +4,7 @@ import { css, cx } from '@emotion/css';
 import { Accordion, Divider } from '@mantine/core';
 import type { IUserPreferenceSettings } from '@novu/client';
 
-import { IThemeUserPreferences } from '../../../../store/novu-theme.context';
+import { IThemeUserPreferences } from '../../../../store/teleflow-theme.context';
 import { useStyles } from '../../../../store/styles';
 import { useTelelfowTheme, useUpdateUserPreferences } from '../../../../hooks';
 import { WorkflowHeader } from './WorkflowHeader';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IStyleButtons } from '@novu/shared';
 import { ColorScheme } from '../index';
-import { ICommonTheme } from './novu-theme-provider.context';
+import { ICommonTheme } from './teleflow-theme-provider.context';
 
 export interface IThemeContext {
   colorScheme: ColorScheme;

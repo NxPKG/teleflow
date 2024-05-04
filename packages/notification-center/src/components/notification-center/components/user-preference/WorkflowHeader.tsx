@@ -3,7 +3,7 @@ import { css, cx } from '@emotion/css';
 
 import { Text, TextBlock } from './styles';
 import { useStyles } from '../../../../store/styles';
-import type { IThemeUserPreferences } from '../../../../store/novu-theme.context';
+import type { IThemeUserPreferences } from '../../../../store/teleflow-theme.context';
 
 const preferencesTitleClassName = (theme) => css`
   color: ${theme?.accordion?.fontColor};

@@ -5,7 +5,7 @@ import { ApiService } from '@novu/client';
 
 import type { I18NLanguage, ITranslationEntry } from '../../i18n/lang';
 import { NotificationsProvider } from '../../store/notifications-provider.context';
-import { NovuContext } from '../../store/novu-provider.context';
+import { NovuContext } from '../../store/teleflow-provider.context';
 import { NovuI18NProvider } from '../../store/i18n.context';
 import type { IStore, ISession, IFetchingStrategy } from '../../shared/interfaces';
 import { INotificationCenterStyles, StylesProvider } from '../../store/styles';

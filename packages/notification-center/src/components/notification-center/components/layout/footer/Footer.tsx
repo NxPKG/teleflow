@@ -3,7 +3,7 @@ import React from 'react';
 import { css, cx } from '@emotion/css';
 
 import { useTelelfowTheme, useTranslations } from '../../../../../hooks';
-import { ITelelfowTheme } from '../../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../../store/teleflow-theme.context';
 import { useStyles } from '../../../../../store/styles';
 
 export function Footer() {

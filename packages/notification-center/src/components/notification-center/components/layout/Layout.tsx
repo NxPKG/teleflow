@@ -10,7 +10,7 @@ import { Loader } from '../Loader';
 import { useNotificationCenter, useNovuContext, useTelelfowTheme } from '../../../../hooks';
 import { SubscriberPreference } from '../user-preference/SubscriberPreference';
 import { FeedsTabs } from '../FeedsTabs';
-import { ITelelfowTheme } from '../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../store/teleflow-theme.context';
 import { useStyles } from '../../../../store/styles';
 import { ScreensEnum } from '../../../../shared/interfaces';
 

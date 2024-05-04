@@ -7,7 +7,7 @@ import { useNotifications, useTelelfowTheme, useTranslations } from '../../../..
 import { Cogs } from '../../../../../shared/icons';
 import { INotificationCenterContext } from '../../../../../shared/interfaces';
 import { NotificationCenterContext } from '../../../../../store/notification-center.context';
-import { ITelelfowTheme } from '../../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../../store/teleflow-theme.context';
 import { useStyles } from '../../../../../store/styles';
 import { UnseenBadge } from '../../UnseenBadge';
 

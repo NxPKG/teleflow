@@ -19,7 +19,7 @@ export * from './process-subscriber';
 export * from './select-integration';
 export * from './select-variant';
 export * from './get-feature-flag';
-export * from './get-novu-provider-credentials';
+export * from './get-teleflow-provider-credentials';
 export * from './update-tenant';
 export * from './create-tenant';
 export * from './get-tenant';

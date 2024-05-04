@@ -11,7 +11,7 @@ import {
 import { AnalyticsService } from '../../services/analytics.service';
 import { CalculateLimitNovuIntegration } from '../calculate-limit-teleflow-integration';
 
-import { GetNovuProviderCredentialsCommand } from './get-novu-provider-credentials.command';
+import { GetNovuProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
 
 @Injectable()
 export class GetNovuProviderCredentials {

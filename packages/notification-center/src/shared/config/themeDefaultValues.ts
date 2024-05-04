@@ -2,8 +2,8 @@ import { darkButtonStyle, lightButtonStyle } from '@novu/shared';
 
 import { colors } from './colors';
 import { shadows } from './shadows';
-import { INotificationBellColors, ITelelfowTheme } from '../../store/novu-theme.context';
-import { ICommonTheme } from '../../store/novu-theme-provider.context';
+import { INotificationBellColors, ITelelfowTheme } from '../../store/teleflow-theme.context';
+import { ICommonTheme } from '../../store/teleflow-theme-provider.context';
 
 const defaultLightTheme: ITelelfowTheme = {
   layout: {
