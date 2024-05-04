@@ -3,18 +3,18 @@ import { css, cx } from '@emotion/css';
 import styled from '@emotion/styled';
 import { ActionIcon } from '@mantine/core';
 
-import { useNotifications, useNovuTheme, useTranslations } from '../../../../../hooks';
+import { useNotifications, useTelelfowTheme, useTranslations } from '../../../../../hooks';
 import { Cogs } from '../../../../../shared/icons';
 import { INotificationCenterContext } from '../../../../../shared/interfaces';
 import { NotificationCenterContext } from '../../../../../store/notification-center.context';
-import { INovuTheme } from '../../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../../store/novu-theme.context';
 import { useStyles } from '../../../../../store/styles';
 import { UnseenBadge } from '../../UnseenBadge';
 
 export function Header({ onCogClick }: { onCogClick?: () => void }) {
   const [allRead, setAllRead] = useState<boolean>(true);
   const { markAllNotificationsAsRead, notifications, unseenCount } = useNotifications();
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const { tabs, showUserPreferences } = useContext<INotificationCenterContext>(NotificationCenterContext);
   const { t } = useTranslations();
   const [headerStyles, headerTitleStyles, headerMarkAsReadStyles, headerCogStyles] = useStyles([
@@ -79,7 +79,7 @@ const ActionItems = styled.div`
   align-items: center;
 `;
 
-const cogClassName = (theme: INovuTheme) => css`
+const cogClassName = (theme: ITelelfowTheme) => css`
   color: ${theme?.userPreferences?.settingsButtonColor};
 `;
 

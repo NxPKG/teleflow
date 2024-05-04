@@ -3,14 +3,14 @@ import { Popover as MantinePopover, PopoverProps, createStyles, MantineTheme } f
 import styled from '@emotion/styled';
 import { css } from '@emotion/css';
 
-import { INovuTheme } from '../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../store/novu-theme.context';
 import { useStyles } from '../../../store/styles';
 import { useNotifications } from '../../../hooks';
 
 interface INovuPopoverProps {
   bell: (props: any) => JSX.Element;
   children: JSX.Element;
-  theme: INovuTheme;
+  theme: ITelelfowTheme;
   offset?: number;
   position?: PopoverProps['position'];
 }

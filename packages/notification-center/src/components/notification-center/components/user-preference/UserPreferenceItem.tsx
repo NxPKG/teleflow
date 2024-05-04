@@ -6,7 +6,7 @@ import type { IUserPreferenceSettings } from '@novu/client';
 
 import { IThemeUserPreferences } from '../../../../store/novu-theme.context';
 import { useStyles } from '../../../../store/styles';
-import { useNovuTheme, useUpdateUserPreferences } from '../../../../hooks';
+import { useTelelfowTheme, useUpdateUserPreferences } from '../../../../hooks';
 import { WorkflowHeader } from './WorkflowHeader';
 import { getChannel } from './channels';
 import { ChannelPreference } from './ChannelPreference';
@@ -30,7 +30,7 @@ function getEnabledChannels(channels): string {
 }
 
 export const UserPreferenceItem = ({ preferenceSettings }: { preferenceSettings?: IUserPreferenceSettings }) => {
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const { isLoading: isPreferenceUpdating, updateUserPreferences } = useUpdateUserPreferences();
   const [itemDividerStyles] = useStyles(['preferences.item.divider']);
 

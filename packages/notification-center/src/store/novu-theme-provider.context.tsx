@@ -1,17 +1,17 @@
 import React from 'react';
-import { INovuPopoverTheme, INovuTheme, ThemeContext } from './novu-theme.context';
+import { INovuPopoverTheme, ITelelfowTheme, ThemeContext } from './novu-theme.context';
 import { ColorScheme } from '../index';
 import { getDefaultTheme } from '../utils/defaultTheme';
 
-export interface INovuThemePopoverProvider {
+export interface ITelelfowThemePopoverProvider {
   light?: INovuPopoverTheme;
   dark?: INovuPopoverTheme;
   common?: ICommonTheme;
 }
 
-export interface INovuThemeProvider {
-  light?: INovuTheme;
-  dark?: INovuTheme;
+export interface ITelelfowThemeProvider {
+  light?: ITelelfowTheme;
+  dark?: ITelelfowTheme;
   common?: ICommonTheme;
 }
 
@@ -19,13 +19,13 @@ export interface ICommonTheme {
   fontFamily?: string;
 }
 
-interface INovuThemeProviderProps {
+interface ITelelfowThemeProviderProps {
   children: React.ReactNode;
   colorScheme: ColorScheme;
-  theme: INovuThemeProvider;
+  theme: ITelelfowThemeProvider;
 }
 
-export function NovuThemeProvider(props: INovuThemeProviderProps) {
+export function TelelfowThemeProvider(props: ITelelfowThemeProviderProps) {
   const { theme, common } = getDefaultTheme({ colorScheme: props.colorScheme, theme: props.theme });
 
   return (

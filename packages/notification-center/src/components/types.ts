@@ -2,10 +2,10 @@ import { CSSInterpolation } from '@emotion/css';
 
 import { ColorScheme } from '../shared/config/colors';
 import { ICommonTheme } from '../store/novu-theme-provider.context';
-import { INovuTheme } from '../store/novu-theme.context';
+import { ITelelfowTheme } from '../store/novu-theme.context';
 
 export type CSSFunctionInterpolation = (args: {
-  theme: INovuTheme;
+  theme: ITelelfowTheme;
   common: ICommonTheme;
   colorScheme: ColorScheme;
 }) => CSSInterpolation;

@@ -2,11 +2,11 @@ import React from 'react';
 import { Badge } from '@mantine/core';
 import { cx, css } from '@emotion/css';
 
-import { useNovuTheme } from '../../../hooks';
+import { useTelelfowTheme } from '../../../hooks';
 import { useStyles } from '../../../store/styles';
 
 export function UnseenBadge({ unseenCount }: { unseenCount: number }) {
-  const { theme, common } = useNovuTheme();
+  const { theme, common } = useTelelfowTheme();
   const [unseenBadgeStyles] = useStyles('unseenBadge.root');
   const showUnseenBadge = unseenCount && unseenCount > 0;
 

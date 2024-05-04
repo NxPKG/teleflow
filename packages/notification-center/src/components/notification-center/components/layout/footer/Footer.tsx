@@ -2,12 +2,12 @@
 import React from 'react';
 import { css, cx } from '@emotion/css';
 
-import { useNovuTheme, useTranslations } from '../../../../../hooks';
-import { INovuTheme } from '../../../../../store/novu-theme.context';
+import { useTelelfowTheme, useTranslations } from '../../../../../hooks';
+import { ITelelfowTheme } from '../../../../../store/novu-theme.context';
 import { useStyles } from '../../../../../store/styles';
 
 export function Footer() {
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const { t } = useTranslations();
   const [footerStyles, footerTitleStyles] = useStyles(['footer.root', 'footer.title']);
 
@@ -61,7 +61,7 @@ export function Footer() {
     </div>
   );
 }
-const footerPoweredByClassName = (novuTheme: INovuTheme) => css`
+const footerPoweredByClassName = (novuTheme: ITelelfowTheme) => css`
   color: ${novuTheme.footer.logoPrefixFontColor};
   font-size: 10px;
   font-weight: 400;

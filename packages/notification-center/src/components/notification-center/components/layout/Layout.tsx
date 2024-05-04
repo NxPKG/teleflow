@@ -7,17 +7,17 @@ import { UserPreferenceHeader } from './header/UserPreferenceHeader';
 import { FooterContainer as Footer } from './footer/FooterContainer';
 
 import { Loader } from '../Loader';
-import { useNotificationCenter, useNovuContext, useNovuTheme } from '../../../../hooks';
+import { useNotificationCenter, useNovuContext, useTelelfowTheme } from '../../../../hooks';
 import { SubscriberPreference } from '../user-preference/SubscriberPreference';
 import { FeedsTabs } from '../FeedsTabs';
-import { INovuTheme } from '../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../store/novu-theme.context';
 import { useStyles } from '../../../../store/styles';
 import { ScreensEnum } from '../../../../shared/interfaces';
 
 export function Layout() {
   const { header } = useNotificationCenter();
   const { isSessionInitialized } = useNovuContext();
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const [layoutStyles] = useStyles(['layout.root']);
   const [screen, setScreen] = useState<ScreensEnum>(ScreensEnum.NOTIFICATIONS);
 
@@ -59,7 +59,7 @@ const ContentWrapper = styled.div`
   min-height: 400px;
 `;
 
-const layoutWrapperCss = (novuTheme: INovuTheme) => css`
+const layoutWrapperCss = (novuTheme: ITelelfowTheme) => css`
   padding: 15px 0;
   height: auto;
   border-radius: 7px;
