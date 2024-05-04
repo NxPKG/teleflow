@@ -7,7 +7,7 @@ export default defineConfig({
     runMode: 3,
     openMode: 0,
   },
-  projectId: 'kedzap',
+  projectId: 'wbo6rk',
   env: {
     NODE_ENV: 'test',
     API_URL: 'http://127.0.0.1:1336',

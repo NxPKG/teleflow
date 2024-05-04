@@ -1,13 +1,13 @@
 {
   "extends": "@nrwl/workspace/presets/npm.json",
-  "npmScope": "novuhq",
+  "npmScope": "khulnasoft",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": ["build", "test", "lint", "package", "prepare"],
         "canTrackAnalytics": false,
-        "accessToken": "N2EyNDhhMGUtYmJkNS00YzQ5LTg5NDYtODg5ZmE2NDE5YWNmfHJlYWQtd3JpdGU="
+        "accessToken": "ZjZkNTBmNjMtNWFmMi00YTA3LThjZDQtZjU0MTQ2NGFlMzZhfHJlYWQtd3JpdGU="
       }
     }
   },
