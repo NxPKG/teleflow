@@ -17,7 +17,7 @@
       "path": "apps/web"
     },
     {
-      "name": "🚀 @novu/ws",
+      "name": "🚀 @teleflow/ws",
       "path": "apps/ws"
     },
     {
@@ -65,7 +65,7 @@
       "path": "packages/stateless"
     },
     {
-      "name": "📦 @novu/node",
+      "name": "📦 @teleflow/node",
       "path": "packages/node"
     },
     {
@@ -129,7 +129,7 @@
       "path": "providers/nexmo"
     },
     {
-      "name": "🔔 @novu/nodemailer",
+      "name": "🔔 @teleflow/nodemailer",
       "path": "providers/nodemailer"
     },
     {

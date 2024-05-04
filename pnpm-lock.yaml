@@ -288,7 +288,7 @@ importers:
       '@novu/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
-      '@novu/node':
+      '@teleflow/node':
         specifier: ^0.24.1
         version: link:../../packages/node
       '@novu/shared':
@@ -3164,7 +3164,7 @@ importers:
       '@novu/nexmo':
         specifier: ^0.24.1
         version: link:../../providers/nexmo
-      '@novu/nodemailer':
+      '@teleflow/nodemailer':
         specifier: ^0.24.1
         version: link:../../providers/nodemailer
       '@novu/one-signal':

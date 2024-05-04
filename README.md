@@ -17,11 +17,11 @@
 <br/>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@novu/node">
-    <img src="https://img.shields.io/npm/v/@novu/node" alt="NPM">
+  <a href="https://www.npmjs.com/package/@teleflow/node">
+    <img src="https://img.shields.io/npm/v/@teleflow/node" alt="NPM">
   </a>
-  <a href="https://www.npmjs.com/package/@novu/node">
-    <img src="https://img.shields.io/npm/dm/@novu/node" alt="npm downloads">
+  <a href="https://www.npmjs.com/package/@teleflow/node">
+    <img src="https://img.shields.io/npm/dm/@teleflow/node" alt="npm downloads">
   </a>
   <img src="https://img.shields.io/github/license/novuhq/novu" alt="MIT">
 </p>
@@ -212,7 +212,6 @@ Novu provides a single API to manage providers across multiple channels with a s
 - [x] [Infobip](https://github.com/novuhq/novu/tree/main/providers/infobip)
 - [ ] Bandwidth
 - [ ] RingCentral
-
 
 #### 📱 Push
 

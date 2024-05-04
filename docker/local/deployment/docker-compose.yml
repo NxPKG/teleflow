@@ -99,7 +99,7 @@ services:
       BROADCAST_QUEUE_CHUNK_SIZE: ${BROADCAST_QUEUE_CHUNK_SIZE}
       MULTICAST_QUEUE_CHUNK_SIZE: ${MULTICAST_QUEUE_CHUNK_SIZE}
   ws:
-    image: 'ghcr.io/novuhq/novu/ws:0.24.0'
+    image: 'ghcr.io/novuhq/teleflow/ws:0.24.0'
     depends_on:
       - mongodb
       - redis

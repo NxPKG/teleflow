@@ -1,5 +1,5 @@
 {
-  "name": "@novu/nodemailer",
+  "name": "@teleflow/nodemailer",
   "version": "0.24.1",
   "description": "A nodemailer wrapper for novu",
   "main": "build/main/index.js",

@@ -1,10 +1,10 @@
 # Novu Slack Provider
 
-A Slack chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A Slack chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
-````javascript
+```javascript
 import { SlackProvider } from '@novu/slack';
 
 const provider = new SlackProvider({
@@ -12,4 +12,4 @@ const provider = new SlackProvider({
   clientID: process.env.CLIENT_ID,
   secretKey: process.env.SECRET_KEY,
 });
-````
+```

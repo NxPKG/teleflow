@@ -4,7 +4,7 @@
   - apps/worker/**/*
 '@novu/web':
   - apps/web/**/*
-'@novu/ws':
+'@teleflow/ws':
   - apps/ws/**/*
 '@novu/inbound-mail':
   - apps/inbound-mail/**/*

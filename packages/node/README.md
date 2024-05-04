@@ -50,17 +50,17 @@ Building a notification system is hard, at first it seems like just sending an e
 ## 📦 Install
 
 ```bash
-npm install @novu/node
+npm install @teleflow/node
 ```
 
 ```bash
-yarn add @novu/node
+yarn add @teleflow/node
 ```
 
 ## 🔨 Usage
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu(process.env.NOVU_API_KEY);
 
@@ -161,7 +161,7 @@ Novu provides a single API to manage providers across multiple channels with a s
 - #### List all subscribers
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -174,7 +174,7 @@ await novu.subscribers.list(page, limit);
 - #### Identify (create) a new subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -196,7 +196,7 @@ await novu.subscribers.identify('subscriberId', {
 - #### Bulk create subscribers
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -234,7 +234,7 @@ await novu.subscribers.identify([
 - #### Get a single subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -244,7 +244,7 @@ await novu.subscribers.get('subscriberId');
 - #### Update a subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -266,7 +266,7 @@ await novu.subscribers.update("subscriberId",{
 - #### Update provider credentials
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -294,7 +294,7 @@ await novu.subscribers.setCredentials(
 - #### Delete provider credentials
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -308,7 +308,7 @@ await novu.subscribers.deleteCredentials('subscriberId', 'slack');
 - #### Delete a subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -318,7 +318,7 @@ await novu.subscribers.delete('subscriberId');
 - #### Update online status
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -329,7 +329,7 @@ await novu.subscribers.updateOnlineStatus('subscriberId', false);
 - #### Get subscriber preference for all workflows
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -339,7 +339,7 @@ await novu.subscribers.getPreference('subscriberId');
 - #### Get subscriber global preference
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -349,7 +349,7 @@ await novu.subscribers.getGlobalPreference('subscriberId');
 - #### Get subscriber preference by level
 
 ```ts
-import { Novu, PreferenceLevelEnum } from '@novu/node';
+import { Novu, PreferenceLevelEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 // Get global level preference
@@ -368,7 +368,7 @@ await novu.subscribers.getPreferenceByLevel(
 - #### Update subscriber preference for a workflow
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -392,7 +392,7 @@ await novu.subscribers.updatePreference('subscriberId', 'workflowId', {
 - #### Update subscriber preference globally
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -415,7 +415,7 @@ await novu.subscribers.updateGlobalPreference('subscriberId', {
 - #### Get in-app messages (notifications) feed for a subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -437,7 +437,7 @@ await novu.subscribers.getNotificationsFeed("subscriberId", params);
 - #### Get seen/unseen in-app messages (notifications) count
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -451,7 +451,7 @@ await novu.subscribers.getUnseenCount('subscriberId', false);
 - #### Mark an in-app message (notification) as seen/unseen/read/unread
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -470,7 +470,7 @@ await novu.subscribers.markMessageAs('subscriberId', 'messageId', {
 - #### Mark all in-app messages (notifications) as seen/unseen/read/unread
 
 ```ts
-import { Novu, MarkMessagesAsEnum } from '@novu/node';
+import { Novu, MarkMessagesAsEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -492,7 +492,7 @@ await novu.subscribers.markAllMessagesAs(
 - #### Mark in-app message (notification) action as seen
 
 ```ts
-import { Novu, ButtonTypeEnum, MessageActionStatusEnum } from '@novu/node';
+import { Novu, ButtonTypeEnum, MessageActionStatusEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -522,7 +522,7 @@ await novu.subscribers.markMessageActionSeen(
 - #### Trigger workflow to one subscriber
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -577,7 +577,7 @@ await novu.events.trigger("workflowIdentifier", {
 - #### Trigger workflow to multiple subscribers
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -630,7 +630,7 @@ await novu.events.trigger("workflowIdentifier", {
 - #### Trigger to a topic
 
 ```ts
-import { Novu, TriggerRecipientsTypeEnum } from '@novu/node';
+import { Novu, TriggerRecipientsTypeEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -647,7 +647,7 @@ await novu.events.trigger('workflowIdentifier', {
 There is a limit of 100 items in the array of bulkTrigger.
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -694,7 +694,7 @@ await novu.events.bulkTrigger([
 - #### Broadcast to all subscribers
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -717,7 +717,7 @@ await novu.events.broadcast('workflowIdentifier', {
 - #### Cancel the triggered workflow
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -729,7 +729,7 @@ await novu.events.cancel('transactionId');
 - #### List all messages
 
 ```ts
-import { Novu, ChannelTypeEnum } from '@novu/node';
+import { Novu, ChannelTypeEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -747,7 +747,7 @@ await novu.messages.list(params);
 - #### Delete a message by `messageId`
 
 ```ts
-import { Novu, ChannelTypeEnum } from '@novu/node';
+import { Novu, ChannelTypeEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -759,7 +759,7 @@ await novu.messages.deleteById('messageId');
 - #### Create a layout
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -784,7 +784,7 @@ await novu.layouts.create(payload);
 - #### Update a layout
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -809,7 +809,7 @@ await novu.layouts.update("layoutId", payloadToUpdate);
 - #### Set a layout as the default layout
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -819,7 +819,7 @@ await novu.layouts.setDefault('layoutId');
 - #### Get a layout by `layoutId`
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -829,7 +829,7 @@ await novu.layouts.get('layoutId');
 - #### Delete a layout by `layoutId`
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -839,7 +839,7 @@ await novu.layouts.delete('layoutId');
 - #### List all layouts
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -856,7 +856,7 @@ await novu.layouts.list(params);
 ### Notification Groups
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -881,7 +881,7 @@ await novu.notificationGroups.delete('notificationGroupId');
 ### Topics
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -928,7 +928,7 @@ await novu.topics.rename('topicKey', 'New Topic Name');
 ### Integrations
 
 ```ts
-import { Novu, ChannelTypeEnum, ProvidersIdEnum } from '@novu/node';
+import { Novu, ChannelTypeEnum, ProvidersIdEnum } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -978,7 +978,7 @@ await novu.integrations.setIntegrationAsPrimary("integrationId")
 ### Feeds
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -999,7 +999,7 @@ await novu.feeds.delete('feedId');
 ### Changes
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1025,7 +1025,7 @@ await novu.changes.applyMany(['changeId1', 'changeId2']);
 ### Environments
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1058,7 +1058,7 @@ await novu.environments.regenerateApiKeys();
 ### Tenants
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1112,7 +1112,7 @@ import {
   TemplateVariableTypeEnum,
   FilterPartTypeEnum,
   StepTypeEnum,
-} from '@novu/node';
+} from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1179,7 +1179,7 @@ import {
   TemplateVariableTypeEnum,
   FilterPartTypeEnum,
   StepTypeEnum,
-} from '@novu/node';
+} from '@teleflow/node';
 
 // update a workflow
 
@@ -1212,7 +1212,7 @@ await novu.notificationTemplates.getAll({
 - #### List all organizations
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1222,7 +1222,7 @@ await novu.organizations.list();
 - #### Create new organization
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1232,7 +1232,7 @@ await novu.organizations.create({ name: 'New Organization' });
 - #### Rename organization
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1242,7 +1242,7 @@ await novu.organizations.rename({ name: 'Renamed Organization' });
 - #### Get current organization details
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1252,7 +1252,7 @@ await novu.organizations.getCurrent();
 - #### Remove member from organization
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1262,7 +1262,7 @@ await novu.organizations.removeMember('memberId');
 - #### Update organization member role
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1274,7 +1274,7 @@ await novu.organizations.updateMemberRole('memberId', {
 - #### Get all members of organization
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1284,7 +1284,7 @@ await novu.organizations.getMembers();
 - #### Update organization branding details
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1298,7 +1298,7 @@ await novu.organizations.updateBranding({
 ### Inbound Parse
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1309,7 +1309,7 @@ await novu.inboundParse.getMxStatus();
 ### Execution Details
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1327,7 +1327,7 @@ await novu.executionDetails.get(executionDetailsParams);
 - #### Create new workflow override
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1348,7 +1348,7 @@ await novu.workflowOverrides.create({
 - #### List all workflow overrides
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1358,7 +1358,7 @@ await novu.workflowOverrides.list(3, 10);
 - #### Get workflow override by id
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1368,7 +1368,7 @@ await novu.workflowOverrides.getOneById('overrideId_123');
 - #### Get workflow override by tenant and workflow ids
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1381,7 +1381,7 @@ await novu.workflowOverrides.getOneByTenantIdandWorkflowId(
 - #### Update workflow override by tenant and workflow ids
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1397,7 +1397,7 @@ await novu.workflowOverrides.updateOneByTenantIdandWorkflowId(
 - #### Update workflow override by id
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 
@@ -1409,7 +1409,7 @@ await novu.workflowOverrides.updateOneById('OVERRIDE_ID', {
 - #### Delete workflow override
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu('<NOVU_API_KEY>');
 

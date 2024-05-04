@@ -5,7 +5,7 @@ A nodemailer email provider library for [@novu/stateless](https://github.com/nov
 ## Usage
 
 ```javascript
-import { NodemailerProvider } from '@novu/nodemailer';
+import { NodemailerProvider } from '@teleflow/nodemailer';
 
 const provider = new NodemailerProvider({
   from: process.env.NODEMAILER_FROM_EMAIL,
@@ -43,7 +43,7 @@ NODEMAILER_TLS_OPTIONS={"rejectUnauthorized":false}
 ```
 
 ```javascript
-import { NodemailerProvider } from '@novu/nodemailer';
+import { NodemailerProvider } from '@teleflow/nodemailer';
 
 const provider = new NodemailerProvider({
   from: process.env.NODEMAILER_FROM_EMAIL,

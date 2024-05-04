@@ -1,6 +1,6 @@
 # Novu RocketChat Provider
 
-A RocketChat chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A RocketChat chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

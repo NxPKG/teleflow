@@ -1,12 +1,13 @@
 # NestJS Module Wrapper
 
-A NestJS module wrapper for [@novu/node](https://github.com/novuhq/novu)
+A NestJS module wrapper for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
 Initializing module with templates and providers:
+
 ```javascript
-    import { NovuModule } from "@novu/nest";
+    import { NovuModule } from "@teleflow/nest";
 
     @Module({
       imports: [
@@ -42,7 +43,7 @@ Using novu's singleton service in other services and modules:
 
 ```javascript
 import { Injectable, Inject } from '@nestjs/common';
-import { NovuService } from '@novu/nest';
+import { NovuService } from '@teleflow/nest';
 
 @Injectable()
 export class UserService {

@@ -1,6 +1,6 @@
 # Novu Gupshup Provider
 
-A Gupshup sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Gupshup sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,7 +8,7 @@ A Gupshup sms provider library for [@novu/node](https://github.com/novuhq/novu)
 import { GupshupSmsProvider } from '@novu/gupshup';
 
 const provider = new GupshupSmsProvider({
-    userId: process.env.GUPSHUP_USER_ID,
-    password: process.env.GUPSHUP_PASSWORD
+  userId: process.env.GUPSHUP_USER_ID,
+  password: process.env.GUPSHUP_PASSWORD,
 });
 ```

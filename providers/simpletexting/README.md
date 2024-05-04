@@ -1,6 +1,6 @@
 # Novu Simpletexting Provider
 
-A Simpletexting sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Simpletexting sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -9,6 +9,6 @@ import { SimpletextingSmsProvider } from '@novu/simpletexting';
 
 const provider = new SimpletextingSmsProvider({
   apiKey: process.env.SIMPLETEXTING_API_KEY,
-  from: process.env.SENDER_PHONE
-  });
+  from: process.env.SENDER_PHONE,
+});
 ```
