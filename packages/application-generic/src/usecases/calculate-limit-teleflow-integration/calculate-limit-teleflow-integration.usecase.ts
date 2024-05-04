@@ -10,8 +10,8 @@ import {
 import {
   areNovuEmailCredentialsSet,
   areNovuSmsCredentialsSet,
-} from '../../utils/novu-integrations';
-import { CalculateLimitNovuIntegrationCommand } from './calculate-limit-novu-integration.command';
+} from '../../utils/teleflow-integrations';
+import { CalculateLimitNovuIntegrationCommand } from './calculate-limit-teleflow-integration.command';
 
 @Injectable()
 export class CalculateLimitNovuIntegration {

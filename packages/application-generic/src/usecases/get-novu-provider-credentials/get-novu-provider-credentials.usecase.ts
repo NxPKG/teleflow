@@ -9,7 +9,7 @@ import {
   SmsProviderIdEnum,
 } from '@novu/shared';
 import { AnalyticsService } from '../../services/analytics.service';
-import { CalculateLimitNovuIntegration } from '../calculate-limit-novu-integration';
+import { CalculateLimitNovuIntegration } from '../calculate-limit-teleflow-integration';
 
 import { GetNovuProviderCredentialsCommand } from './get-novu-provider-credentials.command';
 

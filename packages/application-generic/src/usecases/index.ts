@@ -1,4 +1,4 @@
-export * from './calculate-limit-novu-integration';
+export * from './calculate-limit-teleflow-integration';
 export * from './create-execution-details';
 export * from './bulk-create-execution-details';
 export * from './digest-filter-steps';

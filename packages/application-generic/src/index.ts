@@ -18,7 +18,7 @@ export * from './utils/email-normalization';
 export * from './utils/digest';
 export * from './utils/object';
 export * from './utils/hmac';
-export * from './utils/novu-integrations';
+export * from './utils/teleflow-integrations';
 export * from './utils/require-inject';
 export * from './utils/variants';
 export * from './decorators/external-api.decorator';
