@@ -1,5 +1,5 @@
 import { TextInput, useMantineColorScheme } from '@mantine/core';
-import { colors } from '@novu/notification-center';
+import { colors } from '@teleflow/notification-center';
 import { Controller, useFormContext } from 'react-hook-form';
 import { useEnvController } from '../../../hooks';
 import { IForm } from '../components/formTypes';

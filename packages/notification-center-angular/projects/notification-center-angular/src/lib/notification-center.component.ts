@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NotificationCenterWebComponent, NotificationCenterComponentProps } from '@novu/notification-center';
+import { NotificationCenterWebComponent, NotificationCenterComponentProps } from '@teleflow/notification-center';
 
 customElements.define('notification-center-web-component', NotificationCenterWebComponent);
 

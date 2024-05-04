@@ -16,11 +16,11 @@
   - libs/design-system/**/*
 '@novu/shared':
   - libs/shared/**/*
-'@novu/notification-center':
+'@teleflow/notification-center':
   - packages/notification-center/**/*
 '@teleflow/notification-center-vue':
   - packages/notification-center-vue/**/*
-'@novu/notification-center-angular':
+'@teleflow/notification-center-angular':
   - packages/notification-center-angular/**/*
 'providers':
   - providers/**/*

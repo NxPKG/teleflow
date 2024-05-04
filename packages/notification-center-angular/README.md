@@ -4,10 +4,11 @@ This is the Angular workspace root project for Novu Angular libraries and compon
 New libraries should also be added under `/projects/*` by using the `ng generate library <my-lib-name>` command.
 
 ## Publishing
-To publish the `@novu/notification-center-angular` package, simply run `npm run publish:npm`. The following steps will be executed:
+
+To publish the `@teleflow/notification-center-angular` package, simply run `npm run publish:npm`. The following steps will be executed:
 
 1. Build package into the `/dist/notification-center-angular` directory
-2. Publish the `/dist/notification-center-angular` to NPM under @novu/notification-center-angular`
+2. Publish the `/dist/notification-center-angular` to NPM under @teleflow/notification-center-angular`
 
 > ⚠️ Ensure that the `/projects/notification-center-angular/package.json` has the correct `@novu/*` version values before publishing
 

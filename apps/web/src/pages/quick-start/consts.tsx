@@ -32,8 +32,8 @@ interface ISnippetInstructions {
   language?: string;
 }
 
-const installReactNotificationCenter = 'npm install @novu/notification-center';
-const installAngularNotificationCenter = 'npm install @novu/notification-center-angular';
+const installReactNotificationCenter = 'npm install @teleflow/notification-center';
+const installAngularNotificationCenter = 'npm install @teleflow/notification-center-angular';
 const installVueNotificationCenter = 'npm install @teleflow/notification-center-vue';
 
 export const reactStarterSnippet = `import React from 'react';
@@ -41,7 +41,7 @@ import {
   NovuProvider,
   PopoverNotificationCenter,
   NotificationBell,
-} from '@novu/notification-center';
+} from '@teleflow/notification-center';
 
 export const Header = () => {
   return (
@@ -66,7 +66,7 @@ export const angularAppSnippet = `import { CUSTOM_ELEMENTS_SCHEMA, NgModule } fr
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
-import { NotificationCenterModule } from '@novu/notification-center-angular';
+import { NotificationCenterModule } from '@teleflow/notification-center-angular';
 
 @NgModule({
   declarations: [AppComponent],

@@ -710,7 +710,7 @@ importers:
       '@novu/design-system':
         specifier: ^0.24.1
         version: link:../../libs/design-system
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../../packages/notification-center
       '@novu/shared':
@@ -1196,7 +1196,7 @@ importers:
       '@mantine/hooks':
         specifier: 4.2.12
         version: 4.2.12(react@17.0.2)
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../../packages/notification-center
       '@novu/shared':
@@ -2724,7 +2724,7 @@ importers:
 
   libs/embed:
     dependencies:
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../../packages/notification-center
       '@types/iframe-resizer':
@@ -3924,7 +3924,7 @@ importers:
       '@angular/router':
         specifier: ^16.2.0
         version: 16.2.11(@angular/common@16.2.11)(@angular/core@16.2.11)(@angular/platform-browser@16.2.11)(rxjs@7.8.1)
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../notification-center
       rxjs:
@@ -3988,7 +3988,7 @@ importers:
       '@angular/platform-browser-dynamic':
         specifier: ^15.0.0 || ^16.0.0 || ^17.0.0
         version: 16.2.11(@angular/common@16.2.11)(@angular/compiler@16.2.11)(@angular/core@16.2.11)(@angular/platform-browser@16.2.11)
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../../../notification-center
       '@types/react':
@@ -4012,7 +4012,7 @@ importers:
       '@novu/floating-vue':
         specifier: ^2.0.3
         version: 2.0.3(vue@3.2.47)
-      '@novu/notification-center':
+      '@teleflow/notification-center':
         specifier: ^0.24.1
         version: link:../notification-center
       react:
