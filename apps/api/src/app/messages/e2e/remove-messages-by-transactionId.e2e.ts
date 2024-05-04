@@ -1,6 +1,6 @@
 import { MessageRepository, NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
 import { ChannelTypeEnum } from '@novu/shared';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import axios from 'axios';
 import { expect } from 'chai';
 

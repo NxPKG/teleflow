@@ -142,7 +142,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime": "^7.20.13",
     "@novu/dal": "^0.24.1",
-    "@novu/testing": "^0.24.1",
+    "@teleflow/testing": "^0.24.1",
     "@pandacss/dev": "^0.34.0",
     "@playwright/test": "^1.42.1",
     "@storybook/addon-actions": "^7.4.2",

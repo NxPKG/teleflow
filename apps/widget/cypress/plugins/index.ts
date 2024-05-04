@@ -10,7 +10,7 @@
 // ***********************************************************
 
 import { DalService, EnvironmentEntity } from '@novu/dal';
-import { EnvironmentService, NotificationsService, NotificationTemplateService, UserSession } from '@novu/testing';
+import { EnvironmentService, NotificationsService, NotificationTemplateService, UserSession } from '@teleflow/testing';
 
 /**
  * @type {Cypress.PluginConfig}

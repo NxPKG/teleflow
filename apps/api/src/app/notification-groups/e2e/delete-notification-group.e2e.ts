@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 describe('Delete Notification Group - /notification-groups/:id (DELETE)', async () => {
   let session: UserSession;

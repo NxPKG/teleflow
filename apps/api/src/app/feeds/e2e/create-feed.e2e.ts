@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { StepTypeEnum } from '@novu/shared';
 import { CreateWorkflowRequestDto, UpdateWorkflowRequestDto } from '../../workflows/dto';
 import { FeedRepository } from '@novu/dal';

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { SubscribersService, testServer, UserSession } from '@novu/testing';
+import { SubscribersService, testServer, UserSession } from '@teleflow/testing';
 import {
   ChannelCTATypeEnum,
   ChannelTypeEnum,

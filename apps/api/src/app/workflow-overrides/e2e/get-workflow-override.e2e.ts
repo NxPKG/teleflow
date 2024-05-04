@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { IWorkflowOverride } from '@novu/shared';
 import { TenantRepository } from '@novu/dal';
-import { WorkflowOverrideService } from '@novu/testing';
+import { WorkflowOverrideService } from '@teleflow/testing';
 
 describe('Get workflow override - /workflow-overrides/workflows/:workflowId/tenants/:tenantIdentifier (GET)', async () => {
   let session: UserSession;

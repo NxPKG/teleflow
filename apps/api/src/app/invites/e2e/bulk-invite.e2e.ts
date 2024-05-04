@@ -1,5 +1,5 @@
 import { OrganizationRepository, MemberRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { IBulkInviteResponse, MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 import { expect } from 'chai';
 

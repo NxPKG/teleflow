@@ -115,7 +115,7 @@
     "@teleflow/stateless": "^0.24.1",
     "@novu/telnyx": "^0.24.1",
     "@novu/termii": "^0.24.1",
-    "@novu/testing": "^0.24.1",
+    "@teleflow/testing": "^0.24.1",
     "@novu/twilio": "^0.24.1",
     "@novu/zulip": "^0.24.1",
     "@novu/eazy-sms": "^0.24.1",

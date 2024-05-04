@@ -1,4 +1,4 @@
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
 import axios from 'axios';
 import { expect } from 'chai';

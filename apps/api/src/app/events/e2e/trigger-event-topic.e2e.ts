@@ -20,7 +20,7 @@ import {
   DigestUnitEnum,
   DigestTypeEnum,
 } from '@novu/shared';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import axios from 'axios';
 import { expect } from 'chai';
 

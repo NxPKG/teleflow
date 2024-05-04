@@ -19,7 +19,7 @@ import {
   FilterPartTypeEnum,
   TemplateVariableTypeEnum,
 } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 import { CreateWorkflowRequestDto, UpdateWorkflowRequestDto } from '../../workflows/dto';
 

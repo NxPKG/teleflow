@@ -6,7 +6,7 @@ import {
   SubscribersService,
   NotificationsService,
   JobsService,
-} from '@novu/testing';
+} from '@teleflow/testing';
 
 export interface ISessionOptions {
   noEnvironment?: boolean;

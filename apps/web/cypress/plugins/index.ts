@@ -11,8 +11,8 @@ import {
   UserService,
   EnvironmentService,
   CreateTemplatePayload,
-} from '@novu/testing';
-import { JobsService } from '@novu/testing';
+} from '@teleflow/testing';
+import { JobsService } from '@teleflow/testing';
 import {
   ChannelTypeEnum,
   getPopularTemplateIds,

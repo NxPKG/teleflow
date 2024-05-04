@@ -10,7 +10,7 @@ import {
   LayoutName,
   TemplateVariableTypeEnum,
 } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 describe('Promote Layout Changes', () => {
   let session: UserSession;

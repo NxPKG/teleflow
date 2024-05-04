@@ -1,5 +1,5 @@
 import { IntegrationRepository, SubscriberRepository } from '@novu/dal';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { Test } from '@nestjs/testing';
 import { expect } from 'chai';
 import { SharedModule } from '../../../shared/shared.module';

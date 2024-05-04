@@ -1,7 +1,7 @@
 import * as sinon from 'sinon';
 import { expect } from 'chai';
 import { NotificationRepository, OrganizationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ApiServiceLevelEnum } from '@novu/shared';
 
 describe('GetPlatformNotificationUsage', () => {

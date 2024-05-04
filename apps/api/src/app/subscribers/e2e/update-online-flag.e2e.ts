@@ -1,4 +1,4 @@
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { sub } from 'date-fns';
 import { SubscriberEntity } from '@novu/dal';

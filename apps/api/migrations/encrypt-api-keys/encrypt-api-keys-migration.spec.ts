@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { faker } from '@faker-js/faker';
 import { createHash } from 'crypto';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum } from '@teleflow/stateless';
 import { EnvironmentRepository } from '@novu/dal';
 import { decryptApiKey } from '@novu/application-generic';

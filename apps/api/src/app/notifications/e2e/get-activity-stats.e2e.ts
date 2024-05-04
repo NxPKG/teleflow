@@ -7,7 +7,7 @@ import {
   SubscriberRepository,
 } from '@novu/dal';
 import { StepTypeEnum } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { formatISO, subDays, subWeeks, subMonths } from 'date-fns';
 import { v4 as uuid } from 'uuid';

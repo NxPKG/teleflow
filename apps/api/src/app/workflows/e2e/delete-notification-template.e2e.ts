@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession, NotificationTemplateService } from '@novu/testing';
+import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 import {
   NotificationGroupRepository,
   NotificationTemplateRepository,

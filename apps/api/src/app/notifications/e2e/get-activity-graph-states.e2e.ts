@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { format } from 'date-fns';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
 import { ChannelTypeEnum } from '@novu/shared';
 

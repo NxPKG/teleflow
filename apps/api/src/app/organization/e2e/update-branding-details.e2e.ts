@@ -1,5 +1,5 @@
 import { OrganizationRepository } from '@novu/dal';
-import { processTestAgentExpectedStatusCode, UserSession } from '@novu/testing';
+import { processTestAgentExpectedStatusCode, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Update Branding Details - /organizations/branding (PUT)', function () {

@@ -1,5 +1,5 @@
 import { ChannelTypeEnum } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 import { updateGlobalPreferences } from './helpers';

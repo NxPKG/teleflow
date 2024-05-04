@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { faker } from '@faker-js/faker';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { MessageRepository, MessageTemplateRepository } from '@novu/dal';
 import { StepTypeEnum } from '@novu/shared';
 

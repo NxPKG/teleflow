@@ -7,7 +7,7 @@ import {
   JobRepository,
   NotificationRepository,
 } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { sendTrigger } from '../../src/app/events/e2e/trigger-event.e2e';
 import { DelayTypeEnum, DigestUnitEnum, StepTypeEnum } from '@novu/shared';
 import { notificationExpireAt } from './expire-at.migration';

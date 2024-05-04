@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import axios from 'axios';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, ChatProviderIdEnum } from '@novu/shared';
 import { IntegrationRepository, SubscriberRepository } from '@novu/dal';
 import { createHash } from '@novu/application-generic';

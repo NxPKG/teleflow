@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { Test } from '@nestjs/testing';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, EmailBlockTypeEnum } from '@novu/shared';
 import { LayoutRepository, OrganizationRepository, DalService } from '@novu/dal';
 

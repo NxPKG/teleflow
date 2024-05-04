@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum } from '@teleflow/stateless';
 import { IntegrationRepository } from '@novu/dal';
 import { PushProviderIdEnum } from '@novu/shared';

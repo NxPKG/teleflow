@@ -1,5 +1,5 @@
 import { EnvironmentRepository, OrganizationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import * as jwt from 'jsonwebtoken';
 import { expect } from 'chai';
 import { IJwtPayload, MemberRoleEnum } from '@novu/shared';

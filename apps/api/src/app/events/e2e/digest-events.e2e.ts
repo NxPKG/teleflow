@@ -11,7 +11,7 @@ import {
   JobEntity,
 } from '@novu/dal';
 import { StepTypeEnum, DigestTypeEnum, DigestUnitEnum, IDigestRegularMetadata } from '@novu/shared';
-import { UserSession, SubscribersService } from '@novu/testing';
+import { UserSession, SubscribersService } from '@teleflow/testing';
 
 const axiosInstance = axios.create();
 

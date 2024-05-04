@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { IUpdateNotificationTemplateDto } from '@novu/shared';
 import axios from 'axios';
 

@@ -1,6 +1,6 @@
 import { SubscriberEntity } from '@novu/dal';
 import { TopicId } from '@novu/shared';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Remove subscribers to topic - /topics/:topicKey/subscribers/removal (POST)', async () => {

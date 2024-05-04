@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ICreateWorkflowOverrideRequestDto, IUpdateWorkflowOverrideRequestDto } from '@novu/shared';
 import { NotificationTemplateRepository, TenantRepository } from '@novu/dal';
 

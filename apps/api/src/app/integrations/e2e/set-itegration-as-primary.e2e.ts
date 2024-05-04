@@ -1,5 +1,5 @@
 import { IntegrationEntity, IntegrationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import {
   ChannelTypeEnum,

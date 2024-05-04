@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 import { LayoutRepository, EnvironmentRepository } from '@novu/dal';
 import { ChannelTypeEnum } from '@novu/shared';

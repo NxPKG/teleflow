@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { NotificationTemplateRepository, EnvironmentRepository } from '@novu/dal';
 import {
   EmailBlockTypeEnum,

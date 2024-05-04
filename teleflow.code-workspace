@@ -57,7 +57,7 @@
       "path": "libs/shared"
     },
     {
-      "name": "📦 @novu/testing",
+      "name": "📦 @teleflow/testing",
       "path": "libs/testing"
     },
     {

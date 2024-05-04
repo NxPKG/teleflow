@@ -1,5 +1,5 @@
 import { NotificationTemplateEntity } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import axios from 'axios';
 import { expect } from 'chai';
 import { updateSubscriberPreference } from './update-subscriber-preference.e2e';

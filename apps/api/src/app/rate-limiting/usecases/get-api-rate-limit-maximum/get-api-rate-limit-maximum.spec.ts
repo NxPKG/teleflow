@@ -1,5 +1,5 @@
 import { EnvironmentRepository, OrganizationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ApiRateLimitCategoryEnum, ApiServiceLevelEnum } from '@novu/shared';
 import { expect } from 'chai';
 import * as sinon from 'sinon';

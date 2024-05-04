@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import axios, { AxiosResponse } from 'axios';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { TenantRepository } from '@novu/dal';
 
 describe('Get Tenants List- /tenants (GET)', function () {

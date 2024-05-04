@@ -1,5 +1,5 @@
 import { SubscriberRepository } from '@novu/dal';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 
 import { removeDuplicatedSubscribers } from './remove-duplicated-subscribers.migration';
 import { expect } from 'chai';

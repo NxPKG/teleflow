@@ -3,7 +3,7 @@ import * as sinon from 'sinon';
 import { Test } from '@nestjs/testing';
 import axios from 'axios';
 
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import {
   ExternalSubscriberId,
   ISubscribersDefine,

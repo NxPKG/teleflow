@@ -296,7 +296,7 @@ importers:
       '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@sendgrid/mail':
@@ -572,7 +572,7 @@ importers:
         specifier: ^3.9.0
         version: 3.10.0
     devDependencies:
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@types/chai':
@@ -946,7 +946,7 @@ importers:
       '@novu/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@pandacss/dev':
@@ -1066,7 +1066,7 @@ importers:
       '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@sentry/node':
@@ -1290,7 +1290,7 @@ importers:
       '@novu/dal':
         specifier: ^0.24.1
         version: link:../../libs/dal
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@types/jest':
@@ -1386,7 +1386,7 @@ importers:
       '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../packages/stateless
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@sentry/node':
@@ -1583,7 +1583,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../libs/shared
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@sentry/node':
@@ -1980,7 +1980,7 @@ importers:
       '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../../../packages/stateless
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../../../libs/testing
       axios:
@@ -2135,7 +2135,7 @@ importers:
       '@teleflow/stateless':
         specifier: ^0.24.1
         version: link:../../../../packages/stateless
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../../../libs/testing
       axios:
@@ -3244,7 +3244,7 @@ importers:
       '@novu/termii':
         specifier: ^0.24.1
         version: link:../../providers/termii
-      '@novu/testing':
+      '@teleflow/testing':
         specifier: ^0.24.1
         version: link:../../libs/testing
       '@novu/twilio':
