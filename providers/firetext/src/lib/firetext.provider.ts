@@ -19,7 +19,7 @@ export class FiretextSmsProvider implements ISmsProvider {
     private config: {
       apiKey?: string;
       from?: string;
-    }
+    },
   ) {}
 
   private parseResponse(body: string) {
@@ -42,7 +42,7 @@ export class FiretextSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const baseMessage = {
       apiKey: this.config.apiKey,

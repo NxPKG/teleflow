@@ -21,12 +21,12 @@ export class PlunkEmailProvider implements IEmailProvider {
     private config: {
       apiKey: string;
       senderName: string;
-    }
+    },
   ) {
     this.plunk = new Plunk(this.config.apiKey);
   }
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const response: IPlunkResponse = await this.plunk.emails.send({
@@ -50,7 +50,7 @@ export class PlunkEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response: IPlunkResponse = await this.plunk.emails.send({
       from: options.from,

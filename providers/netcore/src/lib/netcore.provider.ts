@@ -33,7 +33,7 @@ export class NetCoreProvider implements IEmailProvider {
       apiKey: string;
       from: string;
       senderName: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: this.BASE_URL,
@@ -41,7 +41,7 @@ export class NetCoreProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const data: IEmailBody = {
       from: {
@@ -85,7 +85,7 @@ export class NetCoreProvider implements IEmailProvider {
             name: attachment.name,
             content: attachment.file.toString('base64'),
           };
-        }
+        },
       );
     }
 
@@ -100,9 +100,8 @@ export class NetCoreProvider implements IEmailProvider {
       data: JSON.stringify(data),
     };
 
-    const response = await this.axiosInstance.request<IEmailResponse>(
-      emailOptions
-    );
+    const response =
+      await this.axiosInstance.request<IEmailResponse>(emailOptions);
 
     return {
       id: response?.data.data?.message_id,
@@ -111,7 +110,7 @@ export class NetCoreProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     return {
       success: true,
@@ -130,7 +129,7 @@ export class NetCoreProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.TRANSID === identifier);

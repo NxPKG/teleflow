@@ -17,11 +17,11 @@ export class SmsCentralSmsProvider implements ISmsProvider {
       password: string;
       from: string;
       baseUrl?: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const data = {
       ACTION: 'send',

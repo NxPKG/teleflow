@@ -7,7 +7,7 @@ export abstract class BaseChatHandler implements IChatHandler {
 
   protected constructor(
     private providerId: string,
-    private channelType: string
+    private channelType: string,
   ) {}
 
   canHandle(providerId: string, channelType: ChannelTypeEnum) {

@@ -26,7 +26,7 @@ export class GenericSmsProvider implements ISmsProvider {
       authenticateByToken?: boolean;
       domain?: string;
       authenticationTokenKey?: string;
-    }
+    },
   ) {
     this.headers = {
       [this.config?.apiKeyRequestHeader]: config.apiKey,
@@ -45,7 +45,7 @@ export class GenericSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     if (this.config?.authenticateByToken) {
       const tokenAxiosInstance = await axios.request({

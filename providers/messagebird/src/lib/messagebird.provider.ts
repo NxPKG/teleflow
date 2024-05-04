@@ -15,13 +15,13 @@ export class MessageBirdSmsProvider implements ISmsProvider {
   constructor(
     private config: {
       access_key?: string;
-    }
+    },
   ) {
     this.messageBirdClient = initClient(config.access_key);
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const params = {
       originator: options.from,

@@ -16,7 +16,7 @@ export class SendchampSmsProvider implements ISmsProvider {
     private config: {
       apiKey: string;
       from?: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: this.BASE_URL,
@@ -28,7 +28,7 @@ export class SendchampSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = {
       sender_name: options.from || this.config.from,

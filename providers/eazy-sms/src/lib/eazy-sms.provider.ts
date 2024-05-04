@@ -15,11 +15,11 @@ export class EazySmsProvider implements ISmsProvider {
     private config: {
       apiKey: string;
       channelId: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = {
       message: {
@@ -36,7 +36,7 @@ export class EazySmsProvider implements ISmsProvider {
           Authorization: `Bearer ${this.config.apiKey}`,
           'Content-Type': 'application/json',
         },
-      }
+      },
     );
 
     return {

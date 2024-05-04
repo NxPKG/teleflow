@@ -19,7 +19,7 @@ export class WhatsappBusinessChatProvider implements IChatProvider {
     private config: {
       accessToken: string;
       phoneNumberIdentification: string;
-    }
+    },
   ) {
     this.axiosClient = Axios.create({
       headers: {
@@ -30,13 +30,13 @@ export class WhatsappBusinessChatProvider implements IChatProvider {
   }
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = this.defineMessagePayload(options);
 
     const { data } = await this.axiosClient.post<ISendMessageRes>(
       this.baseUrl + this.config.phoneNumberIdentification + '/messages',
-      payload
+      payload,
     );
 
     return {

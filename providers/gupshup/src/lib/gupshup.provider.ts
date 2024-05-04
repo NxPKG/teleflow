@@ -19,12 +19,12 @@ export class GupshupSmsProvider implements ISmsProvider {
     private config: {
       userId?: string;
       password?: string;
-    }
+    },
   ) {}
   id: string;
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const params = {
       send_to: options.to,

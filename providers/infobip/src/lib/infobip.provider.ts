@@ -25,7 +25,7 @@ export class InfobipSmsProvider implements ISmsProvider {
       baseUrl?: string;
       apiKey?: string;
       from?: string;
-    }
+    },
   ) {
     this.infobipClient = new Infobip({
       baseUrl: this.config.baseUrl,
@@ -35,7 +35,7 @@ export class InfobipSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const infobipResponse = await this.infobipClient.channels.sms.send({
       messages: [
@@ -70,7 +70,7 @@ export class InfobipEmailProvider implements IEmailProvider {
       baseUrl: string;
       apiKey: string;
       from?: string;
-    }
+    },
   ) {
     this.infobipClient = new Infobip({
       baseUrl: this.config.baseUrl,
@@ -80,7 +80,7 @@ export class InfobipEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       await this.infobipClient.channels.email.send({
@@ -106,7 +106,7 @@ export class InfobipEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const infobipResponse = await this.infobipClient.channels.email.send({
       to: options.to,

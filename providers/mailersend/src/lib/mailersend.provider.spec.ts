@@ -62,7 +62,7 @@ test('should trigger mailerSend correctly', async () => {
 
   const attachment = new Attachment(
     Buffer.from('ZEdWemRBPT0=').toString(),
-    'test.txt'
+    'test.txt',
   );
   const recipient1 = new Recipient('test@test1.com', undefined);
   const recipient2 = new Recipient('test@test2.com', undefined);

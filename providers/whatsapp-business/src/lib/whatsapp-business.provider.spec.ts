@@ -34,11 +34,11 @@ test('should trigger whatsapp-business library correctly with simple text messag
       },
       to: options.phoneNumber,
       type: 'text',
-    }
+    },
   );
 
   expect(axiosMockSpy).toHaveBeenCalledWith(
-    expectedHeaders(mockProviderConfig.accessToken)
+    expectedHeaders(mockProviderConfig.accessToken),
   );
 
   expect(res.id).toBe(messageId);
@@ -75,11 +75,11 @@ test('should trigger whatsapp-business library correctly with template message',
       template: options.customData.template,
       to: options.phoneNumber,
       type: 'template',
-    }
+    },
   );
 
   expect(axiosMockSpy).toHaveBeenCalledWith(
-    expectedHeaders(mockProviderConfig.accessToken)
+    expectedHeaders(mockProviderConfig.accessToken),
   );
 
   expect(res.id).toBe(messageId);

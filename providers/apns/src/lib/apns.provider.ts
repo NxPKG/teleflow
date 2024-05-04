@@ -18,7 +18,7 @@ export class APNSPushProvider implements IPushProvider {
       teamId: string;
       bundleId: string;
       production: boolean;
-    }
+    },
   ) {
     this.config = config;
     this.provider = new apn.Provider({
@@ -32,7 +32,7 @@ export class APNSPushProvider implements IPushProvider {
   }
 
   async sendMessage(
-    options: IPushOptions
+    options: IPushOptions,
   ): Promise<ISendMessageSuccessResponse> {
     delete (options.overrides as any)?.notificationIdentifiers;
     const notification = new apn.Notification({
@@ -49,9 +49,9 @@ export class APNSPushProvider implements IPushProvider {
         res.failed
           .map(
             (failed) =>
-              `${failed.device} failed for reason: ${failed.response.reason}`
+              `${failed.device} failed for reason: ${failed.response.reason}`,
           )
-          .join(',')
+          .join(','),
       );
     }
 

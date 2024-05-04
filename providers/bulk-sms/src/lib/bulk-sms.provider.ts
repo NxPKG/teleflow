@@ -14,11 +14,11 @@ export class BulkSmsProvider implements ISmsProvider {
   constructor(
     private config: {
       apiToken: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = {
       to: options.to,

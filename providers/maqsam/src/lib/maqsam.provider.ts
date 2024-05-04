@@ -18,7 +18,7 @@ export class MaqsamSmsProvider implements ISmsProvider {
       accessKeyId?: string;
       accessSecret?: string;
       from?: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: 'https://api.maqsam.com/v2/sms',
@@ -30,7 +30,7 @@ export class MaqsamSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const maqsamResponse = await this.axiosInstance.request({
       method: 'POST',

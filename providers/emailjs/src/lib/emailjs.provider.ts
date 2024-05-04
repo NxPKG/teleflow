@@ -27,7 +27,7 @@ export class EmailJsProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    emailOptions: IEmailOptions
+    emailOptions: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const headers: Partial<MessageHeaders> = {
       from: emailOptions.from || this.config.from,
@@ -69,7 +69,7 @@ export class EmailJsProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     return {
       success: true,

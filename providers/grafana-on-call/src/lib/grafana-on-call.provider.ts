@@ -18,11 +18,11 @@ export class GrafanaOnCallChatProvider implements IChatProvider {
       imageUrl?: string;
       state?: string;
       externalLink?: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = new URL(options.webhookUrl);
     const body = {

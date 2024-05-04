@@ -14,11 +14,11 @@ export class ClicksendSmsProvider implements ISmsProvider {
     private config: {
       username: string;
       apiKey: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response = await axios.post(
       'https://rest.clicksend.com/v3/sms/send',
@@ -33,10 +33,10 @@ export class ClicksendSmsProvider implements ISmsProvider {
       {
         headers: {
           Authorization: `Basic ${Buffer.from(
-            `${this.config.username}:${this.config.apiKey}`
+            `${this.config.username}:${this.config.apiKey}`,
           ).toString('base64')}`,
         },
-      }
+      },
     );
 
     return {

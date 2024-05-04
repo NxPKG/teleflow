@@ -17,7 +17,7 @@ export class MailtrapEmailProvider implements IEmailProvider {
     private config: {
       apiKey: string;
       from: string;
-    }
+    },
   ) {
     this.mailtrapClient = new MailtrapClient({
       token: config.apiKey,
@@ -25,7 +25,7 @@ export class MailtrapEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const result = await this.sendWithMailtrap(options);
@@ -45,7 +45,7 @@ export class MailtrapEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response = await this.sendWithMailtrap(options);
 

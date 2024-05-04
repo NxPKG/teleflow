@@ -19,7 +19,7 @@ export class MailersendEmailProvider implements IEmailProvider {
       apiKey: string;
       from?: string;
       senderName?: string;
-    }
+    },
   ) {
     this.mailerSend = new MailerSend({ api_key: this.config.apiKey });
   }
@@ -31,11 +31,11 @@ export class MailersendEmailProvider implements IEmailProvider {
   }
 
   private getAttachments(
-    attachments: IEmailOptions['attachments']
+    attachments: IEmailOptions['attachments'],
   ): Attachment[] | null {
     return attachments?.map(
       (attachment) =>
-        new Attachment(attachment.file.toString('base64'), attachment.name)
+        new Attachment(attachment.file.toString('base64'), attachment.name),
     );
   }
 
@@ -70,7 +70,7 @@ export class MailersendEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const emailParams = this.createMailData(options);
     const response = await this.mailerSend.send(emailParams);
@@ -82,7 +82,7 @@ export class MailersendEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     const emailParams = this.createMailData(options);
     const emailSendResponse = await this.mailerSend.send(emailParams);

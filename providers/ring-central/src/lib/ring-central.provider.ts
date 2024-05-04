@@ -22,7 +22,7 @@ export class RingCentralSmsProvider implements ISmsProvider {
       isSandBox?: boolean;
       jwtToken?: string;
       from?: string;
-    }
+    },
   ) {
     const rcSdk = new SDK({
       server: config.isSandBox ? SDK.server.sandbox : SDK.server.production,
@@ -33,7 +33,7 @@ export class RingCentralSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const bodyParams = {
       from: { phoneNumber: options.from || this.config.from },
@@ -64,7 +64,7 @@ export class RingCentralSmsProvider implements ISmsProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): ISMSEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.id === identifier);

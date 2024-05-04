@@ -12,7 +12,7 @@ export class RyverChatProvider implements IChatProvider {
   private axiosInstance = axios.create();
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = new URL(options.webhookUrl);
     const response = await this.axiosInstance.post(url.toString(), {

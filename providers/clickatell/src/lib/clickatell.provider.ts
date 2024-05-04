@@ -18,11 +18,11 @@ export class ClickatellSmsProvider implements ISmsProvider {
     private config: {
       apiKey?: string;
       isTwoWayIntegration?: boolean;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = 'https://platform.clickatell.com/messages';
 

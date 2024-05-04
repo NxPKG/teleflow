@@ -14,13 +14,13 @@ export class ExpoPushProvider implements IPushProvider {
   constructor(
     private config: {
       accessToken: string;
-    }
+    },
   ) {
     this.expo = new Expo({ accessToken: this.config.accessToken });
   }
 
   async sendMessage(
-    options: IPushOptions
+    options: IPushOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const { sound, badge, ...overrides } = options.overrides ?? {};
 

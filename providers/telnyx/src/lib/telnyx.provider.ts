@@ -21,13 +21,13 @@ export class TelnyxSmsProvider implements ISmsProvider {
       apiKey?: string;
       from?: string;
       messageProfileId?: string;
-    }
+    },
   ) {
     this.telnyxClient = Telnyx(config.apiKey);
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const telynxResponse = await this.telnyxClient.messages.create({
       to: options.to,
@@ -52,7 +52,7 @@ export class TelnyxSmsProvider implements ISmsProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): ISMSEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.data.id === identifier);

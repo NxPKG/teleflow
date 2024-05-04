@@ -17,7 +17,7 @@ export class OneSignalPushProvider implements IPushProvider {
     private config: {
       appId: string;
       apiKey: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: this.BASE_URL,
@@ -25,7 +25,7 @@ export class OneSignalPushProvider implements IPushProvider {
   }
 
   async sendMessage(
-    options: IPushOptions
+    options: IPushOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const { sound, badge, ...overrides } = options.overrides ?? {};
 
@@ -60,7 +60,7 @@ export class OneSignalPushProvider implements IPushProvider {
     };
 
     const res = await this.axiosInstance.request<{ id: string }>(
-      notificationOptions
+      notificationOptions,
     );
 
     return {

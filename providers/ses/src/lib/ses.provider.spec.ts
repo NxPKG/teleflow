@@ -154,7 +154,7 @@ describe('parseEventBody', () => {
     const provider = new SESEmailProvider(mockConfig);
     const messageId = provider.parseEventBody(
       { event: 'not-real-event' },
-      'test'
+      'test',
     );
     expect(messageId).toBeUndefined();
   });

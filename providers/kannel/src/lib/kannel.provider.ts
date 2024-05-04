@@ -18,13 +18,13 @@ export class KannelSmsProvider implements ISmsProvider {
       from: string;
       username?: string;
       password?: string;
-    }
+    },
   ) {
     this.apiBaseUrl = `http://${config.host}:${config.port}/cgi-bin`;
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = this.apiBaseUrl + '/sendsms';
     const queryParameters = {

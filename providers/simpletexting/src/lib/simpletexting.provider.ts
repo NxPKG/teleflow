@@ -14,11 +14,11 @@ export class SimpletextingSmsProvider implements ISmsProvider {
     private config: {
       apiKey: string;
       accountPhone: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response = await axios.post(
       'https://api-app2.simpletexting.com/v2/api/messages',
@@ -33,7 +33,7 @@ export class SimpletextingSmsProvider implements ISmsProvider {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${this.config.apiKey}`,
         },
-      }
+      },
     );
 
     return {

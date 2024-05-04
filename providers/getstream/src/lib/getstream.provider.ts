@@ -14,7 +14,7 @@ export class GetstreamChatProvider implements IChatProvider {
   constructor(
     private config: {
       apiKey: string;
-    }
+    },
   ) {
     this.config = config;
   }

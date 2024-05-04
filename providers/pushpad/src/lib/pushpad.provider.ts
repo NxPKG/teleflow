@@ -16,7 +16,7 @@ export class PushpadPushProvider implements IPushProvider {
     private config: {
       apiKey: string;
       appId: string;
-    }
+    },
   ) {
     this.pushpad = new Pushpad.Pushpad({
       authToken: this.config.apiKey,
@@ -25,7 +25,7 @@ export class PushpadPushProvider implements IPushProvider {
   }
 
   async sendMessage(
-    options: IPushOptions
+    options: IPushOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const notification = this.buildNotification(options);
 

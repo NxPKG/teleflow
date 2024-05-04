@@ -61,7 +61,7 @@ describe('sendMessage method', () => {
     await provider.sendMessage(mockNovuMessage);
 
     expect(fetch.mock.calls[0][0]).toEqual(
-      'https://api.brevo.com/v3/transactionalSMS/sms'
+      'https://api.brevo.com/v3/transactionalSMS/sms',
     );
   });
 

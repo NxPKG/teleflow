@@ -18,7 +18,7 @@ export class Outlook365Provider implements IEmailProvider {
       from: string;
       senderName: string;
       password: string;
-    }
+    },
   ) {
     this.transports = nodemailer.createTransport({
       host: 'smtp.office365.com',
@@ -36,7 +36,7 @@ export class Outlook365Provider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mailData = this.createMailData(options);
     const info = await this.transports.sendMail(mailData);
@@ -48,7 +48,7 @@ export class Outlook365Provider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const mailData = this.createMailData(options);

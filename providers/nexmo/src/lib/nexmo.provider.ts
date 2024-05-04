@@ -18,18 +18,18 @@ export class NexmoSmsProvider implements ISmsProvider {
       apiKey: string;
       apiSecret: string;
       from: string;
-    }
+    },
   ) {
     this.vonageClient = new Vonage(
       new Auth({
         apiKey: config.apiKey,
         apiSecret: config.apiSecret,
-      })
+      }),
     );
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response = await this.vonageClient.sms.send({
       to: options.to,
