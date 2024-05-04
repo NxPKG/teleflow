@@ -8,7 +8,7 @@ import {
   IconKey,
   IconWebhook,
 } from '@novu/design-system';
-import { BaseEnvironmentEnum, ROUTES, useAuthContext, useEnvController } from '@novu/shared-web';
+import { BaseEnvironmentEnum, ROUTES, useAuthContext, useEnvController } from '@teleflow/shared-web';
 import { useNavigate } from 'react-router-dom';
 import { parseUrl } from '../../utils/routeUtils';
 import { FreeTrialSidebarWidget } from '../layout/components/FreeTrialSidebarWidget';

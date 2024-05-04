@@ -1,6 +1,11 @@
 import { ColorScheme, useMantineColorScheme } from '@mantine/core';
 import { IconDarkMode, IconLightMode, IconTonality } from '@novu/design-system';
-import { ColorSchemePreferenceEnum, THEME_TITLE_LOOKUP, useLocalThemePreference, useSegment } from '@novu/shared-web';
+import {
+  ColorSchemePreferenceEnum,
+  THEME_TITLE_LOOKUP,
+  useLocalThemePreference,
+  useSegment,
+} from '@teleflow/shared-web';
 import { useEffect, useMemo } from 'react';
 import { useDebounce } from './useDebounce';
 

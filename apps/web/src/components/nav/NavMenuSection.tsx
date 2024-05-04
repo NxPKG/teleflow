@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { styled } from '../../styled-system/jsx';
 import { text } from '../../styled-system/recipes';
-import { LocalizedMessage } from '@novu/shared-web';
+import { LocalizedMessage } from '@teleflow/shared-web';
 import { css } from '../../styled-system/css';
 
 interface INavMenuSectionProps {

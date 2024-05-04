@@ -3,7 +3,7 @@ import AuthContainer from '../../components/layout/components/AuthContainer';
 import { QuestionnaireForm } from './components/QuestionnaireForm';
 import { useVercelIntegration } from '../../hooks';
 import SetupLoader from './components/SetupLoader';
-import { ENV, IS_DOCKER_HOSTED, useFeatureFlag } from '@novu/shared-web';
+import { ENV, IS_DOCKER_HOSTED, useFeatureFlag } from '@teleflow/shared-web';
 import { HubspotSignupForm } from './components/HubspotSignupForm';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
 import { When } from '@novu/design-system';

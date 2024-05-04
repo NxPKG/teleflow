@@ -14,7 +14,7 @@ import { PreviewWeb } from './PreviewWeb';
 import { useTemplateLocales } from '../../../../pages/templates/hooks/useTemplateLocales';
 import { usePreviewEmailTemplate } from '../../../../pages/templates/hooks/usePreviewEmailTemplate';
 import { useMutation } from '@tanstack/react-query';
-import { api, useEnvController } from '@novu/shared-web';
+import { api, useEnvController } from '@teleflow/shared-web';
 import { useTemplateEditorForm } from '../../../../pages/templates/components/TemplateEditorFormProvider';
 import { InputVariablesForm } from '../../../../pages/templates/components/InputVariablesForm';
 import { ErrorPrettyRender } from '../ErrorPrettyRender';

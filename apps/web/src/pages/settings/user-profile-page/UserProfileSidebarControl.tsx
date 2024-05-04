@@ -5,7 +5,7 @@ import { UserProfileSidebarContext } from './UserProfileSidebarContext';
 import { UserProfilePasswordSidebar } from './UserProfilePasswordSidebar';
 import { useUserProfileSearchParams } from './useUserProfileSearchParams';
 import { UserProfileSidebarTypeEnum } from './UserProfilePasswordSidebarEnum';
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 import { selectUserProfileFlow } from './selectUserProfileFlow';
 
 export const UserProfileSidebarControl: FC = () => {

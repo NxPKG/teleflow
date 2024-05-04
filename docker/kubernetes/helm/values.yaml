@@ -492,7 +492,7 @@ worker:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/worker
+    repository: novuhq/teleflow/worker
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy

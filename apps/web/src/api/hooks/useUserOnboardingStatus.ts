@@ -3,7 +3,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { IUserEntity } from '@novu/shared';
 
 import { updateUserOnBoarding } from '../user';
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 
 interface IErrorResponseType {
   error: string;

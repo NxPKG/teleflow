@@ -1,4 +1,4 @@
-import { CONTEXT_PATH, LAUNCH_DARKLY_CLIENT_SIDE_ID, SegmentProvider } from '@novu/shared-web';
+import { CONTEXT_PATH, LAUNCH_DARKLY_CLIENT_SIDE_ID, SegmentProvider } from '@teleflow/shared-web';
 import * as Sentry from '@sentry/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { withLDProvider } from 'launchdarkly-react-client-sdk';

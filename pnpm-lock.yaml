@@ -714,7 +714,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../libs/shared
-      '@novu/shared-web':
+      '@teleflow/shared-web':
         specifier: ^0.24.1
         version: link:../../libs/shared-web
       '@rive-app/react-canvas':
@@ -1878,7 +1878,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../../libs/shared
-      '@novu/shared-web':
+      '@teleflow/shared-web':
         specifier: ^0.24.1
         version: link:../../../libs/shared-web
       '@rjsf/chakra-ui':
@@ -2060,7 +2060,7 @@ importers:
       '@novu/design-system':
         specifier: ^0.24.1
         version: link:../../../../libs/design-system
-      '@novu/shared-web':
+      '@teleflow/shared-web':
         specifier: ^0.24.1
         version: link:../../../../libs/shared-web
       '@rjsf/core':
@@ -2404,7 +2404,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../../../libs/shared
-      '@novu/shared-web':
+      '@teleflow/shared-web':
         specifier: ^0.24.1
         version: link:../../../libs/shared-web
       '@tanstack/react-query':
@@ -2595,7 +2595,7 @@ importers:
       '@novu/shared':
         specifier: ^0.24.1
         version: link:../shared
-      '@novu/shared-web':
+      '@teleflow/shared-web':
         specifier: ^0.24.1
         version: link:../shared-web
       '@segment/analytics-next':

@@ -1,4 +1,4 @@
-import { BaseEnvironmentEnum, useEnvController } from '@novu/shared-web';
+import { BaseEnvironmentEnum, useEnvController } from '@teleflow/shared-web';
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 

@@ -1,4 +1,4 @@
-import { ROUTES } from '@novu/shared-web';
+import { ROUTES } from '@teleflow/shared-web';
 
 import { GetStartedLink, StepDescription, StepText } from './shared';
 import { OnboardingUseCase } from './types';

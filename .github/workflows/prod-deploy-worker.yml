@@ -10,7 +10,7 @@ jobs:
     strategy:
       # The order is important for ee to be first, otherwise outputs not work correctly
       matrix:
-        name: [ 'novu/worker-ee', 'novu/worker' ]
+        name: [ 'teleflow/worker-ee', 'teleflow/worker' ]
     uses: ./.github/workflows/reusable-worker-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -26,7 +26,7 @@ jobs:
     strategy:
       # The order is important for ee to be first, otherwise outputs not work correctly
       matrix:
-        name: [ 'novu/worker-ee', 'novu/worker' ]
+        name: [ 'teleflow/worker-ee', 'teleflow/worker' ]
     outputs:
       docker_image: ${{ steps.build-image.outputs.IMAGE }}
     permissions:
@@ -114,7 +114,7 @@ jobs:
       environment: Production
       terraform_workspace: novu-prod-eu
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/novu/worker-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/worker-ee:${{ github.sha }}
 
   deploy_prod_workers_us:
     needs: build_prod_image
@@ -124,7 +124,7 @@ jobs:
       environment: Production
       terraform_workspace: novu-prod
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/novu/worker-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/worker-ee:${{ github.sha }}
       deploy_sentry_release: true
       sentry_project: worker
 

@@ -1,5 +1,5 @@
 import { IUserEntity } from '@novu/shared';
-import { ROUTES } from '@novu/shared-web';
+import { ROUTES } from '@teleflow/shared-web';
 import { parseUrl } from '../../../utils/routeUtils';
 
 export const buildInviteHref = ({

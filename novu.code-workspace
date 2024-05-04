@@ -9,7 +9,7 @@
       "path": "apps/api"
     },
     {
-      "name": "🚀 @novu/worker",
+      "name": "🚀 @teleflow/worker",
       "path": "apps/worker"
     },
     {
@@ -21,7 +21,7 @@
       "path": "apps/ws"
     },
     {
-      "name": "🚀 @novu/webhook",
+      "name": "🚀 @teleflow/webhook",
       "path": "apps/webhook"
     },
     {
@@ -49,7 +49,7 @@
       "path": "packages/client"
     },
     {
-      "name": "📦 @novu/headless",
+      "name": "📦 @teleflow/headless",
       "path": "packages/headless"
     },
     {

@@ -51,7 +51,7 @@ jobs:
       - name: Tag Worker
         env:
           REGISTRY_OWNER: novuhq
-          DOCKER_NAME: novu/worker
+          DOCKER_NAME: teleflow/worker
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}

@@ -1,6 +1,6 @@
 '@teleflow/api':
   - apps/api/**/*
-'@novu/worker':
+'@teleflow/worker':
   - apps/worker/**/*
 '@novu/web':
   - apps/web/**/*
@@ -8,7 +8,7 @@
   - apps/ws/**/*
 '@novu/inbound-mail':
   - apps/inbound-mail/**/*
-'@novu/webhook':
+'@teleflow/webhook':
   - apps/webhook/**/*
 '@novu/dal':
   - libs/dal/**/*

@@ -25,7 +25,7 @@ jobs:
   test_worker:
     strategy:
       matrix:
-        name: ['novu/worker', 'novu/worker-ee']
+        name: ['teleflow/worker', 'teleflow/worker-ee']
     uses: ./.github/workflows/reusable-worker-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -45,7 +45,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        name: ['novu/worker-ee', 'novu/worker']
+        name: ['teleflow/worker-ee', 'teleflow/worker']
     steps:
       - uses: actions/checkout@v3
         with:
@@ -73,7 +73,7 @@ jobs:
       environment: Development
       terraform_workspace: novu-dev
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/novu/worker-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/worker-ee:${{ github.sha }}
 
   newrelic:
     runs-on: ubuntu-latest

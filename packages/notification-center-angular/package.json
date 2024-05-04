@@ -1,5 +1,5 @@
 {
-  "name": "@novu/angular-workspace",
+  "name": "@teleflow/angular-workspace",
   "version": "0.24.1",
   "scripts": {
     "ng": "ng",

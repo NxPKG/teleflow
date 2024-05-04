@@ -11,7 +11,7 @@ import { INTERCOM_APP_ID } from '../../config';
 import { RequiredAuth } from './RequiredAuth';
 import { SpotLight } from '../utils/Spotlight';
 import { SpotLightProvider } from '../providers/SpotlightProvider';
-import { useFeatureFlag } from '@novu/shared-web';
+import { useFeatureFlag } from '@teleflow/shared-web';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
 import { HeaderNav as HeaderNavNew } from './components/v2/HeaderNav';
 import { MainNav } from '../nav/MainNav';

@@ -1,4 +1,4 @@
-import { ROUTES } from '@novu/shared-web';
+import { ROUTES } from '@teleflow/shared-web';
 import { FC } from 'react';
 import { RootNavMenu } from './RootNavMenu';
 import { SettingsNavMenu } from './SettingsNavMenu';

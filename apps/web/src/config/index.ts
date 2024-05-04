@@ -14,7 +14,7 @@ import {
   MAIL_SERVER_DOMAIN,
   LAUNCH_DARKLY_CLIENT_SIDE_ID,
   FEATURE_FLAGS,
-} from '@novu/shared-web';
+} from '@teleflow/shared-web';
 
 export {
   API_ROOT,

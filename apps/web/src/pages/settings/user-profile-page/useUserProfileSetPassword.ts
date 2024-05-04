@@ -1,6 +1,6 @@
 import { errorMessage } from '@novu/design-system';
 import { IResponseError, PasswordResetFlowEnum } from '@novu/shared';
-import { api, useAuthContext } from '@novu/shared-web';
+import { api, useAuthContext } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useCountdownTimer } from '../../../hooks';
 

@@ -4,7 +4,7 @@ import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 import { ROUTES } from '../../constants/routes.enum';
 import useThemeChange from '../../hooks/useThemeChange';
 import { useSpotlightContext } from '../providers/SpotlightProvider';
