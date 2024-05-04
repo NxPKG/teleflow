@@ -1,6 +1,6 @@
 import fetch from 'jest-fetch-mock';
 import { BrevoSmsProvider } from './brevo-sms.provider';
-import { ISmsOptions, SmsEventStatusEnum } from '@novu/stateless';
+import { ISmsOptions, SmsEventStatusEnum } from '@teleflow/stateless';
 import { objectToEqual } from './objectToEqual';
 import { dateIsValid } from './dateIsValid';
 
@@ -61,7 +61,7 @@ describe('sendMessage method', () => {
     await provider.sendMessage(mockNovuMessage);
 
     expect(fetch.mock.calls[0][0]).toEqual(
-      'https://api.brevo.com/v3/transactionalSMS/sms'
+      'https://api.brevo.com/v3/transactionalSMS/sms',
     );
   });
 

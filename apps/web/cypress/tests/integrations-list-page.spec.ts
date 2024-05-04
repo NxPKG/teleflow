@@ -1050,7 +1050,7 @@ describe.skip('Integrations List Page', function () {
       .getByTestId('provider-instance-name')
       .should('have.value', 'Novu Email');
     cy.getByTestId('update-provider-sidebar-novu').contains('Test Provider');
-    cy.getByTestId('novu-provider-limits').then((el) => {
+    cy.getByTestId('teleflow-provider-limits').then((el) => {
       expect(el.get(0).innerText).to.eq(
         'Novu provider allows sending max 300 emails per month,\nto send more messages, configure a different provider'
       );
@@ -1120,7 +1120,7 @@ describe.skip('Integrations List Page', function () {
       .getByTestId('provider-instance-name')
       .should('have.value', 'Novu SMS');
     cy.getByTestId('update-provider-sidebar-novu').contains('Test Provider');
-    cy.getByTestId('novu-provider-limits').then((el) => {
+    cy.getByTestId('teleflow-provider-limits').then((el) => {
       expect(el.get(0).innerText).to.eq(
         'Novu provider allows sending max 20 messages per month,\nto send more messages, configure a different provider'
       );
@@ -1165,7 +1165,7 @@ describe.skip('Integrations List Page', function () {
     cy.getByTestId('selected-provider-name').should('be.visible').contains('Novu');
 
     cy.getByTestId('select-provider-sidebar-next').should('not.be.disabled').contains('Next').click();
-    cy.getByTestId('novu-provider-error').contains('You can only create one Novu Email per environment.');
+    cy.getByTestId('teleflow-provider-error').contains('You can only create one Novu Email per environment.');
     cy.getByTestId('create-provider-instance-sidebar-create').should('be.disabled');
   });
 

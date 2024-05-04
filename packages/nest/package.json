@@ -1,5 +1,5 @@
 {
-  "name": "@novu/nest",
+  "name": "@teleflow/nest",
   "version": "0.24.1",
   "description": "A nestjs wrapper for novu",
   "main": "build/main/index.js",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@nestjs/common": "10.2.2",
-    "@novu/stateless": "^0.24.1"
+    "@teleflow/stateless": "^0.24.1"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",

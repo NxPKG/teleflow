@@ -1,5 +1,5 @@
 import { ICredentials } from '@novu/shared';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 import { GrafanaOnCallChatProvider } from '@novu/grafana-on-call';
 
 import { BaseChatHandler } from './base.handler';

@@ -34,7 +34,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@novu/stateless": "<%= version %>"
+    "@teleflow/stateless": "<%= version %>"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "~1.0.1",

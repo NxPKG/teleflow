@@ -51,7 +51,7 @@ export const getNodeTriggerSnippet = (
   overrides?: Record<string, unknown>,
   snippet?: Record<string, unknown>
 ) => {
-  const triggerCodeSnippet = `import { Novu } from '@novu/node'; 
+  const triggerCodeSnippet = `import { Novu } from '@teleflow/node'; 
 
 const novu = new Novu('<API_KEY>');
 

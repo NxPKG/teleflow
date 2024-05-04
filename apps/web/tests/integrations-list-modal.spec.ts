@@ -758,7 +758,7 @@ test('should show the Novu Email integration sidebar', async ({ page }) => {
   await expect(selectedProviderName).toBeVisible();
   await expect(selectedProviderName).toHaveValue('Novu Email');
 
-  const providerLimits = getByTestId(updateProviderSidebar, 'novu-provider-limits');
+  const providerLimits = getByTestId(updateProviderSidebar, 'teleflow-provider-limits');
   const providerLimitsText = await providerLimits.innerText();
   await expect(providerLimitsText).toEqual(
     'Novu provider allows sending max 300 emails per month,\nto send more messages, configure a different provider'
@@ -819,7 +819,7 @@ test('should show the Novu SMS integration sidebar', async ({ page }) => {
   await expect(selectedProviderName).toBeVisible();
   await expect(selectedProviderName).toHaveValue('Novu SMS');
 
-  const providerLimits = getByTestId(updateProviderSidebar, 'novu-provider-limits');
+  const providerLimits = getByTestId(updateProviderSidebar, 'teleflow-provider-limits');
   const providerLimitsText = await providerLimits.innerText();
   await expect(providerLimitsText).toEqual(
     'Novu provider allows sending max 20 messages per month,\nto send more messages, configure a different provider'

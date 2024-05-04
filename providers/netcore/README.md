@@ -1,6 +1,6 @@
 # Nodejs NetCore Provider
 
-A NetCore email provider library for [@novu/stateless](https://github.com/novuhq/novu)
+A NetCore email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
 
 ## Usage
 

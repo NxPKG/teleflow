@@ -1,4 +1,4 @@
-import { IChatOptions, IChatProvider } from '@novu/stateless';
+import { IChatOptions, IChatProvider } from '@teleflow/stateless';
 import { ChannelTypeEnum } from '@novu/shared';
 import { IChatHandler } from '../interfaces';
 
@@ -7,7 +7,7 @@ export abstract class BaseChatHandler implements IChatHandler {
 
   protected constructor(
     private providerId: string,
-    private channelType: string
+    private channelType: string,
   ) {}
 
   canHandle(providerId: string, channelType: ChannelTypeEnum) {

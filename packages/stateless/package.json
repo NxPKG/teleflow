@@ -1,5 +1,5 @@
 {
-  "name": "@novu/stateless",
+  "name": "@teleflow/stateless",
   "version": "0.24.1",
   "description": "Notification Management Framework",
   "main": "build/main/index.js",

@@ -33,7 +33,7 @@
     "@novu/application-generic": "^0.24.1",
     "@novu/dal": "^0.24.1",
     "@novu/shared": "^0.24.1",
-    "@novu/stateless": "^0.24.1",
+    "@teleflow/stateless": "^0.24.1",
     "@novu/testing": "^0.24.1",
     "@sentry/node": "^7.40.0",
     "@sentry/tracing": "^7.40.0",

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { INovuThemeProvider, IStore, ITab, ITranslationEntry } from '@novu/notification-center';
+import { ITelelfowThemeProvider, IStore, ITab, ITranslationEntry } from '@novu/notification-center';
 
 declare namespace Cypress {
   interface Chainable {
@@ -50,7 +50,7 @@ interface IInitializeSessionSettings {
   noEnvironment?: boolean;
   shell?: boolean;
   hmacEncryption?: boolean;
-  theme?: INovuThemeProvider;
+  theme?: ITelelfowThemeProvider;
   i18n?: ITranslationEntry;
   tabs?: ITab[];
   stores?: IStore[];
@@ -61,6 +61,6 @@ interface IInitializeWidgetSettings {
   session: any;
   shell?: boolean;
   encryptedHmacHash?: string;
-  theme?: INovuThemeProvider;
+  theme?: ITelelfowThemeProvider;
   i18n?: ITranslationEntry;
 }

@@ -8,17 +8,17 @@ import {
   defaultNotificationBellDarkTheme,
   defaultNotificationBellLightTheme,
 } from '../shared/config/themeDefaultValues';
-import { ICommonTheme, INovuThemeProvider } from '../store/novu-theme-provider.context';
-import { INotificationBellColors, INovuTheme } from '../store/novu-theme.context';
+import { ICommonTheme, ITelelfowThemeProvider } from '../store/teleflow-theme-provider.context';
+import { INotificationBellColors, ITelelfowTheme } from '../store/teleflow-theme.context';
 import { ColorScheme } from '../index';
 
 interface IDefaultThemeProps {
   colorScheme?: ColorScheme;
-  theme?: INovuThemeProvider;
+  theme?: ITelelfowThemeProvider;
 }
 
 export function getDefaultTheme(props: IDefaultThemeProps): {
-  theme: INovuTheme;
+  theme: ITelelfowTheme;
   common: ICommonTheme;
 } {
   const theme =

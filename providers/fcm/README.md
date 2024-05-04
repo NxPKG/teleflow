@@ -1,13 +1,13 @@
 # Novu FCM Provider
 
-A FCM push provider library for [@novu/node](https://github.com/novuhq/novu)
+A FCM push provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
 The payload field supports all [NotificationMessagePayload](https://firebase.google.com/docs/reference/admin/node/firebase-admin.messaging.notificationmessagepayload.md#notificationmessagepayload_interface) values, example below.
 
 ```ts
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 
 const novu = new Novu(process.env.NOVU_API_KEY);
 

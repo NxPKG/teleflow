@@ -8,7 +8,7 @@ import { NotificationCenter } from '../notification-center';
 import { INotificationBellProps } from '../notification-bell';
 import { Popover } from './components/Popover';
 import { useNotifications } from '../../hooks';
-import { ColorScheme, INovuThemePopoverProvider } from '../../index';
+import { ColorScheme, ITelelfowThemePopoverProvider } from '../../index';
 import { ITab, ListItem } from '../../shared/interfaces';
 import { getDefaultTheme } from '../../utils/defaultTheme';
 
@@ -25,7 +25,7 @@ export interface IPopoverNotificationCenterProps {
   emptyState?: JSX.Element;
   listItem?: ListItem;
   colorScheme: ColorScheme;
-  theme?: INovuThemePopoverProvider;
+  theme?: ITelelfowThemePopoverProvider;
   tabs?: ITab[];
   showUserPreferences?: boolean;
   allowedNotificationActions?: boolean;

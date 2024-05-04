@@ -29,7 +29,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@novu/stateless": "^0.24.1",
+    "@teleflow/stateless": "^0.24.1",
     "messagebird": "^4.0.1"
   },
   "devDependencies": {

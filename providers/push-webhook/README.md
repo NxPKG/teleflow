@@ -1,6 +1,6 @@
 # Novu PushWebhook Provider
 
-This is a library that triggers a custom webhook and shows itself as a push library for [@novu/node](https://github.com/novuhq/novu)
+This is a library that triggers a custom webhook and shows itself as a push library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

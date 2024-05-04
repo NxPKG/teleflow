@@ -45,7 +45,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@novu/stateless": "^0.24.1",
+    "@teleflow/stateless": "^0.24.1",
     "@sendgrid/mail": "^8.1.0"
   },
   "devDependencies": {

@@ -17,7 +17,7 @@
       "path": "apps/web"
     },
     {
-      "name": "🚀 @novu/ws",
+      "name": "🚀 @teleflow/ws",
       "path": "apps/ws"
     },
     {
@@ -25,7 +25,7 @@
       "path": "apps/webhook"
     },
     {
-      "name": "🚀 @novu/widget",
+      "name": "🚀 @teleflow/widget",
       "path": "apps/widget"
     },
     {
@@ -37,7 +37,7 @@
       "path": "libs/design-system"
     },
     {
-      "name": "📦 @novu/embed",
+      "name": "📦 @teleflow/embed",
       "path": "libs/embed"
     },
     {
@@ -61,11 +61,11 @@
       "path": "libs/testing"
     },
     {
-      "name": "📦 @novu/stateless",
+      "name": "📦 @teleflow/stateless",
       "path": "packages/stateless"
     },
     {
-      "name": "📦 @novu/node",
+      "name": "📦 @teleflow/node",
       "path": "packages/node"
     },
     {
@@ -73,7 +73,7 @@
       "path": "packages/notification-center"
     },
     {
-      "name": "📦 @novu/notification-center-vue",
+      "name": "📦 @teleflow/notification-center-vue",
       "path": "packages/notification-center-vue"
     },
     {
@@ -129,7 +129,7 @@
       "path": "providers/nexmo"
     },
     {
-      "name": "🔔 @novu/nodemailer",
+      "name": "🔔 @teleflow/nodemailer",
       "path": "providers/nodemailer"
     },
     {

@@ -11,7 +11,7 @@ import {
   ColorScheme,
   IUserPreferenceSettings,
 } from '@novu/notification-center';
-import type { INovuThemeProvider, INotificationCenterStyles } from '@novu/notification-center';
+import type { ITelelfowThemeProvider, INotificationCenterStyles } from '@novu/notification-center';
 import { IMessage, IOrganizationEntity, ButtonTypeEnum, isBrowser } from '@novu/shared';
 
 import { API_URL, WS_URL } from '../../config';
@@ -29,7 +29,7 @@ export function NotificationCenterWidget(props: INotificationCenterWidgetProps) 
   const [userDataPayload, setUserDataPayload] = useState<{ subscriberId: string; subscriberHash: string }>();
   const [backendUrl, setBackendUrl] = useState(API_URL);
   const [socketUrl, setSocketUrl] = useState(WS_URL);
-  const [theme, setTheme] = useState<INovuThemeProvider>({});
+  const [theme, setTheme] = useState<ITelelfowThemeProvider>({});
   const [fontFamily, setFontFamily] = useState<string>(DEFAULT_FONT_FAMILY);
   const [frameInitialized, setFrameInitialized] = useState(false);
   const [i18n, setI18n] = useState<ITranslationEntry>();

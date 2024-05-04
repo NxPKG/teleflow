@@ -44,7 +44,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@novu/stateless": "^0.24.1",
+    "@teleflow/stateless": "^0.24.1",
     "plivo": "^4.60.1"
   },
   "devDependencies": {

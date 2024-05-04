@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import { NovuProvider } from '../novu-provider';
+import { NovuProvider } from '../teleflow-provider';
 import { reactToWebComponent } from '../../utils';
 import type { NotificationCenterComponentProps, PopoverWrapperProps } from './notification-center-component.types';
 import { NotificationCenter } from '../notification-center';

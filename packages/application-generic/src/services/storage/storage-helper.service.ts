@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { IAttachmentOptionsExtended } from '@novu/stateless';
+import { IAttachmentOptionsExtended } from '@teleflow/stateless';
 
 import { NonExistingFileError } from './non-existing-file.error';
 import { StorageService } from './storage.service';
@@ -24,7 +24,7 @@ export class StorageHelperService {
         await this.storageService.uploadFile(
           attachment.storagePath,
           attachment.file,
-          attachment.mime
+          attachment.mime,
         );
       }
     });
@@ -39,7 +39,7 @@ export class StorageHelperService {
     for (const attachment of attachments) {
       try {
         attachment.file = await this.storageService.getFile(
-          attachment.storagePath
+          attachment.storagePath,
         );
       } catch (error: any) {
         if (

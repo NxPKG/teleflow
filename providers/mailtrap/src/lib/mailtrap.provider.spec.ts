@@ -1,6 +1,6 @@
 import { MailtrapEmailProvider } from './mailtrap.provider';
 import { MailtrapClient, SendResponse } from 'mailtrap';
-import { CheckIntegrationResponseEnum } from '@novu/stateless';
+import { CheckIntegrationResponseEnum } from '@teleflow/stateless';
 
 const mockConfig = {
   apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',

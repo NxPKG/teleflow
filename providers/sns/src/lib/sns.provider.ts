@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { PublishCommand, SNSClient } from '@aws-sdk/client-sns';
 
 import { SNSConfig } from './sns.config';
@@ -24,7 +24,7 @@ export class SNSSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const { to, content } = options;
 

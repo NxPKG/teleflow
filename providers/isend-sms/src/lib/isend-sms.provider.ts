@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios, { AxiosInstance } from 'axios';
 
 export interface ISendSmsData {
@@ -41,7 +41,7 @@ export class ISendSmsProvider implements ISmsProvider {
       apiToken: string;
       from?: string;
       contentType?: ISendSmsData['sms_type'];
-    }
+    },
   ) {
     this.Instance = axios.create({
       baseURL: 'https://send.com.ly',
@@ -54,7 +54,7 @@ export class ISendSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = {
       sender_id: options.from ?? this.config.from,
@@ -65,7 +65,7 @@ export class ISendSmsProvider implements ISmsProvider {
 
     const response = await this.Instance.post<ISendSmsResponse>(
       '/api/v3/sms/send',
-      JSON.stringify(payload)
+      JSON.stringify(payload),
     );
 
     if (['success', 'error'].includes(response.data.status)) {
@@ -76,7 +76,7 @@ export class ISendSmsProvider implements ISmsProvider {
         };
       else
         throw new Error(
-          response.data.message ?? 'Unexpected response while sending the SMS!'
+          response.data.message ?? 'Unexpected response while sending the SMS!',
         );
     } else throw new Error('Something went wrong while sending the SMS!');
   }

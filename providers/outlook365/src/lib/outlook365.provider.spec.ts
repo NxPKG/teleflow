@@ -2,7 +2,7 @@ import {
   CheckIntegrationResponseEnum,
   ICheckIntegrationResponse,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { Outlook365Provider } from './outlook365.provider';
 
 const mockConfig = {

@@ -1,4 +1,4 @@
-import { IChatOptions, ISendMessageSuccessResponse } from '@novu/stateless';
+import { IChatOptions, ISendMessageSuccessResponse } from '@teleflow/stateless';
 import { IntegrationEntity } from '@novu/dal';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 

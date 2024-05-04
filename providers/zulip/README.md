@@ -1,6 +1,6 @@
 # Novu Zulip Provider
 
-A Zulip chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A Zulip chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

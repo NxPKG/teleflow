@@ -1,5 +1,5 @@
 import React from 'react';
-import type { INotificationBellColors, ISvgStopColor } from '../../store/novu-theme.context';
+import type { INotificationBellColors, ISvgStopColor } from '../../store/teleflow-theme.context';
 
 interface IGradientDotProps {
   props?: React.ComponentPropsWithoutRef<'svg'>;

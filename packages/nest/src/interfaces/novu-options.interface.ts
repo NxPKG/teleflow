@@ -5,7 +5,7 @@ import {
   IPushProvider,
   ISmsProvider,
   ITemplate,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 export interface INovuOptions {
   /*

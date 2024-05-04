@@ -3,7 +3,7 @@ export * from './useUnseenCount';
 export * from './useUnreadCount';
 export * from './useNotifications';
 export * from './useNovuContext';
-export * from './useNovuTheme';
+export * from './useTelelfowTheme';
 export * from './useNotificationCenter';
 export * from './useTranslations';
 export * from './useUpdateUserPreferences';

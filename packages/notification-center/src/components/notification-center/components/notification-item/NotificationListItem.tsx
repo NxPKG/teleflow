@@ -13,10 +13,10 @@ import {
   IActor,
 } from '@novu/shared';
 
-import { useNovuTheme, useNotificationCenter, useTranslations, useNotifications } from '../../../../hooks';
+import { useTelelfowTheme, useNotificationCenter, useTranslations, useNotifications } from '../../../../hooks';
 import { getDefaultBellColors } from '../../../../utils/defaultTheme';
 import { ActionContainer } from './ActionContainer';
-import { INovuTheme } from '../../../../store/novu-theme.context';
+import { ITelelfowTheme } from '../../../../store/teleflow-theme.context';
 import { When } from '../../../../shared/utils/When';
 import { ColorScheme } from '../../../../shared/config/colors';
 import { shadows } from '../../../../shared/config/shadows';
@@ -83,7 +83,7 @@ export function NotificationListItem({
   notification: IMessage;
   onClick: (notification: IMessage, actionButtonType?: ButtonTypeEnum) => void;
 }) {
-  const { theme: novuTheme, colorScheme } = useNovuTheme();
+  const { theme: novuTheme, colorScheme } = useTelelfowTheme();
   const { onActionClick, listItem, allowedNotificationActions } = useNotificationCenter();
   const { removeMessage, markNotificationAsRead, markNotificationAsUnRead } = useNotifications();
   const { t, lang } = useTranslations();
@@ -337,11 +337,11 @@ const TextContent = styled.div`
   overflow-wrap: anywhere;
 `;
 
-const SettingsActionWrapper = styled.div<{ novuTheme: INovuTheme }>`
+const SettingsActionWrapper = styled.div<{ novuTheme: ITelelfowTheme }>`
   color: ${({ novuTheme }) => novuTheme.layout?.wrapper.secondaryFontColor};
 `;
 
-const unreadNotificationStyles = (novuTheme: INovuTheme) => css`
+const unreadNotificationStyles = (novuTheme: ITelelfowTheme) => css`
   background: ${novuTheme?.notificationItem?.unread?.background};
   box-shadow: ${novuTheme?.notificationItem?.unread?.boxShadow};
   color: ${novuTheme?.notificationItem?.unread?.fontColor};
@@ -360,7 +360,7 @@ const unreadNotificationStyles = (novuTheme: INovuTheme) => css`
   }
 `;
 
-const readNotificationStyles = (novuTheme: INovuTheme) => css`
+const readNotificationStyles = (novuTheme: ITelelfowTheme) => css`
   color: ${novuTheme?.notificationItem?.read?.fontColor};
   background: ${novuTheme?.notificationItem?.read?.background};
   font-weight: 400;
@@ -382,7 +382,7 @@ const listItemClassName = css`
   }
 `;
 
-const timeMarkClassName = (novuTheme: INovuTheme, unread?: boolean) => css`
+const timeMarkClassName = (novuTheme: ITelelfowTheme, unread?: boolean) => css`
   min-width: 55px;
   font-size: 12px;
   font-weight: 400;
@@ -435,11 +435,11 @@ const SystemIconWrapper = styled.div<{ containerBgColor: string; iconColor: stri
   }
 `;
 
-const dotsClassName = (theme: INovuTheme) => css`
+const dotsClassName = (theme: ITelelfowTheme) => css`
   color: ${theme?.actionsMenu?.dotsButtonColor};
 `;
 
-const useDropdownStyles = createStyles((theme: MantineTheme, { novuTheme }: { novuTheme: INovuTheme }) => {
+const useDropdownStyles = createStyles((theme: MantineTheme, { novuTheme }: { novuTheme: ITelelfowTheme }) => {
   return {
     dropdown: {
       backgroundColor: novuTheme.actionsMenu?.dropdownColor,

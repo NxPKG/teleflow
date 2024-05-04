@@ -711,7 +711,7 @@
     "node_modules/**",
     "pnpm-lock.yaml",
     "pnpm-workspace.yaml",
-    "novu.code-workspace",
+    "teleflow.code-workspace",
     "packages/application-generic/src/.env.test",
     "packages/notification-center/src/i18n/languages/**",
     "packages/notification-center/rollup.config.mjs",

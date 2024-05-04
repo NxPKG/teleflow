@@ -1,6 +1,6 @@
 # Novu Getstream Provider
 
-A Getstream chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A Getstream chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

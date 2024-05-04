@@ -5,7 +5,7 @@ import {
   ISendMessageSuccessResponse,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import nodemailer, { SendMailOptions, Transporter } from 'nodemailer';
 import DKIM from 'nodemailer/lib/dkim';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
@@ -83,13 +83,13 @@ export class NodemailerProvider implements IEmailProvider {
       JSON.parse(JSON.stringify(this.config.tlsOptions));
     } catch {
       throw new Error(
-        'TLS options is not a valid JSON. Check again the value set for NODEMAILER_TLS_OPTIONS'
+        'TLS options is not a valid JSON. Check again the value set for NODEMAILER_TLS_OPTIONS',
       );
     }
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mailData = this.createMailData(options);
     const info = await this.transports.sendMail(mailData);
@@ -101,7 +101,7 @@ export class NodemailerProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const mailData = this.createMailData(options);
