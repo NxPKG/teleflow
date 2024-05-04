@@ -21,7 +21,7 @@ jobs:
   test_api:
     strategy:
       matrix:
-        name: ['novu/api-ee', 'novu/api']
+        name: ['teleflow/api-ee', 'teleflow/api']
     uses: ./.github/workflows/reusable-api-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -42,7 +42,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        name: ['novu/api-ee', 'novu/api']
+        name: ['teleflow/api-ee', 'teleflow/api']
     steps:
       - uses: actions/checkout@v3
         with:

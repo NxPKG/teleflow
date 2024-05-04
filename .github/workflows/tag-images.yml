@@ -38,7 +38,7 @@ jobs:
       - name: Tag API
         env:
           REGISTRY_OWNER: novuhq
-          DOCKER_NAME: novu/api
+          DOCKER_NAME: teleflow/api
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}

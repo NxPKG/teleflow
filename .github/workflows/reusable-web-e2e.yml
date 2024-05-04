@@ -74,7 +74,7 @@ jobs:
       - uses: mansagroup/nrwl-nx-action@v3
         with:
           targets: build
-          projects: '@novu/web,@novu/api,@novu/worker'
+          projects: '@novu/web,@teleflow/api,@novu/worker'
           args: --skip-nx-cache
 
       - uses: ./.github/actions/start-localstack

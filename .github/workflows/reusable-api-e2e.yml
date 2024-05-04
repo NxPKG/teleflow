@@ -20,7 +20,7 @@ on:
         default: false
         type: boolean
       job-name:
-        description: 'job name [options: novu/api-ee, novu/api]'
+        description: 'job name [options: teleflow/api-ee, teleflow/api]'
         required: true
         type: string
 

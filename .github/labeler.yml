@@ -1,4 +1,4 @@
-'@novu/api':
+'@teleflow/api':
   - apps/api/**/*
 '@novu/worker':
   - apps/worker/**/*
