@@ -6,7 +6,7 @@
   - apps/web/**/*
 '@teleflow/ws':
   - apps/ws/**/*
-'@novu/inbound-mail':
+'@teleflow/inbound-mail':
   - apps/inbound-mail/**/*
 '@teleflow/webhook':
   - apps/webhook/**/*
