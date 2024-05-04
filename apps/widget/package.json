@@ -1,5 +1,5 @@
 {
-  "name": "@novu/widget",
+  "name": "@teleflow/widget",
   "version": "0.24.1",
   "private": true,
   "scripts": {

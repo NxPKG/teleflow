@@ -1,5 +1,5 @@
 {
-  "name": "@novu/nest",
+  "name": "@teleflow/nest",
   "version": "0.24.1",
   "description": "A nestjs wrapper for novu",
   "main": "build/main/index.js",

@@ -385,7 +385,7 @@ describe.skip('Workflow Editor - Main Functionality', function () {
     cy.getByTestId('workflow-sidebar').getByTestId('trigger-code-snippet').contains('test-sms-notification-title');
     cy.getByTestId('workflow-sidebar')
       .getByTestId('trigger-code-snippet')
-      .contains("import { Novu } from '@novu/node'");
+      .contains("import { Novu } from '@teleflow/node'");
 
     cy.getByTestId('workflow-sidebar').getByTestId('trigger-code-snippet').contains('taskName');
 

@@ -1,6 +1,6 @@
 # Novu Discord Provider
 
-A Discord chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A Discord chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

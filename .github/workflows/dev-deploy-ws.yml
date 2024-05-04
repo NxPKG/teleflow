@@ -17,7 +17,7 @@ jobs:
   test_ws:
     strategy:
       matrix:
-        name: ['novu/ws-ee', 'novu/ws']
+        name: ['teleflow/ws-ee', 'teleflow/ws']
     uses: ./.github/workflows/reusable-ws-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -33,7 +33,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     strategy:
       matrix:
-        name: ['novu/ws-ee']
+        name: ['teleflow/ws-ee']
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:

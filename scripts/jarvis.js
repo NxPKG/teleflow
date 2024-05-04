@@ -127,7 +127,7 @@ async function setupRunner() {
       `);
     } else if (answers.runConfiguration === WEB_PROJECT) {
       try {
-        shell.exec('nx run-many --target=build --projects=@teleflow/api,@teleflow/worker,@novu/ws');
+        shell.exec('nx run-many --target=build --projects=@teleflow/api,@teleflow/worker,@teleflow/ws');
 
         shell.exec('npm run start:api', { async: true });
         shell.exec('npm run start:ws', { async: true });
@@ -202,7 +202,7 @@ async function setupRunner() {
 
       shell.exec('npm run start:e2e:api', { async: true });
     } else if ([RUN_CYPRESS_CLI, RUN_CYPRESS_UI].includes(answers.runWebConfiguration)) {
-      shell.exec('nx run-many --target=build --projects=@teleflow/api,@teleflow/worker,@novu/ws');
+      shell.exec('nx run-many --target=build --projects=@teleflow/api,@teleflow/worker,@teleflow/ws');
 
       shell.exec('npm run start:api:test', { async: true });
       shell.exec('npm run start:worker:test', { async: true });

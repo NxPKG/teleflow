@@ -38,7 +38,7 @@ describe('Creation functionality', function () {
     cy.getByTestId('get-snippet-btn').click();
     cy.getByTestId('trigger-code-snippet').should('be.visible');
     cy.getByTestId('trigger-code-snippet').contains('test-notification-title');
-    cy.getByTestId('trigger-code-snippet').contains("import { Novu } from '@novu/node'");
+    cy.getByTestId('trigger-code-snippet').contains("import { Novu } from '@teleflow/node'");
 
     cy.get('.mantine-Tabs-tabsList').contains('Curl').click();
     cy.getByTestId('trigger-curl-snippet').contains("--header 'Authorization: ApiKey");

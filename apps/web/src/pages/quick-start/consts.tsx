@@ -34,7 +34,7 @@ interface ISnippetInstructions {
 
 const installReactNotificationCenter = 'npm install @novu/notification-center';
 const installAngularNotificationCenter = 'npm install @novu/notification-center-angular';
-const installVueNotificationCenter = 'npm install @novu/notification-center-vue';
+const installVueNotificationCenter = 'npm install @teleflow/notification-center-vue';
 
 export const reactStarterSnippet = `import React from 'react';
 import {
@@ -100,8 +100,8 @@ export const angularHtmlSnippet = `<notification-center-component
     [sessionLoaded]="sessionLoaded"
   ></notification-center-component>`;
 
-const vuePluginSnippet = `import NotificationCenterPlugin from '@novu/notification-center-vue';
-import '@novu/notification-center-vue/dist/style.css';
+const vuePluginSnippet = `import NotificationCenterPlugin from '@teleflow/notification-center-vue';
+import '@teleflow/notification-center-vue/dist/style.css';
 
 import App from './App.vue';
 

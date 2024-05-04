@@ -114,7 +114,7 @@ jobs:
       environment: Production
       terraform_workspace: novu-prod-eu
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/teleflow/worker-ee:${{ github.sha }}
+      docker_image: ghcr.io/nxpkg/teleflow/worker-ee:${{ github.sha }}
 
   deploy_prod_workers_us:
     needs: build_prod_image
@@ -124,7 +124,7 @@ jobs:
       environment: Production
       terraform_workspace: novu-prod
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/teleflow/worker-ee:${{ github.sha }}
+      docker_image: ghcr.io/nxpkg/teleflow/worker-ee:${{ github.sha }}
       deploy_sentry_release: true
       sentry_project: worker
 
