@@ -7,7 +7,7 @@
   </a>
 </div>
 
-# @novu/api
+# @teleflow/api
 
 A RESTful API for accessing the Novu platform, built using [NestJS](https://nestjs.com/).
 
@@ -37,15 +37,18 @@ $ npm run start:api
 ## Test
 
 ### Unit Tests
+
 ```bash
 # unit tests
 $ npm run test
 ```
 
 ### E2E tests
+
 See the docs for [Running on Local Machine - API Tests](https://docs.novu.co/community/run-in-local-machine#api?utm_campaign=github-api-readme).
 
 ## Migrations
+
 Database migrations are included for features that have a hard dependency on specific data being available on database entities. These migrations are run by both Novu Cloud and Novu Self-Hosted users to support new feature releases.
 
 ### How to Run
