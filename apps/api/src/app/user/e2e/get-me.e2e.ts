@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('User Profile', async () => {

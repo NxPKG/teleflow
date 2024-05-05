@@ -1,11 +1,10 @@
 # Novu GenericSms Provider
 
-A Generic sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Generic sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
 ```javascript
-
 import { GenericSmsProvider } from './generic-sms.provider';
 
 const provider = new GenericSmsProvider({
@@ -24,8 +23,8 @@ await provider.sendMessage({
 ```
 
 ## Options
-```typescript
 
+```typescript
 interface GenericSmsProviderOptions {
   baseUrl: string;
   apiKeyRequestHeader: string;
@@ -39,5 +38,4 @@ interface GenericSmsProviderOptions {
   authenticateByToken?: boolean;
   authenticationTokenKey?: string;
 }
-
 ```

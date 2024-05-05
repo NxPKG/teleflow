@@ -9,7 +9,7 @@ import {
   EnvironmentRepository,
   MemberRepository,
   UserRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { SwitchEnvironmentCommand } from './switch-environment.command';
 import { AuthService } from '../../services/auth/auth.service';
 

@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   IChatOptions,
   IChatProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 import { v4 as uuid } from 'uuid';
 
@@ -18,11 +18,11 @@ export class GrafanaOnCallChatProvider implements IChatProvider {
       imageUrl?: string;
       state?: string;
       externalLink?: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = new URL(options.webhookUrl);
     const body = {

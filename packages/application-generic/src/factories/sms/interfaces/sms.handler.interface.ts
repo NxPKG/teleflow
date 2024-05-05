@@ -2,7 +2,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 
 export interface ISmsHandler {

@@ -1,5 +1,5 @@
-import { IntegrationEntity } from '@novu/dal';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { ICredentialsDto, secureCredentials } from '@novu/shared';
 import { encryptSecret } from '@novu/application-generic';
 

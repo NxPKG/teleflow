@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@novu/application-generic';
 
-import { CreateNovuIntegrationsCommand } from './create-novu-integrations.command';
+import { CreateNovuIntegrationsCommand } from './create-teleflow-integrations.command';
 import { CreateIntegration } from '../create-integration/create-integration.usecase';
 import { CreateIntegrationCommand } from '../create-integration/create-integration.command';
 import { ChannelTypeEnum, EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';

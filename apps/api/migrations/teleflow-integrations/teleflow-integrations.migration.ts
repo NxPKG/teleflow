@@ -5,7 +5,7 @@ import {
   IntegrationRepository,
   ChannelTypeEnum,
   EnvironmentEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../../src/app.module';

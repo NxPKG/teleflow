@@ -1,7 +1,7 @@
 /* eslint-disable */
 import '../../src/config';
 
-import { EnvironmentRepository, IApiKey } from '@novu/dal';
+import { EnvironmentRepository, IApiKey } from '@teleflow/dal';
 import { encryptSecret } from '@novu/application-generic';
 import { EncryptedSecret } from '@novu/shared';
 import { createHash } from 'crypto';

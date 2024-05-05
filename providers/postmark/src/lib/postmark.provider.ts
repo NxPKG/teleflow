@@ -7,7 +7,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailEventBody,
   EmailEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { Errors, ServerClient, Message, Models } from 'postmark';
 
 export class PostmarkEmailProvider implements IEmailProvider {
@@ -19,13 +19,13 @@ export class PostmarkEmailProvider implements IEmailProvider {
     private config: {
       apiKey: string;
       from: string;
-    }
+    },
   ) {
     this.client = new ServerClient(this.config.apiKey);
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mailData = this.createMailData(options);
     const response = await this.client.sendEmail(mailData);
@@ -37,7 +37,7 @@ export class PostmarkEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const mailData = this.createMailData(options);
@@ -79,8 +79,8 @@ export class PostmarkEmailProvider implements IEmailProvider {
           new Models.Attachment(
             attachment.name,
             attachment.file.toString('base64'),
-            attachment.mime
-          )
+            attachment.mime,
+          ),
       ),
     };
 
@@ -101,7 +101,7 @@ export class PostmarkEmailProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.MessageID === identifier);

@@ -1,5 +1,5 @@
 import { IsEmail, IsLocale, IsOptional, IsString } from 'class-validator';
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { SubscriberCustomData } from '@novu/shared';
 import { Transform } from 'class-transformer';
 

@@ -1,9 +1,9 @@
-import { NotificationTemplateEntity } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { NotificationTemplateEntity } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import axios from 'axios';
 import { expect } from 'chai';
 import { updateSubscriberPreference } from './update-subscriber-preference.e2e';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 
 describe('GET /widget/preferences', function () {
   let template: NotificationTemplateEntity;

@@ -4,7 +4,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 interface IFortySixElksSuccessObject {
   status: string;
@@ -31,14 +31,14 @@ export class FortySixElksSmsProvider implements ISmsProvider {
       user?: string;
       password?: string;
       from?: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const authKey = Buffer.from(
-      this.config.user + ':' + this.config.password
+      this.config.user + ':' + this.config.password,
     ).toString('base64');
 
     const data = new URLSearchParams({
@@ -54,7 +54,7 @@ export class FortySixElksSmsProvider implements ISmsProvider {
         headers: {
           Authorization: 'Basic ' + authKey,
         },
-      }
+      },
     );
 
     return {

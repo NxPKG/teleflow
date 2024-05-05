@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { UserSession, WorkflowOverrideService } from '@novu/testing';
+import { UserSession, WorkflowOverrideService } from '@teleflow/testing';
 import { IUpdateWorkflowOverrideRequestDto } from '@novu/shared';
 
 describe('Update Workflow Override By ID - /workflow-overrides/:overrideId (PUT)', function () {

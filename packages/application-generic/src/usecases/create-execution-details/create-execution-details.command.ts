@@ -1,12 +1,15 @@
 import { IsNotEmpty, IsOptional, IsString, IsDate } from 'class-validator';
-import { ExecutionDetailsEntity, ExecutionDetailsRepository } from '@novu/dal';
+import {
+  ExecutionDetailsEntity,
+  ExecutionDetailsRepository,
+} from '@teleflow/dal';
 import {
   ExecutionDetailsSourceEnum,
   ExecutionDetailsStatusEnum,
   IJob,
   StepTypeEnum,
 } from '@novu/shared';
-import { EmailEventStatusEnum, SmsEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum, SmsEventStatusEnum } from '@teleflow/stateless';
 
 import { EnvironmentWithSubscriber } from '../../commands/project.command';
 

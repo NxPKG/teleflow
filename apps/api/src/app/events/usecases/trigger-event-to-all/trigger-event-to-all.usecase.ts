@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { AddressingTypeEnum, TriggerEventStatusEnum, TriggerRequestCategoryEnum } from '@novu/shared';
 
 import { TriggerEventToAllCommand } from './trigger-event-to-all.command';

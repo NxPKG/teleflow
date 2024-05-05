@@ -1,6 +1,6 @@
 import { forwardRef, Inject, Injectable, Logger } from '@nestjs/common';
 
-import { JobRepository, JobStatusEnum } from '@novu/dal';
+import { JobRepository, JobStatusEnum } from '@teleflow/dal';
 import {
   DelayTypeEnum,
   ExecutionDetailsSourceEnum,

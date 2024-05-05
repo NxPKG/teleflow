@@ -4,7 +4,7 @@ import * as shortid from 'shortid';
 import slugify from 'slugify';
 
 import { providers } from '@novu/shared';
-import { EnvironmentRepository, IntegrationEntity, IntegrationRepository } from '@novu/dal';
+import { EnvironmentRepository, IntegrationEntity, IntegrationRepository } from '@teleflow/dal';
 
 export const ENVIRONMENT_NAME_TO_SHORT_NAME = { ['Development']: 'dev', ['Production']: 'prod', ['undefined']: '' };
 

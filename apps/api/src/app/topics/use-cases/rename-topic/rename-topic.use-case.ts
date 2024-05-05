@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { TopicEntity, TopicRepository } from '@novu/dal';
+import { TopicEntity, TopicRepository } from '@teleflow/dal';
 
 import { RenameTopicCommand } from './rename-topic.command';
 

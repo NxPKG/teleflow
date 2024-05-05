@@ -1,12 +1,12 @@
 import { expect } from 'chai';
-import { UserSession, NotificationTemplateService } from '@novu/testing';
+import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 import {
   NotificationGroupRepository,
   NotificationTemplateRepository,
   EnvironmentRepository,
   MessageTemplateRepository,
   ChannelTypeEnum,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelCTATypeEnum } from '@novu/shared';
 
 describe('Delete workflow by id - /workflows/:workflowId (DELETE)', async () => {

@@ -1,4 +1,4 @@
-import { MessageRepository } from '@novu/dal';
+import { MessageRepository } from '@teleflow/dal';
 
 const messageRepository = new MessageRepository();
 

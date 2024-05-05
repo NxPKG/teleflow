@@ -29,7 +29,7 @@ import {
   ChatProviderIdEnum,
   IJwtPayload,
 } from '@novu/shared';
-import { MessageEntity, PreferenceLevelEnum } from '@novu/dal';
+import { MessageEntity, PreferenceLevelEnum } from '@teleflow/dal';
 
 import { RemoveSubscriber, RemoveSubscriberCommand } from './usecases/remove-subscriber';
 import { UserAuthGuard } from '../auth/framework/user.auth.guard';

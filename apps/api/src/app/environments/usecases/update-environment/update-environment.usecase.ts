@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { EnvironmentEntity, EnvironmentRepository } from '@novu/dal';
+import { EnvironmentEntity, EnvironmentRepository } from '@teleflow/dal';
 import { UpdateEnvironmentCommand } from './update-environment.command';
 
 @Injectable()

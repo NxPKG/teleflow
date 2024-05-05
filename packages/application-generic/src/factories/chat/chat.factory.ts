@@ -1,6 +1,6 @@
 import { IChatFactory, IChatHandler } from './interfaces';
 import { SlackHandler } from './handlers/slack.handler';
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
 import { DiscordHandler } from './handlers/discord.handler';
 import { MSTeamsHandler } from './handlers/msteams.handler';
 import { MattermostHandler } from './handlers/mattermost.handler';

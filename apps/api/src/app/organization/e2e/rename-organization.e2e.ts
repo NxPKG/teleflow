@@ -1,5 +1,5 @@
-import { OrganizationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { OrganizationRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Rename Organization - /organizations (PATCH)', function () {

@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   IChatOptions,
   IChatProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class GetstreamChatProvider implements IChatProvider {
@@ -14,7 +14,7 @@ export class GetstreamChatProvider implements IChatProvider {
   constructor(
     private config: {
       apiKey: string;
-    }
+    },
   ) {
     this.config = config;
   }

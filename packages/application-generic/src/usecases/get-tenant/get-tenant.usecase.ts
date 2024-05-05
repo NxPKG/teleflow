@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { TenantRepository } from '@novu/dal';
+import { TenantRepository } from '@teleflow/dal';
 import { GetTenantCommand } from './get-tenant.command';
 
 @Injectable()

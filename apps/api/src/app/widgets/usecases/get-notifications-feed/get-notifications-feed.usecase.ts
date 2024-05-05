@@ -7,7 +7,7 @@ import {
   CachedEntity,
   CachedQuery,
 } from '@novu/application-generic';
-import { MessageRepository, SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 
 import { GetNotificationsFeedCommand } from './get-notifications-feed.command';
 import { MessagesResponseDto } from '../../dtos/message-response.dto';

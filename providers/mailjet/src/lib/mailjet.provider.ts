@@ -7,7 +7,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailEventBody,
   EmailEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import * as Mailjet from 'node-mailjet';
 
 const MAILJET_API_VERSION = 'v3.1';
@@ -23,7 +23,7 @@ export class MailjetEmailProvider implements IEmailProvider {
       apiSecret: string;
       from: string;
       senderName: string;
-    }
+    },
   ) {
     this.mailjetClient = new Mailjet.Client({
       apiKey: config.apiKey,
@@ -32,14 +32,14 @@ export class MailjetEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    emailOptions: IEmailOptions
+    emailOptions: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const response = await this.mailjetClient
       .post('send', {
         version: MAILJET_API_VERSION,
       })
       .request<Mailjet.SendEmailV3_1.Response>(
-        this.createMailData(emailOptions)
+        this.createMailData(emailOptions),
       );
 
     const { body, response: clientResponse } = response;
@@ -51,7 +51,7 @@ export class MailjetEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     const send = this.mailjetClient.post('send', {
       version: MAILJET_API_VERSION,
@@ -114,7 +114,7 @@ export class MailjetEmailProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.MessageID === identifier);

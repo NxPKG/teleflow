@@ -14,7 +14,7 @@ import { IUserPreferenceSettings } from '@novu/client';
 import { ISession, INotificationsContext } from '../shared/interfaces';
 import { NovuProvider } from '../components';
 import { useNotifications } from './useNotifications';
-import { queryClient } from '../components/novu-provider/NovuProvider';
+import { queryClient } from '../components/teleflow-provider/NovuProvider';
 
 const PROMISE_TIMEOUT = 150;
 const promiseResolveTimeout = (ms: number, arg: unknown = {}) => new Promise((resolve) => setTimeout(resolve, ms, arg));

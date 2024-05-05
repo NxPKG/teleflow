@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 
 import { FindDeletedLayoutCommand } from './find-deleted-layout.command';
 

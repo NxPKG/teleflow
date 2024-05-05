@@ -1,6 +1,6 @@
 import { IsDefined } from 'class-validator';
 
-import { StepFilter } from '@novu/dal';
+import { StepFilter } from '@teleflow/dal';
 import { IJob, INotificationTemplateStep } from '@novu/shared';
 
 import { EnvironmentWithUserCommand } from '../../commands';

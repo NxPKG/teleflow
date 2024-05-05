@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { NotificationTemplateEntity, NotificationTemplateRepository, ChangeRepository } from '@novu/dal';
+import { NotificationTemplateEntity, NotificationTemplateRepository, ChangeRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import {
   buildNotificationTemplateIdentifierKey,

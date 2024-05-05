@@ -1,4 +1,4 @@
-import { EmailEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum } from '@teleflow/stateless';
 import { SESClient } from '@aws-sdk/client-ses';
 import { SESEmailProvider } from './ses.provider';
 
@@ -154,7 +154,7 @@ describe('parseEventBody', () => {
     const provider = new SESEmailProvider(mockConfig);
     const messageId = provider.parseEventBody(
       { event: 'not-real-event' },
-      'test'
+      'test',
     );
     expect(messageId).toBeUndefined();
   });

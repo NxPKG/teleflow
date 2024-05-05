@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
-import { IntegrationEntity, IntegrationQuery, IntegrationRepository } from '@novu/dal';
-import { IEmailProvider, ISmsProvider } from '@novu/stateless';
+import { IntegrationEntity, IntegrationQuery, IntegrationRepository } from '@teleflow/dal';
+import { IEmailProvider, ISmsProvider } from '@teleflow/stateless';
 import { IMailHandler, ISmsHandler, MailFactory, SmsFactory } from '@novu/application-generic';
 import { ChannelTypeEnum, providers } from '@novu/shared';
 

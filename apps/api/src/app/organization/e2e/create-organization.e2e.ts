@@ -6,8 +6,8 @@ import {
   UserRepository,
   IntegrationRepository,
   EnvironmentRepository,
-} from '@novu/dal';
-import { UserSession } from '@novu/testing';
+} from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import {
   ApiServiceLevelEnum,
   EmailProviderIdEnum,

@@ -1,6 +1,6 @@
 # Novu SparkPost Provider
 
-A SparkPost email provider library for [@novu/node](https://github.com/novuhq/novu)
+A SparkPost email provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,6 +8,6 @@ A SparkPost email provider library for [@novu/node](https://github.com/novuhq/no
 import { SparkPostEmailProvider } from '@novu/sparkpost';
 
 const provider = new SparkPostEmailProvider({
-  apiKey: process.env.SPARKPOST_API_KEY
+  apiKey: process.env.SPARKPOST_API_KEY,
 });
 ```

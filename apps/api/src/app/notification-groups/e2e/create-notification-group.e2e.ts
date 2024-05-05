@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 describe('Create Notification Group - /notification-groups (POST)', async () => {
   let session: UserSession;

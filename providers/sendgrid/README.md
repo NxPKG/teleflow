@@ -1,6 +1,6 @@
 # Nodejs SendGrid Provider
 
-A sendgrid email provider library for [@novu/stateless](https://github.com/novuhq/novu)
+A sendgrid email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,6 +8,6 @@ A sendgrid email provider library for [@novu/stateless](https://github.com/novuh
 import { SendgridEmailProvider } from '@novu/sendgrid';
 
 const provider = new SendgridEmailProvider({
-  apiKey: process.env.SENDGRID_API_KEY
+  apiKey: process.env.SENDGRID_API_KEY,
 });
 ```

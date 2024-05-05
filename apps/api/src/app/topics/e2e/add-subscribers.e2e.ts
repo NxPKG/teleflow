@@ -1,5 +1,5 @@
-import { SubscriberEntity } from '@novu/dal';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscriberEntity } from '@teleflow/dal';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Add subscribers to topic - /topics/:topicKey/subscribers (POST)', async () => {

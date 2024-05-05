@@ -1,6 +1,6 @@
 # Novu Messagebird Provider
 
-A Messagebird sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Messagebird sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

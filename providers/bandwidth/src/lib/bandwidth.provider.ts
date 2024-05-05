@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { Client, ApiController } from '@bandwidth/messaging';
 export class BandwidthSmsProvider implements ISmsProvider {
@@ -16,7 +16,7 @@ export class BandwidthSmsProvider implements ISmsProvider {
       username: string;
       password: string;
       accountId: string;
-    }
+    },
   ) {
     const client = new Client({
       basicAuthUserName: config.username,
@@ -26,7 +26,7 @@ export class BandwidthSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const body = {
       applicationId: this.config.accountId,
@@ -37,7 +37,7 @@ export class BandwidthSmsProvider implements ISmsProvider {
 
     const createMessageResponse = await this.controller.createMessage(
       this.config.accountId,
-      body
+      body,
     );
 
     return {

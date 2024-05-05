@@ -4,7 +4,7 @@ import {
   ISendMessageSuccessResponse,
   IChatOptions,
   IChatProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 interface IMattermostPayload {
   channel?: string;

@@ -1,5 +1,5 @@
-import { EnvironmentRepository, OrganizationRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Change Profile Email - /users/profile/email (PUT)', async () => {

@@ -9,7 +9,7 @@ import {
   SubscriberRepository,
   TenantRepository,
   MessageRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { SelectIntegration } from './select-integration.usecase';
 import { SelectIntegrationCommand } from './select-integration.command';
@@ -69,8 +69,8 @@ const novuIntegration: IntegrationEntity = {
   credentials: {},
   providerId: EmailProviderIdEnum.Novu,
   deleted: false,
-  identifier: 'test-novu-integration-identifier',
-  name: 'test-novu-integration-name',
+  identifier: 'test-teleflow-integration-identifier',
+  name: 'test-teleflow-integration-name',
   primary: true,
   priority: 1,
   deletedAt: null,
@@ -79,8 +79,8 @@ const novuIntegration: IntegrationEntity = {
 
 const findOneMock = jest.fn(() => testIntegration);
 
-jest.mock('@novu/dal', () => ({
-  ...jest.requireActual('@novu/dal'),
+jest.mock('@teleflow/dal', () => ({
+  ...jest.requireActual('@teleflow/dal'),
   IntegrationRepository: jest.fn(() => ({
     findOne: findOneMock,
   })),

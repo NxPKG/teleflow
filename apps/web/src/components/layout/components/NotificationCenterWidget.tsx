@@ -1,5 +1,5 @@
 import { useMantineColorScheme } from '@mantine/core';
-import { NovuProvider, PopoverNotificationCenter, useUpdateAction } from '@novu/notification-center';
+import { NovuProvider, PopoverNotificationCenter, useUpdateAction } from '@teleflow/notification-center';
 import { ButtonTypeEnum, IMessage, IUserEntity, MessageActionStatusEnum } from '@novu/shared';
 
 import { API_ROOT, APP_ID, IS_EU_ENV, WS_URL } from '../../../config';

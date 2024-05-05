@@ -10,7 +10,7 @@ import {
   ChangeRepository,
   MemberRepository,
   OrganizationRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChangeEntityTypeEnum, MemberRoleEnum } from '@novu/shared';
 import { CreateEnvironment } from '../src/app/environments/usecases/create-environment/create-environment.usecase';
 import { CreateEnvironmentCommand } from '../src/app/environments/usecases/create-environment/create-environment.command';

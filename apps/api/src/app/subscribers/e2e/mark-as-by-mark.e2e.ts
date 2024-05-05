@@ -1,14 +1,14 @@
 import { expect } from 'chai';
 import axios from 'axios';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import {
   MessageEntity,
   MessageRepository,
   NotificationTemplateEntity,
   SubscriberEntity,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelTypeEnum, MarkMessagesAsEnum } from '@novu/shared';
 
 const axiosInstance = axios.create();

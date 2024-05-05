@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { MessageRepository } from '@novu/dal';
+import { MessageRepository } from '@teleflow/dal';
 import { buildFeedKey, buildMessageCountKey, InvalidateCacheService } from '@novu/application-generic';
 
 import { RemoveMessageCommand } from './remove-message.command';

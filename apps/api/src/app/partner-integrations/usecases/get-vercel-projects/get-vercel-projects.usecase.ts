@@ -1,7 +1,7 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { lastValueFrom } from 'rxjs';
-import { OrganizationRepository } from '@novu/dal';
+import { OrganizationRepository } from '@teleflow/dal';
 import { GetVercelProjectsCommand } from './get-vercel-projects.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 

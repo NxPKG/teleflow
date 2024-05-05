@@ -6,7 +6,7 @@ import {
   IsString,
 } from 'class-validator';
 import { Transform } from 'class-transformer';
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { SubscriberCustomData } from '@novu/shared';
 
 import { EnvironmentCommand } from '../../commands/project.command';

@@ -3,7 +3,7 @@ import {
   NotificationTemplateRepository,
   NotificationTemplateEntity,
   MemberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   IPreferenceChannels,

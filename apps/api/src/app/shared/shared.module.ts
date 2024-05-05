@@ -23,7 +23,7 @@ import {
   TopicSubscribersRepository,
   UserRepository,
   WorkflowOverrideRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   analyticsService,
   cacheService,

@@ -3,7 +3,7 @@ import {
   IEmailProvider,
   ISendMessageSuccessResponse,
   ICheckIntegrationResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 
 export interface IMailHandler {

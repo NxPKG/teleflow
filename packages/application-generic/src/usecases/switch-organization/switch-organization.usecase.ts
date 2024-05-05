@@ -9,7 +9,7 @@ import {
   OrganizationRepository,
   UserRepository,
   EnvironmentRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { SwitchOrganizationCommand } from './switch-organization.command';
 import { AuthService } from '../../services/auth/auth.service';
 import { ApiException } from '../../utils/exceptions';

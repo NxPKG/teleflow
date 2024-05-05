@@ -6,7 +6,7 @@ import {
   FeatureFlagsService,
 } from '../services';
 import { GetFeatureFlag } from '../usecases';
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 
 export const featureFlagsService = {
   provide: FeatureFlagsService,

@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Delete a Translation - /translations/group/:id/locale/:locale (Delete)', async () => {

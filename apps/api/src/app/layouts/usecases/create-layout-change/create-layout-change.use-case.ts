@@ -1,4 +1,4 @@
-import { LayoutRepository, ChangeRepository } from '@novu/dal';
+import { LayoutRepository, ChangeRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { Injectable } from '@nestjs/common';
 

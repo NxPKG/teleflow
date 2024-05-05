@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
-import { IntegrationRepository, DalException } from '@novu/dal';
+import { IntegrationRepository, DalException } from '@teleflow/dal';
 import { CHANNELS_WITH_PRIMARY } from '@novu/shared';
 import { buildIntegrationKey, InvalidateCacheService } from '@novu/application-generic';
 

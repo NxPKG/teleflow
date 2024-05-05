@@ -1,7 +1,7 @@
 import { NotFoundError } from 'rxjs';
 import { Injectable, Logger } from '@nestjs/common';
 
-import { JobRepository } from '@novu/dal';
+import { JobRepository } from '@teleflow/dal';
 import { ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
 import { DetailEnum, ExecutionLogRoute, ExecutionLogRouteCommand, InstrumentUsecase } from '@novu/application-generic';
 

@@ -1,5 +1,5 @@
 import { Provider } from '@nestjs/common';
-import { NovuStateless } from '@novu/stateless';
+import { NovuStateless } from '@teleflow/stateless';
 import { NOVU_OPTIONS } from '../helpers/constants';
 import {
   INovuModuleAsyncOptions,
@@ -40,7 +40,7 @@ export function createNovuProviders(options: INovuOptions): Provider[] {
 }
 
 export function createAsyncNovuProviders(
-  options: INovuModuleAsyncOptions
+  options: INovuModuleAsyncOptions,
 ): Provider[] {
   if (options.useFactory) {
     return [

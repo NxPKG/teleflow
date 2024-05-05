@@ -1,17 +1,17 @@
 ## 📦 Install
 
 ```bash
-npm install @novu/stateless
+npm install @teleflow/stateless
 ```
 
 ```bash
-yarn add @novu/stateless
+yarn add @teleflow/stateless
 ```
 
 ## 🔨 Usage
 
 ```ts
-import { NovuStateless, ChannelTypeEnum } from '@novu/stateless';
+import { NovuStateless, ChannelTypeEnum } from '@teleflow/stateless';
 import { SendgridEmailProvider } from '@novu/sendgrid';
 
 const novu = new NovuStateless();
@@ -20,7 +20,7 @@ await novu.registerProvider(
   new SendgridEmailProvider({
     apiKey: process.env.SENDGRID_API_KEY,
     from: 'sender@mail.com',
-  })
+  }),
 );
 
 const passwordResetTemplate = await novu.registerTemplate({

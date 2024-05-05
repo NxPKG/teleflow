@@ -1,5 +1,5 @@
 import { IsDefined, IsEnum, IsString } from 'class-validator';
-import { PreferenceLevelEnum } from '@novu/dal';
+import { PreferenceLevelEnum } from '@teleflow/dal';
 import { EnvironmentCommand } from '../../../shared/commands/project.command';
 
 export class GetPreferencesByLevelCommand extends EnvironmentCommand {

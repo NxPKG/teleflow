@@ -1,10 +1,10 @@
 import { Test } from '@nestjs/testing';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import {
   ChangeRepository,
   LayoutRepository,
   MessageTemplateRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   EmailBlockTypeEnum,
   StepTypeEnum,

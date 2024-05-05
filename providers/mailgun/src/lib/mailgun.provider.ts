@@ -5,7 +5,7 @@ import {
   ISendMessageSuccessResponse,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import formData from 'form-data';
 import Mailgun from 'mailgun.js';
 import { IMailgunClient } from 'mailgun.js/interfaces/IMailgunClient';
@@ -25,7 +25,7 @@ export class MailgunEmailProvider implements IEmailProvider {
       username: string;
       domain: string;
       from: string;
-    }
+    },
   ) {
     const mailgun = new Mailgun(formData);
 
@@ -37,7 +37,7 @@ export class MailgunEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    emailOptions: IEmailOptions
+    emailOptions: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mailgunMessageData: Partial<MailgunMessageData> = {
       from: emailOptions.from || this.config.from,
@@ -60,7 +60,7 @@ export class MailgunEmailProvider implements IEmailProvider {
 
     const response = await this.mailgunClient.messages.create(
       this.config.domain,
-      mailgunMessageData as MailgunMessageData
+      mailgunMessageData as MailgunMessageData,
     );
 
     return {
@@ -69,7 +69,7 @@ export class MailgunEmailProvider implements IEmailProvider {
     };
   }
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     return {
       success: true,

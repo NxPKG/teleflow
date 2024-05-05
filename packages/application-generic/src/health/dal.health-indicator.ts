@@ -4,7 +4,7 @@ import {
   HealthIndicatorResult,
 } from '@nestjs/terminus';
 import { Injectable } from '@nestjs/common';
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 import { IHealthIndicator } from './health-indicator.interface';
 
 @Injectable()

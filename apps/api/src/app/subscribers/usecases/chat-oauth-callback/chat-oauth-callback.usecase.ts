@@ -9,7 +9,7 @@ import {
   IntegrationEntity,
   IntegrationRepository,
   EnvironmentEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { ChatOauthCallbackCommand } from './chat-oauth-callback.command';
 import {

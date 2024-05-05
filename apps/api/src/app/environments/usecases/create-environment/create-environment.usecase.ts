@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import { Injectable } from '@nestjs/common';
 import { createHash } from 'crypto';
 
-import { EnvironmentRepository } from '@novu/dal';
+import { EnvironmentRepository } from '@teleflow/dal';
 import { encryptApiKey } from '@novu/application-generic';
 
 import { CreateEnvironmentCommand } from './create-environment.command';

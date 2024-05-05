@@ -1,7 +1,7 @@
 import { File } from '@google-cloud/storage';
 import { S3Client } from '@aws-sdk/client-s3';
 import { BlockBlobClient } from '@azure/storage-blob';
-import { IAttachmentOptionsExtended } from '@novu/stateless';
+import { IAttachmentOptionsExtended } from '@teleflow/stateless';
 
 import { StorageHelperService } from './storage-helper.service';
 import {
@@ -16,11 +16,11 @@ const gcpDownload = jest.fn(() => Promise.resolve([file]));
 const gcpDelete = jest.fn(() => Promise.resolve({}));
 
 const azureUpload = jest.fn(() =>
-  Promise.resolve({ _response: { status: 201 } })
+  Promise.resolve({ _response: { status: 201 } }),
 );
 const azureDownloadToBuffer = jest.fn(() => Promise.resolve(file));
 const azureDelete = jest.fn(() =>
-  Promise.resolve({ _response: { status: 202 } })
+  Promise.resolve({ _response: { status: 202 } }),
 );
 
 jest.mock('@aws-sdk/client-s3');
@@ -67,7 +67,7 @@ describe('Storage-Helper service', function () {
   // mocking the S3 Storage service with jest
   describe('S3', function () {
     const s3StorageHelperService = new StorageHelperService(
-      new S3StorageService()
+      new S3StorageService(),
     );
     const attachments: IAttachmentOptionsExtended[] = [
       {
@@ -106,7 +106,7 @@ describe('Storage-Helper service', function () {
               }
             },
           },
-        })
+        }),
       );
 
       await s3StorageHelperService.getAttachments(attachments);
@@ -133,7 +133,7 @@ describe('Storage-Helper service', function () {
       jest
         .spyOn(S3Client.prototype, 'send')
         .mockImplementation(() =>
-          Promise.reject({ message: 'The specified key does not exist.' })
+          Promise.reject({ message: 'The specified key does not exist.' }),
         );
 
       await s3StorageHelperService.getAttachments(attachments2);
@@ -144,7 +144,7 @@ describe('Storage-Helper service', function () {
   // mocking the google cloud storage service with jest
   describe('Google Cloud', function () {
     const gCSStorageHelperService = new StorageHelperService(
-      new GCSStorageService()
+      new GCSStorageService(),
     );
     const gcAttachments: IAttachmentOptionsExtended[] = [
       {
@@ -193,7 +193,7 @@ describe('Storage-Helper service', function () {
   // mocking the azure storage service with jest
   describe('Azure', function () {
     const azureStorageHelperService = new StorageHelperService(
-      new AzureBlobStorageService()
+      new AzureBlobStorageService(),
     );
     const azureAttachments: IAttachmentOptionsExtended[] = [
       {
@@ -233,7 +233,7 @@ describe('Storage-Helper service', function () {
         },
       ];
       azureDownloadToBuffer.mockImplementationOnce(() =>
-        Promise.reject({ statusCode: 404 })
+        Promise.reject({ statusCode: 404 }),
       );
       // sets the file to null if the get-file method throws error with status code 404
       await azureStorageHelperService.getAttachments(azureAttachments2);

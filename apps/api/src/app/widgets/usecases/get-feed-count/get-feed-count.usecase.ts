@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { MessageRepository, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, SubscriberRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@novu/shared';
 import { buildMessageCountKey, CachedQuery } from '@novu/application-generic';
 

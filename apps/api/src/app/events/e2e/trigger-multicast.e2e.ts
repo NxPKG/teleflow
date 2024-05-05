@@ -3,7 +3,7 @@ import * as sinon from 'sinon';
 import { Test } from '@nestjs/testing';
 import axios from 'axios';
 
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import {
   ExternalSubscriberId,
   ISubscribersDefine,
@@ -21,7 +21,7 @@ import {
   TriggerMulticast,
   TriggerMulticastCommand,
 } from '@novu/application-generic';
-import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 
 import { SharedModule } from '../../shared/shared.module';
 import { EventsModule } from '../events.module';

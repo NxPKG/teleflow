@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import '../../src/config';
 
-import { UserRepository, SubscriberRepository, MemberRepository } from '@novu/dal';
+import { UserRepository, SubscriberRepository, MemberRepository } from '@teleflow/dal';
 import { NestFactory } from '@nestjs/core';
 
 import { AppModule } from '../../src/app.module';

@@ -1,4 +1,4 @@
-import { IPushOptions, ISendMessageSuccessResponse } from '@novu/stateless';
+import { IPushOptions, ISendMessageSuccessResponse } from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 
 export interface IPushHandler {

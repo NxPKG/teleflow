@@ -1,5 +1,5 @@
 import { Injectable, Scope } from '@nestjs/common';
-import { MemberRepository } from '@novu/dal';
+import { MemberRepository } from '@teleflow/dal';
 import { MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 import { GetMembersCommand } from './get-members.command';
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberRepository, SubscriberEntity } from '@novu/dal';
+import { SubscriberRepository, SubscriberEntity } from '@teleflow/dal';
 import { ISubscribersDefine } from '@novu/shared';
 
 import {

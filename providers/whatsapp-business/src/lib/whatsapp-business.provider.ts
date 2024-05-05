@@ -3,7 +3,7 @@ import {
   IChatOptions,
   IChatProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import Axios, { AxiosInstance } from 'axios';
 import { ISendMessageRes } from '../types/whatsapp-business.types';
 import { WhatsAppMessageTypeEnum } from '../consts/whatsapp-business.enum';
@@ -19,7 +19,7 @@ export class WhatsappBusinessChatProvider implements IChatProvider {
     private config: {
       accessToken: string;
       phoneNumberIdentification: string;
-    }
+    },
   ) {
     this.axiosClient = Axios.create({
       headers: {
@@ -30,13 +30,13 @@ export class WhatsappBusinessChatProvider implements IChatProvider {
   }
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = this.defineMessagePayload(options);
 
     const { data } = await this.axiosClient.post<ISendMessageRes>(
       this.baseUrl + this.config.phoneNumberIdentification + '/messages',
-      payload
+      payload,
     );
 
     return {

@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { ColorScheme, ICommonTheme } from '../index';
-import { INovuTheme, ThemeContext } from '../store/novu-theme.context';
+import { ITelelfowTheme, ThemeContext } from '../store/teleflow-theme.context';
 
-export function useNovuTheme(): {
-  theme: INovuTheme;
+export function useTelelfowTheme(): {
+  theme: ITelelfowTheme;
   common: ICommonTheme;
   colorScheme: ColorScheme;
 } {

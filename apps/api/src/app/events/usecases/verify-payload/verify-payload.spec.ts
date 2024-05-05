@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { NotificationTemplateEntity } from '@novu/dal';
+import { NotificationTemplateEntity } from '@teleflow/dal';
 import { ITemplateVariable, TemplateVariableTypeEnum } from '@novu/shared';
 import { merge } from 'lodash';
 import { VerifyPayloadCommand } from './verify-payload.command';

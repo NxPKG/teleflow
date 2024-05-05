@@ -5,7 +5,7 @@ import {
   ISmsOptions,
   ISmsProvider,
   SmsEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { Twilio } from 'twilio';
 
@@ -19,13 +19,13 @@ export class TwilioSmsProvider implements ISmsProvider {
       accountSid?: string;
       authToken?: string;
       from?: string;
-    }
+    },
   ) {
     this.twilioClient = new Twilio(config.accountSid, config.authToken);
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const twilioResponse = await this.twilioClient.messages.create({
       body: options.content,
@@ -49,7 +49,7 @@ export class TwilioSmsProvider implements ISmsProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): ISMSEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.MessageSid === identifier);

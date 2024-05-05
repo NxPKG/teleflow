@@ -1,4 +1,4 @@
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 
 import { ICredentials } from '@novu/shared';
 import { BaseChatHandler } from './base.handler';

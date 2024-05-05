@@ -8,8 +8,8 @@ import {
   SubscriberEntity,
   JobRepository,
   JobStatusEnum,
-} from '@novu/dal';
-import { UserSession, SubscribersService } from '@novu/testing';
+} from '@teleflow/dal';
+import { UserSession, SubscribersService } from '@teleflow/testing';
 import { StepTypeEnum, DelayTypeEnum, DigestUnitEnum, DigestTypeEnum, JobTopicNameEnum } from '@novu/shared';
 
 const axiosInstance = axios.create();

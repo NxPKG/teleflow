@@ -1,7 +1,7 @@
 import { BadRequestException, ConflictException, Inject, Injectable } from '@nestjs/common';
 import * as shortid from 'shortid';
 import slugify from 'slugify';
-import { IntegrationEntity, IntegrationRepository, DalException, IntegrationQuery } from '@novu/dal';
+import { IntegrationEntity, IntegrationRepository, DalException, IntegrationQuery } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   EmailProviderIdEnum,

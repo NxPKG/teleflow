@@ -7,7 +7,7 @@ import {
   SubscriberRepository,
   MemberRepository,
   PreferenceLevelEnum,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   AnalyticsService,
   GetSubscriberTemplatePreference,

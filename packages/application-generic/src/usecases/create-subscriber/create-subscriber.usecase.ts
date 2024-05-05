@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { SubscriberRepository } from '@novu/dal';
-import { SubscriberEntity, ErrorCodesEnum } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
+import { SubscriberEntity, ErrorCodesEnum } from '@teleflow/dal';
 
 import {
   CachedEntity,

@@ -4,7 +4,7 @@ import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 import { ThemeProvider } from '../src/ThemeProvider';
 import { DocsContainer } from './Doc.container';
 import { useLocalThemePreference } from '@teleflow/shared-web';
-import { lightTheme, darkTheme } from './NovuTheme';
+import { lightTheme, darkTheme } from './TelelfowTheme';
 import { Parameters, Decorator } from '@storybook/react';
 
 // Bring in the Panda-generated stylesheets

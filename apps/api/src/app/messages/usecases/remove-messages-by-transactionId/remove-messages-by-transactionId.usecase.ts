@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { buildFeedKey, buildMessageCountKey, InvalidateCacheService } from '@novu/application-generic';
-import { MessageEntity, MessageRepository } from '@novu/dal';
+import { MessageEntity, MessageRepository } from '@teleflow/dal';
 import { RemoveMessagesByTransactionIdCommand } from './remove-messages-by-transactionId.command';
 
 @Injectable()

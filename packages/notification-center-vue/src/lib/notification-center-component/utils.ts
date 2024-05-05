@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
-import { getStyleByPath, getDefaultTheme, getDefaultBellColors } from '@novu/notification-center';
-import type { NotificationCenterContentComponentProps } from '@novu/notification-center';
+import { getStyleByPath, getDefaultTheme, getDefaultBellColors } from '@teleflow/notification-center';
+import type { NotificationCenterContentComponentProps } from '@teleflow/notification-center';
 
 export const calculateStyles = ({
   styles,

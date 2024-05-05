@@ -1,5 +1,5 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { MessageRepository, SubscriberRepository } from '@novu/dal';
+import { MessageRepository, SubscriberRepository } from '@teleflow/dal';
 import {
   WebSocketsQueueService,
   AnalyticsService,

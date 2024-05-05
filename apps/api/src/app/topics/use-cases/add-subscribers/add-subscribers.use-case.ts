@@ -1,4 +1,4 @@
-import { TopicSubscribersRepository, TopicEntity, TopicRepository, CreateTopicSubscribersEntity } from '@novu/dal';
+import { TopicSubscribersRepository, TopicEntity, TopicRepository, CreateTopicSubscribersEntity } from '@teleflow/dal';
 import { SubscriberDto } from '@novu/shared';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ExternalSubscriberId } from '../../types';

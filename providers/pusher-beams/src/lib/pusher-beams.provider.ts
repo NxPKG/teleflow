@@ -3,7 +3,7 @@ import {
   IPushOptions,
   IPushProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios, { AxiosInstance } from 'axios';
 
 export class PusherBeamsPushProvider implements IPushProvider {
@@ -16,7 +16,7 @@ export class PusherBeamsPushProvider implements IPushProvider {
     private config: {
       instanceId: string;
       secretKey: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: `https://${this.config.instanceId}.pushnotifications.pusher.com/publish_api/v1/instances/${this.config.instanceId}`,
@@ -28,7 +28,7 @@ export class PusherBeamsPushProvider implements IPushProvider {
   }
 
   async sendMessage(
-    options: IPushOptions
+    options: IPushOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const { sound, badge, ...overrides } = options.overrides ?? {};
     const payload = {

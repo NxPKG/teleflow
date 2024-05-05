@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 
-import { MessageEntity, MessageRepository, SubscriberRepository, SubscriberEntity } from '@novu/dal';
+import { MessageEntity, MessageRepository, SubscriberRepository, SubscriberEntity } from '@teleflow/dal';
 import { MarkMessagesAsEnum, WebSocketEventEnum } from '@novu/shared';
 import {
   WebSocketsQueueService,

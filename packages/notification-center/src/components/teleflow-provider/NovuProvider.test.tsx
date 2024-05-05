@@ -14,8 +14,8 @@ import {
 import { IUserPreferenceSettings } from '@novu/client';
 
 import { ISession } from '../../shared/interfaces';
-import { NovuProvider } from '../../components';
-import { queryClient } from '../../components/novu-provider/NovuProvider';
+import { NovuProvider } from '..';
+import { queryClient } from './NovuProvider';
 import { NotificationBell, PopoverNotificationCenter } from '../..';
 
 configure({

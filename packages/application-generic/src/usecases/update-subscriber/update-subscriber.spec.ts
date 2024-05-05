@@ -1,5 +1,5 @@
-import { SubscriberRepository } from '@novu/dal';
-import { UserSession, SubscribersService } from '@novu/testing';
+import { SubscriberRepository } from '@teleflow/dal';
+import { UserSession, SubscribersService } from '@teleflow/testing';
 import { Test } from '@nestjs/testing';
 
 import { UpdateSubscriber } from './update-subscriber.usecase';

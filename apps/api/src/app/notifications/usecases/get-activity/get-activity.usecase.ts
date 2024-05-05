@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { NotificationRepository } from '@novu/dal';
+import { NotificationRepository } from '@teleflow/dal';
 import { AnalyticsService } from '@novu/application-generic';
 
 import { ActivityNotificationResponseDto } from '../../dtos/activities-response.dto';

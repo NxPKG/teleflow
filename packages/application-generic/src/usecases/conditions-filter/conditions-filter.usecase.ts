@@ -10,7 +10,7 @@ import {
   JobRepository,
   TenantEntity,
   TenantRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   FILTER_TO_LABEL,
@@ -42,7 +42,7 @@ import {
   differenceInMinutes,
   parseISO,
 } from 'date-fns';
-import { EmailEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum } from '@teleflow/stateless';
 import { PlatformException } from '../../utils/exceptions';
 import { createHash } from '../../utils/hmac';
 import { Instrument } from '../../instrumentation';

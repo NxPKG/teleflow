@@ -1,6 +1,6 @@
-import { IPushOptions, IPushProvider } from '@novu/stateless';
+import { IPushOptions, IPushProvider } from '@teleflow/stateless';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
-import {} from '@novu/dal';
+import {} from '@teleflow/dal';
 import { IPushHandler } from '../interfaces';
 
 export abstract class BasePushHandler implements IPushHandler {

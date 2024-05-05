@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as Sentry from '@sentry/node';
 import { ModuleRef } from '@nestjs/core';
 
-import { MessageRepository, NotificationStepEntity, SubscriberRepository, MessageEntity } from '@novu/dal';
+import { MessageRepository, NotificationStepEntity, SubscriberRepository, MessageEntity } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   ExecutionDetailsSourceEnum,

@@ -1,4 +1,4 @@
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
 import { ISmsFactory, ISmsHandler } from './interfaces';
 import {
   SnsHandler,

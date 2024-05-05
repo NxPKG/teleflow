@@ -1,4 +1,4 @@
-import { DalService, IntegrationRepository, NotificationTemplateEntity } from '@novu/dal';
+import { DalService, IntegrationRepository, NotificationTemplateEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, ProvidersIdEnum } from '@novu/shared';
 import {
   UserSession,
@@ -6,7 +6,7 @@ import {
   SubscribersService,
   NotificationsService,
   JobsService,
-} from '@novu/testing';
+} from '@teleflow/testing';
 
 export interface ISessionOptions {
   noEnvironment?: boolean;

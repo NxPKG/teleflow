@@ -7,7 +7,7 @@ import {
   OrganizationRepository,
   EnvironmentRepository,
   JobStatusEnum,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { addMinutes, addDays } from 'date-fns';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../../src/app.module';

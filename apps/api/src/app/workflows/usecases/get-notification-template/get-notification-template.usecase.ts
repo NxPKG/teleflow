@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { NotificationTemplateEntity, NotificationTemplateRepository } from '@novu/dal';
+import { NotificationTemplateEntity, NotificationTemplateRepository } from '@teleflow/dal';
 import { GetNotificationTemplateCommand } from './get-notification-template.command';
 
 /**

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import { NotificationTemplateEntity } from '@novu/dal';
-import { UserSession, NotificationTemplateService } from '@novu/testing';
+import { NotificationTemplateEntity } from '@teleflow/dal';
+import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 import {
   ChannelCTATypeEnum,
   FieldLogicalOperatorEnum,

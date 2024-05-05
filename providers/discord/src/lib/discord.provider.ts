@@ -3,7 +3,7 @@ import {
   IChatOptions,
   IChatProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class DiscordProvider implements IChatProvider {

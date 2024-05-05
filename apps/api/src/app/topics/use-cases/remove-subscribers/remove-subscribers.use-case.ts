@@ -1,4 +1,4 @@
-import { TopicSubscribersEntity, TopicSubscribersRepository } from '@novu/dal';
+import { TopicSubscribersEntity, TopicSubscribersRepository } from '@teleflow/dal';
 import { ConflictException, Injectable } from '@nestjs/common';
 
 import { RemoveSubscribersCommand } from './remove-subscribers.command';

@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { TopicSubscribersEntity, TopicSubscribersRepository } from '@novu/dal';
+import { TopicSubscribersEntity, TopicSubscribersRepository } from '@teleflow/dal';
 
 import { GetTopicSubscriberCommand } from './get-topic-subscriber.command';
 

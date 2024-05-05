@@ -1,6 +1,6 @@
 import { IsDefined } from 'class-validator';
 
-import { NotificationStepEntity, TenantEntity, JobEntity } from '@novu/dal';
+import { NotificationStepEntity, TenantEntity, JobEntity } from '@teleflow/dal';
 
 import { EnvironmentWithUserCommand } from '../../commands';
 import { IFilterVariables } from '../../utils/filter-processing-details';

@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
-import { UserSession } from '@novu/testing';
-import { SubscriberRepository } from '@novu/dal';
+import { UserSession } from '@teleflow/testing';
+import { SubscriberRepository } from '@teleflow/dal';
 
 import { CreateSubscriber } from './create-subscriber.usecase';
 import { CreateSubscriberCommand } from './create-subscriber.command';

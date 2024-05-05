@@ -1,10 +1,10 @@
 # Novu Clicksend Provider
 
-A Clicksend sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Clicksend sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
-```javascript
+````javascript
     import { ClicksendSmsProvider } from '@novu/clicksend'
 
     const provider = new ClicksendSmsProvider({
@@ -12,3 +12,4 @@ A Clicksend sms provider library for [@novu/node](https://github.com/novuhq/novu
         apiKey: process.env.CLICKSEND_API_KEY,
         })
     ```
+````

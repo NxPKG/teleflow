@@ -5,10 +5,10 @@ import {
   IntegrationRepository,
   MessageRepository,
   NotificationTemplateEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { DetailEnum } from '@novu/application-generic';
 import { ChannelTypeEnum, PushProviderIdEnum, StepTypeEnum } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 const axiosInstance = axios.create();
 

@@ -1,6 +1,6 @@
 # Novu Resend Provider
 
-A Resend email provider library for [@novu/node](https://github.com/novuhq/novu)
+A Resend email provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,6 +8,6 @@ A Resend email provider library for [@novu/node](https://github.com/novuhq/novu)
 import { ResendEmailProvider } from '@novu/resend';
 
 const provider = new ResendEmailProvider({
-  apiKey: process.env.RESEND_API_KEY
+  apiKey: process.env.RESEND_API_KEY,
 });
 ```

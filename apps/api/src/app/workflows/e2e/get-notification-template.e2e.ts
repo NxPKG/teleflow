@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { NotificationTemplateService, UserSession } from '@novu/testing';
+import { NotificationTemplateService, UserSession } from '@teleflow/testing';
 import { INotificationTemplate, INotificationTemplateStep } from '@novu/shared';
 
 describe('Get workflow by id - /workflows/:workflowId (GET)', async () => {

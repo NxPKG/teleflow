@@ -8,7 +8,7 @@ import {
   NotificationTemplateRepository,
   FeedRepository,
   LayoutRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { v4 as uuid } from 'uuid';
 
 import { CreateTemplatePayload } from './create-notification-template.interface';

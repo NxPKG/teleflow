@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { LogEntity, LogRepository } from '@novu/dal';
+import { LogEntity, LogRepository } from '@teleflow/dal';
 
 import { CreateLogCommand } from './create-log.command';
 

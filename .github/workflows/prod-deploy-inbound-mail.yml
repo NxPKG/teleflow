@@ -9,7 +9,7 @@ jobs:
   test_inbound_mail:
     strategy:
       matrix:
-        name: [ 'novu/inbound-mail-ee', 'novu/inbound-mail' ]
+        name: [ 'teleflow/inbound-mail-ee', 'teleflow/inbound-mail' ]
     uses: ./.github/workflows/reusable-inbound-mail-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -28,7 +28,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        name: [ 'novu/inbound-mail-ee', 'novu/inbound-mail' ]
+        name: [ 'teleflow/inbound-mail-ee', 'teleflow/inbound-mail' ]
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/setup-project
@@ -104,7 +104,7 @@ jobs:
       environment: Production
       service_name: inbound_mail
       terraform_workspace: novu-prod-eu
-      docker_image: ghcr.io/novuhq/novu/inbound-mail-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/inbound-mail-ee:${{ github.sha }}
 
   deploy_prod_inbound_mail_us:
     needs:
@@ -116,6 +116,6 @@ jobs:
       environment: Production
       service_name: inbound_mail
       terraform_workspace: novu-prod
-      docker_image: ghcr.io/novuhq/novu/inbound-mail-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/inbound-mail-ee:${{ github.sha }}
       deploy_sentry_release: true
       sentry_project: inbound-mail

@@ -1,5 +1,5 @@
 import { IsEnum, IsString } from 'class-validator';
-import { PreferenceLevelEnum } from '@novu/dal';
+import { PreferenceLevelEnum } from '@teleflow/dal';
 
 export class GetSubscriberPreferencesByLevelParams {
   @IsEnum(PreferenceLevelEnum)

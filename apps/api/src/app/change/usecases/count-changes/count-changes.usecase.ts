@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ChangeRepository } from '@novu/dal';
+import { ChangeRepository } from '@teleflow/dal';
 import { CountChangesCommand } from './count-changes.command';
 
 @Injectable()

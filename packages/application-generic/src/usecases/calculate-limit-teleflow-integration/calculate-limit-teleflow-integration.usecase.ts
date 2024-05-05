@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { startOfMonth, endOfMonth } from 'date-fns';
-import { MessageRepository } from '@novu/dal';
+import { MessageRepository } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   EmailProviderIdEnum,
@@ -10,8 +10,8 @@ import {
 import {
   areNovuEmailCredentialsSet,
   areNovuSmsCredentialsSet,
-} from '../../utils/novu-integrations';
-import { CalculateLimitNovuIntegrationCommand } from './calculate-limit-novu-integration.command';
+} from '../../utils/teleflow-integrations';
+import { CalculateLimitNovuIntegrationCommand } from './calculate-limit-teleflow-integration.command';
 
 @Injectable()
 export class CalculateLimitNovuIntegration {
