@@ -8,7 +8,10 @@ import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class GetFeedCount {
-  constructor(private messageRepository: MessageRepository, private subscriberRepository: SubscriberRepository) {}
+  constructor(
+    private messageRepository: MessageRepository,
+    private subscriberRepository: SubscriberRepository
+  ) {}
 
   @CachedQuery({
     builder: ({ environmentId, subscriberId, ...command }: GetFeedCountCommand) =>
