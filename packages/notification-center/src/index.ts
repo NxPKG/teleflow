@@ -1,5 +1,5 @@
-export type { IStoreQuery } from '@novu/client';
-export type { IUserPreferenceSettings } from '@novu/client';
+export type { IStoreQuery } from '@teleflow/client';
+export type { IUserPreferenceSettings } from '@teleflow/client';
 export { ChannelTypeEnum, ChannelCTATypeEnum, MessageActionStatusEnum, ButtonTypeEnum } from '@novu/shared';
 
 export * from './components';

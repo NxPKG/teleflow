@@ -1,4 +1,4 @@
-import type { IUserGlobalPreferenceSettings } from '@novu/client';
+import type { IUserGlobalPreferenceSettings } from '@teleflow/client';
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
 
 import { useFetchUserGlobalPreferencesQueryKey } from './useFetchUserGlobalPreferencesQueryKey';

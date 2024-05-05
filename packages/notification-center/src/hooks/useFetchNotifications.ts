@@ -1,5 +1,5 @@
 import { useInfiniteQuery, UseInfiniteQueryOptions } from '@tanstack/react-query';
-import type { IStoreQuery } from '@novu/client';
+import type { IStoreQuery } from '@teleflow/client';
 import type { IMessage, IPaginatedResponse } from '@novu/shared';
 import { INotificationsContext } from '../shared/interfaces';
 

@@ -28,7 +28,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@novu/client": "^0.24.1",
     "@novu/shared": "^0.24.1",
     "@tanstack/query-core": "^4.15.1",
     "socket.io-client": "4.7.2"
@@ -42,7 +41,8 @@
     "jest-environment-jsdom": "^29.3.1",
     "ts-jest": "^29.0.3",
     "typedoc": "^0.24.0",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "@teleflow/client": "workspace:*"
   },
   "prettier": {
     "singleQuote": true

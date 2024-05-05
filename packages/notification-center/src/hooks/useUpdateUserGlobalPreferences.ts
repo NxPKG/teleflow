@@ -1,4 +1,4 @@
-import type { IUserGlobalPreferenceSettings } from '@novu/client';
+import type { IUserGlobalPreferenceSettings } from '@teleflow/client';
 import { useMutation, UseMutationOptions, useQueryClient } from '@tanstack/react-query';
 import { useCallback } from 'react';
 

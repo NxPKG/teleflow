@@ -16,7 +16,7 @@ import {
   IStoreQuery,
   IUserGlobalPreferenceSettings,
   IUserPreferenceSettings,
-} from '@novu/client';
+} from '@teleflow/client';
 
 export {
   ButtonTypeEnum,

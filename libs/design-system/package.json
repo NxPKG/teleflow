@@ -41,7 +41,7 @@
     "@mantine/core": "^5.7.1",
     "@mantine/hooks": "^5.7.1",
     "@mantine/notifications": "^5.7.1",
-    "@novu/client": "^0.24.1",
+    "@teleflow/client": "^0.24.1",
     "@novu/shared": "^0.24.1",
     "@teleflow/shared-web": "^0.24.1",
     "@segment/analytics-next": "1.59.0",

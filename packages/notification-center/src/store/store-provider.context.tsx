@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useMemo } from 'react';
-import type { IStoreQuery } from '@novu/client';
+import type { IStoreQuery } from '@teleflow/client';
 
 import type { IStore } from '../shared/interfaces';
 import { StoreContext } from './store.context';

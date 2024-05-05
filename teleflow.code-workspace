@@ -45,7 +45,7 @@
       "path": "packages/cli"
     },
     {
-      "name": "📦 @novu/client",
+      "name": "📦 @teleflow/client",
       "path": "packages/client"
     },
     {

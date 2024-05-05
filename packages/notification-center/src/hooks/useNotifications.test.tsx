@@ -9,7 +9,7 @@ import {
   MessageActionStatusEnum,
   IPaginatedResponse,
 } from '@novu/shared';
-import { IUserPreferenceSettings } from '@novu/client';
+import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { ISession, INotificationsContext } from '../shared/interfaces';
 import { NovuProvider } from '../components';
@@ -112,8 +112,8 @@ const mockSocket = {
   off: jest.fn(),
 };
 
-jest.mock('@novu/client', () => ({
-  ...jest.requireActual<typeof import('@novu/client')>('@novu/client'),
+jest.mock('@teleflow/client', () => ({
+  ...jest.requireActual<typeof import('@teleflow/client')>('@teleflow/client'),
   ApiService: jest.fn().mockImplementation(() => mockServiceInstance),
 }));
 

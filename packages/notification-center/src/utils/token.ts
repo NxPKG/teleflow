@@ -1,4 +1,4 @@
-import type { ApiService } from '@novu/client';
+import type { ApiService } from '@teleflow/client';
 
 const NOTIFICATION_CENTER_TOKEN_KEY = 'widget_user_auth_token';
 const isBrowser = typeof window !== 'undefined';

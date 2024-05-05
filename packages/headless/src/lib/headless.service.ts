@@ -10,7 +10,7 @@ import {
   IUserPreferenceSettings,
   IStoreQuery,
   IUserGlobalPreferenceSettings,
-} from '@novu/client';
+} from '@teleflow/client';
 import {
   IOrganizationEntity,
   IMessage,

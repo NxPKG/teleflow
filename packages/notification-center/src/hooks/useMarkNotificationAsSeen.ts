@@ -1,7 +1,7 @@
 import { InfiniteData, useMutation, UseMutationOptions, useQueryClient } from '@tanstack/react-query';
 
 import type { IMessage, IPaginatedResponse } from '@novu/shared';
-import { IStoreQuery } from '@novu/client';
+import { IStoreQuery } from '@teleflow/client';
 
 import { useNovuContext } from './useNovuContext';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';

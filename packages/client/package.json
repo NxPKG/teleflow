@@ -1,10 +1,11 @@
 {
-  "name": "@novu/client",
+  "name": "@teleflow/client",
   "version": "0.24.1",
   "repository": "https://github.com/novuhq/novu",
   "description": "API client to be used in end user environments",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "private": "true",
   "types": "dist/cjs/index.d.ts",
   "files": [
     "dist/"

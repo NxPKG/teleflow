@@ -1,7 +1,7 @@
 import { RefetchOptions, RefetchQueryFilters } from '@tanstack/react-query';
 
 import { ButtonTypeEnum, IMessage, IMessageAction, IOrganizationEntity, ISubscriberJwt } from '@novu/shared';
-import type { ApiService, IStoreQuery, IUserPreferenceSettings } from '@novu/client';
+import type { ApiService, IStoreQuery, IUserPreferenceSettings } from '@teleflow/client';
 export {
   IMessage,
   IMessageAction,
