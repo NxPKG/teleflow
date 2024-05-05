@@ -1,7 +1,7 @@
 import { Injectable, Scope } from '@nestjs/common';
-import { OrganizationRepository, UserRepository, MemberRepository } from '@novu/dal';
+import { OrganizationRepository, UserRepository, MemberRepository } from '@teleflow/dal';
 import { MemberStatusEnum } from '@novu/shared';
-import { Novu } from '@novu/node';
+import { Novu } from '@teleflow/node';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { ResendInviteCommand } from './resend-invite.command';
 import { capitalize, createGuid } from '../../../shared/services/helper/helper.service';

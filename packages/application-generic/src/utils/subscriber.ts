@@ -1,9 +1,9 @@
-import { SubscriberEntity } from '@novu/dal';
+import { SubscriberEntity } from '@teleflow/dal';
 import { isEqual } from 'lodash';
 
 export function subscriberNeedUpdate(
   subscriber: SubscriberEntity,
-  subscriberPayload: Partial<SubscriberEntity>
+  subscriberPayload: Partial<SubscriberEntity>,
 ): boolean {
   return (
     !!(

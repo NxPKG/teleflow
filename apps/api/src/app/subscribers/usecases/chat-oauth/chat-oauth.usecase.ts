@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 
-import { ChannelTypeEnum } from '@novu/stateless';
-import { IntegrationEntity, IntegrationRepository, EnvironmentRepository, ICredentialsEntity } from '@novu/dal';
+import { ChannelTypeEnum } from '@teleflow/stateless';
+import { IntegrationEntity, IntegrationRepository, EnvironmentRepository, ICredentialsEntity } from '@teleflow/dal';
 import { createHash } from '@novu/application-generic';
 
 import { ChatOauthCommand } from './chat-oauth.command';

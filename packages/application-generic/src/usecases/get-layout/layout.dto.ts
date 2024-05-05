@@ -9,7 +9,7 @@ import {
   LayoutName,
   LayoutIdentifier,
   UserId,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 export class LayoutDto {
   @ApiPropertyOptional()

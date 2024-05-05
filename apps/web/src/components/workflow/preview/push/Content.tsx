@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Flex, Group, Skeleton, Stack, useMantineColorScheme } from '@mantine/core';
 import { colors, Text } from '@novu/design-system';
-import { api, useEnvController } from '@novu/shared-web';
+import { api, useEnvController } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { useFormContext } from 'react-hook-form';

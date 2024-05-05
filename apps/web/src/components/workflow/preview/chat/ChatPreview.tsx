@@ -12,7 +12,7 @@ import { ChatInput } from './ChatInput';
 import { useTemplateLocales } from '../../../../pages/templates/hooks/useTemplateLocales';
 import { usePreviewChatTemplate } from '../../../../pages/templates/hooks/usePreviewChatTemplate';
 import { useEffect, useState } from 'react';
-import { api, useEnvController } from '@novu/shared-web';
+import { api, useEnvController } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useTemplateEditorForm } from '../../../../pages/templates/components/TemplateEditorFormProvider';
 import { ErrorPrettyRender } from '../ErrorPrettyRender';

@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { EvaluateApiRateLimit, EvaluateApiRateLimitCommand } from './index';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import {
   ApiRateLimitAlgorithmEnum,
   ApiRateLimitCategoryEnum,

@@ -3,7 +3,7 @@ import { Badge } from '@mantine/core';
 
 import { TemplateItem } from './templates-store/templateStoreStyles';
 import { useSegment } from '../../../components/providers/SegmentProvider';
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 
 const SEGMENT_EVENT = 'Button Clicked - [Echo promotion]';
 const segmentEventAction = {

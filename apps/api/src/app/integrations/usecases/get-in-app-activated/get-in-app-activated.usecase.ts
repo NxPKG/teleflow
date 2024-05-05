@@ -1,4 +1,4 @@
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { GetInAppActivatedCommand } from './get-in-app-activated.command';
 import { Injectable } from '@nestjs/common';
 

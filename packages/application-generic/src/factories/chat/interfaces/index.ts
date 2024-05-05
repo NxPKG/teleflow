@@ -1,5 +1,5 @@
-import { IChatOptions, ISendMessageSuccessResponse } from '@novu/stateless';
-import { IntegrationEntity } from '@novu/dal';
+import { IChatOptions, ISendMessageSuccessResponse } from '@teleflow/stateless';
+import { IntegrationEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, ICredentials } from '@novu/shared';
 
 export interface IChatHandler {

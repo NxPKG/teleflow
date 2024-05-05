@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { UserSession, NotificationTemplateService } from '@novu/testing';
+import { UserSession, NotificationTemplateService } from '@teleflow/testing';
 import {
   StepTypeEnum,
   INotificationTemplate,
@@ -10,7 +10,7 @@ import {
   INotificationTemplateStep,
   EmailBlockTypeEnum,
 } from '@novu/shared';
-import { ChangeRepository } from '@novu/dal';
+import { ChangeRepository } from '@teleflow/dal';
 import { CreateWorkflowRequestDto, UpdateWorkflowRequestDto } from '../dto';
 import { WorkflowResponse } from '../dto/workflow-response.dto';
 

@@ -1,7 +1,7 @@
 import { IsDefined, IsOptional, IsString } from 'class-validator';
 
 import { BaseCommand } from '@novu/application-generic';
-import { MessageEntity } from '@novu/dal';
+import { MessageEntity } from '@teleflow/dal';
 
 export class ExternalServicesRouteCommand extends BaseCommand {
   @IsDefined()

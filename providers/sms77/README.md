@@ -1,6 +1,6 @@
 # Novu sms77 Provider
 
-A sms77 sms provider library for [@novu/stateless](https://github.com/novuhq/novu)
+A sms77 sms provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,7 +8,7 @@ A sms77 sms provider library for [@novu/stateless](https://github.com/novuhq/nov
 import { Sms77SmsProvider } from '@novu/sms77';
 
 const provider = new Sms77SmsProvider({
-    apiKey: process.env.SMS77_API_KEY,
-    from: process.env.SMS77_FROM, // optional
+  apiKey: process.env.SMS77_API_KEY,
+  from: process.env.SMS77_FROM, // optional
 });
 ```

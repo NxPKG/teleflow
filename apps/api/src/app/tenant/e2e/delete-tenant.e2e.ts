@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import axios, { AxiosResponse } from 'axios';
 
-import { UserSession } from '@novu/testing';
-import { TenantRepository } from '@novu/dal';
+import { UserSession } from '@teleflow/testing';
+import { TenantRepository } from '@teleflow/dal';
 
 describe('Delete Tenant - /tenants/:identifier (DELETE)', function () {
   let session: UserSession;

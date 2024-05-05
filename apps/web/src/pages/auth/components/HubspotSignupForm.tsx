@@ -6,7 +6,7 @@ import { useMantineColorScheme } from '@mantine/core';
 
 import { JobTitleEnum } from '@novu/shared';
 import type { ProductUseCases, IResponseError, ICreateOrganizationDto, IJwtPayload } from '@novu/shared';
-import { HubspotForm, useSegment } from '@novu/shared-web';
+import { HubspotForm, useSegment } from '@teleflow/shared-web';
 
 import { api } from '../../../api/api.client';
 import { useAuthContext } from '../../../components/providers/AuthProvider';

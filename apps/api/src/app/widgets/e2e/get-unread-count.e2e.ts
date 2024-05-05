@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { expect } from 'chai';
-import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { MessageRepository, NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum } from '@novu/shared';
 
 describe('Unread Count - GET /widget/notifications/unread', function () {

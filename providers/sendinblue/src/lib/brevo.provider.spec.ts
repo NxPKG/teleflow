@@ -1,5 +1,5 @@
 import { BrevoEmailProvider } from './brevo.provider';
-import { EmailEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum } from '@teleflow/stateless';
 
 const mockConfig = {
   apiKey:
@@ -133,7 +133,7 @@ describe('parseEventBody', () => {
     const provider = new BrevoEmailProvider(mockConfig);
     const messageId = provider.parseEventBody(
       { event: 'not-real-event' },
-      'test'
+      'test',
     );
     expect(messageId).toBeUndefined();
   });

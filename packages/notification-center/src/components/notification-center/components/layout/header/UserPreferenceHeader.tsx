@@ -3,11 +3,11 @@ import { ActionIcon } from '@mantine/core';
 import { css, cx } from '@emotion/css';
 
 import { ArrowLeft } from '../../../../../shared/icons';
-import { useNovuTheme, useTranslations } from '../../../../../hooks';
+import { useTelelfowTheme, useTranslations } from '../../../../../hooks';
 import { useStyles } from '../../../../../store/styles';
 
 export function UserPreferenceHeader({ onBackClick }: { onBackClick: () => void }) {
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const { t } = useTranslations();
   const [headerStyles, headerTitleStyles, backButtonStyles] = useStyles([
     'header.root',

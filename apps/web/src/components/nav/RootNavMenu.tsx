@@ -12,7 +12,7 @@ import {
   IconViewQuilt,
 } from '@novu/design-system';
 import { ChangesCountBadge } from '../layout/components/ChangesCountBadge';
-import { ROUTES, useEnvController, useSegment } from '@novu/shared-web';
+import { ROUTES, useEnvController, useSegment } from '@teleflow/shared-web';
 import { useUserOnboardingStatus } from '../../api/hooks/useUserOnboardingStatus';
 import { EnvironmentSelect } from './EnvironmentSelect';
 import { NavMenu } from './NavMenu';

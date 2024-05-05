@@ -1,5 +1,5 @@
 import { Injectable, Logger, Inject } from '@nestjs/common';
-import { ChangeRepository, LayoutRepository } from '@novu/dal';
+import { ChangeRepository, LayoutRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { AnalyticsService, GetLayoutUseCase } from '@novu/application-generic';
 

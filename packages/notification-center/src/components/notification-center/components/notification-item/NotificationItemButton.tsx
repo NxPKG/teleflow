@@ -3,7 +3,7 @@ import { Button } from '@mantine/core';
 import { css, cx } from '@emotion/css';
 import { IButtonStyles, ButtonTypeEnum, IMessageAction } from '@novu/shared';
 
-import { useNovuTheme } from '../../../../hooks';
+import { useTelelfowTheme } from '../../../../hooks';
 
 interface NotificationButtonProps {
   messageAction: IMessageAction;
@@ -12,7 +12,7 @@ interface NotificationButtonProps {
   className?: string;
 }
 export function NotificationButton({ className, messageAction, buttonIndex, onActionClick }: NotificationButtonProps) {
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const button = messageAction.buttons[buttonIndex];
   const buttonStyle = theme.notificationItem.buttons[button.type];
   const buttonText = button?.content ? button.content : '';

@@ -2,8 +2,8 @@ import { Test } from '@nestjs/testing';
 import { expect } from 'chai';
 import { v4 as uuid } from 'uuid';
 
-import { SubscribersService, UserSession } from '@novu/testing';
-import { NotificationTemplateEntity, SubscriberRepository } from '@novu/dal';
+import { SubscribersService, UserSession } from '@teleflow/testing';
+import { NotificationTemplateEntity, SubscriberRepository } from '@teleflow/dal';
 import { AddressingTypeEnum, TriggerRecipients, TriggerRequestCategoryEnum } from '@novu/shared';
 
 import { SharedModule } from '../../../shared/shared.module';

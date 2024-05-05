@@ -31,7 +31,7 @@ import {
   WorkflowInMemoryProviderService,
   ExecutionLogRoute,
 } from '@novu/application-generic';
-import { JobRepository } from '@novu/dal';
+import { JobRepository } from '@teleflow/dal';
 
 import {
   SendMessage,

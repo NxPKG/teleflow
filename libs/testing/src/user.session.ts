@@ -25,7 +25,7 @@ import {
   SubscriberRepository,
   LayoutRepository,
   IntegrationRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { NotificationTemplateService } from './notification-template.service';
 import { TestServer, testServer } from './test-server.service';

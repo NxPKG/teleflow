@@ -7,7 +7,7 @@ import {
   MessageEntity,
   NotificationEntity,
   NotificationTemplateEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import axios from 'axios';
 import { CompileTemplate, CompileTemplateCommand, createHash } from '@novu/application-generic';
 

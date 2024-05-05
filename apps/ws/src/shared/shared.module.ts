@@ -10,7 +10,7 @@ import {
   NotificationRepository,
   MessageRepository,
   MemberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   AnalyticsService,
   DalServiceHealthIndicator,

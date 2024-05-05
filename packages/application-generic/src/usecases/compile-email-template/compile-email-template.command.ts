@@ -1,5 +1,5 @@
 import { IsDefined, IsOptional, IsString } from 'class-validator';
-import { IEmailBlock } from '@novu/dal';
+import { IEmailBlock } from '@teleflow/dal';
 import { LayoutId, MessageTemplateContentType } from '@novu/shared';
 
 import { EnvironmentWithUserCommand } from '../../commands/project.command';

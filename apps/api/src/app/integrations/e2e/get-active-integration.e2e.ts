@@ -1,8 +1,8 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { ChannelTypeEnum, EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
-import { IntegrationService } from '@novu/testing';
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationService } from '@teleflow/testing';
+import { IntegrationEntity } from '@teleflow/dal';
 
 describe('Get Active Integrations - Multi-Provider Configuration - /integrations/active (GET)', function () {
   let session: UserSession;

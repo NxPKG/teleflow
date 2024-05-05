@@ -1,6 +1,6 @@
 # Novu Eazy SMS Provider
 
-A EazySms sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A EazySms sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,7 +8,7 @@ A EazySms sms provider library for [@novu/node](https://github.com/novuhq/novu)
 import { EazySmsProvider } from '@novu/eazy-sms';
 
 const provider = new EazySmsProvider({
-    apiKey: process.env.API_KEY,
-    channelId: process.env.CHANNEL_ID,
+  apiKey: process.env.API_KEY,
+  channelId: process.env.CHANNEL_ID,
 });
 ```

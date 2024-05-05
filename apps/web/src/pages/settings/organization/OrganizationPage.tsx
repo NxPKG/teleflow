@@ -1,4 +1,4 @@
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 import { COMPANY_LOGO_PATH } from '../../../constants/assets';
 import { Stack } from '../../../styled-system/jsx';
 import { SettingsPageContainer } from '../SettingsPageContainer';

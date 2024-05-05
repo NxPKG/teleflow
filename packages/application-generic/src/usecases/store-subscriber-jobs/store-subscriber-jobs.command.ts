@@ -1,6 +1,6 @@
 import { IsDefined } from 'class-validator';
 // TODO: Implement a DTO or shared entity
-import { JobEntity } from '@novu/dal';
+import { JobEntity } from '@teleflow/dal';
 
 import { EnvironmentCommand } from '../../commands';
 

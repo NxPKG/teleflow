@@ -13,7 +13,7 @@ import {
   MemberRepository,
   IntegrationRepository,
   JobRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 const DAL_MODELS = [
   UserRepository,

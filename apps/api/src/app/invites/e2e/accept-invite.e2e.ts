@@ -1,5 +1,5 @@
-import { MemberRepository, MemberEntity } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { MemberRepository, MemberEntity } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { MemberStatusEnum } from '@novu/shared';
 import { expect } from 'chai';
 

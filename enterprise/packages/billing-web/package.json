@@ -33,7 +33,7 @@
     "@novu/client": "^0.24.1",
     "@novu/design-system": "^0.24.1",
     "@novu/shared": "^0.24.1",
-    "@novu/shared-web": "^0.24.1",
+    "@teleflow/shared-web": "^0.24.1",
     "@rjsf/chakra-ui": "^5.17.1",
     "@rjsf/core": "^5.17.1",
     "@rjsf/utils": "^5.17.1",

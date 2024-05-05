@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { NovuContext } from '../store/novu-provider.context';
+import { NovuContext } from '../store/teleflow-provider.context';
 import { useProviderCheck } from './useProviderCheck';
 import { INovuProviderContext } from '../shared/interfaces';
 

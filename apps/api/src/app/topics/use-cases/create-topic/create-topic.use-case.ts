@@ -1,4 +1,4 @@
-import { TopicEntity, TopicRepository } from '@novu/dal';
+import { TopicEntity, TopicRepository } from '@teleflow/dal';
 import { ConflictException, Injectable } from '@nestjs/common';
 
 import { CreateTopicCommand } from './create-topic.command';

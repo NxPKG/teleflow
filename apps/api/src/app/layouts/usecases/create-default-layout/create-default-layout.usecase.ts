@@ -1,4 +1,4 @@
-import { LayoutRepository } from '@novu/dal';
+import { LayoutRepository } from '@teleflow/dal';
 import { Injectable } from '@nestjs/common';
 import { GetNovuLayout } from '@novu/application-generic';
 

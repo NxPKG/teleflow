@@ -1,6 +1,6 @@
 # Novu Sendinblue Provider
 
-A Sendinblue email provider library for [@novu/stateless](https://github.com/novuhq/novu)
+A Sendinblue email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,6 +8,6 @@ A Sendinblue email provider library for [@novu/stateless](https://github.com/nov
 import { SendinblueEmailProvider } from './sendinblue.provider';
 
 const provider = new SendinblueEmailProvider({
-  apiKey: process.env.SENDINBLUE_API_KEY
+  apiKey: process.env.SENDINBLUE_API_KEY,
 });
 ```

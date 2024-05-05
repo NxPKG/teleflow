@@ -1,4 +1,4 @@
-import { IEventBody } from '@novu/stateless';
+import { IEventBody } from '@teleflow/stateless';
 
 export interface IWebhookResult {
   id: string;

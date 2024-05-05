@@ -1,5 +1,5 @@
-import { EnvironmentRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { EnvironmentRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Get Environment - /environments/me (GET)', async () => {

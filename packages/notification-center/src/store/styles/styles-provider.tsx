@@ -2,14 +2,14 @@ import React, { FunctionComponent, createContext, useMemo, useContext } from 're
 import { CSSInterpolation } from '@emotion/css';
 
 import type { INotificationCenterStyles, StylesPaths } from './styles-provider.types';
-import { useNovuTheme } from '../../hooks';
+import { useTelelfowTheme } from '../../hooks';
 import { getStyleByPath } from '../../utils/styles';
 
 const StylesContext = createContext<{ styles: INotificationCenterStyles } | undefined>(undefined);
 
 export const useStyles = (path: StylesPaths | StylesPaths[]): CSSInterpolation[] => {
   const stylesContext = useContext(StylesContext);
-  const { theme, colorScheme, common } = useNovuTheme();
+  const { theme, colorScheme, common } = useTelelfowTheme();
 
   if (!stylesContext) {
     throw new Error('useStyles must be used within a StylesProvider');

@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios, { AxiosInstance } from 'axios';
 import qs from 'qs';
 
@@ -16,7 +16,7 @@ export class BurstSmsProvider implements ISmsProvider {
     private config: {
       apiKey?: string;
       secretKey?: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       auth: {
@@ -27,7 +27,7 @@ export class BurstSmsProvider implements ISmsProvider {
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const data = qs.stringify({
       message: options.content,
@@ -37,7 +37,7 @@ export class BurstSmsProvider implements ISmsProvider {
 
     const response = await this.axiosInstance.post(
       'https://api.transmitsms.com/send-sms.json',
-      data
+      data,
     );
 
     return {

@@ -1,11 +1,11 @@
 import { Injectable, Logger, Module } from '@nestjs/common';
-import { ExecutionDetailsEntity, ExecutionDetailsRepository, MessageEntity } from '@novu/dal';
+import { ExecutionDetailsEntity, ExecutionDetailsRepository, MessageEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
 
 import { CreateExecutionDetailsCommand, WebhookCommand } from './create-execution-details.command';
 
 import { IWebhookResult } from '../../dtos/webhooks-response.dto';
-import { EmailEventStatusEnum, SmsEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum, SmsEventStatusEnum } from '@teleflow/stateless';
 
 const LOG_CONTEXT = 'CreateExecutionDetails';
 

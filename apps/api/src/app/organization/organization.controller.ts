@@ -11,7 +11,7 @@ import {
   UseGuards,
   UseInterceptors,
 } from '@nestjs/common';
-import { OrganizationEntity } from '@novu/dal';
+import { OrganizationEntity } from '@teleflow/dal';
 import { IJwtPayload, MemberRoleEnum } from '@novu/shared';
 import { ApiExcludeEndpoint, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { Roles } from '../auth/framework/roles.decorator';

@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { ICreateWorkflowOverrideRequestDto } from '@novu/shared';
-import { NotificationTemplateRepository, TenantRepository } from '@novu/dal';
+import { NotificationTemplateRepository, TenantRepository } from '@teleflow/dal';
 
 describe('Create Integration - /workflow-overrides (POST)', function () {
   let session: UserSession;

@@ -1,6 +1,6 @@
-import { ExecutionDetailsRepository, IntegrationRepository, MessageRepository } from '@novu/dal';
+import { ExecutionDetailsRepository, IntegrationRepository, MessageRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
-import { IEmailEventBody } from '@novu/stateless';
+import { IEmailEventBody } from '@teleflow/stateless';
 import { expect } from 'chai';
 import axios from 'axios';
 

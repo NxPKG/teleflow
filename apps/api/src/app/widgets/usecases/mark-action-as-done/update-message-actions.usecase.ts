@@ -5,7 +5,7 @@ import {
   MessageTemplateEntity,
   SubscriberRepository,
   MemberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { AnalyticsService } from '@novu/application-generic';
 
 import { UpdateMessageActionsCommand } from './update-message-actions.command';

@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   IChatOptions,
   IChatProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class RocketChatProvider implements IChatProvider {
@@ -15,11 +15,11 @@ export class RocketChatProvider implements IChatProvider {
     private config: {
       token: string;
       user: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: IChatOptions
+    options: IChatOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const roomId = options.channel;
     const payload = {

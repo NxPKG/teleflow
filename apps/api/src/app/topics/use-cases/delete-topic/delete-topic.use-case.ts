@@ -1,5 +1,5 @@
 import { ConflictException, Injectable } from '@nestjs/common';
-import { TopicRepository } from '@novu/dal';
+import { TopicRepository } from '@teleflow/dal';
 
 import { DeleteTopicCommand } from './delete-topic.command';
 
@@ -7,7 +7,10 @@ import { GetTopicUseCase } from '../get-topic';
 
 @Injectable()
 export class DeleteTopicUseCase {
-  constructor(private getTopicUseCase: GetTopicUseCase, private topicRepository: TopicRepository) {}
+  constructor(
+    private getTopicUseCase: GetTopicUseCase,
+    private topicRepository: TopicRepository
+  ) {}
 
   async execute(command: DeleteTopicCommand): Promise<void> {
     const topic = await this.getTopicUseCase.execute(command);

@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { OrganizationEntity, OrganizationRepository } from '@novu/dal';
+import { OrganizationEntity, OrganizationRepository } from '@teleflow/dal';
 import { IMessageButton } from '@novu/shared';
 import { ModuleRef } from '@nestjs/core';
 
@@ -16,7 +16,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
   constructor(
     private compileTemplate: CompileTemplate,
     protected organizationRepository: OrganizationRepository,
-    protected moduleRef: ModuleRef
+    protected moduleRef: ModuleRef,
   ) {
     super(organizationRepository, moduleRef);
   }
@@ -26,8 +26,8 @@ export class CompileInAppTemplate extends CompileTemplateBase {
     initiateTranslations?: (
       environmentId: string,
       organizationId,
-      locale: string
-    ) => Promise<void>
+      locale: string,
+    ) => Promise<void>,
   ) {
     const organization = await this.getOrganization(command.organizationId);
 
@@ -37,7 +37,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
         command.organizationId,
         command.locale ||
           command.payload.subscriber?.locale ||
-          organization.defaultLocale
+          organization.defaultLocale,
       );
     }
 
@@ -52,7 +52,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
         ? await this.compileInAppTemplate(
             command.content,
             payload,
-            organization
+            organization,
           )
         : '';
 
@@ -60,7 +60,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
         url = await this.compileInAppTemplate(
           command.cta?.data?.url,
           payload,
-          organization
+          organization,
         );
       }
 
@@ -69,14 +69,14 @@ export class CompileInAppTemplate extends CompileTemplateBase {
           const buttonContent = await this.compileInAppTemplate(
             action.content,
             payload,
-            organization
+            organization,
           );
           ctaButtons.push({ type: action.type, content: buttonContent });
         }
       }
     } catch (e: any) {
       throw new ApiException(
-        e?.message || `Message content could not be generated`
+        e?.message || `Message content could not be generated`,
       );
     }
 
@@ -86,7 +86,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
   private async compileInAppTemplate(
     content: string,
     payload: any,
-    organization: OrganizationEntity | null
+    organization: OrganizationEntity | null,
   ): Promise<string> {
     return await this.compileTemplate.execute(
       CompileTemplateCommand.create({
@@ -98,7 +98,7 @@ export class CompileInAppTemplate extends CompileTemplateBase {
             color: organization?.branding?.color || '#f47373',
           },
         },
-      })
+      }),
     );
   }
 }

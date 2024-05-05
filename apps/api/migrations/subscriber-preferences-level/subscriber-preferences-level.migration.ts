@@ -1,7 +1,7 @@
 import '../../src/config';
 
 import { NestFactory } from '@nestjs/core';
-import { PreferenceLevelEnum, SubscriberPreferenceRepository } from '@novu/dal';
+import { PreferenceLevelEnum, SubscriberPreferenceRepository } from '@teleflow/dal';
 
 import { AppModule } from '../../src/app.module';
 

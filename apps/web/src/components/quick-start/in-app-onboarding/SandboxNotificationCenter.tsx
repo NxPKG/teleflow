@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useMantineColorScheme } from '@mantine/core';
-import { NotificationCenter, NovuProvider } from '@novu/notification-center';
+import { NotificationCenter, NovuProvider } from '@teleflow/notification-center';
 import { API_ROOT, WS_URL } from '../../../config';
 import { useEnvController } from '../../../hooks';
 import { inAppSandboxSubscriberId } from '../../../pages/quick-start/consts';

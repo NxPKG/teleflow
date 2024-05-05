@@ -1,14 +1,17 @@
 import { Injectable } from '@nestjs/common';
 
 import { GetTenantCommand, GetTenant } from '@novu/application-generic';
-import { TenantRepository, DalException } from '@novu/dal';
+import { TenantRepository, DalException } from '@teleflow/dal';
 
 import { DeleteTenantCommand } from './delete-tenant.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class DeleteTenant {
-  constructor(private tenantRepository: TenantRepository, private getTenantUsecase: GetTenant) {}
+  constructor(
+    private tenantRepository: TenantRepository,
+    private getTenantUsecase: GetTenant
+  ) {}
 
   async execute(command: DeleteTenantCommand) {
     const tenant = await this.getTenantUsecase.execute(

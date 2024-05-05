@@ -1,4 +1,4 @@
-import { SubscriberEntity, TenantEntity } from '@novu/dal';
+import { SubscriberEntity, TenantEntity } from '@teleflow/dal';
 import { ICondition, IMessageFilter, ITriggerPayload } from '@novu/shared';
 
 export interface IFilterVariables {

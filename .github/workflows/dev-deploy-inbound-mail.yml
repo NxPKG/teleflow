@@ -21,7 +21,7 @@ jobs:
   test_inbound_mail:
     strategy:
       matrix:
-        name: ['novu/inbound-mail-ee', 'novu/inbound-mail']
+        name: ['teleflow/inbound-mail-ee', 'teleflow/inbound-mail']
     uses: ./.github/workflows/reusable-inbound-mail-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -41,7 +41,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     strategy:
       matrix:
-        name: ['novu/inbound-mail-ee']
+        name: ['teleflow/inbound-mail-ee']
 
     steps:
       - uses: actions/checkout@v3

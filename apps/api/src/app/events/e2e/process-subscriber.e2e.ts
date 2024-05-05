@@ -6,8 +6,8 @@ import {
   MessageRepository,
   SubscriberRepository,
   NotificationTemplateRepository,
-} from '@novu/dal';
-import { UserSession, SubscribersService } from '@novu/testing';
+} from '@teleflow/dal';
+import { UserSession, SubscribersService } from '@teleflow/testing';
 import { ChannelTypeEnum, ISubscribersDefine, IUpdateNotificationTemplateDto, StepTypeEnum } from '@novu/shared';
 import {
   buildNotificationTemplateIdentifierKey,

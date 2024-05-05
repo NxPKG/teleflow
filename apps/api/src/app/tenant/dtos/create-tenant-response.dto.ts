@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 import { EnvironmentId, TenantCustomData } from '@novu/shared';
-import { TenantId } from '@novu/dal';
+import { TenantId } from '@teleflow/dal';
 
 export class CreateTenantResponseDto {
   @ApiProperty()

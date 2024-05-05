@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ChangeEntity, ChangeRepository } from '@novu/dal';
+import { ChangeEntity, ChangeRepository } from '@teleflow/dal';
 
 import { BulkApplyChangeCommand } from './bulk-apply-change.command';
 
@@ -7,7 +7,10 @@ import { ApplyChange, ApplyChangeCommand } from '../apply-change';
 
 @Injectable()
 export class BulkApplyChange {
-  constructor(private changeRepository: ChangeRepository, private applyChange: ApplyChange) {}
+  constructor(
+    private changeRepository: ChangeRepository,
+    private applyChange: ApplyChange
+  ) {}
 
   async execute(command: BulkApplyChangeCommand): Promise<ChangeEntity[][]> {
     const changes = await this.changeRepository.find(

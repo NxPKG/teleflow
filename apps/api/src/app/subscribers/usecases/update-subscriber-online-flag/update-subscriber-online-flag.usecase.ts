@@ -1,5 +1,5 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { SubscriberEntity, SubscriberRepository, MemberRepository } from '@novu/dal';
+import { SubscriberEntity, SubscriberRepository, MemberRepository } from '@teleflow/dal';
 import { AnalyticsService } from '@novu/application-generic';
 
 import { UpdateSubscriberOnlineFlagCommand } from './update-subscriber-online-flag.command';

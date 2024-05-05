@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import { SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 
 import {
   InvalidateCacheService,
@@ -14,17 +14,17 @@ import { ApiException } from '../../utils/exceptions';
 export class UpdateSubscriber {
   constructor(
     private invalidateCache: InvalidateCacheService,
-    private subscriberRepository: SubscriberRepository
+    private subscriberRepository: SubscriberRepository,
   ) {}
 
   public async execute(
-    command: UpdateSubscriberCommand
+    command: UpdateSubscriberCommand,
   ): Promise<SubscriberEntity> {
     const foundSubscriber = command.subscriber
       ? command.subscriber
       : await this.subscriberRepository.findBySubscriberId(
           command.environmentId,
-          command.subscriberId
+          command.subscriberId,
         );
 
     if (!foundSubscriber) {
@@ -81,7 +81,7 @@ export class UpdateSubscriber {
       },
       {
         $set: updatePayload,
-      }
+      },
     );
 
     return {

@@ -329,7 +329,7 @@ export function CreateProviderInstanceSidebar({
       </Input.Wrapper>
       <When truthy={showNovuProvidersErrorMessage}>
         <WarningMessage>
-          <Text data-test-id="novu-provider-error">
+          <Text data-test-id="teleflow-provider-error">
             You can only create one {provider.displayName} per environment.
           </Text>
         </WarningMessage>

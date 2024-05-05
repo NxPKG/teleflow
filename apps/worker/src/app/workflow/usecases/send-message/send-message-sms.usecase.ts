@@ -8,7 +8,7 @@ import {
   SubscriberRepository,
   MessageEntity,
   IntegrationEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelTypeEnum, LogCodeEnum, ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
 import {
   InstrumentUsecase,

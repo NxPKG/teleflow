@@ -7,7 +7,7 @@ import {
   JobRepository,
   NotificationTemplateRepository,
   SubscriberEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   AddressingTypeEnum,
   ChannelTypeEnum,
@@ -51,7 +51,7 @@ export class TriggerEvent {
     private logger: PinoLogger,
     private mapTriggerRecipients: MapTriggerRecipients,
     private triggerBroadcast: TriggerBroadcast,
-    private triggerMulticast: TriggerMulticast
+    private triggerMulticast: TriggerMulticast,
   ) {}
 
   @InstrumentUsecase()
@@ -70,7 +70,7 @@ export class TriggerEvent {
 
       await this.validateTransactionIdProperty(
         mappedCommand.transactionId,
-        environmentId
+        environmentId,
       );
 
       Sentry.addBreadcrumb({
@@ -106,17 +106,17 @@ export class TriggerEvent {
             organizationId,
             userId,
             tenant: mappedCommand.tenant,
-          })
+          }),
         );
 
         if (!tenantProcessed) {
           Logger.warn(
             `Tenant with identifier ${JSON.stringify(
-              mappedCommand.tenant.identifier
+              mappedCommand.tenant.identifier,
             )} of organization ${mappedCommand.organizationId} in transaction ${
               mappedCommand.transactionId
             } could not be processed.`,
-            LOG_CONTEXT
+            LOG_CONTEXT,
           );
         }
       }
@@ -130,7 +130,7 @@ export class TriggerEvent {
             organizationId,
             userId,
             subscriber: mappedCommand.actor,
-          })
+          }),
         );
       }
 
@@ -141,7 +141,7 @@ export class TriggerEvent {
               ...mappedCommand,
               actor: actorProcessed,
               template,
-            })
+            }),
           );
           break;
         }
@@ -151,7 +151,7 @@ export class TriggerEvent {
               ...mappedCommand,
               actor: actorProcessed,
               template,
-            })
+            }),
           );
           break;
         }
@@ -162,7 +162,7 @@ export class TriggerEvent {
               ...(mappedCommand as TriggerMulticastCommand),
               actor: actorProcessed,
               template,
-            })
+            }),
           );
           break;
         }
@@ -177,7 +177,7 @@ export class TriggerEvent {
           error: e,
         },
         'Unexpected error has occurred when triggering event',
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       throw e;
@@ -197,33 +197,33 @@ export class TriggerEvent {
   }) {
     return await this.notificationTemplateRepository.findByTriggerIdentifier(
       command.environmentId,
-      command.triggerIdentifier
+      command.triggerIdentifier,
     );
   }
 
   @Instrument()
   private async validateTransactionIdProperty(
     transactionId: string,
-    environmentId: string
+    environmentId: string,
   ): Promise<void> {
     const found = (await this.jobRepository.findOne(
       {
         transactionId,
         _environmentId: environmentId,
       },
-      '_id'
+      '_id',
     )) as Pick<JobEntity, '_id'>;
 
     if (found) {
       throw new ApiException(
-        'transactionId property is not unique, please make sure all triggers have a unique transactionId'
+        'transactionId property is not unique, please make sure all triggers have a unique transactionId',
       );
     }
   }
 
   @Instrument()
   private async validateSubscriberIdProperty(
-    to: ISubscribersDefine[]
+    to: ISubscribersDefine[],
   ): Promise<boolean> {
     for (const subscriber of to) {
       const subscriberIdExists =
@@ -231,13 +231,13 @@ export class TriggerEvent {
 
       if (Array.isArray(subscriberIdExists)) {
         throw new ApiException(
-          'subscriberId under property to is type array, which is not allowed please make sure all subscribers ids are strings'
+          'subscriberId under property to is type array, which is not allowed please make sure all subscribers ids are strings',
         );
       }
 
       if (!subscriberIdExists) {
         throw new ApiException(
-          'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property'
+          'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property',
         );
       }
     }
@@ -248,7 +248,7 @@ export class TriggerEvent {
   @Instrument()
   private async getProviderId(
     environmentId: string,
-    channelType: ChannelTypeEnum
+    channelType: ChannelTypeEnum,
   ): Promise<ProvidersIdEnum> {
     const integration = await this.integrationRepository.findOne(
       {
@@ -256,7 +256,7 @@ export class TriggerEvent {
         active: true,
         channel: channelType,
       },
-      'providerId'
+      'providerId',
     );
 
     return integration?.providerId as ProvidersIdEnum;

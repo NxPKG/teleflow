@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { TopicEntity, TopicRepository } from '@novu/dal';
+import { TopicEntity, TopicRepository } from '@teleflow/dal';
 
 import { RenameTopicCommand } from './rename-topic.command';
 
@@ -9,7 +9,10 @@ import { ExternalSubscriberId } from '../../types';
 
 @Injectable()
 export class RenameTopicUseCase {
-  constructor(private getTopicUseCase: GetTopicUseCase, private topicRepository: TopicRepository) {}
+  constructor(
+    private getTopicUseCase: GetTopicUseCase,
+    private topicRepository: TopicRepository
+  ) {}
 
   async execute(command: RenameTopicCommand): Promise<TopicDto> {
     const topic = await this.getTopicUseCase.execute(command);

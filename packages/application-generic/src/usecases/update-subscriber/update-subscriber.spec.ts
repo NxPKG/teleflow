@@ -1,5 +1,5 @@
-import { SubscriberRepository } from '@novu/dal';
-import { UserSession, SubscribersService } from '@novu/testing';
+import { SubscriberRepository } from '@teleflow/dal';
+import { UserSession, SubscribersService } from '@teleflow/testing';
 import { Test } from '@nestjs/testing';
 
 import { UpdateSubscriber } from './update-subscriber.usecase';
@@ -49,7 +49,7 @@ describe('Update Subscriber', function () {
   it('should update subscribers name', async function () {
     const subscriberService = new SubscribersService(
       session.organization._id,
-      session.environment._id
+      session.environment._id,
     );
     const subscriber = await subscriberService.createSubscriber();
     await updateUsecase.execute(
@@ -59,7 +59,7 @@ describe('Update Subscriber', function () {
         lastName: 'Test Last Name',
         locale: 'sv',
         environmentId: session.environment._id,
-      })
+      }),
     );
 
     const updatedSubscriber = await subscriberRepository.findOne({

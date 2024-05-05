@@ -7,10 +7,10 @@
   </a>
 </div>
 
-# @novu/notification-center-angular
+# @teleflow/notification-center-angular
 
-[![Version](https://img.shields.io/npm/v/@novu/notification-center-angular.svg)](https://www.npmjs.com/package/@novu/notification-center-angular)
-[![Downloads](https://img.shields.io/npm/dm/@novu/notification-center-angular.svg)](https://www.npmjs.com/package/@novu/notification-center-angular)
+[![Version](https://img.shields.io/npm/v/@teleflow/notification-center-angular.svg)](https://www.npmjs.com/package/@teleflow/notification-center-angular)
+[![Downloads](https://img.shields.io/npm/dm/@teleflow/notification-center-angular.svg)](https://www.npmjs.com/package/@teleflow/notification-center-angular)
 
 This library contains a wrapper for the Novu Notification Center web component, allowing you to quickly integrate product notifications into your Angular application.
 

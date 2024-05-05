@@ -1,1 +1,1 @@
-export { useFeatureFlags, useFeatureFlag } from '@novu/shared-web';
+export { useFeatureFlags, useFeatureFlag } from '@teleflow/shared-web';

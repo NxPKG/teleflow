@@ -1,7 +1,7 @@
 import { createHash } from 'crypto';
 import { Injectable } from '@nestjs/common';
 
-import { EnvironmentRepository } from '@novu/dal';
+import { EnvironmentRepository } from '@teleflow/dal';
 import { decryptApiKey, encryptApiKey } from '@novu/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';

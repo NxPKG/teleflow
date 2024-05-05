@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { UserEntity, UserRepository } from '@novu/dal';
+import { UserEntity, UserRepository } from '@teleflow/dal';
 import * as bcrypt from 'bcrypt';
 
 import { EnvironmentService } from './environment.service';

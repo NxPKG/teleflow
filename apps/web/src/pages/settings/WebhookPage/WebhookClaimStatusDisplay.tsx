@@ -5,7 +5,7 @@ import {
   IconRefresh,
   When,
 } from '@novu/design-system';
-import { LocalizedMessage } from '@novu/shared-web';
+import { LocalizedMessage } from '@teleflow/shared-web';
 import { FC } from 'react';
 import { IconButton } from '../../../components';
 import { cva } from '../../../styled-system/css';

@@ -1,5 +1,5 @@
 {
-  "name": "@novu/ws",
+  "name": "@teleflow/ws",
   "version": "0.24.1",
   "description": "",
   "author": "",
@@ -30,9 +30,9 @@
     "@nestjs/terminus": "^10.0.1",
     "@nestjs/websockets": "^10.2.2",
     "@novu/application-generic": "^0.24.1",
-    "@novu/dal": "^0.24.1",
+    "@teleflow/dal": "^0.24.1",
     "@novu/shared": "^0.24.1",
-    "@novu/testing": "^0.24.1",
+    "@teleflow/testing": "^0.24.1",
     "@sentry/node": "^7.30.0",
     "@socket.io/admin-ui": "^0.5.1",
     "@socket.io/redis-adapter": "^7.2.0",

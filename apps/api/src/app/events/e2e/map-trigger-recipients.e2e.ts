@@ -1,5 +1,5 @@
 import { Test } from '@nestjs/testing';
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import {
   FeatureFlagsService,
   GetTopicSubscribersUseCase,
@@ -13,7 +13,7 @@ import {
   TopicRepository,
   CreateTopicSubscribersEntity,
   TopicSubscribersRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ISubscribersDefine,
   ITopic,

@@ -8,7 +8,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { OrganizationRepository } from '@novu/dal';
+import { OrganizationRepository } from '@teleflow/dal';
 import {
   ApiServiceLevelEnum,
   IJwtPayload,
@@ -20,7 +20,10 @@ import { ProductFeature } from '../decorators/product-feature.decorator';
 
 @Injectable()
 export class ProductFeatureInterceptor implements NestInterceptor {
-  constructor(private reflector: Reflector, private organizationRepository: OrganizationRepository) {}
+  constructor(
+    private reflector: Reflector,
+    private organizationRepository: OrganizationRepository
+  ) {}
 
   async intercept(context: ExecutionContext, next: CallHandler): Promise<Observable<any>> {
     try {

@@ -17,7 +17,7 @@ import {
   OrganizationEntity,
   SubscriberEntity,
   UserEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 import {
   EnvironmentService,
@@ -26,7 +26,7 @@ import {
   SubscribersService,
   UserService,
   JobsService,
-} from '@novu/testing';
+} from '@teleflow/testing';
 import { BullMqService, StandardQueueService, WorkflowInMemoryProviderService } from '@novu/application-generic';
 
 import { StandardWorker } from './standard.worker';

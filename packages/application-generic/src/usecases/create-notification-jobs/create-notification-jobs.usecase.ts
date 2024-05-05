@@ -6,7 +6,7 @@ import {
   NotificationEntity,
   NotificationRepository,
   NotificationStepEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   DigestTypeEnum,
   STEP_TYPE_TO_CHANNEL_TYPE,
@@ -31,12 +31,12 @@ export class CreateNotificationJobs {
     private digestFilterSteps: DigestFilterSteps,
     private notificationRepository: NotificationRepository,
     @Inject(forwardRef(() => CalculateDelayService))
-    private calculateDelayService: CalculateDelayService
+    private calculateDelayService: CalculateDelayService,
   ) {}
 
   @InstrumentUsecase()
   public async execute(
-    command: CreateNotificationJobsCommand
+    command: CreateNotificationJobsCommand,
   ): Promise<NotificationJob[]> {
     const activeSteps = this.filterActiveSteps(command.template.steps);
 
@@ -116,13 +116,13 @@ export class CreateNotificationJobs {
   private async createSteps(
     command: CreateNotificationJobsCommand,
     activeSteps: NotificationStepEntity[],
-    notification: NotificationEntity
+    notification: NotificationEntity,
   ): Promise<NotificationStepEntity[]> {
     return await this.filterDigestSteps(command, notification, activeSteps);
   }
 
   private filterActiveSteps(
-    steps: NotificationStepEntity[]
+    steps: NotificationStepEntity[],
   ): NotificationStepEntity[] {
     return steps.filter((step) => step.active === true);
   }
@@ -130,11 +130,11 @@ export class CreateNotificationJobs {
   private async filterDigestSteps(
     command: CreateNotificationJobsCommand,
     notification: NotificationEntity,
-    steps: NotificationStepEntity[]
+    steps: NotificationStepEntity[],
   ): Promise<NotificationStepEntity[]> {
     // TODO: Review this for workflows with more than one digest as this will return the first element found
     const digestStep = steps.find(
-      (step) => step.template?.type === StepTypeEnum.DIGEST
+      (step) => step.template?.type === StepTypeEnum.DIGEST,
     );
 
     if (digestStep?.metadata?.type) {
@@ -154,7 +154,7 @@ export class CreateNotificationJobs {
             'backoff' in digestStep.metadata
               ? digestStep.metadata.backoff
               : undefined,
-        })
+        }),
       );
     }
 
@@ -166,7 +166,7 @@ export class CreateNotificationJobs {
       const delayedSteps = command.template.steps.filter(
         (step) =>
           step.template?.type === StepTypeEnum.DIGEST ||
-          step.template?.type === StepTypeEnum.DELAY
+          step.template?.type === StepTypeEnum.DELAY,
       );
 
       const delay = delayedSteps
@@ -175,7 +175,7 @@ export class CreateNotificationJobs {
             stepMetadata: step.metadata,
             payload: command.payload,
             overrides: command.overrides,
-          })
+          }),
         )
         .reduce((sum, delayAmount) => sum + delayAmount, 0);
 

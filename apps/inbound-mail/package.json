@@ -1,5 +1,5 @@
 {
-  "name": "@novu/inbound-mail",
+  "name": "@teleflow/inbound-mail",
   "version": "0.24.1",
   "description": "",
   "author": "",
@@ -39,7 +39,7 @@
     "winston": "^3.9.0"
   },
   "devDependencies": {
-    "@novu/testing": "^0.24.1",
+    "@teleflow/testing": "^0.24.1",
     "@types/chai": "^4.2.11",
     "@types/express": "^4.17.8",
     "@types/html-to-text": "^9.0.1",

@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 
-import { MessageRepository } from '@novu/dal';
+import { MessageRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, WebSocketEventEnum } from '@novu/shared';
 
 import { ExternalServicesRouteCommand } from './external-services-route.command';
@@ -11,7 +11,10 @@ const LOG_CONTEXT = 'ExternalServicesRoute';
 
 @Injectable()
 export class ExternalServicesRoute {
-  constructor(private wsGateway: WSGateway, private messageRepository: MessageRepository) {}
+  constructor(
+    private wsGateway: WSGateway,
+    private messageRepository: MessageRepository
+  ) {}
 
   public async execute(command: ExternalServicesRouteCommand) {
     const isOnline = await this.connectionExist(command);

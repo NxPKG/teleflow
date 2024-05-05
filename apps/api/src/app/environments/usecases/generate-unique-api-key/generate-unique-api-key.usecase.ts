@@ -2,7 +2,7 @@ import * as hat from 'hat';
 import { createHash } from 'crypto';
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 
-import { EnvironmentRepository } from '@novu/dal';
+import { EnvironmentRepository } from '@teleflow/dal';
 
 const API_KEY_GENERATION_MAX_RETRIES = 3;
 

@@ -5,17 +5,17 @@ import {
   FieldOperatorEnum,
   StepTypeEnum,
 } from '@novu/shared';
-import { MessageTemplateEntity } from '@novu/dal';
+import { MessageTemplateEntity } from '@teleflow/dal';
 
 import { ConditionsFilter } from '../conditions-filter';
 import { SelectVariant } from './select-variant.usecase';
-import { MessageTemplateRepository } from '@novu/dal';
+import { MessageTemplateRepository } from '@teleflow/dal';
 import { SelectVariantCommand } from './select-variant.command';
 
 const findOneMessageTemplateMock = jest.fn(() => testVariant);
 
-jest.mock('@novu/dal', () => ({
-  ...jest.requireActual('@novu/dal'),
+jest.mock('@teleflow/dal', () => ({
+  ...jest.requireActual('@teleflow/dal'),
   MessageTemplateRepository: jest.fn(() => ({
     findOne: findOneMessageTemplateMock,
   })),
@@ -28,7 +28,7 @@ describe('select variant', function () {
     selectVariantUsecase = new SelectVariant(
       // @ts-ignore
       new ConditionsFilter(),
-      new MessageTemplateRepository()
+      new MessageTemplateRepository(),
       // @ts-ignore
     );
     jest.clearAllMocks();
@@ -36,7 +36,7 @@ describe('select variant', function () {
 
   it('should select the variant', async function () {
     const variant = await selectVariantUsecase.execute(
-      command as unknown as SelectVariantCommand
+      command as unknown as SelectVariantCommand,
     );
 
     expect(variant.messageTemplate.content).toEqual(testVariant.content);
@@ -49,18 +49,18 @@ describe('select variant', function () {
     commandWithoutVariants.step.variants = [];
 
     const stepVariant = await selectVariantUsecase.execute(
-      commandWithoutVariants as unknown as SelectVariantCommand
+      commandWithoutVariants as unknown as SelectVariantCommand,
     );
 
     expect(stepVariant.conditions).toBeUndefined();
     expect(stepVariant.messageTemplate.content).toEqual(
-      commandWithoutVariants.step.template.content
+      commandWithoutVariants.step.template.content,
     );
     expect(stepVariant.messageTemplate.subject).toEqual(
-      commandWithoutVariants.step.template.subject
+      commandWithoutVariants.step.template.subject,
     );
     expect(stepVariant.messageTemplate._id).toEqual(
-      commandWithoutVariants.step.template._id
+      commandWithoutVariants.step.template._id,
     );
   });
 
@@ -69,18 +69,18 @@ describe('select variant', function () {
     commandWithoutFilterData.filterData = {} as any;
 
     const stepVariant = await selectVariantUsecase.execute(
-      commandWithoutFilterData as unknown as SelectVariantCommand
+      commandWithoutFilterData as unknown as SelectVariantCommand,
     );
 
     expect(stepVariant.conditions).toBeUndefined();
     expect(stepVariant.messageTemplate.content).toEqual(
-      commandWithoutFilterData.step.template.content
+      commandWithoutFilterData.step.template.content,
     );
     expect(stepVariant.messageTemplate.subject).toEqual(
-      commandWithoutFilterData.step.template.subject
+      commandWithoutFilterData.step.template.subject,
     );
     expect(stepVariant.messageTemplate._id).toEqual(
-      commandWithoutFilterData.step.template._id
+      commandWithoutFilterData.step.template._id,
     );
   });
 
@@ -93,18 +93,18 @@ describe('select variant', function () {
     });
 
     const stepVariant = await selectVariantUsecase.execute(
-      commandWithoutFilterData as unknown as SelectVariantCommand
+      commandWithoutFilterData as unknown as SelectVariantCommand,
     );
 
     expect(stepVariant.conditions).toBeUndefined();
     expect(stepVariant.messageTemplate.content).toEqual(
-      commandWithoutFilterData.step.template.content
+      commandWithoutFilterData.step.template.content,
     );
     expect(stepVariant.messageTemplate.subject).toEqual(
-      commandWithoutFilterData.step.template.subject
+      commandWithoutFilterData.step.template.subject,
     );
     expect(stepVariant.messageTemplate._id).toEqual(
-      commandWithoutFilterData.step.template._id
+      commandWithoutFilterData.step.template._id,
     );
   });
 });

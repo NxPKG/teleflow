@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class KannelSmsProvider implements ISmsProvider {
@@ -18,13 +18,13 @@ export class KannelSmsProvider implements ISmsProvider {
       from: string;
       username?: string;
       password?: string;
-    }
+    },
   ) {
     this.apiBaseUrl = `http://${config.host}:${config.port}/cgi-bin`;
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const url = this.apiBaseUrl + '/sendsms';
     const queryParameters = {

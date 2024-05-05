@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { SmsClient } from '@azure/communication-sms';
 
 export class AzureSmsProvider implements ISmsProvider {
@@ -14,13 +14,13 @@ export class AzureSmsProvider implements ISmsProvider {
   constructor(
     private config: {
       connectionString: string;
-    }
+    },
   ) {
     this.smsClient = new SmsClient(this.config.connectionString);
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const sendResults = await this.smsClient.send({
       from: options.from,

@@ -2,7 +2,7 @@ import { useMutation, UseMutationOptions } from '@tanstack/react-query';
 import { useCallback } from 'react';
 import { errorMessage } from '@novu/design-system';
 import type { IResponseError } from '@novu/shared';
-import { IS_DOCKER_HOSTED } from '@novu/shared-web';
+import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 
 import { previewChat } from '../content-templates';
 

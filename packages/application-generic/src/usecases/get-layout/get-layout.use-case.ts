@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { IEmailBlock, ITemplateVariable } from '@novu/shared';
 
 import { GetLayoutCommand } from './get-layout.command';
@@ -17,7 +17,7 @@ export class GetLayoutUseCase {
 
     if (!layout) {
       throw new NotFoundException(
-        `Layout not found for id ${command.layoutId} in the environment ${command.environmentId}`
+        `Layout not found for id ${command.layoutId} in the environment ${command.environmentId}`,
       );
     }
 
@@ -36,7 +36,7 @@ export class GetLayoutUseCase {
   }
 
   private mapVariablesFromEntity(
-    variables?: ITemplateVariable[]
+    variables?: ITemplateVariable[],
   ): ITemplateVariable[] {
     if (!variables || variables.length === 0) {
       return [];

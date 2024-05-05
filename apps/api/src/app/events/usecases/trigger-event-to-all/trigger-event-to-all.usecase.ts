@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { AddressingTypeEnum, TriggerEventStatusEnum, TriggerRequestCategoryEnum } from '@novu/shared';
 
 import { TriggerEventToAllCommand } from './trigger-event-to-all.command';
@@ -7,7 +7,10 @@ import { ParseEventRequest, ParseEventRequestBroadcastCommand } from '../parse-e
 
 @Injectable()
 export class TriggerEventToAll {
-  constructor(private subscriberRepository: SubscriberRepository, private parseEventRequest: ParseEventRequest) {}
+  constructor(
+    private subscriberRepository: SubscriberRepository,
+    private parseEventRequest: ParseEventRequest
+  ) {}
 
   public async execute(command: TriggerEventToAllCommand) {
     await this.parseEventRequest.execute(

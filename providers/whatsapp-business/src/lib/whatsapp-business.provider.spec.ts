@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { WhatsappBusinessChatProvider } from './whatsapp-business.provider';
 import { nanoid } from 'nanoid';
-import { IChatOptions } from '@novu/stateless';
+import { IChatOptions } from '@teleflow/stateless';
 
 const mockProviderConfig = {
   accessToken: 'my-access-token',
@@ -34,11 +34,11 @@ test('should trigger whatsapp-business library correctly with simple text messag
       },
       to: options.phoneNumber,
       type: 'text',
-    }
+    },
   );
 
   expect(axiosMockSpy).toHaveBeenCalledWith(
-    expectedHeaders(mockProviderConfig.accessToken)
+    expectedHeaders(mockProviderConfig.accessToken),
   );
 
   expect(res.id).toBe(messageId);
@@ -75,11 +75,11 @@ test('should trigger whatsapp-business library correctly with template message',
       template: options.customData.template,
       to: options.phoneNumber,
       type: 'template',
-    }
+    },
   );
 
   expect(axiosMockSpy).toHaveBeenCalledWith(
-    expectedHeaders(mockProviderConfig.accessToken)
+    expectedHeaders(mockProviderConfig.accessToken),
   );
 
   expect(res.id).toBe(messageId);

@@ -23,7 +23,7 @@ module.exports = {
       'error',
       {
         paths: ['src'],
-        patterns: ['@novu/dal'],
+        patterns: ['@teleflow/dal'],
       },
     ],
     '@typescript-eslint/naming-convention': [
@@ -35,9 +35,9 @@ module.exports = {
         format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
       },
     ],
-    "react-hooks/rules-of-hooks": 'error',
-    "react-hooks/exhaustive-deps": 'warn',
-    "import/extensions": 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'import/extensions': 'off',
   },
   env: {
     'cypress/globals': true,

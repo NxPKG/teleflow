@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { NOVU_ENCRYPTION_SUB_MASK } from '@novu/shared';
 

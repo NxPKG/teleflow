@@ -1,5 +1,5 @@
 import { FeatureFlagsKeysEnum } from '@novu/shared';
-import { IS_DOCKER_HOSTED, useFeatureFlag } from '@novu/shared-web';
+import { IS_DOCKER_HOSTED, useFeatureFlag } from '@teleflow/shared-web';
 
 export function FreeTrialBanner() {
   const isEnabled = useFeatureFlag(FeatureFlagsKeysEnum.IS_BILLING_REVERSE_TRIAL_ENABLED);

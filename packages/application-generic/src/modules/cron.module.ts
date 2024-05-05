@@ -1,6 +1,6 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
 import { JobCronNameEnum, JobTopicNameEnum } from '@novu/shared';
-import { DalService } from '@novu/dal';
+import { DalService } from '@teleflow/dal';
 import {
   ACTIVE_CRON_JOBS_TOKEN,
   AgendaCronService,
@@ -33,7 +33,7 @@ export const cronService = {
   useFactory: async (
     metricsService: MetricsService,
     activeCronJobs: JobCronNameEnum[],
-    dalService: DalService
+    dalService: DalService,
   ) => {
     const agenda = new Agenda({
       mongo: dalService.connection.getClient().db() as any,
@@ -48,7 +48,7 @@ export const cronService = {
     const service = new AgendaCronService(
       metricsService,
       activeCronJobs,
-      agenda
+      agenda,
     );
 
     return service;
@@ -76,7 +76,7 @@ export class CronModule {
 
                 return acc;
               },
-              [] as JobCronNameEnum[]
+              [] as JobCronNameEnum[],
             );
 
             const uniqueActiveJobs = [...new Set(activeJobs)];

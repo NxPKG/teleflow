@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { DalException, MessageRepository, SubscriberRepository } from '@novu/dal';
+import { DalException, MessageRepository, SubscriberRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, WebSocketEventEnum } from '@novu/shared';
 import {
   WebSocketsQueueService,

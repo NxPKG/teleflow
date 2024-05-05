@@ -1,6 +1,6 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
-import { OrganizationRepository } from '@novu/dal';
+import { OrganizationRepository } from '@teleflow/dal';
 
 describe('Update default locale and add new translations - /translations/language (PATCH)', async () => {
   let session: UserSession;

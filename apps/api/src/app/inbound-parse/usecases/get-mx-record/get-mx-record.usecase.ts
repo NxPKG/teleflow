@@ -1,6 +1,6 @@
 import { Injectable, Scope } from '@nestjs/common';
 import * as dns from 'dns';
-import { EnvironmentEntity, EnvironmentRepository } from '@novu/dal';
+import { EnvironmentEntity, EnvironmentRepository } from '@teleflow/dal';
 
 import { GetMxRecordCommand } from './get-mx-record.command';
 import { GetMxRecordResponseDto } from '../../dtos/get-mx-record.dto';

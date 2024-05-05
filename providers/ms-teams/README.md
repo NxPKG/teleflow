@@ -1,6 +1,6 @@
 # Novu MsTeams Provider
 
-A MsTeams chat provider library for [@novu/node](https://github.com/novuhq/novu)
+A MsTeams chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

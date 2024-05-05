@@ -12,7 +12,7 @@ import {
   StepTypeEnum,
   TimeOperatorEnum,
 } from '@novu/shared';
-import { JobEntity, MessageTemplateEntity, NotificationStepEntity } from '@novu/dal';
+import { JobEntity, MessageTemplateEntity, NotificationStepEntity } from '@teleflow/dal';
 import { CompileTemplate, ConditionsFilter, ConditionsFilterCommand } from '@novu/application-generic';
 
 describe('Message filter matcher', function () {

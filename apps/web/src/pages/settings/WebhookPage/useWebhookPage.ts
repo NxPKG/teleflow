@@ -1,7 +1,7 @@
 import { useClipboard } from '@mantine/hooks';
 import { successMessage, errorMessage } from '@novu/design-system';
 import { IResponseError, checkIsResponseError } from '@novu/shared';
-import { MAIL_SERVER_DOMAIN, useEnvController, updateDnsSettings } from '@novu/shared-web';
+import { MAIL_SERVER_DOMAIN, useEnvController, updateDnsSettings } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';

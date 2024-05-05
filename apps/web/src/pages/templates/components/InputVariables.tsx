@@ -1,4 +1,4 @@
-import { IS_DOCKER_HOSTED } from '@novu/shared-web';
+import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 import { useFormContext } from 'react-hook-form';
 import { useStepFormPath } from '../hooks/useStepFormPath';
 

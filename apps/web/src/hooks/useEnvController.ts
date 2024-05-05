@@ -1,3 +1,3 @@
-import { useEnvController } from '@novu/shared-web';
+import { useEnvController } from '@teleflow/shared-web';
 
 export { useEnvController };

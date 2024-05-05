@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import { UserSession } from '@novu/testing';
-import { TenantRepository, WorkflowOverrideRepository } from '@novu/dal';
-import { WorkflowOverrideService } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
+import { TenantRepository, WorkflowOverrideRepository } from '@teleflow/dal';
+import { WorkflowOverrideService } from '@teleflow/testing';
 
 describe('Delete workflow override - /workflow-overrides/:overrideId (Delete)', async () => {
   let session: UserSession;

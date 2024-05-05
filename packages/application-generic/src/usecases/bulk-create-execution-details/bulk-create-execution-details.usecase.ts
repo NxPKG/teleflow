@@ -3,7 +3,7 @@ import {
   ExecutionDetailsRepository,
   ExecutionDetailsEntity,
   DalException,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { BulkCreateExecutionDetailsCommand } from './bulk-create-execution-details.command';
 
@@ -33,13 +33,13 @@ export class BulkCreateExecutionDetails {
       Logger.verbose(
         { entities },
         'Bulk execution details created',
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
     } catch (error) {
       Logger.error(
         { entities, error },
         'Bulk execution details creation failed',
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       if (error instanceof DalException) {
@@ -50,7 +50,7 @@ export class BulkCreateExecutionDetails {
   }
 
   private cleanFromNulls(
-    entity: Omit<ExecutionDetailsEntity, 'createdAt' | '_id'>
+    entity: Omit<ExecutionDetailsEntity, 'createdAt' | '_id'>,
   ): Omit<ExecutionDetailsEntity, 'createdAt' | '_id'> {
     const cleanEntity = Object.assign({}, entity);
 

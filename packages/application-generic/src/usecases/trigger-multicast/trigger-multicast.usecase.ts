@@ -4,7 +4,7 @@ import {
   TopicEntity,
   TopicRepository,
   TopicSubscribersRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   FeatureFlagsKeysEnum,
   ISubscribersDefine,
@@ -29,7 +29,7 @@ const SUBSCRIBER_TOPIC_DISTINCT_BATCH_SIZE =
   Number(process.env.SUBSCRIBER_TOPIC_DISTINCT_BATCH_SIZE) || 100;
 
 const isNotTopic = (
-  recipient: TriggerRecipient
+  recipient: TriggerRecipient,
 ): recipient is TriggerRecipientSubscriber => !isTopic(recipient);
 
 const isTopic = (recipient: TriggerRecipient): recipient is ITopic =>
@@ -43,7 +43,7 @@ export class TriggerMulticast {
     private subscriberProcessQueueService: SubscriberProcessQueueService,
     private topicSubscribersRepository: TopicSubscribersRepository,
     private topicRepository: TopicRepository,
-    private getFeatureFlag: GetFeatureFlag
+    private getFeatureFlag: GetFeatureFlag,
   ) {}
 
   @InstrumentUsecase()
@@ -69,7 +69,7 @@ export class TriggerMulticast {
         await this.sendToProcessSubscriberService(
           command,
           subscribersToProcess,
-          SubscriberSourceEnum.SINGLE
+          SubscriberSourceEnum.SINGLE,
         );
       }
 
@@ -79,13 +79,13 @@ export class TriggerMulticast {
           organizationId,
           userId,
           key: FeatureFlagsKeysEnum.IS_TOPIC_NOTIFICATION_ENABLED,
-        })
+        }),
       );
 
       if (!isEnabled) {
         Logger.log(
           `The IS_TOPIC_NOTIFICATION_ENABLED feature flag is disabled, skipping trigger multicast`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
 
         return;
@@ -94,7 +94,7 @@ export class TriggerMulticast {
       const topics = await this.getTopicsByTopicKeys(
         organizationId,
         environmentId,
-        topicKeys
+        topicKeys,
       );
 
       this.validateTopicExist(topics, topicKeys);
@@ -126,7 +126,7 @@ export class TriggerMulticast {
           await this.sendToProcessSubscriberService(
             command,
             subscribersList,
-            SubscriberSourceEnum.TOPIC
+            SubscriberSourceEnum.TOPIC,
           );
 
           subscribersList = [];
@@ -137,7 +137,7 @@ export class TriggerMulticast {
         await this.sendToProcessSubscriberService(
           command,
           subscribersList,
-          SubscriberSourceEnum.TOPIC
+          SubscriberSourceEnum.TOPIC,
         );
       }
     }
@@ -146,7 +146,7 @@ export class TriggerMulticast {
   private async getTopicsByTopicKeys(
     organizationId: string,
     environmentId: string,
-    topicKeys: Set<string>
+    topicKeys: Set<string>,
   ): Promise<Pick<TopicEntity, '_id' | 'key'>[]> {
     return await this.topicRepository.find(
       {
@@ -154,13 +154,13 @@ export class TriggerMulticast {
         _environmentId: environmentId,
         key: { $in: Array.from(topicKeys) },
       },
-      '_id key'
+      '_id key',
     );
   }
 
   private validateTopicExist(
     topics: Pick<TopicEntity, '_id' | 'key'>[],
-    topicKeys: Set<string>
+    topicKeys: Set<string>,
   ) {
     if (topics.length === topicKeys.size) {
       return;
@@ -168,31 +168,31 @@ export class TriggerMulticast {
 
     const storageTopicsKeys = topics.map((topic) => topic.key);
     const notFoundTopics = [...topicKeys].filter(
-      (topicKey) => !storageTopicsKeys.includes(topicKey)
+      (topicKey) => !storageTopicsKeys.includes(topicKey),
     );
 
     if (notFoundTopics.length > 0) {
       throw new NotFoundException(
-        `Topic with key ${notFoundTopics.join()} not found in current environment`
+        `Topic with key ${notFoundTopics.join()} not found in current environment`,
       );
     }
   }
 
   private async subscriberProcessQueueAddBulk(
-    jobs: IProcessSubscriberBulkJobDto[]
+    jobs: IProcessSubscriberBulkJobDto[],
   ) {
     return await Promise.all(
       _.chunk(jobs, QUEUE_CHUNK_SIZE).map(
         (chunk: IProcessSubscriberBulkJobDto[]) =>
-          this.subscriberProcessQueueService.addBulk(chunk)
-      )
+          this.subscriberProcessQueueService.addBulk(chunk),
+      ),
     );
   }
 
   public async sendToProcessSubscriberService(
     command: TriggerMulticastCommand,
     subscribers: ISubscribersDefine[],
-    _subscriberSource: SubscriberSourceEnum
+    _subscriberSource: SubscriberSourceEnum,
   ) {
     if (subscribers.length === 0) {
       return;
@@ -205,7 +205,7 @@ export class TriggerMulticast {
 }
 
 export const splitByRecipientType = (
-  mappedRecipients: TriggerRecipient[]
+  mappedRecipients: TriggerRecipient[],
 ): {
   singleSubscribers: Map<string, ISubscribersDefine>;
   topicKeys: Set<string>;
@@ -223,7 +223,7 @@ export const splitByRecipientType = (
 
         acc.singleSubscribers.set(
           subscribersDefine.subscriberId,
-          subscribersDefine
+          subscribersDefine,
         );
       }
 
@@ -232,12 +232,12 @@ export const splitByRecipientType = (
     {
       singleSubscribers: new Map<string, ISubscribersDefine>(),
       topicKeys: new Set<string>(),
-    }
+    },
   );
 };
 
 export const buildSubscriberDefine = (
-  recipient: TriggerRecipientSubscriber
+  recipient: TriggerRecipientSubscriber,
 ): ISubscribersDefine => {
   if (typeof recipient === 'string') {
     return { subscriberId: recipient };
@@ -251,19 +251,19 @@ export const buildSubscriberDefine = (
 export const validateSubscriberDefine = (recipient: ISubscribersDefine) => {
   if (!recipient) {
     throw new ApiException(
-      'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property'
+      'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property',
     );
   }
 
   if (Array.isArray(recipient)) {
     throw new ApiException(
-      'subscriberId under property to is type array, which is not allowed please make sure all subscribers ids are strings'
+      'subscriberId under property to is type array, which is not allowed please make sure all subscribers ids are strings',
     );
   }
 
   if (!recipient.subscriberId) {
     throw new ApiException(
-      'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property'
+      'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property',
     );
   }
 };
@@ -271,7 +271,7 @@ export const validateSubscriberDefine = (recipient: ISubscribersDefine) => {
 export const mapSubscribersToJobs = (
   _subscriberSource: SubscriberSourceEnum,
   subscribers: ISubscribersDefine[],
-  command: TriggerMulticastCommand
+  command: TriggerMulticastCommand,
 ): IProcessSubscriberBulkJobDto[] => {
   return subscribers.map((subscriber) => {
     const job: IProcessSubscriberBulkJobDto = {

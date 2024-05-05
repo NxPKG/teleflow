@@ -1,4 +1,4 @@
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
 import { ISmsFactory, ISmsHandler } from './interfaces';
 import {
   SnsHandler,
@@ -68,7 +68,7 @@ export class SmsFactory implements ISmsFactory {
   getHandler(integration: IntegrationEntity) {
     const handler =
       this.handlers.find((handlerItem) =>
-        handlerItem.canHandle(integration.providerId, integration.channel)
+        handlerItem.canHandle(integration.providerId, integration.channel),
       ) ?? null;
 
     if (!handler) return null;

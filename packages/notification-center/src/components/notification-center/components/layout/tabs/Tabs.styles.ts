@@ -1,12 +1,16 @@
 import { createStyles, MantineTheme } from '@mantine/core';
-import { INovuTheme } from '../../../../../store/novu-theme.context';
-import { ICommonTheme } from '../../../../../store/novu-theme-provider.context';
+import { ITelelfowTheme } from '../../../../../store/teleflow-theme.context';
+import { ICommonTheme } from '../../../../../store/teleflow-theme-provider.context';
 import { colors } from '../../../../../shared/config/colors';
 
 export default createStyles(
   (
     theme: MantineTheme,
-    { novuTheme, common, colorScheme }: { novuTheme: INovuTheme; common: ICommonTheme; colorScheme: 'light' | 'dark' },
+    {
+      novuTheme,
+      common,
+      colorScheme,
+    }: { novuTheme: ITelelfowTheme; common: ICommonTheme; colorScheme: 'light' | 'dark' },
     getRef
   ) => {
     const tabLabel = getRef('tabLabel');

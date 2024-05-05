@@ -23,7 +23,7 @@ export * from './useHoverOverItem';
 export * from './useCreateWorkflowFromBlueprint';
 export * from './useHover';
 export * from './useDebouncedSearch';
-export { useDataRef, useKeyDown, useLocalThemePreference } from '@novu/shared-web';
+export { useDataRef, useKeyDown, useLocalThemePreference } from '@teleflow/shared-web';
 export * from './useBootIntercom';
 export * from './useThemeChange';
 export * from './useIsDarkTheme';

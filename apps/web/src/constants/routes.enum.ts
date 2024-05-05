@@ -1,3 +1,3 @@
-import { ROUTES } from '@novu/shared-web';
+import { ROUTES } from '@teleflow/shared-web';
 
 export { ROUTES };

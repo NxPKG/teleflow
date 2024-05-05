@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { v4 as uuid4 } from 'uuid';
 import { EmailProviderIdEnum, StepTypeEnum } from '@novu/shared';
 import type { IResponseError, ICreateNotificationTemplateDto, INotificationTemplate } from '@novu/shared';
-import { QueryKeys } from '@novu/shared-web';
+import { QueryKeys } from '@teleflow/shared-web';
 
 import { createTemplate } from '../../notification-templates';
 import { parseUrl } from '../../../utils/routeUtils';

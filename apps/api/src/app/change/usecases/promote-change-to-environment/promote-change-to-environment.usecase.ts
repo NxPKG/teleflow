@@ -1,5 +1,5 @@
 import { forwardRef, Inject, Injectable, Logger, NotFoundException } from '@nestjs/common';
-import { ChangeRepository, EnvironmentRepository } from '@novu/dal';
+import { ChangeRepository, EnvironmentRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 
 import { applyDiff } from 'recursive-diff';

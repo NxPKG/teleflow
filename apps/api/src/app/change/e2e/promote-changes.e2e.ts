@@ -8,7 +8,7 @@ import {
   NotificationTemplateRepository,
   EnvironmentEntity,
   FeedRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   ChannelCTATypeEnum,
@@ -19,7 +19,7 @@ import {
   FilterPartTypeEnum,
   TemplateVariableTypeEnum,
 } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 import { CreateWorkflowRequestDto, UpdateWorkflowRequestDto } from '../../workflows/dto';
 

@@ -1,4 +1,4 @@
-import { SubscribersService, UserSession } from '@novu/testing';
+import { SubscribersService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { CreateTopicResponseDto } from '../dtos';
 

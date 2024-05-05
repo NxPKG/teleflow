@@ -1,5 +1,5 @@
-import { SubscriberRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { SubscriberRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 describe('Get in-app activated - /integrations/in-app/activated (GET)', async () => {

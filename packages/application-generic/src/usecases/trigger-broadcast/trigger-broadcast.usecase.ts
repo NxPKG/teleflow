@@ -8,7 +8,7 @@ import {
   NotificationTemplateRepository,
   SubscriberEntity,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   ProvidersIdEnum,
@@ -43,7 +43,7 @@ export class TriggerBroadcast {
     private processTenant: ProcessTenant,
     private logger: PinoLogger,
     private mapTriggerRecipients: MapTriggerRecipients,
-    private subscriberProcessQueueService: SubscriberProcessQueueService
+    private subscriberProcessQueueService: SubscriberProcessQueueService,
   ) {}
 
   @InstrumentUsecase()
@@ -59,7 +59,7 @@ export class TriggerBroadcast {
         },
         'subscriberId',
         {},
-        subscriberFetchBatchSize
+        subscriberFetchBatchSize,
       )) {
         subscribers.push(subscriber);
         if (subscribers.length === subscriberFetchBatchSize) {
@@ -87,26 +87,26 @@ export class TriggerBroadcast {
   }) {
     return await this.notificationTemplateRepository.findByTriggerIdentifier(
       command.environmentId,
-      command.triggerIdentifier
+      command.triggerIdentifier,
     );
   }
 
   @Instrument()
   private async validateTransactionIdProperty(
     transactionId: string,
-    environmentId: string
+    environmentId: string,
   ): Promise<void> {
     const found = (await this.jobRepository.findOne(
       {
         transactionId,
         _environmentId: environmentId,
       },
-      '_id'
+      '_id',
     )) as Pick<JobEntity, '_id'>;
 
     if (found) {
       throw new ApiException(
-        'transactionId property is not unique, please make sure all triggers have a unique transactionId'
+        'transactionId property is not unique, please make sure all triggers have a unique transactionId',
       );
     }
   }
@@ -114,7 +114,7 @@ export class TriggerBroadcast {
   @Instrument()
   private async getProviderId(
     environmentId: string,
-    channelType: ChannelTypeEnum
+    channelType: ChannelTypeEnum,
   ): Promise<ProvidersIdEnum> {
     const integration = await this.integrationRepository.findOne(
       {
@@ -122,7 +122,7 @@ export class TriggerBroadcast {
         active: true,
         channel: channelType,
       },
-      'providerId'
+      'providerId',
     );
 
     return integration?.providerId as ProvidersIdEnum;
@@ -130,7 +130,7 @@ export class TriggerBroadcast {
 
   private async sendToProcessSubscriberService(
     command: TriggerBroadcastCommand,
-    subscribers: { subscriberId: string }[]
+    subscribers: { subscriberId: string }[],
   ) {
     const jobs = this.mapSubscribersToJobs(subscribers, command);
 
@@ -139,7 +139,7 @@ export class TriggerBroadcast {
 
   private mapSubscribersToJobs(
     subscribers: { subscriberId: string }[],
-    command: TriggerBroadcastCommand
+    command: TriggerBroadcastCommand,
   ): IProcessSubscriberBulkJobDto[] {
     return subscribers.map((subscriber) => {
       return {
@@ -167,8 +167,8 @@ export class TriggerBroadcast {
   private async subscriberProcessQueueAddBulk(jobs) {
     return await Promise.all(
       _.chunk(jobs, QUEUE_CHUNK_SIZE).map((chunk) =>
-        this.subscriberProcessQueueService.addBulk(chunk)
-      )
+        this.subscriberProcessQueueService.addBulk(chunk),
+      ),
     );
   }
 }

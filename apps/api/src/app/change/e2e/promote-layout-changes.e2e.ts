@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { expect } from 'chai';
-import { ChangeRepository, EnvironmentRepository, LayoutRepository } from '@novu/dal';
+import { ChangeRepository, EnvironmentRepository, LayoutRepository } from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   ITemplateVariable,
@@ -10,7 +10,7 @@ import {
   LayoutName,
   TemplateVariableTypeEnum,
 } from '@novu/shared';
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 
 describe('Promote Layout Changes', () => {
   let session: UserSession;

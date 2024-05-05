@@ -1,6 +1,6 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
-import { EnvironmentRepository, NotificationTemplateRepository, MessageTemplateRepository } from '@novu/dal';
+import { EnvironmentRepository, NotificationTemplateRepository, MessageTemplateRepository } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 
 describe('Echo Sync - /echo/sync (POST)', async () => {

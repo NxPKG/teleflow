@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { OrganizationRepository, MemberRepository } from '@novu/dal';
+import { OrganizationRepository, MemberRepository } from '@teleflow/dal';
 import { MemberRoleEnum } from '@novu/shared';
 
 import { ChangeMemberRoleCommand } from './change-member-role.command';
@@ -7,7 +7,10 @@ import { ApiException } from '../../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class ChangeMemberRole {
-  constructor(private organizationRepository: OrganizationRepository, private memberRepository: MemberRepository) {}
+  constructor(
+    private organizationRepository: OrganizationRepository,
+    private memberRepository: MemberRepository
+  ) {}
 
   async execute(command: ChangeMemberRoleCommand) {
     if (![MemberRoleEnum.MEMBER, MemberRoleEnum.ADMIN].includes(command.role)) {

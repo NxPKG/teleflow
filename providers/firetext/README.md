@@ -1,6 +1,6 @@
 # Novu Firetext Provider
 
-A Firetext sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A Firetext sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 

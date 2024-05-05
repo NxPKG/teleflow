@@ -5,7 +5,7 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
-import { NotificationStepEntity } from '@novu/dal';
+import { NotificationStepEntity } from '@teleflow/dal';
 import { DigestTypeEnum } from '@novu/shared';
 
 import { EnvironmentWithUserCommand } from '../../commands/project.command';

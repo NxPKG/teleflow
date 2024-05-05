@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import { testServer } from '@novu/testing';
+import { testServer } from '@teleflow/testing';
 
 import mailin from '../src/main';
 

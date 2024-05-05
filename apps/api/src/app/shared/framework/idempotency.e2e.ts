@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { CacheService } from '@novu/application-generic';
 import { expect } from 'chai';
 import { HttpResponseHeaderKeysEnum } from './types';

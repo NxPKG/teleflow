@@ -1,12 +1,15 @@
 import { faker } from '@faker-js/faker';
-import { IntegrationRepository, SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import { IntegrationRepository, SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 import { ChatProviderIdEnum, PushProviderIdEnum } from '@novu/shared';
 
 export class SubscribersService {
   private subscriberRepository = new SubscriberRepository();
   private integrationRepository = new IntegrationRepository();
 
-  constructor(private _organizationId: string, private _environmentId: string) {}
+  constructor(
+    private _organizationId: string,
+    private _environmentId: string
+  ) {}
 
   async createSubscriber(fields: Partial<SubscriberEntity> = {}) {
     const integrations = await this.integrationRepository.find({

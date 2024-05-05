@@ -1,6 +1,6 @@
 import * as shortid from 'shortid';
 import slugify from 'slugify';
-import { EnvironmentRepository, IntegrationRepository } from '@novu/dal';
+import { EnvironmentRepository, IntegrationRepository } from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   ChatProviderIdEnum,

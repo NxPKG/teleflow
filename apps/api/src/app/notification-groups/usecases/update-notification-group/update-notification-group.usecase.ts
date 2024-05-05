@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { NotificationGroupRepository } from '@novu/dal';
+import { NotificationGroupRepository } from '@teleflow/dal';
 import { UpdateNotificationGroupCommand } from './update-notification-group.command';
 import { GetNotificationGroup } from '../get-notification-group/get-notification-group.usecase';
 

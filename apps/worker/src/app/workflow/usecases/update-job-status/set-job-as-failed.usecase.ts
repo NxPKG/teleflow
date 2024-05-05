@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { JobRepository, JobStatusEnum } from '@novu/dal';
+import { JobRepository, JobStatusEnum } from '@teleflow/dal';
 import { InstrumentUsecase } from '@novu/application-generic';
 
 import { SetJobAsFailedCommand } from './set-job-as.command';
@@ -8,7 +8,10 @@ import { UpdateJobStatus } from './update-job-status.usecase';
 
 @Injectable()
 export class SetJobAsFailed {
-  constructor(private updateJobStatus: UpdateJobStatus, private jobRepository: JobRepository) {}
+  constructor(
+    private updateJobStatus: UpdateJobStatus,
+    private jobRepository: JobRepository
+  ) {}
 
   @InstrumentUsecase()
   public async execute(command: SetJobAsFailedCommand, error: Error): Promise<void> {

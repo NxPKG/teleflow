@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { ApiAuthSchemeEnum } from '@novu/shared';
 import { HttpRequestHeaderKeysEnum } from '../../shared/framework/types';

@@ -9,7 +9,7 @@ jobs:
   test_ws:
     strategy:
       matrix:
-        name: [ 'novu/ws-ee', 'novu/ws' ]
+        name: [ 'teleflow/ws-ee', 'teleflow/ws' ]
     uses: ./.github/workflows/reusable-ws-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
@@ -25,7 +25,7 @@ jobs:
       - test_ws
     strategy:
       matrix:
-        name: [ 'novu/ws-ee', 'novu/ws' ]
+        name: [ 'teleflow/ws-ee', 'teleflow/ws' ]
     outputs:
       docker_image: ${{ steps.build-image.outputs.IMAGE }}
     steps:
@@ -107,7 +107,7 @@ jobs:
       service_name: ws
       terraform_workspace: novu-prod-eu
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/novu/ws-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/ws-ee:${{ github.sha }}
       deploy_sentry_release: true
       sentry_project: ws
 
@@ -122,6 +122,6 @@ jobs:
       service_name: ws
       terraform_workspace: novu-prod
       # This is a workaround to an issue with matrix outputs
-      docker_image: ghcr.io/novuhq/novu/ws-ee:${{ github.sha }}
+      docker_image: ghcr.io/novuhq/teleflow/ws-ee:${{ github.sha }}
       deploy_sentry_release: true
       sentry_project: ws

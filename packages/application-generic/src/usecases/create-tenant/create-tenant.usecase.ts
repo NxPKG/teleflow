@@ -1,6 +1,6 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 
-import { TenantRepository } from '@novu/dal';
+import { TenantRepository } from '@teleflow/dal';
 import { AnalyticsService } from '../../services/analytics.service';
 
 import { CreateTenantCommand } from './create-tenant.command';
@@ -9,7 +9,7 @@ import { CreateTenantCommand } from './create-tenant.command';
 export class CreateTenant {
   constructor(
     private tenantRepository: TenantRepository,
-    private analyticsService: AnalyticsService
+    private analyticsService: AnalyticsService,
   ) {}
 
   async execute(command: CreateTenantCommand) {
@@ -20,7 +20,7 @@ export class CreateTenant {
 
     if (tenantExist) {
       throw new ConflictException(
-        `Tenant with identifier: ${command.identifier} already exists under environment ${command.environmentId}`
+        `Tenant with identifier: ${command.identifier} already exists under environment ${command.environmentId}`,
       );
     }
 

@@ -7,7 +7,7 @@ import { colors, ColorScheme } from '../../shared/config/colors';
 import { Bell as BellIcon, GradientDot } from '../../shared/icons';
 import { useNotifications } from '../../hooks';
 import { getDefaultBellColors } from '../../utils/defaultTheme';
-import type { ISvgStopColor } from '../../store/novu-theme.context';
+import type { ISvgStopColor } from '../../store/teleflow-theme.context';
 import { useStyles } from '../../store/styles';
 
 const headerIconsSettings = { color: colors.B60, width: 30, height: 30 };

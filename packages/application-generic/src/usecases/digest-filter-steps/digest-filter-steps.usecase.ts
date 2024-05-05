@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { NotificationStepEntity } from '@novu/dal';
+import { NotificationStepEntity } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 
 import { DigestFilterStepsCommand } from './digest-filter-steps.command';
@@ -10,7 +10,7 @@ const LOG_CONTEXT = 'DigestFilterSteps';
 @Injectable()
 export class DigestFilterSteps {
   public async execute(
-    command: DigestFilterStepsCommand
+    command: DigestFilterStepsCommand,
   ): Promise<NotificationStepEntity[]> {
     const steps = command.steps;
 
@@ -20,7 +20,7 @@ export class DigestFilterSteps {
   }
 
   private createTriggerStep(
-    command: DigestFilterStepsCommand
+    command: DigestFilterStepsCommand,
   ): NotificationStepEntity {
     return {
       template: {

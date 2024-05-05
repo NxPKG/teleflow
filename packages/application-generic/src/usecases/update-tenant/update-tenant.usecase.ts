@@ -1,5 +1,5 @@
 import { ConflictException, Injectable } from '@nestjs/common';
-import { TenantRepository, TenantEntity } from '@novu/dal';
+import { TenantRepository, TenantEntity } from '@teleflow/dal';
 
 import { UpdateTenantCommand } from './update-tenant.command';
 import { GetTenantCommand, GetTenant } from '../get-tenant';
@@ -8,7 +8,7 @@ import { GetTenantCommand, GetTenant } from '../get-tenant';
 export class UpdateTenant {
   constructor(
     private tenantRepository: TenantRepository,
-    private getTenantUsecase: GetTenant
+    private getTenantUsecase: GetTenant,
   ) {}
 
   async execute(command: UpdateTenantCommand): Promise<TenantEntity> {
@@ -19,7 +19,7 @@ export class UpdateTenant {
           environmentId: command.environmentId,
           organizationId: command.organizationId,
           identifier: command.identifier,
-        })
+        }),
       ));
 
     const updatePayload: Partial<TenantEntity> = {};
@@ -53,7 +53,7 @@ export class UpdateTenant {
       },
       {
         $set: updatePayload,
-      }
+      },
     );
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -78,7 +78,7 @@ export class UpdateTenant {
 
     if (tenantExist) {
       throw new ConflictException(
-        `Tenant with identifier: ${identifier} already exists under environment ${environmentId}`
+        `Tenant with identifier: ${identifier} already exists under environment ${environmentId}`,
       );
     }
   }
