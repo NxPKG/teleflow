@@ -49,7 +49,7 @@ export class SubscriberJobBound {
     private notificationTemplateRepository: NotificationTemplateRepository,
     private processTenant: ProcessTenant,
     private logger: PinoLogger,
-    private analyticsService: AnalyticsService
+    private analyticsService: AnalyticsService,
   ) {}
 
   @InstrumentUsecase()
@@ -80,7 +80,7 @@ export class SubscriberJobBound {
 
     const templateProviderIds = await this.getProviderIdsForTemplate(
       environmentId,
-      template
+      template,
     );
 
     await this.validateSubscriberIdProperty(subscriber);
@@ -89,7 +89,7 @@ export class SubscriberJobBound {
      * Due to Mixpanel HotSharding, we don't want to pass userId for production volume
      */
     const segmentUserId = ['test-workflow', 'digest-playground'].includes(
-      command.payload.__source
+      command.payload.__source,
     )
       ? userId
       : '';
@@ -107,7 +107,7 @@ export class SubscriberJobBound {
         source: command.payload.__source || 'api',
         subscriberSource: _subscriberSource || null,
         requestCategory: requestCategory || null,
-      }
+      },
     );
 
     const subscriberProcessed = await this.processSubscriber.execute(
@@ -116,7 +116,7 @@ export class SubscriberJobBound {
         organizationId,
         userId,
         subscriber,
-      })
+      }),
     );
 
     // If no subscriber makes no sense to try to create notification
@@ -128,11 +128,11 @@ export class SubscriberJobBound {
        */
       Logger.warn(
         `Subscriber ${JSON.stringify(
-          subscriber.subscriberId
+          subscriber.subscriberId,
         )} of organization ${command.organizationId} in transaction ${
           command.transactionId
         } was not processed. No jobs are created.`,
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       return;
@@ -158,7 +158,7 @@ export class SubscriberJobBound {
     }
 
     const notificationJobs = await this.createNotificationJobs.execute(
-      CreateNotificationJobsCommand.create(createNotificationJobsCommand)
+      CreateNotificationJobsCommand.create(createNotificationJobsCommand),
     );
 
     await this.storeSubscriberJobs.execute(
@@ -166,14 +166,14 @@ export class SubscriberJobBound {
         environmentId: command.environmentId,
         jobs: notificationJobs,
         organizationId: command.organizationId,
-      })
+      }),
     );
   }
 
   @Instrument()
   private async getProviderId(
     environmentId: string,
-    channelType: ChannelTypeEnum
+    channelType: ChannelTypeEnum,
   ): Promise<ProvidersIdEnum> {
     const integration = await this.integrationRepository.findOne(
       {
@@ -181,7 +181,7 @@ export class SubscriberJobBound {
         active: true,
         channel: channelType,
       },
-      'providerId'
+      'providerId',
     );
 
     return integration?.providerId as ProvidersIdEnum;
@@ -189,14 +189,14 @@ export class SubscriberJobBound {
 
   @Instrument()
   private async validateSubscriberIdProperty(
-    subscriber: ISubscribersDefine
+    subscriber: ISubscribersDefine,
   ): Promise<boolean> {
     const subscriberIdExists =
       typeof subscriber === 'string' ? subscriber : subscriber.subscriberId;
 
     if (!subscriberIdExists) {
       throw new ApiException(
-        'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property'
+        'subscriberId under property to is not configured, please make sure all subscribers contains subscriberId property',
       );
     }
 
@@ -219,14 +219,14 @@ export class SubscriberJobBound {
   }) {
     return await this.notificationTemplateRepository.findById(
       _id,
-      environmentId
+      environmentId,
     );
   }
 
   @InstrumentUsecase()
   private async getProviderIdsForTemplate(
     environmentId: string,
-    template: NotificationTemplateEntity
+    template: NotificationTemplateEntity,
   ): Promise<Record<ChannelTypeEnum, ProvidersIdEnum>> {
     const providers = {} as Record<ChannelTypeEnum, ProvidersIdEnum>;
 

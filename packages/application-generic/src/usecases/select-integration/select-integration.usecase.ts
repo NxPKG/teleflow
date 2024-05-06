@@ -22,7 +22,7 @@ export class SelectIntegration {
     private integrationRepository: IntegrationRepository,
     protected getDecryptedIntegrationsUsecase: GetDecryptedIntegrations,
     protected conditionsFilter: ConditionsFilter,
-    private tenantRepository: TenantRepository
+    private tenantRepository: TenantRepository,
   ) {}
 
   @CachedQuery({
@@ -33,7 +33,7 @@ export class SelectIntegration {
       }),
   })
   async execute(
-    command: SelectIntegrationCommand
+    command: SelectIntegrationCommand,
   ): Promise<IntegrationEntity | undefined> {
     let integration: IntegrationEntity | null =
       await this.getPrimaryIntegration(command);
@@ -73,7 +73,7 @@ export class SelectIntegration {
             variables: {
               tenant,
             },
-          })
+          }),
         );
 
         if (passed) {
@@ -91,10 +91,10 @@ export class SelectIntegration {
   }
 
   private async getPrimaryIntegration(
-    command: SelectIntegrationCommand
+    command: SelectIntegrationCommand,
   ): Promise<IntegrationEntity | null> {
     const isChannelSupportsPrimary = CHANNELS_WITH_PRIMARY.includes(
-      command.channelType
+      command.channelType,
     );
 
     const query: Partial<IntegrationEntity> & { _organizationId: string } =
@@ -114,7 +114,7 @@ export class SelectIntegration {
 
   private getIntegrationQuery(
     command: SelectIntegrationCommand,
-    isChannelSupportsPrimary = false
+    isChannelSupportsPrimary = false,
   ) {
     const query: Partial<IntegrationEntity> & { _organizationId: string } = {
       _organizationId: command.organizationId,

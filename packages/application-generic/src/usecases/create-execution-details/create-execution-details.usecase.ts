@@ -16,7 +16,7 @@ export class CreateExecutionDetails {
   constructor(private executionDetailsRepository: ExecutionDetailsRepository) {}
 
   async execute(
-    command: CreateExecutionDetailsCommand
+    command: CreateExecutionDetailsCommand,
   ): Promise<CreateExecutionDetailsResponseDto> {
     // TODO: Which checks to do? If the notification and job belong to the environment and organization provided?
     let entity = mapExecutionDetailsCommandToEntity(command);
@@ -25,7 +25,7 @@ export class CreateExecutionDetails {
 
     const { _id, createdAt } = await this.executionDetailsRepository.create(
       entity,
-      { writeConcern: 1 }
+      { writeConcern: 1 },
     );
 
     if (command.status === ExecutionDetailsStatusEnum.FAILED) {
@@ -43,7 +43,7 @@ export class CreateExecutionDetails {
   }
 
   private cleanFromNulls(
-    entity: Omit<ExecutionDetailsEntity, 'createdAt' | '_id'>
+    entity: Omit<ExecutionDetailsEntity, 'createdAt' | '_id'>,
   ): Omit<ExecutionDetailsEntity, 'createdAt' | '_id'> {
     const cleanEntity = Object.assign({}, entity);
 

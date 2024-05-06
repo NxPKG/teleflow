@@ -15,7 +15,7 @@ const LOG_CONTEXT = 'SelectVariant';
 export class SelectVariant {
   constructor(
     private conditionsFilter: ConditionsFilter,
-    private messageTemplateRepository: MessageTemplateRepository
+    private messageTemplateRepository: MessageTemplateRepository,
   ) {}
 
   async execute(command: SelectVariantCommand): Promise<{
@@ -44,7 +44,7 @@ export class SelectVariant {
           step: command.step,
           job: command.job,
           variables: command.filterData,
-        })
+        }),
       );
 
       if (passed) {
@@ -65,7 +65,7 @@ export class SelectVariant {
               conditions,
             },
             errorMessage,
-            LOG_CONTEXT
+            LOG_CONTEXT,
           );
 
           throw new PlatformException(errorMessage);

@@ -18,7 +18,7 @@ export class CreateSubscriber {
   constructor(
     private invalidateCache: InvalidateCacheService,
     private subscriberRepository: SubscriberRepository,
-    private updateSubscriber: UpdateSubscriber
+    private updateSubscriber: UpdateSubscriber,
   ) {}
 
   async execute(command: CreateSubscriberCommand) {
@@ -45,7 +45,7 @@ export class CreateSubscriber {
           locale: command.locale,
           data: command.data,
           subscriber,
-        })
+        }),
       );
     }
 
@@ -107,7 +107,7 @@ export class CreateSubscriber {
     return await this.subscriberRepository.findBySubscriberId(
       _environmentId,
       subscriberId,
-      true
+      true,
     );
   }
 }
