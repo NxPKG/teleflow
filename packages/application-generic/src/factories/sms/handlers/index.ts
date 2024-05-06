@@ -18,7 +18,7 @@ export * from './sendchamp.handler';
 export * from './clicksend.handler';
 export * from './simpletexting.handler';
 export * from './bandwidth.handler';
-export * from './novu.handler';
+export * from './teleflow.handler';
 export * from './generic-sms.handler';
 export * from './messagebird.handler';
 export * from './azure-sms.handler';

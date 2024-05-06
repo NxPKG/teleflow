@@ -23,7 +23,7 @@
   <a href="https://www.npmjs.com/package/@teleflow/node">
     <img src="https://img.shields.io/npm/dm/@teleflow/node" alt="npm downloads">
   </a>
-  <img src="https://img.shields.io/github/license/novuhq/novu" alt="MIT">
+  <img src="https://img.shields.io/github/license/nxpkg/teleflow" alt="MIT">
 </p>
 
 <h1 align="center">The open-source notification infrastructure for developers</h1>
@@ -265,5 +265,5 @@ Novu is licensed under the MIT License - see the [LICENSE](https://github.com/kh
 Thanks a lot for spending your time helping Novu grow. Keep rocking 🥂
 
 <a href="https://novu.co/contributors?utm_source=github">
-  <img src="https://contributors-img.web.app/image?repo=novuhq/novu" alt="Contributors"/>
+  <img src="https://contributors-img.web.app/image?repo=nxpkg/teleflow" alt="Contributors"/>
 </a>

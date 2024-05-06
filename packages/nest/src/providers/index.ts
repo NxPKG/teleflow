@@ -1,1 +1,1 @@
-export * from './novu.providers';
+export * from './teleflow.providers';
