@@ -1,12 +1,15 @@
 import { DynamicModule, Global, Module } from '@nestjs/common';
 import { INovuModuleAsyncOptions, INovuOptions } from '../interfaces';
-import { createAsyncNovuProviders, createNovuProviders } from '../providers';
+import {
+  createAsyncTeleflowProviders,
+  createTeleflowProviders,
+} from '../providers';
 
 @Global()
 @Module({})
 export class NovuModule {
   public static forRoot(options: INovuOptions): DynamicModule {
-    const providers = createNovuProviders(options);
+    const providers = createTeleflowProviders(options);
 
     return {
       module: NovuModule,
@@ -16,7 +19,7 @@ export class NovuModule {
   }
 
   public static forRootAsync(options: INovuModuleAsyncOptions): DynamicModule {
-    const providers = createAsyncNovuProviders(options);
+    const providers = createAsyncTeleflowProviders(options);
 
     return {
       module: NovuModule,

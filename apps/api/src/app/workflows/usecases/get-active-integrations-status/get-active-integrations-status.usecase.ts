@@ -52,7 +52,7 @@ export class GetActiveIntegrationsStatus {
 
     const activeStateByChannelType = this.updateStateByChannelType(activeIntegrationsByEnv, defaultStateByChannelType);
 
-    const activeStateByChannelTypeWithNovu = await this.processNovuProviders(
+    const activeStateByChannelTypeWithNovu = await this.processTeleflowProviders(
       activeIntegrationsByEnv,
       command,
       activeStateByChannelType
@@ -136,19 +136,19 @@ export class GetActiveIntegrationsStatus {
     return { hasActive, hasPrimary };
   }
 
-  private async processNovuProviders(
+  private async processTeleflowProviders(
     activeIntegrations: IntegrationResponseDto[],
     command: GetActiveIntegrationsStatusCommand,
     stateByChannelType: WorkflowChannelsIntegrationStatus
   ) {
-    const primaryNovuProviders = activeIntegrations.filter(
+    const primaryTeleflowProviders = activeIntegrations.filter(
       (integration) =>
         (integration.providerId === EmailProviderIdEnum.Novu || integration.providerId === SmsProviderIdEnum.Novu) &&
         integration.primary
     );
 
-    for (const primaryNovuProvider of primaryNovuProviders) {
-      const channelType = primaryNovuProvider.channel;
+    for (const primaryTeleflowProvider of primaryTeleflowProviders) {
+      const channelType = primaryTeleflowProvider.channel;
       let hasLimitReached = true;
       const limit = await this.calculateLimitNovuIntegrationUsecase.execute(
         CalculateLimitNovuIntegrationCommand.create({

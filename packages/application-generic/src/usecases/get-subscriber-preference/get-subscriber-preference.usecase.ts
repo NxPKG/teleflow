@@ -23,21 +23,21 @@ export class GetSubscriberPreference {
     private memberRepository: MemberRepository,
     private notificationTemplateRepository: NotificationTemplateRepository,
     private getSubscriberTemplatePreferenceUsecase: GetSubscriberTemplatePreference,
-    private analyticsService: AnalyticsService
+    private analyticsService: AnalyticsService,
   ) {}
 
   async execute(
-    command: GetSubscriberPreferenceCommand
+    command: GetSubscriberPreferenceCommand,
   ): Promise<ISubscriberPreferenceResponse[]> {
     const admin = await this.memberRepository.getOrganizationAdminAccount(
-      command.organizationId
+      command.organizationId,
     );
 
     const templateList =
       await this.notificationTemplateRepository.getActiveList(
         command.organizationId,
         command.environmentId,
-        true
+        true,
       );
 
     if (admin) {
@@ -47,7 +47,7 @@ export class GetSubscriberPreference {
         {
           _organization: command.organizationId,
           templatesSize: templateList.length,
-        }
+        },
       );
     }
 
@@ -59,9 +59,9 @@ export class GetSubscriberPreference {
             subscriberId: command.subscriberId,
             environmentId: command.environmentId,
             template,
-          })
-        )
-      )
+          }),
+        ),
+      ),
     );
   }
 }

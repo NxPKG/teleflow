@@ -58,7 +58,7 @@ describe('Events - Test email - /v1/events/test/email (POST)', function () {
     );
   };
 
-  const reachNovuProviderLimit = async () => {
+  const reachTeleflowProviderLimit = async () => {
     const MAX_NOVU_INTEGRATION_MAIL_REQUESTS = parseInt(process.env.MAX_NOVU_INTEGRATION_MAIL_REQUESTS || '300', 10);
     const messageRepository = new MessageRepository();
     for (let i = 0; i < MAX_NOVU_INTEGRATION_MAIL_REQUESTS; i++) {
@@ -95,7 +95,7 @@ describe('Events - Test email - /v1/events/test/email (POST)', function () {
 
   it('should not allow sending test email when Novu provider limit is reached', async function () {
     await deleteEmailIntegration();
-    await reachNovuProviderLimit();
+    await reachTeleflowProviderLimit();
 
     try {
       await sendTestEmail(requestDto);

@@ -16,7 +16,7 @@ import {
   DetailEnum,
   SelectIntegration,
   SelectIntegrationCommand,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariantCommand,
   SelectVariant,
   ExecutionLogRoute,
@@ -35,7 +35,7 @@ export abstract class SendMessageBase extends SendMessageType {
     protected executionLogRoute: ExecutionLogRoute,
     protected subscriberRepository: SubscriberRepository,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef
   ) {
@@ -52,7 +52,7 @@ export abstract class SendMessageBase extends SendMessageType {
     }
 
     if (integration.providerId === EmailProviderIdEnum.Novu || integration.providerId === SmsProviderIdEnum.Novu) {
-      integration.credentials = await this.getNovuProviderCredentials.execute({
+      integration.credentials = await this.getTeleflowProviderCredentials.execute({
         channelType: integration.channel,
         providerId: integration.providerId,
         environmentId: integration._environmentId,

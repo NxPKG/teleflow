@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { IMessage, MessageActionStatusEnum, ButtonTypeEnum } from '@novu/shared';
 
-import { NovuProvider } from '../teleflow-provider';
+import { TeleflowProvider } from '../teleflow-provider';
 import { PopoverNotificationCenter } from '../popover-notification-center';
 import { NotificationBell } from '../notification-bell';
 import { reactToWebComponent } from '../../utils';
@@ -70,7 +70,7 @@ export const NotificationCenterComponent: FunctionComponent<NotificationCenterCo
   preferenceFilter,
 }) => {
   return (
-    <NovuProvider
+    <TeleflowProvider
       onLoad={onLoad}
       stores={stores}
       backendUrl={backendUrl}
@@ -95,7 +95,7 @@ export const NotificationCenterComponent: FunctionComponent<NotificationCenterCo
         popoverConfig={popoverConfig}
         preferenceFilter={preferenceFilter}
       />
-    </NovuProvider>
+    </TeleflowProvider>
   );
 };
 

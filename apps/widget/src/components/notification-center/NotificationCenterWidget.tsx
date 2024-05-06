@@ -3,7 +3,7 @@ import * as WebFont from 'webfontloader';
 import { css, Global } from '@emotion/react';
 import {
   NotificationCenter,
-  NovuProvider,
+  TeleflowProvider,
   ITranslationEntry,
   ITab,
   IStore,
@@ -129,7 +129,7 @@ export function NotificationCenterWidget(props: INotificationCenterWidgetProps) 
     <>
       <Global styles={globalStyle(fontFamily)} />
       {frameInitialized && (
-        <NovuProvider
+        <TeleflowProvider
           backendUrl={backendUrl}
           socketUrl={socketUrl}
           applicationIdentifier={props.applicationIdentifier as string}
@@ -153,7 +153,7 @@ export function NotificationCenterWidget(props: INotificationCenterWidgetProps) 
               showUserPreferences={showUserPreferences}
             />
           </NovuNotificationCenterWrapper>
-        </NovuProvider>
+        </TeleflowProvider>
       )}
     </>
   );

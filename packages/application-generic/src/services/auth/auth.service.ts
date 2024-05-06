@@ -61,7 +61,7 @@ export class AuthService {
     @Inject(forwardRef(() => SwitchOrganization))
     private switchOrganizationUsecase: SwitchOrganization,
     @Inject(forwardRef(() => SwitchEnvironment))
-    private switchEnvironmentUsecase: SwitchEnvironment
+    private switchEnvironmentUsecase: SwitchEnvironment,
   ) {}
 
   public async authenticate(
@@ -76,7 +76,7 @@ export class AuthService {
       id: string;
     },
     distinctId: string,
-    origin?: SignUpOriginEnum
+    origin?: SignUpOriginEnum,
   ) {
     const email = normalizeEmail(profile.email);
     let user = await this.userRepository.findByEmail(email);
@@ -103,7 +103,7 @@ export class AuthService {
             accessToken,
             refreshToken,
           },
-        })
+        }),
       );
       newUser = true;
 
@@ -145,13 +145,13 @@ export class AuthService {
       avatar_url: string;
       id: string;
     },
-    authProvider: AuthProviderEnum
+    authProvider: AuthProviderEnum,
   ) {
     const withoutUsername = user.tokens.find(
       (token) =>
         token.provider === authProvider &&
         !token.username &&
-        String(token.providerId) === String(profile.id)
+        String(token.providerId) === String(profile.id),
     );
 
     if (withoutUsername) {
@@ -164,7 +164,7 @@ export class AuthService {
           $set: {
             'tokens.$.username': profile.login,
           },
-        }
+        },
       );
 
       user = await this.userRepository.findById(user._id);
@@ -184,11 +184,11 @@ export class AuthService {
   @Instrument()
   public async isAuthenticatedForOrganization(
     userId: string,
-    organizationId: string
+    organizationId: string,
   ): Promise<boolean> {
     return !!(await this.memberRepository.isMemberOfOrganization(
       organizationId,
-      userId
+      userId,
     ));
   }
 
@@ -214,7 +214,7 @@ export class AuthService {
   }
 
   public async getSubscriberWidgetToken(
-    subscriber: SubscriberEntity
+    subscriber: SubscriberEntity,
   ): Promise<string> {
     return this.jwtService.sign(
       {
@@ -230,7 +230,7 @@ export class AuthService {
         expiresIn: '15 day',
         issuer: 'novu_api',
         audience: 'widget_user',
-      }
+      },
     );
   }
 
@@ -243,7 +243,7 @@ export class AuthService {
 
       const userActiveProjects =
         await this.environmentRepository.findOrganizationEnvironments(
-          organizationToSwitch._id
+          organizationToSwitch._id,
         );
       let environmentToSwitch = userActiveProjects[0];
 
@@ -253,7 +253,7 @@ export class AuthService {
       if (userActiveProjects.length > 1) {
         environmentToSwitch = userActiveProjects.reduce(
           reduceEnvsToOnlyDevelopment,
-          environmentToSwitch
+          environmentToSwitch,
         );
       }
 
@@ -263,7 +263,7 @@ export class AuthService {
             newEnvironmentId: environmentToSwitch._id,
             organizationId: organizationToSwitch._id,
             userId: user._id,
-          })
+          }),
         );
       }
 
@@ -271,7 +271,7 @@ export class AuthService {
         SwitchOrganizationCommand.create({
           newOrganizationId: organizationToSwitch._id,
           userId: user._id,
-        })
+        }),
       );
     }
 
@@ -282,7 +282,7 @@ export class AuthService {
     user: UserEntity,
     organizationId?: string,
     member?: MemberEntity,
-    environmentId?: string
+    environmentId?: string,
   ): Promise<string> {
     const roles: MemberRoleEnum[] = [];
     if (member && member.roles) {
@@ -303,7 +303,7 @@ export class AuthService {
       {
         expiresIn: '30 days',
         issuer: 'novu_api',
-      }
+      },
     );
   }
 
@@ -319,7 +319,7 @@ export class AuthService {
     if (!user) throw new UnauthorizedException('User not found');
     if (payload.organizationId && !isMember) {
       throw new UnauthorizedException(
-        `Not authorized for organization ${payload.organizationId}`
+        `Not authorized for organization ${payload.organizationId}`,
       );
     }
 
@@ -327,7 +327,7 @@ export class AuthService {
   }
 
   public async validateSubscriber(
-    payload: ISubscriberJwt
+    payload: ISubscriberJwt,
   ): Promise<SubscriberEntity | null> {
     return await this.getSubscriber({
       _environmentId: payload.environmentId,
@@ -371,7 +371,7 @@ export class AuthService {
   }): Promise<SubscriberEntity> {
     return await this.subscriberRepository.findBySubscriberId(
       _environmentId,
-      subscriberId
+      subscriberId,
     );
   }
 

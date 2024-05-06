@@ -72,7 +72,7 @@ export class CreateExecutionDetailsCommand extends EnvironmentWithSubscriber {
   webhookStatus?: EmailEventStatusEnum | SmsEventStatusEnum;
 
   static getDetailsFromJob(
-    job: IJob
+    job: IJob,
   ): Pick<
     CreateExecutionDetailsCommand,
     | 'environmentId'

@@ -25,7 +25,7 @@ async function novuServiceFactory(options: INovuOptions) {
   return novu;
 }
 
-export function createNovuProviders(options: INovuOptions): Provider[] {
+export function createTeleflowProviders(options: INovuOptions): Provider[] {
   return [
     {
       provide: NovuService,
@@ -39,7 +39,7 @@ export function createNovuProviders(options: INovuOptions): Provider[] {
   ];
 }
 
-export function createAsyncNovuProviders(
+export function createAsyncTeleflowProviders(
   options: INovuModuleAsyncOptions,
 ): Provider[] {
   if (options.useFactory) {

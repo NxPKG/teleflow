@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import { NovuProvider } from '../teleflow-provider';
+import { TeleflowProvider } from '../teleflow-provider';
 import { reactToWebComponent } from '../../utils';
 import type { NotificationCenterComponentProps, PopoverWrapperProps } from './notification-center-component.types';
 import { NotificationCenter } from '../notification-center';
@@ -65,7 +65,7 @@ export const NotificationCenterContentComponent: FunctionComponent<NotificationC
   preferenceFilter,
 }) => {
   return (
-    <NovuProvider
+    <TeleflowProvider
       onLoad={onLoad}
       stores={stores}
       backendUrl={backendUrl}
@@ -88,7 +88,7 @@ export const NotificationCenterContentComponent: FunctionComponent<NotificationC
         onTabClick={onTabClick}
         preferenceFilter={preferenceFilter}
       />
-    </NovuProvider>
+    </TeleflowProvider>
   );
 };
 

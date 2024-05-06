@@ -2,7 +2,7 @@ import {
   IExecutionDetails,
   IExecutionDetailsPayload,
 } from './execution-details.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class ExecutionDetails extends WithHttp implements IExecutionDetails {
   async get(data: IExecutionDetailsPayload) {

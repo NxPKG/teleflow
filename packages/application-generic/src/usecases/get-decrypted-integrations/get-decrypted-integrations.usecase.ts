@@ -9,7 +9,7 @@ export class GetDecryptedIntegrations {
   constructor(private integrationRepository: IntegrationRepository) {}
 
   async execute(
-    command: GetDecryptedIntegrationsCommand
+    command: GetDecryptedIntegrationsCommand,
   ): Promise<IntegrationEntity[]> {
     const query: Partial<IntegrationEntity> & { _organizationId: string } = {
       _organizationId: command.organizationId,
@@ -34,7 +34,7 @@ export class GetDecryptedIntegrations {
     return foundIntegrations
       .filter((integration) => integration)
       .map((integration: IntegrationEntity) =>
-        GetDecryptedIntegrations.getDecryptedCredentials(integration)
+        GetDecryptedIntegrations.getDecryptedCredentials(integration),
       );
   }
 

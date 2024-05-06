@@ -4,7 +4,7 @@ import { TerminusModule } from '@nestjs/terminus';
 import {
   CreateExecutionDetails,
   EventsDistributedLockService,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   StorageHelperService,
 } from '@novu/application-generic';
 
@@ -27,7 +27,7 @@ import { SendTestEmail } from './usecases/send-test-email';
 
 const PROVIDERS = [
   CreateExecutionDetails,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   StorageHelperService,
   EventsDistributedLockService,
   SendTestEmail,

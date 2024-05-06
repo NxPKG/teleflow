@@ -15,7 +15,7 @@ export class CompileStepTemplate extends CompileTemplateBase {
   constructor(
     private compileTemplate: CompileTemplate,
     protected organizationRepository: OrganizationRepository,
-    protected moduleRef: ModuleRef
+    protected moduleRef: ModuleRef,
   ) {
     super(organizationRepository, moduleRef);
   }
@@ -25,8 +25,8 @@ export class CompileStepTemplate extends CompileTemplateBase {
     initiateTranslations?: (
       environmentId: string,
       organizationId,
-      locale: string
-    ) => Promise<void>
+      locale: string,
+    ) => Promise<void>,
   ) {
     const organization = await this.getOrganization(command.organizationId);
 
@@ -36,7 +36,7 @@ export class CompileStepTemplate extends CompileTemplateBase {
         command.organizationId,
         command.locale ||
           command.payload.subscriber?.locale ||
-          organization.defaultLocale
+          organization.defaultLocale,
       );
     }
 
@@ -54,7 +54,7 @@ export class CompileStepTemplate extends CompileTemplateBase {
       }
     } catch (e: any) {
       throw new ApiException(
-        e?.message || `Message content could not be generated`
+        e?.message || `Message content could not be generated`,
       );
     }
 
@@ -63,7 +63,7 @@ export class CompileStepTemplate extends CompileTemplateBase {
 
   private async compileStepTemplate(
     content: string,
-    payload: any
+    payload: any,
   ): Promise<string> {
     return await this.compileTemplate.execute(
       CompileTemplateCommand.create({
@@ -71,7 +71,7 @@ export class CompileStepTemplate extends CompileTemplateBase {
         data: {
           ...payload,
         },
-      })
+      }),
     );
   }
 }

@@ -36,7 +36,7 @@ spec:
         {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 8 }}
         {{- end }}
     spec:
-      serviceAccountName: {{ template "novu.serviceAccountName" . }}
+      serviceAccountName: {{ template "teleflow.serviceAccountName" . }}
       {{- include "novu.imagePullSecrets" . | nindent 6 }}
       {{- if .Values.web.hostAliases }}
       hostAliases: {{- include "common.tplvalues.render" (dict "value" .Values.web.hostAliases "context" $) | nindent 8 }}

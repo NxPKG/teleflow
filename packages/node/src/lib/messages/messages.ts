@@ -1,5 +1,5 @@
 import { IMessagesPayload, IMessages } from './messages.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 const BASE_PATH = '/messages';
 

@@ -1,5 +1,5 @@
 import { IFeeds } from './feeds.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Feeds extends WithHttp implements IFeeds {
   async create(name: string) {
