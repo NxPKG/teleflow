@@ -5,14 +5,14 @@ import { Accordion, Box, Center, Loader, useMantineTheme } from '@mantine/core';
 import { colors, Close } from '@novu/design-system';
 import { IIntegratedProvider } from '../types';
 import { SetupTimeline } from '../../quick-start/components/SetupTimeline';
-import { NovuInAppForm } from './NovuInAppForm';
+import { TeleflowInAppForm } from './TeleflowInAppForm';
 import { When } from '../../../components/utils/When';
 import { InAppSelectFramework } from './InAppSelectFramework';
 import { Faq } from '../../quick-start/components/QuickStartWrapper';
 import { SetupFrameworkHeader } from './SetupFrameworkHeader';
 import { FrameworkDisplay } from './FrameworkDisplay';
 
-export const NovuInAppProviderModal = ({
+export const TeleflowInAppProviderModal = ({
   onClose,
   provider,
   showModal,
@@ -60,7 +60,7 @@ export const NovuInAppProviderModal = ({
           <CloseButton data-test-id="connection-integration-close" type="button" onClick={onClose}>
             <Close />
           </CloseButton>
-          <NovuInAppForm provider={provider} showModal={showModal} />
+          <TeleflowInAppForm provider={provider} showModal={showModal} />
           <Accordion mt={-24}>
             <Accordion.Item
               value="framework-selection"

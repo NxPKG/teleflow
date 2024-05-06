@@ -8,7 +8,7 @@ import type { IIntegratedProvider } from '../types';
 import { CardStatusBar } from './CardStatusBar';
 import { LimitBar } from './LimitBar';
 
-export function NovuIntegrationCard({
+export function TeleflowIntegrationCard({
   provider,
   onConnectClick = undefined,
   ribbonText = 'Starting provider',

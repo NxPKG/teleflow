@@ -2,7 +2,7 @@ import { SetupWarning } from './SetupWarning';
 import { useInAppActivated } from '../../../api/hooks';
 import type { IIntegratedProvider } from '../types';
 
-export const NovuInAppSetupWarning = ({ provider }: { provider: IIntegratedProvider | null }) => {
+export const TeleflowInAppSetupWarning = ({ provider }: { provider: IIntegratedProvider | null }) => {
   const { isInAppActive } = useInAppActivated();
 
   if (!provider) return null;

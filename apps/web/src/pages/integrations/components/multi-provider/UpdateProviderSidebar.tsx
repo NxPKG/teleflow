@@ -31,7 +31,7 @@ import { When } from '../../../../components/utils/When';
 import { SetupTimeline } from '../../../quick-start/components/SetupTimeline';
 import { Faq } from '../../../quick-start/components/QuickStartWrapper';
 import { NovuInAppFrameworkHeader } from '../NovuInAppFrameworkHeader';
-import { NovuInAppSetupWarning } from '../NovuInAppSetupWarning';
+import { TeleflowInAppSetupWarning } from '../TeleflowInAppSetupWarning';
 import { NovuProviderSidebarContent } from './NovuProviderSidebarContent';
 import { useSelectPrimaryIntegrationModal } from './useSelectPrimaryIntegrationModal';
 import { ShareableUrl } from '../Modal/ConnectIntegrationForm';
@@ -350,7 +350,7 @@ export function UpdateProviderSidebar({
             message="Set up credentials to start sending notifications."
             docReference={selectedProvider?.docReference}
           />
-          {isNovuInAppProvider && <NovuInAppSetupWarning provider={selectedProvider} />}
+          {isNovuInAppProvider && <TeleflowInAppSetupWarning provider={selectedProvider} />}
           <UpdateIntegrationCommonFields provider={selectedProvider} />
           {selectedProvider?.credentials.map((credential: IConfigCredentials) => (
             <InputWrapper key={credential.key}>

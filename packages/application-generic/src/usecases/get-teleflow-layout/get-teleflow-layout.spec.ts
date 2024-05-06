@@ -1,7 +1,7 @@
 import { Test } from '@nestjs/testing';
 import { UserSession } from '@teleflow/testing';
 
-import { GetNovuLayout } from './get-novu-layout.usecase';
+import { GetNovuLayout } from './get-teleflow-layout.usecase';
 
 describe('Get Novu Layout Usecase', function () {
   let useCase: GetNovuLayout;

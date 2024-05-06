@@ -3,11 +3,11 @@ import { List, Text } from '@mantine/core';
 import { ChannelTypeEnum } from '@novu/shared';
 import { useAuthContext } from '../../../components/providers/AuthProvider';
 import { colors } from '@novu/design-system';
-import { NovuProviderBase } from './NovuProviderBase';
+import { TeleflowProviderBase } from './TeleflowProviderBase';
 
 export function NovuEmailProviderModal({ onClose }: { onClose: () => void }) {
   return (
-    <NovuProviderBase
+    <TeleflowProviderBase
       onClose={onClose}
       channel={ChannelTypeEnum.EMAIL}
       senderInformation={<EmailSenderInformation />}

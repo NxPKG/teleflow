@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { readFile } from 'fs/promises';
 
-import { GetNovuLayoutCommand } from './get-novu-layout.command';
+import { GetNovuLayoutCommand } from './get-teleflow-layout.command';
 import { ApiException } from '../../utils/exceptions';
 
 @Injectable()

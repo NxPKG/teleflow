@@ -6,7 +6,7 @@ import type { IIntegratedProvider } from '../../types';
 import { When } from '../../../../components/utils/When';
 import { CONTEXT_PATH, IS_DOCKER_HOSTED } from '../../../../config';
 import { ProviderCard } from './ProviderCard';
-import { NovuIntegrationCard } from './NovuIntegrationCard';
+import { TeleflowIntegrationCard } from './TeleflowIntegrationCard';
 
 export function ChannelGroup({
   title,
@@ -33,7 +33,7 @@ export function ChannelGroup({
         </Grid.Col>
         <When truthy={channel === ChannelTypeEnum.EMAIL && !IS_DOCKER_HOSTED}>
           <Grid.Col lg={3} xl={2}>
-            <NovuIntegrationCard
+            <TeleflowIntegrationCard
               selected={selectedProvider === EmailProviderIdEnum.Novu}
               provider={{
                 providerId: EmailProviderIdEnum.Novu,
@@ -61,7 +61,7 @@ export function ChannelGroup({
         </When>
         <When truthy={channel === ChannelTypeEnum.SMS && !IS_DOCKER_HOSTED}>
           <Grid.Col lg={3} xl={2}>
-            <NovuIntegrationCard
+            <TeleflowIntegrationCard
               selected={selectedProvider === SmsProviderIdEnum.Novu}
               provider={{
                 providerId: SmsProviderIdEnum.Novu,

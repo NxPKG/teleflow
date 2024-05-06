@@ -8,7 +8,7 @@ export * from './get-subscriber-template-preference';
 export * from './compile-template';
 export * from './compile-email-template';
 export * from './get-layout';
-export * from './get-novu-layout';
+export * from './get-teleflow-layout';
 export * from './add-job';
 export * from './update-subscriber';
 export * from './create-subscriber';

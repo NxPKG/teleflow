@@ -9,13 +9,13 @@ import { CONTEXT_PATH } from '../../../config';
 import { useIntegrationLimit } from '../../../hooks';
 import { LimitBar } from './LimitBar';
 
-interface NovuProviderBaseProps {
+interface TeleflowProviderBaseProps {
   onClose: () => void;
   senderInformation?: React.ReactNode;
   channel: ChannelTypeEnum;
 }
 
-export function NovuProviderBase({ onClose, senderInformation, channel }: NovuProviderBaseProps) {
+export function TeleflowProviderBase({ onClose, senderInformation, channel }: TeleflowProviderBaseProps) {
   const {
     data: { limit, count },
     loading,

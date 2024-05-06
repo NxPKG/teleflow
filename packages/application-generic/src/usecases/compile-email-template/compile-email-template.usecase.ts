@@ -14,7 +14,7 @@ import { ApiException } from '../../utils/exceptions';
 import { CompileEmailTemplateCommand } from './compile-email-template.command';
 import { LayoutDto, GetLayoutCommand, GetLayoutUseCase } from '../get-layout';
 import { VerifyPayloadService } from '../../services';
-import { GetNovuLayout } from '../get-novu-layout';
+import { GetNovuLayout } from '../get-teleflow-layout';
 
 @Injectable()
 export class CompileEmailTemplate extends CompileTemplateBase {

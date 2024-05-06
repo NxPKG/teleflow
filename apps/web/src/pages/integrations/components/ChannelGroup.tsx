@@ -4,7 +4,7 @@ import { Title } from '@novu/design-system';
 import { ChannelTypeEnum, EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
 
 import type { IIntegratedProvider } from '../types';
-import { NovuIntegrationCard } from './NovuIntegrationCard';
+import { TeleflowIntegrationCard } from './TeleflowIntegrationCard';
 import { When } from '../../../components/utils/When';
 import { CONTEXT_PATH, IS_DOCKER_HOSTED } from '../../../config';
 
@@ -30,7 +30,7 @@ export function ChannelGroup({
       </Grid.Col>
       <When truthy={channel === ChannelTypeEnum.EMAIL && !IS_DOCKER_HOSTED}>
         <Grid.Col sm={12} xs={6} md={4} lg={3}>
-          <NovuIntegrationCard
+          <TeleflowIntegrationCard
             provider={{
               providerId: EmailProviderIdEnum.Novu,
               integrationId: '',
@@ -58,7 +58,7 @@ export function ChannelGroup({
 
       <When truthy={channel === ChannelTypeEnum.SMS && !IS_DOCKER_HOSTED}>
         <Grid.Col sm={12} xs={6} md={4} lg={3}>
-          <NovuIntegrationCard
+          <TeleflowIntegrationCard
             provider={{
               providerId: SmsProviderIdEnum.Novu,
               integrationId: '',

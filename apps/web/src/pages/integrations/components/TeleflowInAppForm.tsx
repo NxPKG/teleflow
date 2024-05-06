@@ -12,7 +12,7 @@ import { updateIntegration } from '../../../api/integration';
 import { When } from '../../../components/utils/When';
 import { errorMessage, successMessage } from '../../../utils/notifications';
 
-export const NovuInAppForm = ({
+export const TeleflowInAppForm = ({
   provider,
   showModal,
 }: {
