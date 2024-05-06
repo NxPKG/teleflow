@@ -25,7 +25,7 @@ export class AddDelayJob {
     @Inject(forwardRef(() => CalculateDelayService))
     private calculateDelayService: CalculateDelayService,
     @Inject(forwardRef(() => ExecutionLogRoute))
-    private executionLogRoute: ExecutionLogRoute
+    private executionLogRoute: ExecutionLogRoute,
   ) {}
 
   @InstrumentUsecase()
@@ -59,7 +59,7 @@ export class AddDelayJob {
       await this.jobRepository.updateStatus(
         command.environmentId,
         data._id,
-        JobStatusEnum.DELAYED
+        JobStatusEnum.DELAYED,
       );
     } catch (error: any) {
       await this.executionLogRoute.execute(
@@ -71,13 +71,13 @@ export class AddDelayJob {
           isTest: false,
           isRetry: false,
           raw: JSON.stringify({ error: error.message }),
-        })
+        }),
       );
 
       await this.jobRepository.updateStatus(
         command.environmentId,
         data._id,
-        JobStatusEnum.CANCELED
+        JobStatusEnum.CANCELED,
       );
 
       throw error;

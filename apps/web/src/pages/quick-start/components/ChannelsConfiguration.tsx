@@ -108,8 +108,8 @@ export function ChannelsConfiguration({ setClickedChannel }: { setClickedChannel
                   {isOnboardingExperiment
                     ? 'Send test notification now'
                     : isIntegrationActive
-                    ? 'Change Provider'
-                    : `Configure ${channel.displayName}`}
+                      ? 'Change Provider'
+                      : `Configure ${channel.displayName}`}
                 </StyledButton>
               </ChannelCard>
             </Container>
