@@ -15,7 +15,7 @@ export const isRegularDigest = (type: DigestTypeEnum | DelayTypeEnum) => {
 
 export const isMainDigest = (
   type: StepTypeEnum | undefined,
-  status: JobStatusEnum
+  status: JobStatusEnum,
 ) => {
   return type === StepTypeEnum.DIGEST && status === JobStatusEnum.DELAYED;
 };
