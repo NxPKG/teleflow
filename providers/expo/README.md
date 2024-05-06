@@ -1,6 +1,6 @@
 # Novu Expo Provider
 
-A Expo push provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Expo push provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

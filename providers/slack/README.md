@@ -1,6 +1,6 @@
 # Novu Slack Provider
 
-A Slack chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Slack chat provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

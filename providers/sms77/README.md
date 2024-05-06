@@ -1,6 +1,6 @@
 # Novu sms77 Provider
 
-A sms77 sms provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A sms77 sms provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Novu RingCentral Provider
 
-A RingCentral sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A RingCentral sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

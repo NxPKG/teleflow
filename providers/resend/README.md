@@ -1,6 +1,6 @@
 # Novu Resend Provider
 
-A Resend email provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Resend email provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

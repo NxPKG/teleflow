@@ -17,7 +17,7 @@ Clone the Novu repo and enter the docker directory locally:
 
 ```sh
 # Get the code
-git clone https://github.com/novuhq/novu
+git clone https://github.com/khulnasoft/teleflow
 
 # Go to the docker folder
 cd novu/docker

@@ -1,6 +1,6 @@
 # Novu FCM Provider
 
-A FCM push provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A FCM push provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

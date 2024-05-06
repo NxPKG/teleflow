@@ -1,6 +1,6 @@
 # Novu GenericSms Provider
 
-A Generic sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Generic sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

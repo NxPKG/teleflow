@@ -1,7 +1,7 @@
 {
   "name": "@teleflow/notification-center",
   "version": "0.24.1",
-  "repository": "https://github.com/novuhq/novu",
+  "repository": "https://github.com/khulnasoft/teleflow",
   "description": "",
   "scripts": {
     "start": "npm run build:watch",

@@ -1,6 +1,6 @@
 # Novu Apns Provider
 
-A Apns push provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Apns push provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

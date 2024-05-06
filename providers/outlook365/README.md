@@ -1,6 +1,6 @@
 # Novu Outlook365 Provider
 
-A Outlook365 email provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Outlook365 email provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

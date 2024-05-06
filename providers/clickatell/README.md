@@ -1,6 +1,6 @@
 # Novu ClickatellSmsProvider Provider
 
-A ClickatellSmsProvider sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A ClickatellSmsProvider sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

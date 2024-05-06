@@ -5,7 +5,7 @@
   "description": "Vue specific wrapper for notification-center",
   "repository": {
     "type": "git",
-    "url": "https://github.com/novuhq/novu.git"
+    "url": "https://github.com/khulnasoft/teleflow.git"
   },
   "scripts": {
     "prebuild": "rimraf dist",

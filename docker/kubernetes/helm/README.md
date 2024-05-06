@@ -16,7 +16,7 @@ helm install my-novu ./ --set store.encryptionKey=$(openssl rand -base64 32)
 
 This Helm chart is inspired by Bitnami charts and make use of Bitnami charts for its dependencies.
 
-This chart bootstraps a [Novu](https://github.com/novuhq/novu) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Novu](https://github.com/khulnasoft/teleflow) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 

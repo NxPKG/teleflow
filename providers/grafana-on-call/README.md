@@ -1,6 +1,6 @@
 # Novu GrafanaOnCall Provider
 
-A GrafanaOnCall chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A GrafanaOnCall chat provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

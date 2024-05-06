@@ -1,6 +1,6 @@
 # Novu Termii Provider
 
-A Termii sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Termii sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

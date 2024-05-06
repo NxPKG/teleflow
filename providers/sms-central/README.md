@@ -1,6 +1,6 @@
 # Novu SmsCentral Provider
 
-A SmsCentral sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A SmsCentral sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

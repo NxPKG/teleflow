@@ -1,6 +1,6 @@
 # Novu Pushpad Provider
 
-A Pushpad push provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Pushpad push provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

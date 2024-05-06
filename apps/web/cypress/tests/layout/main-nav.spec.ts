@@ -25,7 +25,7 @@ describe('Main Nav (Sidebar)', () => {
 
       cy.getByTestId('side-nav-bottom-link-share-feedback')
         .should('have.attr', 'href')
-        .should('eq', 'https://github.com/novuhq/novu/issues/new/choose');
+        .should('eq', 'https://github.com/khulnasoft/teleflow/issues/new/choose');
     });
 
     // TODO: when Information Architecture is fully-enabled, this test can be removed (it's redundant).

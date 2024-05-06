@@ -1,6 +1,6 @@
 # Novu BrevoSms Provider
 
-A BrevoSms sms provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A BrevoSms sms provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

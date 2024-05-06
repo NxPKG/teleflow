@@ -59,41 +59,41 @@ Novu provides a single API to manage providers across multiple channels with a s
 
 #### 💌 Email
 
-- [x] [Sendgrid](https://github.com/novuhq/novu/tree/main/providers/sendgrid)
-- [x] [Netcore](https://github.com/novuhq/novu/tree/main/providers/netcore)
-- [x] [Mailgun](https://github.com/novuhq/novu/tree/main/providers/mailgun)
-- [x] [SES](https://github.com/novuhq/novu/tree/main/providers/ses)
-- [x] [Postmark](https://github.com/novuhq/novu/tree/main/providers/postmark)
-- [x] [Custom SMTP](https://github.com/novuhq/novu/tree/main/providers/nodemailer)
-- [x] [Mailjet](https://github.com/novuhq/novu/tree/main/providers/mailjet)
-- [x] [Mandrill](https://github.com/novuhq/novu/tree/main/providers/mandrill)
-- [x] [SendinBlue](https://github.com/novuhq/novu/tree/main/providers/sendinblue)
+- [x] [Sendgrid](https://github.com/khulnasoft/teleflow/tree/main/providers/sendgrid)
+- [x] [Netcore](https://github.com/khulnasoft/teleflow/tree/main/providers/netcore)
+- [x] [Mailgun](https://github.com/khulnasoft/teleflow/tree/main/providers/mailgun)
+- [x] [SES](https://github.com/khulnasoft/teleflow/tree/main/providers/ses)
+- [x] [Postmark](https://github.com/khulnasoft/teleflow/tree/main/providers/postmark)
+- [x] [Custom SMTP](https://github.com/khulnasoft/teleflow/tree/main/providers/nodemailer)
+- [x] [Mailjet](https://github.com/khulnasoft/teleflow/tree/main/providers/mailjet)
+- [x] [Mandrill](https://github.com/khulnasoft/teleflow/tree/main/providers/mandrill)
+- [x] [SendinBlue](https://github.com/khulnasoft/teleflow/tree/main/providers/sendinblue)
 - [ ] SparkPost
 
 #### 📞 SMS
 
-- [x] [Twilio](https://github.com/novuhq/novu/tree/main/providers/twilio)
-- [x] [Plivo](https://github.com/novuhq/novu/tree/main/providers/plivo)
-- [x] [SNS](https://github.com/novuhq/novu/tree/main/providers/sns)
-- [x] [Nexmo - Vonage](https://github.com/novuhq/novu/tree/main/providers/nexmo)
-- [x] [Sms77](https://github.com/novuhq/novu/tree/main/providers/sms77)
-- [x] [Telnyx](https://github.com/novuhq/novu/tree/main/providers/telnyx)
-- [x] [Termii](https://github.com/novuhq/novu/tree/main/providers/termii)
-- [x] [Gupshup](https://github.com/novuhq/novu/tree/main/providers/gupshup)
+- [x] [Twilio](https://github.com/khulnasoft/teleflow/tree/main/providers/twilio)
+- [x] [Plivo](https://github.com/khulnasoft/teleflow/tree/main/providers/plivo)
+- [x] [SNS](https://github.com/khulnasoft/teleflow/tree/main/providers/sns)
+- [x] [Nexmo - Vonage](https://github.com/khulnasoft/teleflow/tree/main/providers/nexmo)
+- [x] [Sms77](https://github.com/khulnasoft/teleflow/tree/main/providers/sms77)
+- [x] [Telnyx](https://github.com/khulnasoft/teleflow/tree/main/providers/telnyx)
+- [x] [Termii](https://github.com/khulnasoft/teleflow/tree/main/providers/termii)
+- [x] [Gupshup](https://github.com/khulnasoft/teleflow/tree/main/providers/gupshup)
 - [ ] Bandwidth
 - [ ] RingCentral
 
 #### 📱 Push
 
-- [x] [FCM](https://github.com/novuhq/novu/tree/main/providers/fcm)
-- [x] [Expo](https://github.com/novuhq/novu/tree/main/providers/expo)
-- [ ] [SNS](https://github.com/novuhq/novu/tree/main/providers/sns)
+- [x] [FCM](https://github.com/khulnasoft/teleflow/tree/main/providers/fcm)
+- [x] [Expo](https://github.com/khulnasoft/teleflow/tree/main/providers/expo)
+- [ ] [SNS](https://github.com/khulnasoft/teleflow/tree/main/providers/sns)
 - [ ] Pushwoosh
 
 #### 👇 Chat
 
-- [x] [Slack](https://github.com/novuhq/novu/tree/main/providers/slack)
-- [x] [Discord](https://github.com/novuhq/novu/tree/main/providers/discord)
+- [x] [Slack](https://github.com/khulnasoft/teleflow/tree/main/providers/slack)
+- [x] [Discord](https://github.com/khulnasoft/teleflow/tree/main/providers/discord)
 - [ ] MS Teams
 - [ ] Mattermost
 

@@ -1,6 +1,6 @@
 # Novu Mailersend Provider
 
-A Mailersend email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A Mailersend email provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

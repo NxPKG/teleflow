@@ -1,6 +1,6 @@
 # Novu Simpletexting Provider
 
-A Simpletexting sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Simpletexting sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

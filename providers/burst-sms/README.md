@@ -1,6 +1,6 @@
 # Novu Burst SMS Provider
 
-A Burst SMS sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Burst SMS sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

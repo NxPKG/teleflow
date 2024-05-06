@@ -1,7 +1,7 @@
 {
   "name": "@teleflow/headless",
   "version": "0.24.1",
-  "repository": "https://github.com/novuhq/novu",
+  "repository": "https://github.com/khulnasoft/teleflow",
   "description": "Headless client package that is a thin abstraction layer over the API client + state and socket management",
   "keywords": [],
   "license": "MIT",

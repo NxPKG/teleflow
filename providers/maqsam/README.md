@@ -1,6 +1,6 @@
 # Nodejs Maqsam Provider
 
-A Maqsam SMS provider library for [@teleflow/node](https://github.com/novuhq/novu).
+A Maqsam SMS provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow).
 
 ## Usage
 

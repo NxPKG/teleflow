@@ -1,6 +1,6 @@
 # Novu Infobip Provider
 
-A Infobip sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Infobip sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

@@ -7,7 +7,7 @@
   "module": "build/module/index.js",
   "private": false,
   "repository": {
-    "url": "https://github.com/novuhq/novu",
+    "url": "https://github.com/khulnasoft/teleflow",
     "directory": "packages/nest"
   },
   "license": "MIT",

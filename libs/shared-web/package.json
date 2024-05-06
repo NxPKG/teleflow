@@ -1,7 +1,7 @@
 {
   "name": "@teleflow/shared-web",
   "version": "0.24.1",
-  "repository": "https://github.com/novuhq/novu",
+  "repository": "https://github.com/khulnasoft/teleflow",
   "description": "",
   "private": true,
   "license": "ISC",

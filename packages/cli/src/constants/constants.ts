@@ -29,7 +29,7 @@ export const API_TRIGGER_URL = `${apiAddress}/v1/events/trigger`;
 export const CLIENT_LOGIN_URL = process.env.NOVU_CLIENT_LOGIN || 'https://web.novu.co/auth/login';
 
 // github
-export const GITHUB_DOCKER_URL = 'https://github.com/novuhq/novu/tree/main/docker';
+export const GITHUB_DOCKER_URL = 'https://github.com/khulnasoft/teleflow/tree/main/docker';
 
 // segment analytics
 export const ANALYTICS_ENABLED = process.env.ANALYTICS_ENABLED === 'false' ? false : true;

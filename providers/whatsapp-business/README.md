@@ -1,6 +1,6 @@
 # Novu WhatsappBusiness Provider
 
-A WhatsappBusiness chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A WhatsappBusiness chat provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

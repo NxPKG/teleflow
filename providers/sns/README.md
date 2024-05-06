@@ -1,6 +1,6 @@
 # Novu Sns Provider
 
-A SNS SMS provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A SNS SMS provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

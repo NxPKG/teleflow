@@ -7,7 +7,7 @@ keywords:
   - novu
   - notification framework
 sources:
-  - https://github.com/novuhq/novu/tree/next/docker/kubernetes/helm
+  - https://github.com/khulnasoft/teleflow/tree/next/docker/kubernetes/helm
 home: https://novu.co/
 dependencies:
   - condition: redis.enabled

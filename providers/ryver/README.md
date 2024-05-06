@@ -1,6 +1,6 @@
 # Novu Ryver Provider
 
-A Ryver chat provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Ryver chat provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

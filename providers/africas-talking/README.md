@@ -1,6 +1,6 @@
 # Novu Africa's Talking Provider
 
-An Africa's Talking SMS provider library for [@teleflow/node](https://github.com/novuhq/novu)
+An Africa's Talking SMS provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

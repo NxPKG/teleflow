@@ -1,6 +1,6 @@
 # Novu Sendinblue Provider
 
-A Sendinblue email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A Sendinblue email provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

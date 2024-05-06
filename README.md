@@ -38,9 +38,9 @@ The ultimate service for managing multi-channel notifications with a single API.
     <br />
 
   <br/>
-    <a href="https://github.com/novuhq/novu/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml&title=%F0%9F%90%9B+Bug+Report%3A+">Report Bug</a>
+    <a href="https://github.com/khulnasoft/teleflow/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml&title=%F0%9F%90%9B+Bug+Report%3A+">Report Bug</a>
     ·
-    <a href="https://github.com/novuhq/novu/issues/new?assignees=&labels=feature&template=feature_request.yml&title=%F0%9F%9A%80+Feature%3A+">Request Feature</a>
+    <a href="https://github.com/khulnasoft/teleflow/issues/new?assignees=&labels=feature&template=feature_request.yml&title=%F0%9F%9A%80+Feature%3A+">Request Feature</a>
     ·
   <a href="https://discord.novu.co">Join Our Discord</a>
     ·
@@ -52,15 +52,15 @@ The ultimate service for managing multi-channel notifications with a single API.
   </p>
   
   <p align="center">
-  Available in: <a href="https://github.com/novuhq/novu/tree/next/packages/node">Node.js</a>
-  · <a href="https://github.com/novuhq/novu-php">PHP</a>
+  Available in: <a href="https://github.com/khulnasoft/teleflow/tree/next/packages/node">Node.js</a>
+  · <a href="https://github.com/khulnasoft/teleflow-php">PHP</a>
   · <a href="https://github.com/novuhq/go-novu">Go</a>
-  · <a href="https://github.com/novuhq/novu-ruby">Ruby</a>
-  · <a href="https://github.com/novuhq/novu-kotlin">Kotlin</a>
+  · <a href="https://github.com/khulnasoft/teleflow-ruby">Ruby</a>
+  · <a href="https://github.com/khulnasoft/teleflow-kotlin">Kotlin</a>
   · <a href="https://github.com/novuhq/elixir">Elixir</a>
   · <a href="https://github.com/novuhq/rust">Rust</a>
-  · <a href="https://github.com/novuhq/novu-python">Python</a>
-  · <a href="https://github.com/novuhq/novu-java">Java</a>
+  · <a href="https://github.com/khulnasoft/teleflow-python">Python</a>
+  · <a href="https://github.com/khulnasoft/teleflow-java">Java</a>
   </p>
 
 ## ⭐️ Why Novu?
@@ -81,19 +81,19 @@ With Novu, you can create custom workflows and define conditions for each channe
 
 ## 📚 Table Of Contents
 
-- [Getting Started](https://github.com/novuhq/novu#-getting-started)
-- [GitOps & React Email Integration](https://github.com/novuhq/novu#-gitops)
-- [Embeddable notification center](https://github.com/novuhq/novu#embeddable-notification-center)
-- [Providers](https://github.com/novuhq/novu#providers)
-  - [Email](https://github.com/novuhq/novu#-email)
-  - [SMS](https://github.com/novuhq/novu#-sms)
-  - [Push](https://github.com/novuhq/novu#-push)
-  - [Chat](https://github.com/novuhq/novu#-chat)
-  - [In-App](https://github.com/novuhq/novu#-in-app)
-  - [Others](https://github.com/novuhq/novu#other-coming-soon)
-- [Need Help?](https://github.com/novuhq/novu#-need-help)
-- [Links](https://github.com/novuhq/novu#-links)
-- [License](https://github.com/novuhq/novu#%EF%B8%8F-license)
+- [Getting Started](https://github.com/khulnasoft/teleflow#-getting-started)
+- [GitOps & React Email Integration](https://github.com/khulnasoft/teleflow#-gitops)
+- [Embeddable notification center](https://github.com/khulnasoft/teleflow#embeddable-notification-center)
+- [Providers](https://github.com/khulnasoft/teleflow#providers)
+  - [Email](https://github.com/khulnasoft/teleflow#-email)
+  - [SMS](https://github.com/khulnasoft/teleflow#-sms)
+  - [Push](https://github.com/khulnasoft/teleflow#-push)
+  - [Chat](https://github.com/khulnasoft/teleflow#-chat)
+  - [In-App](https://github.com/khulnasoft/teleflow#-in-app)
+  - [Others](https://github.com/khulnasoft/teleflow#other-coming-soon)
+- [Need Help?](https://github.com/khulnasoft/teleflow#-need-help)
+- [Links](https://github.com/khulnasoft/teleflow#-links)
+- [License](https://github.com/khulnasoft/teleflow#%EF%B8%8F-license)
 
 ## 🚀 Getting Started
 
@@ -178,56 +178,56 @@ Novu provides a single API to manage providers across multiple channels with a s
 
 #### 💌 Email
 
-- [x] [Sendgrid](https://github.com/novuhq/novu/tree/main/providers/sendgrid)
-- [x] [Netcore](https://github.com/novuhq/novu/tree/main/providers/netcore)
-- [x] [Mailgun](https://github.com/novuhq/novu/tree/main/providers/mailgun)
-- [x] [SES](https://github.com/novuhq/novu/tree/main/providers/ses)
-- [x] [Postmark](https://github.com/novuhq/novu/tree/main/providers/postmark)
-- [x] [Custom SMTP](https://github.com/novuhq/novu/tree/main/providers/nodemailer)
-- [x] [Mailjet](https://github.com/novuhq/novu/tree/main/providers/mailjet)
-- [x] [Mandrill](https://github.com/novuhq/novu/tree/main/providers/mandrill)
-- [x] [SendinBlue](https://github.com/novuhq/novu/tree/main/providers/sendinblue)
-- [x] [MailerSend](https://github.com/novuhq/novu/tree/main/providers/mailersend)
-- [x] [Infobip](https://github.com/novuhq/novu/tree/main/providers/infobip)
-- [x] [Resend](https://github.com/novuhq/novu/tree/main/providers/resend)
-- [x] [SparkPost](https://github.com/novuhq/novu/tree/main/providers/sparkpost)
-- [x] [Outlook 365](https://github.com/novuhq/novu/tree/main/providers/outlook365)
+- [x] [Sendgrid](https://github.com/khulnasoft/teleflow/tree/main/providers/sendgrid)
+- [x] [Netcore](https://github.com/khulnasoft/teleflow/tree/main/providers/netcore)
+- [x] [Mailgun](https://github.com/khulnasoft/teleflow/tree/main/providers/mailgun)
+- [x] [SES](https://github.com/khulnasoft/teleflow/tree/main/providers/ses)
+- [x] [Postmark](https://github.com/khulnasoft/teleflow/tree/main/providers/postmark)
+- [x] [Custom SMTP](https://github.com/khulnasoft/teleflow/tree/main/providers/nodemailer)
+- [x] [Mailjet](https://github.com/khulnasoft/teleflow/tree/main/providers/mailjet)
+- [x] [Mandrill](https://github.com/khulnasoft/teleflow/tree/main/providers/mandrill)
+- [x] [SendinBlue](https://github.com/khulnasoft/teleflow/tree/main/providers/sendinblue)
+- [x] [MailerSend](https://github.com/khulnasoft/teleflow/tree/main/providers/mailersend)
+- [x] [Infobip](https://github.com/khulnasoft/teleflow/tree/main/providers/infobip)
+- [x] [Resend](https://github.com/khulnasoft/teleflow/tree/main/providers/resend)
+- [x] [SparkPost](https://github.com/khulnasoft/teleflow/tree/main/providers/sparkpost)
+- [x] [Outlook 365](https://github.com/khulnasoft/teleflow/tree/main/providers/outlook365)
 
 #### 📞 SMS
 
-- [x] [Twilio](https://github.com/novuhq/novu/tree/main/providers/twilio)
-- [x] [Plivo](https://github.com/novuhq/novu/tree/main/providers/plivo)
-- [x] [SNS](https://github.com/novuhq/novu/tree/main/providers/sns)
-- [x] [Nexmo - Vonage](https://github.com/novuhq/novu/tree/main/providers/nexmo)
-- [x] [Sms77](https://github.com/novuhq/novu/tree/main/providers/sms77)
-- [x] [Telnyx](https://github.com/novuhq/novu/tree/main/providers/telnyx)
-- [x] [Termii](https://github.com/novuhq/novu/tree/main/providers/termii)
-- [x] [Gupshup](https://github.com/novuhq/novu/tree/main/providers/gupshup)
-- [x] [SMS Central](https://github.com/novuhq/novu/tree/main/providers/sms-central)
-- [x] [Maqsam](https://github.com/novuhq/novu/tree/main/providers/maqsam)
-- [x] [46elks](https://github.com/novuhq/novu/tree/main/providers/forty-six-elks)
-- [x] [Clickatell](https://github.com/novuhq/novu/tree/main/providers/clickatell)
-- [x] [Burst SMS](https://github.com/novuhq/novu/tree/main/providers/burst-sms)
-- [x] [Firetext](https://github.com/novuhq/novu/tree/main/providers/firetext)
-- [x] [Infobip](https://github.com/novuhq/novu/tree/main/providers/infobip)
+- [x] [Twilio](https://github.com/khulnasoft/teleflow/tree/main/providers/twilio)
+- [x] [Plivo](https://github.com/khulnasoft/teleflow/tree/main/providers/plivo)
+- [x] [SNS](https://github.com/khulnasoft/teleflow/tree/main/providers/sns)
+- [x] [Nexmo - Vonage](https://github.com/khulnasoft/teleflow/tree/main/providers/nexmo)
+- [x] [Sms77](https://github.com/khulnasoft/teleflow/tree/main/providers/sms77)
+- [x] [Telnyx](https://github.com/khulnasoft/teleflow/tree/main/providers/telnyx)
+- [x] [Termii](https://github.com/khulnasoft/teleflow/tree/main/providers/termii)
+- [x] [Gupshup](https://github.com/khulnasoft/teleflow/tree/main/providers/gupshup)
+- [x] [SMS Central](https://github.com/khulnasoft/teleflow/tree/main/providers/sms-central)
+- [x] [Maqsam](https://github.com/khulnasoft/teleflow/tree/main/providers/maqsam)
+- [x] [46elks](https://github.com/khulnasoft/teleflow/tree/main/providers/forty-six-elks)
+- [x] [Clickatell](https://github.com/khulnasoft/teleflow/tree/main/providers/clickatell)
+- [x] [Burst SMS](https://github.com/khulnasoft/teleflow/tree/main/providers/burst-sms)
+- [x] [Firetext](https://github.com/khulnasoft/teleflow/tree/main/providers/firetext)
+- [x] [Infobip](https://github.com/khulnasoft/teleflow/tree/main/providers/infobip)
 - [ ] Bandwidth
 - [ ] RingCentral
 
 #### 📱 Push
 
-- [x] [FCM](https://github.com/novuhq/novu/tree/main/providers/fcm)
-- [x] [Expo](https://github.com/novuhq/novu/tree/main/providers/expo)
-- [x] [APNS](https://github.com/novuhq/novu/tree/main/providers/apns)
-- [x] [OneSignal](https://github.com/novuhq/novu/tree/main/providers/one-signal)
-- [x] [Pushpad](https://github.com/novuhq/novu/tree/main/providers/pushpad)
+- [x] [FCM](https://github.com/khulnasoft/teleflow/tree/main/providers/fcm)
+- [x] [Expo](https://github.com/khulnasoft/teleflow/tree/main/providers/expo)
+- [x] [APNS](https://github.com/khulnasoft/teleflow/tree/main/providers/apns)
+- [x] [OneSignal](https://github.com/khulnasoft/teleflow/tree/main/providers/one-signal)
+- [x] [Pushpad](https://github.com/khulnasoft/teleflow/tree/main/providers/pushpad)
 - [ ] Pushwoosh
 
 #### 👇 Chat
 
-- [x] [Slack](https://github.com/novuhq/novu/tree/main/providers/slack)
-- [x] [Discord](https://github.com/novuhq/novu/tree/main/providers/discord)
-- [x] [MS Teams](https://github.com/novuhq/novu/tree/main/providers/ms-teams)
-- [x] [Mattermost](https://github.com/novuhq/novu/tree/main/providers/mattermost)
+- [x] [Slack](https://github.com/khulnasoft/teleflow/tree/main/providers/slack)
+- [x] [Discord](https://github.com/khulnasoft/teleflow/tree/main/providers/discord)
+- [x] [MS Teams](https://github.com/khulnasoft/teleflow/tree/main/providers/ms-teams)
+- [x] [Mattermost](https://github.com/khulnasoft/teleflow/tree/main/providers/mattermost)
 
 #### 📱 In-App
 
@@ -240,7 +240,7 @@ Novu provides a single API to manage providers across multiple channels with a s
 
 ## 📋 Read Our Code Of Conduct
 
-Before you begin coding and collaborating, please read our [Code of Conduct](https://github.com/novuhq/novu/blob/main/CODE_OF_CONDUCT.md) thoroughly to understand the standards (that you are required to adhere to) for community engagement. As part of our open-source community, we hold ourselves and other contributors to a high standard of communication. As a participant and contributor to this project, you agree to abide by our [Code of Conduct](https://github.com/novuhq/novu/blob/main/CODE_OF_CONDUCT.md).
+Before you begin coding and collaborating, please read our [Code of Conduct](https://github.com/khulnasoft/teleflow/blob/main/CODE_OF_CONDUCT.md) thoroughly to understand the standards (that you are required to adhere to) for community engagement. As part of our open-source community, we hold ourselves and other contributors to a high standard of communication. As a participant and contributor to this project, you agree to abide by our [Code of Conduct](https://github.com/khulnasoft/teleflow/blob/main/CODE_OF_CONDUCT.md).
 
 ## 💻 Need Help?
 
@@ -248,17 +248,17 @@ We are more than happy to help you. If you are getting any errors or facing prob
 
 ## ⚡ Immediate working space with Gitpod
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/novuhq/novu)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/khulnasoft/teleflow)
 
 ## 🔗 Links
 
 - [Home page](https://novu.co?utm_campaign=github-readme)
-- [Contribution Guidelines](https://github.com/novuhq/novu/blob/main/CONTRIBUTING.md)
+- [Contribution Guidelines](https://github.com/khulnasoft/teleflow/blob/main/CONTRIBUTING.md)
 - [Run Novu Locally](https://docs.novu.co/community/run-in-local-machine?utm_campaign=github-readme)
 
 ## 🛡️ License
 
-Novu is licensed under the MIT License - see the [LICENSE](https://github.com/novuhq/novu/blob/main/LICENSE) file for details.
+Novu is licensed under the MIT License - see the [LICENSE](https://github.com/khulnasoft/teleflow/blob/main/LICENSE) file for details.
 
 ## 💪 Thanks To All Contributors
 

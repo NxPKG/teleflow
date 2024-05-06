@@ -1,6 +1,6 @@
 # Novu Ses Provider
 
-A SES email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A SES email provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

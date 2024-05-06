@@ -1,6 +1,6 @@
 # Novu OneSignal Provider
 
-A OneSignal push provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A OneSignal push provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

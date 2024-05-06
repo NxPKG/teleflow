@@ -85,7 +85,7 @@ body:
     attributes:
       label: "🏢 Have you read the Contributing Guidelines?"
       options:
-        - label: "I have read the [Contributing Guidelines](https://github.com/novuhq/novu/blob/main/CONTRIBUTING.md)"
+        - label: "I have read the [Contributing Guidelines](https://github.com/khulnasoft/teleflow/blob/main/CONTRIBUTING.md)"
           required: true
   - type: dropdown
     attributes:

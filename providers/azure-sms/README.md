@@ -1,6 +1,6 @@
 # Novu AzureSms Provider
 
-A AzureSms sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A AzureSms sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

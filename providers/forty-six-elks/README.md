@@ -1,6 +1,6 @@
 # Novu FortySixElks Provider
 
-A 46Elks sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A 46Elks sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

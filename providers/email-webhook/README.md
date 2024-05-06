@@ -1,6 +1,6 @@
 # Novu Email Webhook Provider
 
-This is a library that triggers a custom webhook and shows itself as an email library for [@teleflow/node](https://github.com/novuhq/novu)
+This is a library that triggers a custom webhook and shows itself as an email library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

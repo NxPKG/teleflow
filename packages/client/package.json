@@ -1,7 +1,7 @@
 {
   "name": "@teleflow/client",
   "version": "0.24.1",
-  "repository": "https://github.com/novuhq/novu",
+  "repository": "https://github.com/khulnasoft/teleflow",
   "description": "API client to be used in end user environments",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

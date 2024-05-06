@@ -37,7 +37,7 @@ export const RootNavMenuFooter: React.FC = () => {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/novuhq/novu/issues/new/choose"
+        href="https://github.com/khulnasoft/teleflow/issues/new/choose"
         data-test-id="side-nav-bottom-link-share-feedback"
       >
         Share Feedback

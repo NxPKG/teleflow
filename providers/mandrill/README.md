@@ -1,6 +1,6 @@
 # Nodejs Mandrill Provider
 
-A mandrill email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A mandrill email provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

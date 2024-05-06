@@ -1,6 +1,6 @@
 # Novu Sendchamp Provider
 
-A Sendchamp SMS provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Sendchamp SMS provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

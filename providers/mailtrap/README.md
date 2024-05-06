@@ -1,6 +1,6 @@
 # Novu Mailtrap Provider
 
-A Mailtrap email provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Mailtrap email provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

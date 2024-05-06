@@ -1,6 +1,6 @@
 # Novu iSend SMS Provider
 
-iSend sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+iSend sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

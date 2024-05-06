@@ -1,6 +1,6 @@
 # NestJS Module Wrapper
 
-A NestJS module wrapper for [@teleflow/node](https://github.com/novuhq/novu)
+A NestJS module wrapper for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Novu Gupshup Provider
 
-A Gupshup sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
+A Gupshup sms provider library for [@teleflow/node](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # Nodejs Postmark Provider
 
-A postmark email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
+A postmark email provider library for [@teleflow/stateless](https://github.com/khulnasoft/teleflow)
 
 ## Usage
 
