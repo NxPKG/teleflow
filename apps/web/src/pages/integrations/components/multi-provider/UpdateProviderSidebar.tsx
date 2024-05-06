@@ -32,7 +32,7 @@ import { SetupTimeline } from '../../../quick-start/components/SetupTimeline';
 import { Faq } from '../../../quick-start/components/QuickStartWrapper';
 import { TeleflowInAppFrameworkHeader } from '../TeleflowInAppFrameworkHeader';
 import { TeleflowInAppSetupWarning } from '../TeleflowInAppSetupWarning';
-import { NovuProviderSidebarContent } from './NovuProviderSidebarContent';
+import { TeleflowProviderSidebarContent } from './TeleflowProviderSidebarContent';
 import { useSelectPrimaryIntegrationModal } from './useSelectPrimaryIntegrationModal';
 import { ShareableUrl } from '../Modal/ConnectIntegrationForm';
 import { Conditions, IConditions } from '../../../../components/conditions';
@@ -290,7 +290,7 @@ export function UpdateProviderSidebar({
             </Group>
           }
         >
-          <NovuProviderSidebarContent provider={selectedProvider} />
+          <TeleflowProviderSidebarContent provider={selectedProvider} />
           <UpdateIntegrationCommonFields provider={selectedProvider} />
         </Sidebar>
         <SelectPrimaryIntegrationModal />

@@ -130,8 +130,8 @@ export {
 } from './general/Mobile';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
-  NovuIcon,
-} from './general/NovuIcon';
+  TeleflowIcon,
+} from './general/TeleflowIcon';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
   Folder,
@@ -242,8 +242,8 @@ export {
 } from './general/WarningIcon';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
-  MadeByNovu,
-} from './general/MadeByNovu';
+  MadeByTeleflow,
+} from './general/MadeByTeleflow';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
   Pencil,
@@ -298,8 +298,8 @@ export {
 } from './general/StarEmpty';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
-  NovuLogo,
-} from './general/NovuLogo';
+  TeleflowLogo,
+} from './general/TeleflowLogo';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
   DigestAction,

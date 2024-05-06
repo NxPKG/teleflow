@@ -2,7 +2,7 @@ import {
   INotificationGroupUpdatePayload,
   INotificationGroups,
 } from './notification-groups.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class NotificationGroups
   extends WithHttp

@@ -1,4 +1,4 @@
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 import {
   IOrganizations,
   IOrganizationCreatePayload,
@@ -30,7 +30,7 @@ export class Organizations extends WithHttp implements IOrganizations {
 
   updateMemberRole(
     memberId: string,
-    payload: IOrganizationUpdateMemberRolePayload
+    payload: IOrganizationUpdateMemberRolePayload,
   ) {
     return this.http.put(`/organizations/members/${memberId}/roles`, payload);
   }

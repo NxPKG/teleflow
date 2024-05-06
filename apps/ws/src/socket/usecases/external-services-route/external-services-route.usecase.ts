@@ -11,7 +11,10 @@ const LOG_CONTEXT = 'ExternalServicesRoute';
 
 @Injectable()
 export class ExternalServicesRoute {
-  constructor(private wsGateway: WSGateway, private messageRepository: MessageRepository) {}
+  constructor(
+    private wsGateway: WSGateway,
+    private messageRepository: MessageRepository
+  ) {}
 
   public async execute(command: ExternalServicesRouteCommand) {
     const isOnline = await this.connectionExist(command);

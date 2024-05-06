@@ -10,7 +10,7 @@ import { INotificationTemplateStep } from '@novu/shared';
 import {
   CanvasHolder,
   GroupName,
-  MadeByNovuStyled,
+  MadeByTeleflowStyled,
   ModalBodyHolder,
   NovuButtonHolder,
   TemplateDetails,
@@ -200,7 +200,7 @@ export const TemplatesStoreModal = ({ general, popular, isOpened, onClose }: ITe
               />
             </ReactFlowProvider>
             <NovuButtonHolder>
-              <MadeByNovuStyled width={104} height={20} />
+              <MadeByTeleflowStyled width={104} height={20} />
               <Button
                 disabled={isCreatingTemplateFromBlueprint}
                 loading={isCreatingTemplateFromBlueprint}

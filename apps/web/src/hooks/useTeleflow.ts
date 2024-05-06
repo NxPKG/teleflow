@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { APP_ID, ENV, WIDGET_EMBED_PATH } from '../config';
 import { useAuthContext } from '../components/providers/AuthProvider';
 
-export function useNovu() {
+export function useTeleflow() {
   const authContext = useAuthContext();
 
   useEffect(() => {

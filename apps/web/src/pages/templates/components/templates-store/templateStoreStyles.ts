@@ -1,7 +1,7 @@
 import { createStyles } from '@mantine/core';
 import styled from '@emotion/styled';
 
-import { colors, MadeByNovu } from '@novu/design-system';
+import { colors, MadeByTeleflow } from '@novu/design-system';
 
 export const ModalBodyHolder = styled.div`
   display: flex;
@@ -109,7 +109,7 @@ export const NovuButtonHolder = styled.div`
   gap: 8px;
 `;
 
-export const MadeByNovuStyled = styled(MadeByNovu)`
+export const MadeByTeleflowStyled = styled(MadeByTeleflow)`
   color: ${colors.B60};
 `;
 

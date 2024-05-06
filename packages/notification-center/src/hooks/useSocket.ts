@@ -1,7 +1,7 @@
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 
 export function useSocket() {
-  const { socket } = useNovuContext();
+  const { socket } = useTeleflowContext();
 
   return {
     socket,

@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient, UseMutationOptions } from '@tanstack/react-query';
 
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';
 
 interface IRemoveNotificationsVariables {
@@ -16,7 +16,7 @@ export const useRemoveNotifications = ({
   onSuccess?: () => void;
 } & UseMutationOptions<ResponseDataType, Error, IRemoveNotificationsVariables> = {}) => {
   const queryClient = useQueryClient();
-  const { apiService } = useNovuContext();
+  const { apiService } = useTeleflowContext();
   const fetchNotificationsQueryKey = useFetchNotificationsQueryKey();
 
   const { mutate, ...result } = useMutation<ResponseDataType, Error, IRemoveNotificationsVariables>(

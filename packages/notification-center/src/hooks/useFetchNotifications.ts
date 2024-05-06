@@ -3,7 +3,7 @@ import type { IStoreQuery } from '@teleflow/client';
 import type { IMessage, IPaginatedResponse } from '@novu/shared';
 import { INotificationsContext } from '../shared/interfaces';
 
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import { getNextPageParam } from '../utils/pagination';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';
 
@@ -11,7 +11,7 @@ export const useFetchNotifications = (
   { query }: { query?: IStoreQuery } = {},
   options: UseInfiniteQueryOptions<IPaginatedResponse<IMessage>, Error, IPaginatedResponse<IMessage>> = {}
 ) => {
-  const { apiService, isSessionInitialized, fetchingStrategy } = useNovuContext();
+  const { apiService, isSessionInitialized, fetchingStrategy } = useTeleflowContext();
   const fetchNotificationsQueryKey = useFetchNotificationsQueryKey();
 
   const result = useInfiniteQuery<IPaginatedResponse<IMessage>, Error, IPaginatedResponse<IMessage>>(

@@ -6,7 +6,10 @@ import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
 
 @Injectable()
 export class CreateFeed {
-  constructor(private feedRepository: FeedRepository, private createChange: CreateChange) {}
+  constructor(
+    private feedRepository: FeedRepository,
+    private createChange: CreateChange
+  ) {}
 
   async execute(command: CreateFeedCommand): Promise<FeedEntity> {
     const feedExist = await this.feedRepository.findOne({

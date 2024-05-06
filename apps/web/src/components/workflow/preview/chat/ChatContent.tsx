@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Group, Skeleton, Stack, useMantineColorScheme } from '@mantine/core';
 import { colors, Text } from '@novu/design-system';
 
-import { NovuGreyIcon, PreviewEditOverlay } from '../common';
+import { TeleflowGreyIcon, PreviewEditOverlay } from '../common';
 import { When } from '../../../utils/When';
 import { useHover } from '../../../../hooks';
 
@@ -32,7 +32,7 @@ export function ChatContent({ isLoading, content, errorMsg, showOverlay = true }
         </When>
         <When truthy={!isLoading}>
           <div>
-            <NovuGreyIcon color={isDark ? colors.B30 : colors.BGLight} width="32px" height="32px" />
+            <TeleflowGreyIcon color={isDark ? colors.B30 : colors.BGLight} width="32px" height="32px" />
           </div>
           <Stack spacing={5}>
             <Group spacing={8} align="flex-start" noWrap>

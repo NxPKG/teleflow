@@ -11,17 +11,17 @@ import {
 import { AnalyticsService } from '../../services/analytics.service';
 import { CalculateLimitNovuIntegration } from '../calculate-limit-teleflow-integration';
 
-import { GetNovuProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
+import { GetTeleflowProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
 
 @Injectable()
-export class GetNovuProviderCredentials {
+export class GetTeleflowProviderCredentials {
   constructor(
     private analyticsService: AnalyticsService,
     protected calculateLimitNovuIntegration: CalculateLimitNovuIntegration,
   ) {}
 
   async execute(
-    integration: GetNovuProviderCredentialsCommand,
+    integration: GetTeleflowProviderCredentialsCommand,
   ): Promise<ICredentials> {
     if (
       integration.providerId === EmailProviderIdEnum.Novu ||

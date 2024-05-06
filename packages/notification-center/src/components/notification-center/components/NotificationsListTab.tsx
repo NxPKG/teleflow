@@ -1,14 +1,14 @@
 import React from 'react';
 import { IMessage, ChannelCTATypeEnum } from '@novu/shared';
 
-import { useNotifications, useNotificationCenter, useNovuContext, useTranslations } from '../../../hooks';
+import { useNotifications, useNotificationCenter, useTeleflowContext, useTranslations } from '../../../hooks';
 import { NotificationsList } from './NotificationsList';
 import { Loader } from './Loader';
 import { colors } from '../../../shared/config/colors';
 import { NoNewNotifications } from '../../../images/NoNewNotifications';
 
 export function NotificationsListTab() {
-  const { apiService } = useNovuContext();
+  const { apiService } = useTeleflowContext();
   const { onNotificationClick, onUrlChange, emptyState } = useNotificationCenter();
   const { notifications, isLoading, hasNextPage, markNotificationAsRead, fetchNextPage } = useNotifications();
   const { t } = useTranslations();

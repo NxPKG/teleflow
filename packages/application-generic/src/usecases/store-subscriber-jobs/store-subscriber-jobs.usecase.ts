@@ -26,7 +26,7 @@ export class StoreSubscriberJobs {
   constructor(
     private addJob: AddJob,
     private jobRepository: JobRepository,
-    protected bulkCreateExecutionDetails: BulkCreateExecutionDetails
+    protected bulkCreateExecutionDetails: BulkCreateExecutionDetails,
   ) {}
 
   @InstrumentUsecase()
@@ -72,7 +72,7 @@ export class StoreSubscriberJobs {
             isRetry: false,
           };
         }),
-      })
+      }),
     );
   }
 }

@@ -2,7 +2,7 @@ import { useMutation, useQueryClient, UseMutationOptions, InfiniteData } from '@
 import type { IMessage, IPaginatedResponse } from '@novu/shared';
 import { IStoreQuery } from '@teleflow/client';
 
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import type { IMessageId } from '../shared/interfaces';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';
 
@@ -21,7 +21,7 @@ export const useMarkNotificationsAs = ({
   query?: IStoreQuery;
 } & UseMutationOptions<IMessage[], Error, IMarkNotificationsAsVariables> = {}) => {
   const queryClient = useQueryClient();
-  const { apiService } = useNovuContext();
+  const { apiService } = useTeleflowContext();
   const fetchNotificationsQueryKey = useFetchNotificationsQueryKey();
 
   const { mutate, ...result } = useMutation<IMessage[], Error, IMarkNotificationsAsVariables>(

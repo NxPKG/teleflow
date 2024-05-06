@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 import { WebSocketEventEnum } from '@novu/shared';
 
 import type { ICountData } from '../shared/interfaces';
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import { useSetQueryKey } from './useSetQueryKey';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';
 import { useUnseenCountQueryKey } from './useUnseenCountQueryKey';
@@ -25,7 +25,7 @@ const dispatchUnseenCountEvent = (count: number) => {
 const DEBOUNCE_TIME = typeof window !== 'undefined' && (window as any)?.Cypress ? 1000 : 100;
 
 export const useUnseenCount = ({ onSuccess, ...restOptions }: UseQueryOptions<ICountData, Error, ICountData> = {}) => {
-  const { apiService, socket, isSessionInitialized, fetchingStrategy } = useNovuContext();
+  const { apiService, socket, isSessionInitialized, fetchingStrategy } = useTeleflowContext();
 
   const queryClient = useQueryClient();
   const setQueryKey = useSetQueryKey();

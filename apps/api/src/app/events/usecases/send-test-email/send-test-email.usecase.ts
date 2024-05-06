@@ -10,7 +10,7 @@ import {
   ApiException,
   CompileEmailTemplate,
   CompileEmailTemplateCommand,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   InstrumentUsecase,
   MailFactory,
   SelectIntegration,
@@ -24,7 +24,7 @@ export class SendTestEmail {
     private organizationRepository: OrganizationRepository,
     private selectIntegration: SelectIntegration,
     private analyticsService: AnalyticsService,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected moduleRef: ModuleRef
   ) {}
 
@@ -55,7 +55,7 @@ export class SendTestEmail {
     }
 
     if (integration.providerId === EmailProviderIdEnum.Novu) {
-      integration.credentials = await this.getNovuProviderCredentials.execute({
+      integration.credentials = await this.getTeleflowProviderCredentials.execute({
         channelType: integration.channel,
         providerId: integration.providerId,
         environmentId: integration._environmentId,

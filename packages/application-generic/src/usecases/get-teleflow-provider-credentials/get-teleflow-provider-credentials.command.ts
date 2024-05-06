@@ -3,7 +3,7 @@ import { ChannelTypeEnum } from '@novu/shared';
 
 import { EnvironmentWithUserCommand } from '../../commands/project.command';
 
-export class GetNovuProviderCredentialsCommand extends EnvironmentWithUserCommand {
+export class GetTeleflowProviderCredentialsCommand extends EnvironmentWithUserCommand {
   @IsEnum(ChannelTypeEnum)
   channelType: ChannelTypeEnum;
 

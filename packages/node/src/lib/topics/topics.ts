@@ -5,7 +5,7 @@ import {
   ITopics,
   ITopicSubscribersPayload,
 } from './topic.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 const BASE_PATH = '/topics';
 
@@ -26,26 +26,26 @@ export class Topics extends WithHttp implements ITopics {
    */
   async getSubscriber(
     topicKey: TopicKey,
-    externalSubscriberId: ExternalSubscriberId
+    externalSubscriberId: ExternalSubscriberId,
   ) {
     return await this.http.get(
-      `${BASE_PATH}/${topicKey}/subscribers/${externalSubscriberId}`
+      `${BASE_PATH}/${topicKey}/subscribers/${externalSubscriberId}`,
     );
   }
 
   async checkSubscriber(
     topicKey: TopicKey,
-    externalSubscriberId: ExternalSubscriberId
+    externalSubscriberId: ExternalSubscriberId,
   ) {
     return await this.http.get(
-      `${BASE_PATH}/${topicKey}/subscribers/${externalSubscriberId}`
+      `${BASE_PATH}/${topicKey}/subscribers/${externalSubscriberId}`,
     );
   }
 
   async removeSubscribers(topicKey: TopicKey, data: ITopicSubscribersPayload) {
     return await this.http.post(
       `${BASE_PATH}/${topicKey}/subscribers/removal`,
-      data
+      data,
     );
   }
 
