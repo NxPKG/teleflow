@@ -3,7 +3,7 @@
 type IMountType = import('cypress/react').mount;
 type ICreateNotificationTemplateDto = import('@novu/shared').ICreateNotificationTemplateDto;
 type FeatureFlagsKeysEnum = import('@novu/shared').FeatureFlagsKeysEnum;
-type CreateTemplatePayload = import('@novu/testing').CreateTemplatePayload;
+type CreateTemplatePayload = import('@teleflow/testing').CreateTemplatePayload;
 
 declare namespace Cypress {
   interface Chainable {

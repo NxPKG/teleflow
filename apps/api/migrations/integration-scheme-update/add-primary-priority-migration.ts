@@ -4,7 +4,7 @@
 import '../../src/config';
 
 import { NestFactory } from '@nestjs/core';
-import { IntegrationRepository, EnvironmentRepository, OrganizationRepository } from '@novu/dal';
+import { IntegrationRepository, EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
 import { CHANNELS_WITH_PRIMARY, ChannelTypeEnum } from '@novu/shared';
 
 import { AppModule } from '../../src/app.module';

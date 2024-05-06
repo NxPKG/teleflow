@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { NotificationStepEntity } from '@novu/dal';
+import { NotificationStepEntity } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
 
 import { DigestFilterStepsCommand } from './digest-filter-steps.command';

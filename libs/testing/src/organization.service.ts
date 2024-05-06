@@ -1,6 +1,6 @@
 import { ApiServiceLevelEnum, MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 import { faker } from '@faker-js/faker';
-import { MemberRepository, OrganizationRepository } from '@novu/dal';
+import { MemberRepository, OrganizationRepository } from '@teleflow/dal';
 
 export class OrganizationService {
   private organizationRepository = new OrganizationRepository();

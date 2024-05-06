@@ -6,7 +6,7 @@ import {
   SubscriberRepository,
   SubscriberEntity,
   MemberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   WebSocketsQueueService,
   AnalyticsService,

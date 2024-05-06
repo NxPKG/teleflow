@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { IEmailBlock, ITemplateVariable } from '@novu/shared';
 
 import { GetLayoutCommand } from './get-layout.command';

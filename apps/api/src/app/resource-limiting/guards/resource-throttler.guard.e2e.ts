@@ -1,4 +1,4 @@
-import { UserSession } from '@novu/testing';
+import { UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 
 process.env.LAUNCH_DARKLY_SDK_KEY = ''; // disable Launch Darkly to allow test to define FF state

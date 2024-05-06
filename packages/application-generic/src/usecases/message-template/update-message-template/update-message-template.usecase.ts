@@ -9,7 +9,7 @@ import {
   MessageTemplateEntity,
   MessageTemplateRepository,
   MessageRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChangeEntityTypeEnum, WorkflowTypeEnum } from '@novu/shared';
 
 import { UpdateMessageTemplateCommand } from './update-message-template.command';

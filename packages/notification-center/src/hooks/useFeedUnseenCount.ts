@@ -1,5 +1,5 @@
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
-import type { IStoreQuery } from '@novu/client';
+import type { IStoreQuery } from '@teleflow/client';
 
 import { useNovuContext } from './useNovuContext';
 import type { ICountData } from '../shared/interfaces';

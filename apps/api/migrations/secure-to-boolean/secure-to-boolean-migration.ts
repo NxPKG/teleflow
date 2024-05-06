@@ -1,5 +1,5 @@
 import '../../src/config';
-import { IntegrationRepository } from '@novu/dal';
+import { IntegrationRepository } from '@teleflow/dal';
 import { NestFactory } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
 import { AppModule } from '../../src/app.module';

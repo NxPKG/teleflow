@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { IStoreQuery } from '@novu/client';
+import type { IStoreQuery } from '@teleflow/client';
 
 import { FEED_UNSEEN_COUNT_QUERY_KEY } from './queryKeys';
 import { useSetQueryKey } from './useSetQueryKey';

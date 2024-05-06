@@ -7,7 +7,7 @@ import {
   JobRepository,
   NotificationTemplateRepository,
   SubscriberEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   AddressingTypeEnum,
   ChannelTypeEnum,

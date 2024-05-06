@@ -1,4 +1,4 @@
-import { MessageRepository, MessageTemplateRepository } from '@novu/dal';
+import { MessageRepository, MessageTemplateRepository } from '@teleflow/dal';
 
 export async function normalizeMessageCtaAction() {
   // eslint-disable-next-line no-console

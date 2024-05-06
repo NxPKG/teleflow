@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IMessage, ButtonTypeEnum } from '@novu/shared';
-import { IUserPreferenceSettings } from '@novu/client';
+import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { INotificationCenterContext, ITab } from '../shared/interfaces';
 

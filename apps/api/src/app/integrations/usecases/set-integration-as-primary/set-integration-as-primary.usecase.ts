@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, Logger, BadRequestException } from '@nestjs/common';
-import { IntegrationEntity, IntegrationRepository } from '@novu/dal';
+import { IntegrationEntity, IntegrationRepository } from '@teleflow/dal';
 import { CHANNELS_WITH_PRIMARY } from '@novu/shared';
 import { AnalyticsService, buildIntegrationKey, InvalidateCacheService } from '@novu/application-generic';
 

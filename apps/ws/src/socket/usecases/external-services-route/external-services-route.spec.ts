@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import { EnvironmentRepository, MessageEntity, MessageRepository, UserRepository } from '@novu/dal';
+import { EnvironmentRepository, MessageEntity, MessageRepository, UserRepository } from '@teleflow/dal';
 import { WebSocketEventEnum } from '@novu/shared';
 
 import { ExternalServicesRoute } from './external-services-route.usecase';

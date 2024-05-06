@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { IMessage, IMessageAction, ButtonTypeEnum } from '@novu/shared';
-import { IUserPreferenceSettings } from '@novu/client';
+import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { AppContent } from './components';
 import { useNotifications, useNovuContext } from '../../hooks';

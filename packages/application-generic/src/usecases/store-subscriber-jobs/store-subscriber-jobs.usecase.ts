@@ -1,4 +1,4 @@
-import { JobRepository, JobEntity, DalException } from '@novu/dal';
+import { JobRepository, JobEntity, DalException } from '@teleflow/dal';
 import { Injectable } from '@nestjs/common';
 import {
   ExecutionDetailsSourceEnum,

@@ -1,7 +1,7 @@
 import * as bcrypt from 'bcrypt';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { differenceInMinutes, parseISO } from 'date-fns';
-import { UserRepository, UserEntity, OrganizationRepository } from '@novu/dal';
+import { UserRepository, UserEntity, OrganizationRepository } from '@teleflow/dal';
 import { AnalyticsService, AuthService, createHash } from '@novu/application-generic';
 
 import { LoginCommand } from './login.command';

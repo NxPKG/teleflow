@@ -6,8 +6,8 @@ import {
   ExecutionDetailsRepository,
   JobRepository,
   NotificationRepository,
-} from '@novu/dal';
-import { UserSession } from '@novu/testing';
+} from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { sendTrigger } from '../../src/app/events/e2e/trigger-event.e2e';
 import { StepTypeEnum } from '@novu/shared';
 import { createExpireAt, messagesSetExpireAt } from './expire-at.migration';

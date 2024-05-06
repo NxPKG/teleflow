@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState, useMemo, useCallback } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { IOrganizationEntity } from '@novu/shared';
-import { ApiService } from '@novu/client';
+import { ApiService } from '@teleflow/client';
 
 import type { I18NLanguage, ITranslationEntry } from '../../i18n/lang';
 import { NotificationsProvider } from '../../store/notifications-provider.context';

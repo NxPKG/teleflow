@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { NotificationRepository } from '@novu/dal';
+import { NotificationRepository } from '@teleflow/dal';
 
 import { GetActivityStatsCommand } from './get-activity-stats.command';
 

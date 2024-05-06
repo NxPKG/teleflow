@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
-import { OrganizationRepository, UserRepository, MemberRepository } from '@novu/dal';
+import { OrganizationRepository, UserRepository, MemberRepository } from '@teleflow/dal';
 import { MemberStatusEnum } from '@novu/shared';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';

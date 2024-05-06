@@ -1,5 +1,5 @@
 import { Injectable, Logger, Module } from '@nestjs/common';
-import { ExecutionDetailsEntity, ExecutionDetailsRepository, MessageEntity } from '@novu/dal';
+import { ExecutionDetailsEntity, ExecutionDetailsRepository, MessageEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
 
 import { CreateExecutionDetailsCommand, WebhookCommand } from './create-execution-details.command';

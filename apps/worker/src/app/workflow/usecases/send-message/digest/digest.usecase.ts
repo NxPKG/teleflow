@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { MessageRepository, JobRepository, JobStatusEnum, JobEntity } from '@novu/dal';
+import { MessageRepository, JobRepository, JobStatusEnum, JobEntity } from '@teleflow/dal';
 import {
   StepTypeEnum,
   ExecutionDetailsSourceEnum,

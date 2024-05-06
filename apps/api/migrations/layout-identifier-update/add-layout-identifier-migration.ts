@@ -3,7 +3,7 @@
 import * as shortid from 'shortid';
 import slugify from 'slugify';
 
-import { LayoutRepository, OrganizationRepository } from '@novu/dal';
+import { LayoutRepository, OrganizationRepository } from '@teleflow/dal';
 
 export async function addLayoutIdentifierMigration() {
   // eslint-disable-next-line no-console

@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
-import { OrganizationRepository, UserRepository, MemberRepository, IAddMemberData } from '@novu/dal';
+import { OrganizationRepository, UserRepository, MemberRepository, IAddMemberData } from '@teleflow/dal';
 import { MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 import { Novu } from '@teleflow/node';
 import { AnalyticsService } from '@novu/application-generic';

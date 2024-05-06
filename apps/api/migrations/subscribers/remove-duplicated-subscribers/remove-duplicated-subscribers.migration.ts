@@ -1,6 +1,6 @@
 import '../../../src/config';
 import { NestFactory } from '@nestjs/core';
-import { SubscriberRepository } from '@novu/dal';
+import { SubscriberRepository } from '@teleflow/dal';
 import { AppModule } from '../../../src/app.module';
 import { IChannelSettings, ISubscriber } from '@novu/shared';
 

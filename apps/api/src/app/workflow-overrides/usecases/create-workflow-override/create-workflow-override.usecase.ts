@@ -6,7 +6,7 @@ import {
   TenantEntity,
   TenantRepository,
   WorkflowOverrideRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { CreateWorkflowOverrideCommand } from './create-workflow-override.command';
 import { CreateWorkflowOverrideResponseDto } from '../../dto';

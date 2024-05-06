@@ -2,7 +2,7 @@ import {
   ApiService,
   IUserGlobalPreferenceSettings,
   IUserPreferenceSettings,
-} from '@novu/client';
+} from '@teleflow/client';
 import { WebSocketEventEnum } from '@novu/shared';
 import io from 'socket.io-client';
 
@@ -138,8 +138,8 @@ const mockServiceInstance = {
   removeAllMessages: jest.fn(),
 };
 
-jest.mock('@novu/client', () => ({
-  ...jest.requireActual<typeof import('@novu/client')>('@novu/client'),
+jest.mock('@teleflow/client', () => ({
+  ...jest.requireActual<typeof import('@teleflow/client')>('@teleflow/client'),
   ApiService: jest.fn().mockImplementation(() => mockServiceInstance),
 }));
 

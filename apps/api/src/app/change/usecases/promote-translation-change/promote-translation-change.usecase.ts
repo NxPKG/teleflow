@@ -1,5 +1,5 @@
 import { BadRequestException, forwardRef, Inject, Injectable, Logger } from '@nestjs/common';
-import { ChangeRepository } from '@novu/dal';
+import { ChangeRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 
 import { ApplyChange, ApplyChangeCommand } from '../apply-change';

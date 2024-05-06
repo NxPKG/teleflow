@@ -10,8 +10,8 @@ import {
   useNovuContext,
   ColorScheme,
   IUserPreferenceSettings,
-} from '@novu/notification-center';
-import type { ITelelfowThemeProvider, INotificationCenterStyles } from '@novu/notification-center';
+} from '@teleflow/notification-center';
+import type { ITelelfowThemeProvider, INotificationCenterStyles } from '@teleflow/notification-center';
 import { IMessage, IOrganizationEntity, ButtonTypeEnum, isBrowser } from '@novu/shared';
 
 import { API_URL, WS_URL } from '../../config';

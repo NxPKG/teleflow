@@ -39,7 +39,7 @@ import {
   SubscriberRepository,
   TenantEntity,
   TenantRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { SendMessageCommand } from './send-message.command';
 import { SendMessageDelay } from './send-message-delay.usecase';

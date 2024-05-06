@@ -9,7 +9,7 @@ import {
   MessageEntity,
   IntegrationEntity,
   JobEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   LogCodeEnum,

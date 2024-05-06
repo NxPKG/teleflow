@@ -1,6 +1,6 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 
-import { TenantRepository } from '@novu/dal';
+import { TenantRepository } from '@teleflow/dal';
 import { AnalyticsService } from '../../services/analytics.service';
 
 import { CreateTenantCommand } from './create-tenant.command';

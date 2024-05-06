@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { JobRepository, JobStatusEnum } from '@novu/dal';
+import { JobRepository, JobStatusEnum } from '@teleflow/dal';
 import { InstrumentUsecase } from '@novu/application-generic';
 
 import { SetJobAsFailedCommand } from './set-job-as.command';

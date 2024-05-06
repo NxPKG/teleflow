@@ -1,5 +1,5 @@
-import { UserRepository } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { UserRepository } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { v4 as uuidv4 } from 'uuid';
 import { expect } from 'chai';
 import { stub, SinonStubbedMember } from 'sinon';

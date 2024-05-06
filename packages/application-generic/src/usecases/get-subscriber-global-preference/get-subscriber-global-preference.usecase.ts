@@ -4,7 +4,7 @@ import {
   SubscriberEntity,
   SubscriberPreferenceRepository,
   SubscriberRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { GetSubscriberGlobalPreferenceCommand } from './get-subscriber-global-preference.command';
 import { buildSubscriberKey, CachedEntity } from '../../services/cache';

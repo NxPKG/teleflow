@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException, Inject, Logger, ConflictException } from '@nestjs/common';
-import { IntegrationEntity, IntegrationRepository } from '@novu/dal';
+import { IntegrationEntity, IntegrationRepository } from '@teleflow/dal';
 import {
   AnalyticsService,
   encryptCredentials,

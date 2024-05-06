@@ -10,7 +10,7 @@ import {
   OrdinalEnum,
   OrdinalValueEnum,
 } from '@novu/shared';
-import { JobEntity } from '@novu/dal';
+import { JobEntity } from '@teleflow/dal';
 
 import { ApiException } from '../../utils/exceptions';
 import { isRegularDigest } from '../../utils/digest';

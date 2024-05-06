@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 
-import { MessageRepository } from '@novu/dal';
+import { MessageRepository } from '@teleflow/dal';
 import { ChannelTypeEnum, WebSocketEventEnum } from '@novu/shared';
 
 import { ExternalServicesRouteCommand } from './external-services-route.command';

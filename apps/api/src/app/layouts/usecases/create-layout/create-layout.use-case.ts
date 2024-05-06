@@ -1,6 +1,6 @@
 import { Injectable, ConflictException } from '@nestjs/common';
 
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { isReservedVariableName } from '@novu/shared';
 import { AnalyticsService, ContentService } from '@novu/application-generic';
 

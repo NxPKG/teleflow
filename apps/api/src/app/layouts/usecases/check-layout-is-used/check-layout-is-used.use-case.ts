@@ -1,4 +1,4 @@
-import { LayoutEntity, LayoutRepository } from '@novu/dal';
+import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { Injectable } from '@nestjs/common';
 
 import { CheckLayoutIsUsedCommand } from './check-layout-is-used.command';

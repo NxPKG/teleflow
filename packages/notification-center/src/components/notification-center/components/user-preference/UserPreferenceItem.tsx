@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { css, cx } from '@emotion/css';
 import { Accordion, Divider } from '@mantine/core';
-import type { IUserPreferenceSettings } from '@novu/client';
+import type { IUserPreferenceSettings } from '@teleflow/client';
 
 import { IThemeUserPreferences } from '../../../../store/teleflow-theme.context';
 import { useStyles } from '../../../../store/styles';

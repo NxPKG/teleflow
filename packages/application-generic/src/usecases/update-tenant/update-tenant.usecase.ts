@@ -1,5 +1,5 @@
 import { ConflictException, Injectable } from '@nestjs/common';
-import { TenantRepository, TenantEntity } from '@novu/dal';
+import { TenantRepository, TenantEntity } from '@teleflow/dal';
 
 import { UpdateTenantCommand } from './update-tenant.command';
 import { GetTenantCommand, GetTenant } from '../get-tenant';

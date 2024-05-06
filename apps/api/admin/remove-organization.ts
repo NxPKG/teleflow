@@ -25,7 +25,7 @@ import {
   TenantRepository,
   TopicRepository,
   TopicSubscribersRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { connect } from './connect-to-dal';
 import { makeJsonBackup } from './make-json-backup';

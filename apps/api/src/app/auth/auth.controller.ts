@@ -17,7 +17,7 @@ import {
   Header,
   HttpStatus,
 } from '@nestjs/common';
-import { MemberRepository, OrganizationRepository, UserRepository, MemberEntity } from '@novu/dal';
+import { MemberRepository, OrganizationRepository, UserRepository, MemberEntity } from '@teleflow/dal';
 import { AuthGuard } from '@nestjs/passport';
 import { IJwtPayload, PasswordResetFlowEnum } from '@novu/shared';
 import { UserRegistrationBodyDto } from './dtos/user-registration.dto';

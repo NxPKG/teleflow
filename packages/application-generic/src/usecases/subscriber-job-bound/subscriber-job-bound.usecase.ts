@@ -5,7 +5,7 @@ import {
   NotificationTemplateEntity,
   NotificationTemplateRepository,
   IntegrationRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChannelTypeEnum,
   InAppProviderIdEnum,

@@ -108,7 +108,7 @@ jobs:
     with:
       ee: true
     if: false
-#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@teleflow/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@teleflow/ws') }}
+#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@teleflow/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@teleflow/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@teleflow/ws') }}
     secrets: inherit
 
   test_providers:
@@ -215,7 +215,7 @@ jobs:
       - uses: ./.github/actions/setup-project
         with:
           # Don't run redis and etc... for other unit tests
-          slim: ${{ !contains(matrix.projectName, '@teleflow/api') && !contains(matrix.projectName, '@teleflow/worker') && !contains(matrix.projectName, '@teleflow/ws') && !contains(matrix.projectName, '@novu/inbound-mail')}}
+          slim: ${{ !contains(matrix.projectName, '@teleflow/api') && !contains(matrix.projectName, '@teleflow/worker') && !contains(matrix.projectName, '@teleflow/ws') && !contains(matrix.projectName, '@teleflow/inbound-mail')}}
       - uses: ./.github/actions/setup-redis-cluster
       - uses: mansagroup/nrwl-nx-action@v3
         name: Lint and build and test

@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { EnvironmentRepository, EnvironmentEntity } from '@novu/dal';
+import { EnvironmentRepository, EnvironmentEntity } from '@teleflow/dal';
 import { IApiRateLimitMaximum } from '@novu/shared';
 import { v4 as uuid } from 'uuid';
 

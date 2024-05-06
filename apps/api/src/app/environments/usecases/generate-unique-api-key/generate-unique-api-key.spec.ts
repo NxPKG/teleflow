@@ -1,4 +1,4 @@
-import { EnvironmentRepository } from '@novu/dal';
+import { EnvironmentRepository } from '@teleflow/dal';
 import { InternalServerErrorException } from '@nestjs/common';
 import { expect } from 'chai';
 import * as sinon from 'sinon';

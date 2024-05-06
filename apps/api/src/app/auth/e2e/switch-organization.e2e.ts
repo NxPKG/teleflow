@@ -1,7 +1,7 @@
 import * as jwt from 'jsonwebtoken';
 import { expect } from 'chai';
-import { OrganizationEntity } from '@novu/dal';
-import { UserSession } from '@novu/testing';
+import { OrganizationEntity } from '@teleflow/dal';
+import { UserSession } from '@teleflow/testing';
 import { IJwtPayload, MemberRoleEnum } from '@novu/shared';
 
 describe('Switch Organization - /auth/organizations/:id/switch (POST)', async () => {

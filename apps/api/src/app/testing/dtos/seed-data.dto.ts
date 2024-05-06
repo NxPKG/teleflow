@@ -1,4 +1,4 @@
-import { UserEntity } from '@novu/dal';
+import { UserEntity } from '@teleflow/dal';
 
 export class SeedDataBodyDto {}
 

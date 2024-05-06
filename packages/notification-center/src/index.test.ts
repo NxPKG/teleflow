@@ -16,7 +16,7 @@ import {
   ButtonTypeEnum,
 } from './index';
 
-describe('@novu/notification-center - general export interface', () => {
+describe('@teleflow/notification-center - general export interface', () => {
   it('validate IStoreQuery interface', () => {
     const storeQuery: IStoreQuery = {
       feedIdentifier: 'abc123',

@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { SubscriberRepository, IntegrationRepository, SubscriberEntity } from '@novu/dal';
+import { SubscriberRepository, IntegrationRepository, SubscriberEntity } from '@teleflow/dal';
 import { AnalyticsService, buildSubscriberKey, InvalidateCacheService } from '@novu/application-generic';
 
 import { DeleteSubscriberCredentialsCommand } from './delete-subscriber-credentials.command';

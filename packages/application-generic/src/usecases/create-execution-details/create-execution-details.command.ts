@@ -1,5 +1,8 @@
 import { IsNotEmpty, IsOptional, IsString, IsDate } from 'class-validator';
-import { ExecutionDetailsEntity, ExecutionDetailsRepository } from '@novu/dal';
+import {
+  ExecutionDetailsEntity,
+  ExecutionDetailsRepository,
+} from '@teleflow/dal';
 import {
   ExecutionDetailsSourceEnum,
   ExecutionDetailsStatusEnum,
@@ -69,7 +72,7 @@ export class CreateExecutionDetailsCommand extends EnvironmentWithSubscriber {
   webhookStatus?: EmailEventStatusEnum | SmsEventStatusEnum;
 
   static getDetailsFromJob(
-    job: IJob,
+    job: IJob
   ): Pick<
     CreateExecutionDetailsCommand,
     | 'environmentId'

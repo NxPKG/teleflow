@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { MessageEntity, MessageRepository, SubscriberEntity } from '@novu/dal';
+import { MessageEntity, MessageRepository, SubscriberEntity } from '@teleflow/dal';
 import { ActorTypeEnum, FeatureFlagsKeysEnum } from '@novu/shared';
 
 import { GetMessagesCommand } from './get-messages.command';

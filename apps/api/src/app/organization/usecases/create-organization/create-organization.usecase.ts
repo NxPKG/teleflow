@@ -1,5 +1,5 @@
 import { BadRequestException, Inject, Injectable, Logger, Scope } from '@nestjs/common';
-import { OrganizationEntity, OrganizationRepository, UserRepository } from '@novu/dal';
+import { OrganizationEntity, OrganizationRepository, UserRepository } from '@teleflow/dal';
 import { ApiServiceLevelEnum, JobTitleEnum, MemberRoleEnum } from '@novu/shared';
 import { AnalyticsService } from '@novu/application-generic';
 

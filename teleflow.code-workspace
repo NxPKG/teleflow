@@ -29,7 +29,7 @@
       "path": "apps/widget"
     },
     {
-      "name": "📦 @novu/dal",
+      "name": "📦 @teleflow/dal",
       "path": "libs/dal"
     },
     {
@@ -45,7 +45,7 @@
       "path": "packages/cli"
     },
     {
-      "name": "📦 @novu/client",
+      "name": "📦 @teleflow/client",
       "path": "packages/client"
     },
     {
@@ -57,7 +57,7 @@
       "path": "libs/shared"
     },
     {
-      "name": "📦 @novu/testing",
+      "name": "📦 @teleflow/testing",
       "path": "libs/testing"
     },
     {
@@ -69,7 +69,7 @@
       "path": "packages/node"
     },
     {
-      "name": "📦 @novu/notification-center",
+      "name": "📦 @teleflow/notification-center",
       "path": "packages/notification-center"
     },
     {
@@ -77,7 +77,7 @@
       "path": "packages/notification-center-vue"
     },
     {
-      "name": "📦 @novu/notification-center-angular",
+      "name": "📦 @teleflow/notification-center-angular",
       "path": "packages/notification-center-angular"
     },
     {

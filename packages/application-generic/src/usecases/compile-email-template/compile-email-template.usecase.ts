@@ -3,7 +3,7 @@ import { merge } from 'lodash';
 import { readFile } from 'fs/promises';
 import { ModuleRef } from '@nestjs/core';
 
-import { IEmailBlock, OrganizationRepository } from '@novu/dal';
+import { IEmailBlock, OrganizationRepository } from '@teleflow/dal';
 
 import {
   CompileTemplate,

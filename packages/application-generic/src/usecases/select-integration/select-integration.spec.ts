@@ -9,7 +9,7 @@ import {
   SubscriberRepository,
   TenantRepository,
   MessageRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { SelectIntegration } from './select-integration.usecase';
 import { SelectIntegrationCommand } from './select-integration.command';
@@ -79,8 +79,8 @@ const novuIntegration: IntegrationEntity = {
 
 const findOneMock = jest.fn(() => testIntegration);
 
-jest.mock('@novu/dal', () => ({
-  ...jest.requireActual('@novu/dal'),
+jest.mock('@teleflow/dal', () => ({
+  ...jest.requireActual('@teleflow/dal'),
   IntegrationRepository: jest.fn(() => ({
     findOne: findOneMock,
   })),
@@ -115,11 +115,11 @@ describe('select integration', function () {
         new ExecutionLogRoute(
           new CreateExecutionDetails(new ExecutionDetailsRepository()),
           new ExecutionLogQueueService(new WorkflowInMemoryProviderService()),
-          new GetFeatureFlag(new FeatureFlagsService()),
+          new GetFeatureFlag(new FeatureFlagsService())
         ),
-        new CompileTemplate(),
+        new CompileTemplate()
       ),
-      new TenantRepository(),
+      new TenantRepository()
     );
     jest.clearAllMocks();
   });
@@ -132,7 +132,7 @@ describe('select integration', function () {
         organizationId: 'organizationId',
         userId: 'userId',
         filterData: {},
-      }),
+      })
     );
 
     expect(integration).not.toBeNull();
@@ -149,7 +149,7 @@ describe('select integration', function () {
         organizationId: 'organizationId',
         userId: 'userId',
         filterData: {},
-      }),
+      })
     );
 
     expect(integration).not.toBeNull();
@@ -181,7 +181,7 @@ describe('select integration', function () {
           organizationId,
           userId,
           filterData: {},
-        }),
+        })
       );
 
       expect(findOneMock).toHaveBeenCalledWith(
@@ -195,8 +195,8 @@ describe('select integration', function () {
           }),
         },
         undefined,
-        { query: { sort: { createdAt: -1 } } },
+        { query: { sort: { createdAt: -1 } } }
       );
-    },
+    }
   );
 });

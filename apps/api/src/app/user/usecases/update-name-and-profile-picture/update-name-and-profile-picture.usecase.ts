@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ApiException, buildUserKey, InvalidateCacheService } from '@novu/application-generic';
-import { UserEntity, UserRepository } from '@novu/dal';
+import { UserEntity, UserRepository } from '@teleflow/dal';
 
 import { BaseUserProfileUsecase } from '../base-user-profile.usecase';
 import { UpdateNameAndProfilePictureCommand } from './update-name-and-profile-picture.command';

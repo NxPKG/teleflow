@@ -5,17 +5,17 @@ import {
   FieldOperatorEnum,
   StepTypeEnum,
 } from '@novu/shared';
-import { MessageTemplateEntity } from '@novu/dal';
+import { MessageTemplateEntity } from '@teleflow/dal';
 
 import { ConditionsFilter } from '../conditions-filter';
 import { SelectVariant } from './select-variant.usecase';
-import { MessageTemplateRepository } from '@novu/dal';
+import { MessageTemplateRepository } from '@teleflow/dal';
 import { SelectVariantCommand } from './select-variant.command';
 
 const findOneMessageTemplateMock = jest.fn(() => testVariant);
 
-jest.mock('@novu/dal', () => ({
-  ...jest.requireActual('@novu/dal'),
+jest.mock('@teleflow/dal', () => ({
+  ...jest.requireActual('@teleflow/dal'),
   MessageTemplateRepository: jest.fn(() => ({
     findOne: findOneMessageTemplateMock,
   })),

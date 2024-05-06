@@ -1,7 +1,12 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-import { DalService, IntegrationRepository, NotificationGroupRepository, NotificationTemplateEntity } from '@novu/dal';
+import {
+  DalService,
+  IntegrationRepository,
+  NotificationGroupRepository,
+  NotificationTemplateEntity,
+} from '@teleflow/dal';
 import {
   UserSession,
   SubscribersService,
@@ -11,8 +16,8 @@ import {
   UserService,
   EnvironmentService,
   CreateTemplatePayload,
-} from '@novu/testing';
-import { JobsService } from '@novu/testing';
+} from '@teleflow/testing';
+import { JobsService } from '@teleflow/testing';
 import {
   ChannelTypeEnum,
   getPopularTemplateIds,

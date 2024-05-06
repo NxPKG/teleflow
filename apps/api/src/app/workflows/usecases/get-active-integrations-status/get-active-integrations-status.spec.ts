@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { ChannelTypeEnum, EmailProviderIdEnum, InAppProviderIdEnum } from '@novu/shared';
-import { IntegrationService, NotificationTemplateService, UserSession } from '@novu/testing';
+import { IntegrationService, NotificationTemplateService, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import { SharedModule } from '../../../shared/shared.module';
 import { WorkflowResponse } from '../../dto/workflow-response.dto';

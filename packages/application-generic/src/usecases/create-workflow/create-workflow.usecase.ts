@@ -15,7 +15,7 @@ import {
   NotificationGroupRepository,
   NotificationStepEntity,
   NotificationTemplateRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   INotificationTemplateStep,

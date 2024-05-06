@@ -1,7 +1,7 @@
 import '../../src/config';
 
 import { NestFactory } from '@nestjs/core';
-import { SubscriberRepository, TopicSubscribersRepository } from '@novu/dal';
+import { SubscriberRepository, TopicSubscribersRepository } from '@teleflow/dal';
 
 import { AppModule } from '../../src/app.module';
 

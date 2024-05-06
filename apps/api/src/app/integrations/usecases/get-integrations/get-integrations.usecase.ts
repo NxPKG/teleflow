@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { IntegrationEntity } from '@novu/dal';
+import { IntegrationEntity } from '@teleflow/dal';
 import { GetDecryptedIntegrationsCommand, GetDecryptedIntegrations } from '@novu/application-generic';
 
 import { GetIntegrationsCommand } from './get-integrations.command';

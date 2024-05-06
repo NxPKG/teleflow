@@ -1,5 +1,5 @@
 import * as sinon from 'sinon';
-import { OrganizationRepository } from '@novu/dal';
+import { OrganizationRepository } from '@teleflow/dal';
 import { expect } from 'chai';
 import { ApiServiceLevelEnum } from '@novu/shared';
 import { StripeBillingIntervalEnum, StripeUsageTypeEnum } from '@novu/ee-billing/src/stripe/types';

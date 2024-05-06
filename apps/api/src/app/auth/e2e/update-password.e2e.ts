@@ -1,5 +1,5 @@
 import { IJwtPayload } from '@novu/shared';
-import { CYPRESS_USER_PASSWORD, UserSession } from '@novu/testing';
+import { CYPRESS_USER_PASSWORD, UserSession } from '@teleflow/testing';
 import { expect } from 'chai';
 import * as jwt from 'jsonwebtoken';
 

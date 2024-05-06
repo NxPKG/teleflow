@@ -5,7 +5,7 @@ import {
   IntegrationRepository,
   MemberRepository,
   MessageRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { ChannelTypeEnum, providers } from '@novu/shared';
 import { IEmailProvider, ISmsProvider } from '@teleflow/stateless';
 import {

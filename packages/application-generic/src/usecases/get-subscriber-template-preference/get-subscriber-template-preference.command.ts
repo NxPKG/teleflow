@@ -1,4 +1,4 @@
-import { NotificationTemplateEntity, SubscriberEntity } from '@novu/dal';
+import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 import { IsDefined, IsNotEmpty, IsOptional } from 'class-validator';
 
 import { EnvironmentWithSubscriber } from '../../commands';

@@ -1,5 +1,5 @@
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
-import type { IUserPreferenceSettings } from '@novu/client';
+import type { IUserPreferenceSettings } from '@teleflow/client';
 
 import { useNovuContext } from './useNovuContext';
 import { useFetchUserPreferencesQueryKey } from './useFetchUserPreferencesQueryKey';

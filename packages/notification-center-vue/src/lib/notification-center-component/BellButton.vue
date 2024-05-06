@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { colors as themeColors } from '@novu/notification-center';
+import { colors as themeColors } from '@teleflow/notification-center';
 
 export interface ISvgStopColor {
   stopColor?: string;

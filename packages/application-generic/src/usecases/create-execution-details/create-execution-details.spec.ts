@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
-import { UserSession } from '@novu/testing';
-import { ExecutionDetailsRepository } from '@novu/dal';
+import { UserSession } from '@teleflow/testing';
+import { ExecutionDetailsRepository } from '@teleflow/dal';
 import {
   ExecutionDetailsSourceEnum,
   ExecutionDetailsStatusEnum,

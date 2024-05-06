@@ -3,7 +3,7 @@ import {
   ExecutionDetailsRepository,
   ExecutionDetailsEntity,
   DalException,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { BulkCreateExecutionDetailsCommand } from './bulk-create-execution-details.command';
 

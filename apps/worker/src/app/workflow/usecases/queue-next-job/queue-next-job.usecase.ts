@@ -1,5 +1,5 @@
 import { forwardRef, Inject, Injectable } from '@nestjs/common';
-import { JobEntity, JobRepository } from '@novu/dal';
+import { JobEntity, JobRepository } from '@teleflow/dal';
 import { AddJob, InstrumentUsecase } from '@novu/application-generic';
 
 import { QueueNextJobCommand } from './queue-next-job.command';

@@ -1,5 +1,5 @@
 import { IsDefined, IsOptional } from 'class-validator';
-import { JobEntity } from '@novu/dal';
+import { JobEntity } from '@teleflow/dal';
 
 import { BaseCommand } from '../../commands/base.command';
 import { IChimeraDigestResponse } from '../../utils/require-inject';

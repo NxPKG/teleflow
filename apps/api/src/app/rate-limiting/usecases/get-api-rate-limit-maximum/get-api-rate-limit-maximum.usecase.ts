@@ -1,5 +1,5 @@
 import { Injectable, InternalServerErrorException, Logger } from '@nestjs/common';
-import { EnvironmentRepository, OrganizationRepository } from '@novu/dal';
+import { EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
 import { buildMaximumApiRateLimitKey, CachedEntity, InstrumentUsecase } from '@novu/application-generic';
 import { ApiRateLimitCategoryEnum, ApiServiceLevelEnum, IApiRateLimitMaximum } from '@novu/shared';
 import { GetApiRateLimitMaximumCommand } from './get-api-rate-limit-maximum.command';

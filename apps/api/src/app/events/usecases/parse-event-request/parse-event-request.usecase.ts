@@ -21,7 +21,7 @@ import {
   NotificationTemplateRepository,
   NotificationTemplateEntity,
   TenantRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 
 import { ParseEventRequestCommand } from './parse-event-request.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';

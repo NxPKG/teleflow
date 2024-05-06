@@ -6,7 +6,7 @@ import iFrameResize from 'iframe-resizer';
 import * as EventTypes from './shared/eventTypes';
 import { UnmountedError, DomainVerificationError } from './shared/errors';
 import { IFRAME_URL } from './shared/resources';
-import type { IStore, ITab, INotificationCenterStyles, ColorScheme } from '@novu/notification-center';
+import type { IStore, ITab, INotificationCenterStyles, ColorScheme } from '@teleflow/notification-center';
 
 const WEASL_WRAPPER_ID = 'novu-container';
 const IFRAME_ID = 'novu-iframe-element';

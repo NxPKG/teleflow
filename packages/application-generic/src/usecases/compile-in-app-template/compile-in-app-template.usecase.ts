@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { OrganizationEntity, OrganizationRepository } from '@novu/dal';
+import { OrganizationEntity, OrganizationRepository } from '@teleflow/dal';
 import { IMessageButton } from '@novu/shared';
 import { ModuleRef } from '@nestjs/core';
 

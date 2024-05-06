@@ -1,5 +1,5 @@
 import { Title, Text, UnstyledButton, useMantineTheme } from '@mantine/core';
-import { colors } from '@novu/notification-center';
+import { colors } from '@teleflow/notification-center';
 import { Faq } from '../../quick-start/components/QuickStartWrapper';
 import { FrameworkDisplay } from './FrameworkDisplay';
 

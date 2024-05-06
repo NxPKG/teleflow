@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { ITelelfowThemeProvider, IStore, ITab, ITranslationEntry } from '@novu/notification-center';
+import { ITelelfowThemeProvider, IStore, ITab, ITranslationEntry } from '@teleflow/notification-center';
 
 declare namespace Cypress {
   interface Chainable {

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { SubscribersService, testServer, UserSession } from '@novu/testing';
+import { SubscribersService, testServer, UserSession } from '@teleflow/testing';
 import {
   ChannelCTATypeEnum,
   ChannelTypeEnum,
@@ -23,7 +23,7 @@ import {
   SubscriberEntity,
   OrganizationRepository,
   NotificationTemplateEntity,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import { isSameDay } from 'date-fns';
 import { CreateWorkflowRequestDto } from '../dto';
 

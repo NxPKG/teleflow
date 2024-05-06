@@ -1,5 +1,5 @@
 import { IsDefined } from 'class-validator';
-import { JobEntity } from '@novu/dal';
+import { JobEntity } from '@teleflow/dal';
 
 import { EnvironmentWithUserCommand } from '../../commands';
 

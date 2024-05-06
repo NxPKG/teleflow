@@ -1,6 +1,6 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import * as Sentry from '@sentry/node';
-import { OrganizationRepository, IntegrationEntity } from '@novu/dal';
+import { OrganizationRepository, IntegrationEntity } from '@teleflow/dal';
 import { ChannelTypeEnum, EmailProviderIdEnum, IEmailOptions } from '@novu/shared';
 import { ModuleRef } from '@nestjs/core';
 

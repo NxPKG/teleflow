@@ -16,8 +16,8 @@ import {
   EnvironmentRepository,
   TenantRepository,
   NotificationTemplateRepository,
-} from '@novu/dal';
-import { UserSession, SubscribersService, WorkflowOverrideService } from '@novu/testing';
+} from '@teleflow/dal';
+import { UserSession, SubscribersService, WorkflowOverrideService } from '@teleflow/testing';
 import {
   ChannelTypeEnum,
   EmailBlockTypeEnum,

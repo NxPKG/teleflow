@@ -8,7 +8,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { OrganizationRepository } from '@novu/dal';
+import { OrganizationRepository } from '@teleflow/dal';
 import {
   ApiServiceLevelEnum,
   IJwtPayload,

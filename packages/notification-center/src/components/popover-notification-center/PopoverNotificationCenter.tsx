@@ -2,7 +2,7 @@ import React from 'react';
 import { PopoverProps } from '@mantine/core';
 
 import { IMessage, IMessageAction, ButtonTypeEnum } from '@novu/shared';
-import { IUserPreferenceSettings } from '@novu/client';
+import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { NotificationCenter } from '../notification-center';
 import { INotificationBellProps } from '../notification-bell';

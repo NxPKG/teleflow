@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SubscriberEntity, SubscriberRepository } from '@novu/dal';
+import { SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 
 import {
   InvalidateCacheService,

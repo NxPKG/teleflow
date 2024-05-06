@@ -3,7 +3,7 @@ import {
   MessageTemplateEntity,
   MessageTemplateRepository,
   LayoutRepository,
-} from '@novu/dal';
+} from '@teleflow/dal';
 import {
   ChangeEntityTypeEnum,
   IMessageAction,
