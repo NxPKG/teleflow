@@ -1,5 +1,5 @@
 import { ChannelTypeEnum } from '@novu/shared';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 import {
   IIntegrations,
   IIntegrationsPayload,

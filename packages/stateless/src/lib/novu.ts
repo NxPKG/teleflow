@@ -1,6 +1,6 @@
 import merge from 'lodash.merge';
 import { EventEmitter } from 'events';
-import { INovuConfig } from './novu.interface';
+import { INovuConfig } from './teleflow.interface';
 import {
   IEmailProvider,
   ISmsProvider,

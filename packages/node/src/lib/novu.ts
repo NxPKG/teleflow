@@ -3,7 +3,7 @@ import { getEnvVariable } from '@novu/shared/utils';
 import { Subscribers } from './subscribers/subscribers';
 import { EventEmitter } from 'events';
 import { Changes } from './changes/changes';
-import { INovuConfiguration } from './novu.interface';
+import { INovuConfiguration } from './teleflow.interface';
 import { Events } from './events/events';
 import { Layouts } from './layouts/layouts';
 import { NotificationGroups } from './notification-groups/notification-groups';

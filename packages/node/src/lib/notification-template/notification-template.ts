@@ -2,7 +2,7 @@ import {
   INotificationTemplatePayload,
   INotificationTemplates,
 } from './notification-template.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class NotificationTemplates
   extends WithHttp

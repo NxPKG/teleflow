@@ -4,7 +4,7 @@ import {
   IEvents,
   ITriggerPayloadOptions,
 } from './events.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Events extends WithHttp implements IEvents {
   async trigger(workflowIdentifier: string, data: ITriggerPayloadOptions) {

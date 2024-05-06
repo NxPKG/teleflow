@@ -5,7 +5,7 @@ import { IContentEngine } from '../content/content.engine';
 
 import { EmailHandler } from '../handler/email.handler';
 import { SmsHandler } from '../handler/sms.handler';
-import { INovuConfig } from '../novu.interface';
+import { INovuConfig } from '../teleflow.interface';
 import { ProviderStore } from '../provider/provider.store';
 import {
   ChannelTypeEnum,

@@ -14,7 +14,7 @@ import {
   IUpdateSubscriberGlobalPreferencePayload,
   IUpdateSubscriberPreferencePayload,
 } from './subscriber.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Subscribers extends WithHttp implements ISubscribers {
   async list(page = 0, limit = 10) {

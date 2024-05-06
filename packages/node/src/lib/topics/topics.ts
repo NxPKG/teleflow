@@ -5,7 +5,7 @@ import {
   ITopics,
   ITopicSubscribersPayload,
 } from './topic.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 const BASE_PATH = '/topics';
 

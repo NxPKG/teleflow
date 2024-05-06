@@ -3,7 +3,7 @@ import {
   IEnvironments,
   IEnvironmentUpdatePayload,
 } from './environments.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Environments extends WithHttp implements IEnvironments {
   async getCurrent() {

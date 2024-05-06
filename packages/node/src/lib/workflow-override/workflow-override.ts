@@ -3,7 +3,7 @@ import {
   IWorkflowOverrides,
   IWorkflowOverrideUpdatePayload,
 } from './workflow-override.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class WorkflowOverrides extends WithHttp implements IWorkflowOverrides {
   /**
