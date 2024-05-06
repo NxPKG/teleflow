@@ -7,7 +7,7 @@ import {
   ITranslationEntry,
   ITab,
   IStore,
-  useNovuContext,
+  useTeleflowContext,
   ColorScheme,
   IUserPreferenceSettings,
 } from '@teleflow/notification-center';
@@ -168,7 +168,7 @@ function NovuNotificationCenterWrapper({
   doLogout: boolean;
   setDoLogout: (val: boolean) => void;
 }) {
-  const { logout } = useNovuContext();
+  const { logout } = useTeleflowContext();
   useEffect(() => {
     if (doLogout) {
       logout();

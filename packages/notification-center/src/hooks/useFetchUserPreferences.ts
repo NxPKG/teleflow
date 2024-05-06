@@ -1,13 +1,13 @@
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
 import type { IUserPreferenceSettings } from '@teleflow/client';
 
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import { useFetchUserPreferencesQueryKey } from './useFetchUserPreferencesQueryKey';
 
 export const useFetchUserPreferences = (
   options: UseQueryOptions<IUserPreferenceSettings[], Error, IUserPreferenceSettings[]> = {}
 ) => {
-  const { apiService, isSessionInitialized, fetchingStrategy } = useNovuContext();
+  const { apiService, isSessionInitialized, fetchingStrategy } = useTeleflowContext();
   const userPreferencesQueryKey = useFetchUserPreferencesQueryKey();
 
   const result = useQuery<IUserPreferenceSettings[], Error, IUserPreferenceSettings[]>(

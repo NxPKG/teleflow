@@ -2,7 +2,7 @@ export * from './LocaleSelect';
 export * from './EmailMobile';
 export * from './PreviewEditOverlay';
 export * from './PreviewUserIcon';
-export * from './NovuGreyIcon';
+export * from './TeleflowGreyIcon';
 export * from './EmojiIcon';
 export * from './SendIcon';
 export * from './phone-simulator';

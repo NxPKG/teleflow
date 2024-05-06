@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient, UseMutationOptions, InfiniteData } from '@tanstack/react-query';
 import { IMessage, ButtonTypeEnum, MessageActionStatusEnum, IPaginatedResponse } from '@novu/shared';
 
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 import { useFetchNotificationsQueryKey } from './useFetchNotificationsQueryKey';
 
 interface IUpdateActionVariables {
@@ -18,7 +18,7 @@ export const useUpdateAction = ({
   onSuccess?: () => void;
 } & UseMutationOptions<IMessage, Error, IUpdateActionVariables> = {}) => {
   const queryClient = useQueryClient();
-  const { apiService } = useNovuContext();
+  const { apiService } = useTeleflowContext();
   const fetchNotificationsQueryKey = useFetchNotificationsQueryKey();
 
   const { mutate, ...result } = useMutation<IMessage, Error, IUpdateActionVariables>(

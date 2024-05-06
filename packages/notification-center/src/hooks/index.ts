@@ -2,7 +2,7 @@ export * from './useSocket';
 export * from './useUnseenCount';
 export * from './useUnreadCount';
 export * from './useNotifications';
-export * from './useNovuContext';
+export * from './useTeleflowContext';
 export * from './useTelelfowTheme';
 export * from './useNotificationCenter';
 export * from './useTranslations';

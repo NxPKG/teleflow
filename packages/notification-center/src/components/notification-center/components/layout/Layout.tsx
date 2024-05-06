@@ -7,7 +7,7 @@ import { UserPreferenceHeader } from './header/UserPreferenceHeader';
 import { FooterContainer as Footer } from './footer/FooterContainer';
 
 import { Loader } from '../Loader';
-import { useNotificationCenter, useNovuContext, useTelelfowTheme } from '../../../../hooks';
+import { useNotificationCenter, useTeleflowContext, useTelelfowTheme } from '../../../../hooks';
 import { SubscriberPreference } from '../user-preference/SubscriberPreference';
 import { FeedsTabs } from '../FeedsTabs';
 import { ITelelfowTheme } from '../../../../store/teleflow-theme.context';
@@ -16,7 +16,7 @@ import { ScreensEnum } from '../../../../shared/interfaces';
 
 export function Layout() {
   const { header } = useNotificationCenter();
-  const { isSessionInitialized } = useNovuContext();
+  const { isSessionInitialized } = useTeleflowContext();
   const { theme } = useTelelfowTheme();
   const [layoutStyles] = useStyles(['layout.root']);
   const [screen, setScreen] = useState<ScreensEnum>(ScreensEnum.NOTIFICATIONS);

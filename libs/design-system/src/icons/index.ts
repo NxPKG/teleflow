@@ -242,8 +242,8 @@ export {
 } from './general/WarningIcon';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
-  MadeByNovu,
-} from './general/MadeByNovu';
+  MadeByTeleflow,
+} from './general/MadeByTeleflow';
 export {
   /** @deprecated - Use https://react-icons.github.io/react-icons/icons/md/ for names with "Icon" instead of "Md" */
   Pencil,

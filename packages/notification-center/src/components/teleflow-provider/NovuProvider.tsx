@@ -12,7 +12,7 @@ import { INotificationCenterStyles, StylesProvider } from '../../store/styles';
 import { applyToken, removeToken } from '../../utils/token';
 import { useSession } from '../../hooks/useSession';
 import { useInitializeSocket } from '../../hooks/useInitializeSocket';
-import { useFetchOrganization, useNovuContext } from '../../hooks';
+import { useFetchOrganization, useTeleflowContext } from '../../hooks';
 import { SESSION_QUERY_KEY } from '../../hooks/queryKeys';
 
 export const queryClient = new QueryClient({
@@ -158,7 +158,7 @@ const SessionInitializer = ({
   children: ReactElement;
   onSuccess: (newSession: ISession) => void;
 }) => {
-  const { onLoad } = useNovuContext();
+  const { onLoad } = useTeleflowContext();
 
   useSession({ onSuccess });
 
