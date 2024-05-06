@@ -1,3 +1,3 @@
 import { NovuStateless } from '@teleflow/stateless';
 
-export class NovuService extends NovuStateless {}
+export class TeleflowService extends NovuStateless {}

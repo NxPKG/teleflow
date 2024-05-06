@@ -13,8 +13,8 @@ import { GetActiveIntegrationsStatusCommand } from './get-active-integrations-st
 import { IntegrationResponseDto } from '../../../integrations/dtos/integration-response.dto';
 import { WorkflowResponse } from '../../dto/workflow-response.dto';
 import {
-  CalculateLimitNovuIntegration,
-  CalculateLimitNovuIntegrationCommand,
+  CalculateLimitTeleflowIntegration,
+  CalculateLimitTeleflowIntegrationCommand,
   NotificationStep,
 } from '@novu/application-generic';
 
@@ -22,7 +22,7 @@ import {
 export class GetActiveIntegrationsStatus {
   constructor(
     private getActiveIntegrationUsecase: GetActiveIntegrations,
-    private calculateLimitNovuIntegrationUsecase: CalculateLimitNovuIntegration
+    private calculateLimitTeleflowIntegrationUsecase: CalculateLimitTeleflowIntegration
   ) {}
 
   async execute(command: GetActiveIntegrationsStatusCommand): Promise<WorkflowResponse[] | WorkflowResponse> {
@@ -150,8 +150,8 @@ export class GetActiveIntegrationsStatus {
     for (const primaryTeleflowProvider of primaryTeleflowProviders) {
       const channelType = primaryTeleflowProvider.channel;
       let hasLimitReached = true;
-      const limit = await this.calculateLimitNovuIntegrationUsecase.execute(
-        CalculateLimitNovuIntegrationCommand.create({
+      const limit = await this.calculateLimitTeleflowIntegrationUsecase.execute(
+        CalculateLimitTeleflowIntegrationCommand.create({
           channelType,
           environmentId: command.environmentId,
           organizationId: command.organizationId,

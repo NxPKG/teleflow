@@ -2,7 +2,7 @@ import { JobTopicNameEnum } from '@novu/shared';
 import { Logger } from '@nestjs/common';
 
 import { BullMqService, Processor, Worker, WorkerOptions } from '../bull-mq';
-import { INovuWorker } from '../readiness';
+import { ITeleflowWorker } from '../readiness';
 
 const LOG_CONTEXT = 'WorkerService';
 
@@ -13,7 +13,7 @@ export type WorkerProcessor =
 
 export { WorkerOptions };
 
-export class WorkerBaseService implements INovuWorker {
+export class WorkerBaseService implements ITeleflowWorker {
   private instance: BullMqService;
 
   public readonly DEFAULT_ATTEMPTS = 3;

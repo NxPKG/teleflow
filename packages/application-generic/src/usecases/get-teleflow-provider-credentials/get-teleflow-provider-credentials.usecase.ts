@@ -9,7 +9,7 @@ import {
   SmsProviderIdEnum,
 } from '@novu/shared';
 import { AnalyticsService } from '../../services/analytics.service';
-import { CalculateLimitNovuIntegration } from '../calculate-limit-teleflow-integration';
+import { CalculateLimitTeleflowIntegration } from '../calculate-limit-teleflow-integration';
 
 import { GetTeleflowProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
 
@@ -17,17 +17,17 @@ import { GetTeleflowProviderCredentialsCommand } from './get-teleflow-provider-c
 export class GetTeleflowProviderCredentials {
   constructor(
     private analyticsService: AnalyticsService,
-    protected calculateLimitNovuIntegration: CalculateLimitNovuIntegration,
+    protected calculateLimitTeleflowIntegration: CalculateLimitTeleflowIntegration
   ) {}
 
   async execute(
-    integration: GetTeleflowProviderCredentialsCommand,
+    integration: GetTeleflowProviderCredentialsCommand
   ): Promise<ICredentials> {
     if (
       integration.providerId === EmailProviderIdEnum.Novu ||
       integration.providerId === SmsProviderIdEnum.Novu
     ) {
-      const limit = await this.calculateLimitNovuIntegration.execute({
+      const limit = await this.calculateLimitTeleflowIntegration.execute({
         channelType: integration.channelType,
         environmentId: integration.environmentId,
         organizationId: integration.organizationId,
@@ -35,7 +35,7 @@ export class GetTeleflowProviderCredentials {
 
       if (!limit) {
         throw new ConflictException(
-          `Limit for Novu's ${integration.channelType.toLowerCase()} provider does not exists.`,
+          `Limit for Novu's ${integration.channelType.toLowerCase()} provider does not exists.`
         );
       }
 
@@ -49,10 +49,10 @@ export class GetTeleflowProviderCredentials {
             organizationId: integration.organizationId,
             providerId: integration.providerId,
             ...limit,
-          },
+          }
         );
         throw new ConflictException(
-          `Limit for Novu's ${integration.channelType.toLowerCase()} provider was reached.`,
+          `Limit for Novu's ${integration.channelType.toLowerCase()} provider was reached.`
         );
       }
     }
@@ -75,7 +75,7 @@ export class GetTeleflowProviderCredentials {
     }
 
     throw new NotFoundException(
-      `Credentials for Novu's ${integration.channelType.toLowerCase()} provider could not be found`,
+      `Credentials for Novu's ${integration.channelType.toLowerCase()} provider could not be found`
     );
   }
 }

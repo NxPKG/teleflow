@@ -1,6 +1,6 @@
 import merge from 'lodash.merge';
 import { EventEmitter } from 'events';
-import { INovuConfig } from './teleflow.interface';
+import { ITeleflowConfig } from './teleflow.interface';
 import {
   IEmailProvider,
   ISmsProvider,
@@ -22,13 +22,13 @@ export class NovuStateless extends EventEmitter {
   private readonly templateStore: TemplateStore;
   private readonly providerStore: ProviderStore;
   private readonly themeStore: ThemeStore;
-  private readonly config: INovuConfig;
+  private readonly config: ITeleflowConfig;
   private readonly contentEngine: IContentEngine;
 
-  constructor(config?: INovuConfig) {
+  constructor(config?: ITeleflowConfig) {
     super();
 
-    const defaultConfig: Partial<INovuConfig> = {
+    const defaultConfig: Partial<ITeleflowConfig> = {
       variableProtection: true,
     };
 
@@ -58,12 +58,12 @@ export class NovuStateless extends EventEmitter {
   }
 
   async registerProvider(
-    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   );
 
   async registerProvider(
     providerId: string,
-    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   );
 
   async registerProvider(
@@ -73,15 +73,13 @@ export class NovuStateless extends EventEmitter {
       | ISmsProvider
       | IChatProvider
       | IPushProvider,
-    provider?: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider?: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   ) {
     await this.providerStore.addProvider(
       typeof providerOrProviderId === 'string'
         ? providerOrProviderId
         : provider?.id,
-      typeof providerOrProviderId === 'string'
-        ? provider
-        : providerOrProviderId,
+      typeof providerOrProviderId === 'string' ? provider : providerOrProviderId
     );
   }
 
@@ -96,7 +94,7 @@ export class NovuStateless extends EventEmitter {
       this.themeStore,
       this.contentEngine,
       this.config,
-      this,
+      this
     );
 
     return await triggerEngine.trigger(eventId, data);

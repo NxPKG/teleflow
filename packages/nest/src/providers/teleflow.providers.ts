@@ -1,14 +1,14 @@
 import { Provider } from '@nestjs/common';
 import { NovuStateless } from '@teleflow/stateless';
-import { NOVU_OPTIONS } from '../helpers/constants';
+import { TELEFLOW_OPTIONS } from '../helpers/constants';
 import {
-  INovuModuleAsyncOptions,
-  INovuOptions,
-  INovuOptionsFactory,
+  ITeleflowModuleAsyncOptions,
+  ITeleflowOptions,
+  ITeleflowOptionsFactory,
 } from '../interfaces';
-import { NovuService } from '../services';
+import { TeleflowService } from '../services';
 
-async function novuServiceFactory(options: INovuOptions) {
+async function novuServiceFactory(options: ITeleflowOptions) {
   const novu = new NovuStateless();
   if (options.providers) {
     for (const provider of options.providers) {
@@ -25,32 +25,32 @@ async function novuServiceFactory(options: INovuOptions) {
   return novu;
 }
 
-export function createTeleflowProviders(options: INovuOptions): Provider[] {
+export function createTeleflowProviders(options: ITeleflowOptions): Provider[] {
   return [
     {
-      provide: NovuService,
+      provide: TeleflowService,
       useFactory: novuServiceFactory,
-      inject: [NOVU_OPTIONS],
+      inject: [TELEFLOW_OPTIONS],
     },
     {
-      provide: NOVU_OPTIONS,
+      provide: TELEFLOW_OPTIONS,
       useValue: options,
     },
   ];
 }
 
 export function createAsyncTeleflowProviders(
-  options: INovuModuleAsyncOptions
+  options: ITeleflowModuleAsyncOptions
 ): Provider[] {
   if (options.useFactory) {
     return [
       {
-        provide: NovuService,
+        provide: TeleflowService,
         useFactory: novuServiceFactory,
-        inject: [NOVU_OPTIONS],
+        inject: [TELEFLOW_OPTIONS],
       },
       {
-        provide: NOVU_OPTIONS,
+        provide: TELEFLOW_OPTIONS,
         useFactory: options.useFactory,
         inject: options.inject || [],
       },
@@ -59,13 +59,13 @@ export function createAsyncTeleflowProviders(
 
   return [
     {
-      provide: NovuService,
+      provide: TeleflowService,
       useFactory: novuServiceFactory,
-      inject: [NOVU_OPTIONS],
+      inject: [TELEFLOW_OPTIONS],
     },
     {
-      provide: NOVU_OPTIONS,
-      useFactory: (instance: INovuOptionsFactory) =>
+      provide: TELEFLOW_OPTIONS,
+      useFactory: (instance: ITeleflowOptionsFactory) =>
         instance.createNovuOptions(),
       inject: [options.useExisting || options.useClass],
     },

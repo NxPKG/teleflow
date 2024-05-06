@@ -43,11 +43,11 @@ Using novu's singleton service in other services and modules:
 
 ```javascript
 import { Injectable, Inject } from '@nestjs/common';
-import { NovuService } from '@teleflow/nest';
+import { TeleflowService } from '@teleflow/nest';
 
 @Injectable()
 export class UserService {
-  constructor(private readonly novu: NovuService) {}
+  constructor(private readonly novu: TeleflowService) {}
 
   async triggerEvent() {
     await this.novu.trigger('password-reset', {

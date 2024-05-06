@@ -11,24 +11,24 @@ import {
   areNovuEmailCredentialsSet,
   areNovuSmsCredentialsSet,
 } from '../../utils/teleflow-integrations';
-import { CalculateLimitNovuIntegrationCommand } from './calculate-limit-teleflow-integration.command';
+import { CalculateLimitTeleflowIntegrationCommand } from './calculate-limit-teleflow-integration.command';
 
 @Injectable()
-export class CalculateLimitNovuIntegration {
+export class CalculateLimitTeleflowIntegration {
   constructor(private messageRepository: MessageRepository) {}
 
   static MAX_NOVU_INTEGRATION_MAIL_REQUESTS = parseInt(
     process.env.MAX_NOVU_INTEGRATION_MAIL_REQUESTS || '300',
-    10,
+    10
   );
 
   static MAX_NOVU_INTEGRATION_SMS_REQUESTS = parseInt(
     process.env.MAX_NOVU_INTEGRATION_SMS_REQUESTS || '20',
-    10,
+    10
   );
 
   async execute(
-    command: CalculateLimitNovuIntegrationCommand,
+    command: CalculateLimitTeleflowIntegrationCommand
   ): Promise<{ limit: number; count: number } | undefined> {
     const channelType = command.channelType;
 
@@ -43,15 +43,16 @@ export class CalculateLimitNovuIntegration {
       return;
     }
 
-    const providerId = CalculateLimitNovuIntegration.getProviderId(channelType);
+    const providerId =
+      CalculateLimitTeleflowIntegration.getProviderId(channelType);
 
     if (providerId === undefined) {
       return;
     }
     const limit =
       channelType === ChannelTypeEnum.EMAIL
-        ? CalculateLimitNovuIntegration.MAX_NOVU_INTEGRATION_MAIL_REQUESTS
-        : CalculateLimitNovuIntegration.MAX_NOVU_INTEGRATION_SMS_REQUESTS;
+        ? CalculateLimitTeleflowIntegration.MAX_NOVU_INTEGRATION_MAIL_REQUESTS
+        : CalculateLimitTeleflowIntegration.MAX_NOVU_INTEGRATION_SMS_REQUESTS;
 
     const messagesCount = await this.messageRepository.count(
       {
@@ -63,7 +64,7 @@ export class CalculateLimitNovuIntegration {
           $lte: endOfMonth(new Date()),
         },
       },
-      limit,
+      limit
     );
 
     return {

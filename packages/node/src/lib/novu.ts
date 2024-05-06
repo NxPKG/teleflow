@@ -3,7 +3,7 @@ import { getEnvVariable } from '@novu/shared/utils';
 import { Subscribers } from './subscribers/subscribers';
 import { EventEmitter } from 'events';
 import { Changes } from './changes/changes';
-import { INovuConfiguration } from './teleflow.interface';
+import { ITeleflowConfiguration } from './teleflow.interface';
 import { Events } from './events/events';
 import { Layouts } from './layouts/layouts';
 import { NotificationGroups } from './notification-groups/notification-groups';
@@ -41,13 +41,13 @@ export class Novu extends EventEmitter {
   readonly organizations: Organizations;
   readonly workflowOverrides: WorkflowOverrides;
 
-  constructor(config?: INovuConfiguration);
-  constructor(apiKey: string, config?: INovuConfiguration);
+  constructor(config?: ITeleflowConfiguration);
+  constructor(apiKey: string, config?: ITeleflowConfiguration);
   constructor(...args: any) {
     super();
 
     let apiKey: string | undefined;
-    let config: INovuConfiguration | undefined;
+    let config: ITeleflowConfiguration | undefined;
 
     if (arguments.length === 2) {
       apiKey = args[0];
@@ -106,7 +106,7 @@ export class Novu extends EventEmitter {
 
   public broadcast: typeof Events.prototype.broadcast;
 
-  private buildBackendUrl(config?: INovuConfiguration) {
+  private buildBackendUrl(config?: ITeleflowConfiguration) {
     const novuApiVersion = 'v1';
 
     if (!config?.backendUrl) {

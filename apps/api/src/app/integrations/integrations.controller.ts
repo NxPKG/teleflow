@@ -13,8 +13,8 @@ import {
 } from '@nestjs/common';
 import { ChannelTypeEnum, IJwtPayload, MemberRoleEnum } from '@novu/shared';
 import {
-  CalculateLimitNovuIntegration,
-  CalculateLimitNovuIntegrationCommand,
+  CalculateLimitTeleflowIntegration,
+  CalculateLimitTeleflowIntegrationCommand,
   OtelSpan,
 } from '@novu/application-generic';
 import { ApiExcludeEndpoint, ApiOperation, ApiTags } from '@nestjs/swagger';
@@ -65,7 +65,7 @@ export class IntegrationsController {
     private updateIntegrationUsecase: UpdateIntegration,
     private setIntegrationAsPrimaryUsecase: SetIntegrationAsPrimary,
     private removeIntegrationUsecase: RemoveIntegration,
-    private calculateLimitNovuIntegration: CalculateLimitNovuIntegration
+    private calculateLimitTeleflowIntegration: CalculateLimitTeleflowIntegration
   ) {}
 
   @Get('/')
@@ -262,8 +262,8 @@ export class IntegrationsController {
     @UserSession() user: IJwtPayload,
     @Param('channelType') channelType: ChannelTypeEnum
   ): Promise<ChannelTypeLimitDto> {
-    const result = await this.calculateLimitNovuIntegration.execute(
-      CalculateLimitNovuIntegrationCommand.create({
+    const result = await this.calculateLimitTeleflowIntegration.execute(
+      CalculateLimitTeleflowIntegrationCommand.create({
         channelType,
         organizationId: user.organizationId,
         environmentId: user.environmentId,

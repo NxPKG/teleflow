@@ -1,7 +1,7 @@
 import { AxiosError, AxiosInstance } from 'axios';
 import axiosRetry, { isNetworkError } from 'axios-retry';
 import { v4 as uuid } from 'uuid';
-import { INovuConfiguration } from './teleflow.interface';
+import { ITeleflowConfiguration } from './teleflow.interface';
 
 export const RETRYABLE_HTTP_CODES = [408, 422, 429];
 const NON_IDEMPOTENT_METHODS = ['post', 'patch'];
@@ -13,7 +13,7 @@ const DEFAULT_WAIT_MAX = 30;
 
 export function makeRetryable(
   axios: AxiosInstance,
-  config?: INovuConfiguration,
+  config?: ITeleflowConfiguration
 ) {
   axios.interceptors.request.use((axiosConfig) => {
     if (

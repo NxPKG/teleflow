@@ -1,6 +1,6 @@
 import { LayoutRepository } from '@teleflow/dal';
 import { Injectable } from '@nestjs/common';
-import { GetNovuLayout } from '@novu/application-generic';
+import { GetTeleflowLayout } from '@novu/application-generic';
 
 import { CreateDefaultLayoutCommand } from './create-default-layout.command';
 import { SetDefaultLayoutUseCase } from '../set-default-layout';
@@ -13,7 +13,7 @@ export class CreateDefaultLayout {
     private setDefaultLayout: SetDefaultLayoutUseCase,
     private layoutRepository: LayoutRepository,
     private createLayout: CreateLayoutUseCase,
-    private getNovuLayout: GetNovuLayout
+    private getTeleflowLayout: GetTeleflowLayout
   ) {}
 
   async execute(command: CreateDefaultLayoutCommand): Promise<LayoutDto> {
@@ -23,7 +23,7 @@ export class CreateDefaultLayout {
         name: 'Default Layout',
         isDefault: true,
         identifier: 'novu-default-layout',
-        content: await this.getNovuLayout.execute({}),
+        content: await this.getTeleflowLayout.execute({}),
         environmentId: command.environmentId,
         organizationId: command.organizationId,
         description: 'The default layout created by Novu',

@@ -7,7 +7,7 @@ import { Worker } from '../bull-mq';
 import { IHealthIndicator } from '../../health';
 import { IDestroy } from '../../modules';
 
-export interface INovuWorker extends IDestroy {
+export interface ITeleflowWorker extends IDestroy {
   readonly DEFAULT_ATTEMPTS: number;
   readonly topic: string;
   pause: () => Promise<void>;
@@ -70,7 +70,7 @@ export class ReadinessService {
     }
   }
 
-  async pauseWorkers(workers: INovuWorker[]): Promise<void> {
+  async pauseWorkers(workers: ITeleflowWorker[]): Promise<void> {
     for (const worker of workers) {
       try {
         Logger.verbose(`Pausing worker ${worker.topic}...`, LOG_CONTEXT);
@@ -88,7 +88,7 @@ export class ReadinessService {
     }
   }
 
-  async enableWorkers(workers: INovuWorker[]): Promise<void> {
+  async enableWorkers(workers: ITeleflowWorker[]): Promise<void> {
     const areQueuesEnabled = await this.areQueuesEnabled();
 
     if (areQueuesEnabled) {

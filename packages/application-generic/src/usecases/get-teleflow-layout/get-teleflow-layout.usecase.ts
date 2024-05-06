@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { readFile } from 'fs/promises';
 
-import { GetNovuLayoutCommand } from './get-teleflow-layout.command';
+import { GetTeleflowLayoutCommand } from './get-teleflow-layout.command';
 import { ApiException } from '../../utils/exceptions';
 
 @Injectable()
-export class GetNovuLayout {
-  async execute(command: GetNovuLayoutCommand): Promise<string> {
+export class GetTeleflowLayout {
+  async execute(command: GetTeleflowLayoutCommand): Promise<string> {
     const template = await this.loadTemplateContent('layout.handlebars');
     if (!template) throw new ApiException('Novu default template not found');
 

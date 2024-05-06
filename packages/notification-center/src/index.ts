@@ -7,7 +7,7 @@ export * from './hooks';
 
 export * from './store/teleflow-theme-provider.context';
 export * from './i18n/lang';
-export type { INovuPopoverTheme } from './store/teleflow-theme.context';
+export type { ITeleflowPopoverTheme } from './store/teleflow-theme.context';
 export type { INotificationCenterStyles } from './store/styles';
 
 export { SubscriberPreference } from './components/notification-center/components/user-preference/SubscriberPreference';

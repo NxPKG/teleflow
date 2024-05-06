@@ -1,5 +1,5 @@
 import { DynamicModule, Global, Module } from '@nestjs/common';
-import { INovuModuleAsyncOptions, INovuOptions } from '../interfaces';
+import { ITeleflowModuleAsyncOptions, ITeleflowOptions } from '../interfaces';
 import {
   createAsyncTeleflowProviders,
   createTeleflowProviders,
@@ -8,7 +8,7 @@ import {
 @Global()
 @Module({})
 export class NovuModule {
-  public static forRoot(options: INovuOptions): DynamicModule {
+  public static forRoot(options: ITeleflowOptions): DynamicModule {
     const providers = createTeleflowProviders(options);
 
     return {
@@ -18,7 +18,9 @@ export class NovuModule {
     };
   }
 
-  public static forRootAsync(options: INovuModuleAsyncOptions): DynamicModule {
+  public static forRootAsync(
+    options: ITeleflowModuleAsyncOptions
+  ): DynamicModule {
     const providers = createAsyncTeleflowProviders(options);
 
     return {

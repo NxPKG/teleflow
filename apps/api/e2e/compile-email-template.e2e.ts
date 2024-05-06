@@ -8,7 +8,7 @@ import { CompileEmailTemplate } from '@novu/application-generic';
 import { CompileEmailTemplateCommand } from '@novu/application-generic';
 import { CompileTemplate } from '@novu/application-generic';
 import { GetLayoutUseCase } from '@novu/application-generic';
-import { GetNovuLayout } from '@novu/application-generic';
+import { GetTeleflowLayout } from '@novu/application-generic';
 
 const dalService = new DalService();
 
@@ -24,7 +24,7 @@ describe('Compile E-mail Template', function () {
         CompileEmailTemplate,
         CompileTemplate,
         GetLayoutUseCase,
-        GetNovuLayout,
+        GetTeleflowLayout,
         OrganizationRepository,
         LayoutRepository,
         {

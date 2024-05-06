@@ -15,7 +15,7 @@ export const ThemeContext = React.createContext<IThemeContext>({
   common: null,
 });
 
-export interface INovuPopoverTheme extends ITelelfowTheme {
+export interface ITeleflowPopoverTheme extends ITelelfowTheme {
   popover?: IThemePopover;
 }
 
