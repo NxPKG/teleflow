@@ -21,7 +21,7 @@ import {
   colors,
   IconViewQuilt,
   NavMenu,
-  NovuLogo,
+  TeleflowLogo,
   Repeat,
   SegmentedControl,
   Settings,
@@ -193,7 +193,7 @@ export function SideNav({}: Props) {
     >
       <Navbar.Section sx={{ marginBottom: '24px', padding: '0 24px' }}>
         <Link to="/">
-          <NovuLogo />
+          <TeleflowLogo />
         </Link>
       </Navbar.Section>
       <Navbar.Section sx={{ overflowY: 'auto', flex: 1, padding: '0 24px' }}>
