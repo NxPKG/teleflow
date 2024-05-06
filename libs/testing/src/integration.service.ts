@@ -87,7 +87,7 @@ export class IntegrationService {
       channel: ChannelTypeEnum.EMAIL,
       credentials: {},
       active: false,
-      identifier: 'novu-email',
+      identifier: 'teleflow-email',
     };
 
     await this.integrationRepository.create(novuMailPayload);
@@ -99,7 +99,7 @@ export class IntegrationService {
       channel: ChannelTypeEnum.SMS,
       credentials: {},
       active: false,
-      identifier: 'novu-sms',
+      identifier: 'teleflow-sms',
     };
 
     await this.integrationRepository.create(novuSmsPayload);

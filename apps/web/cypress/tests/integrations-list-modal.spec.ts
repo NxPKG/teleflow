@@ -881,13 +881,13 @@ describe.skip('Integrations List Modal', function () {
     cy.window().then((win) => {
       if (win.isDarkTheme) {
         cy.getByTestId('update-provider-sidebar-novu').find(
-          'img[src="/static/images/providers/dark/square/novu-email.svg"]'
+          'img[src="/static/images/providers/dark/square/teleflow-email.svg"]'
         );
         return;
       }
 
       cy.getByTestId('update-provider-sidebar-novu').find(
-        'img[src="/static/images/providers/light/square/novu-email.svg"]'
+        'img[src="/static/images/providers/light/square/teleflow-email.svg"]'
       );
     });
     cy.getByTestId('provider-instance-channel').should('contain', 'Email');
@@ -953,13 +953,13 @@ describe.skip('Integrations List Modal', function () {
     cy.window().then((win) => {
       if (win.isDarkTheme) {
         cy.getByTestId('update-provider-sidebar-novu').find(
-          'img[src="/static/images/providers/dark/square/novu-sms.svg"]'
+          'img[src="/static/images/providers/dark/square/teleflow-sms.svg"]'
         );
         return;
       }
 
       cy.getByTestId('update-provider-sidebar-novu').find(
-        'img[src="/static/images/providers/light/square/novu-sms.svg"]'
+        'img[src="/static/images/providers/light/square/teleflow-sms.svg"]'
       );
     });
 

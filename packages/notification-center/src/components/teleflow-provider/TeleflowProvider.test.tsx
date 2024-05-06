@@ -14,8 +14,8 @@ import {
 import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { ISession } from '../../shared/interfaces';
-import { NovuProvider } from '..';
-import { queryClient } from './NovuProvider';
+import { TeleflowProvider } from '..';
+import { queryClient } from './TeleflowProvider';
 import { NotificationBell, PopoverNotificationCenter } from '../..';
 
 configure({
@@ -144,7 +144,7 @@ window.ResizeObserver =
     unobserve: jest.fn(),
   }));
 
-describe('NovuProvider', () => {
+describe('TeleflowProvider', () => {
   afterEach(() => {
     jest.clearAllMocks();
     queryClient.clear();
@@ -162,7 +162,7 @@ describe('NovuProvider', () => {
     ${{ ...props, subscriberId: undefined }}          | ${'subscriberId'}
   `('when $prop is not provided should not initialize the session', async ({ allProps }) => {
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={allProps.applicationIdentifier}
@@ -172,7 +172,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     await waitFor(() => {
@@ -190,7 +190,7 @@ describe('NovuProvider', () => {
     'when applicationIdentifier and subscriberId are provided should initialize the session and fetch notifications: $fetchNotifications',
     async ({ fetchNotifications }) => {
       render(
-        <NovuProvider
+        <TeleflowProvider
           backendUrl="https://mock_url.com"
           socketUrl="wss://mock_url.com"
           applicationIdentifier={'applicationIdentifier'}
@@ -200,7 +200,7 @@ describe('NovuProvider', () => {
           <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
             {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
           </PopoverNotificationCenter>
-        </NovuProvider>
+        </TeleflowProvider>
       );
 
       await waitFor(() => {
@@ -220,7 +220,7 @@ describe('NovuProvider', () => {
 
   it('when bell button is clicked and session initialized should fetch notifications', async () => {
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -229,7 +229,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -275,7 +275,7 @@ describe('NovuProvider', () => {
         })
       );
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -295,7 +295,7 @@ describe('NovuProvider', () => {
         >
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -365,7 +365,7 @@ describe('NovuProvider', () => {
       );
 
     const { rerender } = render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={subscriberOneProps.applicationIdentifier}
@@ -375,7 +375,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -391,7 +391,7 @@ describe('NovuProvider', () => {
     });
 
     rerender(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={subscriberTwoProps.applicationIdentifier}
@@ -401,7 +401,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     await waitFor(() => {
@@ -415,7 +415,7 @@ describe('NovuProvider', () => {
     });
 
     rerender(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={subscriberTwoHashProps.applicationIdentifier}
@@ -425,7 +425,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     await waitFor(() => {
@@ -439,7 +439,7 @@ describe('NovuProvider', () => {
     });
 
     rerender(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={appTwoProps.applicationIdentifier}
@@ -449,7 +449,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     await waitFor(() => {
@@ -495,7 +495,7 @@ describe('NovuProvider', () => {
         })
       );
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -504,7 +504,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -532,7 +532,7 @@ describe('NovuProvider', () => {
 
   it('when clicking on "Mark all as read" should mark all messages as read and seen', async () => {
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -541,7 +541,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -567,7 +567,7 @@ describe('NovuProvider', () => {
 
   it('when clicking on notification should mark it as read', async () => {
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -576,7 +576,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));
@@ -604,7 +604,7 @@ describe('NovuProvider', () => {
   // Due to flakiness in tests, skipping this for now intentionally
   it.skip('when clicking on mark as read from dropdown menu should mark it as read', async () => {
     render(
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier={'applicationIdentifier'}
@@ -613,7 +613,7 @@ describe('NovuProvider', () => {
         <PopoverNotificationCenter onNotificationClick={onNotificationClick} colorScheme="dark">
           {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
         </PopoverNotificationCenter>
-      </NovuProvider>
+      </TeleflowProvider>
     );
 
     fireEvent.click(screen.getByRole('button'));

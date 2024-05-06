@@ -1,2 +1,2 @@
-export type { INovuProviderProps } from './NovuProvider';
-export { NovuProvider } from './NovuProvider';
+export type { ITeleflowProviderProps } from './TeleflowProvider';
+export { TeleflowProvider } from './TeleflowProvider';

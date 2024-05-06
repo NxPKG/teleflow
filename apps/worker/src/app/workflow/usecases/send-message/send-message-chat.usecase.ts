@@ -25,7 +25,7 @@ import {
   CompileTemplateCommand,
   ChatFactory,
   SelectIntegration,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
@@ -54,7 +54,7 @@ export class SendMessageChat extends SendMessageBase {
     protected createLogUsecase: CreateLog,
     private compileTemplate: CompileTemplate,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected executionLogRoute: ExecutionLogRoute,
     protected moduleRef: ModuleRef
@@ -65,7 +65,7 @@ export class SendMessageChat extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );

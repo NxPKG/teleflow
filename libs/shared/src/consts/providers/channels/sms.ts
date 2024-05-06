@@ -42,7 +42,7 @@ export const smsProviders: IProviderConfig[] = [
     displayName: 'Novu SMS',
     channel: ChannelTypeEnum.SMS,
     credentials: [],
-    docReference: `https://docs.novu.co/channels-and-providers/default-providers${UTM_CAMPAIGN_QUERY_PARAM}#novu-sms-provider`,
+    docReference: `https://docs.novu.co/channels-and-providers/default-providers${UTM_CAMPAIGN_QUERY_PARAM}#teleflow-sms-provider`,
     logoFileName: { light: 'novu.png', dark: 'novu.png' },
   },
   {

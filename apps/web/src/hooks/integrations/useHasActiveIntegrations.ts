@@ -47,19 +47,19 @@ export function useHasActiveIntegrations({ filterByEnv = true, channelType }: Us
     const isActive = !!activeIntegrationsByEnv?.some((integration) => integration.channel === channelType);
 
     if (isActive && isEmailStep) {
-      const isNovuProvider = activeIntegrationsByEnv?.some(
+      const isTeleflowProvider = activeIntegrationsByEnv?.some(
         (integration) => integration.providerId === EmailProviderIdEnum.Novu && integration.primary
       );
 
-      return isNovuProvider ? !isEmailLimitReached : isActive;
+      return isTeleflowProvider ? !isEmailLimitReached : isActive;
     }
 
     if (isActive && isSmsStep) {
-      const isNovuProvider = activeIntegrationsByEnv?.some(
+      const isTeleflowProvider = activeIntegrationsByEnv?.some(
         (integration) => integration.providerId === SmsProviderIdEnum.Novu && integration.primary
       );
 
-      return isNovuProvider ? !isSmsLimitReached : isActive;
+      return isTeleflowProvider ? !isSmsLimitReached : isActive;
     }
 
     return isActive;

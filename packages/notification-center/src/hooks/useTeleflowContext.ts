@@ -1,15 +1,15 @@
 import { useContext } from 'react';
 import { NovuContext } from '../store/teleflow-provider.context';
 import { useProviderCheck } from './useProviderCheck';
-import { INovuProviderContext } from '../shared/interfaces';
+import { ITeleflowProviderContext } from '../shared/interfaces';
 
 /**
  * custom hook for accessing NovuContext
- * @returns INovuProviderContext
+ * @returns ITeleflowProviderContext
  */
-export function useTeleflowContext(): INovuProviderContext {
-  const novuContext = useContext<INovuProviderContext>(NovuContext);
-  const context = useProviderCheck<INovuProviderContext>(novuContext);
+export function useTeleflowContext(): ITeleflowProviderContext {
+  const novuContext = useContext<ITeleflowProviderContext>(NovuContext);
+  const context = useProviderCheck<ITeleflowProviderContext>(novuContext);
 
   return context;
 }

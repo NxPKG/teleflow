@@ -92,7 +92,7 @@ export function CreateProviderInstanceSidebar({
 
   const selectedEnvironmentId = watch('environmentId');
 
-  const showNovuProvidersErrorMessage = useMemo(() => {
+  const showTeleflowProvidersErrorMessage = useMemo(() => {
     if (!provider || integrations.length === 0 || !NOVU_PROVIDERS.includes(provider.id)) {
       return false;
     }
@@ -227,7 +227,7 @@ export function CreateProviderInstanceSidebar({
             Cancel
           </Button>
           <Button
-            disabled={isLoading || isLoadingCreate || showNovuProvidersErrorMessage}
+            disabled={isLoading || isLoadingCreate || showTeleflowProvidersErrorMessage}
             loading={isLoadingCreate}
             submit
             data-test-id="create-provider-instance-sidebar-create"
@@ -327,7 +327,7 @@ export function CreateProviderInstanceSidebar({
           </Button>
         </Group>
       </Input.Wrapper>
-      <When truthy={showNovuProvidersErrorMessage}>
+      <When truthy={showTeleflowProvidersErrorMessage}>
         <WarningMessage>
           <Text data-test-id="teleflow-provider-error">
             You can only create one {provider.displayName} per environment.

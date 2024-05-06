@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useMantineColorScheme } from '@mantine/core';
-import { NotificationCenter, NovuProvider } from '@teleflow/notification-center';
+import { NotificationCenter, TeleflowProvider } from '@teleflow/notification-center';
 import { API_ROOT, WS_URL } from '../../../config';
 import { useEnvController } from '../../../hooks';
 import { inAppSandboxSubscriberId } from '../../../pages/quick-start/consts';
@@ -9,14 +9,14 @@ export function SandboxNotificationCenter() {
   const { environment } = useEnvController();
 
   return (
-    <NovuProvider
+    <TeleflowProvider
       backendUrl={API_ROOT}
       socketUrl={WS_URL}
       subscriberId={inAppSandboxSubscriberId}
       applicationIdentifier={environment?.identifier as string}
     >
       <PopoverWrapper />
-    </NovuProvider>
+    </TeleflowProvider>
   );
 }
 
