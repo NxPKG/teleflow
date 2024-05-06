@@ -6,7 +6,7 @@ import { LimitBar } from '../LimitBar';
 import { useIntegrationLimit } from '../../../../hooks';
 import type { IIntegratedProvider } from '../../types';
 
-export const NovuProviderSidebarContent = ({ provider }: { provider: IIntegratedProvider | null }) => {
+export const TeleflowProviderSidebarContent = ({ provider }: { provider: IIntegratedProvider | null }) => {
   const {
     data: { limit, count },
     loading,
