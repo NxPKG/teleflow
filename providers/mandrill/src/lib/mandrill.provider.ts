@@ -7,7 +7,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailEventBody,
   EmailEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import mailchimp from '@mailchimp/mailchimp_transactional';
 import { IMandrilInterface } from './mandril.interface';
@@ -36,13 +36,13 @@ export class MandrillProvider implements IEmailProvider {
       apiKey: string;
       from: string;
       senderName: string;
-    }
+    },
   ) {
     this.transporter = mailchimp(this.config.apiKey);
   }
 
   async sendMessage(
-    emailOptions: IEmailOptions
+    emailOptions: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mandrillSendOption = {
       message: {
@@ -116,7 +116,7 @@ export class MandrillProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item._id === identifier);

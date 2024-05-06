@@ -1,3 +1,3 @@
-import { api } from '@novu/shared-web';
+import { api } from '@teleflow/shared-web';
 
 export { api };

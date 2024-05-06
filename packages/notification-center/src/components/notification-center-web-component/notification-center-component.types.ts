@@ -1,4 +1,4 @@
-import type { INovuProviderProps } from '../novu-provider';
+import type { INovuProviderProps } from '../teleflow-provider';
 import type { IPopoverNotificationCenterProps } from '../popover-notification-center';
 import type { ColorScheme } from '../../shared/config/colors';
 import type { INotificationCenterStyles } from '../../store/styles';

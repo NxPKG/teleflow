@@ -8,7 +8,7 @@ import {
   CheckIntegrationResponseEnum,
   IEmailEventBody,
   IAttachmentOptions,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import { MailDataRequired, MailService } from '@sendgrid/mail';
 
@@ -25,14 +25,14 @@ export class SendgridEmailProvider implements IEmailProvider {
       from: string;
       senderName: string;
       ipPoolName?: string;
-    }
+    },
   ) {
     this.sendgridMail = new MailService();
     this.sendgridMail.setApiKey(this.config.apiKey);
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const mailData = this.createMailData(options);
     const response = await this.sendgridMail.send(mailData);
@@ -44,7 +44,7 @@ export class SendgridEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       const mailData = this.createMailData(options);
@@ -94,7 +94,7 @@ export class SendgridEmailProvider implements IEmailProvider {
         }
 
         return attachmentJson;
-      }
+      },
     );
 
     const mailData: Partial<MailDataRequired> = {
@@ -154,7 +154,7 @@ export class SendgridEmailProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.id === identifier);

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { colors } from '@novu/design-system';
-import { api, useEnvController } from '@novu/shared-web';
+import { api, useEnvController } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { useFormContext } from 'react-hook-form';

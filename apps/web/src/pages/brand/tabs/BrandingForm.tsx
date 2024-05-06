@@ -11,7 +11,7 @@ import { updateBrandingSettings } from '../../../api/organization';
 import Card from '../../../components/layout/components/Card';
 import { successMessage } from '../../../utils/notifications';
 import { useUploadToStorage } from '../../../api/hooks/useUploadToStorage';
-import { useAuthContext } from '@novu/shared-web';
+import { useAuthContext } from '@teleflow/shared-web';
 
 /**
  * @deprecated Use `BrandingForm` from the v2 folder instead

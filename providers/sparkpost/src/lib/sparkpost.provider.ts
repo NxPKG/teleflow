@@ -5,7 +5,7 @@ import {
   IEmailProvider,
   ICheckIntegrationResponse,
   CheckIntegrationResponseEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios, { AxiosError } from 'axios';
 import { randomUUID } from 'crypto';
 import { ISparkPostErrorResponse, SparkPostError } from './sparkpost.error';
@@ -29,7 +29,7 @@ export class SparkPostEmailProvider implements IEmailProvider {
       region: string;
       from: string;
       senderName: string;
-    }
+    },
   ) {
     this.endpoint = this.getEndpoint(config.region);
   }
@@ -77,7 +77,7 @@ export class SparkPostEmailProvider implements IEmailProvider {
             Authorization: this.config.apiKey,
           },
           baseURL: this.endpoint,
-        }
+        },
       );
 
       return {
@@ -91,7 +91,7 @@ export class SparkPostEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     try {
       await this.sendMessage({

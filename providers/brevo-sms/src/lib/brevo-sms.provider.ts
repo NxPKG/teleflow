@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import { ProxyAgent } from 'proxy-agent';
 import 'cross-fetch';
 
@@ -23,11 +23,11 @@ export class BrevoSmsProvider implements ISmsProvider {
     private config: {
       apiKey: string;
       from: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const sms = {
       sender: options.from || this.config.from,

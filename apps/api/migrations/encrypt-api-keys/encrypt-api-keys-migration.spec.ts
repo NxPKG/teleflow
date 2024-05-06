@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 import { createHash } from 'crypto';
 
 import { UserSession } from '@novu/testing';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 import { EnvironmentRepository } from '@novu/dal';
 import { decryptApiKey } from '@novu/application-generic';
 

@@ -3,7 +3,7 @@ import { UserSession } from '@novu/testing';
 import axios from 'axios';
 import { expect } from 'chai';
 import { updateSubscriberPreference } from './update-subscriber-preference.e2e';
-import { ChannelTypeEnum } from '@novu/stateless';
+import { ChannelTypeEnum } from '@teleflow/stateless';
 
 describe('GET /widget/preferences', function () {
   let template: NotificationTemplateEntity;

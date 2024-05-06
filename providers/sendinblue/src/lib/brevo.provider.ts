@@ -9,7 +9,7 @@ import {
   IEmailOptions,
   IEmailProvider,
   ISendMessageSuccessResponse,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 export class BrevoEmailProvider implements IEmailProvider {
   id = 'sendinblue';
@@ -22,7 +22,7 @@ export class BrevoEmailProvider implements IEmailProvider {
       apiKey: string;
       from: string;
       senderName: string;
-    }
+    },
   ) {
     this.axiosInstance = axios.create({
       baseURL: this.BASE_URL,
@@ -30,7 +30,7 @@ export class BrevoEmailProvider implements IEmailProvider {
   }
 
   async sendMessage(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const email: any = {};
     email.sender = {
@@ -75,7 +75,7 @@ export class BrevoEmailProvider implements IEmailProvider {
     };
 
     const response = await this.axiosInstance.request<{ messageId: string }>(
-      emailOptions
+      emailOptions,
     );
 
     return {
@@ -94,7 +94,7 @@ export class BrevoEmailProvider implements IEmailProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): IEmailEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item['message-id'] === identifier);
@@ -143,7 +143,7 @@ export class BrevoEmailProvider implements IEmailProvider {
   }
 
   async checkIntegration(
-    options: IEmailOptions
+    options: IEmailOptions,
   ): Promise<ICheckIntegrationResponse> {
     return {
       success: true,

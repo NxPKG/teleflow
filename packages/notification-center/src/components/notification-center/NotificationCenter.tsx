@@ -8,7 +8,7 @@ import { useNotifications, useNovuContext } from '../../hooks';
 import { NotificationCenterContext } from '../../store/notification-center.context';
 import { ITab, ListItem, ScreensEnum } from '../../shared/interfaces';
 import { ColorScheme } from '../../shared/config/colors';
-import { INovuThemeProvider, NovuThemeProvider } from '../../store/novu-theme-provider.context';
+import { ITelelfowThemeProvider, TelelfowThemeProvider } from '../../store/teleflow-theme-provider.context';
 
 export interface INotificationCenterProps {
   onUrlChange?: (url: string) => void;
@@ -22,7 +22,7 @@ export interface INotificationCenterProps {
   emptyState?: JSX.Element;
   listItem?: ListItem;
   colorScheme: ColorScheme;
-  theme?: INovuThemeProvider;
+  theme?: ITelelfowThemeProvider;
   tabs?: ITab[];
   showUserPreferences?: boolean;
   allowedNotificationActions?: boolean;
@@ -77,9 +77,9 @@ export function NotificationCenter({
         allowedNotificationActions: allowedNotificationActions ?? true,
       }}
     >
-      <NovuThemeProvider colorScheme={colorScheme} theme={theme}>
+      <TelelfowThemeProvider colorScheme={colorScheme} theme={theme}>
         <AppContent />
-      </NovuThemeProvider>
+      </TelelfowThemeProvider>
     </NotificationCenterContext.Provider>
   );
 }

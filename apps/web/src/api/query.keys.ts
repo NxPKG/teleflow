@@ -1,3 +1,3 @@
-import { QueryKeys } from '@novu/shared-web';
+import { QueryKeys } from '@teleflow/shared-web';
 
 export { QueryKeys };

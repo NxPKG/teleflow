@@ -2,10 +2,10 @@ import { darkButtonStyle, lightButtonStyle } from '@novu/shared';
 
 import { colors } from './colors';
 import { shadows } from './shadows';
-import { INotificationBellColors, INovuTheme } from '../../store/novu-theme.context';
-import { ICommonTheme } from '../../store/novu-theme-provider.context';
+import { INotificationBellColors, ITelelfowTheme } from '../../store/teleflow-theme.context';
+import { ICommonTheme } from '../../store/teleflow-theme-provider.context';
 
-const defaultLightTheme: INovuTheme = {
+const defaultLightTheme: ITelelfowTheme = {
   layout: {
     background: colors.white,
     boxShadow: shadows.medium,
@@ -60,7 +60,7 @@ const defaultLightTheme: INovuTheme = {
   loaderColor: colors.loader,
 };
 
-const defaultDarkTheme: INovuTheme = {
+const defaultDarkTheme: ITelelfowTheme = {
   layout: {
     background: colors.B15,
     boxShadow: shadows.dark,

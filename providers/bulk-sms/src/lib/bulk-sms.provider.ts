@@ -3,7 +3,7 @@ import {
   ISendMessageSuccessResponse,
   ISmsOptions,
   ISmsProvider,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import axios from 'axios';
 
 export class BulkSmsProvider implements ISmsProvider {
@@ -14,11 +14,11 @@ export class BulkSmsProvider implements ISmsProvider {
   constructor(
     private config: {
       apiToken: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const payload = {
       to: options.to,

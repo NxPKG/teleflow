@@ -4,6 +4,6 @@ import {
   getApiKeys,
   regenerateApiKeys,
   updateDnsSettings,
-} from '@novu/shared-web';
+} from '@teleflow/shared-web';
 
 export { getCurrentEnvironment, getMyEnvironments, getApiKeys, regenerateApiKeys, updateDnsSettings };

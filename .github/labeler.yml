@@ -1,14 +1,14 @@
-'@novu/api':
+'@teleflow/api':
   - apps/api/**/*
-'@novu/worker':
+'@teleflow/worker':
   - apps/worker/**/*
-'@novu/web':
+'@teleflow/web':
   - apps/web/**/*
-'@novu/ws':
+'@teleflow/ws':
   - apps/ws/**/*
 '@novu/inbound-mail':
   - apps/inbound-mail/**/*
-'@novu/webhook':
+'@teleflow/webhook':
   - apps/webhook/**/*
 '@novu/dal':
   - libs/dal/**/*
@@ -18,7 +18,7 @@
   - libs/shared/**/*
 '@novu/notification-center':
   - packages/notification-center/**/*
-'@novu/notification-center-vue':
+'@teleflow/notification-center-vue':
   - packages/notification-center-vue/**/*
 '@novu/notification-center-angular':
   - packages/notification-center-angular/**/*

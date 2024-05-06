@@ -12,8 +12,8 @@ import { AddMember } from '../membership/add-member/add-member.usecase';
 import { CreateOrganizationCommand } from './create-organization.command';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
-import { CreateNovuIntegrations } from '../../../integrations/usecases/create-novu-integrations/create-novu-integrations.usecase';
-import { CreateNovuIntegrationsCommand } from '../../../integrations/usecases/create-novu-integrations/create-novu-integrations.command';
+import { CreateNovuIntegrations } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.usecase';
+import { CreateNovuIntegrationsCommand } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.command';
 import { ModuleRef } from '@nestjs/core';
 
 @Injectable({

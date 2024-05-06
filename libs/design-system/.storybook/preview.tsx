@@ -3,9 +3,9 @@ import { addons } from '@storybook/preview-api';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 import { ThemeProvider } from '../src/ThemeProvider';
 import { DocsContainer } from './Doc.container';
-import { useLocalThemePreference } from '@novu/shared-web';
-import { lightTheme, darkTheme } from './NovuTheme';
-import { Parameters, Decorator } from '@storybook/react'
+import { useLocalThemePreference } from '@teleflow/shared-web';
+import { lightTheme, darkTheme } from './TelelfowTheme';
+import { Parameters, Decorator } from '@storybook/react';
 
 // Bring in the Panda-generated stylesheets
 import '../styled-system/styles.css';
@@ -28,8 +28,8 @@ export const parameters: Parameters = {
     // Override the default dark theme
     dark: darkTheme,
     // Override the default light theme
-    light: lightTheme
-  }
+    light: lightTheme,
+  },
 };
 
 const channel = addons.getChannel();
@@ -52,4 +52,6 @@ function ColorSchemeThemeWrapper({ children }) {
   );
 }
 
-export const decorators: Decorator[] = [(renderStory) => <ColorSchemeThemeWrapper>{renderStory()}</ColorSchemeThemeWrapper>];
+export const decorators: Decorator[] = [
+  (renderStory) => <ColorSchemeThemeWrapper>{renderStory()}</ColorSchemeThemeWrapper>,
+];

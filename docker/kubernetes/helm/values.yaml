@@ -75,7 +75,7 @@ api:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/api
+    repository: nxpkg/teleflow/api
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy
@@ -492,7 +492,7 @@ worker:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/worker
+    repository: nxpkg/teleflow/worker
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy
@@ -786,7 +786,7 @@ ws:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/ws
+    repository: novuhq/teleflow/ws
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy
@@ -1185,7 +1185,7 @@ web:
   ##
   image:
     registry: ghcr.io
-    repository: novuhq/novu/web
+    repository: novuhq/teleflow/web
     tag: 0.15.0
     digest: ''
     ## Specify a imagePullPolicy

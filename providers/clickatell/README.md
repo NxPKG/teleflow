@@ -1,6 +1,6 @@
 # Novu ClickatellSmsProvider Provider
 
-A ClickatellSmsProvider sms provider library for [@novu/node](https://github.com/novuhq/novu)
+A ClickatellSmsProvider sms provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -15,6 +15,6 @@ const provider = new ClickatellSmsProvider({
 // two way sms integration
 const provider = new ClickatellSmsProvider({
   apiKey: process.env.CLICKATELL_API_KEY,
-  isTwoWayIntegration: true
+  isTwoWayIntegration: true,
 });
 ```

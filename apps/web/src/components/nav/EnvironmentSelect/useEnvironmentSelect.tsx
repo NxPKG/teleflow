@@ -1,5 +1,5 @@
 import { type IIconProps, IconConstruction, IconRocketLaunch } from '@novu/design-system';
-import { useEnvController, ROUTES, BaseEnvironmentEnum } from '@novu/shared-web';
+import { useEnvController, ROUTES, BaseEnvironmentEnum } from '@teleflow/shared-web';
 import { useState } from 'react';
 import { type ISelectProps } from '@novu/design-system';
 import { useLocation, useNavigate } from 'react-router-dom';

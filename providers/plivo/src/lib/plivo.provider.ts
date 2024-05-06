@@ -5,7 +5,7 @@ import {
   ISmsOptions,
   ISmsProvider,
   SmsEventStatusEnum,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 
 import * as plivo from 'plivo';
 
@@ -19,18 +19,18 @@ export class PlivoSmsProvider implements ISmsProvider {
       accountSid?: string;
       authToken?: string;
       from?: string;
-    }
+    },
   ) {
     this.plivoClient = new plivo.Client(config.accountSid, config.authToken);
   }
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const plivoResponse = await this.plivoClient.messages.create(
       options.from || this.config.from,
       options.to,
-      options.content
+      options.content,
     );
 
     return {
@@ -49,7 +49,7 @@ export class PlivoSmsProvider implements ISmsProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): ISMSEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.messageUuid === identifier);

@@ -269,7 +269,7 @@ messageSchema.index({
 /*
  * This index was initially created to optimize:
  *
- * Path: apps/api/src/app/integrations/usecases/calculate-limit-novu-integration/calculate-limit-novu-integration.usecase.ts
+ * Path: apps/api/src/app/integrations/usecases/calculate-limit-teleflow-integration/calculate-limit-teleflow-integration.usecase.ts
  * Context: execute()
  * Query: count(
  *   {

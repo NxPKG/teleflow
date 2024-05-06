@@ -1,11 +1,11 @@
 import React from 'react';
 import { IStyleButtons } from '@novu/shared';
 import { ColorScheme } from '../index';
-import { ICommonTheme } from './novu-theme-provider.context';
+import { ICommonTheme } from './teleflow-theme-provider.context';
 
 export interface IThemeContext {
   colorScheme: ColorScheme;
-  theme: INovuTheme;
+  theme: ITelelfowTheme;
   common: ICommonTheme;
 }
 
@@ -15,11 +15,11 @@ export const ThemeContext = React.createContext<IThemeContext>({
   common: null,
 });
 
-export interface INovuPopoverTheme extends INovuTheme {
+export interface INovuPopoverTheme extends ITelelfowTheme {
   popover?: IThemePopover;
 }
 
-export interface INovuTheme {
+export interface ITelelfowTheme {
   layout?: IThemeLayout;
   header?: IThemeHeader;
   popover?: IThemePopover;

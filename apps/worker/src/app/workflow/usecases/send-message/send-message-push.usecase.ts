@@ -33,7 +33,7 @@ import {
   ExecutionLogRouteCommand,
   IChimeraPushResponse,
 } from '@novu/application-generic';
-import type { IPushOptions } from '@novu/stateless';
+import type { IPushOptions } from '@teleflow/stateless';
 
 import { SendMessageCommand } from './send-message.command';
 import { SendMessageBase } from './send-message.base';

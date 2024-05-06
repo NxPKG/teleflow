@@ -94,7 +94,7 @@ jobs:
   test_web:
     name: Test Web Cypress
     needs: [get-affected]
-#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@novu/web') }}
+#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@teleflow/web') }}
     if: false
     uses: ./.github/workflows/reusable-web-e2e.yml
     secrets: inherit
@@ -108,7 +108,7 @@ jobs:
     with:
       ee: true
     if: false
-#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@novu/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/ws') }}
+#    if: ${{ contains(fromJson(needs.get-affected.outputs.test-cypress), '@teleflow/widget') || contains(fromJson(needs.get-affected.outputs.test-unit), '@novu/notification-center') || contains(fromJson(needs.get-affected.outputs.test-unit), '@teleflow/ws') }}
     secrets: inherit
 
   test_providers:
@@ -185,12 +185,12 @@ jobs:
     strategy:
       # The order is important for ee to be first, otherwise outputs not work correctly
       matrix:
-        name: ['novu/api-ee', 'novu/api']
+        name: ['teleflow/api-ee', 'teleflow/api']
     uses: ./.github/workflows/reusable-api-e2e.yml
     with:
       ee: ${{ contains (matrix.name,'-ee') }}
-      test-e2e-affected: ${{ contains(fromJson(needs.get-affected.outputs.test-e2e), '@novu/api') }}
-      test-e2e-ee-affected: ${{ contains(fromJson(needs.get-affected.outputs.test-e2e-ee), '@novu/api') }}
+      test-e2e-affected: ${{ contains(fromJson(needs.get-affected.outputs.test-e2e), '@teleflow/api') }}
+      test-e2e-ee-affected: ${{ contains(fromJson(needs.get-affected.outputs.test-e2e-ee), '@teleflow/api') }}
       job-name: ${{ matrix.name }}
     secrets: inherit
 
@@ -215,7 +215,7 @@ jobs:
       - uses: ./.github/actions/setup-project
         with:
           # Don't run redis and etc... for other unit tests
-          slim: ${{ !contains(matrix.projectName, '@novu/api') && !contains(matrix.projectName, '@novu/worker') && !contains(matrix.projectName, '@novu/ws') && !contains(matrix.projectName, '@novu/inbound-mail')}}
+          slim: ${{ !contains(matrix.projectName, '@teleflow/api') && !contains(matrix.projectName, '@teleflow/worker') && !contains(matrix.projectName, '@teleflow/ws') && !contains(matrix.projectName, '@novu/inbound-mail')}}
       - uses: ./.github/actions/setup-redis-cluster
       - uses: mansagroup/nrwl-nx-action@v3
         name: Lint and build and test

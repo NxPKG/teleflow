@@ -3,7 +3,7 @@ import { LoadingOverlay, Switch } from '@mantine/core';
 import styled from '@emotion/styled';
 import { css, cx } from '@emotion/css';
 
-import { useNovuTheme } from '../../../../hooks';
+import { useTelelfowTheme } from '../../../../hooks';
 import { getChannel } from './channels';
 import { switchStyles, Text } from './styles';
 import { Check } from '../../../../shared/icons/Check';
@@ -43,7 +43,7 @@ interface IChannelPreferenceProps {
 }
 export function ChannelPreference({ type, active, disabled, handleUpdateChannelPreference }: IChannelPreferenceProps) {
   const { label, Icon } = getChannel(type);
-  const { theme } = useNovuTheme();
+  const { theme } = useTelelfowTheme();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showSaved, setShowSaved] = useState<boolean>(false);
   const baseTheme = theme?.userPreferences;

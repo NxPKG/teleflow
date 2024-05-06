@@ -5,7 +5,7 @@ import {
   ISmsProvider,
   SmsEventStatusEnum,
   ISMSEventBody,
-} from '@novu/stateless';
+} from '@teleflow/stateless';
 import {
   SmsParams,
   MessageChannel,
@@ -29,11 +29,11 @@ export class TermiiSmsProvider implements ISmsProvider {
     private config: {
       apiKey?: string;
       from?: string;
-    }
+    },
   ) {}
 
   async sendMessage(
-    options: ISmsOptions
+    options: ISmsOptions,
   ): Promise<ISendMessageSuccessResponse> {
     const params: SmsParams = {
       to: options.to,
@@ -70,7 +70,7 @@ export class TermiiSmsProvider implements ISmsProvider {
 
   parseEventBody(
     body: any | any[],
-    identifier: string
+    identifier: string,
   ): ISMSEventBody | undefined {
     if (Array.isArray(body)) {
       body = body.find((item) => item.message_id === identifier);

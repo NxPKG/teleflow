@@ -1,6 +1,6 @@
 # Nodejs Postmark Provider
 
-A postmark email provider library for [@novu/stateless](https://github.com/novuhq/novu)
+A postmark email provider library for [@teleflow/stateless](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,6 +8,6 @@ A postmark email provider library for [@novu/stateless](https://github.com/novuh
 import { PostmarkEmailProvider } from '@novu/postmark';
 
 const provider = new PostmarkEmailProvider({
-  apiKey: process.env.POSTMARK_API_KEY
+  apiKey: process.env.POSTMARK_API_KEY,
 });
 ```

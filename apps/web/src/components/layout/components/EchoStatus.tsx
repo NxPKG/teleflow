@@ -4,7 +4,7 @@ import { api } from '../../../api/api.client';
 import { useEnvController } from '../../../hooks';
 import { Tooltip, Popover } from '@novu/design-system';
 import { useDisclosure } from '@mantine/hooks';
-import { IS_DOCKER_HOSTED } from '@novu/shared-web';
+import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 
 export function EchoStatus() {
   const [opened, { close, open }] = useDisclosure(false);

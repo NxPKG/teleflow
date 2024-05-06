@@ -10,7 +10,7 @@ import { useTemplateLocales } from '../../../../pages/templates/hooks/useTemplat
 import Content from './Content';
 import { Header } from './Header';
 import { useProcessVariables } from '../../../../hooks';
-import { api, useEnvController } from '@novu/shared-web';
+import { api, useEnvController } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useTemplateEditorForm } from '../../../../pages/templates/components/TemplateEditorFormProvider';
 import { InputVariables } from '../../../../pages/templates/components/InputVariables';

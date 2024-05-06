@@ -1,6 +1,6 @@
 import { URLSearchParamsInit, useSearchParams } from 'react-router-dom';
 
-import { useSegment } from '@novu/shared-web';
+import { useSegment } from '@teleflow/shared-web';
 
 import { OnboardingUseCasesTabsEnum } from '../../consts/OnboardingUseCasesTabsEnum';
 

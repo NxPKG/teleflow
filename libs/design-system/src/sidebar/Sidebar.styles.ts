@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import styled from '@emotion/styled';
 import { createStyles, MantineTheme } from '@mantine/core';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
-import { useFeatureFlag } from '@novu/shared-web';
+import { useFeatureFlag } from '@teleflow/shared-web';
 import { colors, shadows } from '../config';
 import { NAVIGATION_WIDTH, LEGACY_NAVIGATION_WIDTH, COLLAPSED_WIDTH } from './Sidebar.const';
 import { ISidebarBaseProps } from './Sidebar.types';

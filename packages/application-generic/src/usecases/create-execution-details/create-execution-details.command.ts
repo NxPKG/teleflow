@@ -6,7 +6,7 @@ import {
   IJob,
   StepTypeEnum,
 } from '@novu/shared';
-import { EmailEventStatusEnum, SmsEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum, SmsEventStatusEnum } from '@teleflow/stateless';
 
 import { EnvironmentWithSubscriber } from '../../commands/project.command';
 
@@ -69,7 +69,7 @@ export class CreateExecutionDetailsCommand extends EnvironmentWithSubscriber {
   webhookStatus?: EmailEventStatusEnum | SmsEventStatusEnum;
 
   static getDetailsFromJob(
-    job: IJob
+    job: IJob,
   ): Pick<
     CreateExecutionDetailsCommand,
     | 'environmentId'

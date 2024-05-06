@@ -1,6 +1,6 @@
 # Novu PusherBeams Provider
 
-A PusherBeams push provider library for [@novu/node](https://github.com/novuhq/novu)
+A PusherBeams push provider library for [@teleflow/node](https://github.com/novuhq/novu)
 
 ## Usage
 
@@ -8,7 +8,7 @@ A PusherBeams push provider library for [@novu/node](https://github.com/novuhq/n
 import { PusherBeamsPushProvider } from '@novu/pusher-beams';
 
 const provider = new PusherBeamsPushProvider({
-    instanceId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-    secretKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  instanceId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+  secretKey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 });
 ```

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { IMessage, MessageActionStatusEnum, ButtonTypeEnum } from '@novu/shared';
 
-import { NovuProvider } from '../novu-provider';
+import { NovuProvider } from '../teleflow-provider';
 import { PopoverNotificationCenter } from '../popover-notification-center';
 import { NotificationBell } from '../notification-bell';
 import { reactToWebComponent } from '../../utils';

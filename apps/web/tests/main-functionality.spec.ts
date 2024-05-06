@@ -370,7 +370,7 @@ test('should create an SMS channel message', async ({ page }) => {
   await expect(workflowSidebar).toBeVisible();
   const triggerCodeSnippet = getByTestId(workflowSidebar, 'trigger-code-snippet');
   await expect(triggerCodeSnippet).toContainText('test-sms-notification-title');
-  await expect(triggerCodeSnippet).toContainText("import { Novu } from '@novu/node'");
+  await expect(triggerCodeSnippet).toContainText("import { Novu } from '@teleflow/node'");
   await expect(triggerCodeSnippet).toContainText('taskName');
   await expect(triggerCodeSnippet).toContainText('firstName');
 });

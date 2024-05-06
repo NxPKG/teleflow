@@ -56,7 +56,7 @@ jobs:
         with:
           targets: build
           args: --skip-nx-cache
-          projects: '@novu/widget,@novu/embed,@novu/api,@novu/worker,@novu/ws'
+          projects: '@teleflow/widget,@teleflow/embed,@teleflow/api,@teleflow/worker,@teleflow/ws'
 
       - uses: ./.github/actions/run-backend
         with:

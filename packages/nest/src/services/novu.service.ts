@@ -1,3 +1,3 @@
-import { NovuStateless } from '@novu/stateless';
+import { NovuStateless } from '@teleflow/stateless';
 
 export class NovuService extends NovuStateless {}

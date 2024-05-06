@@ -3,7 +3,7 @@ import {
   ExecutionDetailsStatusEnum,
   StepTypeEnum,
 } from '@novu/shared';
-import { EmailEventStatusEnum, SmsEventStatusEnum } from '@novu/stateless';
+import { EmailEventStatusEnum, SmsEventStatusEnum } from '@teleflow/stateless';
 
 import {
   IBulkJobParams,

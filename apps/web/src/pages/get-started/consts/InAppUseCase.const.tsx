@@ -1,5 +1,5 @@
 import { ChannelTypeEnum } from '@novu/shared';
-import { ROUTES } from '@novu/shared-web';
+import { ROUTES } from '@teleflow/shared-web';
 
 import { useGetIntegrationsByChannel } from '../../integrations/useGetIntegrationsByChannel';
 import { GetStartedAnimation } from '../components/GetStartedAnimation';
