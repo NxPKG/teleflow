@@ -1,1 +1,1 @@
-export * from './NovuPandaPreset';
+export * from './TeleflowPandaPreset';

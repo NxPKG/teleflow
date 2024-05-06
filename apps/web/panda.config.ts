@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { NovuPandaPreset } from '@novu/design-system';
+import { TeleflowPandaPreset } from '@novu/design-system';
 
 export default defineConfig({
   // use CSS reset
@@ -18,7 +18,7 @@ export default defineConfig({
   // Files to exclude
   exclude: ['**/*.cy.{js,jsx,ts,tsx}', '**/*/styled-system'],
 
-  presets: [NovuPandaPreset],
+  presets: [TeleflowPandaPreset],
 
   /**
    * Prefixes generated classes with the specified string (e.g. `nv-text_blue`)
@@ -28,7 +28,7 @@ export default defineConfig({
 
   /*
    * Any additional configuration that is specific only to `web`.
-   * Most things should likely go in the `NovuPandaPreset`, but if there is something
+   * Most things should likely go in the `TeleflowPandaPreset`, but if there is something
    * theme-oriented that is unique to `web`, include it below
    */
   theme: {

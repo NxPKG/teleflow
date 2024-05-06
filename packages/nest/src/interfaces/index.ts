@@ -1,1 +1,1 @@
-export * from './novu-options.interface';
+export * from './teleflow-options.interface';

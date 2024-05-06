@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { NovuPandaPreset } from './src/panda/NovuPandaPreset';
+import { TeleflowPandaPreset } from './src/panda/TeleflowPandaPreset';
 
 export default defineConfig({
   // Whether to use css reset
@@ -11,7 +11,7 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
-  presets: [NovuPandaPreset],
+  presets: [TeleflowPandaPreset],
 
   /**
    * Prefixes generated classes with the specified string (e.g. `nv-text_blue`)

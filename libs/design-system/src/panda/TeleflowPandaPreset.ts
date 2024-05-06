@@ -30,7 +30,7 @@ import { SEMANTIC_SPACING_TOKENS } from './semanticSpacing.tokens';
  * a standalone package depending on how we interface with Supernova (our design token tool), and if we want
  * the definitions to be separate from token definitions.
  */
-export const NovuPandaPreset = definePreset({
+export const TeleflowPandaPreset = definePreset({
   theme: {
     tokens: {
       sizes: SIZES_TOKENS,

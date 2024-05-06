@@ -25,12 +25,12 @@ import { successMessage } from '../../../../utils/notifications';
 import { UpdateIntegrationSidebarHeader } from '../UpdateIntegrationSidebarHeader';
 import { SetupWarning } from '../SetupWarning';
 import { UpdateIntegrationCommonFields } from '../UpdateIntegrationCommonFields';
-import { NovuInAppFrameworks } from '../NovuInAppFrameworks';
+import { TeleflowInAppFrameworks } from '../TeleflowInAppFrameworks';
 import { FrameworkEnum } from '../../../quick-start/consts';
 import { When } from '../../../../components/utils/When';
 import { SetupTimeline } from '../../../quick-start/components/SetupTimeline';
 import { Faq } from '../../../quick-start/components/QuickStartWrapper';
-import { NovuInAppFrameworkHeader } from '../NovuInAppFrameworkHeader';
+import { TeleflowInAppFrameworkHeader } from '../TeleflowInAppFrameworkHeader';
 import { TeleflowInAppSetupWarning } from '../TeleflowInAppSetupWarning';
 import { NovuProviderSidebarContent } from './NovuProviderSidebarContent';
 import { useSelectPrimaryIntegrationModal } from './useSelectPrimaryIntegrationModal';
@@ -317,7 +317,7 @@ export function UpdateProviderSidebar({
           ) : (
             <>
               <When truthy={isNovuInAppProvider}>
-                <NovuInAppFrameworkHeader framework={framework} />
+                <TeleflowInAppFrameworkHeader framework={framework} />
               </When>
             </>
           )
@@ -383,7 +383,7 @@ export function UpdateProviderSidebar({
             </InputWrapper>
           )}
           <ShareableUrl provider={selectedProvider?.providerId} hmacEnabled={!!hmacEnabled} />
-          {isNovuInAppProvider && <NovuInAppFrameworks onFrameworkClick={onFrameworkClickCallback} />}
+          {isNovuInAppProvider && <TeleflowInAppFrameworks onFrameworkClick={onFrameworkClickCallback} />}
         </When>
         <When truthy={isNovuInAppProvider && sidebarState === SidebarStateEnum.EXPANDED}>
           <SetupTimeline

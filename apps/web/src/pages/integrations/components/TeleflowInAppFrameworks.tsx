@@ -4,7 +4,7 @@ import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 
 import { FrameworkEnum } from '../../quick-start/consts';
 
-const NovuInAppFrameworksHolder = styled.div`
+const TeleflowInAppFrameworksHolder = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -58,9 +58,13 @@ const frameworks = [
   { icon: IframeLogo, name: 'iFrame', frameworkEnum: FrameworkEnum.JS },
 ];
 
-export const NovuInAppFrameworks = ({ onFrameworkClick }: { onFrameworkClick: (framework: FrameworkEnum) => void }) => {
+export const TeleflowInAppFrameworks = ({
+  onFrameworkClick,
+}: {
+  onFrameworkClick: (framework: FrameworkEnum) => void;
+}) => {
   return (
-    <NovuInAppFrameworksHolder data-test-id="novu-in-app-frameworks">
+    <TeleflowInAppFrameworksHolder data-test-id="novu-in-app-frameworks">
       <Text>Integrate In-App using a framework below</Text>
       <FrameworksGrid>
         {frameworks.map(({ name, icon: Icon, frameworkEnum, href }) =>
@@ -82,6 +86,6 @@ export const NovuInAppFrameworks = ({ onFrameworkClick }: { onFrameworkClick: (f
           )
         )}
       </FrameworksGrid>
-    </NovuInAppFrameworksHolder>
+    </TeleflowInAppFrameworksHolder>
   );
 };

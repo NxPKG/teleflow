@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Text, AngularLogo, IframeLogo, ReactLogo, VueLogo } from '@novu/design-system';
 import { FrameworkEnum } from '../../quick-start/consts';
 
-const NovuInAppFrameworkHeaderHolder = styled.div`
+const TeleflowInAppFrameworkHeaderHolder = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
@@ -16,15 +16,15 @@ const FRAMEWORKS_MAP = {
   [FrameworkEnum.JS]: { logo: IframeLogo, title: 'iFrame integration guide' },
 };
 
-export const NovuInAppFrameworkHeader = ({ framework }: { framework: FrameworkEnum | null }) => {
+export const TeleflowInAppFrameworkHeader = ({ framework }: { framework: FrameworkEnum | null }) => {
   if (!framework) return null;
 
   const { logo: Icon, title } = FRAMEWORKS_MAP[framework];
 
   return (
-    <NovuInAppFrameworkHeaderHolder>
+    <TeleflowInAppFrameworkHeaderHolder>
       <Icon />
       <Text style={{ fontSize: 20 }}>{title}</Text>
-    </NovuInAppFrameworkHeaderHolder>
+    </TeleflowInAppFrameworkHeaderHolder>
   );
 };

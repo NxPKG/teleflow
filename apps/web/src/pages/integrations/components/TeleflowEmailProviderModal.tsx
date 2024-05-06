@@ -5,7 +5,7 @@ import { useAuthContext } from '../../../components/providers/AuthProvider';
 import { colors } from '@novu/design-system';
 import { TeleflowProviderBase } from './TeleflowProviderBase';
 
-export function NovuEmailProviderModal({ onClose }: { onClose: () => void }) {
+export function TeleflowEmailProviderModal({ onClose }: { onClose: () => void }) {
   return (
     <TeleflowProviderBase
       onClose={onClose}
