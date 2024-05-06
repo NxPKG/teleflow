@@ -20,7 +20,7 @@ export interface ITeleflowOptions {
 }
 
 export interface ITeleflowOptionsFactory {
-  createNovuOptions(): Promise<ITeleflowOptions> | ITeleflowOptions;
+  createTeleflowOptions(): Promise<ITeleflowOptions> | ITeleflowOptions;
 }
 
 export interface ITeleflowModuleAsyncOptions

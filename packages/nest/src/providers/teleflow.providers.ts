@@ -8,7 +8,7 @@ import {
 } from '../interfaces';
 import { TeleflowService } from '../services';
 
-async function novuServiceFactory(options: ITeleflowOptions) {
+async function teleflowServiceFactory(options: ITeleflowOptions) {
   const novu = new NovuStateless();
   if (options.providers) {
     for (const provider of options.providers) {
@@ -29,7 +29,7 @@ export function createTeleflowProviders(options: ITeleflowOptions): Provider[] {
   return [
     {
       provide: TeleflowService,
-      useFactory: novuServiceFactory,
+      useFactory: teleflowServiceFactory,
       inject: [TELEFLOW_OPTIONS],
     },
     {
@@ -46,7 +46,7 @@ export function createAsyncTeleflowProviders(
     return [
       {
         provide: TeleflowService,
-        useFactory: novuServiceFactory,
+        useFactory: teleflowServiceFactory,
         inject: [TELEFLOW_OPTIONS],
       },
       {
@@ -60,13 +60,13 @@ export function createAsyncTeleflowProviders(
   return [
     {
       provide: TeleflowService,
-      useFactory: novuServiceFactory,
+      useFactory: teleflowServiceFactory,
       inject: [TELEFLOW_OPTIONS],
     },
     {
       provide: TELEFLOW_OPTIONS,
       useFactory: (instance: ITeleflowOptionsFactory) =>
-        instance.createNovuOptions(),
+        instance.createTeleflowOptions(),
       inject: [options.useExisting || options.useClass],
     },
   ];
