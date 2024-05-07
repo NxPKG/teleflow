@@ -62,11 +62,14 @@ export const MAIL_SERVER_DOMAIN =
 export const LAUNCH_DARKLY_CLIENT_SIDE_ID =
   window._env_.REACT_APP_LAUNCH_DARKLY_CLIENT_SIDE_ID || process.env.REACT_APP_LAUNCH_DARKLY_CLIENT_SIDE_ID;
 
-export const FEATURE_FLAGS = Object.values(FeatureFlagsKeysEnum).reduce((acc, key) => {
-  const defaultValue = isCypress || isPlaywright ? 'true' : 'false';
-  acc[key] = window._env_[key] || process.env[key] || defaultValue;
+export const FEATURE_FLAGS = Object.values(FeatureFlagsKeysEnum).reduce(
+  (acc, key) => {
+    const defaultValue = isCypress || isPlaywright ? 'true' : 'false';
+    acc[key] = window._env_[key] || process.env[key] || defaultValue;
 
-  return acc;
-}, {} as Record<FeatureFlagsKeysEnum, string | undefined>);
+    return acc;
+  },
+  {} as Record<FeatureFlagsKeysEnum, string | undefined>
+);
 
 export const HUBSPOT_PORTAL_ID = window._env_.REACT_APP_HUBSPOT_EMBED || process.env.REACT_APP_HUBSPOT_EMBED;

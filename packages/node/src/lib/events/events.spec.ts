@@ -205,7 +205,7 @@ describe('test use of novus node package - Events', () => {
 
     expect(mockedAxios.delete).toHaveBeenCalled();
     expect(mockedAxios.delete).toHaveBeenCalledWith(
-      '/events/trigger/transactionId'
+      '/events/trigger/transactionId',
     );
   });
 
