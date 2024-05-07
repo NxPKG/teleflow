@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { IntegrationRepository } from '@teleflow/dal';
-import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@novu/application-generic';
+import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@teleflow/application-generic';
 
-import { CreateNovuIntegrationsCommand } from './create-teleflow-integrations.command';
+import { CreateTeleflowIntegrationsCommand } from './create-teleflow-integrations.command';
 import { CreateIntegration } from '../create-integration/create-integration.usecase';
 import { CreateIntegrationCommand } from '../create-integration/create-integration.command';
 import { ChannelTypeEnum, EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
@@ -10,14 +10,14 @@ import { SetIntegrationAsPrimary } from '../set-integration-as-primary/set-integ
 import { SetIntegrationAsPrimaryCommand } from '../set-integration-as-primary/set-integration-as-primary.command';
 
 @Injectable()
-export class CreateNovuIntegrations {
+export class CreateTeleflowIntegrations {
   constructor(
     private createIntegration: CreateIntegration,
     private integrationRepository: IntegrationRepository,
     private setIntegrationAsPrimary: SetIntegrationAsPrimary
   ) {}
 
-  private async createEmailIntegration(command: CreateNovuIntegrationsCommand) {
+  private async createEmailIntegration(command: CreateTeleflowIntegrationsCommand) {
     if (!areNovuEmailCredentialsSet()) {
       return;
     }
@@ -53,7 +53,7 @@ export class CreateNovuIntegrations {
     }
   }
 
-  private async createSmsIntegration(command: CreateNovuIntegrationsCommand) {
+  private async createSmsIntegration(command: CreateTeleflowIntegrationsCommand) {
     if (!areNovuSmsCredentialsSet()) {
       return;
     }
@@ -89,7 +89,7 @@ export class CreateNovuIntegrations {
     }
   }
 
-  async execute(command: CreateNovuIntegrationsCommand): Promise<void> {
+  async execute(command: CreateTeleflowIntegrationsCommand): Promise<void> {
     await this.createEmailIntegration(command);
     await this.createSmsIntegration(command);
   }

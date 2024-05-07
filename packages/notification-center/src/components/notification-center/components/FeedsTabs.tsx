@@ -5,12 +5,12 @@ import styled from '@emotion/styled';
 import { NotificationsListTab } from './NotificationsListTab';
 import { UnseenBadge } from './UnseenBadge';
 import { Tabs } from './layout/tabs/Tabs';
-import { useNotificationCenter, useNotifications, useFeedUnseenCount, useNovuContext } from '../../../hooks';
+import { useNotificationCenter, useNotifications, useFeedUnseenCount, useTeleflowContext } from '../../../hooks';
 
 export function FeedsTabs() {
   const { tabs, onTabClick } = useNotificationCenter();
   const { storeId, setStore, markFetchedNotificationsAsSeen } = useNotifications();
-  const { setFetchingStrategy } = useNovuContext();
+  const { setFetchingStrategy } = useTeleflowContext();
 
   async function handleOnTabChange(newStoreId: string) {
     markFetchedNotificationsAsSeen();

@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import { OrganizationEntity, UserRepository } from '@teleflow/dal';
 import * as bcrypt from 'bcrypt';
 import { SignUpOriginEnum } from '@novu/shared';
-import { AnalyticsService, AuthService, createHash } from '@novu/application-generic';
+import { AnalyticsService, AuthService, createHash } from '@teleflow/application-generic';
 
 import { UserRegisterCommand } from './user-register.command';
 import { normalizeEmail } from '../../../shared/helpers/email-normalization.service';

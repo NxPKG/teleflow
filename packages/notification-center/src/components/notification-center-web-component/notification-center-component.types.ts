@@ -1,10 +1,10 @@
-import type { INovuProviderProps } from '../teleflow-provider';
+import type { ITeleflowProviderProps } from '../teleflow-provider';
 import type { IPopoverNotificationCenterProps } from '../popover-notification-center';
 import type { ColorScheme } from '../../shared/config/colors';
 import type { INotificationCenterStyles } from '../../store/styles';
 
 type SelectedProviderProps = Pick<
-  INovuProviderProps,
+  ITeleflowProviderProps,
   | 'onLoad'
   | 'stores'
   | 'backendUrl'
@@ -14,9 +14,9 @@ type SelectedProviderProps = Pick<
   | 'subscriberHash'
   | 'i18n'
 >;
-type NovuProviderProps = SelectedProviderProps & {
+type TeleflowProviderProps = SelectedProviderProps & {
   // Angular/Vue props
-  sessionLoaded?: INovuProviderProps['onLoad'];
+  sessionLoaded?: ITeleflowProviderProps['onLoad'];
 };
 
 // Angular/Vue props
@@ -61,5 +61,5 @@ type BellProps = { unseenBadgeColor?: string; unseenBadgeBackgroundColor?: strin
 
 export type PopoverWrapperProps = PopoverProps & BellProps;
 
-export type NotificationCenterComponentProps = NovuProviderProps &
+export type NotificationCenterComponentProps = TeleflowProviderProps &
   PopoverWrapperProps & { styles?: INotificationCenterStyles };

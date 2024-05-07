@@ -42,7 +42,7 @@ import {
   SwitchEnvironmentCommand,
   SwitchOrganization,
   SwitchOrganizationCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ApiCommonResponses } from '../shared/framework/response.decorator';
 import { UpdatePasswordBodyDto } from './dtos/update-password.dto';
 import { UpdatePassword } from './usecases/update-password/update-password.usecase';

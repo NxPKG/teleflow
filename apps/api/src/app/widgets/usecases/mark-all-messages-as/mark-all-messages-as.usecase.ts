@@ -6,7 +6,7 @@ import {
   InvalidateCacheService,
   buildFeedKey,
   buildMessageCountKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ChannelTypeEnum, MarkMessagesAsEnum, WebSocketEventEnum } from '@novu/shared';
 
 import { MarkAllMessagesAsCommand } from './mark-all-messages-as.command';

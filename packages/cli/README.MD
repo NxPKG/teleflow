@@ -64,7 +64,7 @@ npm install @teleflow/node
 ```ts
 import { Novu } from '@teleflow/node';
 
-const novu = new Novu(process.env.NOVU_API_KEY);
+const novu = new Novu(process.env.TELEFLOW_API_KEY);
 
 await novu.trigger('<TRIGGER_NAME>', {
   to: {

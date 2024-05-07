@@ -5,7 +5,7 @@ import { expect } from 'chai';
 
 import { ChangeModule } from '../../change.module';
 import { SharedModule } from '../../../shared/shared.module';
-import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
+import { CreateChange, CreateChangeCommand } from '@teleflow/application-generic';
 
 describe('Create Change', function () {
   let useCase: CreateChange;

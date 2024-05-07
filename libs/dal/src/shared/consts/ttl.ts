@@ -1,6 +1,8 @@
 export const TTL_EXPIRE_AFTER_AMOUNT = '48h';
 
-export const TTL_INDEX_ENABLED = !(process.env.NOVU_MANAGED_SERVICE === 'true' || process.env.DISABLE_TTL === 'true');
+export const TTL_INDEX_ENABLED = !(
+  process.env.TELEFLOW_MANAGED_SERVICE === 'true' || process.env.DISABLE_TTL === 'true'
+);
 
 export function getTTLOptions() {
   if (TTL_INDEX_ENABLED) {

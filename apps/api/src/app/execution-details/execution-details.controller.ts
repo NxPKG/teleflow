@@ -1,7 +1,7 @@
 import { ClassSerializerInterceptor, Controller, Get, Query, UseGuards, UseInterceptors } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { IJwtPayload } from '@novu/shared';
-import { ExecutionDetailsResponseDto } from '@novu/application-generic';
+import { ExecutionDetailsResponseDto } from '@teleflow/application-generic';
 import { UserSession } from '../shared/framework/user.decorator';
 import { UserAuthGuard } from '../auth/framework/user.auth.guard';
 import { ExternalApiAccessible } from '../auth/framework/external-api.decorator';

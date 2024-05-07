@@ -1,1 +1,1 @@
-export { INovuWorker, ReadinessService } from './readiness.service';
+export { ITeleflowWorker, ReadinessService } from './readiness.service';

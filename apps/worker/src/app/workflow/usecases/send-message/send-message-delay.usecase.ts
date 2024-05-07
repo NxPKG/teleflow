@@ -1,7 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { MessageRepository } from '@teleflow/dal';
 import { ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
-import { InstrumentUsecase, DetailEnum, ExecutionLogRoute, ExecutionLogRouteCommand } from '@novu/application-generic';
+import {
+  InstrumentUsecase,
+  DetailEnum,
+  ExecutionLogRoute,
+  ExecutionLogRouteCommand,
+} from '@teleflow/application-generic';
 
 import { SendMessageType } from './send-message-type.usecase';
 import { CreateLog } from '../../../shared/logs';

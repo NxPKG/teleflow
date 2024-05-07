@@ -1,4 +1,4 @@
-import { EnvironmentWithUserCommand } from '@novu/application-generic';
+import { EnvironmentWithUserCommand } from '@teleflow/application-generic';
 import { IsDefined } from 'class-validator';
 
 export class GetExecutionDetailsCommand extends EnvironmentWithUserCommand {

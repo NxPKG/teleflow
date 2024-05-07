@@ -1,1 +1,1 @@
-export * from './novu.module';
+export * from './teleflow.module';

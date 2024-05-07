@@ -9,7 +9,7 @@ import {
   NotificationTemplateEntity,
 } from '@teleflow/dal';
 import axios from 'axios';
-import { CompileTemplate, CompileTemplateCommand, createHash } from '@novu/application-generic';
+import { CompileTemplate, CompileTemplateCommand, createHash } from '@teleflow/application-generic';
 
 const LOG_CONTEXT = 'InboundEmailParse';
 

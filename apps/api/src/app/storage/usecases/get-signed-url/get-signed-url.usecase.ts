@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import * as hat from 'hat';
-import { StorageService } from '@novu/application-generic';
+import { StorageService } from '@teleflow/application-generic';
 import { UploadTypesEnum, FILE_EXTENSION_TO_MIME_TYPE } from '@novu/shared';
 
 import { UploadUrlResponse } from '../../dtos/upload-url-response.dto';

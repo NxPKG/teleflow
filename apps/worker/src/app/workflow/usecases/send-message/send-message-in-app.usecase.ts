@@ -17,14 +17,14 @@ import {
   SelectIntegration,
   buildFeedKey,
   buildMessageCountKey,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   CompileInAppTemplate,
   CompileInAppTemplateCommand,
   WebSocketsQueueService,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';
@@ -43,7 +43,7 @@ export class SendMessageInApp extends SendMessageBase {
     protected executionLogRoute: ExecutionLogRoute,
     protected subscriberRepository: SubscriberRepository,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef,
     protected compileInAppTemplate: CompileInAppTemplate
@@ -54,7 +54,7 @@ export class SendMessageInApp extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );

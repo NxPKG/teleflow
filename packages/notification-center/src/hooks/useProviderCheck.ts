@@ -7,7 +7,7 @@
 export function useProviderCheck<T>(context: T): T {
   if (context === null || context === undefined) {
     throw new Error(
-      'Component must be wrapped within the NovuProvider before using hooks from @teleflow/notification-center'
+      'Component must be wrapped within the TeleflowProvider before using hooks from @teleflow/notification-center'
     );
   }
 

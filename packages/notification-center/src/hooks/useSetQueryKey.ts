@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 
 export const useSetQueryKey = () => {
-  const { subscriberId, subscriberHash, applicationIdentifier } = useNovuContext();
+  const { subscriberId, subscriberHash, applicationIdentifier } = useTeleflowContext();
   const setQueryKey = useCallback(
     (queryKeys: Array<unknown>) => [...queryKeys, subscriberId, applicationIdentifier, subscriberHash],
     [subscriberId, subscriberHash, applicationIdentifier]

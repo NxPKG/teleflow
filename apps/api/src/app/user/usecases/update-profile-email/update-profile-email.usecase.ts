@@ -7,7 +7,7 @@ import {
   buildUserKey,
   decryptApiKey,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { EnvironmentRepository } from '@teleflow/dal';
 
 import { UpdateProfileEmailCommand } from './update-profile-email.command';

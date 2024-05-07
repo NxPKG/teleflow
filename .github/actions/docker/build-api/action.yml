@@ -87,16 +87,16 @@ runs:
     - name: Build with Buildx, tag, and test
       shell: bash
       env:
-        REGISTRY_OWNER: novuhq
+        REGISTRY_OWNER: nxpkg
         DOCKER_NAME: ${{ inputs.docker_name }}
         IMAGE_TAG: ${{ github.sha }}
         GH_ACTOR: ${{ github.actor }}
         GH_PASSWORD: ${{ inputs.github_token }}
         DOCKER_BUILD_ARGUMENTS: >
-          --cache-from type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.environment }}
-          --cache-to type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.environment }},mode=max
+          --cache-from type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.environment }}
+          --cache-to type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.environment }},mode=max
           --platform=linux/amd64 --provenance=false
-          --output=type=image,name=ghcr.io/novuhq/${{ inputs.docker_name }},push-by-digest=true,name-canonical=true
+          --output=type=image,name=ghcr.io/nxpkg/${{ inputs.docker_name }},push-by-digest=true,name-canonical=true
       run: |
         set -x
         cd apps/api && pnpm run docker:build
@@ -105,7 +105,7 @@ runs:
       id: build-image
       shell: bash
       env:
-        REGISTRY_OWNER: novuhq
+        REGISTRY_OWNER: nxpkg
         DOCKER_NAME: ${{ inputs.docker_name }}
         IMAGE_TAG: ${{ github.sha }}
         GH_ACTOR: ${{ github.actor }}
@@ -123,7 +123,7 @@ runs:
       if: ${{ inputs.tag }}
       shell: bash
       env:
-        REGISTRY_OWNER: novuhq
+        REGISTRY_OWNER: nxpkg
         DOCKER_NAME: ${{ inputs.docker_name }}
         IMAGE_TAG: ${{ github.sha }}
       run: |
@@ -133,7 +133,7 @@ runs:
       if: ${{ inputs.push == 'true' }}
       shell: bash
       env:
-        REGISTRY_OWNER: novuhq
+        REGISTRY_OWNER: nxpkg
         DOCKER_NAME: ${{ inputs.docker_name }}
         IMAGE_TAG: ${{ github.sha }}
       run: |
@@ -143,7 +143,7 @@ runs:
       if: ${{ inputs.push == 'true' && inputs.tag }}
       shell: bash
       env:
-        REGISTRY_OWNER: novuhq
+        REGISTRY_OWNER: nxpkg
         DOCKER_NAME: ${{ inputs.docker_name }}
       run: |
         docker push ghcr.io/$REGISTRY_OWNER/$DOCKER_NAME:${{ inputs.tag }}

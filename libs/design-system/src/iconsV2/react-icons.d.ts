@@ -1,9 +1,9 @@
-import type { IconSize, IconType as NovuIconType, IIconProps } from './Icon.types';
+import type { IconSize, IconType as TeleflowIconType, IIconProps } from './Icon.types';
 
 /** Override Icon types */
 
 declare module 'react-icons' {
-  export type IconType = NovuIconType;
+  export type IconType = TeleflowIconType;
 
   // avoid declaration merging by using type instead of interface below
   export type IconBaseProps = IIconProps;

@@ -9,7 +9,7 @@ import {
   CacheInMemoryProviderService,
   CacheService,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 describe('Count - GET /widget/notifications/count', function () {
   const messageRepository = new MessageRepository();

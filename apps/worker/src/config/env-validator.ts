@@ -24,10 +24,10 @@ const validators: { [K in keyof any]: ValidatorSpec<any[K]> } = {
   STORE_NOTIFICATION_CONTENT: str({
     default: 'false',
   }),
-  MAX_NOVU_INTEGRATION_MAIL_REQUESTS: num({
+  MAX_TELEFLOW_INTEGRATION_MAIL_REQUESTS: num({
     default: 300,
   }),
-  MAX_NOVU_INTEGRATION_SMS_REQUESTS: num({
+  MAX_TELEFLOW_INTEGRATION_SMS_REQUESTS: num({
     default: 20,
   }),
   STORAGE_SERVICE: str({

@@ -9,7 +9,7 @@ import { ForwardReference } from '@nestjs/common/interfaces/modules/forward-refe
 const enterpriseImports = (): Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> => {
   const modules: Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> = [];
   try {
-    if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+    if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
       if (require('@novu/ee-translation')?.EnterpriseTranslationModule) {
         modules.push(require('@novu/ee-translation')?.EnterpriseTranslationModule);
       }

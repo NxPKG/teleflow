@@ -1,1 +1,1 @@
-export { decryptCredentials, encryptCredentials } from '@novu/application-generic';
+export { decryptCredentials, encryptCredentials } from '@teleflow/application-generic';

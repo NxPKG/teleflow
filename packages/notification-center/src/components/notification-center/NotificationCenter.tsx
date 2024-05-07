@@ -4,7 +4,7 @@ import { IMessage, IMessageAction, ButtonTypeEnum } from '@novu/shared';
 import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { AppContent } from './components';
-import { useNotifications, useNovuContext } from '../../hooks';
+import { useNotifications, useTeleflowContext } from '../../hooks';
 import { NotificationCenterContext } from '../../store/notification-center.context';
 import { ITab, ListItem, ScreensEnum } from '../../shared/interfaces';
 import { ColorScheme } from '../../shared/config/colors';
@@ -47,7 +47,7 @@ export function NotificationCenter({
   colorScheme,
   theme,
 }: INotificationCenterProps) {
-  const { applicationIdentifier } = useNovuContext();
+  const { applicationIdentifier } = useTeleflowContext();
   const { unseenCount } = useNotifications();
   const onUnseenCountChangedRef = useRef(onUnseenCountChanged);
   onUnseenCountChangedRef.current = onUnseenCountChanged;

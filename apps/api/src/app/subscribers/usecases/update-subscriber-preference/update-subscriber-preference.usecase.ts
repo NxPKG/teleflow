@@ -12,7 +12,7 @@ import {
   AnalyticsService,
   GetSubscriberTemplatePreference,
   GetSubscriberTemplatePreferenceCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ISubscriberPreferenceResponse } from '@novu/shared';
 
 import { UpdateSubscriberPreferenceCommand } from './update-subscriber-preference.command';

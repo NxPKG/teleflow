@@ -5,7 +5,7 @@ import { createHash } from 'crypto';
 import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum } from '@teleflow/stateless';
 import { EnvironmentRepository } from '@teleflow/dal';
-import { decryptApiKey } from '@novu/application-generic';
+import { decryptApiKey } from '@teleflow/application-generic';
 
 import { encryptApiKeysMigration } from './encrypt-api-keys-migration';
 

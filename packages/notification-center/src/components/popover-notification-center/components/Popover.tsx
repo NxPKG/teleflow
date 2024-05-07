@@ -7,7 +7,7 @@ import { ITelelfowTheme } from '../../../store/teleflow-theme.context';
 import { useStyles } from '../../../store/styles';
 import { useNotifications } from '../../../hooks';
 
-interface INovuPopoverProps {
+interface ITeleflowPopoverProps {
   bell: (props: any) => JSX.Element;
   children: JSX.Element;
   theme: ITelelfowTheme;
@@ -15,7 +15,7 @@ interface INovuPopoverProps {
   position?: PopoverProps['position'];
 }
 
-export function Popover({ children, bell, theme, offset = 0, position = 'bottom-end' }: INovuPopoverProps) {
+export function Popover({ children, bell, theme, offset = 0, position = 'bottom-end' }: ITeleflowPopoverProps) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const { cx, classes } = usePopoverStyles(theme.popover?.arrowColor);
   const [popoverArrowStyles, popoverDropdownStyles] = useStyles(['popover.arrow', 'popover.dropdown']);

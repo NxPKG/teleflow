@@ -1,3 +1,3 @@
-import { UserAuthGuard } from '@novu/application-generic';
+import { UserAuthGuard } from '@teleflow/application-generic';
 
 export { UserAuthGuard };

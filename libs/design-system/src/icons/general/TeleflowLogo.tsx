@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 
-export function NovuLogo(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function TeleflowLogo(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="109" height="24" fill="none" viewBox="0 0 109 24" {...props}>
       <g fillRule="evenodd" clipPath="url(#clip0_1_46)" clipRule="evenodd">

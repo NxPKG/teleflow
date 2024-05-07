@@ -38,7 +38,7 @@ const validateAtTime = (atTime?: string) => {
 
   if (!hasValidAtTime(atTime)) {
     throw new ApiException(
-      'Digest timed config atTime has invalid format, expected 24h time format'
+      'Digest timed config atTime has invalid format, expected 24h time format',
     );
   }
 };

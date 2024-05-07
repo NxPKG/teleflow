@@ -38,18 +38,18 @@ const installVueNotificationCenter = 'npm install @teleflow/notification-center-
 
 export const reactStarterSnippet = `import React from 'react';
 import {
-  NovuProvider,
+  TeleflowProvider,
   PopoverNotificationCenter,
   NotificationBell,
 } from '@teleflow/notification-center';
 
 export const Header = () => {
   return (
-    <NovuProvider subscriberId={'${onBoardingSubscriberId}'} applicationIdentifier={'${APPLICATION_IDENTIFIER}'}>
+    <TeleflowProvider subscriberId={'${onBoardingSubscriberId}'} applicationIdentifier={'${APPLICATION_IDENTIFIER}'}>
       <PopoverNotificationCenter colorScheme={'light'}>
         {({ unseenCount }) => <NotificationBell unseenCount={unseenCount} />}
       </PopoverNotificationCenter>
-    </NovuProvider>
+    </TeleflowProvider>
   );
 };`;
 

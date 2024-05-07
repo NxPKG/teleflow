@@ -13,7 +13,7 @@ import {
   BullMqService,
   WorkflowInMemoryProviderService,
   IProcessSubscriberDataDto,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 const LOG_CONTEXT = 'SubscriberProcessWorker';
 

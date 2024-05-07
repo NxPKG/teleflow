@@ -3,7 +3,7 @@ import { TemplateStore } from './template/template.store';
 import { ThemeStore } from './theme/theme.store';
 import { IContentEngine } from './content/content.engine';
 
-export interface INovuConfig {
+export interface ITeleflowConfig {
   channels?: {
     email?: {
       from?: { name: string; email: string };

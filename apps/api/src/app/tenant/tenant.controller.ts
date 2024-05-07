@@ -23,7 +23,7 @@ import {
   GetTenantCommand,
   CreateTenant,
   CreateTenantCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { UserAuthGuard } from '../auth/framework/user.auth.guard';
 import { UserSession } from '../shared/framework/user.decorator';

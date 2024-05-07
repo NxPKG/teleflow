@@ -41,7 +41,7 @@
     "@nestjs/swagger": "^7.1.8",
     "@nestjs/terminus": "^10.0.1",
     "@nestjs/throttler": "^5.0.1",
-    "@novu/application-generic": "^0.24.1",
+    "@teleflow/application-generic": "^0.24.1",
     "@teleflow/dal": "^0.24.1",
     "@teleflow/node": "^0.24.1",
     "@novu/shared": "^0.24.1",

@@ -40,7 +40,7 @@ import {
   storageService,
   ExecutionLogRoute,
   CreateExecutionDetails,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import * as packageJson from '../../../package.json';
 import { JobTopicNameEnum } from '@novu/shared';

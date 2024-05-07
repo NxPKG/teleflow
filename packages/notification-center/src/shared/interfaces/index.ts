@@ -82,7 +82,7 @@ export interface IFetchingStrategy {
   fetchUserGlobalPreferences: boolean;
 }
 
-export interface INovuProviderContext {
+export interface ITeleflowProviderContext {
   backendUrl?: string;
   subscriberId?: string;
   applicationIdentifier?: string;

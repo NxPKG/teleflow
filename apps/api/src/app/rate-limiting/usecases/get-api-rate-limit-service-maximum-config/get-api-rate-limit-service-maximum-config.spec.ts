@@ -8,7 +8,11 @@ import {
 } from '@novu/shared';
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { CacheService, InvalidateCacheService, cacheService as cacheServiceProvider } from '@novu/application-generic';
+import {
+  CacheService,
+  InvalidateCacheService,
+  cacheService as cacheServiceProvider,
+} from '@teleflow/application-generic';
 
 const mockRateLimitServiceLevel = ApiServiceLevelEnum.FREE;
 const mockRateLimitCategory = ApiRateLimitCategoryEnum.GLOBAL;

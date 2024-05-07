@@ -3,7 +3,12 @@ import { Injectable, Logger } from '@nestjs/common';
 
 import { JobRepository } from '@teleflow/dal';
 import { ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
-import { DetailEnum, ExecutionLogRoute, ExecutionLogRouteCommand, InstrumentUsecase } from '@novu/application-generic';
+import {
+  DetailEnum,
+  ExecutionLogRoute,
+  ExecutionLogRouteCommand,
+  InstrumentUsecase,
+} from '@teleflow/application-generic';
 
 import { HandleLastFailedJobCommand } from './handle-last-failed-job.command';
 import { QueueNextJob, QueueNextJobCommand } from '../queue-next-job';

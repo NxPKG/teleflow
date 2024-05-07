@@ -1,5 +1,5 @@
 import { useMantineColorScheme } from '@mantine/core';
-import { NovuProvider, PopoverNotificationCenter, useUpdateAction } from '@teleflow/notification-center';
+import { TeleflowProvider, PopoverNotificationCenter, useUpdateAction } from '@teleflow/notification-center';
 import { ButtonTypeEnum, IMessage, IUserEntity, MessageActionStatusEnum } from '@novu/shared';
 
 import { API_ROOT, APP_ID, IS_EU_ENV, WS_URL } from '../../../config';
@@ -14,14 +14,14 @@ export function NotificationCenterWidget({ user }: { user: IUserEntity | undefin
 
   return (
     <>
-      <NovuProvider
+      <TeleflowProvider
         backendUrl={BACKEND_URL}
         socketUrl={SOCKET_URL}
         subscriberId={user?._id as string}
         applicationIdentifier={APP_ID || (environment?.identifier as string)}
       >
         <PopoverWrapper />
-      </NovuProvider>
+      </TeleflowProvider>
     </>
   );
 }

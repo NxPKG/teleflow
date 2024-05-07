@@ -13,7 +13,7 @@ import { usePreviewPushTemplate } from '../../../../pages/templates/hooks/usePre
 import { useStepFormPath } from '../../../../pages/templates/hooks/useStepFormPath';
 import { useTemplateLocales } from '../../../../pages/templates/hooks/useTemplateLocales';
 import { LocaleSelect, PreviewEditOverlay } from '../common';
-import { NovuGreyIcon } from '../common/NovuGreyIcon';
+import { TeleflowGreyIcon } from '../common/TeleflowGreyIcon';
 import {
   ContentAndOVerlayWrapperStyled,
   ContentHeaderStyled,
@@ -106,7 +106,7 @@ export default function Content({
             <>
               <ContentHeaderStyled>
                 <Flex align="center" gap={5}>
-                  <NovuGreyIcon color={isDark ? colors.B30 : '#1F1F27'} width="24px" height="24px" />
+                  <TeleflowGreyIcon color={isDark ? colors.B30 : '#1F1F27'} width="24px" height="24px" />
                   <Text color={colors.B20} weight="bold">
                     Your App
                   </Text>

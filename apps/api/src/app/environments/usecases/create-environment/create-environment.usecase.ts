@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { createHash } from 'crypto';
 
 import { EnvironmentRepository } from '@teleflow/dal';
-import { encryptApiKey } from '@novu/application-generic';
+import { encryptApiKey } from '@teleflow/application-generic';
 
 import { CreateEnvironmentCommand } from './create-environment.command';
 import { GenerateUniqueApiKey } from '../generate-unique-api-key/generate-unique-api-key.usecase';

@@ -9,25 +9,25 @@ import {
   SmsProviderIdEnum,
 } from '@novu/shared';
 import { AnalyticsService } from '../../services/analytics.service';
-import { CalculateLimitNovuIntegration } from '../calculate-limit-teleflow-integration';
+import { CalculateLimitTeleflowIntegration } from '../calculate-limit-teleflow-integration';
 
-import { GetNovuProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
+import { GetTeleflowProviderCredentialsCommand } from './get-teleflow-provider-credentials.command';
 
 @Injectable()
-export class GetNovuProviderCredentials {
+export class GetTeleflowProviderCredentials {
   constructor(
     private analyticsService: AnalyticsService,
-    protected calculateLimitNovuIntegration: CalculateLimitNovuIntegration,
+    protected calculateLimitTeleflowIntegration: CalculateLimitTeleflowIntegration,
   ) {}
 
   async execute(
-    integration: GetNovuProviderCredentialsCommand,
+    integration: GetTeleflowProviderCredentialsCommand,
   ): Promise<ICredentials> {
     if (
       integration.providerId === EmailProviderIdEnum.Novu ||
       integration.providerId === SmsProviderIdEnum.Novu
     ) {
-      const limit = await this.calculateLimitNovuIntegration.execute({
+      const limit = await this.calculateLimitTeleflowIntegration.execute({
         channelType: integration.channelType,
         environmentId: integration.environmentId,
         organizationId: integration.organizationId,
@@ -59,7 +59,7 @@ export class GetNovuProviderCredentials {
 
     if (integration.providerId === EmailProviderIdEnum.Novu) {
       return {
-        apiKey: process.env.NOVU_EMAIL_INTEGRATION_API_KEY,
+        apiKey: process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY,
         from: 'no-reply@novu.co',
         senderName: 'Novu',
         ipPoolName: 'Demo',
@@ -68,9 +68,9 @@ export class GetNovuProviderCredentials {
 
     if (integration.providerId === SmsProviderIdEnum.Novu) {
       return {
-        accountSid: process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID,
-        token: process.env.NOVU_SMS_INTEGRATION_TOKEN,
-        from: process.env.NOVU_SMS_INTEGRATION_SENDER,
+        accountSid: process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID,
+        token: process.env.TELEFLOW_SMS_INTEGRATION_TOKEN,
+        from: process.env.TELEFLOW_SMS_INTEGRATION_SENDER,
       };
     }
 

@@ -8,7 +8,7 @@ import { Group, useMantineColorScheme } from '@mantine/core';
 import {
   Translation,
   colors,
-  NovuIcon,
+  TeleflowIcon,
   Search,
   Input,
   Workflow,
@@ -191,7 +191,12 @@ const VariablesSection = ({ variablesList, searchVal }: { variablesList: IVariab
 
   return (
     <>
-      <VariableSectionItem variableList={system} search={searchVal} sectionName="System Variables" Icon={NovuIcon} />
+      <VariableSectionItem
+        variableList={system}
+        search={searchVal}
+        sectionName="System Variables"
+        Icon={TeleflowIcon}
+      />
       <VariableSectionItem variableList={step} search={searchVal} sectionName="Step Variables" Icon={Workflow} />
       <TranslationSectionItem variableList={translations} search={searchVal} />
     </>

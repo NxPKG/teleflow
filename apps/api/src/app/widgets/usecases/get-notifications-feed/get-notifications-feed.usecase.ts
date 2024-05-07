@@ -6,7 +6,7 @@ import {
   buildSubscriberKey,
   CachedEntity,
   CachedQuery,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { MessageRepository, SubscriberEntity, SubscriberRepository } from '@teleflow/dal';
 
 import { GetNotificationsFeedCommand } from './get-notifications-feed.command';

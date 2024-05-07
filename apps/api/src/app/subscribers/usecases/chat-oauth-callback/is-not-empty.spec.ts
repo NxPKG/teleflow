@@ -1,4 +1,4 @@
-import { BaseCommand } from '@novu/application-generic';
+import { BaseCommand } from '@teleflow/application-generic';
 import { IsNotEmpty } from './chat-oauth-callback.command';
 import { expect } from 'chai';
 

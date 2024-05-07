@@ -4,14 +4,14 @@ import {
   MergeOrCreateDigest,
   AddJob,
   BulkCreateExecutionDetails,
-  CalculateLimitNovuIntegration,
+  CalculateLimitTeleflowIntegration,
   CompileEmailTemplate,
   CompileTemplate,
   CreateExecutionDetails,
   GetDecryptedIntegrations,
   GetLayoutUseCase,
-  GetNovuLayout,
-  GetNovuProviderCredentials,
+  GetTeleflowLayout,
+  GetTeleflowProviderCredentials,
   GetSubscriberPreference,
   GetSubscriberGlobalPreference,
   GetSubscriberTemplatePreference,
@@ -30,7 +30,7 @@ import {
   CompileInAppTemplate,
   WorkflowInMemoryProviderService,
   ExecutionLogRoute,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { JobRepository } from '@teleflow/dal';
 
 import {
@@ -63,7 +63,7 @@ import { JobTopicNameEnum } from '@novu/shared';
 const enterpriseImports = (): Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> => {
   const modules: Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> = [];
   try {
-    if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+    if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
       Logger.log('Importing enterprise modules', 'EnterpriseImport');
       if (require('@novu/ee-translation')?.EnterpriseTranslationModuleWithoutControllers) {
         Logger.log('Importing enterprise translations module', 'EnterpriseImport');
@@ -94,7 +94,7 @@ const USE_CASES = [
   AddDelayJob,
   MergeOrCreateDigest,
   AddJob,
-  CalculateLimitNovuIntegration,
+  CalculateLimitTeleflowIntegration,
   CompileEmailTemplate,
   CompileTemplate,
   CreateExecutionDetails,
@@ -105,8 +105,8 @@ const USE_CASES = [
   GetDigestEventsBackoff,
   GetDigestEventsRegular,
   GetLayoutUseCase,
-  GetNovuLayout,
-  GetNovuProviderCredentials,
+  GetTeleflowLayout,
+  GetTeleflowProviderCredentials,
   SelectIntegration,
   SelectVariant,
   GetSubscriberPreference,

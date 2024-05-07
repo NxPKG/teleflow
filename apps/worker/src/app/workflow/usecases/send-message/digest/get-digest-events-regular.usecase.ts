@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Injectable } from '@nestjs/common';
 import { sub } from 'date-fns';
-import { getJobDigest, InstrumentUsecase } from '@novu/application-generic';
+import { getJobDigest, InstrumentUsecase } from '@teleflow/application-generic';
 
 import { DigestEventsCommand } from './digest-events.command';
 import { GetDigestEvents } from './get-digest-events.usecase';

@@ -1,5 +1,5 @@
 import { IsDefined } from 'class-validator';
-import { EnvironmentLevelWithUserCommand } from '@novu/application-generic';
+import { EnvironmentLevelWithUserCommand } from '@teleflow/application-generic';
 
 export class SetJobAsCommand extends EnvironmentLevelWithUserCommand {
   @IsDefined()

@@ -1,5 +1,5 @@
 import { IChanges, IChangesPayload } from './changes.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Changes extends WithHttp implements IChanges {
   /**

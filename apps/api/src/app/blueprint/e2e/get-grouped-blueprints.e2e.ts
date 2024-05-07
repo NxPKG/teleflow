@@ -17,7 +17,7 @@ import {
   CacheInMemoryProviderService,
   CacheService,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { GroupedBlueprintResponse } from '../dto/grouped-blueprint.response.dto';
 import { CreateWorkflowRequestDto } from '../../workflows/dto';

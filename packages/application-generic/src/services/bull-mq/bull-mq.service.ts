@@ -44,10 +44,10 @@ export class BullMqService {
   private _worker: Worker;
 
   public static readonly pro: boolean =
-    process.env.NOVU_MANAGED_SERVICE !== undefined;
+    process.env.TELEFLOW_MANAGED_SERVICE !== undefined;
 
   constructor(
-    private workflowInMemoryProviderService: WorkflowInMemoryProviderService
+    private workflowInMemoryProviderService: WorkflowInMemoryProviderService,
   ) {}
 
   public get worker(): Worker {
@@ -118,7 +118,7 @@ export class BullMqService {
       `Creating queue ${topic}. BullMQ pro is ${
         this.runningWithProQueue() ? 'Enabled' : 'Disabled'
       }`,
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
 
     const prefix = this.generatePrefix(topic);
@@ -133,7 +133,7 @@ export class BullMqService {
   public createWorker(
     topic: JobTopicNameEnum,
     processor?: string | Processor<any, unknown | void, string>,
-    workerOptions?: WorkerOptions
+    workerOptions?: WorkerOptions,
   ) {
     // eslint-disable-next-line @typescript-eslint/naming-convention
     const WorkerClass = !BullMqService.pro
@@ -159,7 +159,7 @@ export class BullMqService {
       `Creating worker ${topic}. BullMQ pro is ${
         this.runningWithProQueue() ? 'Enabled' : 'Disabled'
       }`,
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
 
     const prefix = this.generatePrefix(topic);
@@ -175,7 +175,7 @@ export class BullMqService {
     name: string,
     data: BullMqJobData,
     options: JobsOptions = {},
-    groupId?: string
+    groupId?: string,
   ) {
     this._queue.add(name, data, {
       ...options,
@@ -195,7 +195,7 @@ export class BullMqService {
       data: BullMqJobData;
       options?: BulkJobOptions;
       groupId?: string;
-    }[]
+    }[],
   ) {
     const jobs = data.map((job) => {
       const jobOptions = {
@@ -289,13 +289,13 @@ export class BullMqService {
         await this._worker.pause(doNotWaitActive);
         Logger.verbose(
           `Worker ${this._worker.name} pause succeeded`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
       } catch (error) {
         Logger.error(
           error,
           `Worker ${this._worker.name} pause failed`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
 
         throw error;
@@ -309,13 +309,13 @@ export class BullMqService {
         await this._worker.resume();
         Logger.verbose(
           `Worker ${this._worker.name} resume succeeded`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
       } catch (error) {
         Logger.error(
           error,
           `Worker ${this._worker.name} resume failed`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
 
         throw error;

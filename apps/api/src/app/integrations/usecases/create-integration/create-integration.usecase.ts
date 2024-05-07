@@ -17,7 +17,7 @@ import {
   InvalidateCacheService,
   areNovuSmsCredentialsSet,
   areNovuEmailCredentialsSet,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { CreateIntegrationCommand } from './create-integration.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';

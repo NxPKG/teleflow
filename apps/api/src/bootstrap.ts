@@ -9,7 +9,7 @@ import * as compression from 'compression';
 import { NestFactory, Reflector } from '@nestjs/core';
 import * as bodyParser from 'body-parser';
 import * as Sentry from '@sentry/node';
-import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@novu/application-generic';
+import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@teleflow/application-generic';
 import { ExpressAdapter } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';
@@ -48,7 +48,7 @@ export async function bootstrap(expressApp?): Promise<INestApplication> {
 
   try {
     if (
-      (process.env.NOVU_ENTERPRISE === 'true' && require('@novu/ee-billing')?.rawBodyBuffer) ||
+      (process.env.TELEFLOW_ENTERPRISE === 'true' && require('@novu/ee-billing')?.rawBodyBuffer) ||
       process.env.CI_EE_TEST === 'true'
     ) {
       rawBodyBuffer = require('@novu/ee-billing')?.rawBodyBuffer;

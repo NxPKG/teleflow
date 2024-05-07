@@ -1,5 +1,5 @@
 import { ChannelTypeEnum } from '@novu/shared';
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 import axios from 'axios';
 
 const mockConfig = {

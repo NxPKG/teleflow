@@ -1,11 +1,11 @@
 import React from 'react';
-import { INovuPopoverTheme, ITelelfowTheme, ThemeContext } from './teleflow-theme.context';
+import { ITeleflowPopoverTheme, ITelelfowTheme, ThemeContext } from './teleflow-theme.context';
 import { ColorScheme } from '../index';
 import { getDefaultTheme } from '../utils/defaultTheme';
 
 export interface ITelelfowThemePopoverProvider {
-  light?: INovuPopoverTheme;
-  dark?: INovuPopoverTheme;
+  light?: ITeleflowPopoverTheme;
+  dark?: ITeleflowPopoverTheme;
   common?: ICommonTheme;
 }
 

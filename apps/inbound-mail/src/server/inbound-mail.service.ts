@@ -1,4 +1,4 @@
-import { InboundParseQueueService, WorkflowInMemoryProviderService } from '@novu/application-generic';
+import { InboundParseQueueService, WorkflowInMemoryProviderService } from '@teleflow/application-generic';
 
 export class InboundMailService {
   public inboundParseQueueService: InboundParseQueueService;

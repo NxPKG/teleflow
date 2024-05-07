@@ -7,7 +7,7 @@ import {
   InvalidateCacheService,
   buildFeedKey,
   buildMessageCountKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { MarkEnum } from '../mark-message-as/mark-message-as.command';

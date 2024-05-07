@@ -27,7 +27,7 @@ import {
   UserService,
   JobsService,
 } from '@teleflow/testing';
-import { BullMqService, StandardQueueService, WorkflowInMemoryProviderService } from '@novu/application-generic';
+import { BullMqService, StandardQueueService, WorkflowInMemoryProviderService } from '@teleflow/application-generic';
 
 import { StandardWorker } from './standard.worker';
 

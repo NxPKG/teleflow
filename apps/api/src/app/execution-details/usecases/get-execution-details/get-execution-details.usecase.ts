@@ -5,7 +5,7 @@ import {
   SubscriberEntity,
   SubscriberRepository,
 } from '@teleflow/dal';
-import { buildSubscriberKey, CachedEntity } from '@novu/application-generic';
+import { buildSubscriberKey, CachedEntity } from '@teleflow/application-generic';
 import { GetExecutionDetailsCommand } from './get-execution-details.command';
 
 @Injectable()

@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/node';
 import { MessageEntity, MessageRepository } from '@teleflow/dal';
 import { LogCodeEnum } from '@novu/shared';
-import { ExecutionLogRoute } from '@novu/application-generic';
+import { ExecutionLogRoute } from '@teleflow/application-generic';
 
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';

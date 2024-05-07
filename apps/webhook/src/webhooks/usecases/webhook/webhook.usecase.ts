@@ -15,7 +15,7 @@ import {
   ISmsHandler,
   MailFactory,
   SmsFactory,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { WebhookCommand } from './webhook.command';
 

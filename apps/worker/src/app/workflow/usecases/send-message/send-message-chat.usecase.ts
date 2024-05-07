@@ -25,7 +25,7 @@ import {
   CompileTemplateCommand,
   ChatFactory,
   SelectIntegration,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
@@ -35,7 +35,7 @@ import {
   IChimeraChannelResponse,
   IBlock,
   SelectIntegrationCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';
@@ -54,7 +54,7 @@ export class SendMessageChat extends SendMessageBase {
     protected createLogUsecase: CreateLog,
     private compileTemplate: CompileTemplate,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected executionLogRoute: ExecutionLogRoute,
     protected moduleRef: ModuleRef
@@ -65,7 +65,7 @@ export class SendMessageChat extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );

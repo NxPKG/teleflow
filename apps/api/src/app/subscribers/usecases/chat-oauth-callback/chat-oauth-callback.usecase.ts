@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import axios from 'axios';
 
-import { CreateSubscriber, CreateSubscriberCommand, decryptCredentials } from '@novu/application-generic';
+import { CreateSubscriber, CreateSubscriberCommand, decryptCredentials } from '@teleflow/application-generic';
 import { ICredentialsDto } from '@novu/shared';
 import {
   ChannelTypeEnum,
@@ -78,7 +78,7 @@ export class ChatOauthCallback {
         providerId: command.providerId,
         integrationIdentifier: command.integrationIdentifier,
         credentials: subscriberCredentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );

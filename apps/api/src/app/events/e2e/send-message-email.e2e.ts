@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { CompileEmailTemplate } from '@novu/application-generic';
+import { CompileEmailTemplate } from '@teleflow/application-generic';
 import { IEmailOptions } from '@teleflow/stateless';
 
 export const createMailData = (options: IEmailOptions, overrides: Record<string, any>): IEmailOptions => {

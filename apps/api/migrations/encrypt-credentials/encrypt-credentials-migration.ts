@@ -1,7 +1,7 @@
 import { IntegrationEntity } from '@teleflow/dal';
 import { IntegrationRepository } from '@teleflow/dal';
 import { ICredentialsDto, secureCredentials } from '@novu/shared';
-import { encryptSecret } from '@novu/application-generic';
+import { encryptSecret } from '@teleflow/application-generic';
 
 export async function encryptOldCredentialsMigration() {
   // eslint-disable-next-line no-console

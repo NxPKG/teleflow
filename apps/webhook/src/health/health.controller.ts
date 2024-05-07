@@ -1,12 +1,15 @@
 import { Controller, Get } from '@nestjs/common';
 import { HealthCheck, HealthCheckResult, HealthCheckService } from '@nestjs/terminus';
-import { DalServiceHealthIndicator } from '@novu/application-generic';
+import { DalServiceHealthIndicator } from '@teleflow/application-generic';
 
 import { version } from '../../package.json';
 
 @Controller('v1/health-check')
 export class HealthController {
-  constructor(private healthCheckService: HealthCheckService, private dalHealthIndicator: DalServiceHealthIndicator) {}
+  constructor(
+    private healthCheckService: HealthCheckService,
+    private dalHealthIndicator: DalServiceHealthIndicator
+  ) {}
 
   @Get()
   @HealthCheck()

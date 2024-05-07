@@ -5,7 +5,7 @@ import {
   ILayoutUpdatePayload,
   ILayouts,
 } from './layout.interface';
-import { WithHttp } from '../novu.interface';
+import { WithHttp } from '../teleflow.interface';
 
 export class Layouts extends WithHttp implements ILayouts {
   async create(data: ILayoutPayload) {

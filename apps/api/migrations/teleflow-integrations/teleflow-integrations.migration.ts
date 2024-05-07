@@ -16,7 +16,7 @@ const organizationRepository = new OrganizationRepository();
 const environmentRepository = new EnvironmentRepository();
 const integrationRepository = new IntegrationRepository();
 
-const createNovuIntegration = async (
+const createTeleflowIntegration = async (
   environment: EnvironmentEntity,
   channel: ChannelTypeEnum.EMAIL | ChannelTypeEnum.SMS
 ) => {
@@ -54,7 +54,7 @@ const createNovuIntegration = async (
   console.log('Created Integration' + response._id);
 };
 
-export async function createNovuIntegrations() {
+export async function createTeleflowIntegrations() {
   // Init the mongodb connection
   const app = await NestFactory.create(AppModule, {
     logger: false,
@@ -75,8 +75,8 @@ export async function createNovuIntegrations() {
 
     const environments = await environmentRepository.findOrganizationEnvironments(organization._id);
     for (const environment of environments) {
-      await createNovuIntegration(environment, ChannelTypeEnum.SMS);
-      await createNovuIntegration(environment, ChannelTypeEnum.EMAIL);
+      await createTeleflowIntegration(environment, ChannelTypeEnum.SMS);
+      await createTeleflowIntegration(environment, ChannelTypeEnum.EMAIL);
 
       console.log('Processed environment' + environment._id);
     }
@@ -88,4 +88,4 @@ export async function createNovuIntegrations() {
   console.log('end migration');
 }
 
-createNovuIntegrations();
+createTeleflowIntegrations();

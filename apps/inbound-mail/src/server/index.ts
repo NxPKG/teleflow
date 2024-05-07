@@ -11,7 +11,7 @@ import { SMTPServer } from 'smtp-server';
 import * as uuid from 'uuid';
 import * as dns from 'dns';
 import * as extend from 'extend';
-import { BullMqService } from '@novu/application-generic';
+import { BullMqService } from '@teleflow/application-generic';
 
 import { InboundMailService } from './inbound-mail.service';
 import logger from './logger';

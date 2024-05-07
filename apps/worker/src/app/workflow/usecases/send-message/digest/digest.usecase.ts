@@ -14,7 +14,7 @@ import {
   GetFeatureFlagCommand,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { GetDigestEventsRegular } from './get-digest-events-regular.usecase';
 import { GetDigestEventsBackoff } from './get-digest-events-backoff.usecase';

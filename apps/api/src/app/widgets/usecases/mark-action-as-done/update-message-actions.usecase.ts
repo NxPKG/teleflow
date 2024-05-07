@@ -6,7 +6,7 @@ import {
   SubscriberRepository,
   MemberRepository,
 } from '@teleflow/dal';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 
 import { UpdateMessageActionsCommand } from './update-message-actions.command';
 

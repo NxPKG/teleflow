@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { GetSubscriberGlobalPreference, GetSubscriberGlobalPreferenceCommand } from '@novu/application-generic';
+import { GetSubscriberGlobalPreference, GetSubscriberGlobalPreferenceCommand } from '@teleflow/application-generic';
 import {
   ChannelTypeEnum,
   PreferenceLevelEnum,

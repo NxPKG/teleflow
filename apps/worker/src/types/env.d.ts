@@ -8,8 +8,8 @@ declare global {
       PORT: string;
       STORE_ENCRYPTION_KEY: string;
       STORE_NOTIFICATION_CONTENT: string;
-      MAX_NOVU_INTEGRATION_MAIL_REQUESTS?: string;
-      NOVU_EMAIL_INTEGRATION_API_KEY?: string;
+      MAX_TELEFLOW_INTEGRATION_MAIL_REQUESTS?: string;
+      TELEFLOW_EMAIL_INTEGRATION_API_KEY?: string;
       STORAGE_SERVICE?: string;
       METRICS_SERVICE?: string;
       REDIS_HOST: string;

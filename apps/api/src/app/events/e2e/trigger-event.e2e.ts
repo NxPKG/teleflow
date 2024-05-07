@@ -41,7 +41,7 @@ import {
 } from '@novu/shared';
 import { EmailEventStatusEnum } from '@teleflow/stateless';
 import { createTenant } from '../../tenant/e2e/create-tenant.e2e';
-import { DetailEnum } from '@novu/application-generic';
+import { DetailEnum } from '@teleflow/application-generic';
 
 const axiosInstance = axios.create();
 
@@ -1655,7 +1655,7 @@ describe(`Trigger event - ${eventTriggerPath} (POST)`, function () {
     });
 
     it('should use Novu integration for new orgs', async function () {
-      process.env.NOVU_EMAIL_INTEGRATION_API_KEY = 'true';
+      process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY = 'true';
 
       const existingIntegrations = await integrationRepository.find({
         _organizationId: session.organization._id,

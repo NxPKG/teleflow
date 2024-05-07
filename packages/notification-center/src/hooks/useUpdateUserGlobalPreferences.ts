@@ -3,7 +3,7 @@ import { useMutation, UseMutationOptions, useQueryClient } from '@tanstack/react
 import { useCallback } from 'react';
 
 import { useFetchUserGlobalPreferencesQueryKey } from './useFetchUserGlobalPreferencesQueryKey';
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 
 interface IUpdateUserGlobalPreferencesVariables {
   preferences: { channelType: string; enabled: boolean }[];
@@ -16,7 +16,7 @@ export const useUpdateUserGlobalPreferences = ({
   ...options
 }: UseMutationOptions<IUserGlobalPreferenceSettings, Error, IUpdateUserGlobalPreferencesVariables> = {}) => {
   const queryClient = useQueryClient();
-  const { apiService } = useNovuContext();
+  const { apiService } = useTeleflowContext();
   const userGlobalPreferencesQueryKey = useFetchUserGlobalPreferencesQueryKey();
 
   const updateGlobalPreferenceChecked = useCallback(
@@ -27,11 +27,14 @@ export const useUpdateUserGlobalPreferences = ({
             enabled: enabled ?? old.preference.enabled,
             channels: {
               ...old.preference.channels,
-              ...preferences.reduce((acc, { channelType, enabled: channelEnabled }) => {
-                acc[channelType] = channelEnabled;
+              ...preferences.reduce(
+                (acc, { channelType, enabled: channelEnabled }) => {
+                  acc[channelType] = channelEnabled;
 
-                return acc;
-              }, {} as Record<string, boolean>),
+                  return acc;
+                },
+                {} as Record<string, boolean>
+              ),
             },
           },
         };

@@ -14,7 +14,7 @@ import { ApiException } from '../../utils/exceptions';
 import { CompileEmailTemplateCommand } from './compile-email-template.command';
 import { LayoutDto, GetLayoutCommand, GetLayoutUseCase } from '../get-layout';
 import { VerifyPayloadService } from '../../services';
-import { GetNovuLayout } from '../get-teleflow-layout';
+import { GetTeleflowLayout } from '../get-teleflow-layout';
 
 @Injectable()
 export class CompileEmailTemplate extends CompileTemplateBase {
@@ -22,8 +22,8 @@ export class CompileEmailTemplate extends CompileTemplateBase {
     private compileTemplate: CompileTemplate,
     protected organizationRepository: OrganizationRepository,
     private getLayoutUsecase: GetLayoutUseCase,
-    private getNovuLayoutUsecase: GetNovuLayout,
-    protected moduleRef: ModuleRef
+    private getTeleflowLayoutUsecase: GetTeleflowLayout,
+    protected moduleRef: ModuleRef,
   ) {
     super(organizationRepository, moduleRef);
   }
@@ -33,8 +33,8 @@ export class CompileEmailTemplate extends CompileTemplateBase {
     initiateTranslations?: (
       environmentId: string,
       organizationId,
-      locale: string
-    ) => Promise<void>
+      locale: string,
+    ) => Promise<void>,
   ) {
     const verifyPayloadService = new VerifyPayloadService();
     const organization = await this.getOrganization(command.organizationId);
@@ -45,7 +45,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
         command.organizationId,
         command.locale ||
           command.payload.subscriber?.locale ||
-          organization.defaultLocale
+          organization.defaultLocale,
       );
     }
 
@@ -60,18 +60,18 @@ export class CompileEmailTemplate extends CompileTemplateBase {
           layoutId: command.layoutId,
           environmentId: command.environmentId,
           organizationId: command.organizationId,
-        })
+        }),
       );
 
       layoutContent = layout.content;
     } else if (isEditorMode && !command.layoutId) {
-      layoutContent = await this.getNovuLayoutUsecase.execute({});
+      layoutContent = await this.getTeleflowLayoutUsecase.execute({});
     }
 
     const layoutVariables = layout?.variables || [];
     const defaultPayload = verifyPayloadService.verifyPayload(
       layoutVariables,
-      command.payload
+      command.payload,
     );
 
     let helperBlocksContent: string | null = null;
@@ -107,12 +107,12 @@ export class CompileEmailTemplate extends CompileTemplateBase {
       }
     } catch (e: any) {
       throw new ApiException(
-        e?.message || `Message content could not be generated`
+        e?.message || `Message content could not be generated`,
       );
     }
 
     const customLayout = CompileEmailTemplate.addPreheader(
-      layoutContent as string
+      layoutContent as string,
     );
 
     const templateVariables = {
@@ -136,7 +136,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
           ? (content as string)
           : (helperBlocksContent as string),
         data: templateVariables,
-      })
+      }),
     );
 
     templateVariables.body = body as string;
@@ -146,7 +146,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
           CompileTemplateCommand.create({
             template: customLayout,
             data: templateVariables,
-          })
+          }),
         )
       : body;
 
@@ -155,7 +155,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
 
   private async renderContent(
     content: string,
-    payload: Record<string, unknown>
+    payload: Record<string, unknown>,
   ) {
     const renderedContent = await this.compileTemplate.execute(
       CompileTemplateCommand.create({
@@ -163,7 +163,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
         data: {
           ...payload,
         },
-      })
+      }),
     );
 
     return renderedContent?.trim() || '';
@@ -178,7 +178,7 @@ export class CompileEmailTemplate extends CompileTemplateBase {
             {{preheader}}
             &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
           </div>
-        {{/if}}`
+        {{/if}}`,
     );
   }
 

@@ -9,7 +9,7 @@ export * from './useIsMounted';
 export * from './useLayouts';
 export * from './useLayoutsEditor';
 export * from './useNotificationGroup';
-export * from './useNovu';
+export * from './useTeleflow';
 export * from './useProcessVariables';
 export * from './usePrompt';
 export * from './useSubscribers';

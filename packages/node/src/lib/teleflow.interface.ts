@@ -8,7 +8,7 @@ export interface IRetryConfig {
   retryCondition?: (err: AxiosError) => boolean;
 }
 
-export interface INovuConfiguration {
+export interface ITeleflowConfiguration {
   apiKey?: string;
   backendUrl?: string;
   retryConfig?: IRetryConfig;

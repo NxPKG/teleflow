@@ -20,7 +20,7 @@ import {
   SubscriberProcessQueueService,
   TriggerMulticast,
   TriggerMulticastCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { NotificationTemplateEntity, SubscriberEntity } from '@teleflow/dal';
 
 import { SharedModule } from '../../shared/shared.module';

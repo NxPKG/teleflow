@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { JobStatusEnum } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
-import { getJobDigest, InstrumentUsecase } from '@novu/application-generic';
+import { getJobDigest, InstrumentUsecase } from '@teleflow/application-generic';
 
 import { DigestEventsCommand } from './digest-events.command';
 import { GetDigestEvents } from './get-digest-events.usecase';

@@ -16,12 +16,12 @@ import {
   DetailEnum,
   SelectIntegration,
   SelectIntegrationCommand,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariantCommand,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { SendMessageType } from './send-message-type.usecase';
 import { CreateLog } from '../../../shared/logs';
 import { PlatformException } from '../../../shared/utils';
@@ -35,7 +35,7 @@ export abstract class SendMessageBase extends SendMessageType {
     protected executionLogRoute: ExecutionLogRoute,
     protected subscriberRepository: SubscriberRepository,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef
   ) {
@@ -52,7 +52,7 @@ export abstract class SendMessageBase extends SendMessageType {
     }
 
     if (integration.providerId === EmailProviderIdEnum.Novu || integration.providerId === SmsProviderIdEnum.Novu) {
-      integration.credentials = await this.getNovuProviderCredentials.execute({
+      integration.credentials = await this.getTeleflowProviderCredentials.execute({
         channelType: integration.channel,
         providerId: integration.providerId,
         environmentId: integration._environmentId,
@@ -139,7 +139,7 @@ export abstract class SendMessageBase extends SendMessageType {
 
   protected async initiateTranslations(environmentId: string, organizationId: string, locale: string | undefined) {
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-shared-services')?.TranslationsService) {
           throw new PlatformException('Translation module is not loaded');
         }

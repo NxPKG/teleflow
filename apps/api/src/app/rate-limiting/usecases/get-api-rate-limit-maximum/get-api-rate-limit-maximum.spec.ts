@@ -4,7 +4,7 @@ import { ApiRateLimitCategoryEnum, ApiServiceLevelEnum } from '@novu/shared';
 import { expect } from 'chai';
 import * as sinon from 'sinon';
 import { Test } from '@nestjs/testing';
-import { CacheService, MockCacheService } from '@novu/application-generic';
+import { CacheService, MockCacheService } from '@teleflow/application-generic';
 import { GetApiRateLimitMaximum, GetApiRateLimitMaximumCommand } from './index';
 import { SharedModule } from '../../../shared/shared.module';
 import { GetApiRateLimitServiceMaximumConfig } from '../get-api-rate-limit-service-maximum-config';

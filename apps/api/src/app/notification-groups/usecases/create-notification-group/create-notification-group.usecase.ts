@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
+import { CreateChange, CreateChangeCommand } from '@teleflow/application-generic';
 import { NotificationGroupRepository, NotificationGroupEntity } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 
@@ -7,7 +7,10 @@ import { CreateNotificationGroupCommand } from './create-notification-group.comm
 
 @Injectable()
 export class CreateNotificationGroup {
-  constructor(private notificationGroupRepository: NotificationGroupRepository, private createChange: CreateChange) {}
+  constructor(
+    private notificationGroupRepository: NotificationGroupRepository,
+    private createChange: CreateChange
+  ) {}
 
   async execute(command: CreateNotificationGroupCommand): Promise<NotificationGroupEntity> {
     const group = await this.notificationGroupRepository.findOne({

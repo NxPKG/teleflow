@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query';
 
 import { SESSION_QUERY_KEY } from './queryKeys';
 import type { ISession } from '../shared/interfaces';
-import { useNovuContext } from './useNovuContext';
+import { useTeleflowContext } from './useTeleflowContext';
 
 export const useSession = ({ onSuccess }: { onSuccess?: (session: ISession) => void }) => {
-  const { apiService, applicationIdentifier, subscriberId, subscriberHash } = useNovuContext();
+  const { apiService, applicationIdentifier, subscriberId, subscriberHash } = useTeleflowContext();
 
   const result = useQuery<ISession, Error, ISession>(
     [...SESSION_QUERY_KEY, applicationIdentifier, subscriberId, subscriberHash],

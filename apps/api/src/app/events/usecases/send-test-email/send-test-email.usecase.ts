@@ -10,12 +10,12 @@ import {
   ApiException,
   CompileEmailTemplate,
   CompileEmailTemplateCommand,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   InstrumentUsecase,
   MailFactory,
   SelectIntegration,
   SelectIntegrationCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 @Injectable()
 export class SendTestEmail {
@@ -24,7 +24,7 @@ export class SendTestEmail {
     private organizationRepository: OrganizationRepository,
     private selectIntegration: SelectIntegration,
     private analyticsService: AnalyticsService,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected moduleRef: ModuleRef
   ) {}
 
@@ -55,7 +55,7 @@ export class SendTestEmail {
     }
 
     if (integration.providerId === EmailProviderIdEnum.Novu) {
-      integration.credentials = await this.getNovuProviderCredentials.execute({
+      integration.credentials = await this.getTeleflowProviderCredentials.execute({
         channelType: integration.channel,
         providerId: integration.providerId,
         environmentId: integration._environmentId,
@@ -88,7 +88,7 @@ export class SendTestEmail {
     }
 
     if (command.chimera) {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-echo-api')?.PreviewStep) {
           throw new ApiException('Chimera module is not loaded');
         }

@@ -1,4 +1,4 @@
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 import axios from 'axios';
 
 const mockConfig = {
@@ -122,7 +122,7 @@ describe('Novu Node.js package - Organizations class', () => {
 
     expect(result).toStrictEqual(mockedResponse);
     expect(mockedAxios.delete).toBeCalledWith(
-      `/organizations/members/${mockedMember.id}`
+      `/organizations/members/${mockedMember.id}`,
     );
   });
 
@@ -133,13 +133,13 @@ describe('Novu Node.js package - Organizations class', () => {
     const payload = { role: 'admin' };
     const result = await novu.organizations.updateMemberRole(
       mockedMember.id,
-      payload
+      payload,
     );
 
     expect(result).toStrictEqual(mockedResponse);
     expect(mockedAxios.put).toBeCalledWith(
       `/organizations/members/${mockedMember.id}/roles`,
-      payload
+      payload,
     );
   });
 

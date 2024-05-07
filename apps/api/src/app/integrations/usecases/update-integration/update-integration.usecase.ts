@@ -5,7 +5,7 @@ import {
   encryptCredentials,
   buildIntegrationKey,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { CHANNELS_WITH_PRIMARY } from '@novu/shared';
 
 import { UpdateIntegrationCommand } from './update-integration.command';

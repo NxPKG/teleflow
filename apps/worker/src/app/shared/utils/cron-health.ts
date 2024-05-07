@@ -5,7 +5,7 @@ const url = process.env.CRON_CHECKING_URL
   : 'https://uptime.betterstack.com/api/v1/heartbeat/';
 const LOG_CONTEXT = 'cronHealth';
 export async function checkingForCronJob(cronId?: string) {
-  if (process.env.NOVU_MANAGED_SERVICE && process.env.NODE_ENV === 'production' && cronId && url) {
+  if (process.env.TELEFLOW_MANAGED_SERVICE && process.env.NODE_ENV === 'production' && cronId && url) {
     Logger.verbose(`Calling health endpoint for ${cronId}`);
 
     const response = await fetch(url + cronId);

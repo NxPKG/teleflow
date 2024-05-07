@@ -12,7 +12,7 @@ import {
   CompileStepTemplate,
   CompileStepTemplateCommand,
   UserAuthGuard,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { IEmailBlock, IJwtPayload, MessageTemplateContentType, IMessageCTA } from '@novu/shared';
 import { UserSession } from '../shared/framework/user.decorator';
 
@@ -139,7 +139,7 @@ export class ContentTemplatesController {
 
   protected async initiateTranslations(environmentId: string, organizationId: string, locale: string | undefined) {
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-shared-services')?.TranslationsService) {
           throw new ApiException('Translation module is not loaded');
         }

@@ -9,7 +9,7 @@ The payload field supports all [NotificationMessagePayload](https://firebase.goo
 ```ts
 import { Novu } from '@teleflow/node';
 
-const novu = new Novu(process.env.NOVU_API_KEY);
+const novu = new Novu(process.env.TELEFLOW_API_KEY);
 
 novu.trigger('event-name', {
   to: {

@@ -1,5 +1,5 @@
 import { Module, OnApplicationShutdown, Provider } from '@nestjs/common';
-import { WorkflowInMemoryProviderService } from '@novu/application-generic';
+import { WorkflowInMemoryProviderService } from '@teleflow/application-generic';
 
 import { WSGateway } from './ws.gateway';
 import { SharedModule } from '../shared/shared.module';

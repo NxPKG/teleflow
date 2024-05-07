@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
+import { CreateChange, CreateChangeCommand } from '@teleflow/application-generic';
 import { ChangeRepository, LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
 import { LayoutDto } from '../../dtos';

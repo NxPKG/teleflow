@@ -8,7 +8,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { GetFeatureFlag, GetFeatureFlagCommand } from '@novu/application-generic';
+import { GetFeatureFlag, GetFeatureFlagCommand } from '@teleflow/application-generic';
 import { IJwtPayload, FeatureFlagsKeysEnum, ResourceEnum } from '@novu/shared';
 import { Observable } from 'rxjs';
 import { ResourceCategory } from './resource-throttler.decorator';
@@ -22,7 +22,10 @@ export const THROTTLED_EXCEPTION_MESSAGE = `You have exceeded the number of allo
  */
 @Injectable()
 export class ResourceThrottlerInterceptor implements NestInterceptor {
-  constructor(private reflector: Reflector, private getFeatureFlag: GetFeatureFlag) {}
+  constructor(
+    private reflector: Reflector,
+    private getFeatureFlag: GetFeatureFlag
+  ) {}
 
   /**
    * Throttles incoming HTTP requests to resources.
