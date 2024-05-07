@@ -33,7 +33,7 @@ const initiateResonateProvider = (moduleRef: ModuleRef) => {
     Logger.error(
       e,
       `Unexpected error while importing enterprise modules`,
-      'Resonate'
+      'Resonate',
     );
     throw e;
   }
