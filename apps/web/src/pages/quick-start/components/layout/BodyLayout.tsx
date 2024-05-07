@@ -107,7 +107,9 @@ const TimelineText = styled.div<{ active: boolean }>`
   font-weight: 700;
   line-height: 1.4;
   padding: 12px;
-  transition: margin-left 0.3s ease, padding 0.3s ease;
+  transition:
+    margin-left 0.3s ease,
+    padding 0.3s ease;
   border-radius: 8px;
   cursor: pointer;
 
