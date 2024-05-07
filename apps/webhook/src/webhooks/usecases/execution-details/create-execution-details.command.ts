@@ -1,5 +1,5 @@
 import { IsArray, IsDefined } from 'class-validator';
-import { EnvironmentCommand } from '@novu/application-generic';
+import { EnvironmentCommand } from '@teleflow/application-generic';
 import { MessageEntity } from '@teleflow/dal';
 
 import { WebhookTypes } from '../../interfaces/webhook.interface';

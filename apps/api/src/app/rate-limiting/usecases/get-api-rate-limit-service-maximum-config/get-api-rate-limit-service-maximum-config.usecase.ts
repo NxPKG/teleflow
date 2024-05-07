@@ -12,7 +12,7 @@ import {
   buildServiceConfigApiRateLimitMaximumKey,
   CacheService,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 @Injectable()
 export class GetApiRateLimitServiceMaximumConfig implements OnModuleInit {

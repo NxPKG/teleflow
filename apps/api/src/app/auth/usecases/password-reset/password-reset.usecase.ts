@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { isBefore, subDays } from 'date-fns';
 import { UserRepository } from '@teleflow/dal';
-import { AuthService, buildUserKey, InvalidateCacheService } from '@novu/application-generic';
+import { AuthService, buildUserKey, InvalidateCacheService } from '@teleflow/application-generic';
 
 import { PasswordResetCommand } from './password-reset.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';

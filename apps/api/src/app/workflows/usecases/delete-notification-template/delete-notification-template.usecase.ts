@@ -17,7 +17,7 @@ import {
   DeleteMessageTemplate,
   DeleteMessageTemplateCommand,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { DeleteNotificationTemplateCommand } from './delete-notification-template.command';
 
 /**

@@ -3,7 +3,7 @@ import { Injectable, Logger, NotFoundException, Scope } from '@nestjs/common';
 import { MemberEntity, OrganizationRepository, UserEntity, MemberRepository, UserRepository } from '@teleflow/dal';
 import { MemberStatusEnum } from '@novu/shared';
 import { Novu } from '@teleflow/node';
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { AcceptInviteCommand } from './accept-invite.command';

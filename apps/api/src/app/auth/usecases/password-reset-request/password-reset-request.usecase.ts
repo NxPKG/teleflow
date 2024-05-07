@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { differenceInHours, differenceInSeconds, parseISO } from 'date-fns';
 import { Novu } from '@teleflow/node';
 import { UserRepository, UserEntity, IUserResetTokenCount } from '@teleflow/dal';
-import { buildUserKey, InvalidateCacheService } from '@novu/application-generic';
+import { buildUserKey, InvalidateCacheService } from '@teleflow/application-generic';
 
 import { normalizeEmail } from '../../../shared/helpers/email-normalization.service';
 import { PasswordResetRequestCommand } from './password-reset-request.command';
@@ -15,10 +15,7 @@ export class PasswordResetRequest {
   private MAX_ATTEMPTS_IN_A_DAY = 15;
   private RATE_LIMIT_IN_SECONDS = 60;
   private RATE_LIMIT_IN_HOURS = 24;
-  constructor(
-    private invalidateCache: InvalidateCacheService,
-    private userRepository: UserRepository
-  ) {}
+  constructor(private invalidateCache: InvalidateCacheService, private userRepository: UserRepository) {}
 
   async execute(command: PasswordResetRequestCommand): Promise<{ success: boolean }> {
     const email = normalizeEmail(command.email);

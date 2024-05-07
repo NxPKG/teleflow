@@ -13,7 +13,7 @@ import {
   Store,
   WorkerOptions,
   WorkflowInMemoryProviderService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import {
   RunJob,

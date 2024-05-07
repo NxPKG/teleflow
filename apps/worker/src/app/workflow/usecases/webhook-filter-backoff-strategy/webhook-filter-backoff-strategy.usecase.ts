@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ExecutionDetailsSourceEnum, ExecutionDetailsStatusEnum } from '@novu/shared';
-import { DetailEnum, ExecutionLogRoute, ExecutionLogRouteCommand } from '@novu/application-generic';
+import { DetailEnum, ExecutionLogRoute, ExecutionLogRouteCommand } from '@teleflow/application-generic';
 
 import { WebhookFilterBackoffStrategyCommand } from './webhook-filter-backoff-strategy.command';
 

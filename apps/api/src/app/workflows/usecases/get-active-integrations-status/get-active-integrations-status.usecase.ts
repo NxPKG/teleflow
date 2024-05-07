@@ -16,7 +16,7 @@ import {
   CalculateLimitTeleflowIntegration,
   CalculateLimitTeleflowIntegrationCommand,
   NotificationStep,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 @Injectable()
 export class GetActiveIntegrationsStatus {

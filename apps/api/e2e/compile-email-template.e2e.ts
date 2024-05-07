@@ -4,11 +4,11 @@ import { UserSession } from '@teleflow/testing';
 import { ChannelTypeEnum, EmailBlockTypeEnum } from '@novu/shared';
 import { LayoutRepository, OrganizationRepository, DalService } from '@teleflow/dal';
 
-import { CompileEmailTemplate } from '@novu/application-generic';
-import { CompileEmailTemplateCommand } from '@novu/application-generic';
-import { CompileTemplate } from '@novu/application-generic';
-import { GetLayoutUseCase } from '@novu/application-generic';
-import { GetTeleflowLayout } from '@novu/application-generic';
+import { CompileEmailTemplate } from '@teleflow/application-generic';
+import { CompileEmailTemplateCommand } from '@teleflow/application-generic';
+import { CompileTemplate } from '@teleflow/application-generic';
+import { GetLayoutUseCase } from '@teleflow/application-generic';
+import { GetTeleflowLayout } from '@teleflow/application-generic';
 
 const dalService = new DalService();
 

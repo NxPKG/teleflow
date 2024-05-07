@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { ApiException, buildUserKey, InvalidateCacheService } from '@novu/application-generic';
+import { ApiException, buildUserKey, InvalidateCacheService } from '@teleflow/application-generic';
 import { UserEntity, UserRepository } from '@teleflow/dal';
 
 import { BaseUserProfileUsecase } from '../base-user-profile.usecase';
@@ -7,10 +7,7 @@ import { UpdateNameAndProfilePictureCommand } from './update-name-and-profile-pi
 
 @Injectable()
 export class UpdateNameAndProfilePicture extends BaseUserProfileUsecase {
-  constructor(
-    private invalidateCache: InvalidateCacheService,
-    private readonly userRepository: UserRepository
-  ) {
+  constructor(private invalidateCache: InvalidateCacheService, private readonly userRepository: UserRepository) {
     super();
   }
 

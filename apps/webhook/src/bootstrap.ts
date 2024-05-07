@@ -2,7 +2,7 @@ import './config';
 import { INestApplication } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import * as Sentry from '@sentry/node';
-import { getErrorInterceptor, Logger } from '@novu/application-generic';
+import { getErrorInterceptor, Logger } from '@teleflow/application-generic';
 import * as packageJson from '../package.json';
 
 import { AppModule } from './app.module';

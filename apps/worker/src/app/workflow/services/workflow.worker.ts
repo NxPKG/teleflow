@@ -13,7 +13,7 @@ import {
   BullMqService,
   WorkflowInMemoryProviderService,
   IWorkflowDataDto,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ObservabilityBackgroundTransactionEnum } from '@novu/shared';
 
 const LOG_CONTEXT = 'WorkflowWorker';

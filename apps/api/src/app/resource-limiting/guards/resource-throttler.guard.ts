@@ -8,7 +8,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { GetFeatureFlag, GetFeatureFlagCommand } from '@novu/application-generic';
+import { GetFeatureFlag, GetFeatureFlagCommand } from '@teleflow/application-generic';
 import { IJwtPayload, FeatureFlagsKeysEnum, ResourceEnum } from '@novu/shared';
 import { Observable } from 'rxjs';
 import { ResourceCategory } from './resource-throttler.decorator';

@@ -30,7 +30,7 @@ import {
   IUseCaseInterfaceInline,
   requireInject,
   ExecuteOutput,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import {
   JobEntity,
   JobRepository,

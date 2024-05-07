@@ -16,7 +16,7 @@ import {
   DalServiceHealthIndicator,
   WebSocketsInMemoryProviderService,
   QueuesModule,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { SubscriberOnlineService } from './subscriber-online';
 import { JobTopicNameEnum } from '@novu/shared';

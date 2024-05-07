@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { faker } from '@faker-js/faker';
 
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 import { SeedDataCommand } from './seed-data.command';
 import { UserRegister } from '../../../auth/usecases/register/user-register.usecase';

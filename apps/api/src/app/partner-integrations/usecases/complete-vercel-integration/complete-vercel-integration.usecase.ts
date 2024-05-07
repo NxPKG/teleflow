@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { lastValueFrom } from 'rxjs';
 import { EnvironmentEntity, EnvironmentRepository, OrganizationRepository } from '@teleflow/dal';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 
 import { CompleteVercelIntegrationCommand } from './complete-vercel-integration.command';
 import { GetVercelProjects } from '../get-vercel-projects/get-vercel-projects.usecase';

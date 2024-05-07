@@ -8,7 +8,7 @@ import {
   LoggerModule,
   ProfilingModule,
   TracingModule,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

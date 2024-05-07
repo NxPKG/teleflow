@@ -2,7 +2,7 @@ import { Injectable, ConflictException } from '@nestjs/common';
 
 import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
 import { isReservedVariableName } from '@novu/shared';
-import { AnalyticsService, ContentService } from '@novu/application-generic';
+import { AnalyticsService, ContentService } from '@teleflow/application-generic';
 
 import { CreateLayoutCommand } from './create-layout.command';
 import { CreateLayoutChangeCommand, CreateLayoutChangeUseCase } from '../create-layout-change';

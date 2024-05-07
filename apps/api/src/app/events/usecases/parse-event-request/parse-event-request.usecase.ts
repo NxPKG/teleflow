@@ -12,7 +12,7 @@ import {
   IWorkflowJobDto,
   StorageHelperService,
   WorkflowQueueService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ReservedVariablesMap, TriggerContextTypeEnum, TriggerEventStatusEnum } from '@novu/shared';
 import {
   WorkflowOverrideRepository,

@@ -5,7 +5,7 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
 import { SharedModule } from './app/shared/shared.module';
 import { HealthModule } from './app/health/health.module';
 import { WorkflowModule } from './app/workflow/workflow.module';
-import { ProfilingModule } from '@novu/application-generic';
+import { ProfilingModule } from '@teleflow/application-generic';
 import * as packageJson from '../package.json';
 
 const modules: Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> = [

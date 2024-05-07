@@ -1,7 +1,7 @@
 import { BadRequestException, Inject, Injectable, Logger, Scope } from '@nestjs/common';
 import { OrganizationEntity, OrganizationRepository, UserRepository } from '@teleflow/dal';
 import { ApiServiceLevelEnum, JobTitleEnum, MemberRoleEnum } from '@novu/shared';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 
 import { CreateEnvironmentCommand } from '../../../environments/usecases/create-environment/create-environment.command';
 import { CreateEnvironment } from '../../../environments/usecases/create-environment/create-environment.usecase';

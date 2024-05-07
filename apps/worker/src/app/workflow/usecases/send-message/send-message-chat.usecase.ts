@@ -35,7 +35,7 @@ import {
   IChimeraChannelResponse,
   IBlock,
   SelectIntegrationCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';

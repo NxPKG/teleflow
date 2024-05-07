@@ -8,7 +8,7 @@ import {
   WebSocketsWorkerService,
   WorkerOptions,
   WorkflowInMemoryProviderService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ExternalServicesRoute, ExternalServicesRouteCommand } from '../usecases/external-services-route';
 import { ObservabilityBackgroundTransactionEnum } from '@novu/shared';

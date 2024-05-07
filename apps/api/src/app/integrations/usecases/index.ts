@@ -3,7 +3,7 @@ import {
   GetDecryptedIntegrations,
   CalculateLimitTeleflowIntegration,
   ConditionsFilter,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { GetWebhookSupportStatus } from './get-webhook-support-status/get-webhook-support-status.usecase';
 import { CreateIntegration } from './create-integration/create-integration.usecase';

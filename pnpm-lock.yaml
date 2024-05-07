@@ -282,7 +282,7 @@ importers:
       '@nestjs/throttler':
         specifier: ^5.0.1
         version: 5.1.1(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(reflect-metadata@0.1.13)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
       '@novu/shared':
@@ -518,7 +518,7 @@ importers:
 
   apps/inbound-mail:
     dependencies:
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
       '@novu/shared':
@@ -1055,7 +1055,7 @@ importers:
       '@nestjs/terminus':
         specifier: ^10.0.1
         version: 10.0.1(@nestjs/axios@2.0.0)(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
       '@novu/shared':
@@ -1375,7 +1375,7 @@ importers:
       '@nestjs/terminus':
         specifier: ^10.0.1
         version: 10.0.1(@nestjs/axios@2.0.0)(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
       '@novu/shared':
@@ -1575,7 +1575,7 @@ importers:
       '@nestjs/websockets':
         specifier: ^10.2.2
         version: 10.2.2(@nestjs/common@10.2.2)(@nestjs/core@10.2.2)(@nestjs/platform-socket.io@10.2.2)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../packages/application-generic
       '@novu/shared':
@@ -1714,7 +1714,7 @@ importers:
       '@nestjs/passport':
         specifier: 9.0.3
         version: 9.0.3(@nestjs/common@10.2.2)(passport@0.6.0)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
       '@novu/shared':
@@ -1784,7 +1784,7 @@ importers:
       '@nestjs/throttler':
         specifier: ^5.0.1
         version: 5.1.1(@nestjs/common@10.2.2)(@nestjs/core@10.3.8)(reflect-metadata@0.1.14)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
       '@novu/ee-dal':
@@ -1966,7 +1966,7 @@ importers:
       '@nestjs/passport':
         specifier: 9.0.3
         version: 9.0.3(@nestjs/common@10.2.2)(passport@0.6.0)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../../../packages/application-generic
       '@novu/ee-dal':
@@ -2301,7 +2301,7 @@ importers:
       '@nestjs/swagger':
         specifier: ^7.1.8
         version: 7.1.9(@nestjs/common@10.2.2)(@nestjs/core@10.3.8)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.14)
-      '@novu/application-generic':
+      '@teleflow/application-generic':
         specifier: ^0.24.1
         version: link:../../../packages/application-generic
       '@novu/ee-dal':

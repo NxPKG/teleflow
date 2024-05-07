@@ -30,7 +30,7 @@ import {
   CompileInAppTemplate,
   WorkflowInMemoryProviderService,
   ExecutionLogRoute,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { JobRepository } from '@teleflow/dal';
 
 import {

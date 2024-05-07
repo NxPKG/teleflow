@@ -10,7 +10,7 @@ import {
   TriggerContextTypeEnum,
 } from '@novu/shared';
 import { INotificationTemplateStep } from '@novu/shared';
-import { ContentService } from '@novu/application-generic';
+import { ContentService } from '@teleflow/application-generic';
 
 describe('ContentService', function () {
   describe('replaceVariables', function () {

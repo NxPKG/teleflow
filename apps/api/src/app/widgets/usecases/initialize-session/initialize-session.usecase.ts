@@ -11,7 +11,7 @@ import {
   AuthService,
   createHash,
   decryptApiKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { InitializeSessionCommand } from './initialize-session.command';

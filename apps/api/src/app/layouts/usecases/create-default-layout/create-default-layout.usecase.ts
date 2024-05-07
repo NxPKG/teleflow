@@ -1,6 +1,6 @@
 import { LayoutRepository } from '@teleflow/dal';
 import { Injectable } from '@nestjs/common';
-import { GetTeleflowLayout } from '@novu/application-generic';
+import { GetTeleflowLayout } from '@teleflow/application-generic';
 
 import { CreateDefaultLayoutCommand } from './create-default-layout.command';
 import { SetDefaultLayoutUseCase } from '../set-default-layout';

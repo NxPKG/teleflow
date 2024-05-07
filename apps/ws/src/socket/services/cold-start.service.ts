@@ -1,5 +1,5 @@
 import { INestApplication } from '@nestjs/common';
-import { ITeleflowWorker, ReadinessService } from '@novu/application-generic';
+import { ITeleflowWorker, ReadinessService } from '@teleflow/application-generic';
 import { WebSocketWorker } from './web-socket.worker';
 
 const getWorkers = (app: INestApplication): ITeleflowWorker[] => {

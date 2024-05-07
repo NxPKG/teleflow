@@ -2,7 +2,7 @@ import { CanActivate, ExecutionContext, forwardRef, Inject, Injectable, Unauthor
 import { Reflector } from '@nestjs/core';
 import { IJwtPayload } from '@novu/shared';
 import * as jwt from 'jsonwebtoken';
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 @Injectable()
 export class RootEnvironmentGuard implements CanActivate {

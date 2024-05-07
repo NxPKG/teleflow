@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, Logger } from '@nestjs/common';
 
 import { UserRepository } from '@teleflow/dal';
-import { createHash } from '@novu/application-generic';
+import { createHash } from '@teleflow/application-generic';
 
 import { GetMyProfileCommand } from './get-my-profile.dto';
 import type { UserResponseDto } from '../../dtos/user-response.dto';

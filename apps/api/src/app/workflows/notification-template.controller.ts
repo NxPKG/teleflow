@@ -17,7 +17,7 @@ import {
   CreateWorkflowCommand,
   UpdateWorkflow,
   UpdateWorkflowCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { UserSession } from '../shared/framework/user.decorator';
 import { GetNotificationTemplates } from './usecases/get-notification-templates/get-notification-templates.usecase';

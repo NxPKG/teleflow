@@ -7,7 +7,7 @@ import {
   SubscriberEntity,
   IntegrationEntity,
 } from '@teleflow/dal';
-import { AnalyticsService, buildSubscriberKey, InvalidateCacheService } from '@novu/application-generic';
+import { AnalyticsService, buildSubscriberKey, InvalidateCacheService } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { UpdateSubscriberChannelCommand } from './update-subscriber-channel.command';

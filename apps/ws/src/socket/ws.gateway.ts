@@ -6,7 +6,7 @@ import { Logger } from '@nestjs/common';
 import { instrument } from '@socket.io/admin-ui';
 
 import { ISubscriberJwt, ObservabilityBackgroundTransactionEnum } from '@novu/shared';
-import { IDestroy } from '@novu/application-generic';
+import { IDestroy } from '@teleflow/application-generic';
 
 import { SubscriberOnlineService } from '../shared/subscriber-online';
 

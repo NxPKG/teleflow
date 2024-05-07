@@ -11,7 +11,7 @@ import {
   CacheServiceHealthIndicator,
   DalServiceHealthIndicator,
   WorkflowQueueServiceHealthIndicator,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { version } from '../../../package.json';
 

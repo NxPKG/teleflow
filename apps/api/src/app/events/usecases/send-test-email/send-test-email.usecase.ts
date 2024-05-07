@@ -15,7 +15,7 @@ import {
   MailFactory,
   SelectIntegration,
   SelectIntegrationCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 @Injectable()
 export class SendTestEmail {

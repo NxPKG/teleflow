@@ -1,6 +1,6 @@
 import { IsBoolean, IsDefined, IsOptional, IsString } from 'class-validator';
 import { IEmailBlock } from '@novu/shared';
-import { EnvironmentWithUserCommand } from '@novu/application-generic';
+import { EnvironmentWithUserCommand } from '@teleflow/application-generic';
 
 export class SendTestEmailCommand extends EnvironmentWithUserCommand {
   @IsDefined()

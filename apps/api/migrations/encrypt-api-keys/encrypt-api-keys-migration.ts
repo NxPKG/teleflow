@@ -2,7 +2,7 @@
 import '../../src/config';
 
 import { EnvironmentRepository, IApiKey } from '@teleflow/dal';
-import { encryptSecret } from '@novu/application-generic';
+import { encryptSecret } from '@teleflow/application-generic';
 import { EncryptedSecret } from '@novu/shared';
 import { createHash } from 'crypto';
 import { NestFactory } from '@nestjs/core';

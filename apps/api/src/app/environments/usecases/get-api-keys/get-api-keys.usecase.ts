@@ -4,7 +4,7 @@ import { EnvironmentRepository, IApiKey } from '@teleflow/dal';
 
 import { GetApiKeysCommand } from './get-api-keys.command';
 import { ApiKey } from '../../../shared/dtos/api-key';
-import { decryptApiKey } from '@novu/application-generic';
+import { decryptApiKey } from '@teleflow/application-generic';
 
 @Injectable()
 export class GetApiKeys {

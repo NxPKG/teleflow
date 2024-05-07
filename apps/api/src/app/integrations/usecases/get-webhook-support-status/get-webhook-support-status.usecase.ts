@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
 import { IntegrationEntity, IntegrationQuery, IntegrationRepository } from '@teleflow/dal';
 import { IEmailProvider, ISmsProvider } from '@teleflow/stateless';
-import { IMailHandler, ISmsHandler, MailFactory, SmsFactory } from '@novu/application-generic';
+import { IMailHandler, ISmsHandler, MailFactory, SmsFactory } from '@teleflow/application-generic';
 import { ChannelTypeEnum, providers } from '@novu/shared';
 
 import { GetWebhookSupportStatusCommand } from './get-webhook-support-status.command';

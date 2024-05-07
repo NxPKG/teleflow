@@ -12,7 +12,7 @@ import {
   CompileStepTemplate,
   CompileStepTemplateCommand,
   UserAuthGuard,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { IEmailBlock, IJwtPayload, MessageTemplateContentType, IMessageCTA } from '@novu/shared';
 import { UserSession } from '../shared/framework/user.decorator';
 

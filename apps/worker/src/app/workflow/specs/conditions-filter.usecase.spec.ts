@@ -13,7 +13,7 @@ import {
   TimeOperatorEnum,
 } from '@novu/shared';
 import { JobEntity, MessageTemplateEntity, NotificationStepEntity } from '@teleflow/dal';
-import { CompileTemplate, ConditionsFilter, ConditionsFilterCommand } from '@novu/application-generic';
+import { CompileTemplate, ConditionsFilter, ConditionsFilterCommand } from '@teleflow/application-generic';
 
 describe('Message filter matcher', function () {
   const executionLogQueueService = {

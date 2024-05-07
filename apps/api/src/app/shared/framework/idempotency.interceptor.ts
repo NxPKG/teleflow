@@ -11,7 +11,7 @@ import {
   BadRequestException,
   ConflictException,
 } from '@nestjs/common';
-import { CacheService, GetFeatureFlagCommand, GetFeatureFlag, Instrument } from '@novu/application-generic';
+import { CacheService, GetFeatureFlagCommand, GetFeatureFlag, Instrument } from '@teleflow/application-generic';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { createHash } from 'crypto';

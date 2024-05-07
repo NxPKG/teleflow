@@ -7,7 +7,7 @@ import {
   ExecutionLogQueueService,
   CreateExecutionDetails,
   WorkflowInMemoryProviderService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ExecutionLogWorker } from './execution-log.worker';
 

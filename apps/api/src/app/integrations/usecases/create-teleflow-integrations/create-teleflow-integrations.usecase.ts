@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { IntegrationRepository } from '@teleflow/dal';
-import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@novu/application-generic';
+import { areNovuEmailCredentialsSet, areNovuSmsCredentialsSet } from '@teleflow/application-generic';
 
 import { CreateTeleflowIntegrationsCommand } from './create-teleflow-integrations.command';
 import { CreateIntegration } from '../create-integration/create-integration.usecase';

@@ -6,7 +6,7 @@ import {
   EventsDistributedLockService,
   GetTeleflowProviderCredentials,
   StorageHelperService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { EventsController } from './events.controller';
 import { USE_CASES } from './usecases';

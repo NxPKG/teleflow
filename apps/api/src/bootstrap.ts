@@ -9,7 +9,7 @@ import * as compression from 'compression';
 import { NestFactory, Reflector } from '@nestjs/core';
 import * as bodyParser from 'body-parser';
 import * as Sentry from '@sentry/node';
-import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@novu/application-generic';
+import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@teleflow/application-generic';
 import { ExpressAdapter } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';

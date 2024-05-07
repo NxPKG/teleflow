@@ -1,4 +1,4 @@
-import { GetLayoutUseCase, GetTeleflowLayout } from '@novu/application-generic';
+import { GetLayoutUseCase, GetTeleflowLayout } from '@teleflow/application-generic';
 
 import { CreateDefaultLayoutChangeUseCase } from './create-default-layout-change/create-default-layout-change.usecase';
 import { CheckLayoutIsUsedUseCase } from './check-layout-is-used/check-layout-is-used.use-case';

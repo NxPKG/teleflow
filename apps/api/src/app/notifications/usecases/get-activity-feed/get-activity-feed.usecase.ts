@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { SubscriberRepository, NotificationRepository } from '@teleflow/dal';
 import { ActivitiesResponseDto } from '../../dtos/activities-response.dto';
 import { GetActivityFeedCommand } from './get-activity-feed.command';
-import { Instrument } from '@novu/application-generic';
+import { Instrument } from '@teleflow/application-generic';
 
 @Injectable()
 export class GetActivityFeed {

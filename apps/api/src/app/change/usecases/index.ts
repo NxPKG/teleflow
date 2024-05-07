@@ -1,4 +1,4 @@
-import { CreateChange, UpdateChange } from '@novu/application-generic';
+import { CreateChange, UpdateChange } from '@teleflow/application-generic';
 
 import { PromoteMessageTemplateChange } from './promote-message-template-change/promote-message-template-change';
 import { PromoteNotificationTemplateChange } from './promote-notification-template-change/promote-notification-template-change.usecase';

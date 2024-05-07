@@ -1,3 +1,3 @@
-import { EnvironmentLevelCommand } from '@novu/application-generic';
+import { EnvironmentLevelCommand } from '@teleflow/application-generic';
 
 export class GetGroupedBlueprintsCommand extends EnvironmentLevelCommand {}

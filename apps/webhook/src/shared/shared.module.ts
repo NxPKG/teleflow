@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 import {
   DalService,
   UserRepository,

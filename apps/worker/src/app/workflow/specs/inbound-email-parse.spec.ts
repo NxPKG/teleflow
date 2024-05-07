@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import * as sinon from 'sinon';
 
 import { JobRepository, MessageRepository } from '@teleflow/dal';
-import { CompileTemplate } from '@novu/application-generic';
+import { CompileTemplate } from '@teleflow/application-generic';
 
 import { InboundEmailParse, IUserWebhookPayload } from '../usecases/inbound-email-parse/inbound-email-parse.usecase';
 import { InboundEmailParseCommand } from '../usecases/inbound-email-parse/inbound-email-parse.command';

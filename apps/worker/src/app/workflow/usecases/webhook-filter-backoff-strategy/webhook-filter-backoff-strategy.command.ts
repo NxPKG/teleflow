@@ -1,5 +1,5 @@
 import { IsDefined, IsNumber, IsOptional } from 'class-validator';
-import { EnvironmentWithUserCommand } from '@novu/application-generic';
+import { EnvironmentWithUserCommand } from '@teleflow/application-generic';
 
 import { EventJobDto } from './event-job.dto';
 

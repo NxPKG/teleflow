@@ -32,7 +32,7 @@ import {
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
   IChimeraEmailResponse,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import * as inlineCss from 'inline-css';
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';
@@ -328,8 +328,8 @@ export class SendMessageEmail extends SendMessageBase {
         !environment.dns?.mxRecordConfigured && !environment.dns?.inboundParseDomain
           ? DetailEnum.REPLY_CALLBACK_NOT_CONFIGURATION
           : !environment.dns?.mxRecordConfigured
-            ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
-            : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
+          ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
+          : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
 
       await this.executionLogRoute.execute(
         ExecutionLogRouteCommand.create({

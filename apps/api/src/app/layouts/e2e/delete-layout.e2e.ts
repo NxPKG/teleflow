@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import { UserSession } from '@teleflow/testing';
 import { MessageTemplateRepository } from '@teleflow/dal';
 import { EmailBlockTypeEnum, StepTypeEnum, WorkflowTypeEnum } from '@novu/shared';
-import { CreateMessageTemplate, CreateMessageTemplateCommand } from '@novu/application-generic';
+import { CreateMessageTemplate, CreateMessageTemplateCommand } from '@teleflow/application-generic';
 
 import { createLayout } from './helpers';
 import { MessageTemplateModule } from '../../message-template/message-template.module';

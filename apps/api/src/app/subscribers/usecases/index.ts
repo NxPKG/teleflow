@@ -4,7 +4,7 @@ import {
   UpdateSubscriber,
   CreateSubscriber,
   GetSubscriberGlobalPreference,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { GetSubscribers } from './get-subscribers';
 import { GetSubscriber } from './get-subscriber';

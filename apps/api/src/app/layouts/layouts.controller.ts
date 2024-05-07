@@ -24,7 +24,7 @@ import {
   ApiOkResponse,
 } from '../shared/framework/response.decorator';
 import { IJwtPayload } from '@novu/shared';
-import { GetLayoutCommand, GetLayoutUseCase, OtelSpan } from '@novu/application-generic';
+import { GetLayoutCommand, GetLayoutUseCase, OtelSpan } from '@teleflow/application-generic';
 
 import {
   CreateLayoutRequestDto,

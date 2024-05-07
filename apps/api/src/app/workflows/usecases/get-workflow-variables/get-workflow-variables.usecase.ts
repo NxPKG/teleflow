@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ModuleRef } from '@nestjs/core';
 import { SystemVariablesWithTypes } from '@novu/shared';
-import { buildVariablesKey, CachedEntity } from '@novu/application-generic';
+import { buildVariablesKey, CachedEntity } from '@teleflow/application-generic';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { GetWorkflowVariablesCommand } from './get-workflow-variables.command';
 

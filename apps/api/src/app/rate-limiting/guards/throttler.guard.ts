@@ -10,7 +10,7 @@ import {
 import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common';
 import { EvaluateApiRateLimit, EvaluateApiRateLimitCommand } from '../usecases/evaluate-api-rate-limit';
 import { Reflector } from '@nestjs/core';
-import { GetFeatureFlag, GetFeatureFlagCommand, Instrument } from '@novu/application-generic';
+import { GetFeatureFlag, GetFeatureFlagCommand, Instrument } from '@teleflow/application-generic';
 import {
   ApiRateLimitCategoryEnum,
   ApiRateLimitCostEnum,

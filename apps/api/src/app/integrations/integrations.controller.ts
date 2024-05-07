@@ -16,7 +16,7 @@ import {
   CalculateLimitTeleflowIntegration,
   CalculateLimitTeleflowIntegrationCommand,
   OtelSpan,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ApiExcludeEndpoint, ApiOperation, ApiTags } from '@nestjs/swagger';
 
 import { UserAuthGuard } from '../auth/framework/user.auth.guard';

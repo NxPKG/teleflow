@@ -2,7 +2,7 @@ import { createHash } from 'crypto';
 import { Injectable } from '@nestjs/common';
 
 import { EnvironmentRepository } from '@teleflow/dal';
-import { decryptApiKey, encryptApiKey } from '@novu/application-generic';
+import { decryptApiKey, encryptApiKey } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { GenerateUniqueApiKey } from '../generate-unique-api-key/generate-unique-api-key.usecase';

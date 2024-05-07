@@ -85,7 +85,7 @@
       "path": "packages/react-native"
     },
     {
-      "name": "📦 @novu/application-generic",
+      "name": "📦 @teleflow/application-generic",
       "path": "packages/application-generic"
     },
     {

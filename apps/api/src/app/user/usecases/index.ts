@@ -1,4 +1,4 @@
-import { CreateUser } from '@novu/application-generic';
+import { CreateUser } from '@teleflow/application-generic';
 
 import { GetMyProfileUsecase } from './get-my-profile/get-my-profile.usecase';
 import { UpdateOnBoardingUsecase } from './update-on-boarding/update-on-boarding.usecase';

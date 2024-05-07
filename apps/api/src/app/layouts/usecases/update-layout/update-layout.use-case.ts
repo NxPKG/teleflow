@@ -1,6 +1,6 @@
 import { ConflictException, Injectable, Inject } from '@nestjs/common';
 import { LayoutEntity, LayoutRepository } from '@teleflow/dal';
-import { AnalyticsService, GetLayoutCommand, GetLayoutUseCase } from '@novu/application-generic';
+import { AnalyticsService, GetLayoutCommand, GetLayoutUseCase } from '@teleflow/application-generic';
 
 import { UpdateLayoutCommand } from './update-layout.command';
 import { CreateLayoutChangeCommand, CreateLayoutChangeUseCase } from '../create-layout-change';

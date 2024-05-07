@@ -5,7 +5,7 @@ import {
   GetTopicSubscribersUseCase,
   MapTriggerRecipients,
   MapTriggerRecipientsCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import {
   SubscriberEntity,
   SubscriberRepository,

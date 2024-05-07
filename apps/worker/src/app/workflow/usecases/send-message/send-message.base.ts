@@ -21,7 +21,7 @@ import {
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { SendMessageType } from './send-message-type.usecase';
 import { CreateLog } from '../../../shared/logs';
 import { PlatformException } from '../../../shared/utils';

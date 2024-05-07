@@ -6,7 +6,7 @@ import {
   MetricsService,
   QueueBaseService,
   WorkerOptions,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { Inject, Injectable, Logger } from '@nestjs/common';
 
 import { checkingForCronJob } from '../../shared/utils';

@@ -6,7 +6,7 @@ import { INestApplication, Logger, NestInterceptor, ValidationPipe } from '@nest
 import { NestFactory } from '@nestjs/core';
 import * as bodyParser from 'body-parser';
 import * as Sentry from '@sentry/node';
-import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@novu/application-generic';
+import { BullMqService, getErrorInterceptor, Logger as PinoLogger } from '@teleflow/application-generic';
 
 import { AppModule } from './app.module';
 import { ResponseInterceptor } from './app/shared/response.interceptor';

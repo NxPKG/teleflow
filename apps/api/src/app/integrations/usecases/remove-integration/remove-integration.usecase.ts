@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, Scope } from '@nestjs/common';
 import { IntegrationRepository, DalException } from '@teleflow/dal';
 import { CHANNELS_WITH_PRIMARY } from '@novu/shared';
-import { buildIntegrationKey, InvalidateCacheService } from '@novu/application-generic';
+import { buildIntegrationKey, InvalidateCacheService } from '@teleflow/application-generic';
 
 import { RemoveIntegrationCommand } from './remove-integration.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';
@@ -10,10 +10,7 @@ import { ApiException } from '../../../shared/exceptions/api.exception';
   scope: Scope.REQUEST,
 })
 export class RemoveIntegration {
-  constructor(
-    private invalidateCache: InvalidateCacheService,
-    private integrationRepository: IntegrationRepository
-  ) {}
+  constructor(private invalidateCache: InvalidateCacheService, private integrationRepository: IntegrationRepository) {}
 
   async execute(command: RemoveIntegrationCommand) {
     try {

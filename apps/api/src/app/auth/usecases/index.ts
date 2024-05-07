@@ -1,4 +1,4 @@
-import { SwitchEnvironment, SwitchOrganization } from '@novu/application-generic';
+import { SwitchEnvironment, SwitchOrganization } from '@teleflow/application-generic';
 
 import { PasswordResetRequest } from './password-reset-request/password-reset-request.usecase';
 import { UserRegister } from './register/user-register.usecase';

@@ -4,7 +4,7 @@ import {
   GetSubscriberGlobalPreferenceCommand,
   GetSubscriberPreference,
   GetSubscriberPreferenceCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { PreferenceLevelEnum } from '@teleflow/dal';
 
 import { GetPreferencesByLevelCommand } from './get-preferences-by-level.command';

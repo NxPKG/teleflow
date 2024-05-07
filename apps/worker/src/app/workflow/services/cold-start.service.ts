@@ -1,5 +1,5 @@
 import { INestApplication } from '@nestjs/common';
-import { ITeleflowWorker, ReadinessService } from '@novu/application-generic';
+import { ITeleflowWorker, ReadinessService } from '@teleflow/application-generic';
 
 const getWorkers = (app: INestApplication): ITeleflowWorker[] => {
   const workers = app.get('ACTIVE_WORKERS');

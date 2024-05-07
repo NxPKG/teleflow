@@ -1,5 +1,5 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { buildUserKey, InvalidateCacheService } from '@novu/application-generic';
+import { buildUserKey, InvalidateCacheService } from '@teleflow/application-generic';
 import { UserRepository } from '@teleflow/dal';
 import * as bcrypt from 'bcrypt';
 
@@ -8,10 +8,7 @@ import { UpdatePasswordCommand } from './update-password.command';
 
 @Injectable()
 export class UpdatePassword {
-  constructor(
-    private invalidateCache: InvalidateCacheService,
-    private userRepository: UserRepository
-  ) {}
+  constructor(private invalidateCache: InvalidateCacheService, private userRepository: UserRepository) {}
 
   async execute(command: UpdatePasswordCommand) {
     if (command.newPassword !== command.confirmPassword) {

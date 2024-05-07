@@ -29,7 +29,7 @@
     "@nestjs/swagger": "^7.1.9",
     "@nestjs/terminus": "^10.0.1",
     "@nestjs/websockets": "^10.2.2",
-    "@novu/application-generic": "^0.24.1",
+    "@teleflow/application-generic": "^0.24.1",
     "@teleflow/dal": "^0.24.1",
     "@novu/shared": "^0.24.1",
     "@teleflow/testing": "^0.24.1",
