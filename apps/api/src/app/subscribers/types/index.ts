@@ -1,4 +1,4 @@
 export enum OAuthHandlerEnum {
-  NOVU = 'novu',
+  TELEFLOW = 'novu',
   EXTERNAL = 'external',
 }

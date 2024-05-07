@@ -12,7 +12,7 @@ export const requireInject = (inject: RequireInject, moduleRef?: ModuleRef) => {
 const initiateResonateProvider = (moduleRef: ModuleRef) => {
   try {
     if (
-      process.env.NOVU_ENTERPRISE === 'true' ||
+      process.env.TELEFLOW_ENTERPRISE === 'true' ||
       process.env.CI_EE_TEST === 'true'
     ) {
       if (!require('@novu/ee-echo-worker')?.Resonate) {

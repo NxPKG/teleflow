@@ -197,7 +197,7 @@ export function showWelcomeScreen() {
 
   /* eslint-disable no-console */
   console.log(chalk.bold(items.join('\n')));
-  console.log(chalk.bold(`                      Welcome to NOVU!`));
+  console.log(chalk.bold(`                      Welcome to TELEFLOW!`));
   console.log(chalk.bold(textGradient(`         The open-source notification infrastructure\n`)));
   console.log(chalk.bold(`Now let's setup your account and send your first notification`));
   /* eslint-enable  no-console */

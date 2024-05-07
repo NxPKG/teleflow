@@ -1,4 +1,4 @@
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 import axios from 'axios';
 import { ChannelTypeEnum, FieldLogicalOperatorEnum } from '@novu/shared';
 

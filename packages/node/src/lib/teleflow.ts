@@ -61,7 +61,7 @@ export class Novu extends EventEmitter {
         apiKey = args[0];
       }
     } else {
-      apiKey = getEnvVariable('NOVU_API_KEY');
+      apiKey = getEnvVariable('TELEFLOW_API_KEY');
     }
 
     this.apiKey = apiKey;
@@ -107,14 +107,14 @@ export class Novu extends EventEmitter {
   public broadcast: typeof Events.prototype.broadcast;
 
   private buildBackendUrl(config?: ITeleflowConfiguration) {
-    const novuApiVersion = 'v1';
+    const teleflowApiVersion = 'v1';
 
     if (!config?.backendUrl) {
-      return `https://api.novu.co/${novuApiVersion}`;
+      return `https://api.novu.co/${teleflowApiVersion}`;
     }
 
     return config?.backendUrl.includes('novu.co/v')
       ? config?.backendUrl
-      : config?.backendUrl + `/${novuApiVersion}`;
+      : config?.backendUrl + `/${teleflowApiVersion}`;
   }
 }

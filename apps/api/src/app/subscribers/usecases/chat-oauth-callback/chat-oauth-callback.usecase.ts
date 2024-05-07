@@ -78,7 +78,7 @@ export class ChatOauthCallback {
         providerId: command.providerId,
         integrationIdentifier: command.integrationIdentifier,
         credentials: subscriberCredentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );

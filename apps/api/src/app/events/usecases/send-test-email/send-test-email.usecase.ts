@@ -88,7 +88,7 @@ export class SendTestEmail {
     }
 
     if (command.chimera) {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-echo-api')?.PreviewStep) {
           throw new ApiException('Chimera module is not loaded');
         }

@@ -125,7 +125,7 @@ export class CreateOrganization {
 
   private async startFreeTrial(userId: string, organizationId: string) {
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-billing')?.StartReverseFreeTrial) {
           throw new BadRequestException('Billing module is not loaded');
         }

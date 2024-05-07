@@ -16,7 +16,7 @@ export class PromoteTranslationChange {
 
   async execute(command: PromoteTypeChangeCommand) {
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-translation')?.PromoteTranslationChange) {
           throw new BadRequestException('Translation module is not loaded');
         }

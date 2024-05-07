@@ -21,7 +21,7 @@ const getOutputFilePath = (suffix) => {
   return `${OUTPUT_PATH}/${OUTPUT_FILE_NAME}${suffix ?? ''}.${OUTPUT_FILE_EXTENSION}`;
 };
 
-const NOVU_ICON_REGEX = /^Icon(?!Button)[A-Z0-9]{1}[a-zA-Z0-9]+$/;
+const TELEFLOW_ICON_REGEX = /^Icon(?!Button)[A-Z0-9]{1}[a-zA-Z0-9]+$/;
 const RELATIVE_PATH_REGEX = /^(\.(\.){0,}\/)/;
 const ANTD_ICON_MODULE_NAME = '@ant-design/icons';
 
@@ -60,7 +60,8 @@ function getComponentName({ imported, local, moduleName, importType }) {
 
   // group Icons if from Novu Design System or AntD
   const name =
-    (moduleName === '@novu/design-system' && NOVU_ICON_REGEX.test(importedName)) || moduleName === ANTD_ICON_MODULE_NAME
+    (moduleName === '@novu/design-system' && TELEFLOW_ICON_REGEX.test(importedName)) ||
+    moduleName === ANTD_ICON_MODULE_NAME
       ? 'Icon'
       : importedName;
 

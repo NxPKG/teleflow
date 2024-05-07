@@ -22,7 +22,7 @@ export class ActiveJobsMetricService {
     public readonly activeJobsMetricWorkerService: ActiveJobsMetricWorkerService,
     private metricsService: MetricsService
   ) {
-    if (process.env.NOVU_MANAGED_SERVICE === 'true' && process.env.NEW_RELIC_LICENSE_KEY) {
+    if (process.env.TELEFLOW_MANAGED_SERVICE === 'true' && process.env.NEW_RELIC_LICENSE_KEY) {
       this.activeJobsMetricWorkerService.createWorker(this.getWorkerProcessor(), this.getWorkerOptions());
 
       this.activeJobsMetricWorkerService.worker.on('completed', async (job) => {

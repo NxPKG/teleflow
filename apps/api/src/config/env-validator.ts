@@ -41,7 +41,7 @@ const validators: { [K in keyof any]: ValidatorSpec<any[K]> } = {
   MONGO_MAX_POOL_SIZE: num({
     default: 500,
   }),
-  NOVU_API_KEY: str({
+  TELEFLOW_API_KEY: str({
     default: '',
   }),
   STORE_ENCRYPTION_KEY: str32(),

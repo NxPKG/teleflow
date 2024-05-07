@@ -35,7 +35,7 @@ export const BLUEPRINTS_API_URL =
     ? window._env_.REACT_APP_BLUEPRINTS_API_URL || process.env.REACT_APP_BLUEPRINTS_API_URL || 'http://localhost:1336'
     : blueprintApiUrlByEnv;
 
-export const APP_ID = window._env_.REACT_APP_NOVU_APP_ID || process.env.REACT_APP_NOVU_APP_ID;
+export const APP_ID = window._env_.REACT_APP_TELEFLOW_APP_ID || process.env.REACT_APP_TELEFLOW_APP_ID;
 
 export const WIDGET_EMBED_PATH =
   window._env_.REACT_APP_WIDGET_EMBED_PATH ||
@@ -45,7 +45,7 @@ export const WIDGET_EMBED_PATH =
 export const IS_DOCKER_HOSTED =
   window._env_.REACT_APP_DOCKER_HOSTED_ENV === 'true' || process.env.REACT_APP_DOCKER_HOSTED_ENV === 'true';
 
-export const REACT_APP_VERSION = process.env.NOVU_VERSION;
+export const REACT_APP_VERSION = process.env.TELEFLOW_VERSION;
 
 export const INTERCOM_APP_ID = window._env_.REACT_APP_INTERCOM_APP_ID || process.env.REACT_APP_INTERCOM_APP_ID;
 

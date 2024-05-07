@@ -100,19 +100,19 @@ export class CompleteVercelIntegration {
         target,
         type,
         value: clientKey,
-        key: 'NEXT_PUBLIC_NOVU_CLIENT_APP_ID',
+        key: 'NEXT_PUBLIC_TELEFLOW_CLIENT_APP_ID',
       },
       {
         target,
         type,
         value: clientKey,
-        key: 'NOVU_CLIENT_APP_ID',
+        key: 'TELEFLOW_CLIENT_APP_ID',
       },
       {
         target,
         type,
         value: privateKey,
-        key: 'NOVU_API_SECRET',
+        key: 'TELEFLOW_API_SECRET',
       },
     ];
 

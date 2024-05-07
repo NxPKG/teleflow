@@ -17,11 +17,11 @@ import { GetTeleflowProviderCredentialsCommand } from './get-teleflow-provider-c
 export class GetTeleflowProviderCredentials {
   constructor(
     private analyticsService: AnalyticsService,
-    protected calculateLimitTeleflowIntegration: CalculateLimitTeleflowIntegration,
+    protected calculateLimitTeleflowIntegration: CalculateLimitTeleflowIntegration
   ) {}
 
   async execute(
-    integration: GetTeleflowProviderCredentialsCommand,
+    integration: GetTeleflowProviderCredentialsCommand
   ): Promise<ICredentials> {
     if (
       integration.providerId === EmailProviderIdEnum.Novu ||
@@ -35,7 +35,7 @@ export class GetTeleflowProviderCredentials {
 
       if (!limit) {
         throw new ConflictException(
-          `Limit for Novu's ${integration.channelType.toLowerCase()} provider does not exists.`,
+          `Limit for Novu's ${integration.channelType.toLowerCase()} provider does not exists.`
         );
       }
 
@@ -49,17 +49,17 @@ export class GetTeleflowProviderCredentials {
             organizationId: integration.organizationId,
             providerId: integration.providerId,
             ...limit,
-          },
+          }
         );
         throw new ConflictException(
-          `Limit for Novu's ${integration.channelType.toLowerCase()} provider was reached.`,
+          `Limit for Novu's ${integration.channelType.toLowerCase()} provider was reached.`
         );
       }
     }
 
     if (integration.providerId === EmailProviderIdEnum.Novu) {
       return {
-        apiKey: process.env.NOVU_EMAIL_INTEGRATION_API_KEY,
+        apiKey: process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY,
         from: 'no-reply@novu.co',
         senderName: 'Novu',
         ipPoolName: 'Demo',
@@ -68,14 +68,14 @@ export class GetTeleflowProviderCredentials {
 
     if (integration.providerId === SmsProviderIdEnum.Novu) {
       return {
-        accountSid: process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID,
-        token: process.env.NOVU_SMS_INTEGRATION_TOKEN,
-        from: process.env.NOVU_SMS_INTEGRATION_SENDER,
+        accountSid: process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID,
+        token: process.env.TELEFLOW_SMS_INTEGRATION_TOKEN,
+        from: process.env.TELEFLOW_SMS_INTEGRATION_SENDER,
       };
     }
 
     throw new NotFoundException(
-      `Credentials for Novu's ${integration.channelType.toLowerCase()} provider could not be found`,
+      `Credentials for Novu's ${integration.channelType.toLowerCase()} provider could not be found`
     );
   }
 }

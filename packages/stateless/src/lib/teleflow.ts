@@ -58,12 +58,12 @@ export class NovuStateless extends EventEmitter {
   }
 
   async registerProvider(
-    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   );
 
   async registerProvider(
     providerId: string,
-    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   );
 
   async registerProvider(
@@ -73,15 +73,13 @@ export class NovuStateless extends EventEmitter {
       | ISmsProvider
       | IChatProvider
       | IPushProvider,
-    provider?: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider,
+    provider?: IEmailProvider | ISmsProvider | IChatProvider | IPushProvider
   ) {
     await this.providerStore.addProvider(
       typeof providerOrProviderId === 'string'
         ? providerOrProviderId
         : provider?.id,
-      typeof providerOrProviderId === 'string'
-        ? provider
-        : providerOrProviderId,
+      typeof providerOrProviderId === 'string' ? provider : providerOrProviderId
     );
   }
 
@@ -96,7 +94,7 @@ export class NovuStateless extends EventEmitter {
       this.themeStore,
       this.contentEngine,
       this.config,
-      this,
+      this
     );
 
     return await triggerEngine.trigger(eventId, data);

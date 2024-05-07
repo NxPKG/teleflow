@@ -90,7 +90,7 @@ export class SendMessageEmail extends SendMessageBase {
       await this.executionLogRoute.execute(
         ExecutionLogRouteCommand.create({
           ...ExecutionLogRouteCommand.getDetailsFromJob(command.job),
-          detail: DetailEnum.LIMIT_PASSED_NOVU_INTEGRATION,
+          detail: DetailEnum.LIMIT_PASSED_TELEFLOW_INTEGRATION,
           source: ExecutionDetailsSourceEnum.INTERNAL,
           status: ExecutionDetailsStatusEnum.FAILED,
           raw: JSON.stringify({ message: e.message }),
@@ -328,8 +328,8 @@ export class SendMessageEmail extends SendMessageBase {
         !environment.dns?.mxRecordConfigured && !environment.dns?.inboundParseDomain
           ? DetailEnum.REPLY_CALLBACK_NOT_CONFIGURATION
           : !environment.dns?.mxRecordConfigured
-            ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
-            : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
+          ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
+          : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
 
       await this.executionLogRoute.execute(
         ExecutionLogRouteCommand.create({

@@ -44,7 +44,7 @@ export class BullMqService {
   private _worker: Worker;
 
   public static readonly pro: boolean =
-    process.env.NOVU_MANAGED_SERVICE !== undefined;
+    process.env.TELEFLOW_MANAGED_SERVICE !== undefined;
 
   constructor(
     private workflowInMemoryProviderService: WorkflowInMemoryProviderService

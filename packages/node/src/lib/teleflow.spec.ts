@@ -1,4 +1,4 @@
-import { Novu } from './novu';
+import { Novu } from './teleflow';
 import axios from 'axios';
 
 const mockConfig = {
@@ -15,7 +15,7 @@ describe('test initialization of novu node package', () => {
   beforeEach(() => {
     process.env = {
       ...originalEnv,
-      NOVU_API_KEY: 'cafebabe',
+      TELEFLOW_API_KEY: 'cafebabe',
     };
   });
 
@@ -23,11 +23,11 @@ describe('test initialization of novu node package', () => {
     process.env = originalEnv;
   });
 
-  test('should use the NOVU_API_KEY when defined', async () => {
+  test('should use the TELEFLOW_API_KEY when defined', async () => {
     expect(new Novu().apiKey).toBe('cafebabe');
   });
 
-  test('should use the NOVU_API_KEY when defined', async () => {
+  test('should use the TELEFLOW_API_KEY when defined', async () => {
     expect(new Novu('whatever').apiKey).toBe('whatever');
   });
 });

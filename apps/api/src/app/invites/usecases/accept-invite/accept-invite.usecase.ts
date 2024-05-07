@@ -55,10 +55,10 @@ export class AcceptInvite {
     if (!member.invite) return;
 
     try {
-      if ((process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production') && process.env.NOVU_API_KEY) {
-        const novu = new Novu(process.env.NOVU_API_KEY);
+      if ((process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production') && process.env.TELEFLOW_API_KEY) {
+        const novu = new Novu(process.env.TELEFLOW_API_KEY);
 
-        await novu.trigger(process.env.NOVU_TEMPLATEID_INVITE_ACCEPTED || 'invite-accepted-dEQAsKD1E', {
+        await novu.trigger(process.env.TELEFLOW_TEMPLATEID_INVITE_ACCEPTED || 'invite-accepted-dEQAsKD1E', {
           to: {
             subscriberId: inviter._id,
             firstName: capitalize(inviter.firstName || ''),

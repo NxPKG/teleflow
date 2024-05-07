@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { OrderDirectionEnum, TemplateVariableTypeEnum } from '@novu/shared';
 
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 
 const mockConfig = {
   apiKey: '1234',

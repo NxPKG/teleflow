@@ -147,8 +147,8 @@ describe('Create Organization - /organizations (POST)', async () => {
     });
 
     it('when Novu Email credentials are not set it should not create Novu Email integration', async () => {
-      const oldNovuEmailIntegrationApiKey = process.env.NOVU_EMAIL_INTEGRATION_API_KEY;
-      process.env.NOVU_EMAIL_INTEGRATION_API_KEY = '';
+      const oldNovuEmailIntegrationApiKey = process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY;
+      process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY = '';
       const testOrganization: ICreateOrganizationDto = {
         name: 'Org Name',
       };
@@ -166,12 +166,12 @@ describe('Create Organization - /organizations (POST)', async () => {
       expect(novuSmsIntegration?.length).to.eq(2);
       expect(novuSmsIntegration.filter((el) => el._environmentId === productionEnv?._id).length).to.eq(1);
       expect(novuSmsIntegration.filter((el) => el._environmentId === developmentEnv?._id).length).to.eq(1);
-      process.env.NOVU_EMAIL_INTEGRATION_API_KEY = oldNovuEmailIntegrationApiKey;
+      process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY = oldNovuEmailIntegrationApiKey;
     });
 
     it('when Novu SMS credentials are not set it should not create Novu SMS integration', async () => {
-      const oldNovuSmsIntegrationAccountSid = process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID;
-      process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID = '';
+      const oldNovuSmsIntegrationAccountSid = process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID;
+      process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID = '';
       const testOrganization: ICreateOrganizationDto = {
         name: 'Org Name',
       };
@@ -189,7 +189,7 @@ describe('Create Organization - /organizations (POST)', async () => {
       expect(novuEmailIntegrations?.length).to.eq(2);
       expect(novuEmailIntegrations.filter((el) => el._environmentId === productionEnv?._id).length).to.eq(1);
       expect(novuEmailIntegrations.filter((el) => el._environmentId === developmentEnv?._id).length).to.eq(1);
-      process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID = oldNovuSmsIntegrationAccountSid;
+      process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID = oldNovuSmsIntegrationAccountSid;
     });
   });
 });

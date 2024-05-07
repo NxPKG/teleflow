@@ -462,11 +462,11 @@ clone_monorepo () {
     	if [[ "$RESPONSE" == "$POSITIVE_RESPONSE" ]]; then
             REPOSITORY="git@github.com:nxpkg/teleflow.git"
             DESTINATION_FOLDER="$HOME/Dev"
-            NOVU_FOLDER="$DESTINATION_FOLDER/novu"
+            TELEFLOW_FOLDER="$DESTINATION_FOLDER/novu"
 
             [[ ! -d "$DESTINATION_FOLDER" ]] && mkdir "$DESTINATION_FOLDER"
-            if [[ ! -d "$NOVU_FOLDER" ]]; then
-                git clone "$REPOSITORY $NOVU_FOLDER"
+            if [[ ! -d "$TELEFLOW_FOLDER" ]]; then
+                git clone "$REPOSITORY $TELEFLOW_FOLDER"
 	        success_message "Novu monorepo"
             else
                 already_installed_message "Novu monorepo"

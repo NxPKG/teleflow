@@ -41,7 +41,7 @@ import { ResourceThrottlerInterceptor } from './app/resource-limiting/guards';
 
 const enterpriseImports = (): Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> => {
   const modules: Array<Type | DynamicModule | Promise<DynamicModule> | ForwardReference> = [];
-  if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+  if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
     if (require('@novu/ee-auth')?.EEAuthModule) {
       modules.push(require('@novu/ee-auth')?.EEAuthModule);
     }

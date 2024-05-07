@@ -48,7 +48,7 @@ export async function bootstrap(expressApp?): Promise<INestApplication> {
 
   try {
     if (
-      (process.env.NOVU_ENTERPRISE === 'true' && require('@novu/ee-billing')?.rawBodyBuffer) ||
+      (process.env.TELEFLOW_ENTERPRISE === 'true' && require('@novu/ee-billing')?.rawBodyBuffer) ||
       process.env.CI_EE_TEST === 'true'
     ) {
       rawBodyBuffer = require('@novu/ee-billing')?.rawBodyBuffer;

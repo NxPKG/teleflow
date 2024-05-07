@@ -40,7 +40,7 @@ describe('Delete subscriber provider credentials', function () {
         environmentId: session.environment._id,
         providerId: ChatProviderIdEnum.Discord,
         credentials: { webhookUrl: 'newWebhookUrl' },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );
@@ -52,7 +52,7 @@ describe('Delete subscriber provider credentials', function () {
         environmentId: session.environment._id,
         providerId: PushProviderIdEnum.FCM,
         credentials: { deviceTokens: fcmTokens },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );
