@@ -16,7 +16,10 @@ const LOG_CONTEXT = 'WSGateway';
 export class WSGateway implements OnGatewayConnection, OnGatewayDisconnect, IDestroy {
   private isShutdown = false;
 
-  constructor(private jwtService: JwtService, private subscriberOnlineService: SubscriberOnlineService) {}
+  constructor(
+    private jwtService: JwtService,
+    private subscriberOnlineService: SubscriberOnlineService
+  ) {}
 
   @WebSocketServer()
   server: Server;

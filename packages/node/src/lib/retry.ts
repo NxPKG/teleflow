@@ -13,7 +13,7 @@ const DEFAULT_WAIT_MAX = 30;
 
 export function makeRetryable(
   axios: AxiosInstance,
-  config?: ITeleflowConfiguration
+  config?: ITeleflowConfiguration,
 ) {
   axios.interceptors.request.use((axiosConfig) => {
     if (

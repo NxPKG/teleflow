@@ -6,7 +6,10 @@ import { QueueNextJobCommand } from './queue-next-job.command';
 
 @Injectable()
 export class QueueNextJob {
-  constructor(private jobRepository: JobRepository, @Inject(forwardRef(() => AddJob)) private addJobUsecase: AddJob) {}
+  constructor(
+    private jobRepository: JobRepository,
+    @Inject(forwardRef(() => AddJob)) private addJobUsecase: AddJob
+  ) {}
 
   @InstrumentUsecase()
   public async execute(command: QueueNextJobCommand): Promise<JobEntity | undefined> {

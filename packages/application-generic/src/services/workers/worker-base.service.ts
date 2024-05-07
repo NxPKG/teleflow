@@ -20,7 +20,7 @@ export class WorkerBaseService implements ITeleflowWorker {
 
   constructor(
     public readonly topic: JobTopicNameEnum,
-    public bullMqServiceInstance: BullMqService
+    public bullMqServiceInstance: BullMqService,
   ) {
     this.instance = bullMqServiceInstance;
   }
@@ -37,7 +37,7 @@ export class WorkerBaseService implements ITeleflowWorker {
 
   public createWorker(
     processor: WorkerProcessor,
-    options: WorkerOptions
+    options: WorkerOptions,
   ): void {
     this.instance.createWorker(this.topic, processor, options);
   }
@@ -69,7 +69,7 @@ export class WorkerBaseService implements ITeleflowWorker {
 
     Logger.log(
       `Shutting down the ${this.topic} worker service has finished`,
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
   }
 

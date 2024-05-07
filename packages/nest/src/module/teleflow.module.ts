@@ -19,7 +19,7 @@ export class NovuModule {
   }
 
   public static forRootAsync(
-    options: ITeleflowModuleAsyncOptions
+    options: ITeleflowModuleAsyncOptions,
   ): DynamicModule {
     const providers = createAsyncTeleflowProviders(options);
 

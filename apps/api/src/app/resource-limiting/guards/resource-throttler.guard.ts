@@ -22,7 +22,10 @@ export const THROTTLED_EXCEPTION_MESSAGE = `You have exceeded the number of allo
  */
 @Injectable()
 export class ResourceThrottlerInterceptor implements NestInterceptor {
-  constructor(private reflector: Reflector, private getFeatureFlag: GetFeatureFlag) {}
+  constructor(
+    private reflector: Reflector,
+    private getFeatureFlag: GetFeatureFlag
+  ) {}
 
   /**
    * Throttles incoming HTTP requests to resources.

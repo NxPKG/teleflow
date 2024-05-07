@@ -20,7 +20,10 @@ const LOG_CONTEXT = 'GetDigestEvents';
 
 @Injectable()
 export abstract class GetDigestEvents {
-  constructor(protected jobRepository: JobRepository, private executionLogRoute: ExecutionLogRoute) {}
+  constructor(
+    protected jobRepository: JobRepository,
+    private executionLogRoute: ExecutionLogRoute
+  ) {}
 
   @Instrument()
   protected async filterJobs(currentJob: JobEntity, transactionId: string, jobs: JobEntity[]) {

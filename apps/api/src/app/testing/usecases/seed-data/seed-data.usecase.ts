@@ -10,7 +10,10 @@ import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class SeedData {
-  constructor(private authService: AuthService, private userRegister: UserRegister) {}
+  constructor(
+    private authService: AuthService,
+    private userRegister: UserRegister
+  ) {}
 
   async execute(command: SeedDataCommand) {
     const data = {
