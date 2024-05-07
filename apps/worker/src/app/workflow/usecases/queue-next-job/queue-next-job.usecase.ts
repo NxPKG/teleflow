@@ -1,12 +1,15 @@
 import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { JobEntity, JobRepository } from '@teleflow/dal';
-import { AddJob, InstrumentUsecase } from '@novu/application-generic';
+import { AddJob, InstrumentUsecase } from '@teleflow/application-generic';
 
 import { QueueNextJobCommand } from './queue-next-job.command';
 
 @Injectable()
 export class QueueNextJob {
-  constructor(private jobRepository: JobRepository, @Inject(forwardRef(() => AddJob)) private addJobUsecase: AddJob) {}
+  constructor(
+    private jobRepository: JobRepository,
+    @Inject(forwardRef(() => AddJob)) private addJobUsecase: AddJob
+  ) {}
 
   @InstrumentUsecase()
   public async execute(command: QueueNextJobCommand): Promise<JobEntity | undefined> {

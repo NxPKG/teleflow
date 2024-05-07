@@ -60,7 +60,7 @@ export class AddJob {
     private calculateDelayService: CalculateDelayService,
     @Inject(forwardRef(() => ConditionsFilter))
     private conditionsFilter: ConditionsFilter,
-    private moduleRef: ModuleRef
+    private moduleRef: ModuleRef,
   ) {
     this.resonateUsecase = requireInject('resonate', this.moduleRef);
   }
@@ -75,7 +75,7 @@ export class AddJob {
     if (!job) {
       Logger.warn(
         `Job ${job._id} was null in both the input and search`,
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       return;
@@ -83,14 +83,14 @@ export class AddJob {
 
     Logger.log(
       `Scheduling New Job ${job._id} of type: ${job.type}`,
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
 
     let filtered = false;
     let filterVariables: IFilterVariables | undefined;
     if (
       [StepTypeEnum.DELAY, StepTypeEnum.DIGEST].includes(
-        job.type as StepTypeEnum
+        job.type as StepTypeEnum,
       )
     ) {
       const shouldRun = await this.conditionsFilter.filter(
@@ -101,7 +101,7 @@ export class AddJob {
           userId: command.userId,
           step: job.step,
           job,
-        })
+        }),
       );
 
       filterVariables = shouldRun.variables;
@@ -138,7 +138,7 @@ export class AddJob {
           job,
           filtered,
           chimeraData: resonateResponse?.outputs,
-        })
+        }),
       );
 
       if (digestCreationResult === DigestCreationResultEnum.MERGED) {
@@ -188,7 +188,7 @@ export class AddJob {
       if (delayAmount === undefined) {
         Logger.warn(
           `Delay  Amount does not exist on a delay job ${job._id}`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
 
         return;
@@ -198,12 +198,12 @@ export class AddJob {
     if (digestAmount === undefined && delayAmount === undefined) {
       Logger.verbose(
         `Updating status to queued for job ${job._id}`,
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
       await this.jobRepository.updateStatus(
         command.environmentId,
         job._id,
-        JobStatusEnum.QUEUED
+        JobStatusEnum.QUEUED,
       );
     }
 
@@ -215,7 +215,7 @@ export class AddJob {
         status: ExecutionDetailsStatusEnum.PENDING,
         isTest: false,
         isRetry: false,
-      })
+      }),
     );
 
     const delay = filtered ? 0 : digestAmount ?? delayAmount;
@@ -223,7 +223,7 @@ export class AddJob {
     if ((digestAmount || delayAmount) && filtered) {
       Logger.verbose(
         `Delay for job ${job._id} will be 0 because job was filtered`,
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
     }
 
@@ -253,7 +253,7 @@ export class AddJob {
     Logger.verbose(
       jobData,
       'Going to add a minimal job in Standard Queue',
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
 
     await this.standardQueueService.add({
@@ -268,8 +268,8 @@ export class AddJob {
         job.type === StepTypeEnum.DELAY
           ? 'Delay is active, Creating execution details'
           : job.type === StepTypeEnum.DIGEST
-          ? 'Digest is active, Creating execution details'
-          : 'Unexpected job type, Creating execution details';
+            ? 'Digest is active, Creating execution details'
+            : 'Unexpected job type, Creating execution details';
 
       Logger.verbose(logMessage, LOG_CONTEXT);
 
@@ -285,7 +285,7 @@ export class AddJob {
           isTest: false,
           isRetry: false,
           raw: JSON.stringify({ delay }),
-        })
+        }),
       );
     }
   }

@@ -7,7 +7,7 @@ import {
   ITemplate,
 } from '@teleflow/stateless';
 
-export interface INovuOptions {
+export interface ITeleflowOptions {
   /*
    *
    * This interface describes the options you want to pass to
@@ -19,14 +19,14 @@ export interface INovuOptions {
   templates: ITemplate[];
 }
 
-export interface INovuOptionsFactory {
-  createNovuOptions(): Promise<INovuOptions> | INovuOptions;
+export interface ITeleflowOptionsFactory {
+  createTeleflowOptions(): Promise<ITeleflowOptions> | ITeleflowOptions;
 }
 
-export interface INovuModuleAsyncOptions
+export interface ITeleflowModuleAsyncOptions
   extends Pick<ModuleMetadata, 'imports'> {
-  useExisting?: Type<INovuOptionsFactory>;
-  useClass?: Type<INovuOptionsFactory>;
-  useFactory?: (...args: any[]) => Promise<INovuOptions> | INovuOptions;
+  useExisting?: Type<ITeleflowOptionsFactory>;
+  useClass?: Type<ITeleflowOptionsFactory>;
+  useFactory?: (...args: any[]) => Promise<ITeleflowOptions> | ITeleflowOptions;
   inject?: any[];
 }

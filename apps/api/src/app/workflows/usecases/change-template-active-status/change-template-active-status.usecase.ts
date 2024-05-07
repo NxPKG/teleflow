@@ -7,7 +7,7 @@ import {
   CreateChange,
   CreateChangeCommand,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ChangeTemplateActiveStatusCommand } from './change-template-active-status.command';
 

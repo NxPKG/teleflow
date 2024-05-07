@@ -101,7 +101,7 @@ jobs:
         id: build-image
         if: ${{ inputs.env_tag == 'dev' || inputs.env_tag == 'stg' }}
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: ${{ matrix.name }}
           LOCAL_TAG: ${{ inputs.local_tag }}
           IMAGE_TAG: ${{ github.sha }}
@@ -110,10 +110,10 @@ jobs:
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}
           DOCKER_BUILD_ARGUMENTS: >
-            --cache-from type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }}
-            --cache-to type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }},mode=max
+            --cache-from type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }}
+            --cache-to type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }},mode=max
             --platform=linux/amd64 --provenance=false
-            --output=type=image,name=ghcr.io/novuhq/${{ matrix.name }},push-by-digest=true,name-canonical=true
+            --output=type=image,name=ghcr.io/nxpkg/${{ matrix.name }},push-by-digest=true,name-canonical=true
         run: |
           echo $GH_PASSWORD | docker login ghcr.io -u $GH_ACTOR --password-stdin
           cd $PROJECT_PATH && npm run docker:build
@@ -126,7 +126,7 @@ jobs:
         id: build-prod-image
         if: ${{ inputs.env_tag == 'prod' }}
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: ${{ matrix.name }}
           LOCAL_TAG: ${{ inputs.local_tag }}
           IMAGE_TAG: ${{ github.sha }}
@@ -135,10 +135,10 @@ jobs:
           GH_ACTOR: ${{ github.actor }}
           GH_PASSWORD: ${{ secrets.GH_PACKAGES }}
           DOCKER_BUILD_ARGUMENTS: >
-            --cache-from type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }}
-            --cache-to type=registry,ref=ghcr.io/novuhq/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }},mode=max
+            --cache-from type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }}
+            --cache-to type=registry,ref=ghcr.io/nxpkg/cache:build-cache-${{ env.SERVICE_NAME }}-${{ inputs.env_tag }},mode=max
             --platform=linux/amd64,linux/arm64 --provenance=false
-            --output=type=image,name=ghcr.io/novuhq/${{ matrix.name }},push-by-digest=true,name-canonical=true
+            --output=type=image,name=ghcr.io/nxpkg/${{ matrix.name }},push-by-digest=true,name-canonical=true
         run: |
           echo $GH_PASSWORD | docker login ghcr.io -u $GH_ACTOR --password-stdin
           cd $PROJECT_PATH && npm run docker:build
@@ -152,7 +152,7 @@ jobs:
       - name: Save image to output
         id: save-image-to-output
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: ${{ matrix.name }}
           IMAGE_TAG: ${{ github.sha }}
           OUTPUT_NAME: ${{ contains(matrix.name,'-ee') && 'IMAGE_EE' || 'IMAGE' }}
@@ -163,7 +163,7 @@ jobs:
         id: health-check
         if: ${{ inputs.health_check == 'true' && (steps.build-image.outcome == 'success' || steps.build-prod-image.outcome == 'success') }}
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: ${{ matrix.name }}
           LOCAL_TAG: ${{ inputs.local_tag }}
           IMAGE_TAG: ${{ github.sha }}

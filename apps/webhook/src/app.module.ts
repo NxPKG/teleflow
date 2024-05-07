@@ -12,7 +12,7 @@ import {
   LoggerModule,
   ProfilingModule,
   TracingModule,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import * as packageJson from '../package.json';
 
 const modules = [

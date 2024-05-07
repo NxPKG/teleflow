@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 import { JobStatusEnum, JobRepository, JobEntity } from '@teleflow/dal';
 import { StepTypeEnum } from '@novu/shared';
-import { isActionStepType, isMainDigest } from '@novu/application-generic';
+import { isActionStepType, isMainDigest } from '@teleflow/application-generic';
 
 import { CancelDelayedCommand } from './cancel-delayed.command';
 

@@ -27,12 +27,12 @@ import {
   CompileEmailTemplate,
   CompileEmailTemplateCommand,
   MailFactory,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
   IChimeraEmailResponse,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import * as inlineCss from 'inline-css';
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';
@@ -54,7 +54,7 @@ export class SendMessageEmail extends SendMessageBase {
     protected executionLogRoute: ExecutionLogRoute,
     private compileEmailTemplateUsecase: CompileEmailTemplate,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef
   ) {
@@ -64,7 +64,7 @@ export class SendMessageEmail extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );
@@ -90,7 +90,7 @@ export class SendMessageEmail extends SendMessageBase {
       await this.executionLogRoute.execute(
         ExecutionLogRouteCommand.create({
           ...ExecutionLogRouteCommand.getDetailsFromJob(command.job),
-          detail: DetailEnum.LIMIT_PASSED_NOVU_INTEGRATION,
+          detail: DetailEnum.LIMIT_PASSED_TELEFLOW_INTEGRATION,
           source: ExecutionDetailsSourceEnum.INTERNAL,
           status: ExecutionDetailsStatusEnum.FAILED,
           raw: JSON.stringify({ message: e.message }),
@@ -328,8 +328,8 @@ export class SendMessageEmail extends SendMessageBase {
         !environment.dns?.mxRecordConfigured && !environment.dns?.inboundParseDomain
           ? DetailEnum.REPLY_CALLBACK_NOT_CONFIGURATION
           : !environment.dns?.mxRecordConfigured
-          ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
-          : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
+            ? DetailEnum.REPLY_CALLBACK_MISSING_MX_RECORD_CONFIGURATION
+            : DetailEnum.REPLY_CALLBACK_MISSING_MX_ROUTE_DOMAIN_CONFIGURATION;
 
       await this.executionLogRoute.execute(
         ExecutionLogRouteCommand.create({

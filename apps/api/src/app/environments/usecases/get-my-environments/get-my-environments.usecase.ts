@@ -1,7 +1,7 @@
 import { Injectable, Logger, NotFoundException, Scope } from '@nestjs/common';
 
 import { EnvironmentEntity, EnvironmentRepository } from '@teleflow/dal';
-import { decryptApiKey } from '@novu/application-generic';
+import { decryptApiKey } from '@teleflow/application-generic';
 
 import { GetMyEnvironmentsCommand } from './get-my-environments.command';
 import { EnvironmentResponseDto } from '../../dtos/environment-response.dto';

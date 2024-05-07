@@ -13,7 +13,7 @@ import {
   InvalidateCacheService,
   buildFeedKey,
   buildMessageCountKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { WebSocketEventEnum } from '@novu/shared';
 
 import { RemoveMessageCommand } from './remove-message.command';

@@ -1,5 +1,5 @@
 import { IsEnum, IsMongoId, IsOptional, IsString } from 'class-validator';
-import { BaseCommand } from '@novu/application-generic';
+import { BaseCommand } from '@teleflow/application-generic';
 import { ChatProviderIdEnum } from '@novu/shared';
 
 import { IsNotEmpty } from '../chat-oauth-callback/chat-oauth-callback.command';

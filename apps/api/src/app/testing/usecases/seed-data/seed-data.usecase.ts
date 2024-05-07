@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { faker } from '@faker-js/faker';
 
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 import { SeedDataCommand } from './seed-data.command';
 import { UserRegister } from '../../../auth/usecases/register/user-register.usecase';
@@ -10,7 +10,10 @@ import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class SeedData {
-  constructor(private authService: AuthService, private userRegister: UserRegister) {}
+  constructor(
+    private authService: AuthService,
+    private userRegister: UserRegister
+  ) {}
 
   async execute(command: SeedDataCommand) {
     const data = {

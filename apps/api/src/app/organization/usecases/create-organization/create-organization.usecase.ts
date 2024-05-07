@@ -1,7 +1,7 @@
 import { BadRequestException, Inject, Injectable, Logger, Scope } from '@nestjs/common';
 import { OrganizationEntity, OrganizationRepository, UserRepository } from '@teleflow/dal';
 import { ApiServiceLevelEnum, JobTitleEnum, MemberRoleEnum } from '@novu/shared';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 
 import { CreateEnvironmentCommand } from '../../../environments/usecases/create-environment/create-environment.command';
 import { CreateEnvironment } from '../../../environments/usecases/create-environment/create-environment.usecase';
@@ -12,8 +12,8 @@ import { AddMember } from '../membership/add-member/add-member.usecase';
 import { CreateOrganizationCommand } from './create-organization.command';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
-import { CreateNovuIntegrations } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.usecase';
-import { CreateNovuIntegrationsCommand } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.command';
+import { CreateTeleflowIntegrations } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.usecase';
+import { CreateTeleflowIntegrationsCommand } from '../../../integrations/usecases/create-teleflow-integrations/create-teleflow-integrations.command';
 import { ModuleRef } from '@nestjs/core';
 
 @Injectable({
@@ -26,7 +26,7 @@ export class CreateOrganization {
     private readonly getOrganizationUsecase: GetOrganization,
     private readonly userRepository: UserRepository,
     private readonly createEnvironmentUsecase: CreateEnvironment,
-    private readonly createNovuIntegrations: CreateNovuIntegrations,
+    private readonly createTeleflowIntegrations: CreateTeleflowIntegrations,
     private analyticsService: AnalyticsService,
     private moduleRef: ModuleRef
   ) {}
@@ -63,8 +63,8 @@ export class CreateOrganization {
       })
     );
 
-    await this.createNovuIntegrations.execute(
-      CreateNovuIntegrationsCommand.create({
+    await this.createTeleflowIntegrations.execute(
+      CreateTeleflowIntegrationsCommand.create({
         environmentId: devEnv._id,
         organizationId: devEnv._organizationId,
         userId: user._id,
@@ -80,8 +80,8 @@ export class CreateOrganization {
       })
     );
 
-    await this.createNovuIntegrations.execute(
-      CreateNovuIntegrationsCommand.create({
+    await this.createTeleflowIntegrations.execute(
+      CreateTeleflowIntegrationsCommand.create({
         environmentId: prodEnv._id,
         organizationId: prodEnv._organizationId,
         userId: user._id,
@@ -125,7 +125,7 @@ export class CreateOrganization {
 
   private async startFreeTrial(userId: string, organizationId: string) {
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-billing')?.StartReverseFreeTrial) {
           throw new BadRequestException('Billing module is not loaded');
         }

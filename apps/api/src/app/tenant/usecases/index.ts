@@ -1,4 +1,4 @@
-import { GetTenant, UpdateTenant, CreateTenant } from '@novu/application-generic';
+import { GetTenant, UpdateTenant, CreateTenant } from '@teleflow/application-generic';
 import { DeleteTenant } from './delete-tenant/delete-tenant.usecase';
 import { GetTenants } from './get-tenants/get-tenants.usecase';
 

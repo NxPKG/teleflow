@@ -1,13 +1,16 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { MessageRepository } from '@teleflow/dal';
-import { buildFeedKey, buildMessageCountKey, InvalidateCacheService } from '@novu/application-generic';
+import { buildFeedKey, buildMessageCountKey, InvalidateCacheService } from '@teleflow/application-generic';
 
 import { RemoveMessageCommand } from './remove-message.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class RemoveMessage {
-  constructor(private invalidateCache: InvalidateCacheService, private messageRepository: MessageRepository) {}
+  constructor(
+    private invalidateCache: InvalidateCacheService,
+    private messageRepository: MessageRepository
+  ) {}
 
   async execute(command: RemoveMessageCommand) {
     const message = await this.messageRepository.findMessageById({

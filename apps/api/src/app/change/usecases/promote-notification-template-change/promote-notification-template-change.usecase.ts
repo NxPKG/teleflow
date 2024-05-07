@@ -15,7 +15,7 @@ import {
   buildNotificationTemplateIdentifierKey,
   buildNotificationTemplateKey,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { ApplyChange, ApplyChangeCommand } from '../apply-change';
 import { PromoteTypeChangeCommand } from '../promote-type-change.command';

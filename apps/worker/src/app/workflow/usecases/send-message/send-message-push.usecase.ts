@@ -27,12 +27,12 @@ import {
   CompileTemplateCommand,
   IPushHandler,
   PushFactory,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
   IChimeraPushResponse,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import type { IPushOptions } from '@teleflow/stateless';
 
 import { SendMessageCommand } from './send-message.command';
@@ -54,7 +54,7 @@ export class SendMessagePush extends SendMessageBase {
     protected executionLogRoute: ExecutionLogRoute,
     private compileTemplate: CompileTemplate,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef
   ) {
@@ -64,7 +64,7 @@ export class SendMessagePush extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );

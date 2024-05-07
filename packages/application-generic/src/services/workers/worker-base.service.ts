@@ -2,7 +2,7 @@ import { JobTopicNameEnum } from '@novu/shared';
 import { Logger } from '@nestjs/common';
 
 import { BullMqService, Processor, Worker, WorkerOptions } from '../bull-mq';
-import { INovuWorker } from '../readiness';
+import { ITeleflowWorker } from '../readiness';
 
 const LOG_CONTEXT = 'WorkerService';
 
@@ -13,14 +13,14 @@ export type WorkerProcessor =
 
 export { WorkerOptions };
 
-export class WorkerBaseService implements INovuWorker {
+export class WorkerBaseService implements ITeleflowWorker {
   private instance: BullMqService;
 
   public readonly DEFAULT_ATTEMPTS = 3;
 
   constructor(
     public readonly topic: JobTopicNameEnum,
-    public bullMqServiceInstance: BullMqService
+    public bullMqServiceInstance: BullMqService,
   ) {
     this.instance = bullMqServiceInstance;
   }
@@ -37,7 +37,7 @@ export class WorkerBaseService implements INovuWorker {
 
   public createWorker(
     processor: WorkerProcessor,
-    options: WorkerOptions
+    options: WorkerOptions,
   ): void {
     this.instance.createWorker(this.topic, processor, options);
   }
@@ -69,7 +69,7 @@ export class WorkerBaseService implements INovuWorker {
 
     Logger.log(
       `Shutting down the ${this.topic} worker service has finished`,
-      LOG_CONTEXT
+      LOG_CONTEXT,
     );
   }
 

@@ -1,4 +1,4 @@
-import { CreateWorkflow, UpdateWorkflow } from '@novu/application-generic';
+import { CreateWorkflow, UpdateWorkflow } from '@teleflow/application-generic';
 
 import { GetActiveIntegrationsStatus } from './get-active-integrations-status/get-active-integrations-status.usecase';
 import { ChangeTemplateActiveStatus } from './change-template-active-status/change-template-active-status.usecase';

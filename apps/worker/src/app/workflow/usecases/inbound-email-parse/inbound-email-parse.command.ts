@@ -8,7 +8,7 @@ import {
   IHeaders,
   IInboundParseDataDto,
   ITo,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 export class InboundEmailParseCommand extends BaseCommand implements IInboundParseDataDto {
   @IsDefined()

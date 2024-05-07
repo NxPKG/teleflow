@@ -71,7 +71,7 @@ export const ListProviders = ({
 }) => {
   const { colorScheme } = useMantineColorScheme();
   const { environment: currentEnvironment } = useEnvController();
-  const containsNovuProvider = useMemo(
+  const containsTeleflowProvider = useMemo(
     () =>
       NOVU_SMS_EMAIL_PROVIDERS.some(
         (providerId) => providerId === channelProviders.find((provider) => provider.connected)?.providerId
@@ -84,7 +84,7 @@ export const ListProviders = ({
     [channelProviders, currentEnvironment?._id]
   );
   const hasProviders = providersForTheCurrentEnvironment.length > 0;
-  const hasNovuProvider = providersForTheCurrentEnvironment.length === 1 && containsNovuProvider;
+  const hasTeleflowProvider = providersForTheCurrentEnvironment.length === 1 && containsTeleflowProvider;
   const isDark = colorScheme === 'dark';
 
   return (
@@ -146,7 +146,7 @@ export const ListProviders = ({
           channelType={channel}
         />
       </When>
-      <When truthy={hasNovuProvider}>
+      <When truthy={hasTeleflowProvider}>
         <LackIntegrationAlert text={'Connect a provider for this channel'} channelType={channel} type={'warning'} />
       </When>
     </ListProvidersContainer>

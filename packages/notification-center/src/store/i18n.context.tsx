@@ -15,12 +15,12 @@ export const I18NContext = React.createContext<ITranslationEntry>({
   lang: '',
 });
 
-interface INovuI18NProviderProps {
+interface ITeleflowI18NProviderProps {
   i18n?: I18NLanguage | ITranslationEntry;
   children: JSX.Element;
 }
 
-export function NovuI18NProvider({ i18n = 'en', ...props }: INovuI18NProviderProps) {
+export function NovuI18NProvider({ i18n = 'en', ...props }: ITeleflowI18NProviderProps) {
   const i18nEntry = React.useMemo<ITranslationEntry>(() => {
     if (typeof i18n === 'string') {
       return {

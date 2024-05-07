@@ -10,7 +10,7 @@ import {
   InstrumentUsecase,
   PinoLogger,
   StorageHelperService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { RunJobCommand } from './run-job.command';
 import { QueueNextJob, QueueNextJobCommand } from '../queue-next-job';

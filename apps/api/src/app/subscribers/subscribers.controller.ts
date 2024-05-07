@@ -20,7 +20,7 @@ import {
   CreateSubscriberCommand,
   UpdateSubscriber,
   UpdateSubscriberCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ApiOperation, ApiTags, ApiParam } from '@nestjs/swagger';
 import {
   ApiRateLimitCategoryEnum,

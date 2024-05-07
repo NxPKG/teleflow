@@ -13,11 +13,11 @@ const themeBase: ThemeVarsPartial = {
  */
 export const lightTheme = create({
   ...themeBase,
-  brandImage: './novu-logo-light.svg',
+  brandImage: './teleflow-logo-light.svg',
 });
 
 export const darkTheme = create({
   ...themeBase,
   base: 'dark',
-  brandImage: './novu-logo-dark.svg',
+  brandImage: './teleflow-logo-dark.svg',
 });

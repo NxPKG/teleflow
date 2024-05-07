@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { EvaluateTokenBucketRateLimit } from './evaluate-token-bucket-rate-limit.usecase';
-import { CacheService, cacheService as inMemoryCacheService } from '@novu/application-generic';
+import { CacheService, cacheService as inMemoryCacheService } from '@teleflow/application-generic';
 import { SharedModule } from '../../../shared/shared.module';
 import { RateLimitingModule } from '../../rate-limiting.module';
 import { Test } from '@nestjs/testing';

@@ -343,7 +343,7 @@ function showWelcomeScreen() {
 
   /* eslint-disable no-console */
   console.log(chalk.bold(items.join('\n')));
-  console.log(chalk.bold(`                        Hi, I'm Jarvis by NOVU!`));
+  console.log(chalk.bold(`                        Hi, I'm Jarvis by TELEFLOW!`));
   console.log(chalk.bold(textGradient(`  Welcome to the codebase of the open-source notification infrastructure\n`)));
   /* eslint-enable  no-console */
 }

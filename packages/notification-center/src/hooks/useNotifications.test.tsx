@@ -12,9 +12,9 @@ import {
 import { IUserPreferenceSettings } from '@teleflow/client';
 
 import { ISession, INotificationsContext } from '../shared/interfaces';
-import { NovuProvider } from '../components';
+import { TeleflowProvider } from '../components';
 import { useNotifications } from './useNotifications';
-import { queryClient } from '../components/teleflow-provider/NovuProvider';
+import { queryClient } from '../components/teleflow-provider/TeleflowProvider';
 
 const PROMISE_TIMEOUT = 150;
 const promiseResolveTimeout = (ms: number, arg: unknown = {}) => new Promise((resolve) => setTimeout(resolve, ms, arg));
@@ -133,7 +133,7 @@ describe('useNotifications', () => {
 
   beforeEach(() => {
     const wrapper = ({ children }) => (
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier="mock_app"
@@ -141,7 +141,7 @@ describe('useNotifications', () => {
         initialFetchingStrategy={{ fetchNotifications: true }}
       >
         {children}
-      </NovuProvider>
+      </TeleflowProvider>
     );
     hook = renderHook(() => useNotifications(), { wrapper });
   });
@@ -207,7 +207,7 @@ describe('useNotifications', () => {
       { storeId: 'second', query: { feedIdentifier: 'second' } },
     ];
     const wrapper = ({ children }) => (
-      <NovuProvider
+      <TeleflowProvider
         backendUrl="https://mock_url.com"
         socketUrl="wss://mock_url.com"
         applicationIdentifier="mock_app"
@@ -216,7 +216,7 @@ describe('useNotifications', () => {
         initialFetchingStrategy={{ fetchNotifications: true }}
       >
         {children}
-      </NovuProvider>
+      </TeleflowProvider>
     );
     const innerHook = renderHook(() => useNotifications(), { wrapper });
     const { rerender, result } = innerHook;
@@ -280,7 +280,7 @@ describe('useNotifications', () => {
       }, []);
 
       return (
-        <NovuProvider
+        <TeleflowProvider
           backendUrl="https://mock_url.com"
           applicationIdentifier={payload.applicationIdentifier}
           subscriberId={payload.subscriberId}
@@ -288,7 +288,7 @@ describe('useNotifications', () => {
           initialFetchingStrategy={{ fetchNotifications: true }}
         >
           {children}
-        </NovuProvider>
+        </TeleflowProvider>
       );
     };
     const innerHook = renderHook(() => useNotifications(), { wrapper });

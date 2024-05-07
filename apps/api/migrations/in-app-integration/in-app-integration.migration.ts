@@ -1,7 +1,7 @@
 import '../../src/config';
 import { OrganizationRepository, EnvironmentRepository, IntegrationRepository, ChannelTypeEnum } from '@teleflow/dal';
 import { InAppProviderIdEnum } from '@novu/shared';
-import { encryptCredentials } from '@novu/application-generic';
+import { encryptCredentials } from '@teleflow/application-generic';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../../src/app.module';
 

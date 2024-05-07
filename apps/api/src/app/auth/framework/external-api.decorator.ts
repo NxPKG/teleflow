@@ -1,3 +1,3 @@
-import { ExternalApiAccessible } from '@novu/application-generic';
+import { ExternalApiAccessible } from '@teleflow/application-generic';
 
 export { ExternalApiAccessible };

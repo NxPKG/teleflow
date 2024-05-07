@@ -15,7 +15,11 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiExcludeController, ApiOperation, ApiQuery } from '@nestjs/swagger';
-import { AnalyticsService, GetSubscriberPreference, GetSubscriberPreferenceCommand } from '@novu/application-generic';
+import {
+  AnalyticsService,
+  GetSubscriberPreference,
+  GetSubscriberPreferenceCommand,
+} from '@teleflow/application-generic';
 import { MessageEntity, PreferenceLevelEnum, SubscriberEntity } from '@teleflow/dal';
 import { MarkMessagesAsEnum, ButtonTypeEnum, MessageActionStatusEnum } from '@novu/shared';
 

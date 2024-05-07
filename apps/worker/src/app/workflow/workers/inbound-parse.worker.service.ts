@@ -6,7 +6,7 @@ import {
   WorkerBaseService,
   WorkerOptions,
   WorkflowInMemoryProviderService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { JobTopicNameEnum } from '@novu/shared';
 import { Injectable, Logger } from '@nestjs/common';
 

@@ -3,7 +3,7 @@ import { getEnvVariable } from '@novu/shared/utils';
 import { Subscribers } from './subscribers/subscribers';
 import { EventEmitter } from 'events';
 import { Changes } from './changes/changes';
-import { INovuConfiguration } from './novu.interface';
+import { ITeleflowConfiguration } from './teleflow.interface';
 import { Events } from './events/events';
 import { Layouts } from './layouts/layouts';
 import { NotificationGroups } from './notification-groups/notification-groups';
@@ -41,13 +41,13 @@ export class Novu extends EventEmitter {
   readonly organizations: Organizations;
   readonly workflowOverrides: WorkflowOverrides;
 
-  constructor(config?: INovuConfiguration);
-  constructor(apiKey: string, config?: INovuConfiguration);
+  constructor(config?: ITeleflowConfiguration);
+  constructor(apiKey: string, config?: ITeleflowConfiguration);
   constructor(...args: any) {
     super();
 
     let apiKey: string | undefined;
-    let config: INovuConfiguration | undefined;
+    let config: ITeleflowConfiguration | undefined;
 
     if (arguments.length === 2) {
       apiKey = args[0];
@@ -61,7 +61,7 @@ export class Novu extends EventEmitter {
         apiKey = args[0];
       }
     } else {
-      apiKey = getEnvVariable('NOVU_API_KEY');
+      apiKey = getEnvVariable('TELEFLOW_API_KEY');
     }
 
     this.apiKey = apiKey;
@@ -106,15 +106,15 @@ export class Novu extends EventEmitter {
 
   public broadcast: typeof Events.prototype.broadcast;
 
-  private buildBackendUrl(config?: INovuConfiguration) {
-    const novuApiVersion = 'v1';
+  private buildBackendUrl(config?: ITeleflowConfiguration) {
+    const teleflowApiVersion = 'v1';
 
     if (!config?.backendUrl) {
-      return `https://api.novu.co/${novuApiVersion}`;
+      return `https://api.novu.co/${teleflowApiVersion}`;
     }
 
     return config?.backendUrl.includes('novu.co/v')
       ? config?.backendUrl
-      : config?.backendUrl + `/${novuApiVersion}`;
+      : config?.backendUrl + `/${teleflowApiVersion}`;
   }
 }

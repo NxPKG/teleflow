@@ -589,8 +589,8 @@ describe('Create Integration - /integration (POST)', function () {
   });
 
   it('should not allow creating Novu Email integration when credentials are not set', async function () {
-    const oldNovuEmailIntegrationApiKey = process.env.NOVU_EMAIL_INTEGRATION_API_KEY;
-    process.env.NOVU_EMAIL_INTEGRATION_API_KEY = '';
+    const oldNovuEmailIntegrationApiKey = process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY;
+    process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY = '';
 
     const novuEmailIntegrationPayload = {
       name: EmailProviderIdEnum.Novu,
@@ -607,12 +607,12 @@ describe('Create Integration - /integration (POST)', function () {
     expect(body.message).to.equal(
       `Creating Novu integration for ${novuEmailIntegrationPayload.providerId} provider is not allowed`
     );
-    process.env.NOVU_EMAIL_INTEGRATION_API_KEY = oldNovuEmailIntegrationApiKey;
+    process.env.TELEFLOW_EMAIL_INTEGRATION_API_KEY = oldNovuEmailIntegrationApiKey;
   });
 
   it('should not allow creating Novu SMS integration when credentials are not set', async function () {
-    const oldNovuSmsIntegrationAccountSid = process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID;
-    process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID = '';
+    const oldNovuSmsIntegrationAccountSid = process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID;
+    process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID = '';
 
     const novuSmsIntegrationPayload = {
       name: SmsProviderIdEnum.Novu,
@@ -629,7 +629,7 @@ describe('Create Integration - /integration (POST)', function () {
     expect(body.message).to.equal(
       `Creating Novu integration for ${novuSmsIntegrationPayload.providerId} provider is not allowed`
     );
-    process.env.NOVU_SMS_INTEGRATION_ACCOUNT_SID = oldNovuSmsIntegrationAccountSid;
+    process.env.TELEFLOW_SMS_INTEGRATION_ACCOUNT_SID = oldNovuSmsIntegrationAccountSid;
   });
 });
 

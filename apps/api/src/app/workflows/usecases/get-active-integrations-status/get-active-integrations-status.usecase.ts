@@ -13,16 +13,16 @@ import { GetActiveIntegrationsStatusCommand } from './get-active-integrations-st
 import { IntegrationResponseDto } from '../../../integrations/dtos/integration-response.dto';
 import { WorkflowResponse } from '../../dto/workflow-response.dto';
 import {
-  CalculateLimitNovuIntegration,
-  CalculateLimitNovuIntegrationCommand,
+  CalculateLimitTeleflowIntegration,
+  CalculateLimitTeleflowIntegrationCommand,
   NotificationStep,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 @Injectable()
 export class GetActiveIntegrationsStatus {
   constructor(
     private getActiveIntegrationUsecase: GetActiveIntegrations,
-    private calculateLimitNovuIntegrationUsecase: CalculateLimitNovuIntegration
+    private calculateLimitTeleflowIntegrationUsecase: CalculateLimitTeleflowIntegration
   ) {}
 
   async execute(command: GetActiveIntegrationsStatusCommand): Promise<WorkflowResponse[] | WorkflowResponse> {
@@ -52,7 +52,7 @@ export class GetActiveIntegrationsStatus {
 
     const activeStateByChannelType = this.updateStateByChannelType(activeIntegrationsByEnv, defaultStateByChannelType);
 
-    const activeStateByChannelTypeWithNovu = await this.processNovuProviders(
+    const activeStateByChannelTypeWithNovu = await this.processTeleflowProviders(
       activeIntegrationsByEnv,
       command,
       activeStateByChannelType
@@ -136,22 +136,22 @@ export class GetActiveIntegrationsStatus {
     return { hasActive, hasPrimary };
   }
 
-  private async processNovuProviders(
+  private async processTeleflowProviders(
     activeIntegrations: IntegrationResponseDto[],
     command: GetActiveIntegrationsStatusCommand,
     stateByChannelType: WorkflowChannelsIntegrationStatus
   ) {
-    const primaryNovuProviders = activeIntegrations.filter(
+    const primaryTeleflowProviders = activeIntegrations.filter(
       (integration) =>
         (integration.providerId === EmailProviderIdEnum.Novu || integration.providerId === SmsProviderIdEnum.Novu) &&
         integration.primary
     );
 
-    for (const primaryNovuProvider of primaryNovuProviders) {
-      const channelType = primaryNovuProvider.channel;
+    for (const primaryTeleflowProvider of primaryTeleflowProviders) {
+      const channelType = primaryTeleflowProvider.channel;
       let hasLimitReached = true;
-      const limit = await this.calculateLimitNovuIntegrationUsecase.execute(
-        CalculateLimitNovuIntegrationCommand.create({
+      const limit = await this.calculateLimitTeleflowIntegrationUsecase.execute(
+        CalculateLimitTeleflowIntegrationCommand.create({
           channelType,
           environmentId: command.environmentId,
           organizationId: command.organizationId,

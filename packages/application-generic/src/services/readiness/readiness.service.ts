@@ -7,7 +7,7 @@ import { Worker } from '../bull-mq';
 import { IHealthIndicator } from '../../health';
 import { IDestroy } from '../../modules';
 
-export interface INovuWorker extends IDestroy {
+export interface ITeleflowWorker extends IDestroy {
   readonly DEFAULT_ATTEMPTS: number;
   readonly topic: string;
   pause: () => Promise<void>;
@@ -21,7 +21,7 @@ const LOG_CONTEXT = 'ReadinessService';
 export class ReadinessService {
   constructor(
     @Inject('QUEUE_HEALTH_INDICATORS')
-    private healthIndicators: IHealthIndicator[]
+    private healthIndicators: IHealthIndicator[],
   ) {}
 
   async areQueuesEnabled(): Promise<boolean> {
@@ -39,7 +39,7 @@ export class ReadinessService {
 
       Logger.warn(
         `Some health indicator returned false when checking if queues are enabled ${i}/${retries}`,
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       await setTimeout(delay);
@@ -51,11 +51,11 @@ export class ReadinessService {
   private async checkServicesHealth() {
     try {
       const healths = await Promise.all(
-        this.healthIndicators.map((health) => health.isHealthy())
+        this.healthIndicators.map((health) => health.isHealthy()),
       );
 
       const statuses = healths.map(
-        (health: HealthIndicatorResult) => Object.values(health)[0].status
+        (health: HealthIndicatorResult) => Object.values(health)[0].status,
       );
 
       return statuses.every((status: HealthIndicatorStatus) => status === 'up');
@@ -63,14 +63,14 @@ export class ReadinessService {
       Logger.error(
         error,
         'Some health indicator throw an error when checking if queues are enabled',
-        LOG_CONTEXT
+        LOG_CONTEXT,
       );
 
       return false;
     }
   }
 
-  async pauseWorkers(workers: INovuWorker[]): Promise<void> {
+  async pauseWorkers(workers: ITeleflowWorker[]): Promise<void> {
     for (const worker of workers) {
       try {
         Logger.verbose(`Pausing worker ${worker.topic}...`, LOG_CONTEXT);
@@ -80,7 +80,7 @@ export class ReadinessService {
         Logger.error(
           error,
           `Failed to pause worker ${worker.topic}.`,
-          LOG_CONTEXT
+          LOG_CONTEXT,
         );
 
         throw error;
@@ -88,7 +88,7 @@ export class ReadinessService {
     }
   }
 
-  async enableWorkers(workers: INovuWorker[]): Promise<void> {
+  async enableWorkers(workers: ITeleflowWorker[]): Promise<void> {
     const areQueuesEnabled = await this.areQueuesEnabled();
 
     if (areQueuesEnabled) {
@@ -101,7 +101,7 @@ export class ReadinessService {
           Logger.error(
             error,
             `Failed to resume worker ${worker.topic}.`,
-            LOG_CONTEXT
+            LOG_CONTEXT,
           );
 
           throw error;

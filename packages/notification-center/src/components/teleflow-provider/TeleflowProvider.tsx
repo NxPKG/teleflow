@@ -12,7 +12,7 @@ import { INotificationCenterStyles, StylesProvider } from '../../store/styles';
 import { applyToken, removeToken } from '../../utils/token';
 import { useSession } from '../../hooks/useSession';
 import { useInitializeSocket } from '../../hooks/useInitializeSocket';
-import { useFetchOrganization, useNovuContext } from '../../hooks';
+import { useFetchOrganization, useTeleflowContext } from '../../hooks';
 import { SESSION_QUERY_KEY } from '../../hooks/queryKeys';
 
 export const queryClient = new QueryClient({
@@ -33,7 +33,7 @@ const DEFAULT_FETCHING_STRATEGY: IFetchingStrategy = {
   fetchUserGlobalPreferences: false,
 };
 
-export interface INovuProviderProps {
+export interface ITeleflowProviderProps {
   stores?: IStore[];
   children: React.ReactNode;
   backendUrl?: string;
@@ -47,7 +47,7 @@ export interface INovuProviderProps {
   initialFetchingStrategy?: Partial<IFetchingStrategy>;
 }
 
-export function NovuProvider({
+export function TeleflowProvider({
   backendUrl: initialBackendUrl,
   socketUrl: initialSocketUrl,
   applicationIdentifier,
@@ -59,7 +59,7 @@ export function NovuProvider({
   initialFetchingStrategy = DEFAULT_FETCHING_STRATEGY,
   children,
   onLoad,
-}: INovuProviderProps) {
+}: ITeleflowProviderProps) {
   const backendUrl = initialBackendUrl ?? 'https://api.novu.co';
   const socketUrl = initialSocketUrl ?? 'https://ws.novu.co';
   const stores = initialStores ?? [{ storeId: 'default_store' }];
@@ -158,7 +158,7 @@ const SessionInitializer = ({
   children: ReactElement;
   onSuccess: (newSession: ISession) => void;
 }) => {
-  const { onLoad } = useNovuContext();
+  const { onLoad } = useTeleflowContext();
 
   useSession({ onSuccess });
 

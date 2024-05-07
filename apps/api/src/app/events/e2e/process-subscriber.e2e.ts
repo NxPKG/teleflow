@@ -15,7 +15,7 @@ import {
   CacheInMemoryProviderService,
   CacheService,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { UpdateSubscriberPreferenceRequestDto } from '../../widgets/dtos/update-subscriber-preference-request.dto';
 

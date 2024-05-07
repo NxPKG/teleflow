@@ -1,7 +1,7 @@
 import { Injectable, Logger, ServiceUnavailableException } from '@nestjs/common';
 import { Ratelimit } from '@upstash/ratelimit';
 import { EvaluateTokenBucketRateLimitCommand } from './evaluate-token-bucket-rate-limit.command';
-import { CacheService, InstrumentUsecase } from '@novu/application-generic';
+import { CacheService, InstrumentUsecase } from '@teleflow/application-generic';
 import {
   EvaluateTokenBucketRateLimitResponseDto,
   RegionLimiter,

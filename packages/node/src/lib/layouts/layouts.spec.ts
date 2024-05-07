@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { OrderDirectionEnum, TemplateVariableTypeEnum } from '@novu/shared';
 
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 
 const mockConfig = {
   apiKey: '1234',
@@ -195,7 +195,7 @@ describe('Novu Node.js package - Layouts class', () => {
 
     expect(mockedAxios.post).toHaveBeenCalled();
     expect(mockedAxios.post).toHaveBeenCalledWith(
-      `/layouts/${layoutId}/default`
+      `/layouts/${layoutId}/default`,
     );
     expect(result).toStrictEqual({});
   });

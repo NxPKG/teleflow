@@ -16,7 +16,7 @@ import {
   CreateWorkflowCommand,
   UpdateWorkflow,
   UpdateWorkflowCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { IJwtPayload, MemberRoleEnum, WorkflowTypeEnum } from '@novu/shared';
 
 import { UserSession } from '../shared/framework/user.decorator';

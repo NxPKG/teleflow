@@ -2,7 +2,12 @@ import React, { useEffect, useLayoutEffect } from 'react';
 import { Accordion, ScrollArea } from '@mantine/core';
 import { css, cx } from '@emotion/css';
 
-import { useTelelfowTheme, useFetchUserPreferences, useNovuContext, useNotificationCenter } from '../../../../hooks';
+import {
+  useTelelfowTheme,
+  useFetchUserPreferences,
+  useTeleflowContext,
+  useNotificationCenter,
+} from '../../../../hooks';
 import { accordionStyles } from './styles';
 import { useStyles } from '../../../../store/styles';
 import { UserPreferenceItem } from './UserPreferenceItem';
@@ -14,7 +19,7 @@ const rootClassName = css`
 `;
 
 export function SubscriberPreference() {
-  const { setFetchingStrategy } = useNovuContext();
+  const { setFetchingStrategy } = useTeleflowContext();
   const { theme, common } = useTelelfowTheme();
   const { data, isLoading: arePreferencesLoading } = useFetchUserPreferences();
   const { preferenceFilter } = useNotificationCenter();

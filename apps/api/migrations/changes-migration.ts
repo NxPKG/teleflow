@@ -16,7 +16,7 @@ import { CreateEnvironment } from '../src/app/environments/usecases/create-envir
 import { CreateEnvironmentCommand } from '../src/app/environments/usecases/create-environment/create-environment.command';
 import { ApplyChange } from '../src/app/change/usecases/apply-change/apply-change.usecase';
 import { ApplyChangeCommand } from '../src/app/change/usecases/apply-change/apply-change.command';
-import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
+import { CreateChange, CreateChangeCommand } from '@teleflow/application-generic';
 
 export async function run(): Promise<void> {
   console.log('Script started');

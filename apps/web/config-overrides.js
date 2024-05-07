@@ -7,7 +7,7 @@ function overrideConfig(config, env) {
   const plugins = [
     ...config.plugins,
     new DefinePlugin({
-      'process.env.NOVU_VERSION': JSON.stringify(version),
+      'process.env.TELEFLOW_VERSION': JSON.stringify(version),
     }),
     /* new BundleAnalyzerPlugin() */
   ];

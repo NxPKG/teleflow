@@ -50,7 +50,7 @@ import {
   storageService,
   UpdateSubscriber,
   UpdateTenant,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import * as packageJson from '../../../package.json';
 import { CreateLog } from './logs';

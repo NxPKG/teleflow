@@ -2,7 +2,7 @@ import { ExtractJwt, Strategy } from 'passport-jwt';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { IJwtPayload } from '@novu/shared';
-import { AuthService, Instrument } from '@novu/application-generic';
+import { AuthService, Instrument } from '@teleflow/application-generic';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

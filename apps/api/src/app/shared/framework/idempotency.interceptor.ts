@@ -11,7 +11,7 @@ import {
   BadRequestException,
   ConflictException,
 } from '@nestjs/common';
-import { CacheService, GetFeatureFlagCommand, GetFeatureFlag, Instrument } from '@novu/application-generic';
+import { CacheService, GetFeatureFlagCommand, GetFeatureFlag, Instrument } from '@teleflow/application-generic';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { createHash } from 'crypto';
@@ -34,7 +34,10 @@ const ALLOWED_METHODS = ['post', 'patch'];
 
 @Injectable()
 export class IdempotencyInterceptor implements NestInterceptor {
-  constructor(private readonly cacheService: CacheService, private getFeatureFlag: GetFeatureFlag) {}
+  constructor(
+    private readonly cacheService: CacheService,
+    private getFeatureFlag: GetFeatureFlag
+  ) {}
 
   protected async isEnabled(context: ExecutionContext): Promise<boolean> {
     const isAllowedAuthScheme = this.isAllowedAuthScheme(context);

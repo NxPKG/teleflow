@@ -1,7 +1,7 @@
 import { Injectable, Logger, Inject } from '@nestjs/common';
 import { ChangeRepository, LayoutRepository } from '@teleflow/dal';
 import { ChangeEntityTypeEnum } from '@novu/shared';
-import { AnalyticsService, GetLayoutUseCase } from '@novu/application-generic';
+import { AnalyticsService, GetLayoutUseCase } from '@teleflow/application-generic';
 
 import { EnvironmentId, LayoutId, OrganizationId } from '../../types';
 import { CreateDefaultLayoutChangeCommand } from '../create-default-layout-change/create-default-layout-change.command';

@@ -2,7 +2,7 @@ import * as bcrypt from 'bcrypt';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { differenceInMinutes, parseISO } from 'date-fns';
 import { UserRepository, UserEntity, OrganizationRepository } from '@teleflow/dal';
-import { AnalyticsService, AuthService, createHash } from '@novu/application-generic';
+import { AnalyticsService, AuthService, createHash } from '@teleflow/application-generic';
 
 import { LoginCommand } from './login.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';

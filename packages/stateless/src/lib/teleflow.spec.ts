@@ -1,4 +1,4 @@
-import { NovuStateless } from './novu';
+import { NovuStateless } from './teleflow';
 import { CheckIntegrationResponseEnum } from './provider/provider.enum';
 import { ChannelTypeEnum } from './template/template.interface';
 

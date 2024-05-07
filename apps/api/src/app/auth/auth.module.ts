@@ -4,7 +4,7 @@ import { PassportModule } from '@nestjs/passport';
 import * as passport from 'passport';
 
 import { AuthProviderEnum, PassportStrategyEnum } from '@novu/shared';
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 import { RolesGuard } from './framework/roles.guard';
 import { JwtStrategy } from './services/passport/jwt.strategy';

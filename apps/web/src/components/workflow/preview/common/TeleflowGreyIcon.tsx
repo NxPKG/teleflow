@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-export const NovuGreyIcon = (props) => {
+export const TeleflowGreyIcon = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" {...props}>
       <path

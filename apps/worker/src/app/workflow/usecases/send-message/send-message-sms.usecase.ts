@@ -17,11 +17,11 @@ import {
   CompileTemplate,
   CompileTemplateCommand,
   SmsFactory,
-  GetNovuProviderCredentials,
+  GetTeleflowProviderCredentials,
   SelectVariant,
   ExecutionLogRoute,
   ExecutionLogRouteCommand,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { CreateLog } from '../../../shared/logs';
 import { SendMessageCommand } from './send-message.command';
@@ -39,7 +39,7 @@ export class SendMessageSms extends SendMessageBase {
     protected executionLogRoute: ExecutionLogRoute,
     private compileTemplate: CompileTemplate,
     protected selectIntegration: SelectIntegration,
-    protected getNovuProviderCredentials: GetNovuProviderCredentials,
+    protected getTeleflowProviderCredentials: GetTeleflowProviderCredentials,
     protected selectVariant: SelectVariant,
     protected moduleRef: ModuleRef
   ) {
@@ -49,7 +49,7 @@ export class SendMessageSms extends SendMessageBase {
       executionLogRoute,
       subscriberRepository,
       selectIntegration,
-      getNovuProviderCredentials,
+      getTeleflowProviderCredentials,
       selectVariant,
       moduleRef
     );

@@ -2,7 +2,7 @@ import { Injectable, NotFoundException, Scope } from '@nestjs/common';
 import { OrganizationRepository, UserRepository, MemberRepository, IAddMemberData } from '@teleflow/dal';
 import { MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 import { Novu } from '@teleflow/node';
-import { AnalyticsService } from '@novu/application-generic';
+import { AnalyticsService } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { InviteMemberCommand } from './invite-member.command';
@@ -32,11 +32,11 @@ export class InviteMember {
 
     const token = createGuid();
 
-    if (process.env.NOVU_API_KEY && (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production')) {
-      const novu = new Novu(process.env.NOVU_API_KEY);
+    if (process.env.TELEFLOW_API_KEY && (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production')) {
+      const novu = new Novu(process.env.TELEFLOW_API_KEY);
 
       // cspell:disable-next
-      await novu.trigger(process.env.NOVU_TEMPLATEID_INVITE_TO_ORGANISATION || 'invite-to-organization-wBnO8NpDn', {
+      await novu.trigger(process.env.TELEFLOW_TEMPLATEID_INVITE_TO_ORGANISATION || 'invite-to-organization-wBnO8NpDn', {
         to: {
           subscriberId: command.email,
           email: command.email,

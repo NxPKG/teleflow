@@ -1,7 +1,7 @@
 import { HealthCheckError, HealthIndicator, HealthIndicatorResult } from '@nestjs/terminus';
 import { Injectable } from '@nestjs/common';
 
-import { IHealthIndicator } from '@novu/application-generic';
+import { IHealthIndicator } from '@teleflow/application-generic';
 
 import { WSGateway } from '../ws.gateway';
 

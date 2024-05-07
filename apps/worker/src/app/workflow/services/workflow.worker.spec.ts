@@ -7,7 +7,7 @@ import {
   TriggerEvent,
   WorkflowInMemoryProviderService,
   WorkflowQueueService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { WorkflowWorker } from './workflow.worker';
 

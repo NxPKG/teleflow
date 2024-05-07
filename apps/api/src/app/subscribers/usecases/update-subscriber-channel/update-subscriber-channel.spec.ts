@@ -42,7 +42,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: subscriberChannel.providerId,
         credentials: subscriberChannel.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -70,7 +70,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: ChatProviderIdEnum.Discord,
         credentials: { webhookUrl: 'webhookUrl' },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -86,7 +86,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: newSlackSubscribersChannel.providerId,
         credentials: newSlackSubscribersChannel.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -124,7 +124,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: newSlackCredentials.providerId,
         credentials: newSlackCredentials.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -166,7 +166,7 @@ describe('Update Subscriber channel credentials', function () {
         integrationIdentifier: identifier,
         providerId: ChatProviderIdEnum.Slack,
         credentials: { webhookUrl },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -199,7 +199,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: fcmCredentials.providerId,
         credentials: fcmCredentials.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -234,7 +234,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: fcmCredentials.providerId,
         credentials: fcmCredentials.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );
@@ -269,7 +269,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: fcmCredentials.providerId,
         credentials: fcmCredentials.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: false,
       })
     );
@@ -304,7 +304,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: fcmCredentials.providerId,
         credentials: fcmCredentials.credentials,
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -328,7 +328,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: fcmCredentials.providerId,
         credentials: { deviceTokens: [] },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -357,7 +357,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: PushProviderIdEnum.FCM,
         credentials: { deviceTokens: ['token_1'] },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -379,7 +379,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: PushProviderIdEnum.FCM,
         credentials: { deviceTokens: ['token_1', 'token_2', 'token_2', 'token_3'] },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -401,7 +401,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: PushProviderIdEnum.FCM,
         credentials: { deviceTokens: ['token_555'] },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );
@@ -436,7 +436,7 @@ describe('Update Subscriber channel credentials', function () {
         environmentId: session.environment._id,
         providerId: PushProviderIdEnum.FCM,
         credentials: { deviceTokens: ['token_1', 'token_1', 'token_1'] },
-        oauthHandler: OAuthHandlerEnum.NOVU,
+        oauthHandler: OAuthHandlerEnum.TELEFLOW,
         isIdempotentOperation: true,
       })
     );

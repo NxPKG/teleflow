@@ -26,7 +26,7 @@
     "@nestjs/core": "^10.2.2",
     "@nestjs/platform-express": "^10.2.2",
     "@nestjs/terminus": "^10.0.1",
-    "@novu/application-generic": "^0.24.1",
+    "@teleflow/application-generic": "^0.24.1",
     "@teleflow/dal": "^0.24.1",
     "@novu/shared": "^0.24.1",
     "@teleflow/stateless": "^0.24.1",

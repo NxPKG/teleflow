@@ -5,7 +5,7 @@ import { Injectable } from '@nestjs/common';
 import { CreateLayoutChangeCommand } from './create-layout-change.command';
 
 import { FindDeletedLayoutCommand, FindDeletedLayoutUseCase } from '../find-deleted-layout';
-import { CreateChange, CreateChangeCommand } from '@novu/application-generic';
+import { CreateChange, CreateChangeCommand } from '@teleflow/application-generic';
 
 @Injectable()
 export class CreateLayoutChangeUseCase {

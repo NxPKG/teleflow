@@ -3,11 +3,11 @@ import * as WebFont from 'webfontloader';
 import { css, Global } from '@emotion/react';
 import {
   NotificationCenter,
-  NovuProvider,
+  TeleflowProvider,
   ITranslationEntry,
   ITab,
   IStore,
-  useNovuContext,
+  useTeleflowContext,
   ColorScheme,
   IUserPreferenceSettings,
 } from '@teleflow/notification-center';
@@ -129,7 +129,7 @@ export function NotificationCenterWidget(props: INotificationCenterWidgetProps) 
     <>
       <Global styles={globalStyle(fontFamily)} />
       {frameInitialized && (
-        <NovuProvider
+        <TeleflowProvider
           backendUrl={backendUrl}
           socketUrl={socketUrl}
           applicationIdentifier={props.applicationIdentifier as string}
@@ -153,7 +153,7 @@ export function NotificationCenterWidget(props: INotificationCenterWidgetProps) 
               showUserPreferences={showUserPreferences}
             />
           </NovuNotificationCenterWrapper>
-        </NovuProvider>
+        </TeleflowProvider>
       )}
     </>
   );
@@ -168,7 +168,7 @@ function NovuNotificationCenterWrapper({
   doLogout: boolean;
   setDoLogout: (val: boolean) => void;
 }) {
-  const { logout } = useNovuContext();
+  const { logout } = useTeleflowContext();
   useEffect(() => {
     if (doLogout) {
       logout();

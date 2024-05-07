@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ModuleRef } from '@nestjs/core';
 import { SystemVariablesWithTypes } from '@novu/shared';
-import { buildVariablesKey, CachedEntity } from '@novu/application-generic';
+import { buildVariablesKey, CachedEntity } from '@teleflow/application-generic';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { GetWorkflowVariablesCommand } from './get-workflow-variables.command';
 
@@ -35,7 +35,7 @@ export class GetWorkflowVariables {
     let translationVariables = {};
 
     try {
-      if (process.env.NOVU_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
+      if (process.env.TELEFLOW_ENTERPRISE === 'true' || process.env.CI_EE_TEST === 'true') {
         if (!require('@novu/ee-shared-services')?.TranslationsService) {
           throw new ApiException('Translation module is not loaded');
         }

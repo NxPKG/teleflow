@@ -1,4 +1,4 @@
-import { Novu } from '../novu';
+import { Novu } from '../teleflow';
 import axios from 'axios';
 
 const mockConfig = {
@@ -180,7 +180,7 @@ describe('test use of novus node package - Workflow overrride class', () => {
         'TENANT_ID',
         {
           active: true,
-        }
+        },
       );
 
     expect(mockedAxios.put).toHaveBeenCalled();
@@ -188,7 +188,7 @@ describe('test use of novus node package - Workflow overrride class', () => {
       '/workflow-overrides/workflows/WORKFLOW_ID/tenants/TENANT_ID',
       {
         active: true,
-      }
+      },
     );
     expect(result).toBe(mockedResponse);
   });
@@ -214,7 +214,7 @@ describe('test use of novus node package - Workflow overrride class', () => {
 
     expect(mockedAxios.delete).toHaveBeenCalled();
     expect(mockedAxios.delete).toHaveBeenCalledWith(
-      `/workflow-overrides/workflow_id_123`
+      `/workflow-overrides/workflow_id_123`,
     );
 
     expect(result).toBe(mockedResponse);
@@ -241,7 +241,7 @@ describe('test use of novus node package - Workflow overrride class', () => {
 
     expect(mockedAxios.get).toHaveBeenCalled();
     expect(mockedAxios.get).toHaveBeenCalledWith(
-      '/workflow-overrides/OVERRIDE_ID'
+      '/workflow-overrides/OVERRIDE_ID',
     );
     expect(result).toBe(mockedResponse);
   });
@@ -265,12 +265,12 @@ describe('test use of novus node package - Workflow overrride class', () => {
 
     const result = await novu.workflowOverrides.getOneByTenantIdandWorkflowId(
       'WORKFLOW_ID',
-      'TENANT_ID'
+      'TENANT_ID',
     );
 
     expect(mockedAxios.get).toHaveBeenCalled();
     expect(mockedAxios.get).toHaveBeenCalledWith(
-      '/workflow-overrides/workflows/WORKFLOW_ID/tenants/TENANT_ID'
+      '/workflow-overrides/workflows/WORKFLOW_ID/tenants/TENANT_ID',
     );
     expect(result).toBe(mockedResponse);
   });
@@ -301,7 +301,7 @@ describe('test use of novus node package - Workflow overrride class', () => {
       '/workflow-overrides/OVERRIDE_ID',
       {
         active: false,
-      }
+      },
     );
     expect(result).toBe(mockedResponse);
   });

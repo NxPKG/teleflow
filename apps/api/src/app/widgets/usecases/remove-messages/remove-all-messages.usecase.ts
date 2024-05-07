@@ -15,7 +15,7 @@ import {
   InvalidateCacheService,
   buildFeedKey,
   buildMessageCountKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { RemoveAllMessagesCommand } from './remove-all-messages.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';

@@ -3,7 +3,7 @@ import { Injectable, Logger, NotFoundException, Scope } from '@nestjs/common';
 import { MemberEntity, OrganizationRepository, UserEntity, MemberRepository, UserRepository } from '@teleflow/dal';
 import { MemberStatusEnum } from '@novu/shared';
 import { Novu } from '@teleflow/node';
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { AcceptInviteCommand } from './accept-invite.command';
@@ -55,10 +55,10 @@ export class AcceptInvite {
     if (!member.invite) return;
 
     try {
-      if ((process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production') && process.env.NOVU_API_KEY) {
-        const novu = new Novu(process.env.NOVU_API_KEY);
+      if ((process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'production') && process.env.TELEFLOW_API_KEY) {
+        const novu = new Novu(process.env.TELEFLOW_API_KEY);
 
-        await novu.trigger(process.env.NOVU_TEMPLATEID_INVITE_ACCEPTED || 'invite-accepted-dEQAsKD1E', {
+        await novu.trigger(process.env.TELEFLOW_TEMPLATEID_INVITE_ACCEPTED || 'invite-accepted-dEQAsKD1E', {
           to: {
             subscriberId: inviter._id,
             firstName: capitalize(inviter.firstName || ''),

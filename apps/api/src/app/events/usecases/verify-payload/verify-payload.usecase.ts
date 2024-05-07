@@ -1,6 +1,6 @@
 import { DelayTypeEnum, StepTypeEnum } from '@novu/shared';
 import { BadRequestException } from '@nestjs/common';
-import { VerifyPayloadService, InstrumentUsecase } from '@novu/application-generic';
+import { VerifyPayloadService, InstrumentUsecase } from '@teleflow/application-generic';
 
 import { ApiException } from '../../../shared/exceptions/api.exception';
 import { VerifyPayloadCommand } from './verify-payload.command';

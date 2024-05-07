@@ -21,7 +21,7 @@ export {
   MarkMessagesAsEnum,
 } from '@novu/shared';
 
-export * from './lib/novu';
+export * from './lib/teleflow';
 export * from './lib/subscribers/subscriber.interface';
 export * from './lib/events/events.interface';
 export * from './lib/layouts/layout.interface';

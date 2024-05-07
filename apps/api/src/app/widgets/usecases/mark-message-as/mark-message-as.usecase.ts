@@ -15,7 +15,7 @@ import {
   buildFeedKey,
   buildMessageCountKey,
   buildSubscriberKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { MarkEnum, MarkMessageAsCommand } from './mark-message-as.command';
 

@@ -1,9 +1,9 @@
 import {
   SelectIntegration,
   GetDecryptedIntegrations,
-  CalculateLimitNovuIntegration,
+  CalculateLimitTeleflowIntegration,
   ConditionsFilter,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { GetWebhookSupportStatus } from './get-webhook-support-status/get-webhook-support-status.usecase';
 import { CreateIntegration } from './create-integration/create-integration.usecase';
@@ -15,7 +15,7 @@ import { CheckIntegration } from './check-integration/check-integration.usecase'
 import { CheckIntegrationEMail } from './check-integration/check-integration-email.usecase';
 import { GetInAppActivated } from './get-in-app-activated/get-in-app-activated.usecase';
 import { SetIntegrationAsPrimary } from './set-integration-as-primary/set-integration-as-primary.usecase';
-import { CreateNovuIntegrations } from './create-teleflow-integrations/create-teleflow-integrations.usecase';
+import { CreateTeleflowIntegrations } from './create-teleflow-integrations/create-teleflow-integrations.usecase';
 
 export const USE_CASES = [
   GetInAppActivated,
@@ -30,7 +30,7 @@ export const USE_CASES = [
   RemoveIntegration,
   CheckIntegration,
   CheckIntegrationEMail,
-  CalculateLimitNovuIntegration,
+  CalculateLimitTeleflowIntegration,
   SetIntegrationAsPrimary,
-  CreateNovuIntegrations,
+  CreateTeleflowIntegrations,
 ];

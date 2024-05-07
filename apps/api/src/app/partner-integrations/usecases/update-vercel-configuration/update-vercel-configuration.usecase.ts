@@ -169,19 +169,19 @@ export class UpdateVercelConfiguration {
         target,
         type,
         value: clientKey,
-        key: 'NOVU_CLIENT_APP_ID',
+        key: 'TELEFLOW_CLIENT_APP_ID',
       },
       {
         target,
         type,
         value: privateKey,
-        key: 'NOVU_API_SECRET',
+        key: 'TELEFLOW_API_SECRET',
       },
       {
         target,
         type,
         value: clientKey,
-        key: 'NEXT_PUBLIC_NOVU_CLIENT_APP_ID',
+        key: 'NEXT_PUBLIC_TELEFLOW_CLIENT_APP_ID',
       },
     ];
 
@@ -222,8 +222,8 @@ export class UpdateVercelConfiguration {
       (acc, curr) => {
         const id = curr.id;
         const vercelEnvs = curr?.env;
-        const clientEnv = vercelEnvs?.find((e) => e.key === 'NOVU_CLIENT_APP_ID');
-        const secretEnv = vercelEnvs?.find((e) => e.key === 'NOVU_API_SECRET');
+        const clientEnv = vercelEnvs?.find((e) => e.key === 'TELEFLOW_CLIENT_APP_ID');
+        const secretEnv = vercelEnvs?.find((e) => e.key === 'TELEFLOW_API_SECRET');
         if (newAndUpdatedProjectIds.includes(id)) {
           if (clientEnv && secretEnv) {
             acc.updateProjectDetails.push({

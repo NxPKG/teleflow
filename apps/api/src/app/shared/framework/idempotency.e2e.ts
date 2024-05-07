@@ -1,5 +1,5 @@
 import { UserSession } from '@teleflow/testing';
-import { CacheService } from '@novu/application-generic';
+import { CacheService } from '@teleflow/application-generic';
 import { expect } from 'chai';
 import { HttpResponseHeaderKeysEnum } from './types';
 import { DOCS_LINK } from './idempotency.interceptor';

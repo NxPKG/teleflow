@@ -24,11 +24,11 @@ export class CreateMessageTemplate {
     private messageTemplateRepository: MessageTemplateRepository,
     private layoutRepository: LayoutRepository,
     private createChange: CreateChange,
-    private updateChange: UpdateChange
+    private updateChange: UpdateChange,
   ) {}
 
   async execute(
-    command: CreateMessageTemplateCommand
+    command: CreateMessageTemplateCommand,
   ): Promise<MessageTemplateEntity> {
     if ((command?.cta?.action as IMessageAction | undefined | '') === '') {
       throw new ApiException('Please provide a valid CTA action');
@@ -38,7 +38,7 @@ export class CreateMessageTemplate {
     if (command.type === StepTypeEnum.EMAIL && !command.layoutId) {
       const defaultLayout = await this.layoutRepository.findDefault(
         command.environmentId,
-        command.organizationId
+        command.organizationId,
       );
       layoutId = defaultLayout?._id;
     } else {
@@ -89,7 +89,7 @@ export class CreateMessageTemplate {
           type: ChangeEntityTypeEnum.MESSAGE_TEMPLATE,
           parentChangeId: command.parentChangeId,
           changeId: MessageTemplateRepository.createObjectId(),
-        })
+        }),
       );
     }
 
@@ -102,7 +102,7 @@ export class CreateMessageTemplate {
           environmentId: command.environmentId,
           organizationId: command.organizationId,
           userId: command.userId,
-        })
+        }),
       );
     }
 
@@ -115,7 +115,7 @@ export class CreateMessageTemplate {
           environmentId: command.environmentId,
           organizationId: command.organizationId,
           userId: command.userId,
-        })
+        }),
       );
     }
 

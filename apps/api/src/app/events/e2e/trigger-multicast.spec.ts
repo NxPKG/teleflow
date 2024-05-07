@@ -7,7 +7,7 @@ import {
   mapSubscribersToJobs,
   splitByRecipientType,
   validateSubscriberDefine,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 import { ISubscribersDefine } from '@novu/shared';
 
 describe('TriggerMulticast Spec', () => {

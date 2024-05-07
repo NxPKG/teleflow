@@ -1,6 +1,6 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { NotificationTemplateRepository, NotificationTemplateEntity } from '@teleflow/dal';
-import { buildGroupedBlueprintsKey, CachedEntity } from '@novu/application-generic';
+import { buildGroupedBlueprintsKey, CachedEntity } from '@teleflow/application-generic';
 import { IGroupedBlueprint } from '@novu/shared';
 
 import { GroupedBlueprintResponse } from '../../dto/grouped-blueprint.response.dto';

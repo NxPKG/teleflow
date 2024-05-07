@@ -1,7 +1,7 @@
 import { HeaderAPIKeyStrategy } from 'passport-headerapikey';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable } from '@nestjs/common';
-import { AuthService } from '@novu/application-generic';
+import { AuthService } from '@teleflow/application-generic';
 import { ApiAuthSchemeEnum, IJwtPayload } from '@novu/shared';
 import { HttpRequestHeaderKeysEnum } from '../../../shared/framework/types';
 

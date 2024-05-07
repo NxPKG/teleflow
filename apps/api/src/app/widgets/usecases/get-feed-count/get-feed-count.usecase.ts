@@ -1,14 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { MessageRepository, SubscriberRepository } from '@teleflow/dal';
 import { ChannelTypeEnum } from '@novu/shared';
-import { buildMessageCountKey, CachedQuery } from '@novu/application-generic';
+import { buildMessageCountKey, CachedQuery } from '@teleflow/application-generic';
 
 import { GetFeedCountCommand } from './get-feed-count.command';
 import { ApiException } from '../../../shared/exceptions/api.exception';
 
 @Injectable()
 export class GetFeedCount {
-  constructor(private messageRepository: MessageRepository, private subscriberRepository: SubscriberRepository) {}
+  constructor(
+    private messageRepository: MessageRepository,
+    private subscriberRepository: SubscriberRepository
+  ) {}
 
   @CachedQuery({
     builder: ({ environmentId, subscriberId, ...command }: GetFeedCountCommand) =>

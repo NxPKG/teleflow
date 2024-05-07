@@ -10,7 +10,7 @@ import {
   buildFeedKey,
   buildMessageCountKey,
   buildSubscriberKey,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { MarkMessageAsByMarkCommand } from './mark-message-as-by-mark.command';
 import { mapMarkMessageToWebSocketEvent } from '../../../shared/helpers';

@@ -2,7 +2,7 @@ import { IoAdapter } from '@nestjs/platform-socket.io';
 import { ServerOptions } from 'socket.io';
 import { createAdapter } from '@socket.io/redis-adapter';
 import { getRedisPrefix } from '@novu/shared';
-import { WebSocketsInMemoryProviderService } from '@novu/application-generic';
+import { WebSocketsInMemoryProviderService } from '@teleflow/application-generic';
 import { Logger } from '@nestjs/common';
 
 export class InMemoryIoAdapter extends IoAdapter {

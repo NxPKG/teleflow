@@ -1,1 +1,1 @@
-export const NOVU_OPTIONS = 'NOVU_OPTIONS';
+export const TELEFLOW_OPTIONS = 'TELEFLOW_OPTIONS';

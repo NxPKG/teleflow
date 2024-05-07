@@ -8,7 +8,7 @@ import {
   CacheService,
   createHash,
   InvalidateCacheService,
-} from '@novu/application-generic';
+} from '@teleflow/application-generic';
 
 import { encryptApiKeysMigration } from '../../../../migrations/encrypt-api-keys/encrypt-api-keys-migration';
 
