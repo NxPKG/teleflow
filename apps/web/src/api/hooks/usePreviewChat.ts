@@ -1,6 +1,6 @@
 import { useMutation, UseMutationOptions } from '@tanstack/react-query';
 import { useCallback } from 'react';
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 import type { IResponseError } from '@novu/shared';
 import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 

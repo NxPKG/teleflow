@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 import { ChannelTypeEnum } from '@novu/shared';
 
-import { colors, Text, ErrorIcon, WarningIcon, CircleArrowRight } from '@novu/design-system';
+import { colors, Text, ErrorIcon, WarningIcon, CircleArrowRight } from '@teleflow/design-system';
 import { useSegment } from '../../../components/providers/SegmentProvider';
 import { stepNames, TemplateEditorAnalyticsEnum } from '../constants';
 import { useEnvController } from '../../../hooks';

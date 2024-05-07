@@ -1,4 +1,4 @@
-import { Button, LoadingOverlay } from '@novu/design-system';
+import { Button, LoadingOverlay } from '@teleflow/design-system';
 import { useAuthContext } from '@teleflow/shared-web';
 import { useForm } from 'react-hook-form';
 import { useUpdateOrganizationBranding } from '../../../../api/hooks';

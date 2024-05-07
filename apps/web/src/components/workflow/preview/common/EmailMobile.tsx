@@ -1,5 +1,5 @@
 import { createStyles } from '@mantine/core';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 const useStyles = createStyles((theme) => ({
   phone: {

@@ -19,7 +19,7 @@ import {
   Condition,
   ErrorIcon,
   When,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { DataSelect, IConditions, IConditionsForm, IConditionsProps, IFilterTypeList } from './types';
 import { OnlineConditionRow } from './OnlineConditionRow';

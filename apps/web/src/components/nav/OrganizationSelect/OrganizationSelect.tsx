@@ -1,4 +1,4 @@
-import { Select } from '@novu/design-system';
+import { Select } from '@teleflow/design-system';
 import { css } from '../../../styled-system/css';
 import { useOrganizationSelect } from './useOrganizationSelect';
 

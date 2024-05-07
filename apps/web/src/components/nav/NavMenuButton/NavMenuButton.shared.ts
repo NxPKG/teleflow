@@ -1,4 +1,4 @@
-import { IIconProps } from '@novu/design-system';
+import { IIconProps } from '@teleflow/design-system';
 import { LocalizedMessage } from '@teleflow/shared-web';
 import { ReactNode } from 'react';
 import { css } from '../../../styled-system/css';

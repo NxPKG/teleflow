@@ -1,7 +1,7 @@
 import { Popover, createStyles } from '@mantine/core';
 import { IMessageButton, MessageActionStatusEnum } from '@novu/shared';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { ButtonsTemplates } from './ButtonsTemplates';
 
 const usePopoverStyles = createStyles(({ colorScheme }) => ({

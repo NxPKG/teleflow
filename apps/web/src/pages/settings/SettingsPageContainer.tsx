@@ -1,4 +1,4 @@
-import { PageContainer, When } from '@novu/design-system';
+import { PageContainer, When } from '@teleflow/design-system';
 import { FC, PropsWithChildren, ReactNode } from 'react';
 import PageHeader from '../../components/layout/components/PageHeader';
 import { css } from '../../styled-system/css';

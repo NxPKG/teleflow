@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { IOrganizationEntity } from '@novu/shared';
-import { Tabs } from '@novu/design-system';
+import { Tabs } from '@teleflow/design-system';
 
 import { useStepFormPath } from '../../hooks/useStepFormPath';
 import { useActiveIntegrations, useEnvController } from '../../../../hooks';

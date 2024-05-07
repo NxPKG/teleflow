@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Text } from '@novu/design-system';
+import { Text } from '@teleflow/design-system';
 import { getCurlTriggerSnippet } from '../../pages/templates/components/TriggerSnippetTabs';
 
 const TriggerTitle = styled(Text)`

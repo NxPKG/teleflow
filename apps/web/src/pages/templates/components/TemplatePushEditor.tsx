@@ -1,7 +1,7 @@
 import { ChannelTypeEnum } from '@novu/shared';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { colors, Text, When } from '@novu/design-system';
+import { colors, Text, When } from '@teleflow/design-system';
 import { useEnvController, useHasActiveIntegrations, useVariablesManager } from '../../../hooks';
 import { useStepFormPath } from '../hooks/useStepFormPath';
 import { StepSettings } from '../workflow/SideBar/StepSettings';

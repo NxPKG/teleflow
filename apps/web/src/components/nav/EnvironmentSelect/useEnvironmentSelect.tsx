@@ -1,7 +1,7 @@
-import { type IIconProps, IconConstruction, IconRocketLaunch } from '@novu/design-system';
+import { type IIconProps, IconConstruction, IconRocketLaunch } from '@teleflow/design-system';
 import { useEnvController, ROUTES, BaseEnvironmentEnum } from '@teleflow/shared-web';
 import { useState } from 'react';
-import { type ISelectProps } from '@novu/design-system';
+import { type ISelectProps } from '@teleflow/design-system';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const ENVIRONMENT_ICON_LOOKUP: Record<BaseEnvironmentEnum, React.ReactElement<IIconProps>> = {

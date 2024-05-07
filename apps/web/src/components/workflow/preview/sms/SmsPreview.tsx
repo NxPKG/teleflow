@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { api, useEnvController } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';

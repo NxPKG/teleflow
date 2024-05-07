@@ -3,7 +3,7 @@ import { Stack, useMantineColorScheme } from '@mantine/core';
 import { ChannelTypeEnum } from '@novu/shared';
 import { Link } from 'react-router-dom';
 import { When } from '../../../components/utils/When';
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 
 const WARNING_LIMIT = {
   [ChannelTypeEnum.EMAIL]: 50,

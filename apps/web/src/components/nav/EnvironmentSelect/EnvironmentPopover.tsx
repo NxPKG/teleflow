@@ -1,5 +1,5 @@
 import { Popover } from '@mantine/core';
-import { IconClose } from '@novu/design-system';
+import { IconClose } from '@teleflow/design-system';
 import { MouseEventHandler, PropsWithChildren } from 'react';
 import { popoverArrowStyle, popoverDropdownStyle, closeButtonStyles, linkStyles } from './EnvironmentPopover.styles';
 

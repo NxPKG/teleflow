@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { getHotkeyHandler } from '@mantine/hooks';
 import { TextAlignEnum } from '@novu/shared';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 import { useEnvController } from '../../../../hooks';
 import { useStepFormPath } from '../../hooks/useStepFormPath';

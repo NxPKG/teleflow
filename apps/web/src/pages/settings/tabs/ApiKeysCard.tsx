@@ -3,7 +3,7 @@ import { useClipboard } from '@mantine/hooks';
 import { useQuery } from '@tanstack/react-query';
 import styled from '@emotion/styled';
 
-import { Input, Tooltip, colors, Check, Copy, inputStyles } from '@novu/design-system';
+import { Input, Tooltip, colors, Check, Copy, inputStyles } from '@teleflow/design-system';
 import { getApiKeys } from '../../../api/environment';
 import { useEnvController } from '../../../hooks';
 import { Regenerate } from './components/Regenerate';

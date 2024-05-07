@@ -2,7 +2,7 @@ import { Center, Container, Loader, Tabs, TabsValue } from '@mantine/core';
 import { useMemo } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
-import { colors, useTabsStyles } from '@novu/design-system';
+import { colors, useTabsStyles } from '@teleflow/design-system';
 import PageContainer from '../../components/layout/components/PageContainer';
 import PageHeader from '../../components/layout/components/PageHeader';
 import { useAuthContext } from '../../components/providers/AuthProvider';

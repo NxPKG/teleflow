@@ -1,5 +1,5 @@
 import { createStyles, MantineTheme } from '@mantine/core';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 export default createStyles((theme: MantineTheme, _params, getRef) => {
   const dark = theme.colorScheme === 'dark';

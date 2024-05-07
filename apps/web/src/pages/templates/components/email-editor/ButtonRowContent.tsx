@@ -4,7 +4,7 @@ import { showNotification } from '@mantine/notifications';
 import { TextInput as MantineInput, Popover, Button as MantineButton, createStyles } from '@mantine/core';
 import { TextAlignEnum } from '@novu/shared';
 
-import { colors, shadows, TextAlignment, Wifi } from '@novu/design-system';
+import { colors, shadows, TextAlignment, Wifi } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 import type { IForm } from '../formTypes';
 import { useStepFormPath } from '../../hooks/useStepFormPath';

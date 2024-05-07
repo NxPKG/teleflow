@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Button, colors } from '@novu/design-system';
+import { Button, colors } from '@teleflow/design-system';
 import { useSegment } from '../../../components/providers/SegmentProvider';
 
 export const StepText = styled.p`

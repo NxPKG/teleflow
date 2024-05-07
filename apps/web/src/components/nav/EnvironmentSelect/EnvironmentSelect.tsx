@@ -1,4 +1,4 @@
-import { Select, When } from '@novu/design-system';
+import { Select, When } from '@teleflow/design-system';
 import { css } from '../../../styled-system/css';
 import { navSelectStyles } from '../NavSelect.styles';
 import { EnvironmentPopover } from './EnvironmentPopover';

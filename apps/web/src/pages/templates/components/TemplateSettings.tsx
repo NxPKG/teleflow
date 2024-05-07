@@ -4,7 +4,7 @@ import { Group } from '@mantine/core';
 import styled from '@emotion/styled';
 import { useFormContext } from 'react-hook-form';
 
-import { Button, colors, Trash } from '@novu/design-system';
+import { Button, colors, Trash } from '@teleflow/design-system';
 import { NotificationSettingsForm } from './notification-setting-form/NotificationSettingsForm';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
 import { useEnvController } from '../../../hooks';

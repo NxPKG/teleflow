@@ -24,7 +24,7 @@ const IconsWrapper = ({ color, size }: IIconProps) => {
   return (
     <div style={{ width: '100%', height: '100%', margin: 'auto', overflowY: 'auto' }}>
       <Code block mb={20}>
-        {`import { ${iconName} } from '@novu/design-system'
+        {`import { ${iconName} } from '@teleflow/design-system'
      
 <${iconName} /> `}
       </Code>

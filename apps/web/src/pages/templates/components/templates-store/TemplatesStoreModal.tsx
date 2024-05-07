@@ -3,7 +3,7 @@ import { ReactFlowProvider } from 'react-flow-renderer';
 import { ActionIcon, Modal, useMantineTheme } from '@mantine/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
-import { Button, colors, shadows, Close } from '@novu/design-system';
+import { Button, colors, shadows, Close } from '@teleflow/design-system';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { INotificationTemplateStep } from '@novu/shared';
 

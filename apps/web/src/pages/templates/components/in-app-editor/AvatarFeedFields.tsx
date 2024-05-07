@@ -6,7 +6,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { showNotification } from '@mantine/notifications';
 import type { IResponseError, IFeedEntity } from '@novu/shared';
 
-import { Checkbox, colors, Input, PlusGradient } from '@novu/design-system';
+import { Checkbox, colors, Input, PlusGradient } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 import { createFeed, getFeeds } from '../../../../api/feeds';
 import { QueryKeys } from '../../../../api/query.keys';

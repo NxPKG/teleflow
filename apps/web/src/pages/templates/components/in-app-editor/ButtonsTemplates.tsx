@@ -1,7 +1,7 @@
 import { ButtonTypeEnum, IMessageButton, darkButtonStyle, lightButtonStyle } from '@novu/shared';
 import styled from '@emotion/styled';
 import { Divider, useMantineTheme } from '@mantine/core';
-import { Button } from '@novu/design-system';
+import { Button } from '@teleflow/design-system';
 
 interface IButtonsTemplatesProps {
   setTemplateSelected: (boolean) => void;

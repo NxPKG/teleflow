@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { ReactFlowProvider } from 'react-flow-renderer';
 import { useNavigate, useParams } from 'react-router-dom';
 import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
-import { ArrowButton, colors, Title, Text, Button } from '@novu/design-system';
+import { ArrowButton, colors, Title, Text, Button } from '@teleflow/design-system';
 
 import PageContainer from '../../components/layout/components/PageContainer';
 import { parseUrl } from '../../utils/routeUtils';

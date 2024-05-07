@@ -11,7 +11,7 @@ import { VariantItemCard } from './VariantItemCard';
 import { ItemTypeEnum } from './useVariantListErrors';
 import { IForm } from './formTypes';
 import { VariantsListErrors } from './VariantsListErrors';
-import { When } from '@novu/design-system';
+import { When } from '@teleflow/design-system';
 import { useVariantListErrorsNavigation } from './useVariantListErrorsNavigation';
 
 const LeftContainer = styled.div`

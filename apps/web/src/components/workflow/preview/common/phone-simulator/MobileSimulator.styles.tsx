@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors, shadows } from '@novu/design-system';
+import { colors, shadows } from '@teleflow/design-system';
 import { TimeIcon } from '../icons';
 
 const BORDER_RADIUS_PX = 40;

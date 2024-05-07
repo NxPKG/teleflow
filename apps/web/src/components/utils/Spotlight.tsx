@@ -1,5 +1,5 @@
 import { SpotlightProvider } from '@mantine/spotlight';
-import { Activity, Bolt, Box, Brand, Chat, IconLogout, Repeat, Settings, Team } from '@novu/design-system';
+import { Activity, Bolt, Box, Brand, Chat, IconLogout, Repeat, Settings, Team } from '@teleflow/design-system';
 import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';

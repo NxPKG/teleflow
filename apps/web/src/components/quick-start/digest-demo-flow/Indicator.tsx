@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import styled from '@emotion/styled';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 const IndicatorHolder = styled.span<{ isShown }>`
   display: flex;

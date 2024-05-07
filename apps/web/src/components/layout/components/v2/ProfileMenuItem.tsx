@@ -1,5 +1,5 @@
 import { Avatar, Group } from '@mantine/core';
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 import { IOrganizationEntity, IUserEntity } from '@novu/shared';
 import { CONTEXT_PATH } from '@teleflow/shared-web';
 

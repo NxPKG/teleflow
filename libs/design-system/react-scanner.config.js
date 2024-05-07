@@ -60,7 +60,7 @@ function getComponentName({ imported, local, moduleName, importType }) {
 
   // group Icons if from Novu Design System or AntD
   const name =
-    (moduleName === '@novu/design-system' && TELEFLOW_ICON_REGEX.test(importedName)) ||
+    (moduleName === '@teleflow/design-system' && TELEFLOW_ICON_REGEX.test(importedName)) ||
     moduleName === ANTD_ICON_MODULE_NAME
       ? 'Icon'
       : importedName;

@@ -1,4 +1,4 @@
-import { ColorInput, Select } from '@novu/design-system';
+import { ColorInput, Select } from '@teleflow/design-system';
 import { Control, Controller } from 'react-hook-form';
 import { FONT_FAMILIES, IBrandFormValues } from './BrandingPage.const';
 import { inputWrapperStyles } from './BrandingPage.styles';

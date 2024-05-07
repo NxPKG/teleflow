@@ -1,7 +1,7 @@
 import { Grid } from '@mantine/core';
 import { Control, Controller } from 'react-hook-form';
 import { FilterPartTypeEnum, TimeOperatorEnum } from '@novu/shared';
-import { Input, Select } from '@novu/design-system';
+import { Input, Select } from '@teleflow/design-system';
 
 import { RightSectionError } from './Conditions';
 import { IConditionsForm, IConditionsProps } from './types';

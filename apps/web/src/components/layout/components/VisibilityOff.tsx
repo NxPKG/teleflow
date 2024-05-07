@@ -1,7 +1,7 @@
 import { EyeInvisibleOutlined } from '@ant-design/icons';
 import styled from '@emotion/styled';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 /** @deprecated */
 export const VisibilityOff = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivElement> }) => {

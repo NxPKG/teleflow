@@ -1,4 +1,4 @@
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 
 import { TemplateCreationSourceEnum } from '../../templates/shared';
 import { useSegment } from '../../../components/providers/SegmentProvider';

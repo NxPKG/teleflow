@@ -2,7 +2,7 @@ import React, { SVGProps, useState } from 'react';
 import { CheckboxProps } from '@mantine/core';
 import styled from '@emotion/styled';
 
-import { colors, Checkbox, Tooltip } from '@novu/design-system';
+import { colors, Checkbox, Tooltip } from '@teleflow/design-system';
 import { ProductUseCasesEnum } from '@novu/shared';
 
 import { checkboxStyles, tooltipStyles } from './DynamicCheckBox.styles';

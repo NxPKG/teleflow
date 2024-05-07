@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Skeleton, useMantineColorScheme } from '@mantine/core';
 import { useState } from 'react';
 
-import { colors, IExtendedCellProps, Popover, Text, Star } from '@novu/design-system';
+import { colors, IExtendedCellProps, Popover, Text, Star } from '@teleflow/design-system';
 import type { ITableIntegration } from '../types';
 import { ChannelTypeEnum } from '@novu/shared';
 

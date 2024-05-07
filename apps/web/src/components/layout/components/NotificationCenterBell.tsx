@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { ColorScheme } from '@mantine/core';
-import { colors, IconNotifications } from '@novu/design-system';
+import { colors, IconNotifications } from '@teleflow/design-system';
 import { NotificationBell } from '@teleflow/notification-center';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
 import { useFeatureFlag } from '../../../hooks';

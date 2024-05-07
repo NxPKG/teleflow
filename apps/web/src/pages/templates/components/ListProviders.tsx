@@ -2,7 +2,7 @@ import { MouseEventHandler, useMemo } from 'react';
 import styled from '@emotion/styled';
 import { Group, Stack, Text, UnstyledButton, useMantineColorScheme } from '@mantine/core';
 import { ChannelTypeEnum, NOVU_SMS_EMAIL_PROVIDERS } from '@novu/shared';
-import { Button, colors, Tooltip } from '@novu/design-system';
+import { Button, colors, Tooltip } from '@teleflow/design-system';
 
 import { When } from '../../../components/utils/When';
 import { useEnvController } from '../../../hooks';

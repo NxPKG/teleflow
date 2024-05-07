@@ -1,5 +1,5 @@
 import { createStyles, Group } from '@mantine/core';
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 import { useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import Frame from 'react-frame-component';

@@ -1,4 +1,4 @@
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 import { IEmailBlock } from '@novu/shared';
 import { useMutation, UseMutationOptions } from '@tanstack/react-query';
 import { useCallback } from 'react';

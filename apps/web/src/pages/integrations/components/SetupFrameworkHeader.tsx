@@ -11,7 +11,7 @@ import {
   JsGradient,
   ReactGradient,
   VueGradient,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { FrameworkEnum } from '../../quick-start/consts';
 
 const Icon = ({ framework }: { framework: string }) => {

@@ -2,7 +2,7 @@ import './CustomCodeEditor.css';
 import { Editor, Monaco } from '@monaco-editor/react';
 import { Card, Loader, useMantineColorScheme } from '@mantine/core';
 import { useCallback, useEffect, useRef } from 'react';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { editor as NEditor } from 'monaco-editor';
 
 import { createTranslationMarks } from './createTranslationMarks';

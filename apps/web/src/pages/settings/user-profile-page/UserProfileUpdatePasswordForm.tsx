@@ -1,4 +1,4 @@
-import { Button, errorMessage, IconOutlineLockPerson, PasswordInput, successMessage } from '@novu/design-system';
+import { Button, errorMessage, IconOutlineLockPerson, PasswordInput, successMessage } from '@teleflow/design-system';
 import { checkIsResponseError, IResponseError } from '@novu/shared';
 import { api } from '@teleflow/shared-web';
 import * as Sentry from '@sentry/react';

@@ -12,7 +12,7 @@
   - apps/webhook/**/*
 '@teleflow/dal':
   - libs/dal/**/*
-'@novu/design-system':
+'@teleflow/design-system':
   - libs/design-system/**/*
 '@novu/shared':
   - libs/shared/**/*

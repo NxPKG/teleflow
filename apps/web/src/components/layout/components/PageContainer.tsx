@@ -1,3 +1,3 @@
-import { PageContainer } from '@novu/design-system';
+import { PageContainer } from '@teleflow/design-system';
 
 export default PageContainer;

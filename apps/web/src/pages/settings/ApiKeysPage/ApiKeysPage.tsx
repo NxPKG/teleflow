@@ -1,4 +1,4 @@
-import { IconOutlineVisibility, IconOutlineVisibilityOff, IconRefresh, IconSize, Input } from '@novu/design-system';
+import { IconOutlineVisibility, IconOutlineVisibilityOff, IconRefresh, IconSize, Input } from '@teleflow/design-system';
 import { FC } from 'react';
 import { IconButton, ClipboardIconButton } from '../../../components/';
 import { Flex } from '../../../styled-system/jsx';

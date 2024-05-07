@@ -15,7 +15,7 @@ import { EditVariablesModal } from '../EditVariablesModal';
 import { VariableManagementButton } from '../VariableManagementButton';
 import { useEditTemplateContent } from '../../hooks/useEditTemplateContent';
 import { useTemplateEditorForm } from '../TemplateEditorFormProvider';
-import { colors, When } from '@novu/design-system';
+import { colors, When } from '@teleflow/design-system';
 import { InputVariables } from '../InputVariables';
 import { InputVariablesForm } from '../InputVariablesForm';
 

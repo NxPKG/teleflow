@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Avatar, Indicator } from '@mantine/core';
 import { ProvidersIdEnum } from '@novu/shared';
-import { ProviderMissing, colors } from '@novu/design-system';
+import { ProviderMissing, colors } from '@teleflow/design-system';
 
 type DisplayPrimaryProviderIconProps = {
   isChannelStep: boolean;

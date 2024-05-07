@@ -17,7 +17,7 @@ import {
   Sun,
   Logout,
   InviteMembers,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { useLocalThemePreference, useDebounce, useBootIntercom } from '../../../hooks';
 import { discordInviteUrl } from '../../../pages/quick-start/consts';
 import { useAuthContext } from '../../providers/AuthProvider';

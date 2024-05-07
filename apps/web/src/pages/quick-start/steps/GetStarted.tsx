@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { ChannelTypeEnum, UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
-import { ArrowRight } from '@novu/design-system';
+import { ArrowRight } from '@teleflow/design-system';
 
 import { useSegment } from '../../../components/providers/SegmentProvider';
 import { IntegrationsListModal } from '../../integrations/IntegrationsListModal';

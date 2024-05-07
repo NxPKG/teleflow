@@ -2,7 +2,7 @@ import { Divider } from '@mantine/core';
 import styled from '@emotion/styled';
 import { Button as MantineButton } from '@mantine/core';
 
-import { colors, GitHub, Google, Text } from '@novu/design-system';
+import { colors, GitHub, Google, Text } from '@teleflow/design-system';
 
 import { When } from '../../../components/utils/When';
 import { IS_DOCKER_HOSTED } from '../../../config';

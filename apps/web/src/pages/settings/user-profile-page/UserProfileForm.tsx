@@ -1,7 +1,7 @@
 import { ChangeEventHandler, FC } from 'react';
 import { SubmitHandler, useController, useForm, ValidationRule } from 'react-hook-form';
 import * as capitalize from 'lodash.capitalize';
-import { Button, errorMessage, Input, successMessage } from '@novu/design-system';
+import { Button, errorMessage, Input, successMessage } from '@teleflow/design-system';
 import { IUserEntity, UploadTypesEnum } from '@novu/shared';
 
 import { css } from '../../../styled-system/css';

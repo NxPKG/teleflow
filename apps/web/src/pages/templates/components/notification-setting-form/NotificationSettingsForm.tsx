@@ -5,7 +5,7 @@ import { Controller, useFormContext } from 'react-hook-form';
 import type { IResponseError, INotificationTrigger } from '@novu/shared';
 
 import { api } from '../../../../api/api.client';
-import { Input, Select, Switch, Tooltip, Check, Copy, When } from '@novu/design-system';
+import { Input, Select, Switch, Tooltip, Check, Copy, When } from '@teleflow/design-system';
 import { useEnvController, useNotificationGroup } from '../../../../hooks';
 import type { IForm } from '../formTypes';
 import { useTemplateEditorForm } from '../TemplateEditorFormProvider';

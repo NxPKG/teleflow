@@ -1,5 +1,5 @@
 import { Transition } from '@mantine/core';
-import { Tooltip } from '@novu/design-system';
+import { Tooltip } from '@teleflow/design-system';
 import { FC, PropsWithChildren, useState } from 'react';
 import { css } from '../../../styled-system/css';
 import { INavMenuButtonRightSideConfig } from './NavMenuButton.shared';

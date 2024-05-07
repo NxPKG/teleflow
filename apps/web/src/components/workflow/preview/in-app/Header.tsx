@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { InAppHeaderIcons, LocaleSelect } from '../common';
 
 const LIGHT_THEME_BG = `linear-gradient(270deg, ${colors.B98} 0%, rgba(255, 255, 255, 0.00) 100%);`;

@@ -4,7 +4,7 @@ import * as capitalize from 'lodash.capitalize';
 import { useClipboard } from '@mantine/hooks';
 import { MemberRoleEnum, MemberStatusEnum } from '@novu/shared';
 
-import { DotsHorizontal, Mail, Trash, useTextStyles, colors, Dropdown, Tag } from '@novu/design-system';
+import { DotsHorizontal, Mail, Trash, useTextStyles, colors, Dropdown, Tag } from '@teleflow/design-system';
 import { MemberRole } from './MemberRole';
 import { When } from '../../../components/utils/When';
 import { parseUrl } from '../../../utils/routeUtils';

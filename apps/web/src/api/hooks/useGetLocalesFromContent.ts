@@ -1,4 +1,4 @@
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 import type { IResponseError, IEmailBlock } from '@novu/shared';
 import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';

@@ -14,7 +14,7 @@ import {
   useTemplateButtonStyles,
   VariantsFile,
   ErrorIcon,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { useSegment } from '../../../../../components/providers/SegmentProvider';
 import { When } from '../../../../../components/utils/When';
 import { CONTEXT_PATH } from '../../../../../config';

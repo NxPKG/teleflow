@@ -14,7 +14,7 @@ import {
   DotsHorizontal,
   StarEmpty,
   Trash,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { useFetchEnvironments } from '../../../hooks/useFetchEnvironments';
 import { ProviderImage } from './multi-provider/SelectProviderSidebar';

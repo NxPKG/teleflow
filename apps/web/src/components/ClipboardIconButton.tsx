@@ -1,4 +1,4 @@
-import { IIconProps, IconCheck, IconContentCopy } from '@novu/design-system';
+import { IIconProps, IconCheck, IconContentCopy } from '@teleflow/design-system';
 import { LocalizedMessage } from '@teleflow/shared-web';
 import { FC } from 'react';
 import { IconButton } from './IconButton';

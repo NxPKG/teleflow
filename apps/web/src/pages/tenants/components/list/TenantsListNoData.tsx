@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Buildings, colors } from '@novu/design-system';
+import { Buildings, colors } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 import { When } from '../../../../components/utils/When';
 

@@ -19,7 +19,7 @@ import {
   Invite,
   inputStyles,
   useSelectStyles,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { getOrganizationMembers } from '../../../../api/organization';
 import { useProcessVariables, useIntegrationLimit } from '../../../../hooks';
 import { testSendEmailMessage } from '../../../../api/notification-templates';
@@ -92,8 +92,8 @@ export function TestSendEmail({
         content: chimera
           ? ''
           : template.contentType === 'customHtml'
-          ? (template.htmlContent as string)
-          : template.content,
+            ? (template.htmlContent as string)
+            : template.content,
         layoutId: template.layoutId,
       });
       successMessage('Test sent successfully!');

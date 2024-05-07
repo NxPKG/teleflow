@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { StepTypeEnum } from '@novu/shared';
-import { Sidebar } from '@novu/design-system';
+import { Sidebar } from '@teleflow/design-system';
 
 import { useStepIndex } from '../hooks/useStepIndex';
 import { StepName } from './StepName';

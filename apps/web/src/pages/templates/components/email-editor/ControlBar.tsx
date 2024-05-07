@@ -1,5 +1,5 @@
 import { ActionIcon, Divider } from '@mantine/core';
-import { DoubleArrowRight, PlusCircleOutlined, TextAlignment, colors, Dropdown } from '@novu/design-system';
+import { DoubleArrowRight, PlusCircleOutlined, TextAlignment, colors, Dropdown } from '@teleflow/design-system';
 import { EmailBlockTypeEnum } from '@novu/shared';
 
 export function ControlBar({ top, onBlockAdd }: { top: number; onBlockAdd: (type: EmailBlockTypeEnum) => void }) {

@@ -1,4 +1,4 @@
-import { Button, IconOutlineLockPerson } from '@novu/design-system';
+import { Button, IconOutlineLockPerson } from '@teleflow/design-system';
 import { FC, MouseEventHandler, useContext, useMemo } from 'react';
 import { css } from '../../../styled-system/css';
 import { UserProfileSidebarContext } from './UserProfileSidebarContext';

@@ -11,7 +11,7 @@ import {
 import { useController } from 'react-hook-form';
 import { SystemAvatarIconEnum, IActor, ActorTypeEnum } from '@novu/shared';
 
-import { colors, Input, Switch, Text, Tooltip, Avatar, Camera } from '@novu/design-system';
+import { colors, Input, Switch, Text, Tooltip, Avatar, Camera } from '@teleflow/design-system';
 import { AvatarWrapper, IconWrapper, useStyles } from './AvatarContainer.styles';
 import { useStepFormPath } from '../../../hooks/useStepFormPath';
 

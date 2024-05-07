@@ -3,7 +3,7 @@ import { Card, Grid, Group } from '@mantine/core';
 import styled from '@emotion/styled';
 import { CONTEXT_PATH } from '../../../config';
 
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 
 export const TriggerCard = ({
   name,

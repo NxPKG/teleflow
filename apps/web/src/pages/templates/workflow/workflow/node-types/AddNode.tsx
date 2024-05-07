@@ -14,7 +14,7 @@ import {
   colors,
   Dropdown,
   Text,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { StepTypeEnum } from '@novu/shared';
 
 interface NodeData {

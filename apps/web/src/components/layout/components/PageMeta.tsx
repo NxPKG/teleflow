@@ -1,3 +1,3 @@
-import { PageMeta } from '@novu/design-system';
+import { PageMeta } from '@teleflow/design-system';
 
 export default PageMeta;

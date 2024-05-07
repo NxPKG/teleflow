@@ -8,7 +8,7 @@ import * as Sentry from '@sentry/react';
 import * as capitalize from 'lodash.capitalize';
 import { useDisclosure } from '@mantine/hooks';
 import { IUserEntity, INotificationTriggerVariable } from '@novu/shared';
-import { Button, colors, inputStyles } from '@novu/design-system';
+import { Button, colors, inputStyles } from '@teleflow/design-system';
 
 import { errorMessage, successMessage } from '../../../utils/notifications';
 import { useAuthContext } from '../../../components/providers/AuthProvider';

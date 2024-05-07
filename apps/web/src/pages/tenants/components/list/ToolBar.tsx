@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-import { Button, Text } from '@novu/design-system';
+import { Button, Text } from '@teleflow/design-system';
 
 const Holder = styled.div`
   display: flex;

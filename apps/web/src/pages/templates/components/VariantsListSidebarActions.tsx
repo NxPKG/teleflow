@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { FilterPartTypeEnum } from '@novu/shared';
-import { ActionButton, Condition, ConditionPlus, Trash, VariantPlus } from '@novu/design-system';
+import { ActionButton, Condition, ConditionPlus, Trash, VariantPlus } from '@teleflow/design-system';
 
 import { Conditions, IConditions } from '../../../components/conditions';
 import { When } from '../../../components/utils/When';

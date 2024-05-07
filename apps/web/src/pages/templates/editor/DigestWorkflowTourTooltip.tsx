@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { StepTypeEnum } from '@novu/shared';
 
 import { useTour } from './TourProvider';
-import { Button, colors, DotsNavigation, Clock, LetterOpened, BellWithNotification } from '@novu/design-system';
+import { Button, colors, DotsNavigation, Clock, LetterOpened, BellWithNotification } from '@teleflow/design-system';
 import { IForm } from '../components/formTypes';
 import { useSegment } from '../../../components/providers/SegmentProvider';
 import { DigestWorkflowTourAnalyticsEnum, HINT_INDEX_TO_CLICK_ANALYTICS, ordinalNumbers } from '../constants';

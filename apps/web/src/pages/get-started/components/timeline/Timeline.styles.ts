@@ -1,5 +1,5 @@
 import { createStyles, MantineTheme } from '@mantine/core';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { ExpandStepsType } from './Timeline';
 
 interface ITimelineParams {

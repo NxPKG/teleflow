@@ -1,4 +1,4 @@
-import { Button, IconOutlineForwardToInbox, IconOutlineMarkunreadMailbox } from '@novu/design-system';
+import { Button, IconOutlineForwardToInbox, IconOutlineMarkunreadMailbox } from '@teleflow/design-system';
 import { css, cx } from '../../../styled-system/css';
 import { HStack, Stack } from '../../../styled-system/jsx';
 import { text } from '../../../styled-system/recipes';

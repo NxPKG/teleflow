@@ -9,7 +9,7 @@ import { WarningOutlined } from '@ant-design/icons';
 import { ChannelTypeEnum, CredentialsKeyEnum } from '@novu/shared';
 import type { IResponseError, ICredentialsDto, IConfigCredentials, ICreateIntegrationBodyDto } from '@novu/shared';
 
-import { Button, colors, Input, Switch, Text, Close, Check, Copy } from '@novu/design-system';
+import { Button, colors, Input, Switch, Text, Close, Check, Copy } from '@teleflow/design-system';
 import type { IIntegratedProvider } from '../types';
 import { createIntegration, getWebhookSupportStatus, updateIntegration } from '../../../api/integration';
 import { IntegrationInput } from './IntegrationInput';

@@ -1,5 +1,5 @@
 import { Group, Stack } from '@mantine/core';
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 import { MessageActionStatusEnum } from '@novu/shared';
 
 import { useHover } from '../../../../hooks';

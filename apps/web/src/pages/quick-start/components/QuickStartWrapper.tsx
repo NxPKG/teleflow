@@ -9,7 +9,7 @@ import { useSegment } from '../../../components/providers/SegmentProvider';
 import { When } from '../../../components/utils/When';
 import { INTERCOM_APP_ID } from '../../../config';
 import { ROUTES } from '../../../constants/routes.enum';
-import { ArrowButton, colors, Text, Discord } from '@novu/design-system';
+import { ArrowButton, colors, Text, Discord } from '@teleflow/design-system';
 import { useEffectOnce } from '../../../hooks';
 import { discordInviteUrl, notificationCenterDocsUrl, OnBoardingAnalyticsEnum } from '../consts';
 import { currentOnboardingStep } from './route/store';

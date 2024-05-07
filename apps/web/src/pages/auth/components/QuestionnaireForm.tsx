@@ -17,7 +17,7 @@ import {
   RingingBell,
   Select,
   Translation,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { api } from '../../../api/api.client';
 import { useAuthContext } from '../../../components/providers/AuthProvider';

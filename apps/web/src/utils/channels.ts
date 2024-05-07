@@ -8,7 +8,7 @@ import {
   InAppFilled,
   PushFilled,
   SmsFilled,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 export enum NodeTypeEnum {
   CHANNEL = 'channel',

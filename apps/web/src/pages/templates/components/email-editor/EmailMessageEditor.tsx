@@ -5,7 +5,7 @@ import { Dropzone } from '@mantine/dropzone';
 import { useFormContext, useFieldArray } from 'react-hook-form';
 import { EmailBlockTypeEnum, IEmailBlock } from '@novu/shared';
 
-import { Upload, colors, Text } from '@novu/design-system';
+import { Upload, colors, Text } from '@teleflow/design-system';
 import { ContentRow } from './ContentRow';
 import { ControlBar } from './ControlBar';
 import { ButtonRowContent } from './ButtonRowContent';

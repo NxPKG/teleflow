@@ -8,7 +8,7 @@ import {
   MessageActionStatusEnum,
 } from '@novu/shared';
 import { ColorScheme, TextInput, useMantineColorScheme, useMantineTheme } from '@mantine/core';
-import { RemoveCircle, Button, colors } from '@novu/design-system';
+import { RemoveCircle, Button, colors } from '@teleflow/design-system';
 import styled from '@emotion/styled';
 import { When } from '../../../../../components/utils/When';
 

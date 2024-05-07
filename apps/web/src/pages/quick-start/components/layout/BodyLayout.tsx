@@ -3,7 +3,7 @@ import { Grid, Timeline } from '@mantine/core';
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { getStartedSteps, OnBoardingAnalyticsEnum } from '../../consts';
 import { useSegment } from '../../../../components/providers/SegmentProvider';
 import { ROUTES } from '../../../../constants/routes.enum';
@@ -107,7 +107,9 @@ const TimelineText = styled.div<{ active: boolean }>`
   font-weight: 700;
   line-height: 1.4;
   padding: 12px;
-  transition: margin-left 0.3s ease, padding 0.3s ease;
+  transition:
+    margin-left 0.3s ease,
+    padding 0.3s ease;
   border-radius: 8px;
   cursor: pointer;
 

@@ -1,4 +1,4 @@
-import { Tooltip, Dropdown, CardTile } from '@novu/design-system';
+import { Tooltip, Dropdown, CardTile } from '@teleflow/design-system';
 import { Badge } from '@mantine/core';
 
 import { TemplateItem } from './templates-store/templateStoreStyles';

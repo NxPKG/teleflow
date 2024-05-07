@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { Grid } from '@mantine/core';
 import { ChannelTypeEnum, InAppProviderIdEnum } from '@novu/shared';
-import { ActiveLabel, Button, colors } from '@novu/design-system';
+import { ActiveLabel, Button, colors } from '@teleflow/design-system';
 
 import { IQuickStartChannelConfiguration, OnBoardingAnalyticsEnum, quickStartChannels } from '../consts';
 import { When } from '../../../components/utils/When';
@@ -108,8 +108,8 @@ export function ChannelsConfiguration({ setClickedChannel }: { setClickedChannel
                   {isOnboardingExperiment
                     ? 'Send test notification now'
                     : isIntegrationActive
-                    ? 'Change Provider'
-                    : `Configure ${channel.displayName}`}
+                      ? 'Change Provider'
+                      : `Configure ${channel.displayName}`}
                 </StyledButton>
               </ChannelCard>
             </Container>

@@ -6,7 +6,7 @@ import SetupLoader from './components/SetupLoader';
 import { ENV, IS_DOCKER_HOSTED, useFeatureFlag } from '@teleflow/shared-web';
 import { HubspotSignupForm } from './components/HubspotSignupForm';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
-import { When } from '@novu/design-system';
+import { When } from '@teleflow/design-system';
 
 export default function QuestionnairePage() {
   const { isLoading } = useVercelIntegration();

@@ -1,7 +1,7 @@
 import { createStyles } from '@mantine/core';
 import styled from '@emotion/styled';
 
-import { colors, MadeByTeleflow } from '@novu/design-system';
+import { colors, MadeByTeleflow } from '@teleflow/design-system';
 
 export const ModalBodyHolder = styled.div`
   display: flex;

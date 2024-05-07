@@ -14,7 +14,7 @@ import { useVercelIntegration, useVercelParams } from '../../../hooks';
 import { ROUTES } from '../../../constants/routes.enum';
 import { HUBSPOT_FORM_IDS } from '../../../constants/hubspotForms';
 import SetupLoader from './SetupLoader';
-import { successMessage } from '@novu/design-system';
+import { successMessage } from '@teleflow/design-system';
 
 export function HubspotSignupForm() {
   const [loading, setLoading] = useState<boolean>();

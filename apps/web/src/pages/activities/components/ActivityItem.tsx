@@ -9,7 +9,7 @@ import { ActivityStep } from './ActivityStep';
 import { DigestedStep } from './DigestedStep';
 
 import { When } from '../../../components/utils/When';
-import { CheckCircle, colors, ErrorIcon, Timer } from '@novu/design-system';
+import { CheckCircle, colors, ErrorIcon, Timer } from '@teleflow/design-system';
 import { useNotificationStatus } from '../hooks/useNotificationStatus';
 import { CopyButton } from './CopyButton';
 

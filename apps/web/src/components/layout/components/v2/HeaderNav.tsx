@@ -1,6 +1,6 @@
 import { ActionIcon, Group, Header } from '@mantine/core';
 
-import { colors, IconHelpOutline, Tooltip } from '@novu/design-system';
+import { colors, IconHelpOutline, Tooltip } from '@teleflow/design-system';
 import { IS_DOCKER_HOSTED } from '../../../../config';
 import { useBootIntercom } from '../../../../hooks';
 import useThemeChange from '../../../../hooks/useThemeChange';

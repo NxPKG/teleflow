@@ -8,7 +8,7 @@ import type { IResponseError } from '@novu/shared';
 
 import { useAuthContext } from '../../../components/providers/AuthProvider';
 import { api } from '../../../api/api.client';
-import { PasswordInput, Button, colors, Text } from '@novu/design-system';
+import { PasswordInput, Button, colors, Text } from '@teleflow/design-system';
 import { PasswordRequirementPopover } from './PasswordRequirementPopover';
 import { ROUTES } from '../../../constants/routes.enum';
 

@@ -2,7 +2,7 @@ import ReactFlow, { Background, BackgroundVariant, Edge, Node } from 'react-flow
 
 import { useMantineColorScheme } from '@mantine/core';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { InAppNode } from './InAppNode';
 import { TriggerNode } from './TriggerNode';
 import { WorkflowWrapper } from '../common';

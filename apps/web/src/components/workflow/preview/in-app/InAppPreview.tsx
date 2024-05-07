@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Grid, JsonInput, useMantineTheme } from '@mantine/core';
-import { Button, colors, inputStyles, When } from '@novu/design-system';
+import { Button, colors, inputStyles, When } from '@teleflow/design-system';
 import { useEffect, useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 import { IForm } from '../../../../pages/templates/components/formTypes';

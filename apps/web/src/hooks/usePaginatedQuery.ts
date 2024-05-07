@@ -4,7 +4,7 @@ import {
   usePaginationQueryParamsState,
   IUseSearchQueryParamStateOptions,
   useSearchQueryParamState,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { IPaginationWithQueryParams } from '@novu/shared';
 
 type IPaginatedQueryContext = Required<IPaginationWithQueryParams>;

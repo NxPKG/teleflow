@@ -8,7 +8,7 @@ import { currentOnboardingStep } from '../route/store';
 import { BodyLayout } from './BodyLayout';
 import { FooterLayout } from './FooterLayout';
 import { HeaderLayout } from './HeaderLayout';
-import { Title } from '@novu/design-system';
+import { Title } from '@teleflow/design-system';
 
 interface IGetStartedLayoutProps {
   children?: React.ReactNode;

@@ -1,5 +1,5 @@
 import { useClipboard } from '@mantine/hooks';
-import { successMessage, errorMessage } from '@novu/design-system';
+import { successMessage, errorMessage } from '@teleflow/design-system';
 import { IResponseError, checkIsResponseError } from '@novu/shared';
 import { MAIL_SERVER_DOMAIN, useEnvController, updateDnsSettings } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';

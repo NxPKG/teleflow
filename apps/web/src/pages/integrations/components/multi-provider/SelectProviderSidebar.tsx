@@ -13,7 +13,7 @@ import {
   getGradient,
   Search,
   useTabsStyles,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { useDebounce } from '../../../../hooks';
 import { ChannelTitle } from '../../../templates/components/ChannelTitle';

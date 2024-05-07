@@ -12,7 +12,7 @@ import {
   Condition,
   ConditionPlus,
   Warning,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 const RemovesPrimary = () => {
   return (

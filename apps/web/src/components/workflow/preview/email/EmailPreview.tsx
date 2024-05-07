@@ -2,7 +2,7 @@ import { JsonInput } from '@mantine/core';
 import { useEffect, useMemo, useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 import styled from '@emotion/styled';
-import { Button, colors, inputStyles } from '@novu/design-system';
+import { Button, colors, inputStyles } from '@teleflow/design-system';
 
 import { useActiveIntegrations, useProcessVariables } from '../../../../hooks';
 import type { IForm } from '../../../../pages/templates/components/formTypes';

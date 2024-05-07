@@ -10,7 +10,7 @@ import { useAuthContext, useSegment } from '@teleflow/shared-web';
 import { When } from '../../../components/utils/When';
 import type { IFlowEditorProps } from '../../../components/workflow';
 import { FlowEditor } from '../../../components/workflow';
-import { Bolt, Button, Settings } from '@novu/design-system';
+import { Bolt, Button, Settings } from '@teleflow/design-system';
 import { useEnvController } from '../../../hooks';
 import { channels } from '../../../utils/channels';
 import { errorMessage } from '../../../utils/notifications';

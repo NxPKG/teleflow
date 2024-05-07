@@ -1,5 +1,5 @@
 import { Handle, Position } from 'react-flow-renderer';
-import { InAppFilled } from '@novu/design-system';
+import { InAppFilled } from '@teleflow/design-system';
 import { NodeStep } from '../../workflow';
 
 export function InAppNode({ data }: { data: { label: string; email?: string } }) {

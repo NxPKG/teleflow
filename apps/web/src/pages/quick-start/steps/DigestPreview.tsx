@@ -8,7 +8,7 @@ import { useCreateDigestDemoWorkflow } from '../../../api/hooks/notification-tem
 import { DigestDemoFlow } from '../../../components';
 import { useSegment } from '../../../components/providers/SegmentProvider';
 import { ROUTES } from '../../../constants/routes.enum';
-import { Button, ArrowLeft, ArrowLeftGradient, Label } from '@novu/design-system';
+import { Button, ArrowLeft, ArrowLeftGradient, Label } from '@teleflow/design-system';
 import { NavButton } from '../components/NavButton';
 import useStyles from '../components/OnboardingSteps.styles';
 import { getStartedSteps, OnBoardingAnalyticsEnum } from '../consts';

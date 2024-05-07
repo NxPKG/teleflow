@@ -1,5 +1,5 @@
 import { Grid, SegmentedControl, useMantineTheme } from '@mantine/core';
-import { colors, When } from '@novu/design-system';
+import { colors, When } from '@teleflow/design-system';
 import { useState } from 'react';
 
 import { InAppPreview } from '../../../../components/workflow/preview';

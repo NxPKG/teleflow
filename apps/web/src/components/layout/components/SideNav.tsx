@@ -28,7 +28,7 @@ import {
   shadows,
   Team,
   Translation,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { FeatureFlagsKeysEnum, UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 import { FreeTrialSidebarWidget } from './FreeTrialSidebarWidget';
 import { useUserOnboardingStatus } from '../../../api/hooks/useUserOnboardingStatus';

@@ -51,7 +51,7 @@
     "build:web": "nx build @teleflow/web",
     "build:widget": "nx build @teleflow/widget",
     "build:embed": "nx build @teleflow/embed",
-    "build:storybook": "nx run @novu/design-system:build-storybook",
+    "build:storybook": "nx run @teleflow/design-system:build-storybook",
     "test:providers": "cross-env pnpm --filter './providers/**' test",
     "release:patch": "lerna version patch --no-push",
     "release:minor": "lerna version minor --no-push",

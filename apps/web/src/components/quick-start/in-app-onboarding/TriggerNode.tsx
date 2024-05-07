@@ -1,5 +1,5 @@
 import { Handle, Position } from 'react-flow-renderer';
-import { Button, colors, shadows, Text, Title, BoltOutlinedGradient, Playground } from '@novu/design-system';
+import { Button, colors, shadows, Text, Title, BoltOutlinedGradient, Playground } from '@teleflow/design-system';
 import styled from '@emotion/styled';
 import { createStyles, Group, Popover, Stack, useMantineColorScheme } from '@mantine/core';
 import { ActorTypeEnum, StepTypeEnum, SystemAvatarIconEnum } from '@novu/shared';

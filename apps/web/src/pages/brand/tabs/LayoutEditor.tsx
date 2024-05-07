@@ -20,7 +20,7 @@ import {
   LoadingOverlay,
   shadows,
   Tooltip,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { useEnvController, useLayoutsEditor, usePrompt } from '../../../hooks';
 import { errorMessage, successMessage } from '../../../utils/notifications';
 import { QueryKeys } from '../../../api/query.keys';

@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler } from 'react';
-import { IconPerson } from '@novu/design-system';
+import { IconPerson } from '@teleflow/design-system';
 import { ControllerRenderProps } from 'react-hook-form';
 
 import { previewContainerStyles } from './ProfileImage.styles';

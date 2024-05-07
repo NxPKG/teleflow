@@ -1,4 +1,4 @@
-import { IconOutlineMenuBook } from '@novu/design-system';
+import { IconOutlineMenuBook } from '@teleflow/design-system';
 import { FC } from 'react';
 import { css } from '../../../styled-system/css';
 import { Text } from './WebhookPage.shared';

@@ -12,7 +12,7 @@ import {
   PencilOutlined,
   Trash,
   VariantPlus,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { DELAYED_STEPS, StepTypeEnum } from '@novu/shared';
 
 import { NodeType } from './WorkflowNode';
@@ -122,8 +122,8 @@ export const WorkflowNodeActions = ({
   const conditionsAction = isReadOnly
     ? VARIANT_TYPE_TO_VIEW_CONDITIONS[nodeType]
     : conditionsCount > 0
-    ? VARIANT_TYPE_TO_EDIT_CONDITIONS[nodeType]
-    : VARIANT_TYPE_TO_ADD_CONDITIONS[nodeType];
+      ? VARIANT_TYPE_TO_EDIT_CONDITIONS[nodeType]
+      : VARIANT_TYPE_TO_ADD_CONDITIONS[nodeType];
   const conditionsIcon = isReadOnly || conditionsCount > 0 ? Condition : ConditionPlus;
   const isShowConditions = onAddConditions && (!isReadOnly || (isReadOnly && conditionsCount > 0));
 

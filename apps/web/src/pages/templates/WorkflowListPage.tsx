@@ -18,7 +18,7 @@ import {
   ProviderMissing,
   Tooltip,
   SearchInput,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import {
   useTemplates,

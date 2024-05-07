@@ -2,7 +2,7 @@ import { IConfigCredentials } from '@novu/shared';
 import styled from '@emotion/styled';
 import { Group, useMantineColorScheme } from '@mantine/core';
 
-import { colors, shadows, getGradient } from '@novu/design-system';
+import { colors, shadows, getGradient } from '@teleflow/design-system';
 import { CardStatusBar } from '../CardStatusBar';
 import type { IIntegratedProvider } from '../../types';
 import { LimitBar } from '../LimitBar';

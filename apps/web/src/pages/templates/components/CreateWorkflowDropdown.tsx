@@ -4,7 +4,7 @@ import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { faDiagramNext } from '@fortawesome/free-solid-svg-icons';
 import styled from '@emotion/styled';
 
-import { Dropdown, PlusButton, Popover } from '@novu/design-system';
+import { Dropdown, PlusButton, Popover } from '@teleflow/design-system';
 import { IBlueprintTemplate } from '../../../api/types';
 import { useSegment } from '../../../components/providers/SegmentProvider';
 import { TemplateCreationSourceEnum } from '../shared';

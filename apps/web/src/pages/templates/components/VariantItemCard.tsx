@@ -3,7 +3,7 @@ import { FilterPartTypeEnum, StepTypeEnum, STEP_TYPE_TO_CHANNEL_TYPE } from '@no
 import { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import { useFormContext } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { colors, Check, Conditions as ConditionsIcon } from '@novu/design-system';
+import { colors, Check, Conditions as ConditionsIcon } from '@teleflow/design-system';
 
 import { Conditions } from '../../../components/conditions';
 import { When } from '../../../components/utils/When';

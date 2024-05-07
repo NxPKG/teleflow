@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors, DotsNavigation } from '@novu/design-system';
+import { colors, DotsNavigation } from '@teleflow/design-system';
 
 export const TooltipContainer = styled.div<{
   width: React.CSSProperties['width'];

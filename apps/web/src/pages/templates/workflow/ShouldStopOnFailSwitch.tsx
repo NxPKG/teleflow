@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Controller, useFormContext } from 'react-hook-form';
-import { Switch } from '@novu/design-system';
+import { Switch } from '@teleflow/design-system';
 
 import { useEnvController } from '../../../hooks';
 import { useStepFormPath } from '../hooks/useStepFormPath';
