@@ -99,7 +99,7 @@ services:
       BROADCAST_QUEUE_CHUNK_SIZE: ${BROADCAST_QUEUE_CHUNK_SIZE}
       MULTICAST_QUEUE_CHUNK_SIZE: ${MULTICAST_QUEUE_CHUNK_SIZE}
   ws:
-    image: 'ghcr.io/novuhq/teleflow/ws:0.24.0'
+    image: 'ghcr.io/nxpkg/teleflow/ws:0.24.0'
     depends_on:
       - mongodb
       - redis
@@ -125,7 +125,7 @@ services:
     ports:
       - '3002:3002'
   web:
-    image: 'ghcr.io/novuhq/teleflow/web:0.24.0'
+    image: 'ghcr.io/nxpkg/teleflow/web:0.24.0'
     depends_on:
       - api
       - worker

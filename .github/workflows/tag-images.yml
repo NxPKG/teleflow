@@ -37,7 +37,7 @@ jobs:
 
       - name: Tag API
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/api
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -50,7 +50,7 @@ jobs:
 
       - name: Tag Worker
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/worker
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -63,7 +63,7 @@ jobs:
 
       - name: Tag WS
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/ws
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -76,7 +76,7 @@ jobs:
 
       - name: Tag EMBED
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/embed
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -89,7 +89,7 @@ jobs:
 
       - name: Tag WIDGET
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/widget
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -102,7 +102,7 @@ jobs:
 
       - name: Tag WEB
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: teleflow/web
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
@@ -115,7 +115,7 @@ jobs:
 
       - name: Tag SDK
         env:
-          REGISTRY_OWNER: novuhq
+          REGISTRY_OWNER: nxpkg
           DOCKER_NAME: novu/sdk
           IMAGE_TAG: ${{ github.sha }}
           GH_ACTOR: ${{ github.actor }}
