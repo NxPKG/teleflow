@@ -81,7 +81,7 @@ describe('test use of novus node package - Environments class', () => {
 
     expect(mockedAxios.post).toHaveBeenCalled();
     expect(mockedAxios.post).toHaveBeenCalledWith(
-      '/environments/api-keys/regenerate'
+      '/environments/api-keys/regenerate',
     );
   });
 });
