@@ -19,7 +19,7 @@ import {
   Trash,
   IExtendedColumn,
   Table,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { useEnvController, useLayouts } from '../../../hooks';
 import { errorMessage, successMessage } from '../../../utils/notifications';
 import { DeleteConfirmModal } from '../../templates/components/DeleteConfirmModal';

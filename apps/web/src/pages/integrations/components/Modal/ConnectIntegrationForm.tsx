@@ -15,7 +15,7 @@ import type {
 } from '@novu/shared';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
-import { Button, colors, Input, shadows, Switch, Text, Close, Check, Copy } from '@novu/design-system';
+import { Button, colors, Input, shadows, Switch, Text, Close, Check, Copy } from '@teleflow/design-system';
 
 import type { IIntegratedProvider } from '../../types';
 import { createIntegration, getWebhookSupportStatus, updateIntegration } from '../../../../api/integration';

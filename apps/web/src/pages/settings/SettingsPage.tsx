@@ -8,7 +8,7 @@ import { FeatureFlagsKeysEnum } from '@novu/shared';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes.enum';
 import { useAuthContext } from '../../components/providers/AuthProvider';
-import { When, colors, useTabsStyles } from '@novu/design-system';
+import { When, colors, useTabsStyles } from '@teleflow/design-system';
 import { useFeatureFlag } from '../../hooks';
 
 const SettingsPageWrapper = ({ children }: { children: React.ReactNode }) => {

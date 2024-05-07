@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Input } from '@novu/design-system';
+import { Input } from '@teleflow/design-system';
 
 export const StyledInput = styled(Input)`
   width: 18.75rem;

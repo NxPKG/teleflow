@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-import { PlusButton } from '@novu/design-system';
+import { PlusButton } from '@teleflow/design-system';
 
 const IntegrationsListToolbarHolder = styled.div`
   display: flex;

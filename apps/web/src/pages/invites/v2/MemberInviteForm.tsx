@@ -1,5 +1,5 @@
 import { Group } from '@mantine/core';
-import { Button, errorMessage, Invite, successMessage } from '@novu/design-system';
+import { Button, errorMessage, Invite, successMessage } from '@teleflow/design-system';
 import { IResponseError } from '@novu/shared';
 import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';

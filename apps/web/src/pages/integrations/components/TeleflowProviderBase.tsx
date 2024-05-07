@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Stack, Text, useMantineColorScheme } from '@mantine/core';
 import { ChannelTypeEnum, UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
-import { colors, Close } from '@novu/design-system';
+import { colors, Close } from '@teleflow/design-system';
 
 import { When } from '../../../components/utils/When';
 import { CONTEXT_PATH } from '../../../config';

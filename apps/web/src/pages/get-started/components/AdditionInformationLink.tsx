@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { colors, Text, IconMenuBook } from '@novu/design-system';
+import { colors, Text, IconMenuBook } from '@teleflow/design-system';
 
 import { Link } from '../consts/shared';
 import { OnboardingUseCasesTabsEnum } from '../consts/OnboardingUseCasesTabsEnum';

@@ -1,4 +1,4 @@
-import { Sidebar } from '@novu/design-system';
+import { Sidebar } from '@teleflow/design-system';
 import { StepTypeEnum } from '@novu/shared';
 import { ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';

@@ -1,7 +1,7 @@
 import { useState, useMemo, PropsWithChildren } from 'react';
 import { Text, Box, createStyles, Popover } from '@mantine/core';
 import { Control, useWatch } from 'react-hook-form';
-import { Check, Close, colors } from '@novu/design-system';
+import { Check, Close, colors } from '@teleflow/design-system';
 import { PasswordStrengthBar } from './PasswordStrengthBar';
 
 const usePopoverStyles = createStyles(({ colorScheme }) => ({

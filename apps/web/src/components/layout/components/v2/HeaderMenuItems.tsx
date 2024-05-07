@@ -1,5 +1,5 @@
 import { ActionIcon, Avatar } from '@mantine/core';
-import { colors, Dropdown, IconLogout, IconOutlineGroupAdd, IconSettings, Text, When } from '@novu/design-system';
+import { colors, Dropdown, IconLogout, IconOutlineGroupAdd, IconSettings, Text, When } from '@teleflow/design-system';
 import { CONTEXT_PATH, IS_DOCKER_HOSTED, REACT_APP_VERSION, ROUTES, useAuthContext } from '@teleflow/shared-web';
 import { Link } from 'react-router-dom';
 import { useIsDarkTheme } from '../../../../hooks';

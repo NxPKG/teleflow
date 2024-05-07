@@ -1,4 +1,4 @@
-import { IconVisibilityOff } from '@novu/design-system';
+import { IconVisibilityOff } from '@teleflow/design-system';
 import { css } from '../../styled-system/css';
 
 const buttonStyles = css({

@@ -1,6 +1,6 @@
 import { Handle, Position } from 'react-flow-renderer';
 
-import { Button, BoltOutlinedGradient } from '@novu/design-system';
+import { Button, BoltOutlinedGradient } from '@teleflow/design-system';
 import { useDigestDemoFlowContext } from './DigestDemoFlowProvider';
 import { NodeStepWithPopover } from './NodeStepWithPopover';
 

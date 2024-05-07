@@ -3,7 +3,7 @@ import { createStyles, NumberInput, Loader } from '@mantine/core';
 import styled from '@emotion/styled';
 
 import { NodeStepWithPopover } from './NodeStepWithPopover';
-import { CountdownTimer, DigestAction, colors } from '@novu/design-system';
+import { CountdownTimer, DigestAction, colors } from '@teleflow/design-system';
 import { useDigestDemoFlowContext } from './DigestDemoFlowProvider';
 import { Indicator } from './Indicator';
 import { useEffect, useState } from 'react';

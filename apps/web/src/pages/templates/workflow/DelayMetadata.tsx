@@ -2,7 +2,7 @@ import { Grid } from '@mantine/core';
 import { DelayTypeEnum } from '@novu/shared';
 import { Controller, useFormContext } from 'react-hook-form';
 
-import { Input, SegmentedControl, inputStyles } from '@novu/design-system';
+import { Input, SegmentedControl, inputStyles } from '@teleflow/design-system';
 import { useEnvController } from '../../../hooks';
 import { When } from '../../../components/utils/When';
 import { IntervalRadios } from './IntervalRadios';

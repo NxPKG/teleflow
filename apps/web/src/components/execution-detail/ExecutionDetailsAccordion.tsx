@@ -2,7 +2,7 @@ import { Accordion, createStyles } from '@mantine/core';
 
 import { ExecutionDetailsStepContent } from './ExecutionDetailsStepContent';
 import { ExecutionDetailsStepHeader } from './ExecutionDetailsStepHeader';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 const useStyles = createStyles((theme) => ({
   control: {

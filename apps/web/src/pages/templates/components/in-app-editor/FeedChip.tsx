@@ -3,7 +3,7 @@ import { ColorScheme, useMantineTheme } from '@mantine/core';
 import { IFeedEntity } from '@novu/shared';
 import type { UseFormSetValue } from 'react-hook-form';
 
-import { colors, shadows, DotsHorizontal } from '@novu/design-system';
+import { colors, shadows, DotsHorizontal } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 import { useStepFormPath } from '../../hooks/useStepFormPath';
 import type { IForm } from '../formTypes';

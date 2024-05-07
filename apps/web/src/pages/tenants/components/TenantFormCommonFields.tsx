@@ -2,7 +2,7 @@ import { Control, Controller } from 'react-hook-form';
 import { useClipboard } from '@mantine/hooks';
 import { JsonInput, ActionIcon } from '@mantine/core';
 
-import { Input, inputStyles, Check, Copy } from '@novu/design-system';
+import { Input, inputStyles, Check, Copy } from '@teleflow/design-system';
 import { ITenantForm } from './UpdateTenantSidebar';
 
 function jsonValidator(value?: string) {

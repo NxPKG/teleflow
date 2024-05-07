@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Controller, useFormContext } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { Grid } from '@mantine/core';
-import { Input, Switch, Text, CircleArrowRight } from '@novu/design-system';
+import { Input, Switch, Text, CircleArrowRight } from '@teleflow/design-system';
 
 import { useEnvController } from '../../../hooks';
 import { When } from '../../../components/utils/When';

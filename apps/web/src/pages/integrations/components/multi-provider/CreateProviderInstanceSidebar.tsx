@@ -16,7 +16,7 @@ import {
   ArrowLeft,
   Condition,
   inputStyles,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { useFetchEnvironments } from '../../../../hooks/useFetchEnvironments';
 import { useSegment } from '../../../../components/providers/SegmentProvider';

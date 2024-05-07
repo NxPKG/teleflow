@@ -3,7 +3,7 @@ import { Grid, UnstyledButton } from '@mantine/core';
 import { IConfigCredentials } from '@novu/shared';
 import { useState } from 'react';
 import { When } from '../../../components/utils/When';
-import { Textarea } from '@novu/design-system';
+import { Textarea } from '@teleflow/design-system';
 
 export const IntegrationSecretTextarea = ({
   credential,

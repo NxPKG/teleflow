@@ -1,5 +1,5 @@
 import { Group } from '@mantine/core';
-import { Button } from '@novu/design-system';
+import { Button } from '@teleflow/design-system';
 
 import { useRegenerateApiKeyModal } from '../../ApiKeysPage/useRegenerateApiKeyModal';
 import { ConfirmRegenerationModal } from './ConfirmRegenerationModal';

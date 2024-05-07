@@ -6,7 +6,7 @@ import { createStyles, Stack, useMantineColorScheme } from '@mantine/core';
 import { useDidUpdate } from '@mantine/hooks';
 import { useFormContext } from 'react-hook-form';
 import { When } from '../../../../../components/utils/When';
-import { colors, Tooltip, BoltOutlinedGradient, Check } from '@novu/design-system';
+import { colors, Tooltip, BoltOutlinedGradient, Check } from '@teleflow/design-system';
 import { IForm } from '../../../components/formTypes';
 import { WorkflowNode } from './WorkflowNode';
 import { INode } from '../../../../../components/workflow/types';

@@ -5,7 +5,7 @@ import { useMutation } from '@tanstack/react-query';
 import { Controller, useForm } from 'react-hook-form';
 import type { IResponseError, ICredentialsDto } from '@novu/shared';
 import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
-import { Switch, Button, colors, CircleArrowRight } from '@novu/design-system';
+import { Switch, Button, colors, CircleArrowRight } from '@teleflow/design-system';
 
 import { IIntegratedProvider } from '../types';
 import { updateIntegration } from '../../../api/integration';

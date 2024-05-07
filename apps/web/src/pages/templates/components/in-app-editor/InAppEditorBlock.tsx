@@ -4,7 +4,7 @@ import { IMessageAction, MessageActionStatusEnum } from '@novu/shared';
 import { InAppWidgetPreview } from './preview/InAppWidgetPreview';
 import type { IForm } from '../formTypes';
 import { useStepFormPath } from '../../hooks/useStepFormPath';
-import { colors, errorMessage } from '@novu/design-system';
+import { colors, errorMessage } from '@teleflow/design-system';
 import { useMutation } from '@tanstack/react-query';
 import { previewInApp } from '../../../../api/content-templates';
 import { Center, Loader } from '@mantine/core';

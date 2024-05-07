@@ -1,5 +1,5 @@
 import { Center, Grid, UnstyledButton } from '@mantine/core';
-import { colors, Text } from '@novu/design-system';
+import { colors, Text } from '@teleflow/design-system';
 
 export const DigestedStep = ({ digestedId, span = 4, onClick }) => {
   return (

@@ -1,4 +1,4 @@
-import { Button, Input, inputStyles } from '@novu/design-system';
+import { Button, Input, inputStyles } from '@teleflow/design-system';
 import { FC } from 'react';
 import { Controller } from 'react-hook-form';
 

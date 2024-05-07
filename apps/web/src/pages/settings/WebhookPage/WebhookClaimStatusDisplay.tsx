@@ -4,7 +4,7 @@ import {
   IconOutlineWebAssetOff,
   IconRefresh,
   When,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { LocalizedMessage } from '@teleflow/shared-web';
 import { FC } from 'react';
 import { IconButton } from '../../../components';

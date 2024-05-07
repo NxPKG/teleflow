@@ -3,7 +3,7 @@ import * as capitalize from 'lodash.capitalize';
 import { useMantineColorScheme } from '@mantine/core';
 import { DigestUnitEnum, MonthlyTypeEnum } from '@novu/shared';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { pluralizeTime } from '../../../../utils';
 
 const Highlight = ({ children, isHighlight }) => {

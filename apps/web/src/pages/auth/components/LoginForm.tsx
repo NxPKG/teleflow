@@ -4,7 +4,7 @@ import { useMutation } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import * as Sentry from '@sentry/react';
 import { Center } from '@mantine/core';
-import { PasswordInput, Button, colors, Input, Text } from '@novu/design-system';
+import { PasswordInput, Button, colors, Input, Text } from '@teleflow/design-system';
 import type { IResponseError } from '@novu/shared';
 
 import { useAuthContext } from '../../../components/providers/AuthProvider';

@@ -1,4 +1,4 @@
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import { Prism as MantinePrism } from '@mantine/prism';
 import { useClipboard } from '@mantine/hooks';
 

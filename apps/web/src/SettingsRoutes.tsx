@@ -1,5 +1,5 @@
 import { Route, Navigate } from 'react-router-dom';
-import { Cloud, SSO, UserAccess } from '@novu/design-system';
+import { Cloud, SSO, UserAccess } from '@teleflow/design-system';
 import { FeatureFlagsKeysEnum } from '@novu/shared';
 
 import { ProductLead } from './components/utils/ProductLead';

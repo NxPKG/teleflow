@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { IPaginationProps, PageContainer, Pagination, colors } from '@novu/design-system';
+import { IPaginationProps, PageContainer, Pagination, colors } from '@teleflow/design-system';
 import PageHeader from './PageHeader';
-import { ITableProps } from '@novu/design-system/dist/types/table/Table';
+import { ITableProps } from '@teleflow/design-system/dist/types/table/Table';
 import { ComponentProps, PropsWithChildren } from 'react';
 
 // values directly from designs -- see comment below about why they're necessary

@@ -1,4 +1,4 @@
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 import { IResponseError, PasswordResetFlowEnum } from '@novu/shared';
 import { api, useAuthContext } from '@teleflow/shared-web';
 import { useMutation } from '@tanstack/react-query';

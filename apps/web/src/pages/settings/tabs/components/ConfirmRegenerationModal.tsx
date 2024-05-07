@@ -1,5 +1,5 @@
 import { Group, Modal, useMantineTheme } from '@mantine/core';
-import { Button, colors, shadows, Title, Text } from '@novu/design-system';
+import { Button, colors, shadows, Title, Text } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 
 export function ConfirmRegenerationModal({

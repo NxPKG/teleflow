@@ -3,7 +3,7 @@ import { Container } from '@mantine/core';
 import { Row } from 'react-table';
 import { ITenantEntity } from '@novu/shared';
 
-import { Table, When } from '@novu/design-system';
+import { Table, When } from '@teleflow/design-system';
 import { columns } from './columns';
 import { useTenants } from '../../../../hooks/useTenants';
 import { Toolbar } from './ToolBar';

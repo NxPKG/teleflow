@@ -12,7 +12,7 @@ import {
   PencilOutlined,
   Trash,
   VariantPlus,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { DELAYED_STEPS, StepTypeEnum } from '@novu/shared';
 
 import { NodeType } from './WorkflowNode';

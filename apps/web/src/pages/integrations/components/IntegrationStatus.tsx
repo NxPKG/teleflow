@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 const StatusHolder = styled.div`
   width: fit-content;

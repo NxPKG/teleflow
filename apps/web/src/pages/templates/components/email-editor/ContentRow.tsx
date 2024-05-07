@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import { AlignCenterOutlined, AlignLeftOutlined, AlignRightOutlined } from '@ant-design/icons';
 import { TextAlignEnum } from '@novu/shared';
 
-import { DotsHorizontalOutlined, Trash, Button, colors, Dropdown } from '@novu/design-system';
+import { DotsHorizontalOutlined, Trash, Button, colors, Dropdown } from '@teleflow/design-system';
 import { useEnvController } from '../../../../hooks';
 import { useStepFormPath } from '../../hooks/useStepFormPath';
 

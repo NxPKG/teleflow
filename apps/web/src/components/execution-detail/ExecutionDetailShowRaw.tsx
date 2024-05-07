@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Container, Group, useMantineColorScheme } from '@mantine/core';
 import { Prism } from '@mantine/prism';
-import { Button, colors, Text, Close } from '@novu/design-system';
+import { Button, colors, Text, Close } from '@teleflow/design-system';
 import { When } from '../utils/When';
 import { ExecutionDetailsConditions } from './ExecutionDetailsConditions';
 

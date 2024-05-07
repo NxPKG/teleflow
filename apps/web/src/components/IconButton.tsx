@@ -1,5 +1,5 @@
 import { ComponentProps, PropsWithChildren } from 'react';
-import { Tooltip, Button, IButtonProps } from '@novu/design-system';
+import { Tooltip, Button, IButtonProps } from '@teleflow/design-system';
 
 import { useHover } from '../hooks';
 import { css, cx } from '../styled-system/css';

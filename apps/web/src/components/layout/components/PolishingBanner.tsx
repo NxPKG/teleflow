@@ -1,6 +1,6 @@
 import { useMantineTheme } from '@mantine/core';
 import { useSegment } from '../../providers/SegmentProvider';
-import { Close } from '@novu/design-system';
+import { Close } from '@teleflow/design-system';
 import styled from '@emotion/styled';
 import { useLocalStorage } from '@mantine/hooks';
 

@@ -1,5 +1,5 @@
 import { Grid, UnstyledButton, createStyles, MantineTheme } from '@mantine/core';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 const useStyles = createStyles<string, { active: boolean; disabled: boolean }>((theme: MantineTheme, _params) => {
   const active = _params.active;

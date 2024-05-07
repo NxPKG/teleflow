@@ -10,7 +10,7 @@ import {
   IconTaskAlt,
   IconTranslate,
   IconViewQuilt,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { ChangesCountBadge } from '../layout/components/ChangesCountBadge';
 import { ROUTES, useEnvController, useSegment } from '@teleflow/shared-web';
 import { useUserOnboardingStatus } from '../../api/hooks/useUserOnboardingStatus';

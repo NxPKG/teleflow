@@ -16,7 +16,7 @@ import {
   Copy,
   WarningIcon,
   inputStyles,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import type { IResponseError } from '@novu/shared';
 
 import Card from '../../../components/layout/components/Card';

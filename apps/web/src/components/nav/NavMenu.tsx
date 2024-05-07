@@ -1,4 +1,4 @@
-import { IconArrowBack } from '@novu/design-system';
+import { IconArrowBack } from '@teleflow/design-system';
 import { LocalizedMessage } from '@teleflow/shared-web';
 import { FC, MouseEventHandler } from 'react';
 import { css, cx } from '../../styled-system/css';

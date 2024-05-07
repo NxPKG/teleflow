@@ -1,4 +1,4 @@
-import { Select, Tooltip, When } from '@novu/design-system';
+import { Select, Tooltip, When } from '@teleflow/design-system';
 import { useState } from 'react';
 import { COMPANY_LOGO_PATH } from '../../../../constants/assets';
 import { css } from '../../../../styled-system/css';

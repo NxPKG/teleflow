@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Flex, FlexProps } from '@mantine/core';
 import { clamp } from '@mantine/hooks';
-import { Button, ChevronDown, ChevronUp, colors, CountdownTimer, IButtonProps, Text } from '@novu/design-system';
+import { Button, ChevronDown, ChevronUp, colors, CountdownTimer, IButtonProps, Text } from '@teleflow/design-system';
 import { Dispatch, SetStateAction } from 'react';
 
 const DEFAULT_STEP = 1;

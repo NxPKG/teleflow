@@ -1,7 +1,7 @@
 import { Text, UnstyledButton, Group, useMantineTheme } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 import { colors } from '@teleflow/notification-center';
-import { AngularGradient, Copy, ReactGradient, VueGradient, JsGradient, CodeGradient } from '@novu/design-system';
+import { AngularGradient, Copy, ReactGradient, VueGradient, JsGradient, CodeGradient } from '@teleflow/design-system';
 import { UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 
 import { useEnvController } from '../../../hooks';

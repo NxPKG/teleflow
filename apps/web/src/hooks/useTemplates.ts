@@ -1,5 +1,5 @@
 import { INotificationTemplate, WorkflowIntegrationStatus, NotificationTemplateTypeEnum } from '@novu/shared';
-import { IUsePaginationQueryParamsStateOptions } from '@novu/design-system';
+import { IUsePaginationQueryParamsStateOptions } from '@teleflow/design-system';
 
 import { useEnvController } from './useEnvController';
 import { getNotificationsList } from '../api/notification-templates';

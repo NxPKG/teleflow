@@ -1,4 +1,4 @@
-import { IconArrowDropUp, IconArrowDropDown } from '@novu/design-system';
+import { IconArrowDropUp, IconArrowDropDown } from '@teleflow/design-system';
 import { FC, PropsWithChildren, useState } from 'react';
 import { css } from '../../../styled-system/css';
 import { Flex, HStack } from '../../../styled-system/jsx';

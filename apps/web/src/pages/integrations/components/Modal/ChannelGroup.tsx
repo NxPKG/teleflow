@@ -1,5 +1,5 @@
 import { Container, Grid } from '@mantine/core';
-import { Title } from '@novu/design-system';
+import { Title } from '@teleflow/design-system';
 import { ChannelTypeEnum, EmailProviderIdEnum, SmsProviderIdEnum } from '@novu/shared';
 
 import type { IIntegratedProvider } from '../../types';

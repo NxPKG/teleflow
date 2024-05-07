@@ -1,5 +1,5 @@
 import React, { useImperativeHandle } from 'react';
-import { IconOutlineFileUpload, Text } from '@novu/design-system';
+import { IconOutlineFileUpload, Text } from '@teleflow/design-system';
 
 import { ProfileImageProps } from './ProfileImage';
 import { imageUploadStyles } from './ProfileImage.styles';

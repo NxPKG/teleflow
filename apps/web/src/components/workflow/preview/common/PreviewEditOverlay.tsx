@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Flex, Group, Overlay, UnstyledButton, useMantineColorScheme } from '@mantine/core';
-import { colors, PencilOutlined, Text } from '@novu/design-system';
+import { colors, PencilOutlined, Text } from '@teleflow/design-system';
 import { StepTypeEnum } from '@novu/shared';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useBasePath } from '../../../../pages/templates/hooks/useBasePath';

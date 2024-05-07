@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 export const DateArrow = () => {
   return (

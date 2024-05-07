@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { DigestTypeEnum } from '@novu/shared';
 
 import { When } from '../../../components/utils/When';
-import { colors, Input, Select, Tooltip, Bell, Digest, Timer } from '@novu/design-system';
+import { colors, Input, Select, Tooltip, Bell, Digest, Timer } from '@teleflow/design-system';
 import { TypeSegmented } from './digest/TypeSegment';
 import { WillBeSentHeader } from './digest/WillBeSentHeader';
 import { RegularInfo } from './digest/icons/RegularInfo';

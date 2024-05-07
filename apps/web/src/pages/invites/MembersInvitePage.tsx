@@ -17,7 +17,7 @@ import {
   resendInviteMember,
 } from '../../api/organization';
 import { MembersTable } from './components/MembersTable';
-import { Button, Input, Invite, UserAccess } from '@novu/design-system';
+import { Button, Input, Invite, UserAccess } from '@teleflow/design-system';
 import { useAuthContext } from '../../components/providers/AuthProvider';
 import { parseUrl } from '../../utils/routeUtils';
 import { ROUTES } from '../../constants/routes.enum';

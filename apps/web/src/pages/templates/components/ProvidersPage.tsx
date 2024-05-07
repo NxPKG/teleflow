@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Center, Loader, ScrollArea } from '@mantine/core';
 import { ChannelTypeEnum } from '@novu/shared';
 
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 import type { IIntegratedProvider } from '../../integrations/types';
 import { useProviders } from '../../integrations/useProviders';
 import { ListProviders } from './ListProviders';

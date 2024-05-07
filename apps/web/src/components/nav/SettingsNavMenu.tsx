@@ -7,7 +7,7 @@ import {
   IconCreditCard,
   IconKey,
   IconWebhook,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { BaseEnvironmentEnum, ROUTES, useAuthContext, useEnvController } from '@teleflow/shared-web';
 import { useNavigate } from 'react-router-dom';
 import { parseUrl } from '../../utils/routeUtils';

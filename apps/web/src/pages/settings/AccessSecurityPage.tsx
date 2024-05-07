@@ -1,4 +1,4 @@
-import { IconAdminPanelSettings } from '@novu/design-system';
+import { IconAdminPanelSettings } from '@teleflow/design-system';
 import { FC } from 'react';
 import { ProductLead } from '../../components/utils/ProductLead';
 import { SettingsPageContainer } from './SettingsPageContainer';

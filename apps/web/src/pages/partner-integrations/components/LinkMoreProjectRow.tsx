@@ -1,5 +1,5 @@
 import { Group } from '@mantine/core';
-import { Button, PlusCircle } from '@novu/design-system';
+import { Button, PlusCircle } from '@teleflow/design-system';
 
 type LinkMoreProjectRowProps = {
   addMoreProjectRow: VoidFunction;

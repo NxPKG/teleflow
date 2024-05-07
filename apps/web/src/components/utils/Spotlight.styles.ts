@@ -1,5 +1,5 @@
 import { createStyles, MantineTheme } from '@mantine/core';
-import { colors, shadows } from '@novu/design-system';
+import { colors, shadows } from '@teleflow/design-system';
 
 export default createStyles((theme: MantineTheme) => {
   return {

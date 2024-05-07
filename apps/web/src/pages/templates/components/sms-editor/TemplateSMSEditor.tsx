@@ -18,7 +18,7 @@ import { CustomCodeEditor } from '../CustomCodeEditor';
 import { SmsPreview } from '../../../../components/workflow/preview';
 import { EditVariablesModal } from '../EditVariablesModal';
 import { useTemplateEditorForm } from '../TemplateEditorFormProvider';
-import { colors, When } from '@novu/design-system';
+import { colors, When } from '@teleflow/design-system';
 import { InputVariables } from '../InputVariables';
 import { InputVariablesForm } from '../InputVariablesForm';
 

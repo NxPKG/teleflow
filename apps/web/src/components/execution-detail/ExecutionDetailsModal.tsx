@@ -6,7 +6,7 @@ import { JobStatusEnum } from '@novu/shared';
 import { ExecutionDetailsAccordion } from './ExecutionDetailsAccordion';
 import { ExecutionDetailsFooter } from './ExecutionDetailsFooter';
 import { getNotification } from '../../api/activity';
-import { colors, shadows, Text, Title } from '@novu/design-system';
+import { colors, shadows, Text, Title } from '@teleflow/design-system';
 import { When } from '../utils/When';
 import { useNotificationStatus } from '../../pages/activities/hooks/useNotificationStatus';
 

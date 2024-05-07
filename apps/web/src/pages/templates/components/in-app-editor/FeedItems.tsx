@@ -9,7 +9,7 @@ import type { UseFormSetValue } from 'react-hook-form';
 import type { IResponseError, IFeedEntity } from '@novu/shared';
 
 import { FeedChip } from './FeedChip';
-import { colors, shadows, Text, Tooltip, Button, Copy, Trash } from '@novu/design-system';
+import { colors, shadows, Text, Tooltip, Button, Copy, Trash } from '@teleflow/design-system';
 import { deleteFeed, getFeeds } from '../../../../api/feeds';
 import { QueryKeys } from '../../../../api/query.keys';
 import type { IForm } from '../formTypes';

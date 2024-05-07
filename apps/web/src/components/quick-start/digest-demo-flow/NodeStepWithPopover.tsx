@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { useLocation, useParams } from 'react-router-dom';
 
-import { Popover } from '@novu/design-system';
+import { Popover } from '@teleflow/design-system';
 import {
   guidePreview,
   guidePlayground,

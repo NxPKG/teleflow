@@ -3,7 +3,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import * as capitalize from 'lodash.capitalize';
 import { useAuthContext } from '@teleflow/shared-web';
 import type { IResponseError, IOrganizationEntity } from '@novu/shared';
-import { successMessage } from '@novu/design-system';
+import { successMessage } from '@teleflow/design-system';
 
 import { addOrganization, switchOrganization } from '../../../api/organization';
 import { useSpotlightContext } from '../../providers/SpotlightProvider';

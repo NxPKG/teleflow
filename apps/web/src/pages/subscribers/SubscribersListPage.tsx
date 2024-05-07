@@ -6,7 +6,7 @@ import type { ISubscriber } from '@novu/shared';
 import { useSubscribers } from '../../hooks';
 import PageHeader from '../../components/layout/components/PageHeader';
 import PageContainer from '../../components/layout/components/PageContainer';
-import { Table, withCellLoading, IExtendedColumn, ViewportWide, HoverCard } from '@novu/design-system';
+import { Table, withCellLoading, IExtendedColumn, ViewportWide, HoverCard } from '@teleflow/design-system';
 
 const columns: IExtendedColumn<ISubscriber>[] = [
   {

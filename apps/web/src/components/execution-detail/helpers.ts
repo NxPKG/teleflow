@@ -18,7 +18,7 @@ import {
   Sms,
   Timer,
   WarningIcon,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 export const getColorByStatus = (theme: MantineTheme, status: ExecutionDetailsStatusEnum): string => {
   if (status === ExecutionDetailsStatusEnum.FAILED) {

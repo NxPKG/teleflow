@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { BoltGradient, colors, Text } from '@novu/design-system';
+import { BoltGradient, colors, Text } from '@teleflow/design-system';
 
 export function CardStatusBar({ active }: { active: boolean }) {
   const iconProps = active ? { fill: colors.success } : {};

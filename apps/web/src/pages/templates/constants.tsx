@@ -1,5 +1,5 @@
 import { ChannelTypeEnum, StepTypeEnum } from '@novu/shared';
-import { Bell, Bolt, Chat, DigestGradient, Mail, Mobile, Sms, TimerGradient } from '@novu/design-system';
+import { Bell, Bolt, Chat, DigestGradient, Mail, Mobile, Sms, TimerGradient } from '@teleflow/design-system';
 
 export enum TemplateAnalyticsEnum {
   CREATE_TEMPLATE_CLICK = 'Create Template Click - [Templates]',

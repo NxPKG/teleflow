@@ -14,7 +14,7 @@ import {
   Sms,
   InApp,
   Timer,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { When } from '../../../components/utils/When';
 
 const TypeIcon = ({ type }: { type: StepTypeEnum }) => {

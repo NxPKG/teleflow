@@ -11,7 +11,7 @@ import {
   RemoveCondition,
   StarEmpty,
   Warning,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 const IconButton = styled(Group)`
   text-align: center;

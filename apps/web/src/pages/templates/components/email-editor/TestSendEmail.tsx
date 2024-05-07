@@ -19,7 +19,7 @@ import {
   Invite,
   inputStyles,
   useSelectStyles,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { getOrganizationMembers } from '../../../../api/organization';
 import { useProcessVariables, useIntegrationLimit } from '../../../../hooks';
 import { testSendEmailMessage } from '../../../../api/notification-templates';

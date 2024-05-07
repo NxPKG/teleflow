@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, IInputProps } from '@novu/design-system';
+import { Input, IInputProps } from '@teleflow/design-system';
 
 import { css, cx } from '../../../styled-system/css';
 

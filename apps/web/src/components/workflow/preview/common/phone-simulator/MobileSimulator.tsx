@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useMantineColorScheme } from '@mantine/core';
 import { ChannelTypeEnum } from '@novu/shared';
-import { When } from '@novu/design-system';
+import { When } from '@teleflow/design-system';
 
 import { PhonePlatformSwitch } from './PhonePlatformSwitch';
 import {

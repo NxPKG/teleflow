@@ -3,7 +3,7 @@ import { showNotification } from '@mantine/notifications';
 import { IMemberEntity, MemberRoleEnum } from '@novu/shared';
 import { useQuery } from '@tanstack/react-query';
 
-import { errorMessage, successMessage, Title, UserAccess } from '@novu/design-system';
+import { errorMessage, successMessage, Title, UserAccess } from '@teleflow/design-system';
 import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 import { changeMemberRole, getOrganizationMembers, removeMember, resendInviteMember } from '../../../api/organization';
 import { useAuthContext } from '../../../components/providers/AuthProvider';

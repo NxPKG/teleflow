@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/react';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Center } from '@mantine/core';
-import { Button, colors, Input, Text } from '@novu/design-system';
+import { Button, colors, Input, Text } from '@teleflow/design-system';
 import type { IResponseError } from '@novu/shared';
 
 import { api } from '../../../api/api.client';

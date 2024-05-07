@@ -4,7 +4,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { format } from 'date-fns';
 import type { IResponseError, ITenantEntity, IUpdateTenantDto } from '@novu/shared';
-import { Button, colors, NameInput, Sidebar, Text } from '@novu/design-system';
+import { Button, colors, NameInput, Sidebar, Text } from '@teleflow/design-system';
 
 import { getTenantByIdentifier, updateTenant } from '../../../api/tenants';
 import { errorMessage, successMessage } from '../../../utils/notifications';

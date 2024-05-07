@@ -5,7 +5,7 @@ import { StepTypeEnum, DelayTypeEnum, JobStatusEnum } from '@novu/shared';
 
 import { ExecutionDetailsWebhookFeedback } from './ExecutionDetailsWebhookFeedback';
 import { getLogoByType } from './helpers';
-import { colors, Text, CheckCircle, ErrorIcon } from '@novu/design-system';
+import { colors, Text, CheckCircle, ErrorIcon } from '@teleflow/design-system';
 
 const StepName = styled(Text)`
   color: ${({ theme }) => (theme.colorScheme === 'dark' ? colors.white : colors.B40)};

@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { TeleflowPandaPreset } from '@novu/design-system';
+import { TeleflowPandaPreset } from '@teleflow/design-system';
 
 export default defineConfig({
   // use CSS reset

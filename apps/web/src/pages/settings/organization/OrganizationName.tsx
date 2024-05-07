@@ -1,4 +1,4 @@
-import { Button, Input, successMessage } from '@novu/design-system';
+import { Button, Input, successMessage } from '@teleflow/design-system';
 import { useEffect } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { useRenameOrganization } from '../../../api/hooks';

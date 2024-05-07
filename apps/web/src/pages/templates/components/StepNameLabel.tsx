@@ -1,5 +1,5 @@
 import { Center } from '@mantine/core';
-import { Text, colors, Variant, VariantsFile } from '@novu/design-system';
+import { Text, colors, Variant, VariantsFile } from '@teleflow/design-system';
 
 import { useStepInfoPath } from '../hooks/useStepInfoPath';
 import { useStepIndex } from '../hooks/useStepIndex';

@@ -18,7 +18,7 @@ import {
   PencilOutlined,
   Close,
   Text,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { VarItemsDropdown } from './VarItemsDropdown';
 import { VarLabel } from './VarLabel';

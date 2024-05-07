@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Collapse, UnstyledButton, Center, Highlight } from '@mantine/core';
-import { ChevronUp, ChevronDown, colors, Folder } from '@novu/design-system';
+import { ChevronUp, ChevronDown, colors, Folder } from '@teleflow/design-system';
 import { VarItem } from './VarItem';
 import { VarItemTooltip } from './VarItemTooltip';
 

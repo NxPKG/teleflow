@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { colors, ChevronUp, ChevronDown } from '@novu/design-system';
+import { colors, ChevronUp, ChevronDown } from '@teleflow/design-system';
 import { Collapse, UnstyledButton, Center } from '@mantine/core';
 
 export const VarLabel = ({ label, children, Icon }) => {

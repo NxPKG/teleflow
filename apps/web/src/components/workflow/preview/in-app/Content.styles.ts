@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Skeleton } from '@mantine/core';
-import { colors, shadows } from '@novu/design-system';
+import { colors, shadows } from '@teleflow/design-system';
 
 export const ContentStyled = styled.div<{ isBlur: boolean; isExampleNotification?: boolean }>`
   display: flex;

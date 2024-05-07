@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useQueryClient, useMutation } from '@tanstack/react-query';
 import slugify from 'slugify';
 import type { IResponseError, ICreateTenantDto, ITenantEntity } from '@novu/shared';
-import { Button, colors, Sidebar, Text, Title, Tooltip } from '@novu/design-system';
+import { Button, colors, Sidebar, Text, Title, Tooltip } from '@teleflow/design-system';
 
 import { createTenant } from '../../../api/tenants';
 import { errorMessage, successMessage } from '../../../utils/notifications';

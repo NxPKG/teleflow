@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { ActionIcon, Divider, Group } from '@mantine/core';
-import { ChevronPlainDown, colors, ErrorIcon, Text } from '@novu/design-system';
+import { ChevronPlainDown, colors, ErrorIcon, Text } from '@teleflow/design-system';
 
 import { When } from '../../../components/utils/When';
 

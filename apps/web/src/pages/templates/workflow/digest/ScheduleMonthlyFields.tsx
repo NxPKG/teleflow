@@ -2,7 +2,7 @@ import { Group, Radio, SimpleGrid, Text } from '@mantine/core';
 import { Controller, useFormContext } from 'react-hook-form';
 import { DigestUnitEnum, OrdinalEnum, OrdinalValueEnum, MonthlyTypeEnum, DigestTypeEnum } from '@novu/shared';
 
-import { colors, Select, When } from '@novu/design-system';
+import { colors, Select, When } from '@teleflow/design-system';
 import { DaySelect } from './DaySelect';
 import { useEnvController } from '../../../../hooks';
 import { useStepFormPath } from '../../hooks/useStepFormPath';

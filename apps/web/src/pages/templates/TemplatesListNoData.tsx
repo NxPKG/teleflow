@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiagramNext } from '@fortawesome/free-solid-svg-icons';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { Skeleton } from '@mantine/core';
-import { CardTile, colors, Popover } from '@novu/design-system';
+import { CardTile, colors, Popover } from '@teleflow/design-system';
 
 import { useSegment } from '../../components/providers/SegmentProvider';
 import { IBlueprintTemplate } from '../../api/types';

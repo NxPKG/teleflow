@@ -1,4 +1,10 @@
-import { Digest, HalfClock, IconOutlineNotificationsActive, IconOutlinePublic, Translation } from '@novu/design-system';
+import {
+  Digest,
+  HalfClock,
+  IconOutlineNotificationsActive,
+  IconOutlinePublic,
+  Translation,
+} from '@teleflow/design-system';
 import { CSSProperties } from 'react';
 import { OnboardingUseCasesTabsEnum } from '../../consts/OnboardingUseCasesTabsEnum';
 

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useMantineTheme } from '@mantine/core';
-import { colors, IconOutlineSearchOff, Text } from '@novu/design-system';
+import { colors, IconOutlineSearchOff, Text } from '@teleflow/design-system';
 
 const NoMatchesHolder = styled.div`
   display: flex;

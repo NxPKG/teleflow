@@ -707,7 +707,7 @@ importers:
       '@monaco-editor/react':
         specifier: ^4.6.0
         version: 4.6.0(monaco-editor@0.45.0)(react-dom@17.0.2)(react@17.0.2)
-      '@novu/design-system':
+      '@teleflow/design-system':
         specifier: ^0.24.1
         version: link:../../libs/design-system
       '@novu/shared':
@@ -1871,7 +1871,7 @@ importers:
       '@mantine/hooks':
         specifier: ^5.7.1
         version: 5.10.5(react@17.0.2)
-      '@novu/design-system':
+      '@teleflow/design-system':
         specifier: ^0.24.1
         version: link:../../../libs/design-system
       '@novu/shared':
@@ -2059,7 +2059,7 @@ importers:
       '@mantine/hooks':
         specifier: ^5.7.1
         version: 5.10.5(react@17.0.2)
-      '@novu/design-system':
+      '@teleflow/design-system':
         specifier: ^0.24.1
         version: link:../../../../libs/design-system
       '@rjsf/core':
@@ -2397,7 +2397,7 @@ importers:
       '@monaco-editor/react':
         specifier: ^4.6.0
         version: 4.6.0(monaco-editor@0.45.0)(react-dom@17.0.2)(react@17.0.2)
-      '@novu/design-system':
+      '@teleflow/design-system':
         specifier: ^0.24.1
         version: link:../../../libs/design-system
       '@novu/shared':

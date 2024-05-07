@@ -1,5 +1,5 @@
 import { useMantineTheme, Highlight } from '@mantine/core';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 export const VarItem = ({
   name,

@@ -1,4 +1,4 @@
-import { IconOutlineLockPerson, SidebarFormless } from '@novu/design-system';
+import { IconOutlineLockPerson, SidebarFormless } from '@teleflow/design-system';
 import { useContext, useEffect, useMemo } from 'react';
 import { HStack, styled } from '../../../styled-system/jsx';
 import { title } from '../../../styled-system/recipes';

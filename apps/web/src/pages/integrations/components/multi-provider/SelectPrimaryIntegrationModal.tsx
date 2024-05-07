@@ -14,7 +14,7 @@ import {
   Text,
   Title,
   withCellLoading,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 import { IntegrationChannel } from '../IntegrationChannel';
 import { IntegrationEnvironmentPill } from '../IntegrationEnvironmentPill';
 import { useFetchEnvironments } from '../../../../hooks/useFetchEnvironments';

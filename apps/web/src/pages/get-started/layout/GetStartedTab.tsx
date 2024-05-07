@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Grid } from '@mantine/core';
 
-import { ArrowLeft, Button, colors, Text } from '@novu/design-system';
+import { ArrowLeft, Button, colors, Text } from '@teleflow/design-system';
 import { useMemo } from 'react';
 
 import Card from '../../../components/layout/components/Card';

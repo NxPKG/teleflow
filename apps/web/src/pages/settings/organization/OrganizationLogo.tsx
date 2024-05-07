@@ -1,4 +1,4 @@
-import { errorMessage } from '@novu/design-system';
+import { errorMessage } from '@teleflow/design-system';
 import { MIME_TYPE_TO_FILE_EXTENSION } from '@novu/shared';
 import React, { useEffect } from 'react';
 import { Controller, useForm } from 'react-hook-form';

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
 
-import { Check, Copy } from '@novu/design-system';
+import { Check, Copy } from '@teleflow/design-system';
 import { VarItem } from './VarItem';
 
 export const VarItemTooltip = ({

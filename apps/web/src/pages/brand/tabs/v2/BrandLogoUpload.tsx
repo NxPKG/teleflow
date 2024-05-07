@@ -1,5 +1,5 @@
 import { Dropzone } from '@mantine/dropzone';
-import { ActionButton, errorMessage, IconDelete, IconOutlineFileUpload } from '@novu/design-system';
+import { ActionButton, errorMessage, IconDelete, IconOutlineFileUpload } from '@teleflow/design-system';
 import { UploadTypesEnum } from '@novu/shared';
 import { useRef } from 'react';
 import { ControllerRenderProps, UseFormSetValue } from 'react-hook-form';

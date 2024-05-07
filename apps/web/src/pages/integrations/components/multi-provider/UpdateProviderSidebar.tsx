@@ -14,7 +14,7 @@ import {
   InAppProviderIdEnum,
   SmsProviderIdEnum,
 } from '@novu/shared';
-import { Button, colors, Input, Sidebar, Text, Check, Copy } from '@novu/design-system';
+import { Button, colors, Input, Sidebar, Text, Check, Copy } from '@teleflow/design-system';
 
 import { useProviders } from '../../useProviders';
 import type { IIntegratedProvider } from '../../types';

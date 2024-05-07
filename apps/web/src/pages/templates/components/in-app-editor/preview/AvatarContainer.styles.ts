@@ -1,6 +1,6 @@
 import { createStyles } from '@mantine/core';
 import styled from '@emotion/styled';
-import { colors } from '@novu/design-system';
+import { colors } from '@teleflow/design-system';
 
 export const useStyles = createStyles((theme) => {
   const dark = theme.colorScheme === 'dark';

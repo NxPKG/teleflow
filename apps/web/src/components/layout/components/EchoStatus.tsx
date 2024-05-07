@@ -2,7 +2,7 @@ import { Badge, Text } from '@mantine/core';
 import { useQuery } from '@tanstack/react-query';
 import { api } from '../../../api/api.client';
 import { useEnvController } from '../../../hooks';
-import { Tooltip, Popover } from '@novu/design-system';
+import { Tooltip, Popover } from '@teleflow/design-system';
 import { useDisclosure } from '@mantine/hooks';
 import { IS_DOCKER_HOSTED } from '@teleflow/shared-web';
 

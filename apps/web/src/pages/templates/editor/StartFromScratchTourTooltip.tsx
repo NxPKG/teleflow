@@ -13,7 +13,7 @@ import {
   RightArrow,
   RunTestBell,
   WorkflowSettings,
-} from '@novu/design-system';
+} from '@teleflow/design-system';
 
 import { updateUserOnBoardingTour } from '../../../api/user';
 import { useAuthContext } from '../../../components/providers/AuthProvider';

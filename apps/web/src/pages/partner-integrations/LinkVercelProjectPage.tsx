@@ -3,7 +3,7 @@ import { Stack } from '@mantine/core';
 import { LinkProjectContainer } from './components/LinkProjectContainer';
 
 import { PartnerIntegrationLayout } from '../../components/layout/components/PartnerIntegrationLayout';
-import { Container, Text, Title, ThemeProvider } from '@novu/design-system';
+import { Container, Text, Title, ThemeProvider } from '@teleflow/design-system';
 
 export function LinkVercelProjectPage({ type }: { type: 'edit' | 'create' }) {
   return (

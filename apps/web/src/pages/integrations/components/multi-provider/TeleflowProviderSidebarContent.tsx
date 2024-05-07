@@ -1,7 +1,7 @@
 import { Group, Stack, useMantineColorScheme } from '@mantine/core';
 import { ChannelTypeEnum } from '@novu/shared';
 
-import { ErrorIcon, colors, Text } from '@novu/design-system';
+import { ErrorIcon, colors, Text } from '@teleflow/design-system';
 import { LimitBar } from '../LimitBar';
 import { useIntegrationLimit } from '../../../../hooks';
 import type { IIntegratedProvider } from '../../types';

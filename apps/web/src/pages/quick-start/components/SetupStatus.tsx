@@ -2,7 +2,7 @@ import { Group, Stack } from '@mantine/core';
 import { useEffect } from 'react';
 
 import styled from '@emotion/styled';
-import { Button, colors, Text, Label } from '@novu/design-system';
+import { Button, colors, Text, Label } from '@teleflow/design-system';
 import { When } from '../../../components/utils/When';
 import { useDataRef } from '../../../hooks';
 

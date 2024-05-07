@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { ScrollArea } from '@mantine/core';
-import { colors, shadows } from '@novu/design-system';
+import { colors, shadows } from '@teleflow/design-system';
 import { useEffect, useRef } from 'react';
 
 type AutoSuggestionsDropdownProps = {

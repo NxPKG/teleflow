@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Center } from '@mantine/core';
 import { passwordConstraints, UTM_CAMPAIGN_QUERY_PARAM } from '@novu/shared';
 import type { IResponseError } from '@novu/shared';
-import { PasswordInput, Button, colors, Input, Text, Checkbox } from '@novu/design-system';
+import { PasswordInput, Button, colors, Input, Text, Checkbox } from '@teleflow/design-system';
 
 import { useAuthContext } from '../../../components/providers/AuthProvider';
 import { api } from '../../../api/api.client';
