@@ -18,7 +18,7 @@
     "@novu/shared": "^0.24.1",
     "@teleflow/stateless": "^0.24.1",
     "@teleflow/testing": "^0.24.1",
-    "axios": "^1.6.2",
+    "axios": "^1.6.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "json-schema-defaults": "^0.4.0",
